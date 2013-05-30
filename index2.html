@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Suhen's Blog</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+                <link href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's Blog Atom Feed" />
+                
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie.css"/>
+                <script src="./js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="./">Suhen's Blog </a></h1>
+                <nav><ul>
+                                                                                                    <li ><a href="./category/computer.html">computer</a></li>
+                                    <li ><a href="./category/language.html">language</a></li>
+                                    <li ><a href="./category/music.html">music</a></li>
+                                    <li ><a href="./category/nature.html">nature</a></li>
+                                    <li ><a href="./category/run.html">run</a></li>
+                                </ul></nav>
+        </header><!-- /#banner -->
+                
+            
+
+                 
+                            <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./2013-04-09_scripting-languages-draft.html" rel="bookmark"
+                           title="Permalink to Scripting Languages (draft)">Scripting Languages (draft)</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-09T11:38:00">
+                2013-04-09 11:38
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <p>PHP, Python, Javascript, Lua</p>
+<div class="section" id="basic">
+<h2>Basic</h2>
+</div>
+<div class="section" id="data-type">
+<h2>Data Type</h2>
+<p><strong>Array</strong></p>
+<pre class="literal-block">
+# python
+arr = [1, 2, 3]
+
+# lua
+squares = {1, 4, 9, 16, 25, 36, 49, 64, 81}
+squares[1] # 1
+</pre>
+</div>
+<div class="section" id="statement-expression">
+<h2>statement/expression</h2>
+<div class="section" id="id1">
+<h3>函式</h3>
+<p><strong>引數</strong></p>
+<pre class="literal-block">
+# python
+def func(a, *pargs, **kargs): print a, pargs, kargs
+# &gt;&gt;&gt; f(1, 2, 3, x=1, y=2)
+# 1 ...</pre></div></div>
+                <a class="readmore" href="./2013-04-09_scripting-languages-draft.html">read more</a>
+                <p>There are <a href="./2013-04-09_scripting-languages-draft.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./2013-04-09_python-web-framework.html" rel="bookmark"
+                           title="Permalink to Python Web Framework">Python Web Framework</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-09T11:36:00">
+                2013-04-09 11:36
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="django">
+<h2>Django</h2>
+<div class="section" id="quick-start">
+<h3>Quick Start</h3>
+<pre class="literal-block">
+$ pip install Django
+$ django-admin.py startproject mysite
+$ python manage.py startapp myapp
+</pre>
+<p>check version:</p>
+<pre class="literal-block">
+import django
+print django.get_version()
+</pre>
+</div>
+<div class="section" id="docs">
+<h3>docs</h3>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.djangoproject.com/en/1.3/">Django | Django documentation | Django documentation</a></li>
+<li><a class="reference external" href="http://djangosnippets.org/snippets/1811/">Django snippets: django paginator</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="flask">
+<h2>Flask</h2>
+<div class="section" id="id1">
+<h3>Docs</h3>
+<ul class="simple">
+<li><a class="reference external" href="http://flask.pocoo.org/docs/">Flask documentation</a>, <a class="reference external" href="https://github.com/mitsuhiko/flask">github</a></li>
+<li><a class="reference external" href="http://jinja.pocoo.org/docs/">Jinja2 documentation</a></li>
+<li><a class="reference external" href="http://packages.python.org/Flask-SQLAlchemy/">Flask-SQLAlchemy documentation</a>, <a class="reference external" href="https://github.com/brosner/sqlalchemy">github</a>, <a class="reference external" href="http://docs.sqlalchemy.org/en/latest/index.html">SQLAlchemy Documentation</a></li>
+<li><a class="reference external" href="http://packages.python.org/Flask-Login/">Flask-Login documentation</a>, <a class="reference external" href="https://bitbucket.org/leafstorm/flask-login">leafstorm / flask-login / overview — Bitbucket ...</a></li></ul></div></div>
+                <a class="readmore" href="./2013-04-09_python-web-framework.html">read more</a>
+                <p>There are <a href="./2013-04-09_python-web-framework.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./2013-04-07_bei-tou-yang-zou-biao-lu-pao-sai.html" rel="bookmark"
+                           title="Permalink to 北頭洋走標路跑賽">北頭洋走標路跑賽</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-07T04:17:00">
+                2013-04-07 04:17
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/run.html">run</a>. </p>
+
+</footer><!-- /.post-info -->                <p>前幾年開始跑馬拉松時就看到這個比賽： <a class="reference external" href="http://www.soulang.org.tw/news.htm#45">北頭洋走標路跑賽</a> ，一開始吸引我的是這個很特別的名字，北頭洋是什麼？ 走鏢又是什麼！？感覺很特別，但一直拖到今年才播時間冒名。看網站的介紹：走鏢是西拉雅人跑步競賽的意思，西拉雅人為了獵鹿，從小就訓練跑步，還有一個飛蕃“程天與”的故鄉野傳奇。而北頭洋就是在佳里區西北方小山北頭，平埔語「巫女」的意思，北頭洋為「巫山」。</p>
+<img alt="/static/images/2013-04-07_jiali/12403_10151628913261289_2048866220_n.jpg" src="/static/images/2013-04-07_jiali/12403_10151628913261289_2048866220_n.jpg" style="width: 500px;" />
+<p>前一天坐統聯到佳里(4hrs)，借住Rachel家，晚上去安西夜市當作選手之夜開始大吃烤肉、旗魚黑輪、鱔魚意麵... ，認識了Ptt南區的堯堯，盟盟，也看到一陣子沒見面的Jeremy，還是一樣睿智好笑。晚上竟然自己一人很豪邁的睡一整棟透天厝，但是比賽前一天太興奮 也沒睡好...</p>
+<img alt="/static/images/2013-04-07_jiali/2013jiali_route.jpg" src="/static/images/2013-04-07_jiali/2013jiali_route.jpg" style="width: 600px;" />
+<p>路線圖</p>
+<p>今年初只跑了高雄馬拉松，而且是狀況不好的跑了5小時15分，後來台南馬也偷懶的跑半馬（當作LSD訓練）。想說這場可以進全力來跑，一開始前20公里跑太快的老毛病有犯了，後來果然爆掉開始走走跑跑，路上都沒看到里程數的標示，工作人員亂報里程數，整個配速都亂了，最後還是跑了4:14:03，分組71，總名次283名(全部好像1500名 ...</p>
+                <a class="readmore" href="./2013-04-07_bei-tou-yang-zou-biao-lu-pao-sai.html">read more</a>
+                <p>There are <a href="./2013-04-07_bei-tou-yang-zou-biao-lu-pao-sai.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./2013-04-02_blog.html" rel="bookmark"
+                           title="Permalink to blog">blog</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-02T15:53:00">
+                2013-04-02 15:53
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="http-status-code">
+<h2>HTTP status code</h2>
+<p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
+<div class="section" id="informational-1xx">
+<h3>Informational 1xx</h3>
+<p>HTTP/1.0沒有定義</p>
+<ul class="simple">
+<li>100 Continue, proxy</li>
+<li>101 Switching Protocols, HTTP版本轉換</li>
+</ul>
+</div>
+<div class="section" id="successful-2xx">
+<h3>Successful 2xx</h3>
+<ul class="simple">
+<li>200 OK</li>
+<li>201 Created</li>
+<li>202 Accepted</li>
+<li>203 Non-Authoritative Information</li>
+<li>204 No Content</li>
+<li>205 Reset Content</li>
+<li>206 Partial Content</li>
+</ul>
+</div>
+<div class="section" id="redirection-3xx">
+<h3>Redirection 3xx</h3>
+<ul class="simple">
+<li>300 Multiple Choices</li>
+<li>301 Moved ...</li></ul></div></div>
+                <a class="readmore" href="./2013-04-02_blog.html">read more</a>
+                <p>There are <a href="./2013-04-02_blog.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./2013-04-02_ganglia.html" rel="bookmark"
+                           title="Permalink to Ganglia">Ganglia</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-02T11:39:00">
+                2013-04-02 11:39
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
+<p>Ganglia有3個部分:</p>
+<ul class="simple">
+<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
+<li>gmetad - 詢問gmond儲存數質</li>
+<li>ganglia-web</li>
+</ul>
+<pre class="literal-block">
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+</pre>
+<p>start daemond:</p>
+<pre class="literal-block">
+service gmond start
+service gmetad start
+</pre>
+<div class="section" id="centos">
+<h2>CentOS</h2>
+<p>進入web介面時出現:</p>
+<pre class="literal-block">
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+</pre>
+<p>解決方法, 重新安裝 ...</p></div>
+                <a class="readmore" href="./2013-04-02_ganglia.html">read more</a>
+                <p>There are <a href="./2013-04-02_ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./2013-03-28_rest-restructuredtextyu-sphinx.html" rel="bookmark"
+                           title="Permalink to reST – reStructuredText與Sphinx">reST – reStructuredText與Sphinx</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-28T00:00:00">
+                2013-03-28 00:00
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <p><a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> 是Python <a class="reference external" href="http://docutils.sourceforge.net/index.html">Docutils: Documentation Utilities</a> 的一部分, 而 <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a> 可以更方便產生，管理文件的工具</p>
+<p>縮排用二個或三個空白都可以，Emacs的ReST預設用三個</p>
+<div class="section" id="id1">
+<h2>使用</h2>
+<p>安裝:</p>
+<pre class="literal-block">
+$ pip install Sphinx
+</pre>
+<p>某目錄下:</p>
+<pre class="literal-block">
+$ sphinx-quickstart
+</pre>
+<p>會自動設定好conf.py, 和相關檔案</p>
+<p>產生網頁檔:</p>
+<pre class="literal-block">
+$ make html
+</pre>
+</div>
+<div class="section" id="id2">
+<h2>文件結構</h2>
+<div class="section" id="id3">
+<h3>分段</h3>
+<p>用一串連續的=*-^&quot;~等字符來標示，通常用:</p>
+<pre class="literal-block">
+==========
+全文標題
+==========
+
+大標題
+========
+
+小標題
+---------
+
+段落
+^^^^^^
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">中文字用的分段標示要長一點點</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>分隔</h3>
+<p>像HTML裡的 <tt class="docutils literal">&lt;hr&gt;</tt>:</p>
+<pre class="literal-block">
+----
+</pre>
+</div>
+</div>
+<div class="section" id="inline-markup">
+<h2>修飾字 Inline markup</h2>
+<p><em>斜體</em>:</p>
+<pre class="literal-block">
+*italic*
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">中文不能斜</p>
+</div>
+<p><strong>粗體</strong>:</p>
+<pre class="literal-block">
+**bold**
+</pre>
+<p><tt class="docutils literal">有底色</tt>:</p>
+<pre class="literal-block">
+``有底色 ...</pre></div>
+                <a class="readmore" href="./2013-03-28_rest-restructuredtextyu-sphinx.html">read more</a>
+                <p>There are <a href="./2013-03-28_rest-restructuredtextyu-sphinx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./2013-03-28_software.html" rel="bookmark"
+                           title="Permalink to Software">Software</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-28T00:00:00">
+                2013-03-28 00:00
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="desktop-tips">
+<h2>Desktop Tips</h2>
+<div class="section" id="mac-osx">
+<h3>Mac OSX</h3>
+<p>zoom in/out: Command Opt =/-</p>
+<p>強制結束: Command Opt Esc</p>
+<p>區域截圖: Command Shift 4</p>
+<p>顯示User Library: 在Finder裡的Go(前往), 按住option, 就會出現</p>
+<p>輸入特殊符號: Command + option + T</p>
+<p>放大縮小: Command + &quot;+&quot; / Command + &quot;-&quot;</p>
+<p>無線網路密碼</p>
+<ol class="arabic simple">
+<li>到&quot;鑰匙圈存取&quot;: Finder -&gt; 工具程式 -&gt; 鑰匙圈存取</li>
+<li>找基地台名稱, 分類是&quot;AirPort網路密碼&quot;, 顯示密碼</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>好用軟體</h2>
+<div class="section" id="internet">
+<h3>Internet</h3>
+<ul class="simple">
+<li>bt - Deluge (Linux)</li>
+<li>IRC Client (OS X)</li>
+</ul>
+</div>
+<div class="section" id="ebook">
+<h3>ebook ...</h3></div></div>
+                <a class="readmore" href="./2013-03-28_software.html">read more</a>
+                <p>There are <a href="./2013-03-28_software.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./2013-03-28_unix-command-chang-yong-zhi-ling.html" rel="bookmark"
+                           title="Permalink to UNIX Command 常用指令">UNIX Command 常用指令</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-28T00:00:00">
+                2013-03-28 00:00
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="id1">
+<h2>檔案</h2>
+<p>把檔案foo複製到以下全部目錄裡:</p>
+<pre class="literal-block">
+$ find . -type d |xargs -n 1 cp -i foo
+</pre>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">xargs -n 1:</th><td class="field-body">把每一行command line輸出當作一個參數</td>
+</tr>
+<tr class="field"><th class="field-name">cp -i:</th><td class="field-body">詢問y or n</td>
+</tr>
+</tbody>
+</table>
+<p>檔案大寫改小寫:</p>
+<pre class="literal-block">
+$ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
+</pre>
+<p>找目錄名稱:</p>
+<pre class="literal-block">
+$ find / -type d -name &quot;dir_name&quot;
+</pre>
+<p>找出體積最大前十檔案/目錄:</p>
+<pre class="literal-block">
+$ du -a /home | sort ...</pre></div>
+                <a class="readmore" href="./2013-03-28_unix-command-chang-yong-zhi-ling.html">read more</a>
+                <p>There are <a href="./2013-03-28_unix-command-chang-yong-zhi-ling.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./2013-03-23_git.html" rel="bookmark"
+                           title="Permalink to GIT">GIT</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-23T00:00:00">
+                2013-03-23 00:00
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="quick-start">
+<h2>Quick Start</h2>
+<div class="section" id="init">
+<h3>init</h3>
+<p>Server (Repository):</p>
+<pre class="literal-block">
+mkdir example.git
+cd example.git
+git --bare init # init加--bare, 表示只會在當下目錄放git的東西，不會有原始檔案, 如果要原始檔案再git clone出來就有了
+</pre>
+<p>Client:</p>
+<pre class="literal-block">
+mkdir example
+cd example
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin ssh://USERNAME&#64;REMOTE_SERVER/~/example.git
+git push origin master (第一次之後只要打git ...</pre></div></div>
+                <a class="readmore" href="./2013-03-23_git.html">read more</a>
+                <p>There are <a href="./2013-03-23_git.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./2013-03-21_dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="bookmark"
+                           title="Permalink to Dynamic DNS setting for Namecheap on Mac OSX">Dynamic DNS setting for Namecheap on Mac OSX</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-21T02:09:00">
+                2013-03-21 02:09
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>登入Namecheap啓用Dynamic <a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service">link1</a></p>
+<p>設定DNS record:</p>
+<pre class="literal-block">
+freedns1.registrar-servers.com
+freedns2.registrar-servers.com
+freedns3.registrar-servers.com
+freedns4.registrar-servers.com
+freedns5.registrar-servers.com
+</pre>
+<p><a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/532/51/how-does-free-dns-work">link2</a></p>
+<p>安裝Dynamic DNS clinet (以OS X的ddclient為例):</p>
+<pre class="literal-block">
+$ brew install ddclient
+</pre>
+<p>在/usr/local/etc/ddclient裡建立ddclient.conf (範例在/usr/local/share/doc/ddclient), 裡面有namecheap的預設選項:</p>
+<pre class="literal-block">
+protocol=namecheap
+server=dynamicdns.park-your-domain.com
+login=yourdomain.com ...</pre>
+                <a class="readmore" href="./2013-03-21_dynamic-dns-setting-for-namecheap-on-mac-osx.html">read more</a>
+                <p>There are <a href="./2013-03-21_dynamic-dns-setting-for-namecheap-on-mac-osx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            </ol><!-- /#posts-list -->
+                            <p class="paginator">
+                        <a href="./index.html">&laquo;</a>
+                Page 2 / 3
+            <a href="./index3.html">&raquo;</a>
+    </p>
+                        </section><!-- /#content -->
+                    <section id="extras" class="body">
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="http://www.facebook.com/farseerfc">facebook</a></li>
+                                                    <li><a href="http://twitter.com/moogoo">twitter</a></li>
+                                                    <li><a href="http://github.com/moogoo78">github</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38928548-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'suhenorg';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>

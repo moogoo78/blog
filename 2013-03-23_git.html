@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>GIT</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+                <link href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's Blog Atom Feed" />
+                
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie.css"/>
+                <script src="./js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="./">Suhen's Blog </a></h1>
+                <nav><ul>
+                                                                                                    <li class="active"><a href="./category/computer.html">computer</a></li>
+                                    <li ><a href="./category/language.html">language</a></li>
+                                    <li ><a href="./category/music.html">music</a></li>
+                                    <li ><a href="./category/nature.html">nature</a></li>
+                                    <li ><a href="./category/run.html">run</a></li>
+                                </ul></nav>
+        </header><!-- /#banner -->
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./2013-03-23_git.html" rel="bookmark"
+           title="Permalink to GIT">GIT</a></h1>
+          </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2013-03-23T00:00:00">
+                2013-03-23 00:00
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->      <div class="section" id="quick-start">
+<h2>Quick Start</h2>
+<div class="section" id="init">
+<h3>init</h3>
+<p>Server (Repository):</p>
+<pre class="literal-block">
+mkdir example.git
+cd example.git
+git --bare init # init加--bare, 表示只會在當下目錄放git的東西，不會有原始檔案, 如果要原始檔案再git clone出來就有了
+</pre>
+<p>Client:</p>
+<pre class="literal-block">
+mkdir example
+cd example
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin ssh://USERNAME&#64;REMOTE_SERVER/~/example.git
+git push origin master (第一次之後只要打git push就可以了)
+</pre>
+</div>
+</div>
+<div class="section" id="basic">
+<h2>Basic</h2>
+<p><strong>Tree Roles</strong></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">HEAD:</th><td class="field-body">最後一次的commit (Repo)</td>
+</tr>
+<tr class="field"><th class="field-name">Index:</th><td class="field-body">目前要commit的 (Staging)</td>
+</tr>
+<tr class="field"><th class="field-name">Working Dir:</th><td class="field-body">目前修改工作區</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="git-command">
+<h2>git command</h2>
+<div class="section" id="git-clone-add">
+<h3>git clone / add</h3>
+<p>git clone:</p>
+<pre class="literal-block">
+git clone file:////home/somebody/repo/foo.git
+git clone ssh://host/~/repo/foo.git
+    git clone --bare /path/to/repo # 把原本的repo轉成bare出來
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">git pull origin master相當於git fetch和git merge origin/master</p>
+</div>
+<p>git add:</p>
+<pre class="literal-block">
+git add .
+git add -a
+git add foo
+git add -u # 只加修改過的檔案, 新增的檔案不加入.
+git add -i # 進入互動模式
+</pre>
+<p>git rm/mv:</p>
+<pre class="literal-block">
+git rm foo
+git mv foo bar
+
+git rm --cached # 從版本控管裡那掉，保留原檔
+</pre>
+</div>
+<div class="section" id="git-reset-revert">
+<h3>git reset / revert</h3>
+<p>reset: 移動HEAD, 更改SHA referenct(git記錄), 檔案還是目前最新的狀態
+還沒commit</p>
+<p>revert: rollback, 並且會有一個新的commit(不像reset是回到某個commit)</p>
+<p><a class="reference external" href="http://progit.org/2011/07/11/reset.html">Pro Git - Reset Demystified</a>
+git reset:</p>
+<pre class="literal-block">
+git reset --soft HEAD~ # HEAD指回the parent of HEAD, Index和Working Directory都不動(因為soft嘛)
+# 改一改再commit一次, 就是git commit --amend在做的事情一樣
+(修改放到staging area?)
+git reset [--mixed] HEAD~ # update Staging Area, 沒有打參數預設就是這個 (把stage的檔案給unstage?)
+git reset --hard HEAD~ # 完全清除, reset the working tree to the last commit
+#會改到檔案要注意
+</pre>
+<p>Tips: 如果反悔可以用git reflog叫出來, 再reset回來</p>
+<p>commit後要回來
+git revert (還原commit記錄) # revert是新增一個commit來做還原</p>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">push後就不能reset了, 如果已經push後就要用revert</p>
+</div>
+<p>git revert:</p>
+<pre class="literal-block">
+git revert HEAD # 回上一次commit, 並產生一個新的commit log
+This will create a new commit which undoes the change in HEAD
+git revert HEAD^ # 回上上一次commit
+git revert [SHA] # 回到此commit **之前**\的狀態, 也是產生一個新的commit log
+</pre>
+</div>
+<div class="section" id="git-log">
+<h3>git log</h3>
+<p>git log:</p>
+<pre class="literal-block">
+git log --stat
+git log --stat --summary # 查每個版本間的更動檔案和行數
+git log --pretty=format:'%h : %s' --date-order --graph # 依照時間排序
+git log --since=&quot;1 day ago&quot; # 今天的
+git log --pretty=format:&quot;%h was %an, %ar, message: %s&quot; (--graph)
+git log --all # 秀出所有的 log (含 branch)
+git log -p # 將所有 log 和修改過得檔案內容列出
+git log -S'foo()' # log 裡面有 foo() 這字串的.
+git log --pretty=oneline # 秀 log 的方式
+git log --pretty=short # 秀 log 的方式
+git log --pretty=format:'%h was %an, %ar, message: %s'
+git log --pretty=format:'%h : %s' --graph # 會有簡單的文字圖形化, 分支等.
+git log --pretty=format:'%h : %s' --topo-order --graph # 依照主分支排序
+git log --pretty=format:'%h : %s' --date-order --graph # 依照時間排序
+</pre>
+</div>
+<div class="section" id="git-commit-checkout-stash">
+<h3>git commit / checkout / stash</h3>
+<p>git commit:</p>
+<pre class="literal-block">
+git commit -m 'foo message'
+git commit --dry-run # 假commit
+git commit --no-verify # 不檢查每行程式碼最後是否有空白或tab
+git commit --amend -m 'edited message' # 改最後一次commit的的message
+# 通常出現錯誤&quot;You have some suspicious patch lines&quot;時用
+</pre>
+<p>git checkout:</p>
+<pre class="literal-block">
+git checkout branch # 切換 branch
+git checkout filename # 從local repo抓回
+git checkout HEAD .  TODO
+git checkout xxxx . # 將所有檔案都 checkout 出來(xxxx commit 的版本, xxxx 是 commit 的編號前四碼), 注意, 若有修改的檔案都會被還原到上一版. TODO
+</pre>
+<p>git stash:</p>
+<pre class="literal-block">
+git stash #  丟進暫存區
+git stash list # 列出所有暫存區的資料
+git stash pop # 取出最新的一筆, 並移除.
+git stash apply # 取出最新的一筆 stash 暫存資料. 但是 stash 資料不移除
+git stash clear # 把 stash 都清掉
+</pre>
+</div>
+<div class="section" id="git-branch-merge">
+<h3>git branch / merge</h3>
+<p>git branch:</p>
+<pre class="literal-block">
+git branch # 看目前的branch
+git branch abcd # 開一個名為abcd的新branch
+git branch -d abcd # 刪除abcd
+git checkout abcd, 移到abcd
+git branch abcd # 開新branch, 但不移駕
+git co -b abcd 開新branch, 而且移駕到新開的branch
+</pre>
+<p>git merge:</p>
+<pre class="literal-block">
+git mergetool kdiff3
+git merge --abort, 不要merge了
+</pre>
+</div>
+<div class="section" id="git-tag">
+<h3>git tag</h3>
+<p>加tag:</p>
+<pre class="literal-block">
+git tag -a v0.2 -m &quot;this is version 0.2&quot;
+git tag -a v0.1.1 #abc123 為某版本加tag
+</pre>
+<dl class="docutils">
+<dt>看此tag的log::</dt>
+<dd>git show v0.1.2</dd>
+</dl>
+<p>刪除:</p>
+<pre class="literal-block">
+git tag -d v0.1.2
+</pre>
+</div>
+<div class="section" id="other">
+<h3>other</h3>
+<p>git reflog</p>
+<pre class="literal-block">
+把之前的記錄都叫出來, 包括被git reset掉的, 如果時間久的話會被git洗掉
+然後再$ git reset --hard HASH 就回去了
+</pre>
+<p><a class="reference external" href="http://stackoverflow.com/questions/5473/undoing-a-git-reset-hard-head1">version control - Undoing a git reset --hard HEAD~1 - Stack Overflow</a></p>
+</div>
+<div class="section" id="undo">
+<h3>undo</h3>
+<p>1. 還沒commit
+a) git reset --hard HEAD
+b) git checkout HEAD hello.rb
+2. commit後發現錯誤
+a) git revert HEAD # 回上個commit, 並建立一新commit
+b) git revert HEAD^ # 回上上個commit, 並建立一新commit
+3.
+git commit --amend</p>
+<p><a class="reference external" href="http://book.git-scm.com/4_undoing_in_git_-_reset,_checkout_and_revert.html">Git Book - Undoing in Git - Reset, Checkout and Revert</a></p>
+</div>
+</div>
+<div class="section" id="tips">
+<h2>Tips</h2>
+<div class="section" id="git-clonebranch">
+<h3>git clone某一個branch</h3>
+<p>以github的Flask當例子，要抓Flask的website branch</p>
+<p>先git clone一份Flask，看所有的branch:</p>
+<pre class="literal-block">
+git branch -a
+</pre>
+<p>可看到除了master外有一個remotes/origin/website，然後做一個叫website的branch:</p>
+<pre class="literal-block">
+git checkout -b website remotes/origin/website
+</pre>
+<p>就會抓回到website這個branch，或是要直接拉下來看:</p>
+<pre class="literal-block">
+git checkout remotes/origin/experimental
+</pre>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>other</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.slideshare.net/littlebtc/git-5528339">寫給大家的 Git 教學</a></li>
+<li><a class="reference external" href="http://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model » nvie.com</a> git開發web方法</li>
+<li><a class="reference external" href="https://github.com/github/gitignore">github/gitignore at master - GitHub</a> gitignore大全</li>
+<li><a class="reference external" href="http://gitready.com/">git ready » learn git one commit at a time</a> git教學文(因材施教)</li>
+<li><a class="reference external" href="http://whygitisbetterthanx.com/">Why Git is Better Than X</a></li>
+<li><a class="reference external" href="http://www-cs-students.stanford.edu/~blynn/gitmagic/">Git Magic - Preface</a></li>
+<li><a class="reference external" href="http://ihower.tw/blog/archives/6696/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+ihower+({|ihower.tw|+blog+})&amp;utm_content=Google+Reader">Git 教育訓練課程投影片 (2012) | ihower { blogging }</a></li>
+</ul>
+</div>
+
+    </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "2013-03-23_git.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://suhenorg.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+  </article>
+</section>
+        <section id="extras" class="body">
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="http://www.facebook.com/farseerfc">facebook</a></li>
+                                                    <li><a href="http://twitter.com/moogoo">twitter</a></li>
+                                                    <li><a href="http://github.com/moogoo78">github</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38928548-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'suhenorg';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>

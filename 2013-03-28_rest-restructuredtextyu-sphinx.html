@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>reST – reStructuredText與Sphinx</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+                <link href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's Blog Atom Feed" />
+                
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie.css"/>
+                <script src="./js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="./">Suhen's Blog </a></h1>
+                <nav><ul>
+                                                                                                    <li class="active"><a href="./category/computer.html">computer</a></li>
+                                    <li ><a href="./category/language.html">language</a></li>
+                                    <li ><a href="./category/music.html">music</a></li>
+                                    <li ><a href="./category/nature.html">nature</a></li>
+                                    <li ><a href="./category/run.html">run</a></li>
+                                </ul></nav>
+        </header><!-- /#banner -->
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./2013-03-28_rest-restructuredtextyu-sphinx.html" rel="bookmark"
+           title="Permalink to reST – reStructuredText與Sphinx">reST – reStructuredText與Sphinx</a></h1>
+          </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2013-03-28T00:00:00">
+                2013-03-28 00:00
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->      <p><a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> 是Python <a class="reference external" href="http://docutils.sourceforge.net/index.html">Docutils: Documentation Utilities</a> 的一部分, 而 <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a> 可以更方便產生，管理文件的工具</p>
+<p>縮排用二個或三個空白都可以，Emacs的ReST預設用三個</p>
+<div class="section" id="id1">
+<h2>使用</h2>
+<p>安裝:</p>
+<pre class="literal-block">
+$ pip install Sphinx
+</pre>
+<p>某目錄下:</p>
+<pre class="literal-block">
+$ sphinx-quickstart
+</pre>
+<p>會自動設定好conf.py, 和相關檔案</p>
+<p>產生網頁檔:</p>
+<pre class="literal-block">
+$ make html
+</pre>
+</div>
+<div class="section" id="id2">
+<h2>文件結構</h2>
+<div class="section" id="id3">
+<h3>分段</h3>
+<p>用一串連續的=*-^&quot;~等字符來標示，通常用:</p>
+<pre class="literal-block">
+==========
+全文標題
+==========
+
+大標題
+========
+
+小標題
+---------
+
+段落
+^^^^^^
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">中文字用的分段標示要長一點點</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>分隔</h3>
+<p>像HTML裡的 <tt class="docutils literal">&lt;hr&gt;</tt>:</p>
+<pre class="literal-block">
+----
+</pre>
+</div>
+</div>
+<div class="section" id="inline-markup">
+<h2>修飾字 Inline markup</h2>
+<p><em>斜體</em>:</p>
+<pre class="literal-block">
+*italic*
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">中文不能斜</p>
+</div>
+<p><strong>粗體</strong>:</p>
+<pre class="literal-block">
+**bold**
+</pre>
+<p><tt class="docutils literal">有底色</tt>:</p>
+<pre class="literal-block">
+``有底色``
+</pre>
+<p>&quot;修飾字&quot;的前後都要空格，如要跟後面的字相連可以用 <tt class="docutils literal">\</tt>跳脫，如: <strong>test</strong>123:</p>
+<pre class="literal-block">
+**test**\123
+</pre>
+</div>
+<div class="section" id="id5">
+<h2>定義</h2>
+<p>定義:</p>
+<pre class="literal-block">
+what
+  Definition of “what”. We add a few words to show the line wrapping.
+how
+  Definition of “how”.
+</pre>
+<dl class="docutils">
+<dt>what</dt>
+<dd>Definition of “what”. We add a few words to show the line wrapping.</dd>
+<dt>how</dt>
+<dd>Definition of “how”.</dd>
+</dl>
+</div>
+<div class="section" id="lists">
+<h2>條列 Lists</h2>
+<p>標示字符用*, +, -,等都可以:</p>
+<pre class="literal-block">
+* 第一項
+
+  * 子項目不是只有縮排, 上面要空一行才可以
+
+* 第二項
+
+1. uno
+2. dos
+
+a) eins
+b) zwai
+</pre>
+</div>
+<div class="section" id="blocks">
+<h2>文字區塊 Blocks</h2>
+<p>以下是區塊, 要空一行和縮排:</p>
+<pre class="literal-block">
+跟你說::
+
+  嘻嘻
+</pre>
+<p>註解/警告:</p>
+<pre class="literal-block">
+.. note:: this is a note.
+.. warning:: this is a warning.
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">this is a note.</p>
+</div>
+<div class="warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">this is a warning.</p>
+</div>
+<div class="section" id="syntax-highlighting">
+<h3>Syntax Highlighting</h3>
+<div class="section" id="include-source">
+<h4>Include Source</h4>
+<p>會把原始碼印出來。</p>
+<p>Python:</p>
+<pre class="literal-block">
+.. iteralinclude:: example.py
+  :linenos:
+</pre>
+<p>PHP:</p>
+<pre class="literal-block">
+.. literalinclude:: example.php
+  :language: php
+  :prepend: &lt;?php
+  :append: ?&gt;
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>連結</h2>
+<div class="section" id="id7">
+<h3>外部連結</h3>
+<p>例子:</p>
+<pre class="literal-block">
+`連結的標題 &lt;http://example.com&gt;`__
+`&lt;http://example.com&gt;`
+</pre>
+</div>
+<div class="section" id="id8">
+<h3>內部連結</h3>
+<p>在某個rst文件裡的任何一個地方定義:</p>
+<pre class="literal-block">
+.. _test_label:
+</pre>
+<p>連結:</p>
+<pre class="literal-block">
+:ref:`標題文字&lt;test_label&gt;`
+</pre>
+<p>或是用:</p>
+<pre class="literal-block">
+:doc:`reST`
+</pre>
+<p>會自動把文件標題抓出來:</p>
+</div>
+</div>
+<div class="section" id="tables">
+<h2>表格 (Tables)</h2>
+</div>
+<div class="section" id="field-list">
+<h2>(Field list)</h2>
+</div>
+<div class="section" id="explicit-markup">
+<h2>Explicit Markup</h2>
+<div class="section" id="comments">
+<h3>Comments</h3>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>參考資料</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://people.ee.ethz.ch/~creller/web/tricks/reST.html">reST – reStructuredText — Bits and Pieces</a> - 簡潔扼要, 還有附Emacs的ReST mode</li>
+<li><a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html#restructured-text-rest-resources">Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation</a> -</li>
+<li><a class="reference external" href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html">3.6.1. Restructured Text (reST) and Sphinx CheatSheet — openalea.doc v0.8.0 documentation</a></li>
+<li><a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html">Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation</a></li>
+</ul>
+</div>
+
+    </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "2013-03-28_rest-restructuredtextyu-sphinx.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://suhenorg.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+  </article>
+</section>
+        <section id="extras" class="body">
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="http://www.facebook.com/farseerfc">facebook</a></li>
+                                                    <li><a href="http://twitter.com/moogoo">twitter</a></li>
+                                                    <li><a href="http://github.com/moogoo78">github</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38928548-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'suhenorg';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>

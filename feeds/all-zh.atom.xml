@@ -1,0 +1,2242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's Blog</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-05-26T15:21:00+08:00</updated><entry><title>用screen+irssi上IRC聊天不斷線</title><link href="http://suhen.org/2013-05-26_irc_screen_irssi.html" rel="alternate"></link><updated>2013-05-26T15:21:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-05-26:2013-05-26_irc_screen_irssi.html</id><summary type="html">&lt;p&gt;一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).&lt;/p&gt;
+&lt;p&gt;安裝screen和irssi:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+aptitude install screen
+aptitude install irssi
+&lt;/pre&gt;
+&lt;p&gt;開screen (detach/reattach參數):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+screen -RD
+&lt;/pre&gt;
+&lt;p&gt;進入irssi:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+/connect irc.freenode.net # 連server
+/nick moogoolee           # 改匿名
+/j #python.tw             # 開channel
+/wc                       # 離開channal
+/disconnect               # server斷線
+/quit                     # 離開irssi
+&lt;/pre&gt;
+&lt;p&gt;切換channel:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+alt + 數字
+&lt;/pre&gt;
+&lt;p&gt;但是Mac的Alt會變成輸入特殊字, 用iTerm的話, 可以如以下設定:&lt;/p&gt;
+&lt;p&gt;Bookmarks -&amp;gt; Manage Profiles -&amp;gt; Keyboard Profiles -&amp;gt; Global, 點選&amp;quot;Option Key as +Esc&amp;quot;&lt;/p&gt;
+&lt;p&gt;參考連結: &lt;a class="reference external" href="http://lzy-blah.blogspot.tw/2007/08/screen-irssi-irc-q.html"&gt;lzy's 543: 用 screen + irssi 上 irc 之鄉民版教學 (含Q&amp;amp;A)&lt;/a&gt;&lt;/p&gt;
+</summary><category term="note"></category></entry><entry><title>Salon Music - 日本老牌可愛前衛電音二人組</title><link href="http://suhen.org/2013-05-21_salon_music.html" rel="alternate"></link><updated>2013-05-21T01:54:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-05-21:2013-05-21_salon_music.html</id><summary type="html">&lt;p&gt;80年代就開始受到西方音樂媒體矚目的Salon Music，成員為: 吉田仁(Zin Yoshida) 、竹中仁見 (Hitomi Takenaka)。音樂風格大概是Techno Pop跟Post-punk，聽他們的音樂就覺得原來裝可愛還可以裝的這麼酷~&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/eMM56WUae50" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;1984 &amp;quot;Paradise Lost&amp;quot;, 澀谷系的前身阿~&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/_fyRwPf5GGk" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;1985年在東京六本木INKSTICK的表演(audio only)，很好聽!!!&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/MoLky3Q_bkU" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;1987年專輯: &amp;quot;o boy&amp;quot;, 比較沒那麼糊的My Bloody Valentine&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/81NCD2tWvSI" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;2011專輯『Sleepless Sheep』主打歌: It's A Little Thing有Einstürzende Neubauten的冷酷感。&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/YIhndt6dd-E" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&amp;quot;Spike Me Into Space&amp;quot;, 出自1999年專輯『Round Five Shaggy Bee』, 小山田圭吾的廠牌Trattoria時期，搖滾了點。&lt;/p&gt;
+&lt;img alt="http://homepage3.nifty.com/salonmusic/_src/sc142/tamco.jpg" src="http://homepage3.nifty.com/salonmusic/_src/sc142/tamco.jpg" /&gt;
+&lt;p&gt;(圖片出處: &lt;a class="reference external" href="http://homepage3.nifty.com/salonmusic/index.html"&gt;salon music サロンミュージック official&lt;/a&gt; , 赫然發現YMO的高橋幸宏出現在照片中)&lt;/p&gt;
+&lt;p&gt;延伸連結:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;台灣唯一網誌介紹: &lt;a class="reference external" href="http://blog.roodo.com/ddrbb/archives/19243024.html"&gt;■ 太 空 猴 宇 宙 放 送 局 ■:Salon Music - Sleepless Sheep - 樂多日誌&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;discogs唱片目錄: &lt;a class="reference external" href="http://www.discogs.com/artist/Salon+Music"&gt;Salon Music Discography at Discogs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://mutant-sounds.blogspot.tw/2008/03/salon-music-la-paloma-showlp1984japan.html"&gt;MUTANT SOUNDS: Salon Music-La Paloma Show,LP,1984,Japan&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</summary></entry><entry><title>琉球(沖縄)民謡 - ヒヤミカチ節</title><link href="http://suhen.org/2013-05-11_hiyamakachi_bushi.html" rel="alternate"></link><updated>2013-05-11T07:15:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-05-11:2013-05-11_hiyamakachi_bushi.html</id><summary type="html">&lt;p&gt;這首歌聽起來輕快熱情，一下就吸引我的注意。有空再來研究一下沖繩民謠。&lt;/p&gt;
+&lt;p&gt;「ヒヤミカチ」沖縄語加油打氣的意思，戰後沖縄被美國接管, 這首生負鼓舞著辛苦的沖繩人民的任務。&lt;/p&gt;
+&lt;p&gt;歌詞:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+作詞：平良新助
+作曲：山内盛彬
+
+名に立ちゅる沖縄  宝島でむぬ
+心うち合わち  う立ちみそり  う立ちみそり
+ヒャッ  ヒャッ  ヒャッ  ヒャッ  ヒャッ
+ヒヤミカチ起きり  ヒヤミカチ起きり
+
+稲  栗ぬなうり  みるく  世ぬ印
+心うち合わち  気張いみそり  汽張いみそり
+ヒャッ  ヒャッ  ヒャッ  ヒャッ  ヒャッ
+ヒヤミカチ起きり  ヒヤミカチ起きり
+
+がくやないじゅらさ  花や咲ち美らさ
+我したくぬ沖縄  世界に知らさ  世界に知らさ
+ヒャッ  ヒャッ  ヒャッ  ヒャッ  ヒャッ
+ヒヤミカチ起きり  ヒヤミカチ起きり
+
+七転び転でぃ  ヒヤミカチ起きり
+我したくぬ沖縄  世界に知らさ  世界に知らさ
+ヒャッ  ヒャッ  ヒャッ  ヒャッ  ヒャッ
+ヒヤミカチ起きり  ヒヤミカチ起きり
+&lt;/pre&gt;
+&lt;p&gt;登川誠仁國寶老牌韻味版&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/NfAqP3Hq8sw" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;登川誠仁那卡西經典版&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/Ba5iZj52Vv4" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;ネーネーズ熱鬧廟會版&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/_vnF7dfcEUA" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;東京青年西村豪行雲流水版&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/k_GB-5KQjos" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;傳統兒童傳唱版&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/EaHS_l71fnY" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;沖縄興南高校応援&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/7L16hAWGnpg" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;(感謝Kalas提供小翻譯)&lt;/p&gt;
+&lt;p&gt;參考:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://ja.wikipedia.org/wiki/%E5%B1%B1%E5%86%85%E7%9B%9B%E5%BD%AC"&gt;山内盛彬 - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://rekioakiaki.cocolog-nifty.com/blog/2012/09/post-9a16.html"&gt;歌碑のある風景、県民を鼓舞した「ヒヤミカチ節」: レキオ・島唄アッチャー&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</summary><category term="經典翻唱"></category></entry><entry><title>Database筆記</title><link href="http://suhen.org/2013-05-09_database_note.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-05-09:2013-05-09_database_note.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
+&lt;h2&gt;MySql&lt;/h2&gt;
+&lt;p&gt;Syntax:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[ALL | DISTINCT | DISTINCTROW ]
+  [HIGH_PRIORITY]
+  [STRAIGHT_JOIN]
+  [SQL_SMALL_RESULT] [SQL_BIG_RESULT] [SQL_BUFFER_RESULT]
+  [SQL_CACHE | SQL_NO_CACHE] [SQL_CALC_FOUND_ROWS]
+select_expr [, select_expr ...]
+[FROM table_references
+[WHERE where_condition]
+[GROUP BY {col_name | expr | position}
+  [ASC | DESC], ... [WITH ROLLUP]]
+[HAVING where_condition]
+[ORDER BY {col_name | expr | position}
+  [ASC | DESC], ...]
+[LIMIT {[offset,] row_count | row_count OFFSET offset}]
+[PROCEDURE procedure_name(argument_list)]
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;MySQL的JOIN預設是 &lt;tt class="docutils literal"&gt;INNER JOIN&lt;/tt&gt; ，另一種是LEFT OUTER JOIN，通常用 &lt;tt class="docutils literal"&gt;LEFT JOIN&lt;/tt&gt; 就可以了。MySQL會優先處理JOIN，然後才是WHERE。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cookbook"&gt;
+&lt;h3&gt;cookbook&lt;/h3&gt;
+&lt;p&gt;CURD:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+INSERT INTO tbl_name (col1,col2) VALUES(15,col1*2);
+INSERT INTO tbl_name (a,b,c) VALUES(1,2,3),(4,5,6),(7,8,9);
+UPDATE user SET password=password('新密碼') where user='root';
+&lt;/pre&gt;
+&lt;p&gt;以中文筆畫排序:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+CONVERT( 欄位名稱 using big5) 。
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="function"&gt;
+&lt;h3&gt;function&lt;/h3&gt;
+&lt;p&gt;時間:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+SELECT NOW(),CURDATE(),CURTIME() # | 2012-06-04 14:19:42 | 2012-06-04 | 14:19:42 |
+SELECT MONTH(FROM_UNIXTIME(add_date)) as month
+&lt;/pre&gt;
+&lt;p&gt;ref: &lt;a class="reference external" href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html"&gt;http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="schema"&gt;
+&lt;h3&gt;Schema&lt;/h3&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h4&gt;原則&lt;/h4&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;小的好&lt;/li&gt;
+&lt;li&gt;簡單的好, 如integers比characters好, 不用判斷collations&lt;/li&gt;
+&lt;li&gt;不要用 &lt;strong&gt;NULL&lt;/strong&gt;, 影響效能, 可以用 &lt;tt class="docutils literal"&gt;0&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;空字串&lt;/tt&gt;或 &lt;tt class="docutils literal"&gt;N&lt;/tt&gt;等值來代替&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h4&gt;整數&lt;/h4&gt;
+&lt;p&gt;資料儲存上 &lt;tt class="docutils literal"&gt;TINYINT&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;SMALLINT&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;MEDIUMINT&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;INT&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;BIGINT&lt;/tt&gt;各使用了8, 16, 26, 32, 64 bits, 數值範圍-2^(N-1)到2(N-1)-1, 加了 &lt;tt class="docutils literal"&gt;UNSIGNED&lt;/tt&gt;後, 範圍從0到2^N-1. 但是MySQL在 &lt;strong&gt;計算&lt;/strong&gt;上是用64-bit的BIGINT來算, 就算是32-bit的系統&lt;/p&gt;
+&lt;p&gt;MySQL使用的整數長度, 如INT(11), 並不會真的有儲存限制, 只是為了command-line client的顯示, 在儲存和計算上INT(1)和INT(20)是一樣的.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h4&gt;實數&lt;/h4&gt;
+&lt;p&gt;浮點數可以用 &lt;tt class="docutils literal"&gt;FLOAT&lt;/tt&gt; (4 bytes), &lt;tt class="docutils literal"&gt;DOUBLE&lt;/tt&gt; (8 bytes), &lt;tt class="docutils literal"&gt;DECIMAL&lt;/tt&gt; 等格式, MySQL在浮點數的計算上都是用DOUBLE, 資料儲存上以DECIMAL為佳&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="varcharchar"&gt;
+&lt;h4&gt;VARCHAR和CHAR&lt;/h4&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;VARCHAR&lt;/tt&gt;是可變長度, 會用1到2byte存字串長度(MyISAM或InnoDB), &lt;tt class="docutils literal"&gt;CHAR&lt;/tt&gt;是固字長度, 用來存Y/N, MD5值等.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h4&gt;時間&lt;/h4&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;DATETIME&lt;/tt&gt; 以YYYYMMDDHHMMSS的格式儲存, 範圍從1001到9999年, 8 bytes&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;TIMESTAMP&lt;/tt&gt; 以Unix timestamp格式, 範圍從1970到2038 (格林威治標準時間)&lt;/p&gt;
+&lt;p&gt;選擇用TIMESTAMP比較節省空間, 但不要把unix timestamp存在整數格式, 因為沒有什麼好處, 也很難判讀&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h4&gt;其他&lt;/h4&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;BLOB&lt;/tt&gt;和 &lt;tt class="docutils literal"&gt;TEXT&lt;/tt&gt;不同的是TEXT會有character set和collation, BLOB沒有&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id6"&gt;
+&lt;h3&gt;最佳化&lt;/h3&gt;
+&lt;p&gt;所有資料表最佳化:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysqlcheck -a -c -o -r --all-databases -uroot -p
+&lt;/pre&gt;
+&lt;p&gt;a: analyze, c: check, o: optimize, r: repair&lt;/p&gt;
+&lt;p&gt;重建索引:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+myisamchk -s /var/lib/mysql/*/*.MYI
+&lt;/pre&gt;
+&lt;p&gt;s: silent mode (output only errors)&lt;/p&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;mysql要先停&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tools"&gt;
+&lt;h3&gt;Tools&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://hackmysql.com/mysqlreportdoc"&gt;mysqlreport Documentation&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysqlreport  --user MY_USER --password MY_PASS
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;Read Hit: 從硬碟/記憶體讀取key的比率, 最好不要低於99%, 太低的話, 檢查Key Report, 調高key buffer&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;Slow: 要低於0.05&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://hackmysql.com/mysqlreportguide"&gt;The Guide To Understanding mysqlreport&lt;/a&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.day32.com/MySQL/"&gt;Sundry MySQL Scripts and Docs&lt;/a&gt; 很棒的MySQL tuning scripts&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/rackerhacker/MySQLTuner-perl"&gt;rackerhacker/MySQLTuner-perl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://hackmysql.com/mysqlsla"&gt;mysqlsla :: Parse, filter and sort MySQL slow, general and binary logs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id7"&gt;
+&lt;h3&gt;常用處理&lt;/h3&gt;
+&lt;p&gt;改root密碼:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysqladmin -u root -p'oldpassword' password newpass
+&lt;/pre&gt;
+&lt;p&gt;via: &lt;a class="reference external" href="http://www.cyberciti.biz/faq/mysql-change-root-password/"&gt;MySQL Change root Password&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="root"&gt;
+&lt;h4&gt;忘記root密碼&lt;/h4&gt;
+&lt;p&gt;1.先關掉mysql server:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+sudo /etc/init.d/mysql stop
+&lt;/pre&gt;
+&lt;p&gt;2.開server, 但忽略grant-tables (存密碼的地方):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysqld_safe --user=mysql --skip-grant-tables --skip-networking &amp;amp;
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;mysqld_safe就是用更安全的方式開啟(重載)mysqld, 如有錯誤發生時會重開, 寫log.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;3.用root進入sql改密碼:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysql -u root mysql
+&amp;gt; UPDATE user SET Password=PASSWORD('123456') WHERE User='root';
+&amp;gt; FLUSH PRIVILEGES;
+&amp;gt; exit
+&lt;/pre&gt;
+&lt;p&gt;或是把上面sql語法存在foo.txt裡, 用:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysqld_safe --init-file=/pathto/foo.txt &amp;amp;
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;flush privileges; 重載授權表&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;參考&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://wiki.joyent.com/display/smart/Resetting+the+MySQL+Root+Password"&gt;Resetting the MySQL Root Password - SmartMachines - Joyent Customer Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id8"&gt;
+&lt;h4&gt;連接外部資料庫&lt;/h4&gt;
+&lt;p&gt;1.改my.cnf(通常在/etc下):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# skip-networking 此行註解掉
+bind-address = 11.22.33.44 # 加上要連過來的ip
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;OpenSolaris的my.cnf好像在加在/var/mysql才會有作用&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;2.重開mysql&lt;/p&gt;
+&lt;p&gt;3.連線進入:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysql -u root –p mysql
+mysql&amp;gt; CREATE DATABASE foo;
+mysql&amp;gt; GRANT ALL ON foo.* TO bar&amp;#64;'11.22.33.44' IDENTIFIED BY '密碼';
+
+mysql&amp;gt; update db set Host='11.22.33.44' where Db='資料庫名稱';
+mysql&amp;gt; update user set Host='11.22.33.44' where user='使用者名稱';
+&lt;/pre&gt;
+&lt;p&gt;4.重開mysql&lt;/p&gt;
+&lt;p&gt;5.測試能不能連:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysql -h 主機 -u root -p
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id9"&gt;
+&lt;h4&gt;資料庫編碼&lt;/h4&gt;
+&lt;p&gt;列出MySQL各種編碼變數:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+show variables like &amp;quot;character%&amp;quot;;
+&lt;/pre&gt;
+&lt;p&gt;php的 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;mysql_query(&amp;quot;SET&lt;/span&gt; NAMES &lt;span class="pre"&gt;UTF8&amp;quot;);&lt;/span&gt;&lt;/tt&gt; 相當於MySQL:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+SET character_set_client = utf8;
+SET character_set_results = utf8;
+SET character_set_connection = utf8;
+&lt;/pre&gt;
+&lt;p&gt;編碼順序: &lt;strong&gt;client -&amp;gt; connect -&amp;gt; server -&amp;gt; connect -&amp;gt; client&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id10"&gt;
+&lt;h4&gt;亂碼處理&lt;/h4&gt;
+&lt;p&gt;原本是latin1(ISO 8859-1)編碼, 要改成utf-8:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;mysqldump -uroot -p mydb --default-character-set=latin1 &amp;gt; old.sql&lt;/li&gt;
+&lt;li&gt;piconv -f utf8 -t utf8 old.sql&amp;gt; new.sql&lt;/li&gt;
+&lt;li&gt;打開new.sql裡面加 &lt;tt class="docutils literal"&gt;SET NAMES utf8&lt;/tt&gt;;&lt;/li&gt;
+&lt;li&gt;mysql -uroot -pmypassword -Dmydb_new --default-character-set=utf8 &amp;lt; new.sql&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="command"&gt;
+&lt;h3&gt;command&lt;/h3&gt;
+&lt;p&gt;執行:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysql -uUSER -pPASS -e &amp;quot;DROP DATABASE foo; CREATE DATABASE bar COLLATE 'utf8_general_ci';&amp;quot;
+
+SHOW DATABASES;
+SHOW TABLES;
+USE db_name;
+
+TRUNCATE tbl_name;
+DROP DATABASE db_name;
+DROP TABLE tbl_name;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="server-management"&gt;
+&lt;h3&gt;Server Management&lt;/h3&gt;
+&lt;p&gt;安裝, 以Debian為例:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# 清除
+sudo apt-get --purge remove mysql-server mysql-common mysql-client
+# 安裝
+sudo apt-get install mysql-server mysql-common mysql-client php5-mysql
+# 第一次設定admin密碼
+mysqladmin -u root password your-new-password
+# 啟動
+sudo /etc/init.d/mysql restart
+# data位置
+# /var/lib/mysql
+&lt;/pre&gt;
+&lt;div class="section" id="mac-os-x"&gt;
+&lt;h4&gt;Mac OS X&lt;/h4&gt;
+&lt;p&gt;從MySql(&lt;a class="reference external" href="http://dev.mysql.com/downloads/mysql/"&gt;http://dev.mysql.com/downloads/mysql/&lt;/a&gt;) 找適何的package，裝完後:&lt;/p&gt;
+&lt;p&gt;binary:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+/usr/local/mysql/bin/mysql
+&lt;/pre&gt;
+&lt;p&gt;path:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+export PATH=/usr/local/mysql/bin:$PATH
+sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="import-export"&gt;
+&lt;h4&gt;Import / Export&lt;/h4&gt;
+&lt;p&gt;倒整個資料庫:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ mysqldump ---u myuser -p myuser_db &amp;gt; myuser_db.sql
+$ mysqldump --skip-lock-tables -umysuer -ppassword --database mydb &amp;gt; backup.sql
+&lt;/pre&gt;
+&lt;p&gt;倒一個資料表:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ mysqldump -u myuser -p myuser_db sometable &amp;gt; myuser_db_sometable.sql
+&lt;/pre&gt;
+&lt;p&gt;到多個叫foo_開頭的資料表到同一個檔案:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysql databasename -u [root] -p[password] -e 'show tables like &amp;quot;foo_%&amp;quot;' | grep -v Tables_in | xargs mysqldump [databasename] -u [root] -p[password] &amp;gt; [target_file]
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;import&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;方法1:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+直接import
+$ mysql  -uname -p dbname  --default-character-set=utf8  &amp;lt;  XXX.sql
+&lt;/pre&gt;
+&lt;p&gt;方法2:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+先登入mysql shell介面
+$ mysql -u myuser -p
+$ use myuser_db; #select db
+$ \. myuser_db_sometable.sql
+$ \q
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="configuration"&gt;
+&lt;h3&gt;Configuration&lt;/h3&gt;
+&lt;p&gt;my.cnf選用(/usr/share/mysql/下)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;my-small.cnf(小於64MB的記憶體)&lt;/li&gt;
+&lt;li&gt;my-medium.cnf (64~128MB的記憶體)&lt;/li&gt;
+&lt;li&gt;my-large.cnf (128~512MB的記憶體)&lt;/li&gt;
+&lt;li&gt;my-huge.cnf (1~2GB的記憶體)&lt;/li&gt;
+&lt;li&gt;my-innodb-heavy-4G.cnf (4GB的記憶體)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;找my.cnf:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mysql --verbose --help | grep -A 1 'Default options'
+# CentOS: /etc/my.cnf ~/.my.cnf
+&lt;/pre&gt;
+&lt;p&gt;my.cnf:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[mysqld]
+set-variable=max_connections=250
+default-storage-engine=InnoDB # 預設選用InnoDB
+
+# slow query
+log-slow-queries=/tmp/slow-query.log #
+long_query_time = 3 #query超過2秒時，則會記錄
+log-queries-not-using-indexes
+
+# optimize
+query_cache_size # 大量相同的query時, 很有用
+key_buffer_size # 越大query越快, 但最好設定1/4, 不要超過一半的系統記憶體 (看*.MYI的size多大, 就設多大)
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;MySQL安裝時不一定會產生&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="others"&gt;
+&lt;h3&gt;others&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://antbsd.twbbs.org/~ant/wordpress/?p=2259"&gt;探討 MySQL 授權 | Ant's ATField&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sqlite"&gt;
+&lt;h2&gt;Sqlite&lt;/h2&gt;
+&lt;p&gt;sql import:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+cat dumpfile.sql | sqlite3 my_database.sqlite
+&lt;/pre&gt;
+&lt;!-- Comment
+Engine
+- [[http://blog.roga.tw/2008/11/19/1288][MySQL 資料庫儲存引擎的選用]]
+- [[http://miggo.pixnet.net/blog/post/30855147][MySQL各Engine Type(MyISAM / InnoDB / Memory) 的特性說明]]
+- [[http://www.student.tw/db/showthread.php?t=174156][【問題】Mysql 中的 MyIsam 與 InnoDB 之差異 - 深藍學生論壇]]
+** type
+- [[http://www.systn.com/data/articles/304_tw.html][mysql中char與varchar的區別]] --&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id11"&gt;
+&lt;h2&gt;不同處&lt;/h2&gt;
+&lt;table class="docutils field-list" frame="void" rules="none"&gt;
+&lt;col class="field-name" /&gt;
+&lt;col class="field-body" /&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr class="field"&gt;&lt;th class="field-name"&gt;MySQL:&lt;/th&gt;&lt;td class="field-body"&gt;RAND()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="field"&gt;&lt;th class="field-name"&gt;Sqlite:&lt;/th&gt;&lt;td class="field-body"&gt;RANDOM()&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</summary><category term="docs"></category><category term="mysql"></category><category term="sqlite"></category></entry><entry><title>各地區德語不同處</title><link href="http://suhen.org/2013-05-04_woerter_unterschiedlich.html" rel="alternate"></link><updated>2013-05-04T02:44:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-05-04:2013-05-04_woerter_unterschiedlich.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;南北不同&lt;/h2&gt;
+&lt;p&gt;通常分成北德/Norddeutschland, 和拜仁/Bayern, 奧地利/Österreichers和瑞士人Schweizers (Schwyzerdütsch)&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="43%" /&gt;
+&lt;col width="57%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;Norddeutschland&lt;/th&gt;
+&lt;th class="head"&gt;Österreich&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;Guten Tag!&lt;/td&gt;
+&lt;td&gt;Grüß Gott!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Auf Wiedersehen!&lt;/td&gt;
+&lt;td&gt;Auf Wiederschauen!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Junge&lt;/td&gt;
+&lt;td&gt;Bub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Treppe&lt;/td&gt;
+&lt;td&gt;Stiege&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Januar&lt;/td&gt;
+&lt;td&gt;Jänner&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;dieses Jahr&lt;/td&gt;
+&lt;td&gt;heuer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;zu Hause&lt;/td&gt;
+&lt;td&gt;daheim&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;gucken&lt;/td&gt;
+&lt;td&gt;schauen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</summary><category term="比較"></category><category term="deutsch"></category></entry><entry><title>Emacs</title><link href="http://suhen.org/2013-04-26_emacs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-26:2013-04-26_emacs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
+&lt;h2&gt;Tips&lt;/h2&gt;
+&lt;p&gt;自動補齊:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+M-/
+&lt;/pre&gt;
+&lt;p&gt;變數對齊:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+M-x align-regexp
+&lt;/pre&gt;
+&lt;p&gt;輸入 &lt;tt class="docutils literal"&gt;=&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;列出全部字串:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+M-x occur
+&lt;/pre&gt;
+&lt;p&gt;刪除整行(vim's dd):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+C-S-Backspace
+&lt;/pre&gt;
+&lt;p&gt;刪除空白行:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+M-x flush-lines RET ^$ RET ;純空白行
+M-x flush-lines RET ^\s-*$ RET ; 有空白的空白行
+&lt;/pre&gt;
+&lt;p&gt;編輯每行文字:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+;; 把每行的文字foo加indent和quote 'foo' =&amp;gt;'  &amp;quot;foo&amp;quot;'
+M-x replace-regexp RET ^ RET SPACE SPACE&amp;quot; RET ;; 開頭加3個空白和&amp;quot;
+M-x replace-regexp RET $ RET &amp;quot;, RET ;; 結尾加&amp;quot;
+&lt;/pre&gt;
+&lt;p&gt;每行加2空白:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+M-x cua-mode
+選好區塊
+C-RET
+移到第一行
+按2個空白
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;參考&lt;/strong&gt;
+&lt;a class="reference external" href="http://stackoverflow.com/questions/60367/the-single-most-useful-emacs-feature"&gt;polls - The single most useful Emacs feature - Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="basic"&gt;
+&lt;h2&gt;Basic&lt;/h2&gt;
+&lt;div class="section" id="movement"&gt;
+&lt;h3&gt;移動 Movement&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="18%" /&gt;
+&lt;col width="82%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;M-&amp;lt;&lt;/td&gt;
+&lt;td&gt;beginning-of-buffer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-&amp;gt;&lt;/td&gt;
+&lt;td&gt;end-of-buffer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;search: M-c 切換case-sensitivity&lt;/p&gt;
+&lt;div class="section" id="register-and-bookmark"&gt;
+&lt;h4&gt;Register and Bookmark&lt;/h4&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="16%" /&gt;
+&lt;col width="84%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;C-x r SPACE&lt;/td&gt;
+&lt;td&gt;設定register, 出現Point to register後輸入一字元&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x r j&lt;/td&gt;
+&lt;td&gt;移動到register, 出現Jump to register後輸入一字元&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x r s a&lt;/td&gt;
+&lt;td&gt;copy-to-register, 把region內的文字copy到register a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x r i a&lt;/td&gt;
+&lt;td&gt;insert-register, insert register a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x r m&lt;/td&gt;
+&lt;td&gt;設定bookmark, bookmark會永久存起來(~/.emacs.bmk), register不會&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x r b&lt;/td&gt;
+&lt;td&gt;goto bookmark&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x r l&lt;/td&gt;
+&lt;td&gt;list bookmark&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="coding"&gt;
+&lt;h3&gt;Coding&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="52%" /&gt;
+&lt;col width="48%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;C-h C &amp;lt;RET&amp;gt;&lt;/td&gt;
+&lt;td&gt;看目前coding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-x list-coding-systems&lt;/td&gt;
+&lt;td&gt;列出所有coding system&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x &amp;lt;RET&amp;gt; r coding &amp;lt;RET&amp;gt;&lt;/td&gt;
+&lt;td&gt;選coding system重新讀檔&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x &amp;lt;RET&amp;gt; f coding &amp;lt;RET&amp;gt;&lt;/td&gt;
+&lt;td&gt;coding system存檔&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x &amp;lt;RET&amp;gt; c coding &amp;lt;RET&amp;gt;&lt;/td&gt;
+&lt;td&gt;coding system buffer?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-u C-x =&lt;/td&gt;
+&lt;td&gt;詳細coding system&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x &amp;lt;RET&amp;gt; c raw-text &amp;lt;RET&amp;gt;&lt;/td&gt;
+&lt;td&gt;load unibyte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="editing"&gt;
+&lt;h3&gt;編輯 Editing&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="40%" /&gt;
+&lt;col width="60%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;M-x string-replace&lt;/td&gt;
+&lt;td&gt;replace&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-x query-replace&lt;/td&gt;
+&lt;td&gt;confirm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-x replace-regexp&lt;/td&gt;
+&lt;td&gt;replace with regex&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-t&lt;/td&gt;
+&lt;td&gt;對調兩字元&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-t&lt;/td&gt;
+&lt;td&gt;對調兩word&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x C-t&lt;/td&gt;
+&lt;td&gt;對調兩行, 跟游標上一行對調&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-c&lt;/td&gt;
+&lt;td&gt;單字的第一個字大寫&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-u&lt;/td&gt;
+&lt;td&gt;單字改大寫&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-l&lt;/td&gt;
+&lt;td&gt;單字改小寫&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;特殊符號&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;C-q C-j 換行符號, Windows編輯器的^M: M-x replace-string [ENTER] C-q C-m [ENTER] n [ENTER]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="modes"&gt;
+&lt;h2&gt;Modes&lt;/h2&gt;
+&lt;div class="section" id="dired"&gt;
+&lt;h3&gt;Dired&lt;/h3&gt;
+&lt;p&gt;M-x dired&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="9%" /&gt;
+&lt;col width="91%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;^&lt;/td&gt;
+&lt;td&gt;回上目錄&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;j&lt;/td&gt;
+&lt;td&gt;jump 移動游標&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;
+&lt;td&gt;標示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;u&lt;/td&gt;
+&lt;td&gt;取消標示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;f&lt;/td&gt;
+&lt;td&gt;(like C-x C-f 開檔)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;RET&lt;/td&gt;
+&lt;td&gt;同上&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;o&lt;/td&gt;
+&lt;td&gt;開檔, but開在另一window&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;a&lt;/td&gt;
+&lt;td&gt;開檔, 但是不會新開一個buffer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C&lt;/td&gt;
+&lt;td&gt;copy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;R&lt;/td&gt;
+&lt;td&gt;rename, 可以當&amp;quot;mv&amp;quot;用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;d&lt;/td&gt;
+&lt;td&gt;標示delete&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;執行delete&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;+&lt;/td&gt;
+&lt;td&gt;create dir&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M&lt;/td&gt;
+&lt;td&gt;chmod&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;O&lt;/td&gt;
+&lt;td&gt;chown&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;G&lt;/td&gt;
+&lt;td&gt;chgrp&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;g&lt;/td&gt;
+&lt;td&gt;refresh&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="org-mode"&gt;
+&lt;h3&gt;Org-mode&lt;/h3&gt;
+&lt;p&gt;預設開啟狀態:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+#+STARTUP: overview
+#+STARTUP: content
+#+STARTUP: showall
+#+STARTUP: showeverything
+
+#+STARTUP: hideblocks
+#+STARTUP: nohideblock
+&lt;/pre&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h4&gt;移動&lt;/h4&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="27%" /&gt;
+&lt;col width="73%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-n/p&lt;/td&gt;
+&lt;td&gt;下/上一個outline&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-f/b&lt;/td&gt;
+&lt;td&gt;下/上一個outline (同lever)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-u&lt;/td&gt;
+&lt;td&gt;上一層&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="agenda"&gt;
+&lt;h4&gt;Agenda&lt;/h4&gt;
+&lt;p&gt;C-c C-x C-s archive&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="calc"&gt;
+&lt;h3&gt;Calc&lt;/h3&gt;
+&lt;p&gt;M-x calc&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_mono/calc.html"&gt;GNU Emacs Calc Manual&lt;/a&gt;&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="43%" /&gt;
+&lt;col width="57%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;q, C-x * c&lt;/td&gt;
+&lt;td&gt;離開&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x * k&lt;/td&gt;
+&lt;td&gt;keypad (數字)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="html"&gt;
+&lt;h3&gt;HTML&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="16%" /&gt;
+&lt;col width="84%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-t&lt;/td&gt;
+&lt;td&gt;加tag, 然後照指示加attribute: property, value.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-v&lt;/td&gt;
+&lt;td&gt;開browser看&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-f&lt;/td&gt;
+&lt;td&gt;移到下個匹配tag&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-b&lt;/td&gt;
+&lt;td&gt;移到上個匹配tag&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c Tab&lt;/td&gt;
+&lt;td&gt;隱藏HTML tag, 再打一次C-c Tab就顯示回來&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c  /&lt;/td&gt;
+&lt;td&gt;加入結尾tag&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-a&lt;/td&gt;
+&lt;td&gt;在HTML tag裡加attribute&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-d&lt;/td&gt;
+&lt;td&gt;刪除HTML tag開頭和結尾都會一起刪&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c RET&lt;/td&gt;
+&lt;td&gt;插入&amp;lt;p&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c j&lt;/td&gt;
+&lt;td&gt;插入&amp;lt;br&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-n&lt;/td&gt;
+&lt;td&gt;插入特殊字元, 像空白&amp;amp;nbsp;, 小於&amp;amp;lt;, 大於&amp;amp;gt;...&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-c h&lt;/td&gt;
+&lt;td&gt;插入&amp;lt;a href=...&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-c u&lt;/td&gt;
+&lt;td&gt;插入&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;...&amp;lt;/ul&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-c o&lt;/td&gt;
+&lt;td&gt;插入&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;...&amp;lt;/ol&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-c c&lt;/td&gt;
+&lt;td&gt;插入checkbox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-c r&lt;/td&gt;
+&lt;td&gt;插入radio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-h&lt;/td&gt;
+&lt;td&gt;看說明&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="graphviz-dot"&gt;
+&lt;h3&gt;Graphviz (dot)&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="16%" /&gt;
+&lt;col width="84%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;C-c c&lt;/td&gt;
+&lt;td&gt;compile dot ($ dot -Tpng foo.dot &amp;gt; foo.png)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c p&lt;/td&gt;
+&lt;td&gt;display png&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html"&gt;Graphviz dot mode for emacs&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="others-mode"&gt;
+&lt;h3&gt;Others Mode&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;M-x artist-mode&lt;/li&gt;
+&lt;li&gt;M-x toggle-debug-on-error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="help"&gt;
+&lt;h2&gt;Help&lt;/h2&gt;
+&lt;p&gt;C-h k RET [key] 列出key的method&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="version-control"&gt;
+&lt;h2&gt;Version Control&lt;/h2&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="22%" /&gt;
+&lt;col width="78%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;C-x v v&lt;/td&gt;
+&lt;td&gt;commit (C-c C-c結束)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x v d&lt;/td&gt;
+&lt;td&gt;version control status&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="adv-mode"&gt;
+&lt;h2&gt;Adv. Mode&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://jblevins.org/projects/deft/"&gt;Deft&lt;/a&gt; - 快速找筆記, 檔案修改工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="docs"></category></entry><entry><title>Elscreen - Emacs好用的tab mode</title><link href="http://suhen.org/2013-04-23_emacs_elscreen.html" rel="alternate"></link><updated>2013-04-23T17:28:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-23:2013-04-23_emacs_elscreen.html</id><summary type="html">&lt;p&gt;我以為在Emacs一直沒有好的tab顯示模式，以前用過tabbar_ mode，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。&lt;/p&gt;
+&lt;p&gt;下載elscreen.el: &lt;a class="reference external" href="ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/"&gt;ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;elscreen.el只有一個檔案，但是他要依附一套 &lt;a class="reference external" href="https://github.com/jeffgran/APEL"&gt;APEL&lt;/a&gt; 才可以運作。&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+;; elscreen
+(add-to-list 'load-path (concat my-path &amp;quot;goodies/APEL&amp;quot;))
+(load &amp;quot;elscreen&amp;quot; &amp;quot;ElScreen&amp;quot; )
+(setq elscreen-display-tab t)
+
+(global-set-key (kbd &amp;quot;C-x t&amp;quot;) 'elscreen-create)
+(global-set-key (kbd &amp;quot;C-x w&amp;quot;) 'elscreen-kill)
+(global-set-key (kbd &amp;quot;M-t&amp;quot;) 'elscreen-previous) ;;transpose-words
+(global-set-key (kbd &amp;quot;M-n&amp;quot;) 'elscreen-next)
+&lt;/pre&gt;
+&lt;p&gt;參考:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://d.hatena.ne.jp/plasticster/20110825/1314271209"&gt;elscreen 改め tabbar のインストールログ - テクノ組曲&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://emacs-fu.blogspot.tw/2009/07/keeping-related-buffers-together-with.html"&gt;emacs-fu: keeping related buffers together with elscreen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</summary><category term="note"></category></entry><entry><title>天空的拼圖 - Kapur 冰片木</title><link href="http://suhen.org/2013-04-20_kapur.html" rel="alternate"></link><updated>2013-04-20T04:37:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-20:2013-04-20_kapur.html</id><summary type="html">&lt;p&gt;週四參加希望山林 &lt;a class="reference external" href="http://www.hopeforest.org.tw/"&gt;Hope_Forest&lt;/a&gt; 的志工課程，請到荒野保護協會的香萍來上課，講的十分的精彩，投影片中有一張另我感到震撼的照片, 上面只寫著Kapur。於是我回來用關鍵字Kapur查了一下：照片是來自於馬來西亞政府一個植物研究機構 (Forest Research Institute Malaysia, &lt;a class="reference external" href="http://www.frim.gov.my/"&gt;FRIM&lt;/a&gt; )的園區內，有一種高大筆直的樹叫「冰片木」，Dryobalanops aromatica (Dipterocarpaceae)，可以提煉類似樟腦的香料，中藥材稱「龍腦香」或「龍腦冰片」，木材市場上稱作Kapur。&lt;/p&gt;
+&lt;img alt="/static/images/nature/Kapur_Trees.jpeg" src="/static/images/nature/Kapur_Trees.jpeg" /&gt;
+&lt;p&gt;特別的是這些在森林最高處的樹冠枝葉並不會重疊或碰在一起，每棵樹都很巧妙的保持一點點的空隙，就像一幅「天空的拼圖」，這還有個可愛的專有名詞「害羞樹冠」，“Crown Shyness” ，好像大家都很害羞不好意思接觸到彼此，形成這特別的景觀。&lt;/p&gt;
+&lt;p&gt;就像香萍說的人與人之間的相處不就跟這些樹木一樣，有時需要保持一點巧妙的距離，不會太近也不會太遠。&lt;/p&gt;
+&lt;p&gt;參考:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.frim.gov.my/?page_id=7643"&gt;Dryobalanops aromatica: Jigsaw puzzles in the sky&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.frim.gov.my/?page_id=9414"&gt;Shorea resinosa : Another jigsaw puzzle in the sky&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;圖片來源: &lt;a class="reference external" href="http://whereisfei.blogspot.tw/2012/05/inspiring-beauty-of-kapur-tree.html"&gt;Where Is Fei: Inspiring: The Beauty of Kapur Tree&lt;/a&gt;&lt;/p&gt;
+</summary><category term="tree"></category></entry><entry><title>Pelican - 邁向靜態blog之路</title><link href="http://suhen.org/2013-04-11_pelican.rst.html" rel="alternate"></link><updated>2013-04-11T12:57:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-11:2013-04-11_pelican.rst.html</id><summary type="html">&lt;p&gt;一直想用純HTML來寫blog，做筆記，最早用PHP的 &lt;a class="reference external" href="https://www.dokuwiki.org"&gt;dokuwiki&lt;/a&gt; ，不想被PHP server綁住，改用Emacs的 &lt;a class="reference external" href="http://orgmode.org/"&gt;Orgmode&lt;/a&gt;, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 &lt;a class="reference external" href="http://suhen.org/rest-restructuredtextyu-sphinx.html"&gt;reST&lt;/a&gt; (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。&lt;/p&gt;
+&lt;div class="section" id="quick-start"&gt;
+&lt;h2&gt;Quick-start&lt;/h2&gt;
+&lt;p&gt;安裝:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ pip install pelican
+&lt;/pre&gt;
+&lt;p&gt;開始:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ mkdir blog
+$ cd blog
+$ pelican-quickstart
+&lt;/pre&gt;
+&lt;p&gt;快速產生相關的設定&lt;/p&gt;
+&lt;p&gt;寫第一篇文章:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ content/first.rst
+&lt;/pre&gt;
+&lt;p&gt;工具指令:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ make html # 顧名思義
+$ make rsync_upload # 用rsync上傳到你的ssh host
+$ make serve # 啟動python的SimpleHTTPServer
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;文章格式&lt;/h2&gt;
+&lt;p&gt;屬性:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+:date: 2013-04-14 (必填)
+:category: music
+:tags: foo, bar
+:slug:
+:lang:
+:author:
+:status: draft (不會處理)
+&lt;/pre&gt;
+&lt;p&gt;圖片:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. image:: /path/to/filename.jpg
+   :height: 450 px
+   :width: 600 px
+   :alt: alternate text
+&lt;/pre&gt;
+&lt;p&gt;連結:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. `title &amp;lt;http://foo.bar&amp;gt;`__ 跟reST一樣
+
+this is a foo_ .
+.. _foo: http://foo.bar
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;其他&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Hyde (看起來很複雜，沒仔細看) - &lt;a class="reference external" href="http://ringce.com/hyde"&gt;http://ringce.com/hyde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Nikola 有image gallery (把圖片丟到某個目錄下就好了) - &lt;a class="reference external" href="http://nikola.ralsina.com.ar/"&gt;http://nikola.ralsina.com.ar/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="note"></category></entry><entry><title>Sand</title><link href="http://suhen.org/2013-04-10_lee_hazlewood_sand.html" rel="alternate"></link><updated>2013-04-10T17:14:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-10:2013-04-10_lee_hazlewood_sand.html</id><summary type="html">&lt;p&gt;1966年Lee Hazlewood寫的歌，出現在Nancy Sinatra的專輯&amp;quot;How Does That Grab You?&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Sand_%28Lee_Hazlewood_song%29"&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="nancy-sinatra-lee-hazlewood-how-does-that-grab-you-1966"&gt;
+&lt;h2&gt;Nancy Sinatra &amp;amp; Lee Hazlewood (&lt;em&gt;How Does That Grab You?&lt;/em&gt;, 1966)&lt;/h2&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/pGfD2j9M1dA" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;最有靈性的版本！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="einsturzende-neubautten-halber-mensh-1985"&gt;
+&lt;h2&gt;Einstürzende Neubautten (Halber Mensh*, 1985)&lt;/h2&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/4BiODjvVEOw" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;這是我第一次聽到這首歌的版本，Blixa Bargeld一人分飾兩角，愛死了！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="op8-feat-lisa-germano-slush-1997"&gt;
+&lt;h2&gt;OP8 feat. Lisa Germano (&lt;em&gt;Slush&lt;/em&gt;, 1997)&lt;/h2&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/lNIcvmDjx0k" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;個性女伶Lisa Germano來伴唱&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hugo-race-and-the-true-spirit-53rd-state-2008"&gt;
+&lt;h2&gt;Hugo Race and the True Spirit (&lt;em&gt;53rd State&lt;/em&gt;, 2008)&lt;/h2&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/rjRp8TG_q08" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="section" id="cillian-murphy-breakfast-on-pluto-o-s-t-2005"&gt;
+&lt;h2&gt;Cillian Murphy (&lt;em&gt;Breakfast on Pluto O.S.T.&lt;/em&gt;, 2005)&lt;/h2&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/q3arh-OD5vU" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;電影: 冥王星早餐，Cillian Murphy和Gavin Friday對唱&lt;/p&gt;
+&lt;p&gt;每一個版本都唱的很低沈、性感、磁性。&lt;/p&gt;
+&lt;p&gt;歌詞:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Young woman share your fire with me
+My heart is cold, my soul is free
+I am a stranger in your land
+A wandering man, call me Sand
+
+Oh sir my fire is very small
+It will not warm thy heart at all
+But thee may take me by the hand
+Hold me and I'll call thee Sand
+
+Young woman share your fire with me
+My heart is cold, my soul is free
+I am a stranger in your land
+A wandering man, call me Sand
+
+At night when stars light up the sky
+Oh sir I dream my fire is high
+Oh taste these lips sir if you can
+Wandering man, I call thee Sand
+
+Oh sir my fire is burning high
+If it should stop sir I would die
+A shooting star has crossed my land
+Wandering man, - She whispered, - Sand
+
+Young woman shared her fire with me
+Now warms herself with memory
+I was a stranger in her land
+A wandering man, she called me sand
+
+He was a stranger in my land
+A wandering man, i called him sand
+&lt;/pre&gt;
+&lt;/div&gt;
+</summary><category term="經典翻唱"></category></entry><entry><title>Scripting Languages (draft)</title><link href="http://suhen.org/2013-04-09_scripting-languages-draft.html" rel="alternate"></link><updated>2013-04-09T11:38:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-09:2013-04-09_scripting-languages-draft.html</id><summary type="html">&lt;p&gt;PHP, Python, Javascript, Lua&lt;/p&gt;
+&lt;div class="section" id="basic"&gt;
+&lt;h2&gt;Basic&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="data-type"&gt;
+&lt;h2&gt;Data Type&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Array&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# python
+arr = [1, 2, 3]
+
+# lua
+squares = {1, 4, 9, 16, 25, 36, 49, 64, 81}
+squares[1] # 1
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="statement-expression"&gt;
+&lt;h2&gt;statement/expression&lt;/h2&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;函式&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;引數&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# python
+def func(a, *pargs, **kargs): print a, pargs, kargs
+# &amp;gt;&amp;gt;&amp;gt; f(1, 2, 3, x=1, y=2)
+# 1 (2, 3) {'y': 2, 'x': 1}
+# *pargs: 任意引數 (tuple)
+# *kargs: 任意引數 (dict)
+
+# lua
+function foo(a, ...)
+    print (a)
+    print (spam)
+end
+
+foo(1, 'lovely') -- 1, nil
+foo(1,'lovely') -- 1, lovely
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lib-funtions"&gt;
+&lt;h2&gt;Lib funtions&lt;/h2&gt;
+&lt;div class="section" id="string"&gt;
+&lt;h3&gt;String&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;substring&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# php
+echo substr('abcdef', 1, 3);  // bcd
+
+# python
+foostring[a:b]
+
+# javascript
+foostring.substr(a,len) // 從a剪取len長度
+foostring.subString(a,b) // 從a剪到b
+
+# lua
+string.sub( foostring, i [,j] ) // i: start, j:end
+foostring:sub(i [,j])
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;string replace&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# python
+foostring.replace('old', 'new')
+
+# javascript
+var s = &amp;quot;abxxef&amp;quot;;
+s.replace(&amp;quot;xx&amp;quot;,&amp;quot;cd&amp;quot;);
+
+# lua
+s = &amp;quot;abxxef&amp;quot;
+s = s:gsub(&amp;quot;xx&amp;quot;, &amp;quot;cd&amp;quot;)
+
+# php
+$foo = str_replace(&amp;quot;old&amp;quot;, &amp;quot;new&amp;quot;, &amp;quot;STRING&amp;quot;);
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;string format&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# lua
+string.format(&amp;quot;%02d/%02d/%04d&amp;quot;, d, m, y)
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;upper lower&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# Lua
+string.upper(s)
+s:upper()
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;string to array&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# php
+explode(',', $string)
+
+# python
+str.split(',')
+
+# lua
+split(&amp;quot;a,b,c&amp;quot;, &amp;quot;,&amp;quot;) --&amp;gt; {&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;}
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;array to string&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# php
+implode(1,, $array);
+
+# python
+str.join(list)
+
+# lua
+table.concat({&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;}, &amp;quot;,&amp;quot;) --&amp;gt; &amp;quot;a,b,c&amp;quot;
+&lt;/pre&gt;
+&lt;p&gt;頭尾空白 Jinja2
+php trim($string)
+python s.strip()&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="array"&gt;
+&lt;h3&gt;Array&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;append&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# python
+t.append(21)
+
+# lua
+table.insert(t, 21)
+&lt;/pre&gt;
+&lt;p&gt;** array length**&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# Python
+len(arr) # arr.count(&amp;quot;foo&amp;quot;) 是算&amp;quot;foo&amp;quot;在arr裡出現幾次
+
+# PHP
+count(arr)
+
+# Lua
+#arr
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;PHP&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+    &lt;span class="nv"&gt;$arr&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;array&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+    &lt;span class="nv"&gt;$fruits&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;array&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;a&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;orange&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;b&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;banana&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;c&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;apple&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="nb"&gt;array_push&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="cp"&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# push&lt;/span&gt;
+&lt;span class="n"&gt;insert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# insert x to i&lt;/span&gt;
+&lt;span class="n"&gt;remove&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# delete first&lt;/span&gt;
+&lt;span class="n"&gt;pop&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# delete index i&lt;/span&gt;
+&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;arr&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;JavaScript&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;push&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;arr&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;Array&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Array&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="nx"&gt;arr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;ActionScript&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nx"&gt;push&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="nx"&gt;arr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="file"&gt;
+&lt;h3&gt;File&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;PHP&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+    &lt;span class="nv"&gt;$fp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;fopen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;foo.txt&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;w&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="nb"&gt;fwrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$fp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;abc&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="nb"&gt;fclose&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$fp&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="cp"&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;explode join&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;foo.txt&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;w&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;abc&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="math"&gt;
+&lt;h3&gt;Math&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# python&lt;/span&gt;
+&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# Random float x, 0.0 &amp;lt;= x &amp;lt; 1.0&lt;/span&gt;
+&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;randint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c"&gt;# Integer from 1 to 10&lt;/span&gt;
+
+&lt;span class="c"&gt;# javascript&lt;/span&gt;
+&lt;span class="n"&gt;Math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# 0 ~ 0.9999999&lt;/span&gt;
+
+&lt;span class="c"&gt;# lua&lt;/span&gt;
+&lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c"&gt;# php&lt;/span&gt;
+&lt;span class="n"&gt;rand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# min: 0&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;Array&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="29%" /&gt;
+&lt;col width="71%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;Reverse&lt;/th&gt;
+&lt;th class="head"&gt;&amp;nbsp;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;PHP&lt;/td&gt;
+&lt;td&gt;&lt;div class="first last line-block"&gt;
+&lt;div class="line"&gt;array_reverse($a);&lt;/div&gt;
+&lt;div class="line"&gt;$a = array_reverse($a);&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Python&lt;/td&gt;
+&lt;td&gt;&lt;div class="first last line-block"&gt;
+&lt;div class="line"&gt;a.reverse()&lt;/div&gt;
+&lt;div class="line"&gt;a[::-1]&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;JavaScript&lt;/td&gt;
+&lt;td&gt;&lt;div class="first last line-block"&gt;
+&lt;div class="line"&gt;a.reverse()&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ActionScript&lt;/td&gt;
+&lt;td&gt;&lt;div class="first last line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://hyperpolyglot.org/scripting"&gt;Scripting Languages: PHP, Perl, Python, Ruby - Hyperpolyglot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.php2python.com/"&gt;Php2Python - Python alternatives to PHP functions, classes and libraries - Php2Python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://code.google.com/p/ppython/wiki/data_convert"&gt;http://code.google.com/p/ppython/wiki/data_convert&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tmp"&gt;
+&lt;h3&gt;tmp&lt;/h3&gt;
+&lt;p&gt;ternary operator&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="docs"></category></entry><entry><title>Python Web Framework</title><link href="http://suhen.org/2013-04-09_python-web-framework.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-09:2013-04-09_python-web-framework.html</id><summary type="html">&lt;div class="section" id="django"&gt;
+&lt;h2&gt;Django&lt;/h2&gt;
+&lt;div class="section" id="quick-start"&gt;
+&lt;h3&gt;Quick Start&lt;/h3&gt;
+&lt;pre class="literal-block"&gt;
+$ pip install Django
+$ django-admin.py startproject mysite
+$ python manage.py startapp myapp
+&lt;/pre&gt;
+&lt;p&gt;check version:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+import django
+print django.get_version()
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="docs"&gt;
+&lt;h3&gt;docs&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://docs.djangoproject.com/en/1.3/"&gt;Django | Django documentation | Django documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://djangosnippets.org/snippets/1811/"&gt;Django snippets: django paginator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="flask"&gt;
+&lt;h2&gt;Flask&lt;/h2&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;Docs&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://flask.pocoo.org/docs/"&gt;Flask documentation&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/mitsuhiko/flask"&gt;github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://jinja.pocoo.org/docs/"&gt;Jinja2 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/Flask-SQLAlchemy/"&gt;Flask-SQLAlchemy documentation&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/brosner/sqlalchemy"&gt;github&lt;/a&gt;, &lt;a class="reference external" href="http://docs.sqlalchemy.org/en/latest/index.html"&gt;SQLAlchemy Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/Flask-Login/"&gt;Flask-Login documentation&lt;/a&gt;, &lt;a class="reference external" href="https://bitbucket.org/leafstorm/flask-login"&gt;leafstorm / flask-login / overview — Bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/Flask-WTF/"&gt;Flask-WTF&lt;/a&gt;, &lt;a class="reference external" href="http://wtforms.simplecodes.com/docs/dev/"&gt;WTForms Documentation&lt;/a&gt;, &lt;a class="reference external" href="https://bitbucket.org/danjac/flask-wtf"&gt;danjac / flask-wtf / overview — Bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tips"&gt;
+&lt;h3&gt;Tips&lt;/h3&gt;
+&lt;p&gt;看Flask版本:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+import flask
+
+flask.__version__
+&lt;/pre&gt;
+&lt;p&gt;request.args
+request.form.getlist('')&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sqlalchemy"&gt;
+&lt;h2&gt;SQLAlchemy&lt;/h2&gt;
+&lt;p&gt;import:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+from flask.ext.sqlalchemy import BaseQuery
+from sqlalchemy.sql import func
+&lt;/pre&gt;
+&lt;p&gt;column parameters:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+primary_key =True
+nullable=False
+unique=True
+default
+onupdate
+index=True
+&lt;/pre&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.sqlalchemy.org/en/rel_0_7/core/schema.html"&gt;Schema Definition Language — SQLAlchemy 0.7 Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;mapper_args:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+__mapper_args__ = {'order_by': '-created'}
+__mapper_args__ = {'order_by': [sort, name]}
+__mapper_args__ = {'primary_key':(app_id, num_log)} # 沒有primary key時用!
+&lt;/pre&gt;
+&lt;p&gt;relationship:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+employees = relationship('Employee',
+                backref='company', cascade='all, delete-orphan')
+&lt;/pre&gt;
+&lt;p&gt;relationship+filter:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+products = db.relationship(
+    'SaleProductData',
+    lazy=&amp;quot;dynamic&amp;quot;,
+    backref='sale_event')
+
+products.filter_by(type=1).all()
+&lt;/pre&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://docs.sqlalchemy.org/en/latest/orm/inheritance.html"&gt;http://docs.sqlalchemy.org/en/latest/orm/inheritance.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;rand:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+from sqlalchemy.sql import func
+
+query.order_by(func.rand())
+&lt;/pre&gt;
+&lt;p&gt;date:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+query.group_by(func.day(LogUserData.dtime).all()
+&lt;/pre&gt;
+&lt;p&gt;group by:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+votes = db.session.query(EventDC1Vote,
+func.count(uid).label('cnt'), 'uid').group_by('uid').order_by('cnt DESC').all()
+&lt;/pre&gt;
+&lt;div class="section" id="example"&gt;
+&lt;h3&gt;example&lt;/h3&gt;
+&lt;p&gt;in/limit/order:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+a_list = self.filter(Article.shop_id==g.shop_id,
+             Article.blog_id.in_(blog_id)).\
+             order_by('-created').\
+             limit(limit).\
+             all()
+&lt;/pre&gt;
+&lt;p&gt;join:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+reg_list = db.session.query(User.name, User.email).\
+join(LogUserData, User.id==LogUserData.uid).\
+filter(User.email != '', LogUserData.app_id.in_([156, 157])).\
+all()
+
+SELECT user.name, user.email, log_user_data.app_id
+FROM `user`
+LEFT JOIN log_user_data ON user.id = log_user_data.uid
+WHERE `email` != '\&amp;quot;\&amp;quot;' and log_user_data.app_id in (156,157)
+&lt;/pre&gt;
+&lt;p&gt;join, or:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+from sqlalchemy import or_, and_
+p = Product.query.join('brand').\
+    filter(or_(Product.title.like('%' + s + '%'),
+               Brand.name.like('%' + s + '%'))).\
+    filter(Product.shop_id==g.shop_id).\
+    all()
+&lt;/pre&gt;
+&lt;p&gt;foreign key constraint:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# database level
+ForeignKey('category.id', ondelete='SET NULL')
+# pythen level
+relationship(passive_deletes=True)
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;比較&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/"&gt;SQLAlchemy and You | Armin Ronacher's Thoughts and Writings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="docs"></category></entry><entry><title>北頭洋走標路跑賽</title><link href="http://suhen.org/2013-04-07_bei-tou-yang-zou-biao-lu-pao-sai.html" rel="alternate"></link><updated>2013-04-07T04:17:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-07:2013-04-07_bei-tou-yang-zou-biao-lu-pao-sai.html</id><summary type="html">&lt;p&gt;前幾年開始跑馬拉松時就看到這個比賽： &lt;a class="reference external" href="http://www.soulang.org.tw/news.htm#45"&gt;北頭洋走標路跑賽&lt;/a&gt; ，一開始吸引我的是這個很特別的名字，北頭洋是什麼？ 走鏢又是什麼！？感覺很特別，但一直拖到今年才播時間冒名。看網站的介紹：走鏢是西拉雅人跑步競賽的意思，西拉雅人為了獵鹿，從小就訓練跑步，還有一個飛蕃“程天與”的故鄉野傳奇。而北頭洋就是在佳里區西北方小山北頭，平埔語「巫女」的意思，北頭洋為「巫山」。&lt;/p&gt;
+&lt;img alt="/static/images/2013-04-07_jiali/12403_10151628913261289_2048866220_n.jpg" src="/static/images/2013-04-07_jiali/12403_10151628913261289_2048866220_n.jpg" style="width: 500px;" /&gt;
+&lt;p&gt;前一天坐統聯到佳里(4hrs)，借住Rachel家，晚上去安西夜市當作選手之夜開始大吃烤肉、旗魚黑輪、鱔魚意麵... ，認識了Ptt南區的堯堯，盟盟，也看到一陣子沒見面的Jeremy，還是一樣睿智好笑。晚上竟然自己一人很豪邁的睡一整棟透天厝，但是比賽前一天太興奮 也沒睡好...&lt;/p&gt;
+&lt;img alt="/static/images/2013-04-07_jiali/2013jiali_route.jpg" src="/static/images/2013-04-07_jiali/2013jiali_route.jpg" style="width: 600px;" /&gt;
+&lt;p&gt;路線圖&lt;/p&gt;
+&lt;p&gt;今年初只跑了高雄馬拉松，而且是狀況不好的跑了5小時15分，後來台南馬也偷懶的跑半馬（當作LSD訓練）。想說這場可以進全力來跑，一開始前20公里跑太快的老毛病有犯了，後來果然爆掉開始走走跑跑，路上都沒看到里程數的標示，工作人員亂報里程數，整個配速都亂了，最後還是跑了4:14:03，分組71，總名次283名(全部好像1500名)，破了個人最佳成績，但是里程數好像有少1km左右。&lt;/p&gt;
+&lt;p&gt;一路上風景單調，都是魚塭、農田，剛好寒流來，風很大，回程一直逆風感覺想跑都跑不快。補給普通，除了里程數沒標示外覺得還算是不錯的比賽。&lt;/p&gt;
+&lt;img alt="/static/images/2013-04-07_jiali/548971_10151629852636289_1453446326_n.jpg" src="/static/images/2013-04-07_jiali/548971_10151629852636289_1453446326_n.jpg" style="width: 500px;" /&gt;
+&lt;img alt="/static/images/2013-04-07_jiali/547779_634279816587624_1600620945_n.jpeg" src="/static/images/2013-04-07_jiali/547779_634279816587624_1600620945_n.jpeg" style="width: 500px;" /&gt;
+&lt;p&gt;到終點時遇到小Can熱情的歡呼~
+(By 小Can)&lt;/p&gt;
+&lt;img alt="/static/images/2013-04-07_jiali/8626012491_b298e0861e_b.jpg" src="/static/images/2013-04-07_jiali/8626012491_b298e0861e_b.jpg" style="width: 500px;" /&gt;
+&lt;p&gt;(By 著名的丫達啦大哥, &lt;a class="reference external" href="http://www.flickr.com/photos/ahdardslr/8626012491/"&gt;flickr&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;跑完跟Rachel去西港(當地人說&amp;quot;便所邊&amp;quot;買很好吃的蝦仁控肉便當)，吃了牛肉湯，買有名的&amp;quot;所長茶葉蛋&amp;quot;～結束吃吃喝喝的行程，2點多到和欣竟然要等到9點才有位子，走到統聯3點就有了，一上車就睡死到台北了。&lt;/p&gt;
+&lt;p&gt;這次也認識了幾個熱情的Ptt南區的跑友(堯堯、盟盟、Sega、佳菲...)，感覺都很有趣，以後跑馬拉松可以跟更多人打招呼嘍，不然都是跟阿伯在攀談聊天~&lt;/p&gt;
+&lt;p&gt;程天與的故事:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+乾隆遊江南時，聽說有一個很厲害的飛番，於是召見進京到御前表演，程天與打赤腳，還在他的長髮
+綁了一串古銅錢，駿馬被打了三鞭後飛蕃程天與後發先至，超越駿馬，乾隆皇帝賜予面京三次現在還
+有墓碑刻有「父子面君三次」。
+&lt;/pre&gt;
+</summary></entry><entry><title>blog</title><link href="http://suhen.org/2013-04-02_blog.html" rel="alternate"></link><updated>2013-04-02T15:53:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-02:2013-04-02_blog.html</id><summary type="html">&lt;div class="section" id="http-status-code"&gt;
+&lt;h2&gt;HTTP status code&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html"&gt;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="informational-1xx"&gt;
+&lt;h3&gt;Informational 1xx&lt;/h3&gt;
+&lt;p&gt;HTTP/1.0沒有定義&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;100 Continue, proxy&lt;/li&gt;
+&lt;li&gt;101 Switching Protocols, HTTP版本轉換&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="successful-2xx"&gt;
+&lt;h3&gt;Successful 2xx&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;200 OK&lt;/li&gt;
+&lt;li&gt;201 Created&lt;/li&gt;
+&lt;li&gt;202 Accepted&lt;/li&gt;
+&lt;li&gt;203 Non-Authoritative Information&lt;/li&gt;
+&lt;li&gt;204 No Content&lt;/li&gt;
+&lt;li&gt;205 Reset Content&lt;/li&gt;
+&lt;li&gt;206 Partial Content&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="redirection-3xx"&gt;
+&lt;h3&gt;Redirection 3xx&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;300 Multiple Choices&lt;/li&gt;
+&lt;li&gt;301 Moved Permanently&lt;/li&gt;
+&lt;li&gt;302 Found&lt;/li&gt;
+&lt;li&gt;303 See Other&lt;/li&gt;
+&lt;li&gt;304 Not Modified&lt;/li&gt;
+&lt;li&gt;305 Use Proxy&lt;/li&gt;
+&lt;li&gt;306 (Unused)&lt;/li&gt;
+&lt;li&gt;307 Temporary Redirect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="client-error-4xx"&gt;
+&lt;h3&gt;Client Error 4xx&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;400 Bad Request&lt;/li&gt;
+&lt;li&gt;401 Unauthorized&lt;/li&gt;
+&lt;li&gt;402 Payment Required&lt;/li&gt;
+&lt;li&gt;403 Forbidden&lt;/li&gt;
+&lt;li&gt;404 Not Found&lt;/li&gt;
+&lt;li&gt;405 Method Not Allowed&lt;/li&gt;
+&lt;li&gt;406 Not Acceptable&lt;/li&gt;
+&lt;li&gt;407 Proxy Authentication Required&lt;/li&gt;
+&lt;li&gt;408 Request Timeout&lt;/li&gt;
+&lt;li&gt;409 Conflict&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="internal-server-error"&gt;
+&lt;h3&gt;500 Internal Server Error&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;501 Not Implemented&lt;/li&gt;
+&lt;li&gt;502 Bad Gateway&lt;/li&gt;
+&lt;li&gt;503 Service Unavailable&lt;/li&gt;
+&lt;li&gt;504 Gateway Timeout&lt;/li&gt;
+&lt;li&gt;505 HTTP Version Not Supported&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="docs"></category></entry><entry><title>Ganglia</title><link href="http://suhen.org/2013-04-02_ganglia.html" rel="alternate"></link><updated>2013-04-02T11:39:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-02:2013-04-02_ganglia.html</id><summary type="html">&lt;p&gt;之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia&lt;/p&gt;
+&lt;p&gt;Ganglia有3個部分:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver&lt;/li&gt;
+&lt;li&gt;gmetad - 詢問gmond儲存數質&lt;/li&gt;
+&lt;li&gt;ganglia-web&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="literal-block"&gt;
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+&lt;/pre&gt;
+&lt;p&gt;start daemond:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+service gmond start
+service gmetad start
+&lt;/pre&gt;
+&lt;div class="section" id="centos"&gt;
+&lt;h2&gt;CentOS&lt;/h2&gt;
+&lt;p&gt;進入web介面時出現:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+&lt;/pre&gt;
+&lt;p&gt;解決方法, 重新安裝(dependency問題):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ yum remove ganglia-web ganglia-megtad
+$ yum install ganglia-web # 會自動安裝gmetad
+$ service gmetad start
+&lt;/pre&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://sourceforge.net/apps/trac/ganglia/wiki/ganglia_quick_start"&gt;http://sourceforge.net/apps/trac/ganglia/wiki/ganglia_quick_start&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="note"></category></entry><entry><title>reST – reStructuredText與Sphinx</title><link href="http://suhen.org/2013-03-28_rest-restructuredtextyu-sphinx.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-28:2013-03-28_rest-restructuredtextyu-sphinx.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 是Python &lt;a class="reference external" href="http://docutils.sourceforge.net/index.html"&gt;Docutils: Documentation Utilities&lt;/a&gt; 的一部分, 而 &lt;a class="reference external" href="http://sphinx.pocoo.org/"&gt;Sphinx&lt;/a&gt; 可以更方便產生，管理文件的工具&lt;/p&gt;
+&lt;p&gt;縮排用二個或三個空白都可以，Emacs的ReST預設用三個&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;使用&lt;/h2&gt;
+&lt;p&gt;安裝:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ pip install Sphinx
+&lt;/pre&gt;
+&lt;p&gt;某目錄下:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ sphinx-quickstart
+&lt;/pre&gt;
+&lt;p&gt;會自動設定好conf.py, 和相關檔案&lt;/p&gt;
+&lt;p&gt;產生網頁檔:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ make html
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;文件結構&lt;/h2&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h3&gt;分段&lt;/h3&gt;
+&lt;p&gt;用一串連續的=*-^&amp;quot;~等字符來標示，通常用:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==========
+全文標題
+==========
+
+大標題
+========
+
+小標題
+---------
+
+段落
+^^^^^^
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;中文字用的分段標示要長一點點&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h3&gt;分隔&lt;/h3&gt;
+&lt;p&gt;像HTML裡的 &lt;tt class="docutils literal"&gt;&amp;lt;hr&amp;gt;&lt;/tt&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+----
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="inline-markup"&gt;
+&lt;h2&gt;修飾字 Inline markup&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;斜體&lt;/em&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+*italic*
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;中文不能斜&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;粗體&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+**bold**
+&lt;/pre&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;有底色&lt;/tt&gt;:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+``有底色``
+&lt;/pre&gt;
+&lt;p&gt;&amp;quot;修飾字&amp;quot;的前後都要空格，如要跟後面的字相連可以用 &lt;tt class="docutils literal"&gt;\&lt;/tt&gt;跳脫，如: &lt;strong&gt;test&lt;/strong&gt;123:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+**test**\123
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;定義&lt;/h2&gt;
+&lt;p&gt;定義:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+what
+  Definition of “what”. We add a few words to show the line wrapping.
+how
+  Definition of “how”.
+&lt;/pre&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;what&lt;/dt&gt;
+&lt;dd&gt;Definition of “what”. We add a few words to show the line wrapping.&lt;/dd&gt;
+&lt;dt&gt;how&lt;/dt&gt;
+&lt;dd&gt;Definition of “how”.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lists"&gt;
+&lt;h2&gt;條列 Lists&lt;/h2&gt;
+&lt;p&gt;標示字符用*, +, -,等都可以:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+* 第一項
+
+  * 子項目不是只有縮排, 上面要空一行才可以
+
+* 第二項
+
+1. uno
+2. dos
+
+a) eins
+b) zwai
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="blocks"&gt;
+&lt;h2&gt;文字區塊 Blocks&lt;/h2&gt;
+&lt;p&gt;以下是區塊, 要空一行和縮排:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+跟你說::
+
+  嘻嘻
+&lt;/pre&gt;
+&lt;p&gt;註解/警告:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. note:: this is a note.
+.. warning:: this is a warning.
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;this is a note.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="warning"&gt;
+&lt;p class="first admonition-title"&gt;Warning&lt;/p&gt;
+&lt;p class="last"&gt;this is a warning.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="syntax-highlighting"&gt;
+&lt;h3&gt;Syntax Highlighting&lt;/h3&gt;
+&lt;div class="section" id="include-source"&gt;
+&lt;h4&gt;Include Source&lt;/h4&gt;
+&lt;p&gt;會把原始碼印出來。&lt;/p&gt;
+&lt;p&gt;Python:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. iteralinclude:: example.py
+  :linenos:
+&lt;/pre&gt;
+&lt;p&gt;PHP:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. literalinclude:: example.php
+  :language: php
+  :prepend: &amp;lt;?php
+  :append: ?&amp;gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id6"&gt;
+&lt;h2&gt;連結&lt;/h2&gt;
+&lt;div class="section" id="id7"&gt;
+&lt;h3&gt;外部連結&lt;/h3&gt;
+&lt;p&gt;例子:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+`連結的標題 &amp;lt;http://example.com&amp;gt;`__
+`&amp;lt;http://example.com&amp;gt;`
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id8"&gt;
+&lt;h3&gt;內部連結&lt;/h3&gt;
+&lt;p&gt;在某個rst文件裡的任何一個地方定義:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. _test_label:
+&lt;/pre&gt;
+&lt;p&gt;連結:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+:ref:`標題文字&amp;lt;test_label&amp;gt;`
+&lt;/pre&gt;
+&lt;p&gt;或是用:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+:doc:`reST`
+&lt;/pre&gt;
+&lt;p&gt;會自動把文件標題抓出來:&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tables"&gt;
+&lt;h2&gt;表格 (Tables)&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="field-list"&gt;
+&lt;h2&gt;(Field list)&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="explicit-markup"&gt;
+&lt;h2&gt;Explicit Markup&lt;/h2&gt;
+&lt;div class="section" id="comments"&gt;
+&lt;h3&gt;Comments&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id9"&gt;
+&lt;h2&gt;參考資料&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://people.ee.ethz.ch/~creller/web/tricks/reST.html"&gt;reST – reStructuredText — Bits and Pieces&lt;/a&gt; - 簡潔扼要, 還有附Emacs的ReST mode&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html#restructured-text-rest-resources"&gt;Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation&lt;/a&gt; -&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html"&gt;3.6.1. Restructured Text (reST) and Sphinx CheatSheet — openalea.doc v0.8.0 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html"&gt;Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="docs"></category></entry><entry><title>Software</title><link href="http://suhen.org/2013-03-28_software.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-28:2013-03-28_software.html</id><summary type="html">&lt;div class="section" id="desktop-tips"&gt;
+&lt;h2&gt;Desktop Tips&lt;/h2&gt;
+&lt;div class="section" id="mac-osx"&gt;
+&lt;h3&gt;Mac OSX&lt;/h3&gt;
+&lt;p&gt;zoom in/out: Command Opt =/-&lt;/p&gt;
+&lt;p&gt;強制結束: Command Opt Esc&lt;/p&gt;
+&lt;p&gt;區域截圖: Command Shift 4&lt;/p&gt;
+&lt;p&gt;顯示User Library: 在Finder裡的Go(前往), 按住option, 就會出現&lt;/p&gt;
+&lt;p&gt;輸入特殊符號: Command + option + T&lt;/p&gt;
+&lt;p&gt;放大縮小: Command + &amp;quot;+&amp;quot; / Command + &amp;quot;-&amp;quot;&lt;/p&gt;
+&lt;p&gt;無線網路密碼&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;到&amp;quot;鑰匙圈存取&amp;quot;: Finder -&amp;gt; 工具程式 -&amp;gt; 鑰匙圈存取&lt;/li&gt;
+&lt;li&gt;找基地台名稱, 分類是&amp;quot;AirPort網路密碼&amp;quot;, 顯示密碼&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;好用軟體&lt;/h2&gt;
+&lt;div class="section" id="internet"&gt;
+&lt;h3&gt;Internet&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;bt - Deluge (Linux)&lt;/li&gt;
+&lt;li&gt;IRC Client (OS X)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="ebook"&gt;
+&lt;h3&gt;ebook&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://calibre-ebook.com/"&gt;calibre - E-book management&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;系統工具&lt;/h3&gt;
+&lt;p&gt;osx mount ext2/3: &lt;a class="reference external" href="http://osxfuse.github.com/"&gt;FUSE for OS X&lt;/a&gt; + &lt;a class="reference external" href="http://sourceforge.net/projects/fuse-ext2/"&gt;fuse-ext2&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="devtools"&gt;
+&lt;h3&gt;DevTools&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.pixelwindowapp.com/"&gt;PixelWindow&lt;/a&gt; resolution ruler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="command-line"&gt;
+&lt;h2&gt;Command Line&lt;/h2&gt;
+&lt;div class="section" id="tumx"&gt;
+&lt;h3&gt;tumx&lt;/h3&gt;
+&lt;p&gt;# 開新視窗
+C-b c&lt;/p&gt;
+&lt;p&gt;# 前/後一個視窗
+C-b n/p&lt;/p&gt;
+&lt;p&gt;# 分割上下視窗
+C-b &amp;quot;&lt;/p&gt;
+&lt;p&gt;# 分割左右視窗
+C-b %&lt;/p&gt;
+&lt;p&gt;# 重整視窗(幫你排)
+C-b SPACE&lt;/p&gt;
+&lt;p&gt;# 調整視窗大小
+C-b 按著不放再按上下左右&lt;/p&gt;
+&lt;p&gt;# 移動到另一視窗
+C-b 上下左右
+C-b o&lt;/p&gt;
+&lt;p&gt;# 視窗交換位址&lt;/p&gt;
+&lt;p&gt;C-b C-o&lt;/p&gt;
+&lt;p&gt;# 顯示時間
+C-b t&lt;/p&gt;
+&lt;p&gt;# 把目前tmux session丟到背景去 (回到原本terminal)
+C-b d&lt;/p&gt;
+&lt;p&gt;# 回到剛才的tmux session
+tmux attach&lt;/p&gt;
+&lt;p&gt;# help
+C-b ?&lt;/p&gt;
+&lt;p&gt;scroll:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Ctrl-b [ 上/下/左/右 , q 離開
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tools"&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;div class="section" id="dot-grphviz"&gt;
+&lt;h3&gt;dot (grphviz)&lt;/h3&gt;
+&lt;p&gt;輸出png:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+dot foo.dot -Tpng -o foo.png
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;-T: format -o: output&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;註解用/* */ 或 //，像C++一樣&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;ref:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.graphviz.org/content/node-shapes"&gt;Node Shapes | Graphviz - Graph Visualization Software&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.graphviz.org/content/dot-language"&gt;The DOT Language | Graphviz - Graph Visualization Software&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.graphviz.org/Gallery.php"&gt;Gallery | Graphviz - Graph Visualization Software&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="ffmpeg"&gt;
+&lt;h3&gt;ffmpeg&lt;/h3&gt;
+&lt;p&gt;usage:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+ffmpeg -i [source] [target]
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;-vcodec&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;-s 100x100&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;-t 10 (前10秒)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;-vf crop=100:100 (切中間100x100), crop=in_w-480:in_h(左右各切240)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;-aspect 4:3&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;列出所有codecs:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ ffmpeg -codecs
+&lt;/pre&gt;
+&lt;p&gt;列出所有file format:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ ffmpeg -formats
+&lt;/pre&gt;
+&lt;div class="section" id="tips"&gt;
+&lt;h4&gt;Tips&lt;/h4&gt;
+&lt;p&gt;右上角watermark:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ ffmpeg –i inputvideo.avi -vf &amp;quot;movie=watermarklogo.png [watermark]; [in][watermark] overlay=main_w-overlay_w-10:10 [out]&amp;quot; outputvideo.flv
+&lt;/pre&gt;
+&lt;p&gt;via: &lt;a class="reference external" href="http://www.idude.net/index.php/how-to-watermark-a-video-using-ffmpeg/"&gt;How to watermark a video using FFmpeg | iDude.net&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://suhen.org/2013-03-28_unix-command-chang-yong-zhi-ling.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-28:2013-03-28_unix-command-chang-yong-zhi-ling.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;檔案&lt;/h2&gt;
+&lt;p&gt;把檔案foo複製到以下全部目錄裡:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ find . -type d |xargs -n 1 cp -i foo
+&lt;/pre&gt;
+&lt;table class="docutils field-list" frame="void" rules="none"&gt;
+&lt;col class="field-name" /&gt;
+&lt;col class="field-body" /&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr class="field"&gt;&lt;th class="field-name"&gt;xargs -n 1:&lt;/th&gt;&lt;td class="field-body"&gt;把每一行command line輸出當作一個參數&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="field"&gt;&lt;th class="field-name"&gt;cp -i:&lt;/th&gt;&lt;td class="field-body"&gt;詢問y or n&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;檔案大寫改小寫:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
+&lt;/pre&gt;
+&lt;p&gt;找目錄名稱:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ find / -type d -name &amp;quot;dir_name&amp;quot;
+&lt;/pre&gt;
+&lt;p&gt;找出體積最大前十檔案/目錄:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ du -a /home | sort -n -r | head -n 10
+&lt;/pre&gt;
+&lt;p&gt;via: &lt;a class="reference external" href="http://www.hkcode.com/linux-bsd-notes/693"&gt;Linux 下找出體積最大的檔案/目錄 – 網絡技術日誌&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;某目錄下的全部檔案的字串:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ grep -rl flaskext . |xargs sed -i -e 's/flaskext/flask.ext/'
+&lt;/pre&gt;
+&lt;p&gt;via: &lt;a class="reference external" href="http://www.commandlinefu.com/commands/view/4698/recursive-search-and-replace-old-with-new-string-inside-files"&gt;recursive search and replace old with new string, inside files | commandlinefu.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;匹次改檔名:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+for f in *.html; do
+    base=`basename $f .html`
+    mv $f $bae.php
+done
+&lt;/pre&gt;
+&lt;p&gt;coding convert:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# big5 to utf-8
+$ iconv -f big5 -t utf-8 big5.txt -o utf8.txt
+
+# 簡體轉繁體
+$ cat test.txt | iconv -f gb2312 -t big5
+
+# 繁體轉簡體
+$ cat test.txt | iconv -f big5 -t gb2312
+
+# Big5 編碼跟 UTF-8 編碼之間的轉換,如 UTF-8 轉 Big5
+$ cat test.txt | iconv -f utf-8 -t big5
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;編輯&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://coolshell.cn/articles/9070.html"&gt;AWK 简明教程 | 酷壳 - CoolShell.cn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;vim硬是要存檔:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+:w !sudo tee %
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;網路&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+$ lsof -i # monitors network connections in real time
+$ iftop # shows bandwith usage per *connection*
+$ nethogs #shows the bandwith usage per *process*
+
+# iOS
+$ sudo lsof -i -P
+$ lsof -n -i4TCP:5000 | grep LISTEN # 找出port5000
+&lt;/pre&gt;
+&lt;p&gt;rsync:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ rsync -av /etc /tmp () # 將 /etc/ 的資料備份到 /tmp/etc 內(local)
+$ rsync -av -e ssh user&amp;#64;host:/etc /tmp 將遠端 /etc 備份到local主機的 /tmp 內
+&lt;/pre&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://blog.longwin.com.tw/2010/02/netstat-check-connect-2010/"&gt;使用 netstat 找出不正常的連線 | Tsung's Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="service"&gt;
+&lt;h2&gt;Service&lt;/h2&gt;
+&lt;p&gt;關掉uwsgi的process:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+ps ca|grep uwsgi |awk '{ print $1}' | xargs --no-run-if-empty sudo kill -9
+&lt;/pre&gt;
+&lt;p&gt;快速靜態檔案server:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ python -m SimpleHTTPServer 8080
+&lt;/pre&gt;
+&lt;/div&gt;
+</summary><category term="docs"></category></entry><entry><title>GIT</title><link href="http://suhen.org/2013-03-23_git.html" rel="alternate"></link><updated>2013-03-23T00:00:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-23:2013-03-23_git.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
+&lt;h2&gt;Quick Start&lt;/h2&gt;
+&lt;div class="section" id="init"&gt;
+&lt;h3&gt;init&lt;/h3&gt;
+&lt;p&gt;Server (Repository):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mkdir example.git
+cd example.git
+git --bare init # init加--bare, 表示只會在當下目錄放git的東西，不會有原始檔案, 如果要原始檔案再git clone出來就有了
+&lt;/pre&gt;
+&lt;p&gt;Client:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+mkdir example
+cd example
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin ssh://USERNAME&amp;#64;REMOTE_SERVER/~/example.git
+git push origin master (第一次之後只要打git push就可以了)
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="basic"&gt;
+&lt;h2&gt;Basic&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Tree Roles&lt;/strong&gt;&lt;/p&gt;
+&lt;table class="docutils field-list" frame="void" rules="none"&gt;
+&lt;col class="field-name" /&gt;
+&lt;col class="field-body" /&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr class="field"&gt;&lt;th class="field-name"&gt;HEAD:&lt;/th&gt;&lt;td class="field-body"&gt;最後一次的commit (Repo)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="field"&gt;&lt;th class="field-name"&gt;Index:&lt;/th&gt;&lt;td class="field-body"&gt;目前要commit的 (Staging)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="field"&gt;&lt;th class="field-name"&gt;Working Dir:&lt;/th&gt;&lt;td class="field-body"&gt;目前修改工作區&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="git-command"&gt;
+&lt;h2&gt;git command&lt;/h2&gt;
+&lt;div class="section" id="git-clone-add"&gt;
+&lt;h3&gt;git clone / add&lt;/h3&gt;
+&lt;p&gt;git clone:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git clone file:////home/somebody/repo/foo.git
+git clone ssh://host/~/repo/foo.git
+    git clone --bare /path/to/repo # 把原本的repo轉成bare出來
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;git pull origin master相當於git fetch和git merge origin/master&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;git add:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git add .
+git add -a
+git add foo
+git add -u # 只加修改過的檔案, 新增的檔案不加入.
+git add -i # 進入互動模式
+&lt;/pre&gt;
+&lt;p&gt;git rm/mv:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git rm foo
+git mv foo bar
+
+git rm --cached # 從版本控管裡那掉，保留原檔
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="git-reset-revert"&gt;
+&lt;h3&gt;git reset / revert&lt;/h3&gt;
+&lt;p&gt;reset: 移動HEAD, 更改SHA referenct(git記錄), 檔案還是目前最新的狀態
+還沒commit&lt;/p&gt;
+&lt;p&gt;revert: rollback, 並且會有一個新的commit(不像reset是回到某個commit)&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://progit.org/2011/07/11/reset.html"&gt;Pro Git - Reset Demystified&lt;/a&gt;
+git reset:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git reset --soft HEAD~ # HEAD指回the parent of HEAD, Index和Working Directory都不動(因為soft嘛)
+# 改一改再commit一次, 就是git commit --amend在做的事情一樣
+(修改放到staging area?)
+git reset [--mixed] HEAD~ # update Staging Area, 沒有打參數預設就是這個 (把stage的檔案給unstage?)
+git reset --hard HEAD~ # 完全清除, reset the working tree to the last commit
+#會改到檔案要注意
+&lt;/pre&gt;
+&lt;p&gt;Tips: 如果反悔可以用git reflog叫出來, 再reset回來&lt;/p&gt;
+&lt;p&gt;commit後要回來
+git revert (還原commit記錄) # revert是新增一個commit來做還原&lt;/p&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;push後就不能reset了, 如果已經push後就要用revert&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;git revert:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git revert HEAD # 回上一次commit, 並產生一個新的commit log
+This will create a new commit which undoes the change in HEAD
+git revert HEAD^ # 回上上一次commit
+git revert [SHA] # 回到此commit **之前**\的狀態, 也是產生一個新的commit log
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="git-log"&gt;
+&lt;h3&gt;git log&lt;/h3&gt;
+&lt;p&gt;git log:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git log --stat
+git log --stat --summary # 查每個版本間的更動檔案和行數
+git log --pretty=format:'%h : %s' --date-order --graph # 依照時間排序
+git log --since=&amp;quot;1 day ago&amp;quot; # 今天的
+git log --pretty=format:&amp;quot;%h was %an, %ar, message: %s&amp;quot; (--graph)
+git log --all # 秀出所有的 log (含 branch)
+git log -p # 將所有 log 和修改過得檔案內容列出
+git log -S'foo()' # log 裡面有 foo() 這字串的.
+git log --pretty=oneline # 秀 log 的方式
+git log --pretty=short # 秀 log 的方式
+git log --pretty=format:'%h was %an, %ar, message: %s'
+git log --pretty=format:'%h : %s' --graph # 會有簡單的文字圖形化, 分支等.
+git log --pretty=format:'%h : %s' --topo-order --graph # 依照主分支排序
+git log --pretty=format:'%h : %s' --date-order --graph # 依照時間排序
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="git-commit-checkout-stash"&gt;
+&lt;h3&gt;git commit / checkout / stash&lt;/h3&gt;
+&lt;p&gt;git commit:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git commit -m 'foo message'
+git commit --dry-run # 假commit
+git commit --no-verify # 不檢查每行程式碼最後是否有空白或tab
+git commit --amend -m 'edited message' # 改最後一次commit的的message
+# 通常出現錯誤&amp;quot;You have some suspicious patch lines&amp;quot;時用
+&lt;/pre&gt;
+&lt;p&gt;git checkout:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git checkout branch # 切換 branch
+git checkout filename # 從local repo抓回
+git checkout HEAD .  TODO
+git checkout xxxx . # 將所有檔案都 checkout 出來(xxxx commit 的版本, xxxx 是 commit 的編號前四碼), 注意, 若有修改的檔案都會被還原到上一版. TODO
+&lt;/pre&gt;
+&lt;p&gt;git stash:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git stash #  丟進暫存區
+git stash list # 列出所有暫存區的資料
+git stash pop # 取出最新的一筆, 並移除.
+git stash apply # 取出最新的一筆 stash 暫存資料. 但是 stash 資料不移除
+git stash clear # 把 stash 都清掉
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="git-branch-merge"&gt;
+&lt;h3&gt;git branch / merge&lt;/h3&gt;
+&lt;p&gt;git branch:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git branch # 看目前的branch
+git branch abcd # 開一個名為abcd的新branch
+git branch -d abcd # 刪除abcd
+git checkout abcd, 移到abcd
+git branch abcd # 開新branch, 但不移駕
+git co -b abcd 開新branch, 而且移駕到新開的branch
+&lt;/pre&gt;
+&lt;p&gt;git merge:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git mergetool kdiff3
+git merge --abort, 不要merge了
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="git-tag"&gt;
+&lt;h3&gt;git tag&lt;/h3&gt;
+&lt;p&gt;加tag:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git tag -a v0.2 -m &amp;quot;this is version 0.2&amp;quot;
+git tag -a v0.1.1 #abc123 為某版本加tag
+&lt;/pre&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;看此tag的log::&lt;/dt&gt;
+&lt;dd&gt;git show v0.1.2&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;刪除:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git tag -d v0.1.2
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="other"&gt;
+&lt;h3&gt;other&lt;/h3&gt;
+&lt;p&gt;git reflog&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+把之前的記錄都叫出來, 包括被git reset掉的, 如果時間久的話會被git洗掉
+然後再$ git reset --hard HASH 就回去了
+&lt;/pre&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://stackoverflow.com/questions/5473/undoing-a-git-reset-hard-head1"&gt;version control - Undoing a git reset --hard HEAD~1 - Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="undo"&gt;
+&lt;h3&gt;undo&lt;/h3&gt;
+&lt;p&gt;1. 還沒commit
+a) git reset --hard HEAD
+b) git checkout HEAD hello.rb
+2. commit後發現錯誤
+a) git revert HEAD # 回上個commit, 並建立一新commit
+b) git revert HEAD^ # 回上上個commit, 並建立一新commit
+3.
+git commit --amend&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://book.git-scm.com/4_undoing_in_git_-_reset,_checkout_and_revert.html"&gt;Git Book - Undoing in Git - Reset, Checkout and Revert&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tips"&gt;
+&lt;h2&gt;Tips&lt;/h2&gt;
+&lt;div class="section" id="git-clonebranch"&gt;
+&lt;h3&gt;git clone某一個branch&lt;/h3&gt;
+&lt;p&gt;以github的Flask當例子，要抓Flask的website branch&lt;/p&gt;
+&lt;p&gt;先git clone一份Flask，看所有的branch:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git branch -a
+&lt;/pre&gt;
+&lt;p&gt;可看到除了master外有一個remotes/origin/website，然後做一個叫website的branch:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git checkout -b website remotes/origin/website
+&lt;/pre&gt;
+&lt;p&gt;就會抓回到website這個branch，或是要直接拉下來看:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git checkout remotes/origin/experimental
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;other&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.slideshare.net/littlebtc/git-5528339"&gt;寫給大家的 Git 教學&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://nvie.com/posts/a-successful-git-branching-model/"&gt;A successful Git branching model » nvie.com&lt;/a&gt; git開發web方法&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/github/gitignore"&gt;github/gitignore at master - GitHub&lt;/a&gt; gitignore大全&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://gitready.com/"&gt;git ready » learn git one commit at a time&lt;/a&gt; git教學文(因材施教)&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://whygitisbetterthanx.com/"&gt;Why Git is Better Than X&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www-cs-students.stanford.edu/~blynn/gitmagic/"&gt;Git Magic - Preface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://ihower.tw/blog/archives/6696/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed:+ihower+({|ihower.tw|+blog+})&amp;amp;utm_content=Google+Reader"&gt;Git 教育訓練課程投影片 (2012) | ihower { blogging }&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="docs"></category></entry><entry><title>Dynamic DNS setting for Namecheap on Mac OSX</title><link href="http://suhen.org/2013-03-21_dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="alternate"></link><updated>2013-03-21T02:09:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-21:2013-03-21_dynamic-dns-setting-for-namecheap-on-mac-osx.html</id><summary type="html">&lt;p&gt;登入Namecheap啓用Dynamic &lt;a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service"&gt;link1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;設定DNS record:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+freedns1.registrar-servers.com
+freedns2.registrar-servers.com
+freedns3.registrar-servers.com
+freedns4.registrar-servers.com
+freedns5.registrar-servers.com
+&lt;/pre&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/532/51/how-does-free-dns-work"&gt;link2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安裝Dynamic DNS clinet (以OS X的ddclient為例):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ brew install ddclient
+&lt;/pre&gt;
+&lt;p&gt;在/usr/local/etc/ddclient裡建立ddclient.conf (範例在/usr/local/share/doc/ddclient), 裡面有namecheap的預設選項:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+protocol=namecheap
+server=dynamicdns.park-your-domain.com
+login=yourdomain.com
+password=1b9aafgfgjh1865e024fabb629dbd1d9c462
+&amp;#64;
+&lt;/pre&gt;
+&lt;p&gt;Install the launchd item in /Library/LaunchDaemons, like so:&lt;/p&gt;
+&lt;blockquote&gt;
+$ sudo cp -vf /usr/local/Cellar/ddclient/3.8.1/homebrew.mxcl.ddclient.plist /Library/LaunchDaemons/
+$ sudo chown -v root:wheel /Library/LaunchDaemons/homebrew.mxcl.ddclient.plist&lt;/blockquote&gt;
+&lt;p&gt;Start the daemon using:&lt;/p&gt;
+&lt;blockquote&gt;
+sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.ddclient.plist&lt;/blockquote&gt;
+&lt;p&gt;The next reboot of the system will automatically start ddclient.&lt;/p&gt;
+&lt;p&gt;You can adjust the execution interval by changing the value of
+StartInterval (in seconds) in /Library/LaunchDaemons/homebrew.mxcl.ddclient.plist,
+and then&lt;/p&gt;
+&lt;blockquote&gt;
+sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.ddclient.plist
+sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.ddclient.plist&lt;/blockquote&gt;
+</summary><category term="note"></category></entry><entry><title>Jack Ass (It's All Over Now Baby Blue)</title><link href="http://suhen.org/2012-07-02_jack_ass_baby_blue.html" rel="alternate"></link><updated>2012-07-02T23:22:33+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2012-07-02:2012-07-02_jack_ass_baby_blue.html</id><summary type="html">&lt;p&gt;最近電視看到「 &lt;a class="reference external" href="http://app.atmovies.com.tw/movie/movie.cfm?action=filmdata&amp;amp;film_id=flen10758752"&gt;愛情藥不藥&lt;/a&gt; 」(&lt;a class="reference external" href="http://www.imdb.com/title/tt0758752/"&gt;Love and Other Drugs&lt;/a&gt;)，都會聽到Beck的 &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Jack-Ass_(song)"&gt;Jack-Ass&lt;/a&gt; 。查了一下，小弟孤漏寡聞，原來背景飄飄然的配樂是完全取樣自北愛爾蘭催淚老將Van Morrison早期樂團Them的It's All Over Now, Baby Blue，而這首歌則是翻唱每首歌我聽起來都一樣的Bob Dylan，真的，別人翻唱他的歌都比較好聽... 詳見: The Times They Are A-Changin。然後，底特律嘻哈團Insane Clown Posse也翻唱Beck的，一首歌有這麼多種不同的詮釋，還是要感謝Bob Dylan啦。&lt;/p&gt;
+&lt;p&gt;原曲中的原曲 Bob Dylan - It's All Over Now, Baby Blue&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/hBiwMT77Csg" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;Beck取樣的來源: THEM &amp;amp; Van Morrison - It's All Over Now Baby Blue (1966)&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/D7WJHdE0__I" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;Beck - Jackass&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/hDh_hzNh_Vc" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;Beck - Strange Invitation (B-side不插電版)&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/sD18llgrxHQ" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;Insane Clown Posse - Another Love Song&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/fEVhOA1eVmE" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;Beck - Burro (拉丁版)&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/2ocqZrT58Ps" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;</summary><category term="經典翻唱"></category></entry></feed>
