@@ -1,0 +1,106 @@
+UNIX Command 常用指令
+#############################
+:date: 2013-03-28
+:category: computer
+:tags: docs
+
+檔案
+========
+
+把檔案foo複製到以下全部目錄裡::
+
+  $ find . -type d |xargs -n 1 cp -i foo
+
+:xargs -n 1: 把每一行command line輸出當作一個參數
+:cp -i: 詢問y or n
+
+
+檔案大寫改小寫::
+
+  $ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
+
+找目錄名稱::
+
+  $ find / -type d -name "dir_name"
+
+找出體積最大前十檔案/目錄:: 
+  
+  $ du -a /home | sort -n -r | head -n 10
+
+via: `Linux 下找出體積最大的檔案/目錄 – 網絡技術日誌 <http://www.hkcode.com/linux-bsd-notes/693>`__
+
+某目錄下的全部檔案的字串::
+
+  $ grep -rl flaskext . |xargs sed -i -e 's/flaskext/flask.ext/'
+
+via: `recursive search and replace old with new string, inside files | commandlinefu.com <http://www.commandlinefu.com/commands/view/4698/recursive-search-and-replace-old-with-new-string-inside-files>`__ 
+
+匹次改檔名::
+
+  for f in *.html; do
+      base=`basename $f .html`
+      mv $f $bae.php
+  done
+
+
+coding convert::
+
+  # big5 to utf-8
+  $ iconv -f big5 -t utf-8 big5.txt -o utf8.txt 
+
+  # 簡體轉繁體
+  $ cat test.txt | iconv -f gb2312 -t big5
+
+  # 繁體轉簡體
+  $ cat test.txt | iconv -f big5 -t gb2312
+
+  # Big5 編碼跟 UTF-8 編碼之間的轉換,如 UTF-8 轉 Big5
+  $ cat test.txt | iconv -f utf-8 -t big5
+
+
+編輯
+==========
+
+* `AWK 简明教程 | 酷壳 - CoolShell.cn <http://coolshell.cn/articles/9070.html>`__
+
+vim硬是要存檔::
+
+  :w !sudo tee %
+
+
+網路
+============
+::
+
+  $ lsof -i # monitors network connections in real time
+  $ iftop # shows bandwith usage per *connection*
+  $ nethogs #shows the bandwith usage per *process*
+
+  # iOS
+  $ sudo lsof -i -P
+  $ lsof -n -i4TCP:5000 | grep LISTEN # 找出port5000
+
+
+rsync::
+
+  $ rsync -av /etc /tmp () # 將 /etc/ 的資料備份到 /tmp/etc 內(local)
+  $ rsync -av -e ssh user@host:/etc /tmp 將遠端 /etc 備份到local主機的 /tmp 內
+
+
+
+
+* `使用 netstat 找出不正常的連線 | Tsung's Blog <http://blog.longwin.com.tw/2010/02/netstat-check-connect-2010/>`__
+
+
+Service
+===========
+
+關掉uwsgi的process::
+
+  ps ca|grep uwsgi |awk '{ print $1}' | xargs --no-run-if-empty sudo kill -9
+
+
+快速靜態檔案server::
+
+  $ python -m SimpleHTTPServer 8080
+

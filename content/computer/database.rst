@@ -1,0 +1,355 @@
+Database筆記
+#################
+:date: 2013-05-09 18:23
+:category: computer
+:tags: docs, mysql, sqlite
+:slug: database_note
+
+
+
+MySql
+=======================
+
+Syntax::
+
+    [ALL | DISTINCT | DISTINCTROW ]
+      [HIGH_PRIORITY]
+      [STRAIGHT_JOIN]
+      [SQL_SMALL_RESULT] [SQL_BIG_RESULT] [SQL_BUFFER_RESULT]
+      [SQL_CACHE | SQL_NO_CACHE] [SQL_CALC_FOUND_ROWS]
+    select_expr [, select_expr ...]
+    [FROM table_references
+    [WHERE where_condition]
+    [GROUP BY {col_name | expr | position}
+      [ASC | DESC], ... [WITH ROLLUP]]
+    [HAVING where_condition]
+    [ORDER BY {col_name | expr | position}
+      [ASC | DESC], ...]
+    [LIMIT {[offset,] row_count | row_count OFFSET offset}]
+    [PROCEDURE procedure_name(argument_list)]
+
+.. note:: MySQL的JOIN預設是 ``INNER JOIN`` ，另一種是LEFT OUTER JOIN，通常用 ``LEFT JOIN`` 就可以了。MySQL會優先處理JOIN，然後才是WHERE。
+
+cookbook
+--------
+CURD::
+
+   INSERT INTO tbl_name (col1,col2) VALUES(15,col1*2);
+   INSERT INTO tbl_name (a,b,c) VALUES(1,2,3),(4,5,6),(7,8,9);
+   UPDATE user SET password=password('新密碼') where user='root';　
+
+以中文筆畫排序::
+
+   CONVERT( 欄位名稱 using big5) 。
+
+
+function
+-----------
+
+時間::
+
+  SELECT NOW(),CURDATE(),CURTIME() # | 2012-06-04 14:19:42 | 2012-06-04 | 14:19:42 |
+  SELECT MONTH(FROM_UNIXTIME(add_date)) as month 
+
+ref: http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html
+
+
+Schema
+--------------------
+
+原則
+^^^^^^^^^^
+* 小的好
+* 簡單的好, 如integers比characters好, 不用判斷collations
+* 不要用 **NULL**, 影響效能, 可以用 ``0``, ``空字串``\或 ``N``\等值來代替
+
+整數
+^^^^^^^^
+資料儲存上 ``TINYINT``, ``SMALLINT``, ``MEDIUMINT``, ``INT``, ``BIGINT``\各使用了8, 16, 26, 32, 64 bits, 數值範圍-2^(N-1)到2(N-1)-1, 加了 ``UNSIGNED``\後, 範圍從0到2^N-1. 但是MySQL在 **計算**\上是用64-bit的BIGINT來算, 就算是32-bit的系統
+
+MySQL使用的整數長度, 如INT(11), 並不會真的有儲存限制, 只是為了command-line client的顯示, 在儲存和計算上INT(1)和INT(20)是一樣的.
+
+實數
+^^^^^^^^
+浮點數可以用 ``FLOAT`` (4 bytes), ``DOUBLE`` (8 bytes), ``DECIMAL`` 等格式, MySQL在浮點數的計算上都是用DOUBLE, 資料儲存上以DECIMAL為佳
+
+VARCHAR和CHAR
+^^^^^^^^^^^^^^^^^
+``VARCHAR``\是可變長度, 會用1到2byte存字串長度(MyISAM或InnoDB), ``CHAR``\是固字長度, 用來存Y/N, MD5值等.
+
+時間
+^^^^^^^^
+``DATETIME`` 以YYYYMMDDHHMMSS的格式儲存, 範圍從1001到9999年, 8 bytes
+
+``TIMESTAMP`` 以Unix timestamp格式, 範圍從1970到2038 (格林威治標準時間)
+
+選擇用TIMESTAMP比較節省空間, 但不要把unix timestamp存在整數格式, 因為沒有什麼好處, 也很難判讀
+
+
+其他
+^^^^^^^^^^^^^^
+``BLOB``\和 ``TEXT``\不同的是TEXT會有character set和collation, BLOB沒有
+
+
+最佳化
+------------------
+所有資料表最佳化::
+
+  mysqlcheck -a -c -o -r --all-databases -uroot -p
+
+a: analyze, c: check, o: optimize, r: repair
+
+重建索引::
+
+  myisamchk -s /var/lib/mysql/*/*.MYI
+
+s: silent mode (output only errors)
+
+.. note:: mysql要先停
+
+Tools
+--------
+`mysqlreport Documentation <http://hackmysql.com/mysqlreportdoc>`__::
+
+  mysqlreport  --user MY_USER --password MY_PASS
+
+.. note::  Read Hit: 從硬碟/記憶體讀取key的比率, 最好不要低於99%, 太低的話, 檢查Key Report, 調高key buffer
+.. note:: Slow: 要低於0.05
+
+`The Guide To Understanding mysqlreport <http://hackmysql.com/mysqlreportguide>`__
+
+* `Sundry MySQL Scripts and Docs <http://www.day32.com/MySQL/>`__ 很棒的MySQL tuning scripts
+* `rackerhacker/MySQLTuner-perl <https://github.com/rackerhacker/MySQLTuner-perl>`__
+* `mysqlsla :: Parse, filter and sort MySQL slow, general and binary logs <http://hackmysql.com/mysqlsla>`__
+
+
+常用處理
+-----------------
+
+改root密碼::
+
+  mysqladmin -u root -p'oldpassword' password newpass
+
+via: `MySQL Change root Password <http://www.cyberciti.biz/faq/mysql-change-root-password/>`__
+
+忘記root密碼
+^^^^^^^^^^^^^^^^^^
+1.\ 先關掉mysql server::
+
+  sudo /etc/init.d/mysql stop
+
+2.\ 開server, 但忽略grant-tables (存密碼的地方)::
+
+  mysqld_safe --user=mysql --skip-grant-tables --skip-networking &
+
+.. note:: mysqld_safe就是用更安全的方式開啟(重載)mysqld, 如有錯誤發生時會重開, 寫log.
+
+3.\ 用root進入sql改密碼::
+
+  mysql -u root mysql
+  > UPDATE user SET Password=PASSWORD('123456') WHERE User='root';
+  > FLUSH PRIVILEGES;
+  > exit
+
+或是把上面sql語法存在foo.txt裡, 用::
+
+  mysqld_safe --init-file=/pathto/foo.txt &
+
+.. note:: flush privileges; 重載授權表 
+
+參考
+
+* `Resetting the MySQL Root Password - SmartMachines - Joyent Customer Wiki <http://wiki.joyent.com/display/smart/Resetting+the+MySQL+Root+Password>`__
+
+連接外部資料庫
+^^^^^^^^^^^^^^^^^^^^^^^^^
+1.\ 改my.cnf(通常在/etc下)::
+
+  # skip-networking 此行註解掉
+  bind-address = 11.22.33.44 # 加上要連過來的ip
+
+.. note:: OpenSolaris的my.cnf好像在加在/var/mysql才會有作用
+
+2.\ 重開mysql
+
+3.\ 連線進入::
+
+  mysql -u root –p mysql
+  mysql> CREATE DATABASE foo;
+  mysql> GRANT ALL ON foo.* TO bar@'11.22.33.44' IDENTIFIED BY '密碼';
+
+  mysql> update db set Host='11.22.33.44' where Db='資料庫名稱';
+  mysql> update user set Host='11.22.33.44' where user='使用者名稱';
+
+4.\ 重開mysql
+
+5.\ 測試能不能連::
+ 
+  mysql -h 主機 -u root -p
+
+
+資料庫編碼
+^^^^^^^^^^^^^^^^^^^^^^^^^
+列出MySQL各種編碼變數::
+
+   show variables like "character%";
+
+php的 ``mysql_query("SET NAMES UTF8");`` 相當於MySQL::
+
+   SET character_set_client = utf8;
+   SET character_set_results = utf8;
+   SET character_set_connection = utf8;
+
+編碼順序: **client -> connect -> server -> connect -> client**
+
+亂碼處理
+^^^^^^^^^^^^^^^^^^^
+
+原本是latin1(ISO 8859-1)編碼, 要改成utf-8:
+
+1. mysqldump -uroot -p mydb --default-character-set=latin1 > old.sql
+2. piconv -f utf8 -t utf8 old.sql> new.sql
+3. 打開new.sql裡面加 ``SET NAMES utf8``;
+4. mysql -uroot -pmypassword -Dmydb_new --default-character-set=utf8 < new.sql 
+
+
+command
+-----------
+執行::
+
+  mysql -uUSER -pPASS -e "DROP DATABASE foo; CREATE DATABASE bar COLLATE 'utf8_general_ci';"
+
+  SHOW DATABASES;
+  SHOW TABLES;
+  USE db_name;
+
+  TRUNCATE tbl_name;
+  DROP DATABASE db_name;
+  DROP TABLE tbl_name;
+
+
+Server Management
+---------------------------
+
+安裝, 以Debian為例::
+
+   # 清除
+   sudo apt-get --purge remove mysql-server mysql-common mysql-client
+   # 安裝
+   sudo apt-get install mysql-server mysql-common mysql-client php5-mysql
+   # 第一次設定admin密碼
+   mysqladmin -u root password your-new-password
+   # 啟動
+   sudo /etc/init.d/mysql restart
+   # data位置
+   # /var/lib/mysql
+
+
+Mac OS X
+^^^^^^^^^^
+從MySql(http://dev.mysql.com/downloads/mysql/) 找適何的package，裝完後:
+
+binary:: 
+
+  /usr/local/mysql/bin/mysql
+
+path::
+
+  export PATH=/usr/local/mysql/bin:$PATH
+  sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
+
+
+Import / Export
+^^^^^^^^^^^^^^^^^^^^^^
+倒整個資料庫::
+
+   $ mysqldump ---u myuser -p myuser_db > myuser_db.sql
+   $ mysqldump --skip-lock-tables -umysuer -ppassword --database mydb > backup.sql
+
+
+倒一個資料表::
+
+   $ mysqldump -u myuser -p myuser_db sometable > myuser_db_sometable.sql
+
+到多個叫foo_開頭的資料表到同一個檔案::
+
+   mysql databasename -u [root] -p[password] -e 'show tables like "foo_%"' | grep -v Tables_in | xargs mysqldump [databasename] -u [root] -p[password] > [target_file]
+
+**import**
+
+方法1::
+
+   直接import
+   $ mysql  -uname -p dbname  --default-character-set=utf8  <  XXX.sql
+
+方法2::
+
+   先登入mysql shell介面
+   $ mysql -u myuser -p
+   $ use myuser_db; #select db
+   $ \. myuser_db_sometable.sql
+   $ \q
+
+
+Configuration
+----------------------
+
+my.cnf選用(/usr/share/mysql/下)
+
+* my-small.cnf(小於64MB的記憶體)
+* my-medium.cnf (64~128MB的記憶體)
+* my-large.cnf (128~512MB的記憶體)
+* my-huge.cnf (1~2GB的記憶體)
+* my-innodb-heavy-4G.cnf (4GB的記憶體)
+
+
+找my.cnf::
+
+  mysql --verbose --help | grep -A 1 'Default options'
+  # CentOS: /etc/my.cnf ~/.my.cnf
+
+my.cnf::
+
+  [mysqld]
+  set-variable=max_connections=250
+  default-storage-engine=InnoDB # 預設選用InnoDB
+
+  # slow query
+  log-slow-queries=/tmp/slow-query.log # 
+  long_query_time = 3 #query超過2秒時，則會記錄
+  log-queries-not-using-indexes
+
+  # optimize
+  query_cache_size # 大量相同的query時, 很有用
+  key_buffer_size # 越大query越快, 但最好設定1/4, 不要超過一半的系統記憶體 (看*.MYI的size多大, 就設多大)
+
+
+.. note:: MySQL安裝時不一定會產生
+
+
+
+
+others
+------------------
+* `探討 MySQL 授權 | Ant's ATField <http://antbsd.twbbs.org/~ant/wordpress/?p=2259>`__
+
+Sqlite
+===============
+sql import::
+
+  cat dumpfile.sql | sqlite3 my_database.sqlite
+
+
+.. Comment
+   Engine
+   - [[http://blog.roga.tw/2008/11/19/1288][MySQL 資料庫儲存引擎的選用]]
+   - [[http://miggo.pixnet.net/blog/post/30855147][MySQL各Engine Type(MyISAM / InnoDB / Memory) 的特性說明]]
+   - [[http://www.student.tw/db/showthread.php?t=174156][【問題】Mysql 中的 MyIsam 與 InnoDB 之差異 - 深藍學生論壇]]
+   ** type
+   - [[http://www.systn.com/data/articles/304_tw.html][mysql中char與varchar的區別]]
+
+不同處
+===========
+
+:MySQL: RAND()
+:Sqlite: RANDOM()
