@@ -33,7 +33,7 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="./2013-03-28_unix-command-chang-yong-zhi-ling.html" rel="bookmark"
+        <a href="./2013-03-28_unix_command.html" rel="bookmark"
            title="Permalink to UNIX Command 常用指令">UNIX Command 常用指令</a></h1>
           </header>
 
@@ -67,6 +67,10 @@ $ find . -type d |xargs -n 1 cp -i foo
 <p>檔案大寫改小寫:</p>
 <pre class="literal-block">
 $ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
+</pre>
+<p>改檔名, 只取數字, JPG改jpg:</p>
+<pre class="literal-block">
+for i in *.JPG ; do mv &quot;$i&quot; `echo $i | tr -dc '[0-9]'`&quot;.jpg&quot; ; done
 </pre>
 <p>找目錄名稱:</p>
 <pre class="literal-block">
@@ -151,7 +155,7 @@ $ python -m SimpleHTTPServer 8080
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "2013-03-28_unix-command-chang-yong-zhi-ling.html";
+        var disqus_identifier = "2013-03-28_unix_command.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';

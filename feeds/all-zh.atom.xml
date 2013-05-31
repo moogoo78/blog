@@ -1868,7 +1868,7 @@ $ ffmpeg –i inputvideo.avi -vf &amp;quot;movie=watermarklogo.png [watermark]; 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://suhen.org/2013-03-28_unix-command-chang-yong-zhi-ling.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-28:2013-03-28_unix-command-chang-yong-zhi-ling.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+</summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://suhen.org/2013-03-28_unix_command.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-28:2013-03-28_unix_command.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;檔案&lt;/h2&gt;
 &lt;p&gt;把檔案foo複製到以下全部目錄裡:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -1887,6 +1887,10 @@ $ find . -type d |xargs -n 1 cp -i foo
 &lt;p&gt;檔案大寫改小寫:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
+&lt;/pre&gt;
+&lt;p&gt;改檔名, 只取數字, JPG改jpg:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+for i in *.JPG ; do mv &amp;quot;$i&amp;quot; `echo $i | tr -dc '[0-9]'`&amp;quot;.jpg&amp;quot; ; done
 &lt;/pre&gt;
 &lt;p&gt;找目錄名稱:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;

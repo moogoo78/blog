@@ -458,7 +458,7 @@ def func(a, *pargs, **kargs): print a, pargs, kargs
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../2013-03-28_unix-command-chang-yong-zhi-ling.html" rel="bookmark"
+                    <h1><a href="../2013-03-28_unix_command.html" rel="bookmark"
                            title="Permalink to UNIX Command 常用指令">UNIX Command 常用指令</a></h1>
                 </header>
                 
@@ -493,15 +493,11 @@ $ find . -type d |xargs -n 1 cp -i foo
 <pre class="literal-block">
 $ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
 </pre>
-<p>找目錄名稱:</p>
+<p>改檔名, 只取數字, JPG改jpg:</p>
 <pre class="literal-block">
-$ find / -type d -name &quot;dir_name&quot;
-</pre>
-<p>找出體積最大前十檔案/目錄:</p>
-<pre class="literal-block">
-$ du -a /home | sort ...</pre></div>
-                <a class="readmore" href="../2013-03-28_unix-command-chang-yong-zhi-ling.html">read more</a>
-                <p>There are <a href="../2013-03-28_unix-command-chang-yong-zhi-ling.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+for i in *.JPG ; do mv &quot;$i&quot; `echo $i ...</pre></div>
+                <a class="readmore" href="../2013-03-28_unix_command.html">read more</a>
+                <p>There are <a href="../2013-03-28_unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
