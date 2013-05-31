@@ -3,6 +3,7 @@ UNIX Command 常用指令
 :date: 2013-03-28
 :category: computer
 :tags: docs
+:slug: unix_command
 
 檔案
 ========
@@ -18,6 +19,11 @@ UNIX Command 常用指令
 檔案大寫改小寫::
 
   $ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
+
+改檔名, 只取數字, JPG改jpg::
+
+  for i in *.JPG ; do mv "$i" `echo $i | tr -dc '[0-9]'`".jpg" ; done
+
 
 找目錄名稱::
 
