@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Suhen's Blog - computer</title>
+        <title>Gentle Runner - computer</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
-                <link href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's Blog Atom Feed" />
+                <link href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gentle Runner Atom Feed" />
                 
         <!--[if IE]>
                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -20,9 +20,10 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="../">Suhen's Blog </a></h1>
+                <h1><a href="../">Gentle Runner </a></h1>
                 <nav><ul>
-                                                                                                    <li class="active"><a href="../category/computer.html">computer</a></li>
+                                                                    <li><a href="../pages/about.html">About</a></li>
+                                                                    <li class="active"><a href="../category/computer.html">computer</a></li>
                                     <li ><a href="../category/language.html">language</a></li>
                                     <li ><a href="../category/music.html">music</a></li>
                                     <li ><a href="../category/nature.html">nature</a></li>
@@ -34,36 +35,57 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../2013-06-01_pelican_github.rst.html">Pelican github</a></h1> 
+                    <h1 class="entry-title"><a href="../pelican_github.rst.html">把靜態blog放到github上，以pelican為例</a></h1> 
                     <footer class="post-info">
         <abbr class="published" title="2013-06-01T11:36:00">
                 2013-06-01 11:36
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info --><p>Github pages可以把靜態網頁</p>
+</footer><!-- /.post-info --><p>之前開始把blog轉到使用 <a class="reference external" href="pelican.rst.html">pelican產生靜態blog</a> ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。</p>
 <p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
-<p><a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew">Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry</a></p>
-<p>自訂domain
-<a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">Setting up a custom domain with Pages · GitHub Help</a></p>
-<p>204.232.175.78</p>
-<p><a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html">Tips — Pelican 3 documentation</a></p>
-<p>$ pip install ghp-import</p>
-<p>$ pelican -s pelican.conf.py .
+<div class="section" id="id1">
+<h2>環境設定</h2>
+<p>python要用virtualenv才是王道:</p>
+<pre class="literal-block">
+$ mkvirtualenv sillywalk.org
+$ cd sillkwalk.org
+$ setvirtualenvproject
+$ workon sillywalk.org
+
+$ pip install pelican
+$ pip install ghp-import # 方便發佈到github pages的工具
+</pre>
+</div>
+<div class="section" id="html">
+<h2>產生HTML，發佈</h2>
+<p>產生HTML內容:</p>
+<pre class="literal-block">
+$ pelican -s pelican.conf.py .
 $ ghp-import output
-$ git push origin gh-pages</p>
-<hr class="docutils" />
-<blockquote>
-mkvirtualenv sillywalk.org
-cd sillkwalk.org
-setvirtualenvproject</blockquote>
-<p>workon your_username.github.com</p>
-<p>pip install -r requirements.txt</p>
-<p>There are <a href="../2013-06-01_pelican_github.rst.html#disqus_thread">comments</a>.</p>                </article>
+$ git push origin gh-pages
+</pre>
+</div>
+<div class="section" id="domain">
+<h2>自訂domain</h2>
+<ol class="arabic simple">
+<li>在你的domain設定指向github的IP</li>
+<li>在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>參考</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew">Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry</a></li>
+<li><a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html">Tips — Pelican 3 documentation</a></li>
+<li><a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">Setting up a custom domain with Pages · GitHub Help</a></li>
+</ul>
+</div>
+<p>There are <a href="../pelican_github.rst.html#disqus_thread">comments</a>.</p>                </article>
                             </aside><!-- /#featured -->
                             <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -74,7 +96,7 @@ setvirtualenvproject</blockquote>
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../2013-05-26_irc_screen_irssi.html" rel="bookmark"
+                    <h1><a href="../irc_screen_irssi.html" rel="bookmark"
                            title="Permalink to 用screen+irssi上IRC聊天不斷線">用screen+irssi上IRC聊天不斷線</a></h1>
                 </header>
                 
@@ -85,7 +107,7 @@ setvirtualenvproject</blockquote>
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a></p>
@@ -114,15 +136,15 @@ alt + 數字
 </pre>
 <p>但是Mac的Alt會變成輸入特殊字, 用iTerm的話, 可以如以下設定:</p>
 <p>Bookmarks ...</p>
-                <a class="readmore" href="../2013-05-26_irc_screen_irssi.html">read more</a>
-                <p>There are <a href="../2013-05-26_irc_screen_irssi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../irc_screen_irssi.html">read more</a>
+                <p>There are <a href="../irc_screen_irssi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../2013-05-09_database_note.html" rel="bookmark"
+                    <h1><a href="../database_note.html" rel="bookmark"
                            title="Permalink to Database筆記">Database筆記</a></h1>
                 </header>
                 
@@ -133,7 +155,7 @@ alt + 數字
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/docs.html">docs</a><a href="../tag/mysql.html">mysql</a><a href="../tag/sqlite.html">sqlite</a></p>
@@ -160,15 +182,15 @@ select_expr [, select_expr ...]
 <div class="note">
 <p class="first admonition-title">Note</p>
 <p class="last">MySQL的JOIN預設是 <tt class="docutils literal">INNER JOIN ...</tt></p></div></div>
-                <a class="readmore" href="../2013-05-09_database_note.html">read more</a>
-                <p>There are <a href="../2013-05-09_database_note.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../database_note.html">read more</a>
+                <p>There are <a href="../database_note.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../2013-04-26_emacs.html" rel="bookmark"
+                    <h1><a href="../emacs.html" rel="bookmark"
                            title="Permalink to Emacs">Emacs</a></h1>
                 </header>
                 
@@ -179,7 +201,7 @@ select_expr [, select_expr ...]
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/docs.html">docs</a></p>
@@ -218,15 +240,15 @@ M-x replace-regexp RET $ RET &quot;, RET ;; 結尾加&quot;
 M-x cua-mode
 選好區塊
 C-RET ...</pre></div>
-                <a class="readmore" href="../2013-04-26_emacs.html">read more</a>
-                <p>There are <a href="../2013-04-26_emacs.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../emacs.html">read more</a>
+                <p>There are <a href="../emacs.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../2013-04-23_emacs_elscreen.html" rel="bookmark"
+                    <h1><a href="../emacs_elscreen.html" rel="bookmark"
                            title="Permalink to Elscreen - Emacs好用的tab mode">Elscreen - Emacs好用的tab mode</a></h1>
                 </header>
                 
@@ -237,7 +259,7 @@ C-RET ...</pre></div>
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a></p>
@@ -254,15 +276,15 @@ C-RET ...</pre></div>
 (global-set-key (kbd &quot;C-x w&quot;) 'elscreen-kill)
 (global-set-key (kbd &quot;M-t&quot;) 'elscreen-previous) ;;transpose-words
 (global-set-key ...</pre>
-                <a class="readmore" href="../2013-04-23_emacs_elscreen.html">read more</a>
-                <p>There are <a href="../2013-04-23_emacs_elscreen.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../emacs_elscreen.html">read more</a>
+                <p>There are <a href="../emacs_elscreen.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../2013-04-11_pelican.rst.html" rel="bookmark"
+                    <h1><a href="../pelican.rst.html" rel="bookmark"
                            title="Permalink to Pelican - 邁向靜態blog之路">Pelican - 邁向靜態blog之路</a></h1>
                 </header>
                 
@@ -273,7 +295,7 @@ C-RET ...</pre></div>
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a></p>
@@ -300,15 +322,15 @@ $ content/first.rst
 $ make html # 顧名思義
 $ make rsync_upload # 用rsync上傳到你的ssh host
 $ make serve ...</pre></div>
-                <a class="readmore" href="../2013-04-11_pelican.rst.html">read more</a>
-                <p>There are <a href="../2013-04-11_pelican.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../pelican.rst.html">read more</a>
+                <p>There are <a href="../pelican.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../2013-04-09_scripting-languages-draft.html" rel="bookmark"
+                    <h1><a href="../scripting-languages-draft.html" rel="bookmark"
                            title="Permalink to Scripting Languages (draft)">Scripting Languages (draft)</a></h1>
                 </header>
                 
@@ -319,7 +341,7 @@ $ make serve ...</pre></div>
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/docs.html">docs</a></p>
@@ -349,15 +371,15 @@ squares[1] # 1
 def func(a, *pargs, **kargs): print a, pargs, kargs
 # &gt;&gt;&gt; f(1, 2, 3, x=1, y=2)
 # 1 ...</pre></div></div>
-                <a class="readmore" href="../2013-04-09_scripting-languages-draft.html">read more</a>
-                <p>There are <a href="../2013-04-09_scripting-languages-draft.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../scripting-languages-draft.html">read more</a>
+                <p>There are <a href="../scripting-languages-draft.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../2013-04-09_python-web-framework.html" rel="bookmark"
+                    <h1><a href="../python-web-framework.html" rel="bookmark"
                            title="Permalink to Python Web Framework">Python Web Framework</a></h1>
                 </header>
                 
@@ -368,7 +390,7 @@ def func(a, *pargs, **kargs): print a, pargs, kargs
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/docs.html">docs</a></p>
@@ -404,15 +426,15 @@ print django.get_version()
 <li><a class="reference external" href="http://jinja.pocoo.org/docs/">Jinja2 documentation</a></li>
 <li><a class="reference external" href="http://packages.python.org/Flask-SQLAlchemy/">Flask-SQLAlchemy documentation</a>, <a class="reference external" href="https://github.com/brosner/sqlalchemy">github</a>, <a class="reference external" href="http://docs.sqlalchemy.org/en/latest/index.html">SQLAlchemy Documentation</a></li>
 <li><a class="reference external" href="http://packages.python.org/Flask-Login/">Flask-Login documentation</a>, <a class="reference external" href="https://bitbucket.org/leafstorm/flask-login">leafstorm / flask-login / overview — Bitbucket ...</a></li></ul></div></div>
-                <a class="readmore" href="../2013-04-09_python-web-framework.html">read more</a>
-                <p>There are <a href="../2013-04-09_python-web-framework.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../python-web-framework.html">read more</a>
+                <p>There are <a href="../python-web-framework.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../2013-04-02_blog.html" rel="bookmark"
+                    <h1><a href="../blog.html" rel="bookmark"
                            title="Permalink to blog">blog</a></h1>
                 </header>
                 
@@ -423,7 +445,7 @@ print django.get_version()
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/docs.html">docs</a></p>
@@ -455,15 +477,15 @@ print django.get_version()
 <ul class="simple">
 <li>300 Multiple Choices</li>
 <li>301 Moved ...</li></ul></div></div>
-                <a class="readmore" href="../2013-04-02_blog.html">read more</a>
-                <p>There are <a href="../2013-04-02_blog.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../blog.html">read more</a>
+                <p>There are <a href="../blog.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../2013-04-02_ganglia.html" rel="bookmark"
+                    <h1><a href="../ganglia.html" rel="bookmark"
                            title="Permalink to Ganglia">Ganglia</a></h1>
                 </header>
                 
@@ -474,7 +496,7 @@ print django.get_version()
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a></p>
@@ -502,8 +524,8 @@ service gmetad start
 There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
 </pre>
 <p>解決方法, 重新安裝 ...</p></div>
-                <a class="readmore" href="../2013-04-02_ganglia.html">read more</a>
-                <p>There are <a href="../2013-04-02_ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../ganglia.html">read more</a>
+                <p>There are <a href="../ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

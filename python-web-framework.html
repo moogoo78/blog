@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Python Web Framework</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+                <link href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gentle Runner Atom Feed" />
+                
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie.css"/>
+                <script src="./js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="./">Gentle Runner </a></h1>
+                <nav><ul>
+                                                                    <li><a href="./pages/about.html">About</a></li>
+                                                                    <li class="active"><a href="./category/computer.html">computer</a></li>
+                                    <li ><a href="./category/language.html">language</a></li>
+                                    <li ><a href="./category/music.html">music</a></li>
+                                    <li ><a href="./category/nature.html">nature</a></li>
+                                    <li ><a href="./category/run.html">run</a></li>
+                                </ul></nav>
+        </header><!-- /#banner -->
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./python-web-framework.html" rel="bookmark"
+           title="Permalink to Python Web Framework">Python Web Framework</a></h1>
+          </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2013-04-09T11:36:00">
+                2013-04-09 11:36
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/moogoo.html">moogoo</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->      <div class="section" id="django">
+<h2>Django</h2>
+<div class="section" id="quick-start">
+<h3>Quick Start</h3>
+<pre class="literal-block">
+$ pip install Django
+$ django-admin.py startproject mysite
+$ python manage.py startapp myapp
+</pre>
+<p>check version:</p>
+<pre class="literal-block">
+import django
+print django.get_version()
+</pre>
+</div>
+<div class="section" id="docs">
+<h3>docs</h3>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.djangoproject.com/en/1.3/">Django | Django documentation | Django documentation</a></li>
+<li><a class="reference external" href="http://djangosnippets.org/snippets/1811/">Django snippets: django paginator</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="flask">
+<h2>Flask</h2>
+<div class="section" id="id1">
+<h3>Docs</h3>
+<ul class="simple">
+<li><a class="reference external" href="http://flask.pocoo.org/docs/">Flask documentation</a>, <a class="reference external" href="https://github.com/mitsuhiko/flask">github</a></li>
+<li><a class="reference external" href="http://jinja.pocoo.org/docs/">Jinja2 documentation</a></li>
+<li><a class="reference external" href="http://packages.python.org/Flask-SQLAlchemy/">Flask-SQLAlchemy documentation</a>, <a class="reference external" href="https://github.com/brosner/sqlalchemy">github</a>, <a class="reference external" href="http://docs.sqlalchemy.org/en/latest/index.html">SQLAlchemy Documentation</a></li>
+<li><a class="reference external" href="http://packages.python.org/Flask-Login/">Flask-Login documentation</a>, <a class="reference external" href="https://bitbucket.org/leafstorm/flask-login">leafstorm / flask-login / overview — Bitbucket</a></li>
+<li><a class="reference external" href="http://packages.python.org/Flask-WTF/">Flask-WTF</a>, <a class="reference external" href="http://wtforms.simplecodes.com/docs/dev/">WTForms Documentation</a>, <a class="reference external" href="https://bitbucket.org/danjac/flask-wtf">danjac / flask-wtf / overview — Bitbucket</a></li>
+</ul>
+</div>
+<div class="section" id="tips">
+<h3>Tips</h3>
+<p>看Flask版本:</p>
+<pre class="literal-block">
+import flask
+
+flask.__version__
+</pre>
+<p>request.args
+request.form.getlist('')</p>
+</div>
+</div>
+<div class="section" id="sqlalchemy">
+<h2>SQLAlchemy</h2>
+<p>import:</p>
+<pre class="literal-block">
+from flask.ext.sqlalchemy import BaseQuery
+from sqlalchemy.sql import func
+</pre>
+<p>column parameters:</p>
+<pre class="literal-block">
+primary_key =True
+nullable=False
+unique=True
+default
+onupdate
+index=True
+</pre>
+<ul class="simple">
+<li><a class="reference external" href="http://docs.sqlalchemy.org/en/rel_0_7/core/schema.html">Schema Definition Language — SQLAlchemy 0.7 Documentation</a></li>
+</ul>
+<p>mapper_args:</p>
+<pre class="literal-block">
+__mapper_args__ = {'order_by': '-created'}
+__mapper_args__ = {'order_by': [sort, name]}
+__mapper_args__ = {'primary_key':(app_id, num_log)} # 沒有primary key時用!
+</pre>
+<p>relationship:</p>
+<pre class="literal-block">
+employees = relationship('Employee',
+                backref='company', cascade='all, delete-orphan')
+</pre>
+<p>relationship+filter:</p>
+<pre class="literal-block">
+products = db.relationship(
+    'SaleProductData',
+    lazy=&quot;dynamic&quot;,
+    backref='sale_event')
+
+products.filter_by(type=1).all()
+</pre>
+<p><a class="reference external" href="http://docs.sqlalchemy.org/en/latest/orm/inheritance.html">http://docs.sqlalchemy.org/en/latest/orm/inheritance.html</a></p>
+<p>rand:</p>
+<pre class="literal-block">
+from sqlalchemy.sql import func
+
+query.order_by(func.rand())
+</pre>
+<p>date:</p>
+<pre class="literal-block">
+query.group_by(func.day(LogUserData.dtime).all()
+</pre>
+<p>group by:</p>
+<pre class="literal-block">
+votes = db.session.query(EventDC1Vote,
+func.count(uid).label('cnt'), 'uid').group_by('uid').order_by('cnt DESC').all()
+</pre>
+<div class="section" id="example">
+<h3>example</h3>
+<p>in/limit/order:</p>
+<pre class="literal-block">
+a_list = self.filter(Article.shop_id==g.shop_id,
+             Article.blog_id.in_(blog_id)).\
+             order_by('-created').\
+             limit(limit).\
+             all()
+</pre>
+<p>join:</p>
+<pre class="literal-block">
+reg_list = db.session.query(User.name, User.email).\
+join(LogUserData, User.id==LogUserData.uid).\
+filter(User.email != '', LogUserData.app_id.in_([156, 157])).\
+all()
+
+SELECT user.name, user.email, log_user_data.app_id
+FROM `user`
+LEFT JOIN log_user_data ON user.id = log_user_data.uid
+WHERE `email` != '\&quot;\&quot;' and log_user_data.app_id in (156,157)
+</pre>
+<p>join, or:</p>
+<pre class="literal-block">
+from sqlalchemy import or_, and_
+p = Product.query.join('brand').\
+    filter(or_(Product.title.like('%' + s + '%'),
+               Brand.name.like('%' + s + '%'))).\
+    filter(Product.shop_id==g.shop_id).\
+    all()
+</pre>
+<p>foreign key constraint:</p>
+<pre class="literal-block">
+# database level
+ForeignKey('category.id', ondelete='SET NULL')
+# pythen level
+relationship(passive_deletes=True)
+</pre>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>比較</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/">SQLAlchemy and You | Armin Ronacher's Thoughts and Writings</a></li>
+</ul>
+</div>
+
+    </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "python-web-framework.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://suhenorg.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+  </article>
+</section>
+        <section id="extras" class="body">
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="http://www.facebook.com/farseerfc">facebook</a></li>
+                                                    <li><a href="http://twitter.com/moogoo">twitter</a></li>
+                                                    <li><a href="http://github.com/moogoo78">github</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38928548-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'suhenorg';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>

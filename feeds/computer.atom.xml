@@ -1,23 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's Blog</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-01T11:36:00+08:00</updated><entry><title>Pelican github</title><link href="http://suhen.org/2013-06-01_pelican_github.rst.html" rel="alternate"></link><updated>2013-06-01T11:36:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-06-01:2013-06-01_pelican_github.rst.html</id><summary type="html">&lt;p&gt;Github pages可以把靜態網頁&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-01T11:36:00+08:00</updated><entry><title>把靜態blog放到github上，以pelican為例</title><link href="http://suhen.org/pelican_github.rst.html" rel="alternate"></link><updated>2013-06-01T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-01:pelican_github.rst.html</id><summary type="html">&lt;p&gt;之前開始把blog轉到使用 &lt;a class="reference external" href="pelican.rst.html"&gt;pelican產生靜態blog&lt;/a&gt; ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually"&gt;Creating Project Pages manually · GitHub Help&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew"&gt;Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;自訂domain
-&lt;a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages"&gt;Setting up a custom domain with Pages · GitHub Help&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;204.232.175.78&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html"&gt;Tips — Pelican 3 documentation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;$ pip install ghp-import&lt;/p&gt;
-&lt;p&gt;$ pelican -s pelican.conf.py .
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;環境設定&lt;/h2&gt;
+&lt;p&gt;python要用virtualenv才是王道:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ mkvirtualenv sillywalk.org
+$ cd sillkwalk.org
+$ setvirtualenvproject
+$ workon sillywalk.org
+
+$ pip install pelican
+$ pip install ghp-import # 方便發佈到github pages的工具
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="html"&gt;
+&lt;h2&gt;產生HTML，發佈&lt;/h2&gt;
+&lt;p&gt;產生HTML內容:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ pelican -s pelican.conf.py .
 $ ghp-import output
-$ git push origin gh-pages&lt;/p&gt;
-&lt;hr class="docutils" /&gt;
-&lt;blockquote&gt;
-mkvirtualenv sillywalk.org
-cd sillkwalk.org
-setvirtualenvproject&lt;/blockquote&gt;
-&lt;p&gt;workon your_username.github.com&lt;/p&gt;
-&lt;p&gt;pip install -r requirements.txt&lt;/p&gt;
-</summary><category term="note"></category></entry><entry><title>用screen+irssi上IRC聊天不斷線</title><link href="http://suhen.org/2013-05-26_irc_screen_irssi.html" rel="alternate"></link><updated>2013-05-26T15:21:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-05-26:2013-05-26_irc_screen_irssi.html</id><summary type="html">&lt;p&gt;一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).&lt;/p&gt;
+$ git push origin gh-pages
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="domain"&gt;
+&lt;h2&gt;自訂domain&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;在你的domain設定指向github的IP&lt;/li&gt;
+&lt;li&gt;在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;參考&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew"&gt;Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html"&gt;Tips — Pelican 3 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages"&gt;Setting up a custom domain with Pages · GitHub Help&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="note"></category></entry><entry><title>用screen+irssi上IRC聊天不斷線</title><link href="http://suhen.org/irc_screen_irssi.html" rel="alternate"></link><updated>2013-05-26T15:21:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-05-26:irc_screen_irssi.html</id><summary type="html">&lt;p&gt;一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).&lt;/p&gt;
 &lt;p&gt;安裝screen和irssi:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 aptitude install screen
@@ -43,7 +64,7 @@ alt + 數字
 &lt;p&gt;但是Mac的Alt會變成輸入特殊字, 用iTerm的話, 可以如以下設定:&lt;/p&gt;
 &lt;p&gt;Bookmarks -&amp;gt; Manage Profiles -&amp;gt; Keyboard Profiles -&amp;gt; Global, 點選&amp;quot;Option Key as +Esc&amp;quot;&lt;/p&gt;
 &lt;p&gt;參考連結: &lt;a class="reference external" href="http://lzy-blah.blogspot.tw/2007/08/screen-irssi-irc-q.html"&gt;lzy's 543: 用 screen + irssi 上 irc 之鄉民版教學 (含Q&amp;amp;A)&lt;/a&gt;&lt;/p&gt;
-</summary><category term="note"></category></entry><entry><title>Database筆記</title><link href="http://suhen.org/2013-05-09_database_note.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-05-09:2013-05-09_database_note.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
+</summary><category term="note"></category></entry><entry><title>Database筆記</title><link href="http://suhen.org/database_note.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-05-09:database_note.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
 &lt;h2&gt;MySql&lt;/h2&gt;
 &lt;p&gt;Syntax:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -397,7 +418,7 @@ Engine
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category><category term="mysql"></category><category term="sqlite"></category></entry><entry><title>Emacs</title><link href="http://suhen.org/2013-04-26_emacs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-26:2013-04-26_emacs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
+</summary><category term="docs"></category><category term="mysql"></category><category term="sqlite"></category></entry><entry><title>Emacs</title><link href="http://suhen.org/emacs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-26:emacs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
 &lt;h2&gt;Tips&lt;/h2&gt;
 &lt;p&gt;自動補齊:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -803,7 +824,7 @@ C-RET
 &lt;li&gt;&lt;a class="reference external" href="http://jblevins.org/projects/deft/"&gt;Deft&lt;/a&gt; - 快速找筆記, 檔案修改工具&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Elscreen - Emacs好用的tab mode</title><link href="http://suhen.org/2013-04-23_emacs_elscreen.html" rel="alternate"></link><updated>2013-04-23T17:28:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-23:2013-04-23_emacs_elscreen.html</id><summary type="html">&lt;p&gt;我以為在Emacs一直沒有好的tab顯示模式，以前用過tabbar_ mode，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。&lt;/p&gt;
+</summary><category term="docs"></category></entry><entry><title>Elscreen - Emacs好用的tab mode</title><link href="http://suhen.org/emacs_elscreen.html" rel="alternate"></link><updated>2013-04-23T17:28:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-23:emacs_elscreen.html</id><summary type="html">&lt;p&gt;我以為在Emacs一直沒有好的tab顯示模式，以前用過tabbar_ mode，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。&lt;/p&gt;
 &lt;p&gt;下載elscreen.el: &lt;a class="reference external" href="ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/"&gt;ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;elscreen.el只有一個檔案，但是他要依附一套 &lt;a class="reference external" href="https://github.com/jeffgran/APEL"&gt;APEL&lt;/a&gt; 才可以運作。&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -822,7 +843,7 @@ C-RET
 &lt;li&gt;&lt;a class="reference external" href="http://d.hatena.ne.jp/plasticster/20110825/1314271209"&gt;elscreen 改め tabbar のインストールログ - テクノ組曲&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://emacs-fu.blogspot.tw/2009/07/keeping-related-buffers-together-with.html"&gt;emacs-fu: keeping related buffers together with elscreen&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</summary><category term="note"></category></entry><entry><title>Pelican - 邁向靜態blog之路</title><link href="http://suhen.org/2013-04-11_pelican.rst.html" rel="alternate"></link><updated>2013-04-11T12:57:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-11:2013-04-11_pelican.rst.html</id><summary type="html">&lt;p&gt;一直想用純HTML來寫blog，做筆記，最早用PHP的 &lt;a class="reference external" href="https://www.dokuwiki.org"&gt;dokuwiki&lt;/a&gt; ，不想被PHP server綁住，改用Emacs的 &lt;a class="reference external" href="http://orgmode.org/"&gt;Orgmode&lt;/a&gt;, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 &lt;a class="reference external" href="http://suhen.org/rest-restructuredtextyu-sphinx.html"&gt;reST&lt;/a&gt; (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。&lt;/p&gt;
+</summary><category term="note"></category></entry><entry><title>Pelican - 邁向靜態blog之路</title><link href="http://suhen.org/pelican.rst.html" rel="alternate"></link><updated>2013-04-11T12:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-11:pelican.rst.html</id><summary type="html">&lt;p&gt;一直想用純HTML來寫blog，做筆記，最早用PHP的 &lt;a class="reference external" href="https://www.dokuwiki.org"&gt;dokuwiki&lt;/a&gt; ，不想被PHP server綁住，改用Emacs的 &lt;a class="reference external" href="http://orgmode.org/"&gt;Orgmode&lt;/a&gt;, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 &lt;a class="reference external" href="http://suhen.org/rest-restructuredtextyu-sphinx.html"&gt;reST&lt;/a&gt; (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。&lt;/p&gt;
 &lt;div class="section" id="quick-start"&gt;
 &lt;h2&gt;Quick-start&lt;/h2&gt;
 &lt;p&gt;安裝:&lt;/p&gt;
@@ -881,7 +902,7 @@ this is a foo_ .
 &lt;li&gt;Nikola 有image gallery (把圖片丟到某個目錄下就好了) - &lt;a class="reference external" href="http://nikola.ralsina.com.ar/"&gt;http://nikola.ralsina.com.ar/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="note"></category></entry><entry><title>Scripting Languages (draft)</title><link href="http://suhen.org/2013-04-09_scripting-languages-draft.html" rel="alternate"></link><updated>2013-04-09T11:38:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-09:2013-04-09_scripting-languages-draft.html</id><summary type="html">&lt;p&gt;PHP, Python, Javascript, Lua&lt;/p&gt;
+</summary><category term="note"></category></entry><entry><title>Scripting Languages (draft)</title><link href="http://suhen.org/scripting-languages-draft.html" rel="alternate"></link><updated>2013-04-09T11:38:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-09:scripting-languages-draft.html</id><summary type="html">&lt;p&gt;PHP, Python, Javascript, Lua&lt;/p&gt;
 &lt;div class="section" id="basic"&gt;
 &lt;h2&gt;Basic&lt;/h2&gt;
 &lt;/div&gt;
@@ -1123,7 +1144,7 @@ count(arr)
 &lt;p&gt;ternary operator&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Python Web Framework</title><link href="http://suhen.org/2013-04-09_python-web-framework.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-09:2013-04-09_python-web-framework.html</id><summary type="html">&lt;div class="section" id="django"&gt;
+</summary><category term="docs"></category></entry><entry><title>Python Web Framework</title><link href="http://suhen.org/python-web-framework.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-09:python-web-framework.html</id><summary type="html">&lt;div class="section" id="django"&gt;
 &lt;h2&gt;Django&lt;/h2&gt;
 &lt;div class="section" id="quick-start"&gt;
 &lt;h3&gt;Quick Start&lt;/h3&gt;
@@ -1271,7 +1292,7 @@ relationship(passive_deletes=True)
 &lt;li&gt;&lt;a class="reference external" href="http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/"&gt;SQLAlchemy and You | Armin Ronacher's Thoughts and Writings&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>blog</title><link href="http://suhen.org/2013-04-02_blog.html" rel="alternate"></link><updated>2013-04-02T15:53:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-02:2013-04-02_blog.html</id><summary type="html">&lt;div class="section" id="http-status-code"&gt;
+</summary><category term="docs"></category></entry><entry><title>blog</title><link href="http://suhen.org/blog.html" rel="alternate"></link><updated>2013-04-02T15:53:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-02:blog.html</id><summary type="html">&lt;div class="section" id="http-status-code"&gt;
 &lt;h2&gt;HTTP status code&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html"&gt;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html&lt;/a&gt;&lt;/p&gt;
 &lt;div class="section" id="informational-1xx"&gt;
@@ -1333,7 +1354,7 @@ relationship(passive_deletes=True)
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Ganglia</title><link href="http://suhen.org/2013-04-02_ganglia.html" rel="alternate"></link><updated>2013-04-02T11:39:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-04-02:2013-04-02_ganglia.html</id><summary type="html">&lt;p&gt;之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia&lt;/p&gt;
+</summary><category term="docs"></category></entry><entry><title>Ganglia</title><link href="http://suhen.org/ganglia.html" rel="alternate"></link><updated>2013-04-02T11:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-02:ganglia.html</id><summary type="html">&lt;p&gt;之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia&lt;/p&gt;
 &lt;p&gt;Ganglia有3個部分:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver&lt;/li&gt;
@@ -1364,7 +1385,7 @@ $ service gmetad start
 &lt;/pre&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://sourceforge.net/apps/trac/ganglia/wiki/ganglia_quick_start"&gt;http://sourceforge.net/apps/trac/ganglia/wiki/ganglia_quick_start&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="note"></category></entry><entry><title>reST – reStructuredText與Sphinx</title><link href="http://suhen.org/2013-03-28_rest-restructuredtextyu-sphinx.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-28:2013-03-28_rest-restructuredtextyu-sphinx.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 是Python &lt;a class="reference external" href="http://docutils.sourceforge.net/index.html"&gt;Docutils: Documentation Utilities&lt;/a&gt; 的一部分, 而 &lt;a class="reference external" href="http://sphinx.pocoo.org/"&gt;Sphinx&lt;/a&gt; 可以更方便產生，管理文件的工具&lt;/p&gt;
+</summary><category term="note"></category></entry><entry><title>reST – reStructuredText與Sphinx</title><link href="http://suhen.org/rest-restructuredtextyu-sphinx.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-03-28:rest-restructuredtextyu-sphinx.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 是Python &lt;a class="reference external" href="http://docutils.sourceforge.net/index.html"&gt;Docutils: Documentation Utilities&lt;/a&gt; 的一部分, 而 &lt;a class="reference external" href="http://sphinx.pocoo.org/"&gt;Sphinx&lt;/a&gt; 可以更方便產生，管理文件的工具&lt;/p&gt;
 &lt;p&gt;縮排用二個或三個空白都可以，Emacs的ReST預設用三個&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;使用&lt;/h2&gt;
@@ -1559,7 +1580,7 @@ b) zwai
 &lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html"&gt;Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Software</title><link href="http://suhen.org/2013-03-28_software.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-28:2013-03-28_software.html</id><summary type="html">&lt;div class="section" id="desktop-tips"&gt;
+</summary><category term="docs"></category></entry><entry><title>Software</title><link href="http://suhen.org/software.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-03-28:software.html</id><summary type="html">&lt;div class="section" id="desktop-tips"&gt;
 &lt;h2&gt;Desktop Tips&lt;/h2&gt;
 &lt;div class="section" id="mac-osx"&gt;
 &lt;h3&gt;Mac OSX&lt;/h3&gt;
@@ -1704,7 +1725,7 @@ $ ffmpeg –i inputvideo.avi -vf &amp;quot;movie=watermarklogo.png [watermark]; 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://suhen.org/2013-03-28_unix_command.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-28:2013-03-28_unix_command.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+</summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://suhen.org/unix_command.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-03-28:unix_command.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;檔案&lt;/h2&gt;
 &lt;p&gt;把檔案foo複製到以下全部目錄裡:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -1805,7 +1826,7 @@ ps ca|grep uwsgi |awk '{ print $1}' | xargs --no-run-if-empty sudo kill -9
 $ python -m SimpleHTTPServer 8080
 &lt;/pre&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>GIT</title><link href="http://suhen.org/2013-03-23_git.html" rel="alternate"></link><updated>2013-03-23T00:00:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-23:2013-03-23_git.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
+</summary><category term="docs"></category></entry><entry><title>GIT</title><link href="http://suhen.org/git.html" rel="alternate"></link><updated>2013-03-23T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-03-23:git.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
 &lt;h2&gt;Quick Start&lt;/h2&gt;
 &lt;div class="section" id="init"&gt;
 &lt;h3&gt;init&lt;/h3&gt;
@@ -2036,7 +2057,7 @@ git checkout remotes/origin/experimental
 &lt;li&gt;&lt;a class="reference external" href="http://ihower.tw/blog/archives/6696/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed:+ihower+({|ihower.tw|+blog+})&amp;amp;utm_content=Google+Reader"&gt;Git 教育訓練課程投影片 (2012) | ihower { blogging }&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Dynamic DNS setting for Namecheap on Mac OSX</title><link href="http://suhen.org/2013-03-21_dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="alternate"></link><updated>2013-03-21T02:09:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-03-21:2013-03-21_dynamic-dns-setting-for-namecheap-on-mac-osx.html</id><summary type="html">&lt;p&gt;登入Namecheap啓用Dynamic &lt;a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service"&gt;link1&lt;/a&gt;&lt;/p&gt;
+</summary><category term="docs"></category></entry><entry><title>Dynamic DNS setting for Namecheap on Mac OSX</title><link href="http://suhen.org/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="alternate"></link><updated>2013-03-21T02:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-03-21:dynamic-dns-setting-for-namecheap-on-mac-osx.html</id><summary type="html">&lt;p&gt;登入Namecheap啓用Dynamic &lt;a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service"&gt;link1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定DNS record:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 freedns1.registrar-servers.com
