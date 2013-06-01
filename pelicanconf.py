@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u'suhen'
-SITENAME = u"Suhen's Blog"
-SITEURL = 'http://suhen.org'
+AUTHOR = u'moogoo'
+SITENAME = u'Gentle Runner'
+SITEURL = 'http://gentlerunner.org'
 
 TIMEZONE = 'Asia/Taipei'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d %H:%M'
@@ -11,8 +11,10 @@ DEFAULT_LANG = u'zh'
 
 DISPLAY_PAGES_ON_MENU = True
 
-ARTICLE_URL = '{date:%Y-%m-%d}_{slug}.html'
-ARTICLE_SAVE_AS = '{date:%Y-%m-%d}_{slug}.html'
+ARTICLE_URL = '{slug}.html'
+#ARTICLE_URL = '{date:%Y-%m-%d}_{slug}.html'
+ARTICLE_SAVE_AS = '{slug}.html'
+#ARTICLE_SAVE_AS = '{date:%Y-%m-%d}_{slug}.html'
 
 #THEME = 'themes/pelican-foundation'
 
