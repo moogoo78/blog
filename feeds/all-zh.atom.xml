@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's Blog</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-05-26T15:21:00+08:00</updated><entry><title>用screen+irssi上IRC聊天不斷線</title><link href="http://suhen.org/2013-05-26_irc_screen_irssi.html" rel="alternate"></link><updated>2013-05-26T15:21:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-05-26:2013-05-26_irc_screen_irssi.html</id><summary type="html">&lt;p&gt;一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's Blog</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-01T11:36:00+08:00</updated><entry><title>Pelican github</title><link href="http://suhen.org/2013-06-01_pelican_github.rst.html" rel="alternate"></link><updated>2013-06-01T11:36:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-06-01:2013-06-01_pelican_github.rst.html</id><summary type="html">&lt;p&gt;Github pages可以把靜態網頁&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually"&gt;Creating Project Pages manually · GitHub Help&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew"&gt;Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;自訂domain
+&lt;a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages"&gt;Setting up a custom domain with Pages · GitHub Help&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;204.232.175.78&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html"&gt;Tips — Pelican 3 documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;$ pip install ghp-import&lt;/p&gt;
+&lt;p&gt;$ pelican -s pelican.conf.py .
+$ ghp-import output
+$ git push origin gh-pages&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
+&lt;blockquote&gt;
+mkvirtualenv sillywalk.org
+cd sillkwalk.org
+setvirtualenvproject&lt;/blockquote&gt;
+&lt;p&gt;workon your_username.github.com&lt;/p&gt;
+&lt;p&gt;pip install -r requirements.txt&lt;/p&gt;
+</summary><category term="note"></category></entry><entry><title>用screen+irssi上IRC聊天不斷線</title><link href="http://suhen.org/2013-05-26_irc_screen_irssi.html" rel="alternate"></link><updated>2013-05-26T15:21:00+08:00</updated><author><name>suhen</name></author><id>tag:suhen.org,2013-05-26:2013-05-26_irc_screen_irssi.html</id><summary type="html">&lt;p&gt;一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).&lt;/p&gt;
 &lt;p&gt;安裝screen和irssi:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 aptitude install screen

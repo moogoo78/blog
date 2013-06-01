@@ -37,6 +37,52 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="../2013-03-28_unix_command.html" rel="bookmark"
+                           title="Permalink to UNIX Command 常用指令">UNIX Command 常用指令</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-28T00:00:00">
+                2013-03-28 00:00
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="../author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="id1">
+<h2>檔案</h2>
+<p>把檔案foo複製到以下全部目錄裡:</p>
+<pre class="literal-block">
+$ find . -type d |xargs -n 1 cp -i foo
+</pre>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">xargs -n 1:</th><td class="field-body">把每一行command line輸出當作一個參數</td>
+</tr>
+<tr class="field"><th class="field-name">cp -i:</th><td class="field-body">詢問y or n</td>
+</tr>
+</tbody>
+</table>
+<p>檔案大寫改小寫:</p>
+<pre class="literal-block">
+$ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
+</pre>
+<p>改檔名, 只取數字, JPG改jpg:</p>
+<pre class="literal-block">
+for i in *.JPG ; do mv &quot;$i&quot; `echo $i ...</pre></div>
+                <a class="readmore" href="../2013-03-28_unix_command.html">read more</a>
+                <p>There are <a href="../2013-03-28_unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="../2013-05-04_woerter_unterschiedlich.html" rel="bookmark"
                            title="Permalink to 各地區德語不同處">各地區德語不同處</a></h1>
                 </header>

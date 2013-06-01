@@ -182,6 +182,44 @@ $ make serve ...</pre></div>
                  
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="../2013-06-01_pelican_github.rst.html" rel="bookmark"
+                           title="Permalink to Pelican github">Pelican github</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-01T11:36:00">
+                2013-06-01 11:36
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="../author/suhen.html">suhen</a>
+        </address>
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>Github pages可以把靜態網頁</p>
+<p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
+<p><a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew">Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry</a></p>
+<p>自訂domain
+<a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">Setting up a custom domain with Pages · GitHub Help</a></p>
+<p>204.232.175.78</p>
+<p><a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html">Tips — Pelican 3 documentation</a></p>
+<p>$ pip install ghp-import</p>
+<p>$ pelican -s pelican.conf.py .
+$ ghp-import output
+$ git push origin gh-pages</p>
+<hr class="docutils" />
+<blockquote>
+mkvirtualenv sillywalk.org
+cd ...</blockquote>
+                <a class="readmore" href="../2013-06-01_pelican_github.rst.html">read more</a>
+                <p>There are <a href="../2013-06-01_pelican_github.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="../2013-04-09_python-web-framework.html" rel="bookmark"
                            title="Permalink to Python Web Framework">Python Web Framework</a></h1>
                 </header>
@@ -452,52 +490,6 @@ def func(a, *pargs, **kargs): print a, pargs, kargs
 <h3>ebook ...</h3></div></div>
                 <a class="readmore" href="../2013-03-28_software.html">read more</a>
                 <p>There are <a href="../2013-03-28_software.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../2013-03-28_unix_command.html" rel="bookmark"
-                           title="Permalink to UNIX Command 常用指令">UNIX Command 常用指令</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-03-28T00:00:00">
-                2013-03-28 00:00
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="../author/suhen.html">suhen</a>
-        </address>
-        <p>In <a href="../category/computer.html">computer</a>. </p>
-<p>tags: <a href="../tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="id1">
-<h2>檔案</h2>
-<p>把檔案foo複製到以下全部目錄裡:</p>
-<pre class="literal-block">
-$ find . -type d |xargs -n 1 cp -i foo
-</pre>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">xargs -n 1:</th><td class="field-body">把每一行command line輸出當作一個參數</td>
-</tr>
-<tr class="field"><th class="field-name">cp -i:</th><td class="field-body">詢問y or n</td>
-</tr>
-</tbody>
-</table>
-<p>檔案大寫改小寫:</p>
-<pre class="literal-block">
-$ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
-</pre>
-<p>改檔名, 只取數字, JPG改jpg:</p>
-<pre class="literal-block">
-for i in *.JPG ; do mv &quot;$i&quot; `echo $i ...</pre></div>
-                <a class="readmore" href="../2013-03-28_unix_command.html">read more</a>
-                <p>There are <a href="../2013-03-28_unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
