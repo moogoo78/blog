@@ -30,7 +30,9 @@ python要用virtualenv才是王道::
   $ ghp-import output
   $ git push origin gh-pages
 
-
+  # 其實pelican的make file就幫你
+  $ make github
+  
 
 自訂domain
 ====================
