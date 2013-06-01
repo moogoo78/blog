@@ -22,7 +22,7 @@ $ pelican -s pelican.conf.py .
 $ ghp-import output
 $ git push origin gh-pages
 
-# 其實pelican的make file就幫你
+# 其實pelican的make就可以了
 $ make github
 &lt;/pre&gt;
 &lt;/div&gt;
@@ -32,6 +32,13 @@ $ make github
 &lt;li&gt;在你的domain設定指向github的IP&lt;/li&gt;
 &lt;li&gt;在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。&lt;/p&gt;
+&lt;p&gt;先產生content/extra/CNAME，然後在pelicanconf.py加入:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+FILES_TO_COPY = (
+    ('extra/CNAME', 'CNAME'),
+)
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id2"&gt;
 &lt;h2&gt;參考&lt;/h2&gt;
