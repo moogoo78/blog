@@ -30,7 +30,7 @@ python要用virtualenv才是王道::
   $ ghp-import output
   $ git push origin gh-pages
 
-  # 其實pelican的make file就幫你
+  # 其實pelican的make就可以了
   $ make github
   
 
@@ -39,6 +39,15 @@ python要用virtualenv才是王道::
 
 1. 在你的domain設定指向github的IP
 2. 在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain
+
+放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。
+
+先產生content/extra/CNAME，然後在pelicanconf.py加入::
+
+  FILES_TO_COPY = (
+      ('extra/CNAME', 'CNAME'),
+  )
+
 
 參考
 ========
