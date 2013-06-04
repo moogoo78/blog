@@ -150,6 +150,14 @@ ps ca|grep uwsgi |awk '{ print $1}' | xargs --no-run-if-empty sudo kill -9
 $ python -m SimpleHTTPServer 8080
 </pre>
 </div>
+<div class="section" id="system">
+<h2>System</h2>
+<p>語系:</p>
+<pre class="literal-block">
+$ locale -a # 目前系統支援語系
+$ dpkg-reconfigure locales 安裝語系
+</pre>
+</div>
 
     </div><!-- /.entry-content -->
         <div class="comments">

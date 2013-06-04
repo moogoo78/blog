@@ -2018,6 +2018,14 @@ ps ca|grep uwsgi |awk '{ print $1}' | xargs --no-run-if-empty sudo kill -9
 $ python -m SimpleHTTPServer 8080
 &lt;/pre&gt;
 &lt;/div&gt;
+&lt;div class="section" id="system"&gt;
+&lt;h2&gt;System&lt;/h2&gt;
+&lt;p&gt;語系:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ locale -a # 目前系統支援語系
+$ dpkg-reconfigure locales 安裝語系
+&lt;/pre&gt;
+&lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>GIT</title><link href="http://suhen.org/git.html" rel="alternate"></link><updated>2013-03-23T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-03-23:git.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
 &lt;h2&gt;Quick Start&lt;/h2&gt;
 &lt;div class="section" id="init"&gt;
