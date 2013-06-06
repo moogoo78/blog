@@ -72,4 +72,4 @@ Quick-start
 
 .. _Orgmode: http://orgmode.org/
 .. _dokuwiki: https://www.dokuwiki.org
-.. _reST: http://suhen.org/rest-restructuredtextyu-sphinx.html
+.. _reST: http://gentlerunner.org/rest-restructuredtextyu-sphinx.html

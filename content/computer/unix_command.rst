@@ -110,3 +110,10 @@ Service
 
   $ python -m SimpleHTTPServer 8080
 
+System
+===========
+
+語系::
+
+  $ locale -a # 目前系統支援語系
+  $ dpkg-reconfigure locales 安裝語系
