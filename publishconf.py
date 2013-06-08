@@ -8,8 +8,6 @@ from pelicanconf import *
 SITEURL = 'http://suhen.org'
 FEED_DOMAIN = SITEURL
 
-DELETE_OUTPUT_DIRECTORY = True
-
 # Following items are often useful when publishing
 
 # Uncomment following line for absolute URLs in production:
@@ -17,4 +15,8 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = "suhenorg"
 GOOGLE_ANALYTICS = "UA-38928548-1"
 
+# for github pages
+FILES_TO_COPY = ( 
+    ('extra/CNAME', 'CNAME'),
+)
 #GITHUB_URL = 'http://github.com/moogoo78'

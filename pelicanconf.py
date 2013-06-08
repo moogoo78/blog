@@ -11,12 +11,14 @@ DEFAULT_LANG = u'zh'
 
 DISPLAY_PAGES_ON_MENU = True
 
-ARTICLE_URL = '{slug}.html'
+ARTICLE_URL = '{category}/{slug}.html'
 #ARTICLE_URL = '{date:%Y-%m-%d}_{slug}.html'
-ARTICLE_SAVE_AS = '{slug}.html'
+ARTICLE_SAVE_AS = '{category}/{slug}.html'
 #ARTICLE_SAVE_AS = '{date:%Y-%m-%d}_{slug}.html'
 
 #THEME = 'themes/pelican-foundation'
+
+DELETE_OUTPUT_DIRECTORY = True
 
 ## ??
 SITEMAP = {
@@ -52,8 +54,3 @@ STATIC_PATHS = ["images", ]
 
 # custom page generated with a jinja2 template
 #TEMPLATE_PAGES = {'pages/jinja2_template.html': 'jinja2_template.html'}
-
-# for github pages
-FILES_TO_COPY = (
-    ('extra/CNAME', 'CNAME'),
-)

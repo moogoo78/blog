@@ -1,12 +1,12 @@
-把靜態blog放到github上，以pelican為例
-##########################################
+把靜態blog放到Github Pages上，以pelican為例
+###################################################
 :date: 2013-06-01 11:36
 :category: computer
-:slug: pelican_github.rst
+:slug: pelican_github_pages.rst
 :tags: note
 
 
-之前開始把blog轉到使用 `pelican產生靜態blog <pelican.rst.html>`_ ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。
+之前開始把blog轉到使用 `pelican產生靜態blog <|filename|/computer/pelican.rst>`_ ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。
 
 `Creating Project Pages manually · GitHub Help <https://help.github.com/articles/creating-project-pages-manually>`__
 

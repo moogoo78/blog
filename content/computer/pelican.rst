@@ -2,7 +2,7 @@ Pelican - 邁向靜態blog之路
 ###########################
 :date: 2013-04-11 12:57
 :category: computer
-:slug: pelican.rst
+:slug: pelican
 :tags: note
  
 一直想用純HTML來寫blog，做筆記，最早用PHP的 dokuwiki_ ，不想被PHP server綁住，改用Emacs的 Orgmode_, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 reST_ (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。
