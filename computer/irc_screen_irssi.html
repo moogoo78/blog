@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>賤透走人 . Gentle Runner - nature</title>
+        <title>用screen+irssi上IRC聊天不斷線</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
                 <link href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="賤透走人 . Gentle Runner Atom Feed" />
@@ -23,48 +23,77 @@
                 <h1><a href="../">賤透走人 . Gentle Runner </a></h1>
                 <nav><ul>
                                                                     <li><a href="../pages/about.html">About</a></li>
-                                                                    <li ><a href="../category/computer.html">computer</a></li>
+                                                                    <li class="active"><a href="../category/computer.html">computer</a></li>
                                     <li ><a href="../category/language.html">language</a></li>
                                     <li ><a href="../category/mountain.html">mountain</a></li>
                                     <li ><a href="../category/music.html">music</a></li>
-                                    <li class="active"><a href="../category/nature.html">nature</a></li>
+                                    <li ><a href="../category/nature.html">nature</a></li>
                                     <li ><a href="../category/run.html">run</a></li>
                                 </ul></nav>
         </header><!-- /#banner -->
-                
-            
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="../computer/irc_screen_irssi.html" rel="bookmark"
+           title="Permalink to 用screen+irssi上IRC聊天不斷線">用screen+irssi上IRC聊天不斷線</a></h1>
+          </header>
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../nature/kapur.html">天空的拼圖 - Kapur 冰片木</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2013-04-20T04:37:00">
-                2013-04-20 04:37
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2013-05-26T15:21:00">
+                2013-05-26 15:21
         </abbr>
 
                 <address class="vcard author">
                 By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
-        <p>In <a href="../category/nature.html">nature</a>. </p>
-<p>tags: <a href="../tag/tree.html">tree</a></p>
-</footer><!-- /.post-info --><p>週四參加希望山林 <a class="reference external" href="http://www.hopeforest.org.tw/">Hope_Forest</a> 的志工課程，請到荒野保護協會的香萍來上課，講的十分的精彩，投影片中有一張另我感到震撼的照片, 上面只寫著Kapur。於是我回來用關鍵字Kapur查了一下：照片是來自於馬來西亞政府一個植物研究機構 (Forest Research Institute Malaysia, <a class="reference external" href="http://www.frim.gov.my/">FRIM</a> )的園區內，有一種高大筆直的樹叫「冰片木」，Dryobalanops aromatica (Dipterocarpaceae)，可以提煉類似樟腦的香料，中藥材稱「龍腦香」或「龍腦冰片」，木材市場上稱作Kapur。</p>
-<img alt="/static/images/nature/Kapur_Trees.jpeg" src="/static/images/nature/Kapur_Trees.jpeg" />
-<p>特別的是這些在森林最高處的樹冠枝葉並不會重疊或碰在一起，每棵樹都很巧妙的保持一點點的空隙，就像一幅「天空的拼圖」，這還有個可愛的專有名詞「害羞樹冠」，“Crown Shyness” ，好像大家都很害羞不好意思接觸到彼此，形成這特別的景觀。</p>
-<p>就像香萍說的人與人之間的相處不就跟這些樹木一樣，有時需要保持一點巧妙的距離，不會太近也不會太遠。</p>
-<p>參考:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://www.frim.gov.my/?page_id=7643">Dryobalanops aromatica: Jigsaw puzzles in the sky</a></li>
-<li><a class="reference external" href="http://www.frim.gov.my/?page_id=9414">Shorea resinosa : Another jigsaw puzzle in the sky</a></li>
-</ul>
-<p>圖片來源: <a class="reference external" href="http://whereisfei.blogspot.tw/2012/05/inspiring-beauty-of-kapur-tree.html">Where Is Fei: Inspiring: The Beauty of Kapur Tree</a></p>
-<p>There are <a href="../nature/kapur.html#disqus_thread">comments</a>.</p>                </article>
-                                    <p class="paginator">
-        Page 1 / 1
-    </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info -->      <p>一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).</p>
+<p>安裝screen和irssi:</p>
+<pre class="literal-block">
+aptitude install screen
+aptitude install irssi
+</pre>
+<p>開screen (detach/reattach參數):</p>
+<pre class="literal-block">
+screen -RD
+</pre>
+<p>進入irssi:</p>
+<pre class="literal-block">
+/connect irc.freenode.net # 連server
+/nick moogoolee           # 改匿名
+/j #python.tw             # 開channel
+/wc                       # 離開channal
+/disconnect               # server斷線
+/quit                     # 離開irssi
+</pre>
+<p>切換channel:</p>
+<pre class="literal-block">
+alt + 數字
+</pre>
+<p>但是Mac的Alt會變成輸入特殊字, 用iTerm的話, 可以如以下設定:</p>
+<p>Bookmarks -&gt; Manage Profiles -&gt; Keyboard Profiles -&gt; Global, 點選&quot;Option Key as +Esc&quot;</p>
+<p>參考連結: <a class="reference external" href="http://lzy-blah.blogspot.tw/2007/08/screen-irssi-irc-q.html">lzy's 543: 用 screen + irssi 上 irc 之鄉民版教學 (含Q&amp;A)</a></p>
+
+    </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "computer/irc_screen_irssi.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://suhenorg.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+  </article>
+</section>
+        <section id="extras" class="body">
                                 <div class="social">
                         <h2>social</h2>
                         <ul>
