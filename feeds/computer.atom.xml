@@ -403,10 +403,18 @@ key_buffer_size # 越大query越快, 但最好設定1/4, 不要超過一半的�
 &lt;/div&gt;
 &lt;div class="section" id="sqlite"&gt;
 &lt;h2&gt;Sqlite&lt;/h2&gt;
-&lt;p&gt;sql import:&lt;/p&gt;
+&lt;p&gt;常用指令&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-cat dumpfile.sql | sqlite3 my_database.sqlite
+$ sqlite3 new.db # create db
+$ sqlite3 myprecious.db &amp;quot;.dump&amp;quot; ＞ output.sql # dump sql
+$ sqlite3 new.db ＜ output.sql # import
+# or
+$ cat dumpfile.sql | sqlite3 new.db
 &lt;/pre&gt;
+&lt;p&gt;ref&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.sqlite.org/sqlite.html"&gt;Command Line Shell For SQLite&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- Comment
 Engine
 - [[http://blog.roga.tw/2008/11/19/1288][MySQL 資料庫儲存引擎的選用]]

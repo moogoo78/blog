@@ -39,6 +39,64 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="./computer/emacs.html" rel="bookmark"
+                           title="Permalink to Emacs">Emacs</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-26T18:37:00">
+                2013-04-26 18:37
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/moogoo.html">moogoo</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="tips">
+<h2>Tips</h2>
+<p>自動補齊:</p>
+<pre class="literal-block">
+M-/
+</pre>
+<p>變數對齊:</p>
+<pre class="literal-block">
+M-x align-regexp
+</pre>
+<p>輸入 <tt class="docutils literal">=</tt></p>
+<p>列出全部字串:</p>
+<pre class="literal-block">
+M-x occur
+</pre>
+<p>刪除整行(vim's dd):</p>
+<pre class="literal-block">
+C-S-Backspace
+</pre>
+<p>刪除空白行:</p>
+<pre class="literal-block">
+M-x flush-lines RET ^$ RET ;純空白行
+M-x flush-lines RET ^\s-*$ RET ; 有空白的空白行
+</pre>
+<p>編輯每行文字:</p>
+<pre class="literal-block">
+;; 把每行的文字foo加indent和quote 'foo' =&gt;'  &quot;foo&quot;'
+M-x replace-regexp RET ^ RET SPACE SPACE&quot; RET ;; 開頭加3個空白和&quot;
+M-x replace-regexp RET $ RET &quot;, RET ;; 結尾加&quot;
+</pre>
+<p>每行加2空白:</p>
+<pre class="literal-block">
+M-x cua-mode
+選好區塊
+C-RET ...</pre></div>
+                <a class="readmore" href="./computer/emacs.html">read more</a>
+                <p>There are <a href="./computer/emacs.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="./computer/emacs_elscreen.html" rel="bookmark"
                            title="Permalink to Elscreen - Emacs好用的tab mode">Elscreen - Emacs好用的tab mode</a></h1>
                 </header>
@@ -419,96 +477,6 @@ There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Co
 <p>解決方法, 重新安裝 ...</p></div>
                 <a class="readmore" href="./computer/ganglia.html">read more</a>
                 <p>There are <a href="./computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./computer/rest-restructuredtextyu-sphinx.html" rel="bookmark"
-                           title="Permalink to reST – reStructuredText與Sphinx">reST – reStructuredText與Sphinx</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-03-28T00:00:00">
-                2013-03-28 00:00
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="./author/moogoo.html">moogoo</a>
-        </address>
-        <p>In <a href="./category/computer.html">computer</a>. </p>
-<p>tags: <a href="./tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <p><a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> 是Python <a class="reference external" href="http://docutils.sourceforge.net/index.html">Docutils: Documentation Utilities</a> 的一部分, 而 <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a> 可以更方便產生，管理文件的工具</p>
-<p>縮排用二個或三個空白都可以，Emacs的ReST預設用三個</p>
-<div class="section" id="id1">
-<h2>使用</h2>
-<p>安裝:</p>
-<pre class="literal-block">
-$ pip install Sphinx
-</pre>
-<p>某目錄下:</p>
-<pre class="literal-block">
-$ sphinx-quickstart
-</pre>
-<p>會自動設定好conf.py, 和相關檔案</p>
-<p>產生網頁檔:</p>
-<pre class="literal-block">
-$ make html
-</pre>
-</div>
-<div class="section" id="id2">
-<h2>文件結構</h2>
-<div class="section" id="id3">
-<h3>分段</h3>
-<p>用一串連續的=*-^&quot;~等字符來標示，通常用:</p>
-<pre class="literal-block">
-==========
-全文標題
-==========
-
-大標題
-========
-
-小標題
----------
-
-段落
-^^^^^^
-</pre>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">中文字用的分段標示要長一點點</p>
-</div>
-</div>
-<div class="section" id="id4">
-<h3>分隔</h3>
-<p>像HTML裡的 <tt class="docutils literal">&lt;hr&gt;</tt>:</p>
-<pre class="literal-block">
-----
-</pre>
-</div>
-</div>
-<div class="section" id="inline-markup">
-<h2>修飾字 Inline markup</h2>
-<p><em>斜體</em>:</p>
-<pre class="literal-block">
-*italic*
-</pre>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">中文不能斜</p>
-</div>
-<p><strong>粗體</strong>:</p>
-<pre class="literal-block">
-**bold**
-</pre>
-<p><tt class="docutils literal">有底色</tt>:</p>
-<pre class="literal-block">
-``有底色 ...</pre></div>
-                <a class="readmore" href="./computer/rest-restructuredtextyu-sphinx.html">read more</a>
-                <p>There are <a href="./computer/rest-restructuredtextyu-sphinx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

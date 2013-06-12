@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-07T23:26:00+08:00</updated><entry><title>[山] 大屯溪古道 (2013-06-02)</title><link href="http://suhen.org/mountain/datunxi_gudao.html" rel="alternate"></link><updated>2013-06-07T23:26:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-07:mountain/datunxi_gudao.html</id><summary type="html">&lt;p&gt;人員: 小黑, ely, tony, moogoo&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-13T04:09:00+08:00</updated><entry><title>Music For A Found Harmonium</title><link href="http://suhen.org/music/music_for_a_found_harmonium.html" rel="alternate"></link><updated>2013-06-13T04:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-13:music/music_for_a_found_harmonium.html</id><summary type="html">&lt;p&gt;很喜歡的一首歌，是 &lt;a class="reference external" href="http://www.penguincafe.com"&gt;Penguin Cafe Orchestra&lt;/a&gt; 的頭目 Simon Jeffes 在京都路上撿到一個被丟棄的風琴 (看日本人多愛丟東西), 有感而發而寫的。&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/yJg1NNyke2E" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;然後愛爾蘭歌手 &lt;a class="reference external" href="http://www.allmusic.com/artist/patrick-street-mn0000011041"&gt;Patrick Street&lt;/a&gt; 改編成愛爾蘭風味，也很好聽，在電影「拿破崙炸藥」 (Napoleon Dynamite, &lt;em&gt;我的愛片!!&lt;/em&gt;)  裡有出現~&lt;/p&gt;
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/PltA5woXKaA" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;延伸連結&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Penguin_Cafe_Orchestra"&gt;Penguin Cafe Orchestra - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.allmusic.com/artist/penguin-cafe-orchestra-mn0000308762"&gt;Penguin Cafe Orchestra - Music Biography, Credits and Discography : AllMusic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.allmusic.com/artist/patrick-street-mn0000011041"&gt;Patrick Street - Music Biography, Credits and Discography : AllMusic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.imdb.com/title/tt0374900/"&gt;Napoleon Dynamite (2004) - IMDb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</summary></entry><entry><title>[山] 大屯溪古道 (2013-06-02)</title><link href="http://suhen.org/mountain/datunxi_gudao.html" rel="alternate"></link><updated>2013-06-07T23:26:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-07:mountain/datunxi_gudao.html</id><summary type="html">&lt;p&gt;人員: 小黑, ely, tony, moogoo&lt;/p&gt;
 &lt;p&gt;9點芝山站集合，我早上跑完 &lt;a class="reference external" href="http://suhen.org/run/chartered_12k.html"&gt;渣打路跑&lt;/a&gt; 回去洗澡，遲到了10分鐘。大概9:20出發，10:00到三板橋登山口。&lt;/p&gt;
 &lt;p&gt;一開始就看到古色古香的石頭堆梯田，看到了峽谷，對面的菜公坑山頭，非常漂亮。&lt;/p&gt;
 &lt;img alt="/static/images/2013-06-02_datunxi/datunxi1.jpg" src="/static/images/2013-06-02_datunxi/datunxi1.jpg" style="width: 500px;" /&gt;
@@ -500,10 +509,18 @@ key_buffer_size # 越大query越快, 但最好設定1/4, 不要超過一半的�
 &lt;/div&gt;
 &lt;div class="section" id="sqlite"&gt;
 &lt;h2&gt;Sqlite&lt;/h2&gt;
-&lt;p&gt;sql import:&lt;/p&gt;
+&lt;p&gt;常用指令&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-cat dumpfile.sql | sqlite3 my_database.sqlite
+$ sqlite3 new.db # create db
+$ sqlite3 myprecious.db &amp;quot;.dump&amp;quot; ＞ output.sql # dump sql
+$ sqlite3 new.db ＜ output.sql # import
+# or
+$ cat dumpfile.sql | sqlite3 new.db
 &lt;/pre&gt;
+&lt;p&gt;ref&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.sqlite.org/sqlite.html"&gt;Command Line Shell For SQLite&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- Comment
 Engine
 - [[http://blog.roga.tw/2008/11/19/1288][MySQL 資料庫儲存引擎的選用]]
