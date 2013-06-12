@@ -335,10 +335,19 @@ others
 
 Sqlite
 ===============
-sql import::
 
-  cat dumpfile.sql | sqlite3 my_database.sqlite
+常用指令 ::
 
+  $ sqlite3 new.db # create db
+  $ sqlite3 myprecious.db ".dump" ＞ output.sql # dump sql
+  $ sqlite3 new.db ＜ output.sql # import 
+  # or
+  $ cat dumpfile.sql | sqlite3 new.db
+
+
+ref
+
+* `Command Line Shell For SQLite <http://www.sqlite.org/sqlite.html>`__
 
 .. Comment
    Engine
