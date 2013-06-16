@@ -23,7 +23,8 @@
                 <h1><a href="../">賤透走人 . Gentle Runner </a></h1>
                 <nav><ul>
                                                                     <li><a href="../pages/about.html">About</a></li>
-                                                                    <li ><a href="../category/computer.html">computer</a></li>
+                                                                    <li ><a href="../category/book.html">book</a></li>
+                                    <li ><a href="../category/computer.html">computer</a></li>
                                     <li ><a href="../category/language.html">language</a></li>
                                     <li ><a href="../category/mountain.html">mountain</a></li>
                                     <li ><a href="../category/music.html">music</a></li>
@@ -805,13 +806,15 @@ $ find . -type d |xargs -n 1 cp -i foo
 </tr>
 </tbody>
 </table>
-<p>檔案大寫改小寫:</p>
+<div class="section" id="id2">
+<h3>改檔名</h3>
+<p>大寫改小寫:</p>
 <pre class="literal-block">
 $ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
 </pre>
-<p>改檔名, 只取數字, JPG改jpg:</p>
+<p>只取數字, JPG改jpg:</p>
 <pre class="literal-block">
-for i in *.JPG ; do mv &quot;$i&quot; `echo $i ...</pre></div>
+for i in *.JPG ; do mv &quot;$i&quot; `echo $i ...</pre></div></div>
                 <a class="readmore" href="../computer/unix_command.html">read more</a>
                 <p>There are <a href="../computer/unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

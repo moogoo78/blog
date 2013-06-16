@@ -23,7 +23,8 @@
                 <h1><a href="./">賤透走人 . Gentle Runner </a></h1>
                 <nav><ul>
                                                                     <li><a href="./pages/about.html">About</a></li>
-                                                                    <li ><a href="./category/computer.html">computer</a></li>
+                                                                    <li ><a href="./category/book.html">book</a></li>
+                                    <li ><a href="./category/computer.html">computer</a></li>
                                     <li ><a href="./category/language.html">language</a></li>
                                     <li ><a href="./category/mountain.html">mountain</a></li>
                                     <li ><a href="./category/music.html">music</a></li>
@@ -37,6 +38,53 @@
                  
                             <section id="content" class="body">
                     <ol id="posts-list" class="hfeed" start="9">
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/ganglia.html" rel="bookmark"
+                           title="Permalink to Ganglia">Ganglia</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-02T11:39:00">
+                2013-04-02 11:39
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/moogoo.html">moogoo</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
+<p>Ganglia有3個部分:</p>
+<ul class="simple">
+<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
+<li>gmetad - 詢問gmond儲存數質</li>
+<li>ganglia-web</li>
+</ul>
+<pre class="literal-block">
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+</pre>
+<p>start daemond:</p>
+<pre class="literal-block">
+service gmond start
+service gmetad start
+</pre>
+<div class="section" id="centos">
+<h2>CentOS</h2>
+<p>進入web介面時出現:</p>
+<pre class="literal-block">
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+</pre>
+<p>解決方法, 重新安裝 ...</p></div>
+                <a class="readmore" href="./computer/ganglia.html">read more</a>
+                <p>There are <a href="./computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
                         <li><article class="hentry">    
                 <header>
                     <h1><a href="./computer/rest-restructuredtextyu-sphinx.html" rel="bookmark"
@@ -211,13 +259,15 @@ $ find . -type d |xargs -n 1 cp -i foo
 </tr>
 </tbody>
 </table>
-<p>檔案大寫改小寫:</p>
+<div class="section" id="id2">
+<h3>改檔名</h3>
+<p>大寫改小寫:</p>
 <pre class="literal-block">
 $ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
 </pre>
-<p>改檔名, 只取數字, JPG改jpg:</p>
+<p>只取數字, JPG改jpg:</p>
 <pre class="literal-block">
-for i in *.JPG ; do mv &quot;$i&quot; `echo $i ...</pre></div>
+for i in *.JPG ; do mv &quot;$i&quot; `echo $i ...</pre></div></div>
                 <a class="readmore" href="./computer/unix_command.html">read more</a>
                 <p>There are <a href="./computer/unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

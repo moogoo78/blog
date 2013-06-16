@@ -1759,14 +1759,26 @@ $ find . -type d |xargs -n 1 cp -i foo
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;檔案大寫改小寫:&lt;/p&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;改檔名&lt;/h3&gt;
+&lt;p&gt;大寫改小寫:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
 &lt;/pre&gt;
-&lt;p&gt;改檔名, 只取數字, JPG改jpg:&lt;/p&gt;
+&lt;p&gt;只取數字, JPG改jpg:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 for i in *.JPG ; do mv &amp;quot;$i&amp;quot; `echo $i | tr -dc '[0-9]'`&amp;quot;.jpg&amp;quot; ; done
 &lt;/pre&gt;
+&lt;p&gt;for loop:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+for f in *.html; do
+    base=`basename $f .html`
+    mv $f $bae.php
+done
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h3&gt;找檔案&lt;/h3&gt;
 &lt;p&gt;找目錄名稱:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ find / -type d -name &amp;quot;dir_name&amp;quot;
@@ -1781,13 +1793,6 @@ $ du -a /home | sort -n -r | head -n 10
 $ grep -rl flaskext . |xargs sed -i -e 's/flaskext/flask.ext/'
 &lt;/pre&gt;
 &lt;p&gt;via: &lt;a class="reference external" href="http://www.commandlinefu.com/commands/view/4698/recursive-search-and-replace-old-with-new-string-inside-files"&gt;recursive search and replace old with new string, inside files | commandlinefu.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;匹次改檔名:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-for f in *.html; do
-    base=`basename $f .html`
-    mv $f $bae.php
-done
-&lt;/pre&gt;
 &lt;p&gt;coding convert:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 # big5 to utf-8
@@ -1803,7 +1808,8 @@ $ cat test.txt | iconv -f big5 -t gb2312
 $ cat test.txt | iconv -f utf-8 -t big5
 &lt;/pre&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id2"&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
 &lt;h2&gt;編輯&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://coolshell.cn/articles/9070.html"&gt;AWK 简明教程 | 酷壳 - CoolShell.cn&lt;/a&gt;&lt;/li&gt;
@@ -1813,7 +1819,7 @@ $ cat test.txt | iconv -f utf-8 -t big5
 :w !sudo tee %
 &lt;/pre&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id3"&gt;
+&lt;div class="section" id="id5"&gt;
 &lt;h2&gt;網路&lt;/h2&gt;
 &lt;pre class="literal-block"&gt;
 $ lsof -i # monitors network connections in real time

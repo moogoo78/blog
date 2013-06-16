@@ -23,7 +23,8 @@
                 <h1><a href="../">賤透走人 . Gentle Runner </a></h1>
                 <nav><ul>
                                                                     <li><a href="../pages/about.html">About</a></li>
-                                                                    <li class="active"><a href="../category/computer.html">computer</a></li>
+                                                                    <li ><a href="../category/book.html">book</a></li>
+                                    <li class="active"><a href="../category/computer.html">computer</a></li>
                                     <li ><a href="../category/language.html">language</a></li>
                                     <li ><a href="../category/mountain.html">mountain</a></li>
                                     <li ><a href="../category/music.html">music</a></li>
@@ -66,14 +67,26 @@ $ find . -type d |xargs -n 1 cp -i foo
 </tr>
 </tbody>
 </table>
-<p>檔案大寫改小寫:</p>
+<div class="section" id="id2">
+<h3>改檔名</h3>
+<p>大寫改小寫:</p>
 <pre class="literal-block">
 $ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
 </pre>
-<p>改檔名, 只取數字, JPG改jpg:</p>
+<p>只取數字, JPG改jpg:</p>
 <pre class="literal-block">
 for i in *.JPG ; do mv &quot;$i&quot; `echo $i | tr -dc '[0-9]'`&quot;.jpg&quot; ; done
 </pre>
+<p>for loop:</p>
+<pre class="literal-block">
+for f in *.html; do
+    base=`basename $f .html`
+    mv $f $bae.php
+done
+</pre>
+</div>
+<div class="section" id="id3">
+<h3>找檔案</h3>
 <p>找目錄名稱:</p>
 <pre class="literal-block">
 $ find / -type d -name &quot;dir_name&quot;
@@ -88,13 +101,6 @@ $ du -a /home | sort -n -r | head -n 10
 $ grep -rl flaskext . |xargs sed -i -e 's/flaskext/flask.ext/'
 </pre>
 <p>via: <a class="reference external" href="http://www.commandlinefu.com/commands/view/4698/recursive-search-and-replace-old-with-new-string-inside-files">recursive search and replace old with new string, inside files | commandlinefu.com</a></p>
-<p>匹次改檔名:</p>
-<pre class="literal-block">
-for f in *.html; do
-    base=`basename $f .html`
-    mv $f $bae.php
-done
-</pre>
 <p>coding convert:</p>
 <pre class="literal-block">
 # big5 to utf-8
@@ -110,7 +116,8 @@ $ cat test.txt | iconv -f big5 -t gb2312
 $ cat test.txt | iconv -f utf-8 -t big5
 </pre>
 </div>
-<div class="section" id="id2">
+</div>
+<div class="section" id="id4">
 <h2>編輯</h2>
 <ul class="simple">
 <li><a class="reference external" href="http://coolshell.cn/articles/9070.html">AWK 简明教程 | 酷壳 - CoolShell.cn</a></li>
@@ -120,7 +127,7 @@ $ cat test.txt | iconv -f utf-8 -t big5
 :w !sudo tee %
 </pre>
 </div>
-<div class="section" id="id3">
+<div class="section" id="id5">
 <h2>網路</h2>
 <pre class="literal-block">
 $ lsof -i # monitors network connections in real time

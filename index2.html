@@ -23,7 +23,8 @@
                 <h1><a href="./">賤透走人 . Gentle Runner </a></h1>
                 <nav><ul>
                                                                     <li><a href="./pages/about.html">About</a></li>
-                                                                    <li ><a href="./category/computer.html">computer</a></li>
+                                                                    <li ><a href="./category/book.html">book</a></li>
+                                    <li ><a href="./category/computer.html">computer</a></li>
                                     <li ><a href="./category/language.html">language</a></li>
                                     <li ><a href="./category/mountain.html">mountain</a></li>
                                     <li ><a href="./category/music.html">music</a></li>
@@ -37,6 +38,71 @@
                  
                             <section id="content" class="body">
                     <ol id="posts-list" class="hfeed" start="9">
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./language/woerter_unterschiedlich.html" rel="bookmark"
+                           title="Permalink to 各地區德語不同處">各地區德語不同處</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-05-04T02:44:00">
+                2013-05-04 02:44
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/moogoo.html">moogoo</a>
+        </address>
+        <p>In <a href="./category/language.html">language</a>. </p>
+<p>tags: <a href="./tag/bi-jiao.html">比較</a><a href="./tag/deutsch.html">deutsch</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="id2">
+<h2>南北不同</h2>
+<p>通常分成北德/Norddeutschland, 和拜仁/Bayern, 奧地利/Österreichers和瑞士人Schweizers (Schwyzerdütsch)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="57%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Norddeutschland</th>
+<th class="head">Österreich</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Guten Tag!</td>
+<td>Grüß Gott!</td>
+</tr>
+<tr><td>Auf Wiedersehen!</td>
+<td>Auf Wiederschauen!</td>
+</tr>
+<tr><td>Junge</td>
+<td>Bub</td>
+</tr>
+<tr><td>Treppe</td>
+<td>Stiege</td>
+</tr>
+<tr><td>Januar</td>
+<td>Jänner</td>
+</tr>
+<tr><td>dieses Jahr</td>
+<td>heuer</td>
+</tr>
+<tr><td>zu Hause</td>
+<td>daheim</td>
+</tr>
+<tr><td>gucken</td>
+<td>schauen</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+                <a class="readmore" href="./language/woerter_unterschiedlich.html">read more</a>
+                <p>There are <a href="./language/woerter_unterschiedlich.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
                         <li><article class="hentry">    
                 <header>
                     <h1><a href="./computer/emacs.html" rel="bookmark"
@@ -430,53 +496,6 @@ print django.get_version()
 <li>301 Moved ...</li></ul></div></div>
                 <a class="readmore" href="./computer/blog.html">read more</a>
                 <p>There are <a href="./computer/blog.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./computer/ganglia.html" rel="bookmark"
-                           title="Permalink to Ganglia">Ganglia</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-04-02T11:39:00">
-                2013-04-02 11:39
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="./author/moogoo.html">moogoo</a>
-        </address>
-        <p>In <a href="./category/computer.html">computer</a>. </p>
-<p>tags: <a href="./tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
-<p>Ganglia有3個部分:</p>
-<ul class="simple">
-<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
-<li>gmetad - 詢問gmond儲存數質</li>
-<li>ganglia-web</li>
-</ul>
-<pre class="literal-block">
-# config
-/etc/ganglia/gmetad.conf # CentOS
-/usr/share/ganglia/ # php files
-</pre>
-<p>start daemond:</p>
-<pre class="literal-block">
-service gmond start
-service gmetad start
-</pre>
-<div class="section" id="centos">
-<h2>CentOS</h2>
-<p>進入web介面時出現:</p>
-<pre class="literal-block">
-There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
-</pre>
-<p>解決方法, 重新安裝 ...</p></div>
-                <a class="readmore" href="./computer/ganglia.html">read more</a>
-                <p>There are <a href="./computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

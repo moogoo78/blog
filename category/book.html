@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Elscreen - Emacs好用的tab mode</title>
+        <title>賤透走人 . Gentle Runner - book</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
                 <link href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="賤透走人 . Gentle Runner Atom Feed" />
@@ -23,8 +23,8 @@
                 <h1><a href="../">賤透走人 . Gentle Runner </a></h1>
                 <nav><ul>
                                                                     <li><a href="../pages/about.html">About</a></li>
-                                                                    <li ><a href="../category/book.html">book</a></li>
-                                    <li class="active"><a href="../category/computer.html">computer</a></li>
+                                                                    <li class="active"><a href="../category/book.html">book</a></li>
+                                    <li ><a href="../category/computer.html">computer</a></li>
                                     <li ><a href="../category/language.html">language</a></li>
                                     <li ><a href="../category/mountain.html">mountain</a></li>
                                     <li ><a href="../category/music.html">music</a></li>
@@ -32,62 +32,62 @@
                                     <li ><a href="../category/run.html">run</a></li>
                                 </ul></nav>
         </header><!-- /#banner -->
-        <section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="../computer/emacs_elscreen.html" rel="bookmark"
-           title="Permalink to Elscreen - Emacs好用的tab mode">Elscreen - Emacs好用的tab mode</a></h1>
-          </header>
+                
+            
 
-    <div class="entry-content">
-      <footer class="post-info">
-        <abbr class="published" title="2013-04-23T17:28:00">
-                2013-04-23 17:28
+                            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="../book/umesao_tadao_knowledge.html">[book] 梅棹忠夫（1969）。知識誕生的奧秘。志文出版社。</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2013-06-16T13:12:00">
+                2013-06-16 13:12
         </abbr>
 
                 <address class="vcard author">
                 By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
-        <p>In <a href="../category/computer.html">computer</a>. </p>
-<p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info -->      <p>我以為在Emacs一直沒有好的tab顯示模式，以前用過tabbar_ mode，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。</p>
-<p>下載elscreen.el: <a class="reference external" href="ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/">ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/</a></p>
-<p>elscreen.el只有一個檔案，但是他要依附一套 <a class="reference external" href="https://github.com/jeffgran/APEL">APEL</a> 才可以運作。</p>
-<pre class="literal-block">
-;; elscreen
-(add-to-list 'load-path (concat my-path &quot;goodies/APEL&quot;))
-(load &quot;elscreen&quot; &quot;ElScreen&quot; )
-(setq elscreen-display-tab t)
+        <p>In <a href="../category/book.html">book</a>. </p>
 
-(global-set-key (kbd &quot;C-x t&quot;) 'elscreen-create)
-(global-set-key (kbd &quot;C-x w&quot;) 'elscreen-kill)
-(global-set-key (kbd &quot;M-t&quot;) 'elscreen-previous) ;;transpose-words
-(global-set-key (kbd &quot;M-n&quot;) 'elscreen-next)
-</pre>
-<p>參考:</p>
+</footer><!-- /.post-info --><img alt="/static/images/book/umesao_tadao-knowlegde.jpg" src="/static/images/book/umesao_tadao-knowlegde.jpg" />
+<div class="section" id="id1">
+<h2>原書名：知性生產技術</h2>
+<p>忘記在那裡買了這本2手書，也忘了是什麼機緣下買的，作者 <a class="reference external" href="http://ja.wikipedia.org/wiki/梅棹忠夫">梅棹忠夫</a> 是日本重要的生態學家，民族學家，但我認識他卻是因為登山相關書籍。翻譯很棒，譯者叫林景淵，會適時加譯注，讓不熟日本文化的台灣人可以更了解作者想表達的意思。</p>
+<p>日本對「知識整理」這方面實在著墨很深，如何整理，用什麼方式，工具，巨細靡遺的都討論的很透徹。這本書年代比較久遠，所以當時電腦還沒有普及，所以像為了整齊的「美感」，把日文用羅馬文字打字幾打出來，或是後來發明了假名文字打字機，現在讀起來都很有趣。</p>
+</div>
+<div class="section" id="id2">
+<h2>札記簿，卡片</h2>
+<p>從達文西的札記簿得到啟發，隨時都帶著筆記本，紀錄所有的事情。但是紀錄完後如果時候不檢索，全部往櫃子裡塞也是沒有用的，所以開始使用「卡片系統」來紀錄。</p>
+<p>發明「京大式」（取名京都大學），12.8x18.2cm，105磅畫刊紙，可以任意抽換。</p>
+<div class="section" id="id3">
+<h3>不分類</h3>
 <ul class="simple">
-<li><a class="reference external" href="http://d.hatena.ne.jp/plasticster/20110825/1314271209">elscreen 改め tabbar のインストールログ - テクノ組曲</a></li>
-<li><a class="reference external" href="http://emacs-fu.blogspot.tw/2009/07/keeping-related-buffers-together-with.html">emacs-fu: keeping related buffers together with elscreen</a></li>
+<li>分類是為了儲藏，卡片的知識如果不加以活用的話就沒什麼意義。</li>
+<li>原有資料往往可以變更組合方式而帶來新發現。這不儘是「儲蓄知識過程」，而是一種「知性創造過程」。</li>
+<li>分類並非那麼重要，一而再，再而三的去翻閱他們才是最重要的。</li>
 </ul>
-
-    </div><!-- /.entry-content -->
-        <div class="comments">
-      <h2>Comments !</h2>
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-        var disqus_identifier = "computer/emacs_elscreen.html";
-        (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://suhenorg.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-    </div>
-    
-  </article>
-</section>
-        <section id="extras" class="body">
+</div>
+</div>
+<div class="section" id="id4">
+<h2>打字機</h2>
+<p>筆，墨，鉛筆，鋼筆到打字機：效率，美。</p>
+<div class="section" id="id5">
+<h3>日本文字改革</h3>
+<ul class="simple">
+<li>明治初期「羅馬字國字論」（羅馬字運動）</li>
+<li>「新字論」主張用新的音節文字來標示日文，制訂了約100個字。</li>
+<li>「假名文字論」主張用片假名橫寫。開始於一次大戰後大阪工商界。</li>
+</ul>
+<p>對作者來說，用打字機來表達日本才是最終目標，使用羅馬字或假名都不是真正目的。</p>
+</div>
+</div>
+<p>There are <a href="../book/umesao_tadao_knowledge.html#disqus_thread">comments</a>.</p>                </article>
+                                    <p class="paginator">
+        Page 1 / 1
+    </p>
+                            </aside><!-- /#featured -->
+                                                </ol><!-- /#posts-list -->
+                        </section><!-- /#content -->
+                    <section id="extras" class="body">
                                 <div class="social">
                         <h2>social</h2>
                         <ul>
