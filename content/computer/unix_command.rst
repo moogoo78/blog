@@ -16,18 +16,35 @@ UNIX Command 常用指令
 :cp -i: 詢問y or n
 
 
-檔案大寫改小寫::
+改檔名
+---------------
+
+
+大寫改小寫::
 
   $ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
 
-改檔名, 只取數字, JPG改jpg::
+
+只取數字, JPG改jpg::
 
   for i in *.JPG ; do mv "$i" `echo $i | tr -dc '[0-9]'`".jpg" ; done
 
 
+for loop::
+
+  for f in *.html; do
+      base=`basename $f .html`
+      mv $f $bae.php
+  done
+
+
+找檔案
+-------------
+
 找目錄名稱::
 
   $ find / -type d -name "dir_name"
+
 
 找出體積最大前十檔案/目錄:: 
   
@@ -40,13 +57,6 @@ via: `Linux 下找出體積最大的檔案/目錄 – 網絡技術日誌 <http:/
   $ grep -rl flaskext . |xargs sed -i -e 's/flaskext/flask.ext/'
 
 via: `recursive search and replace old with new string, inside files | commandlinefu.com <http://www.commandlinefu.com/commands/view/4698/recursive-search-and-replace-old-with-new-string-inside-files>`__ 
-
-匹次改檔名::
-
-  for f in *.html; do
-      base=`basename $f .html`
-      mv $f $bae.php
-  done
 
 
 coding convert::

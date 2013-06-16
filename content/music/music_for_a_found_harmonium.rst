@@ -12,10 +12,19 @@ Music For A Found Harmonium
 
 .. youtube:: PltA5woXKaA
 
-
 延伸連結
 
 * `Penguin Cafe Orchestra - Wikipedia, the free encyclopedia <http://en.wikipedia.org/wiki/Penguin_Cafe_Orchestra>`__
 * `Penguin Cafe Orchestra - Music Biography, Credits and Discography : AllMusic <http://www.allmusic.com/artist/penguin-cafe-orchestra-mn0000308762>`__
 * `Patrick Street - Music Biography, Credits and Discography : AllMusic <http://www.allmusic.com/artist/patrick-street-mn0000011041>`__
 * `Napoleon Dynamite (2004) - IMDb <http://www.imdb.com/title/tt0374900/>`__
+
+
+.. comment
+
+  動畫片「巧克力情緣」 (Mary and Max)
+  .. youtube:: cRot3UdFTU4
+
+  (感謝Fiona提供)
+  `Mary and Max (2009) - IMDb <http://www.imdb.com/title/tt0978762/>`__ -> cover
+
