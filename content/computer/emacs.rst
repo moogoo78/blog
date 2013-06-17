@@ -1,9 +1,9 @@
-Emacs
-###########
+Emacs 小抄
+################
 :date: 2013-04-26 18:37
 :tags: docs
 :category: computer
-
+:slug: emacs_cheat
 
 Tips
 ========
@@ -138,6 +138,25 @@ O    chown
 G    chgrp
 g    refresh
 ===  ============================= 
+
+批次改檔名
+^^^^^^^^^^^^
+
+==========  =============================
+C-x C-q     wdired-change-to-wdired-mode 
+C-c C-c     wdired-finish-edit
+C-c C-Esc   wdired-abort-changes
+==========  =============================
+
+.. note:: C-x C-q (23.1以後)
+
+
+
+
+
+
+ref: `Emacs: Rename Files Interactively by Pattern (regex; wdired) <http://ergoemacs.org/emacs/rename_file_pattern.html>`__
+
 
 Org-mode
 --------------

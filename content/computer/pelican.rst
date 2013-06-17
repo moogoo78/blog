@@ -31,8 +31,11 @@ Quick-start
 工具指令::
 
   $ make html # 顧名思義
+  $ make clean 
   $ make rsync_upload # 用rsync上傳到你的ssh host
   $ make serve # 啟動python的SimpleHTTPServer
+  $ make devserver # 修改rst會自動reload, 重啓server
+  $ make github #自動執行ghp-import到github pages
 
 
 文章格式
