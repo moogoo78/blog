@@ -37,8 +37,36 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../computer/pelican_github_pages.rst.html">把靜態blog放到Github Pages上，以pelican為例</a></h1> 
+                    <h1 class="entry-title"><a href="../computer/emacs_dired_rename.html">[Computer] 用Emacs dired-mode批次改檔名</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-06-17T14:55:00">
+                2013-06-17 14:55
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
+        </address>
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/emacs.html">emacs</a><a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info --><p>看到 <a class="reference external" href="http://xahlee.org">XahLee</a> 的一篇文章: <a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html">Emacs: Rename Files Interactively by Pattern (regex; wdired)</a> ，用Emacs來處理批次改檔名實在太方便了。</p>
+<p>在Dired模式下，**C-x C-q** 進入修改模式，或是執行 <strong>wdired-change-to-wdired-mode</strong>, 這時改檔名就像改一般文字檔一樣，可以用 <em>query-replace</em>, <em>query-replace-regexp</em> 或 <em>cua-mode</em> , 改完後 <strong>C-c C-c</strong> 送出, 或是 <strong>C-c C-Esc</strong> 取消就可以了,  比寫script直覺多了。</p>
+<p>There are <a href="../computer/emacs_dired_rename.html#disqus_thread">comments</a>.</p>                </article>
+                            </aside><!-- /#featured -->
+                            <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+                                                
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="../computer/pelican_github_pages.rst.html" rel="bookmark"
+                           title="Permalink to 把靜態blog放到Github Pages上，以pelican為例">把靜態blog放到Github Pages上，以pelican為例</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-06-01T11:36:00">
                 2013-06-01 11:36
         </abbr>
@@ -48,7 +76,7 @@
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info --><p>之前開始把blog轉到使用 <a class="reference external" href="../computer/pelican.html">pelican產生靜態blog</a> ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。</p>
+</footer><!-- /.post-info -->                <p>之前開始把blog轉到使用 <a class="reference external" href="../computer/pelican.html">pelican產生靜態blog</a> ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。</p>
 <p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
 <div class="section" id="id1">
 <h2>環境設定</h2>
@@ -71,39 +99,11 @@ $ pelican -s pelican.conf.py .
 $ ghp-import output
 $ git push origin gh-pages
 
-# 其實pelican的make就可以了
-$ make github
-</pre>
-</div>
-<div class="section" id="domain">
-<h2>自訂domain</h2>
-<ol class="arabic simple">
-<li>在你的domain設定指向github的IP</li>
-<li>在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain</li>
-</ol>
-<p>放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。</p>
-<p>先產生content/extra/CNAME，然後在pelicanconf.py加入:</p>
-<pre class="literal-block">
-FILES_TO_COPY = (
-    ('extra/CNAME', 'CNAME'),
-)
-</pre>
-</div>
-<div class="section" id="id2">
-<h2>參考</h2>
-<ul class="simple">
-<li><a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew">Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry</a></li>
-<li><a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html">Tips — Pelican 3 documentation</a></li>
-<li><a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">Setting up a custom domain with Pages · GitHub Help</a></li>
-</ul>
-</div>
-<p>There are <a href="../computer/pelican_github_pages.rst.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+# 其實pelican的make就可以了 ...</pre></div>
+                <a class="readmore" href="../computer/pelican_github_pages.rst.html">read more</a>
+                <p>There are <a href="../computer/pelican_github_pages.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
 
                  
                         <li><article class="hentry">    
@@ -202,8 +202,8 @@ select_expr [, select_expr ...]
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../computer/emacs.html" rel="bookmark"
-                           title="Permalink to Emacs">Emacs</a></h1>
+                    <h1><a href="../computer/emacs_cheat.html" rel="bookmark"
+                           title="Permalink to Emacs 小抄">Emacs 小抄</a></h1>
                 </header>
                 
                 <div class="entry-content">
@@ -252,8 +252,8 @@ M-x replace-regexp RET $ RET &quot;, RET ;; 結尾加&quot;
 M-x cua-mode
 選好區塊
 C-RET ...</pre></div>
-                <a class="readmore" href="../computer/emacs.html">read more</a>
-                <p>There are <a href="../computer/emacs.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../computer/emacs_cheat.html">read more</a>
+                <p>There are <a href="../computer/emacs_cheat.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
@@ -332,8 +332,8 @@ $ content/first.rst
 <p>工具指令:</p>
 <pre class="literal-block">
 $ make html # 顧名思義
-$ make rsync_upload # 用rsync上傳到你的ssh host
-$ make serve ...</pre></div>
+$ make clean
+$ make rsync_upload # 用rsync上傳到你的ssh host ...</pre></div>
                 <a class="readmore" href="../computer/pelican.html">read more</a>
                 <p>There are <a href="../computer/pelican.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
@@ -491,53 +491,6 @@ print django.get_version()
 <li>301 Moved ...</li></ul></div></div>
                 <a class="readmore" href="../computer/blog.html">read more</a>
                 <p>There are <a href="../computer/blog.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../computer/ganglia.html" rel="bookmark"
-                           title="Permalink to Ganglia">Ganglia</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-04-02T11:39:00">
-                2013-04-02 11:39
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
-        </address>
-        <p>In <a href="../category/computer.html">computer</a>. </p>
-<p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
-<p>Ganglia有3個部分:</p>
-<ul class="simple">
-<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
-<li>gmetad - 詢問gmond儲存數質</li>
-<li>ganglia-web</li>
-</ul>
-<pre class="literal-block">
-# config
-/etc/ganglia/gmetad.conf # CentOS
-/usr/share/ganglia/ # php files
-</pre>
-<p>start daemond:</p>
-<pre class="literal-block">
-service gmond start
-service gmetad start
-</pre>
-<div class="section" id="centos">
-<h2>CentOS</h2>
-<p>進入web介面時出現:</p>
-<pre class="literal-block">
-There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
-</pre>
-<p>解決方法, 重新安裝 ...</p></div>
-                <a class="readmore" href="../computer/ganglia.html">read more</a>
-                <p>There are <a href="../computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

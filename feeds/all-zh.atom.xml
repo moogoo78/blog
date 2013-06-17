@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-16T13:12:00+08:00</updated><entry><title>[book] 梅棹忠夫（1969）。知識誕生的奧秘。志文出版社。</title><link href="http://suhen.org/book/umesao_tadao_knowledge.html" rel="alternate"></link><updated>2013-06-16T13:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-16:book/umesao_tadao_knowledge.html</id><summary type="html">&lt;img alt="/static/images/book/umesao_tadao-knowlegde.jpg" src="/static/images/book/umesao_tadao-knowlegde.jpg" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-17T14:55:00+08:00</updated><entry><title>[Computer] 用Emacs dired-mode批次改檔名</title><link href="http://suhen.org/computer/emacs_dired_rename.html" rel="alternate"></link><updated>2013-06-17T14:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-17:computer/emacs_dired_rename.html</id><summary type="html">&lt;p&gt;看到 &lt;a class="reference external" href="http://xahlee.org"&gt;XahLee&lt;/a&gt; 的一篇文章: &lt;a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html"&gt;Emacs: Rename Files Interactively by Pattern (regex; wdired)&lt;/a&gt; ，用Emacs來處理批次改檔名實在太方便了。&lt;/p&gt;
+&lt;p&gt;在Dired模式下，**C-x C-q** 進入修改模式，或是執行 &lt;strong&gt;wdired-change-to-wdired-mode&lt;/strong&gt;, 這時改檔名就像改一般文字檔一樣，可以用 &lt;em&gt;query-replace&lt;/em&gt;, &lt;em&gt;query-replace-regexp&lt;/em&gt; 或 &lt;em&gt;cua-mode&lt;/em&gt; , 改完後 &lt;strong&gt;C-c C-c&lt;/strong&gt; 送出, 或是 &lt;strong&gt;C-c C-Esc&lt;/strong&gt; 取消就可以了,  比寫script直覺多了。&lt;/p&gt;
+</summary><category term="emacs"></category><category term="note"></category></entry><entry><title>[book] 梅棹忠夫（1969）。知識誕生的奧秘。志文出版社。</title><link href="http://suhen.org/book/umesao_tadao_knowledge.html" rel="alternate"></link><updated>2013-06-16T13:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-16:book/umesao_tadao_knowledge.html</id><summary type="html">&lt;img alt="/static/images/book/umesao_tadao-knowlegde.jpg" src="/static/images/book/umesao_tadao-knowlegde.jpg" /&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;原書名：知性生產技術&lt;/h2&gt;
 &lt;p&gt;忘記在那裡買了這本2手書，也忘了是什麼機緣下買的，作者 &lt;a class="reference external" href="http://ja.wikipedia.org/wiki/梅棹忠夫"&gt;梅棹忠夫&lt;/a&gt; 是日本重要的生態學家，民族學家，但我認識他卻是因為登山相關書籍。翻譯很棒，譯者叫林景淵，會適時加譯注，讓不熟日本文化的台灣人可以更了解作者想表達的意思。&lt;/p&gt;
@@ -622,7 +624,7 @@ Engine
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="比較"></category><category term="deutsch"></category></entry><entry><title>Emacs</title><link href="http://suhen.org/computer/emacs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-26:computer/emacs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
+</summary><category term="比較"></category><category term="deutsch"></category></entry><entry><title>Emacs 小抄</title><link href="http://suhen.org/computer/emacs_cheat.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-26:computer/emacs_cheat.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
 &lt;h2&gt;Tips&lt;/h2&gt;
 &lt;p&gt;自動補齊:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -856,6 +858,31 @@ C-RET
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h4&gt;批次改檔名&lt;/h4&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="26%" /&gt;
+&lt;col width="74%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;C-x C-q&lt;/td&gt;
+&lt;td&gt;wdired-change-to-wdired-mode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-c&lt;/td&gt;
+&lt;td&gt;wdired-finish-edit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-c C-Esc&lt;/td&gt;
+&lt;td&gt;wdired-abort-changes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;C-x C-q (23.1以後)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;ref: &lt;a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html"&gt;Emacs: Rename Files Interactively by Pattern (regex; wdired)&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="org-mode"&gt;
 &lt;h3&gt;Org-mode&lt;/h3&gt;
@@ -869,7 +896,7 @@ C-RET
 #+STARTUP: hideblocks
 #+STARTUP: nohideblock
 &lt;/pre&gt;
-&lt;div class="section" id="id2"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h4&gt;移動&lt;/h4&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;
@@ -1078,8 +1105,11 @@ $ content/first.rst
 &lt;p&gt;工具指令:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ make html # 顧名思義
+$ make clean
 $ make rsync_upload # 用rsync上傳到你的ssh host
 $ make serve # 啟動python的SimpleHTTPServer
+$ make devserver # 修改rst會自動reload, 重啓server
+$ make github #自動執行ghp-import到github pages
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id1"&gt;

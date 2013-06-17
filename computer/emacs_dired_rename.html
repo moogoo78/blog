@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Pelican - 邁向靜態blog之路</title>
+        <title>[Computer] 用Emacs dired-mode批次改檔名</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
                 <link href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="賤透走人 . Gentle Runner Atom Feed" />
@@ -36,90 +36,30 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="../computer/pelican.html" rel="bookmark"
-           title="Permalink to Pelican - 邁向靜態blog之路">Pelican - 邁向靜態blog之路</a></h1>
+        <a href="../computer/emacs_dired_rename.html" rel="bookmark"
+           title="Permalink to [Computer] 用Emacs dired-mode批次改檔名">[Computer] 用Emacs dired-mode批次改檔名</a></h1>
           </header>
 
     <div class="entry-content">
       <footer class="post-info">
-        <abbr class="published" title="2013-04-11T12:57:00">
-                2013-04-11 12:57
+        <abbr class="published" title="2013-06-17T14:55:00">
+                2013-06-17 14:55
         </abbr>
 
                 <address class="vcard author">
                 By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
-<p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info -->      <p>一直想用純HTML來寫blog，做筆記，最早用PHP的 <a class="reference external" href="https://www.dokuwiki.org">dokuwiki</a> ，不想被PHP server綁住，改用Emacs的 <a class="reference external" href="http://orgmode.org/">Orgmode</a>, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 <a class="reference external" href="http://gentlerunner.org/rest-restructuredtextyu-sphinx.html">reST</a> (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。</p>
-<div class="section" id="quick-start">
-<h2>Quick-start</h2>
-<p>安裝:</p>
-<pre class="literal-block">
-$ pip install pelican
-</pre>
-<p>開始:</p>
-<pre class="literal-block">
-$ mkdir blog
-$ cd blog
-$ pelican-quickstart
-</pre>
-<p>快速產生相關的設定</p>
-<p>寫第一篇文章:</p>
-<pre class="literal-block">
-$ content/first.rst
-</pre>
-<p>工具指令:</p>
-<pre class="literal-block">
-$ make html # 顧名思義
-$ make clean
-$ make rsync_upload # 用rsync上傳到你的ssh host
-$ make serve # 啟動python的SimpleHTTPServer
-$ make devserver # 修改rst會自動reload, 重啓server
-$ make github #自動執行ghp-import到github pages
-</pre>
-</div>
-<div class="section" id="id1">
-<h2>文章格式</h2>
-<p>屬性:</p>
-<pre class="literal-block">
-:date: 2013-04-14 (必填)
-:category: music
-:tags: foo, bar
-:slug:
-:lang:
-:author:
-:status: draft (不會處理)
-</pre>
-<p>圖片:</p>
-<pre class="literal-block">
-.. image:: /path/to/filename.jpg
-   :height: 450 px
-   :width: 600 px
-   :alt: alternate text
-</pre>
-<p>連結:</p>
-<pre class="literal-block">
-.. `title &lt;http://foo.bar&gt;`__ 跟reST一樣
-
-this is a foo_ .
-.. _foo: http://foo.bar
-</pre>
-</div>
-<div class="section" id="id2">
-<h2>其他</h2>
-<ul class="simple">
-<li>Hyde (看起來很複雜，沒仔細看) - <a class="reference external" href="http://ringce.com/hyde">http://ringce.com/hyde</a></li>
-<li>Nikola 有image gallery (把圖片丟到某個目錄下就好了) - <a class="reference external" href="http://nikola.ralsina.com.ar/">http://nikola.ralsina.com.ar/</a></li>
-</ul>
-</div>
+<p>tags: <a href="../tag/emacs.html">emacs</a><a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info -->      <p>看到 <a class="reference external" href="http://xahlee.org">XahLee</a> 的一篇文章: <a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html">Emacs: Rename Files Interactively by Pattern (regex; wdired)</a> ，用Emacs來處理批次改檔名實在太方便了。</p>
+<p>在Dired模式下，**C-x C-q** 進入修改模式，或是執行 <strong>wdired-change-to-wdired-mode</strong>, 這時改檔名就像改一般文字檔一樣，可以用 <em>query-replace</em>, <em>query-replace-regexp</em> 或 <em>cua-mode</em> , 改完後 <strong>C-c C-c</strong> 送出, 或是 <strong>C-c C-Esc</strong> 取消就可以了,  比寫script直覺多了。</p>
 
     </div><!-- /.entry-content -->
         <div class="comments">
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "computer/pelican.html";
+        var disqus_identifier = "computer/emacs_dired_rename.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';
