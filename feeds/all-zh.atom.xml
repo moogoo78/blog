@@ -223,24 +223,23 @@ alt + 數字
 &lt;/ul&gt;
 </summary><category term="經典翻唱"></category></entry><entry><title>Database筆記</title><link href="http://suhen.org/computer/database_note.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-05-09:computer/database_note.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
 &lt;h2&gt;MySql&lt;/h2&gt;
-&lt;p&gt;Syntax:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-[ALL | DISTINCT | DISTINCTROW ]
-  [HIGH_PRIORITY]
-  [STRAIGHT_JOIN]
-  [SQL_SMALL_RESULT] [SQL_BIG_RESULT] [SQL_BUFFER_RESULT]
-  [SQL_CACHE | SQL_NO_CACHE] [SQL_CALC_FOUND_ROWS]
-select_expr [, select_expr ...]
-[FROM table_references
-[WHERE where_condition]
-[GROUP BY {col_name | expr | position}
-  [ASC | DESC], ... [WITH ROLLUP]]
-[HAVING where_condition]
-[ORDER BY {col_name | expr | position}
-  [ASC | DESC], ...]
-[LIMIT {[offset,] row_count | row_count OFFSET offset}]
-[PROCEDURE procedure_name(argument_list)]
-&lt;/pre&gt;
+&lt;p&gt;Syntax&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;ALL&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;DISTINCT&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;DISTINCTROW&lt;/span&gt; &lt;span class="p"&gt;]&lt;/span&gt;
+  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;HIGH_PRIORITY&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;STRAIGHT_JOIN&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SQL_SMALL_RESULT&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SQL_BIG_RESULT&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SQL_BUFFER_RESULT&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SQL_CACHE&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;SQL_NO_CACHE&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SQL_CALC_FOUND_ROWS&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;select_expr&lt;/span&gt; &lt;span class="p"&gt;[,&lt;/span&gt; &lt;span class="n"&gt;select_expr&lt;/span&gt; &lt;span class="p"&gt;...]&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;table_references&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;WHERE&lt;/span&gt; &lt;span class="n"&gt;where_condition&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;GROUP&lt;/span&gt; &lt;span class="k"&gt;BY&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="n"&gt;col_name&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;expr&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;
+  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;ASC&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;DESC&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;...&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;WITH&lt;/span&gt; &lt;span class="k"&gt;ROLLUP&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;HAVING&lt;/span&gt; &lt;span class="n"&gt;where_condition&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;ORDER&lt;/span&gt; &lt;span class="k"&gt;BY&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="n"&gt;col_name&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;expr&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;
+  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;ASC&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;DESC&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;...]&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;LIMIT&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;offset&lt;/span&gt;&lt;span class="p"&gt;,]&lt;/span&gt; &lt;span class="k"&gt;row_count&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;row_count&lt;/span&gt; &lt;span class="k"&gt;OFFSET&lt;/span&gt; &lt;span class="k"&gt;offset&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;PROCEDURE&lt;/span&gt; &lt;span class="n"&gt;procedure_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;argument_list&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;div class="note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;MySQL的JOIN預設是 &lt;tt class="docutils literal"&gt;INNER JOIN&lt;/tt&gt; ，另一種是LEFT OUTER JOIN，通常用 &lt;tt class="docutils literal"&gt;LEFT JOIN&lt;/tt&gt; 就可以了。MySQL會優先處理JOIN，然後才是WHERE。&lt;/p&gt;
@@ -434,18 +433,21 @@ SET character_set_connection = utf8;
 &lt;/div&gt;
 &lt;div class="section" id="command"&gt;
 &lt;h3&gt;command&lt;/h3&gt;
-&lt;p&gt;執行:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-mysql -uUSER -pPASS -e &amp;quot;DROP DATABASE foo; CREATE DATABASE bar COLLATE 'utf8_general_ci';&amp;quot;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;mysql&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;uUSER&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pPASS&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;DROP DATABASE foo; CREATE DATABASE bar COLLATE &amp;#39;utf8_general_ci&amp;#39;;&amp;quot;&lt;/span&gt;
 
-SHOW DATABASES;
-SHOW TABLES;
-USE db_name;
+&lt;span class="k"&gt;SHOW&lt;/span&gt; &lt;span class="n"&gt;DATABASES&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;SHOW&lt;/span&gt; &lt;span class="n"&gt;TABLES&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;USE&lt;/span&gt; &lt;span class="n"&gt;db_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
-TRUNCATE tbl_name;
-DROP DATABASE db_name;
-DROP TABLE tbl_name;
-&lt;/pre&gt;
+&lt;span class="k"&gt;TRUNCATE&lt;/span&gt; &lt;span class="n"&gt;tbl_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;DROP&lt;/span&gt; &lt;span class="k"&gt;DATABASE&lt;/span&gt; &lt;span class="n"&gt;db_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;DROP&lt;/span&gt; &lt;span class="k"&gt;TABLE&lt;/span&gt; &lt;span class="n"&gt;tbl_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="k"&gt;SHOW&lt;/span&gt; &lt;span class="k"&gt;TABLE&lt;/span&gt; &lt;span class="n"&gt;STATUS&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;看&lt;/span&gt;&lt;span class="k"&gt;collation&lt;/span&gt;
+&lt;span class="k"&gt;DESCRIBE&lt;/span&gt; &lt;span class="n"&gt;tbl_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;看&lt;/span&gt;&lt;span class="k"&gt;table&lt;/span&gt;&lt;span class="err"&gt;屬性&lt;/span&gt;
+&lt;span class="k"&gt;SHOW&lt;/span&gt; &lt;span class="k"&gt;FULL&lt;/span&gt; &lt;span class="n"&gt;COLUMNS&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;tbl_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="k"&gt;table&lt;/span&gt; &lt;span class="err"&gt;細節&lt;/span&gt;
+&lt;span class="k"&gt;ALTER&lt;/span&gt; &lt;span class="k"&gt;TABLE&lt;/span&gt; &lt;span class="n"&gt;tablename&lt;/span&gt; &lt;span class="k"&gt;CONVERT&lt;/span&gt; &lt;span class="k"&gt;TO&lt;/span&gt; &lt;span class="nb"&gt;CHARACTER&lt;/span&gt; &lt;span class="k"&gt;SET&lt;/span&gt; &lt;span class="n"&gt;utf8&lt;/span&gt; &lt;span class="k"&gt;COLLATE&lt;/span&gt; &lt;span class="n"&gt;utf8_general_ci&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;改欄位編碼&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="server-management"&gt;
 &lt;h3&gt;Server Management&lt;/h3&gt;
@@ -1137,6 +1139,18 @@ $ make github #自動執行ghp-import到github pages
 
 this is a foo_ .
 .. _foo: http://foo.bar
+&lt;/pre&gt;
+&lt;p&gt;區塊:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+foo::
+
+spam spam spam spam
+&lt;/pre&gt;
+&lt;p&gt;syntax highlight:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. code-block:: python
+
+import os
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id2"&gt;
@@ -2097,6 +2111,10 @@ $ du -a /home | sort -n -r | head -n 10
 $ grep -rl flaskext . |xargs sed -i -e 's/flaskext/flask.ext/'
 &lt;/pre&gt;
 &lt;p&gt;via: &lt;a class="reference external" href="http://www.commandlinefu.com/commands/view/4698/recursive-search-and-replace-old-with-new-string-inside-files"&gt;recursive search and replace old with new string, inside files | commandlinefu.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;列出各目錄大小(不顯示子目錄):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+du -h | grep -v '[a-z]/.'
+&lt;/pre&gt;
 &lt;p&gt;coding convert:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 # big5 to utf-8
