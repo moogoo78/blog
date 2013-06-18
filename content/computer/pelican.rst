@@ -65,6 +65,19 @@ Quick-start
   this is a foo_ .
   .. _foo: http://foo.bar
 
+區塊::
+
+  foo::
+  
+  spam spam spam spam
+
+
+syntax highlight::
+  
+  .. code-block:: python
+
+  import os
+
 其他
 ===========
 

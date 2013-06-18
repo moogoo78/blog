@@ -10,7 +10,9 @@ Database筆記
 MySql
 =======================
 
-Syntax::
+Syntax
+
+.. code-block:: sql
 
     [ALL | DISTINCT | DISTINCTROW ]
       [HIGH_PRIORITY]
@@ -215,7 +217,8 @@ php的 ``mysql_query("SET NAMES UTF8");`` 相當於MySQL::
 
 command
 -----------
-執行::
+
+.. code-block:: sql
 
   mysql -uUSER -pPASS -e "DROP DATABASE foo; CREATE DATABASE bar COLLATE 'utf8_general_ci';"
 
@@ -226,6 +229,11 @@ command
   TRUNCATE tbl_name;
   DROP DATABASE db_name;
   DROP TABLE tbl_name;
+
+  SHOW TABLE STATUS; # 看collation
+  DESCRIBE tbl_name; # 看table屬性
+  SHOW FULL COLUMNS FROM tbl_name; #table 細節
+  ALTER TABLE tablename CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci; # 改欄位編碼
 
 
 Server Management

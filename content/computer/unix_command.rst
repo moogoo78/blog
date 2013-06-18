@@ -59,6 +59,12 @@ via: `Linux 下找出體積最大的檔案/目錄 – 網絡技術日誌 <http:/
 via: `recursive search and replace old with new string, inside files | commandlinefu.com <http://www.commandlinefu.com/commands/view/4698/recursive-search-and-replace-old-with-new-string-inside-files>`__ 
 
 
+列出各目錄大小(不顯示子目錄)::
+
+  du -h | grep -v '[a-z]/.'
+
+
+
 coding convert::
 
   # big5 to utf-8
