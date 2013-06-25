@@ -66,15 +66,17 @@ search: M-c 切換case-sensitivity
 Register and Bookmark
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-============   ========================================================
+============   ====================================================================
 C-x r SPACE    設定register, 出現Point to register後輸入一字元
 C-x r j        移動到register, 出現Jump to register後輸入一字元
 C-x r s a      copy-to-register, 把region內的文字copy到register a
 C-x r i a      insert-register, insert register a
+C-x r w a      把window的狀態存起來, window-configuration-to-register, C-x r j叫出來
+C-x r f a      frame-configuration-to-register
 C-x r m        設定bookmark, bookmark會永久存起來(~/.emacs.bmk), register不會
 C-x r b        goto bookmark
 C-x r l        list bookmark
-============   ========================================================
+============   ====================================================================
 
 
 Coding
