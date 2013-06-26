@@ -30,6 +30,7 @@
                                     <li ><a href="../category/music.html">music</a></li>
                                     <li ><a href="../category/nature.html">nature</a></li>
                                     <li ><a href="../category/run.html">run</a></li>
+                                    <li ><a href="../category/travel.html">travel</a></li>
                                 </ul></nav>
         </header><!-- /#banner -->
                 
@@ -37,8 +38,93 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../computer/emacs_dired_rename.html">[Computer] 用Emacs dired-mode批次改檔名</a></h1> 
+                    <h1 class="entry-title"><a href="../computer/emacs_replace-regexp.rst.html">[computer] 善用Emacs的replace-regexp</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-06-25T10:07:00">
+                2013-06-25 10:07
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
+        </address>
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/note.html">note</a><a href="../tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info --><p>指令:</p>
+<pre class="literal-block">
+M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
+</pre>
+<p>特殊字</p>
+<ul class="simple">
+<li><tt class="docutils literal">\&amp;’</tt> 完整的匹配字</li>
+<li><tt class="docutils literal">\d</tt> d是數字, 表示匹配在第幾個group (back reference)</li>
+<li><tt class="docutils literal">\#</tt> 累加, 發生第幾次,第一次從0開始</li>
+<li><tt class="docutils literal">\,</tt> Lisp expression</li>
+<li><tt class="docutils literal">\?</tt> 詢問</li>
+</ul>
+<div class="section" id="id1">
+<h2>範例</h2>
+<p>數字編號:</p>
+<pre class="literal-block">
+1987:Bogotá
+5243:Fabergé
+
+\(.+:\)
+\#.
+
+0.Bogotá
+1.Fabergé
+
+如果要從1開始:
+\,(1+ \#).
+</pre>
+<p>HTML H降級:</p>
+<pre class="literal-block">
+&lt;h1&gt;silly&lt;/h1&gt;
+&lt;h2&gt;walk&lt;/h2&gt;
+
+&lt;\(/?\)h\([0-9]\)&gt;
+&lt;\1h\,(1+ \#2)&gt;
+
+&lt;h2&gt;silly&lt;/h2&gt;
+&lt;h3&gt;walk&lt;/h3&gt;
+</pre>
+<p>HTML link換成rst格式:</p>
+<pre class="literal-block">
+&lt;a href=\&quot;\(.+\)\&quot; \(.+\)&gt;\(.+\)&lt;/a&gt;
+-&gt;
+`\2 &lt;\1&gt;`__
+</pre>
+<p>Flickr share link to rst:</p>
+<pre class="literal-block">
+&lt;a href=\&quot;\(.+\)\&quot; \(.+\)&gt;&lt;img src=\&quot;\(.+\).jpg\&quot; \(.+\) alt=\&quot;\(.+\)\&quot;&gt;&lt;/a&gt;
+-&gt;
+\5 | `flickr &lt;\1&gt;`__
+
+.. image:: \3.jpg
+</pre>
+<p>參考</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_node/emacs/Regexp-Replace.html">Regexp Replace - GNU Emacs Manual</a></li>
+<li><a class="reference external" href="http://www.emacswiki.org/emacs/ReplaceRegexp">EmacsWiki: Replace Regexp</a></li>
+</ul>
+</div>
+<p>There are <a href="../computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </article>
+                            </aside><!-- /#featured -->
+                            <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+                                                
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="../computer/emacs_dired_rename.html" rel="bookmark"
+                           title="Permalink to [Computer] 用Emacs dired-mode批次改檔名">[Computer] 用Emacs dired-mode批次改檔名</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-06-17T14:55:00">
                 2013-06-17 14:55
         </abbr>
@@ -48,15 +134,13 @@
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/emacs.html">emacs</a><a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info --><p>看到 <a class="reference external" href="http://xahlee.org">XahLee</a> 的一篇文章: <a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html">Emacs: Rename Files Interactively by Pattern (regex; wdired)</a> ，用Emacs來處理批次改檔名實在太方便了。</p>
+</footer><!-- /.post-info -->                <p>看到 <a class="reference external" href="http://xahlee.org">XahLee</a> 的一篇文章: <a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html">Emacs: Rename Files Interactively by Pattern (regex; wdired)</a> ，用Emacs來處理批次改檔名實在太方便了。</p>
 <p>在Dired模式下，**C-x C-q** 進入修改模式，或是執行 <strong>wdired-change-to-wdired-mode</strong>, 這時改檔名就像改一般文字檔一樣，可以用 <em>query-replace</em>, <em>query-replace-regexp</em> 或 <em>cua-mode</em> , 改完後 <strong>C-c C-c</strong> 送出, 或是 <strong>C-c C-Esc</strong> 取消就可以了,  比寫script直覺多了。</p>
-<p>There are <a href="../computer/emacs_dired_rename.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+
+                <a class="readmore" href="../computer/emacs_dired_rename.html">read more</a>
+                <p>There are <a href="../computer/emacs_dired_rename.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
 
                  
                         <li><article class="hentry">    
@@ -439,57 +523,6 @@ print django.get_version()
 <li><a class="reference external" href="http://packages.python.org/Flask-Login/">Flask-Login documentation</a>, <a class="reference external" href="https://bitbucket.org/leafstorm/flask-login">leafstorm / flask-login / overview — Bitbucket ...</a></li></ul></div></div>
                 <a class="readmore" href="../computer/python-web-framework.html">read more</a>
                 <p>There are <a href="../computer/python-web-framework.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../computer/blog.html" rel="bookmark"
-                           title="Permalink to blog">blog</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-04-02T15:53:00">
-                2013-04-02 15:53
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
-        </address>
-        <p>In <a href="../category/computer.html">computer</a>. </p>
-<p>tags: <a href="../tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="http-status-code">
-<h2>HTTP status code</h2>
-<p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
-<div class="section" id="informational-1xx">
-<h3>Informational 1xx</h3>
-<p>HTTP/1.0沒有定義</p>
-<ul class="simple">
-<li>100 Continue, proxy</li>
-<li>101 Switching Protocols, HTTP版本轉換</li>
-</ul>
-</div>
-<div class="section" id="successful-2xx">
-<h3>Successful 2xx</h3>
-<ul class="simple">
-<li>200 OK</li>
-<li>201 Created</li>
-<li>202 Accepted</li>
-<li>203 Non-Authoritative Information</li>
-<li>204 No Content</li>
-<li>205 Reset Content</li>
-<li>206 Partial Content</li>
-</ul>
-</div>
-<div class="section" id="redirection-3xx">
-<h3>Redirection 3xx</h3>
-<ul class="simple">
-<li>300 Multiple Choices</li>
-<li>301 Moved ...</li></ul></div></div>
-                <a class="readmore" href="../computer/blog.html">read more</a>
-                <p>There are <a href="../computer/blog.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

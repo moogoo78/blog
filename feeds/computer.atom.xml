@@ -1,5 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-17T14:55:00+08:00</updated><entry><title>[Computer] 用Emacs dired-mode批次改檔名</title><link href="http://suhen.org/computer/emacs_dired_rename.html" rel="alternate"></link><updated>2013-06-17T14:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-17:computer/emacs_dired_rename.html</id><summary type="html">&lt;p&gt;看到 &lt;a class="reference external" href="http://xahlee.org"&gt;XahLee&lt;/a&gt; 的一篇文章: &lt;a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html"&gt;Emacs: Rename Files Interactively by Pattern (regex; wdired)&lt;/a&gt; ，用Emacs來處理批次改檔名實在太方便了。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-25T10:07:00+08:00</updated><entry><title>[computer] 善用Emacs的replace-regexp</title><link href="http://suhen.org/computer/emacs_replace-regexp.rst.html" rel="alternate"></link><updated>2013-06-25T10:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-25:computer/emacs_replace-regexp.rst.html</id><summary type="html">&lt;p&gt;指令:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+M-x replace-regexp &amp;lt;RET&amp;gt; regexp &amp;lt;RET&amp;gt; newstring &amp;lt;RET&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;特殊字&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;\&amp;amp;’&lt;/tt&gt; 完整的匹配字&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;\d&lt;/tt&gt; d是數字, 表示匹配在第幾個group (back reference)&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;\#&lt;/tt&gt; 累加, 發生第幾次,第一次從0開始&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;\,&lt;/tt&gt; Lisp expression&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;\?&lt;/tt&gt; 詢問&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;範例&lt;/h2&gt;
+&lt;p&gt;數字編號:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+1987:Bogotá
+5243:Fabergé
+
+\(.+:\)
+\#.
+
+0.Bogotá
+1.Fabergé
+
+如果要從1開始:
+\,(1+ \#).
+&lt;/pre&gt;
+&lt;p&gt;HTML H降級:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;h1&amp;gt;silly&amp;lt;/h1&amp;gt;
+&amp;lt;h2&amp;gt;walk&amp;lt;/h2&amp;gt;
+
+&amp;lt;\(/?\)h\([0-9]\)&amp;gt;
+&amp;lt;\1h\,(1+ \#2)&amp;gt;
+
+&amp;lt;h2&amp;gt;silly&amp;lt;/h2&amp;gt;
+&amp;lt;h3&amp;gt;walk&amp;lt;/h3&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;HTML link換成rst格式:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;a href=\&amp;quot;\(.+\)\&amp;quot; \(.+\)&amp;gt;\(.+\)&amp;lt;/a&amp;gt;
+-&amp;gt;
+`\2 &amp;lt;\1&amp;gt;`__
+&lt;/pre&gt;
+&lt;p&gt;Flickr share link to rst:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;a href=\&amp;quot;\(.+\)\&amp;quot; \(.+\)&amp;gt;&amp;lt;img src=\&amp;quot;\(.+\).jpg\&amp;quot; \(.+\) alt=\&amp;quot;\(.+\)\&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+-&amp;gt;
+\5 | `flickr &amp;lt;\1&amp;gt;`__
+
+.. image:: \3.jpg
+&lt;/pre&gt;
+&lt;p&gt;參考&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_node/emacs/Regexp-Replace.html"&gt;Regexp Replace - GNU Emacs Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.emacswiki.org/emacs/ReplaceRegexp"&gt;EmacsWiki: Replace Regexp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="note"></category><category term="emacs"></category></entry><entry><title>[Computer] 用Emacs dired-mode批次改檔名</title><link href="http://suhen.org/computer/emacs_dired_rename.html" rel="alternate"></link><updated>2013-06-17T14:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-17:computer/emacs_dired_rename.html</id><summary type="html">&lt;p&gt;看到 &lt;a class="reference external" href="http://xahlee.org"&gt;XahLee&lt;/a&gt; 的一篇文章: &lt;a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html"&gt;Emacs: Rename Files Interactively by Pattern (regex; wdired)&lt;/a&gt; ，用Emacs來處理批次改檔名實在太方便了。&lt;/p&gt;
 &lt;p&gt;在Dired模式下，**C-x C-q** 進入修改模式，或是執行 &lt;strong&gt;wdired-change-to-wdired-mode&lt;/strong&gt;, 這時改檔名就像改一般文字檔一樣，可以用 &lt;em&gt;query-replace&lt;/em&gt;, &lt;em&gt;query-replace-regexp&lt;/em&gt; 或 &lt;em&gt;cua-mode&lt;/em&gt; , 改完後 &lt;strong&gt;C-c C-c&lt;/strong&gt; 送出, 或是 &lt;strong&gt;C-c C-Esc&lt;/strong&gt; 取消就可以了,  比寫script直覺多了。&lt;/p&gt;
 </summary><category term="emacs"></category><category term="note"></category></entry><entry><title>把靜態blog放到Github Pages上，以pelican為例</title><link href="http://suhen.org/computer/pelican_github_pages.rst.html" rel="alternate"></link><updated>2013-06-01T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-01:computer/pelican_github_pages.rst.html</id><summary type="html">&lt;p&gt;之前開始把blog轉到使用 &lt;a class="reference external" href="http://suhen.org/computer/pelican.html"&gt;pelican產生靜態blog&lt;/a&gt; ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually"&gt;Creating Project Pages manually · GitHub Help&lt;/a&gt;&lt;/p&gt;
@@ -504,8 +563,8 @@ C-RET
 &lt;h4&gt;Register and Bookmark&lt;/h4&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;
-&lt;col width="16%" /&gt;
-&lt;col width="84%" /&gt;
+&lt;col width="15%" /&gt;
+&lt;col width="85%" /&gt;
 &lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td&gt;C-x r SPACE&lt;/td&gt;
@@ -519,6 +578,12 @@ C-RET
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;C-x r i a&lt;/td&gt;
 &lt;td&gt;insert-register, insert register a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x r w a&lt;/td&gt;
+&lt;td&gt;把window的狀態存起來, window-configuration-to-register, C-x r j叫出來&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x r f a&lt;/td&gt;
+&lt;td&gt;frame-configuration-to-register&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;C-x r m&lt;/td&gt;
 &lt;td&gt;設定bookmark, bookmark會永久存起來(~/.emacs.bmk), register不會&lt;/td&gt;
@@ -955,6 +1020,11 @@ spam spam spam spam
 .. code-block:: python
 
 import os
+
+
+:::c++
+:::python
+:::text
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id2"&gt;

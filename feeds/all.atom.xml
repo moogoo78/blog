@@ -1,5 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-17T14:55:00+08:00</updated><entry><title>[Computer] 用Emacs dired-mode批次改檔名</title><link href="http://suhen.org/computer/emacs_dired_rename.html" rel="alternate"></link><updated>2013-06-17T14:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-17:computer/emacs_dired_rename.html</id><summary type="html">&lt;p&gt;看到 &lt;a class="reference external" href="http://xahlee.org"&gt;XahLee&lt;/a&gt; 的一篇文章: &lt;a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html"&gt;Emacs: Rename Files Interactively by Pattern (regex; wdired)&lt;/a&gt; ，用Emacs來處理批次改檔名實在太方便了。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-25T10:07:00+08:00</updated><entry><title>[computer] 善用Emacs的replace-regexp</title><link href="http://suhen.org/computer/emacs_replace-regexp.rst.html" rel="alternate"></link><updated>2013-06-25T10:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-25:computer/emacs_replace-regexp.rst.html</id><summary type="html">&lt;p&gt;指令:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+M-x replace-regexp &amp;lt;RET&amp;gt; regexp &amp;lt;RET&amp;gt; newstring &amp;lt;RET&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;特殊字&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;\&amp;amp;’&lt;/tt&gt; 完整的匹配字&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;\d&lt;/tt&gt; d是數字, 表示匹配在第幾個group (back reference)&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;\#&lt;/tt&gt; 累加, 發生第幾次,第一次從0開始&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;\,&lt;/tt&gt; Lisp expression&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;\?&lt;/tt&gt; 詢問&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;範例&lt;/h2&gt;
+&lt;p&gt;數字編號:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+1987:Bogotá
+5243:Fabergé
+
+\(.+:\)
+\#.
+
+0.Bogotá
+1.Fabergé
+
+如果要從1開始:
+\,(1+ \#).
+&lt;/pre&gt;
+&lt;p&gt;HTML H降級:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;h1&amp;gt;silly&amp;lt;/h1&amp;gt;
+&amp;lt;h2&amp;gt;walk&amp;lt;/h2&amp;gt;
+
+&amp;lt;\(/?\)h\([0-9]\)&amp;gt;
+&amp;lt;\1h\,(1+ \#2)&amp;gt;
+
+&amp;lt;h2&amp;gt;silly&amp;lt;/h2&amp;gt;
+&amp;lt;h3&amp;gt;walk&amp;lt;/h3&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;HTML link換成rst格式:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;a href=\&amp;quot;\(.+\)\&amp;quot; \(.+\)&amp;gt;\(.+\)&amp;lt;/a&amp;gt;
+-&amp;gt;
+`\2 &amp;lt;\1&amp;gt;`__
+&lt;/pre&gt;
+&lt;p&gt;Flickr share link to rst:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;lt;a href=\&amp;quot;\(.+\)\&amp;quot; \(.+\)&amp;gt;&amp;lt;img src=\&amp;quot;\(.+\).jpg\&amp;quot; \(.+\) alt=\&amp;quot;\(.+\)\&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+-&amp;gt;
+\5 | `flickr &amp;lt;\1&amp;gt;`__
+
+.. image:: \3.jpg
+&lt;/pre&gt;
+&lt;p&gt;參考&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_node/emacs/Regexp-Replace.html"&gt;Regexp Replace - GNU Emacs Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.emacswiki.org/emacs/ReplaceRegexp"&gt;EmacsWiki: Replace Regexp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="note"></category><category term="emacs"></category></entry><entry><title>[Computer] 用Emacs dired-mode批次改檔名</title><link href="http://suhen.org/computer/emacs_dired_rename.html" rel="alternate"></link><updated>2013-06-17T14:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-17:computer/emacs_dired_rename.html</id><summary type="html">&lt;p&gt;看到 &lt;a class="reference external" href="http://xahlee.org"&gt;XahLee&lt;/a&gt; 的一篇文章: &lt;a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html"&gt;Emacs: Rename Files Interactively by Pattern (regex; wdired)&lt;/a&gt; ，用Emacs來處理批次改檔名實在太方便了。&lt;/p&gt;
 &lt;p&gt;在Dired模式下，**C-x C-q** 進入修改模式，或是執行 &lt;strong&gt;wdired-change-to-wdired-mode&lt;/strong&gt;, 這時改檔名就像改一般文字檔一樣，可以用 &lt;em&gt;query-replace&lt;/em&gt;, &lt;em&gt;query-replace-regexp&lt;/em&gt; 或 &lt;em&gt;cua-mode&lt;/em&gt; , 改完後 &lt;strong&gt;C-c C-c&lt;/strong&gt; 送出, 或是 &lt;strong&gt;C-c C-Esc&lt;/strong&gt; 取消就可以了,  比寫script直覺多了。&lt;/p&gt;
 </summary><category term="emacs"></category><category term="note"></category></entry><entry><title>[book] 梅棹忠夫（1969）。知識誕生的奧秘。志文出版社。</title><link href="http://suhen.org/book/umesao_tadao_knowledge.html" rel="alternate"></link><updated>2013-06-16T13:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-16:book/umesao_tadao_knowledge.html</id><summary type="html">&lt;img alt="/static/images/book/umesao_tadao-knowlegde.jpg" src="/static/images/book/umesao_tadao-knowlegde.jpg" /&gt;
 &lt;div class="section" id="id1"&gt;
@@ -690,8 +749,8 @@ C-RET
 &lt;h4&gt;Register and Bookmark&lt;/h4&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;
-&lt;col width="16%" /&gt;
-&lt;col width="84%" /&gt;
+&lt;col width="15%" /&gt;
+&lt;col width="85%" /&gt;
 &lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td&gt;C-x r SPACE&lt;/td&gt;
@@ -705,6 +764,12 @@ C-RET
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;C-x r i a&lt;/td&gt;
 &lt;td&gt;insert-register, insert register a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x r w a&lt;/td&gt;
+&lt;td&gt;把window的狀態存起來, window-configuration-to-register, C-x r j叫出來&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x r f a&lt;/td&gt;
+&lt;td&gt;frame-configuration-to-register&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;C-x r m&lt;/td&gt;
 &lt;td&gt;設定bookmark, bookmark會永久存起來(~/.emacs.bmk), register不會&lt;/td&gt;
@@ -1151,6 +1216,11 @@ spam spam spam spam
 .. code-block:: python
 
 import os
+
+
+:::c++
+:::python
+:::text
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id2"&gt;
@@ -2454,4 +2524,85 @@ sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.ddclient.plist&lt;/bloc
 &lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/hDh_hzNh_Vc" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;Beck - Strange Invitation (B-side不插電版)&lt;/p&gt;
 &lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/sD18llgrxHQ" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;Insane Clown Posse - Another Love Song&lt;/p&gt;
 &lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/fEVhOA1eVmE" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;Beck - Burro (拉丁版)&lt;/p&gt;
-&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/2ocqZrT58Ps" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;</summary><category term="經典翻唱"></category></entry></feed>
+&lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/2ocqZrT58Ps" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;</summary><category term="經典翻唱"></category></entry><entry><title>[travel] 京都馬拉松五天行 (1/4)</title><link href="http://suhen.org/travel/2012_kyoto_marathon-1.html" rel="alternate"></link><updated>2012-04-10T22:22:57+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2012-04-10:travel/2012_kyoto_marathon-1.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;行前&lt;/h2&gt;
+&lt;p&gt;在ptt路跑版看到 &lt;a class="reference external" href="http://www.kyoto-marathon.com/&amp;quot;target=&amp;quot;blank"&gt;京都馬拉松&lt;/a&gt; 訊息，主要是為了幫助去年311日本東北大地震。因為很喜歡京都，沒想太多就報名了，當作第一場海外馬拉松。結果如預期有外國人優勢，一抽就抽到了。這次去京都自以為熟門熟路的並沒做什麼功課，原本全家要一起去的，最後只有媽媽跟我去。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;第一天 (3/10)&lt;/h2&gt;
+&lt;p&gt;早上8:40的飛機，吃到JAL才有的綠涼麵很爽，到關西機場後坐「JR特急はるか」往京都，一上車就聽到很熟悉的語言，在仔細聽一下，原來跟我一樣也是要去跑馬拉松的，而且每個人感覺很有趣！！（更巧的是，他們也是剛剛才認識，其中一人的老婆是另一人的同學，後來回台灣才發現那個人也是我舅舅的同學，台灣很小）&lt;/p&gt;
+&lt;p&gt;報到會場 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/6917092850/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm8.staticflickr.com/7073/6917092850_c30d276766.jpg" src="http://farm8.staticflickr.com/7073/6917092850_c30d276766.jpg" /&gt;
+&lt;p&gt;到京都車站道別後，就先到旅館check-in，這次住在車站附近走15分鐘路程的Rihga Royal Hotel Kyoto，我跟我媽來好幾次了，京都也是個變化不太大的城市，一路上也都很熟悉。放好行李後再坐公車到會場「京都市勧業館」報到，從平安神宮附近走到會場，一直到領完東西，就能感受到日本人做事的效率跟規劃的細心。&lt;/p&gt;
+&lt;p&gt;京都マラソン2012 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/7063222275/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm8.staticflickr.com/7045/7063222275_dfe662656f.jpg" src="http://farm8.staticflickr.com/7045/7063222275_dfe662656f.jpg" /&gt;
+&lt;p&gt;晚上到四条河原町小逛一下，到處都有「京都マラソン」的標語跟廣告，很多商店也跟這促銷相關商品，這裡是運動服品牌是 &lt;a class="reference external" href="http://www.cw-x.jp/"&gt;cw-x&lt;/a&gt; （華歌爾子廠牌，也是京都公司）的天下。最後在高島屋地下室買熟食當晚餐跟明天的早餐，前一天沒什麼睡，有點累。&lt;/p&gt;
+&lt;p&gt;1萬日幣換來的 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/7063178221/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm8.staticflickr.com/7104/7063178221_5eeda9e680.jpg" src="http://farm8.staticflickr.com/7104/7063178221_5eeda9e680.jpg" /&gt;
+&lt;p&gt;回旅館才開始認真看明天的路線，衣服很漂亮，當然也是cw-x，材質不錯捨不的穿，就穿台灣帶來的衣服吧。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;第二天 (3/11)&lt;/h2&gt;
+&lt;p&gt;一大早，很冷 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/6917098618/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm6.staticflickr.com/5276/6917098618_4ed1398f85.jpg" src="http://farm6.staticflickr.com/5276/6917098618_4ed1398f85.jpg" /&gt;
+&lt;p&gt;起跑點是西京極運動場，手冊建議從京都車站坐地下鐵再接阪急線，但是覺的有點繞路，也怕人太多，就乾脆直接坐計程車過去。到體育場時比較早，人還沒很多，天氣很冷，到處走走看看，都沒遇到台灣同鄉，香港人很多。&lt;/p&gt;
+&lt;p&gt;R0022605 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/7063185285/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm6.staticflickr.com/5276/7063185285_85dcf9becc.jpg" src="http://farm6.staticflickr.com/5276/7063185285_85dcf9becc.jpg" /&gt;
+&lt;p&gt;人潮慢慢湧進，準備寄物，保暖衣服要脫掉了，真的非常冷，可能只有5度吧！！日本人不論男女幾乎都穿五顏六色的專業緊身衣，不過緊身衣褲現在市面上就那幾十款，撞衫率很高，不像台灣人如我會穿各種活動贈送的衣服。日本人在制服般的團體穿著上，還是會從很多小配件上，小心的彰顯個人的風格。&lt;/p&gt;
+&lt;p&gt;終於到起點了 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/6917107140/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm8.staticflickr.com/7276/6917107140_1d41ebaa2b.jpg" src="http://farm8.staticflickr.com/7276/6917107140_1d41ebaa2b.jpg" /&gt;
+&lt;p&gt;我是後段班H組排在第二個體育場，中間致詞默哀時冷到快抽筋了，大家都不斷發出「啊～～～嘶」的聲音。七點半一到終於起跑，人多移動慢，但是大家很守秩序也不會亂擠。&lt;/p&gt;
+&lt;p&gt;快到嵐山，比想像的近 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/6917110300/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm8.staticflickr.com/7117/6917110300_4f06694ba1.jpg" src="http://farm8.staticflickr.com/7117/6917110300_4f06694ba1.jpg" /&gt;
+&lt;p&gt;跑了4公里左右到了風景優美的桂川，再往上一點就是著名的嵐山渡月橋，一路上加油的民眾都很熱情，工作人員也多到很誇張，交通管理也非常好，會分批讓民眾快速通過。連匪夷所思的地方如小到不起眼的路口，都的站很多保安，在這裡穿越跑步區大概會被抓起來丟出去吧。&lt;/p&gt;
+&lt;p&gt;經過一些田園，沒想到市區中也有這麼樣的鄉村景色，我又更愛京都了。&lt;/p&gt;
+&lt;p&gt;仁和寺 (真言宗御室派總本山) | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/7063197501/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm8.staticflickr.com/7112/7063197501_9a19acf670.jpg" src="http://farm8.staticflickr.com/7112/7063197501_9a19acf670.jpg" /&gt;
+&lt;p&gt;經過仁和寺 (真言宗御室派總本山）和尚都站出來拿出閃亮的標語，大聲喊加油，太可愛了。這附近都是有名的寺廟如龍安寺、金閣寺，以前都來過，跑起來很懷念。&lt;/p&gt;
+&lt;p&gt;美麗賀茂川 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/7063201227/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm6.staticflickr.com/5235/7063201227_1aa7ba9e2f.jpg" src="http://farm6.staticflickr.com/5235/7063201227_1aa7ba9e2f.jpg" /&gt;
+&lt;p&gt;來到北邊的賀茂川，以前經過總是覺的很喜歡這一條幽靜的河流，這次用跑的經過，更能慢慢享受這樣的氛圍氣。&lt;/p&gt;
+&lt;p&gt;相較於熱情滿點的啦啦隊，日本跑者就相當冷靜，自己跑自己的，不太跟身旁的人聊天，不會像台灣會有一群人慶祝誰誰誰百馬完成一路搖旗吶喊，呼口號。因此，賀茂川這一帶跑起來就是像在修行打坐一樣，不知不覺已經過了一半。&lt;/p&gt;
+&lt;p&gt;鴨川邊上了一次廁所，廁所指標也超詳細，還有幾百公尺有幾間都寫出來，看要尿個尿或拉個屎都可以「計劃」。&lt;/p&gt;
+&lt;p&gt;「八橋」補給 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/7063202735/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm6.staticflickr.com/5111/7063202735_7bab943368.jpg" src="http://farm6.staticflickr.com/5111/7063202735_7bab943368.jpg" /&gt;
+&lt;p&gt;京都馬的補給除了香蕉、糖果、小餐包外，還有超爽的京都名物「八橋」。路程後半段到京都國際會館有點小爬坡，心想常在台灣跑山路，這難不倒我。下來繞了幾個折返，算是比較普通的路段。&lt;/p&gt;
+&lt;p&gt;回顧 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/6917125010/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm6.staticflickr.com/5347/6917125010_f54bd28cf6.jpg" src="http://farm6.staticflickr.com/5347/6917125010_f54bd28cf6.jpg" /&gt;
+&lt;p&gt;最後我5km我沒力了，開始掉速度，緩緩的步入神宮道前的朱紅大鳥居，完成第一場海外馬。&lt;/p&gt;
+&lt;p&gt;虛榮物 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/6917134246/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm6.staticflickr.com/5443/6917134246_032a44bb7d.jpg" src="http://farm6.staticflickr.com/5443/6917134246_032a44bb7d.jpg" /&gt;
+&lt;p&gt;拿獎牌、領浴巾、紀念品、取行李一樣有條不紊的走到休息區。也第一次在那麼冷的天氣，跑完後就馬上穿起保暖衣物。簡單收操後，坐接駁車到四条烏丸，下車的地方是大間的體育用品店，好眼熟，果然是以前來過的，真巧。&lt;/p&gt;
+&lt;p&gt;R0022708 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/6917138050/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm8.staticflickr.com/7248/6917138050_ff05d6755d.jpg" src="http://farm8.staticflickr.com/7248/6917138050_ff05d6755d.jpg" /&gt;
+&lt;p&gt;R0022710 | &lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/7063220895/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="http://farm8.staticflickr.com/7112/7063220895_152947565d.jpg" src="http://farm8.staticflickr.com/7112/7063220895_152947565d.jpg" /&gt;
+&lt;p&gt;也沒回旅館洗澡，直接跟媽媽和她住日本的朋友約在京都車站，吃豆腐大餐。車站伊勢丹沒有一層是我想逛的，地下街也沒什麼特別的，於是又起身往熱鬧的烏丸三条去走路消乳酸，找到以前逛過的足球專門店，買了當地球隊的球衣 &lt;a class="reference external" href="http://www.sanga-fc.jp/"&gt;京都不死鳥&lt;/a&gt; ，除了喜歡京都，主要還是背後印的贊助是「任天堂」。&lt;/p&gt;
+&lt;p&gt;晚餐吃的是路上買的平價燒肉飯回旅館吃。完美的一天。&lt;/p&gt;
+&lt;p&gt;成績:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+ナンバーカード        グロスタイム  ネットタイム  種目名     種目順位
+40290  4:41:52         4:35:16         マラソン男子30～39歳    1828/2929
+
+計測ポイント        スプリット   ラップ
+Start 00:06:36
+5km   00:39:32        0:32:56
+10km  01:15:30        0:35:58
+15km  01:45:13        0:29:43
+20km  02:14:48        0:29:35
+中間点   02:21:35        0:06:47
+25km  02:46:28        0:24:53
+30km  03:16:10        0:29:42
+35km  03:48:19        0:32:09
+40km  04:26:16        0:37:57
+Finish        04:41:52        0:15:36
+&lt;/pre&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h3&gt;連結&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/sets/72157629417442536/"&gt;相簿照片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://runnet.jp/record/userResultRaceResultShowAction.do?raceId=33419&amp;amp;numberCard=40290"&gt;大會成績&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry></feed>

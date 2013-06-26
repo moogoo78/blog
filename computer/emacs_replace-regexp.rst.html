@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>把靜態blog放到Github Pages上，以pelican為例</title>
+        <title>[computer] 善用Emacs的replace-regexp</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
                 <link href="http://suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="賤透走人 . Gentle Runner Atom Feed" />
@@ -37,68 +37,78 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="../computer/pelican_github_pages.rst.html" rel="bookmark"
-           title="Permalink to 把靜態blog放到Github Pages上，以pelican為例">把靜態blog放到Github Pages上，以pelican為例</a></h1>
+        <a href="../computer/emacs_replace-regexp.rst.html" rel="bookmark"
+           title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
           </header>
 
     <div class="entry-content">
       <footer class="post-info">
-        <abbr class="published" title="2013-06-01T11:36:00">
-                2013-06-01 11:36
+        <abbr class="published" title="2013-06-25T10:07:00">
+                2013-06-25 10:07
         </abbr>
 
                 <address class="vcard author">
                 By <a class="url fn" href="../author/moogoo.html">moogoo</a>
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
-<p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info -->      <p>之前開始把blog轉到使用 <a class="reference external" href="../computer/pelican.html">pelican產生靜態blog</a> ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。</p>
-<p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
-<div class="section" id="id1">
-<h2>環境設定</h2>
-<p>python要用virtualenv才是王道:</p>
+<p>tags: <a href="../tag/note.html">note</a><a href="../tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info -->      <p>指令:</p>
 <pre class="literal-block">
-$ mkvirtualenv sillywalk.org
-$ cd sillkwalk.org
-$ setvirtualenvproject
-$ workon sillywalk.org
-
-$ pip install pelican
-$ pip install ghp-import # 方便發佈到github pages的工具
+M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
 </pre>
-</div>
-<div class="section" id="html">
-<h2>產生HTML，發佈</h2>
-<p>產生HTML內容:</p>
-<pre class="literal-block">
-$ pelican -s pelican.conf.py .
-$ ghp-import output
-$ git push origin gh-pages
-
-# 其實pelican的make就可以了
-$ make github
-</pre>
-</div>
-<div class="section" id="domain">
-<h2>自訂domain</h2>
-<ol class="arabic simple">
-<li>在你的domain設定指向github的IP</li>
-<li>在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain</li>
-</ol>
-<p>放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。</p>
-<p>先產生content/extra/CNAME，然後在pelicanconf.py加入:</p>
-<pre class="literal-block">
-FILES_TO_COPY = (
-    ('extra/CNAME', 'CNAME'),
-)
-</pre>
-</div>
-<div class="section" id="id2">
-<h2>參考</h2>
+<p>特殊字</p>
 <ul class="simple">
-<li><a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew">Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry</a></li>
-<li><a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html">Tips — Pelican 3 documentation</a></li>
-<li><a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">Setting up a custom domain with Pages · GitHub Help</a></li>
+<li><tt class="docutils literal">\&amp;’</tt> 完整的匹配字</li>
+<li><tt class="docutils literal">\d</tt> d是數字, 表示匹配在第幾個group (back reference)</li>
+<li><tt class="docutils literal">\#</tt> 累加, 發生第幾次,第一次從0開始</li>
+<li><tt class="docutils literal">\,</tt> Lisp expression</li>
+<li><tt class="docutils literal">\?</tt> 詢問</li>
+</ul>
+<div class="section" id="id1">
+<h2>範例</h2>
+<p>數字編號:</p>
+<pre class="literal-block">
+1987:Bogotá
+5243:Fabergé
+
+\(.+:\)
+\#.
+
+0.Bogotá
+1.Fabergé
+
+如果要從1開始:
+\,(1+ \#).
+</pre>
+<p>HTML H降級:</p>
+<pre class="literal-block">
+&lt;h1&gt;silly&lt;/h1&gt;
+&lt;h2&gt;walk&lt;/h2&gt;
+
+&lt;\(/?\)h\([0-9]\)&gt;
+&lt;\1h\,(1+ \#2)&gt;
+
+&lt;h2&gt;silly&lt;/h2&gt;
+&lt;h3&gt;walk&lt;/h3&gt;
+</pre>
+<p>HTML link換成rst格式:</p>
+<pre class="literal-block">
+&lt;a href=\&quot;\(.+\)\&quot; \(.+\)&gt;\(.+\)&lt;/a&gt;
+-&gt;
+`\2 &lt;\1&gt;`__
+</pre>
+<p>Flickr share link to rst:</p>
+<pre class="literal-block">
+&lt;a href=\&quot;\(.+\)\&quot; \(.+\)&gt;&lt;img src=\&quot;\(.+\).jpg\&quot; \(.+\) alt=\&quot;\(.+\)\&quot;&gt;&lt;/a&gt;
+-&gt;
+\5 | `flickr &lt;\1&gt;`__
+
+.. image:: \3.jpg
+</pre>
+<p>參考</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_node/emacs/Regexp-Replace.html">Regexp Replace - GNU Emacs Manual</a></li>
+<li><a class="reference external" href="http://www.emacswiki.org/emacs/ReplaceRegexp">EmacsWiki: Replace Regexp</a></li>
 </ul>
 </div>
 
@@ -107,7 +117,7 @@ FILES_TO_COPY = (
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "computer/pelican_github_pages.rst.html";
+        var disqus_identifier = "computer/emacs_replace-regexp.rst.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';
