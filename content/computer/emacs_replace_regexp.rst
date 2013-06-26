@@ -49,6 +49,21 @@ HTML H降級::
   <h3>walk</h3>
 
 
+HTML link換成rst格式::
+
+  <a href=\"\(.+\)\" \(.+\)>\(.+\)</a>
+  ->
+  `\2 <\1>`__
+
+Flickr share link to rst::
+
+  <a href=\"\(.+\)\" \(.+\)><img src=\"\(.+\).jpg\" \(.+\) alt=\"\(.+\)\"></a>
+  ->
+  \5 | `flickr <\1>`__
+
+  .. image:: \3.jpg
+
+
 參考
 
 * `Regexp Replace - GNU Emacs Manual <http://www.gnu.org/software/emacs/manual/html_node/emacs/Regexp-Replace.html>`__

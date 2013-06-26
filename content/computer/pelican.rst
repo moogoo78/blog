@@ -78,6 +78,11 @@ syntax highlight::
 
   import os
 
+
+  :::c++
+  :::python
+  :::text
+
 其他
 ===========
 
