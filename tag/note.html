@@ -90,10 +90,11 @@ M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
 </pre>
 <p>HTML link換成rst格式:</p>
 <pre class="literal-block">
-&lt;a href=\&quot;\(.+\)\&quot; \(.+\)&gt;\(.+\)&lt;/a&gt;
+&lt;a href=\&quot;\(.+\)\&quot;\(.*\)&gt;\(.+\)&lt;/a&gt;
 -&gt;
-`\2 &lt;\1&gt;`__
+`\3 &lt;\1&gt;`__
 </pre>
+<p>(BUG)</p>
 <p>Flickr share link to rst:</p>
 <pre class="literal-block">
 &lt;a href=\&quot;\(.+\)\&quot; \(.+\)&gt;&lt;img src=\&quot;\(.+\).jpg\&quot; \(.+\) alt=\&quot;\(.+\)\&quot;&gt;&lt;/a&gt;
@@ -102,6 +103,7 @@ M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
 
 .. image:: \3.jpg
 </pre>
+<p>(BUG)</p>
 <p>參考</p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_node/emacs/Regexp-Replace.html">Regexp Replace - GNU Emacs Manual</a></li>

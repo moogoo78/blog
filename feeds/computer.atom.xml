@@ -40,10 +40,11 @@ M-x replace-regexp &amp;lt;RET&amp;gt; regexp &amp;lt;RET&amp;gt; newstring &amp
 &lt;/pre&gt;
 &lt;p&gt;HTML link換成rst格式:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-&amp;lt;a href=\&amp;quot;\(.+\)\&amp;quot; \(.+\)&amp;gt;\(.+\)&amp;lt;/a&amp;gt;
+&amp;lt;a href=\&amp;quot;\(.+\)\&amp;quot;\(.*\)&amp;gt;\(.+\)&amp;lt;/a&amp;gt;
 -&amp;gt;
-`\2 &amp;lt;\1&amp;gt;`__
+`\3 &amp;lt;\1&amp;gt;`__
 &lt;/pre&gt;
+&lt;p&gt;(BUG)&lt;/p&gt;
 &lt;p&gt;Flickr share link to rst:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 &amp;lt;a href=\&amp;quot;\(.+\)\&amp;quot; \(.+\)&amp;gt;&amp;lt;img src=\&amp;quot;\(.+\).jpg\&amp;quot; \(.+\) alt=\&amp;quot;\(.+\)\&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
@@ -52,6 +53,7 @@ M-x replace-regexp &amp;lt;RET&amp;gt; regexp &amp;lt;RET&amp;gt; newstring &amp
 
 .. image:: \3.jpg
 &lt;/pre&gt;
+&lt;p&gt;(BUG)&lt;/p&gt;
 &lt;p&gt;參考&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_node/emacs/Regexp-Replace.html"&gt;Regexp Replace - GNU Emacs Manual&lt;/a&gt;&lt;/li&gt;
