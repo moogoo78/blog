@@ -51,9 +51,11 @@ HTML H降級::
 
 HTML link換成rst格式::
 
-  <a href=\"\(.+\)\" \(.+\)>\(.+\)</a>
+  <a href=\"\(.+\)\"\(.*\)>\(.+\)</a>
   ->
-  `\2 <\1>`__
+  `\3 <\1>`__
+
+(BUG)
 
 Flickr share link to rst::
 
@@ -62,6 +64,8 @@ Flickr share link to rst::
   \5 | `flickr <\1>`__
 
   .. image:: \3.jpg
+
+(BUG)
 
 
 參考

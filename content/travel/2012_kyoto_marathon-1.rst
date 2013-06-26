@@ -1,9 +1,8 @@
-[travel] 京都馬拉松五天行 (1/4)
-#################################
-:date: 2012-04-10 22:22:57
+[travel] 京都行 (1/4) - 第一次的海外馬拉松
+#####################################################
+:date: 2012-04-11 22:22:57
 :category: travel
 :slug: 2012_kyoto_marathon-1
-
 
 行前
 ===========
@@ -126,10 +125,8 @@ R0022710 | `flickr <http://www.flickr.com/photos/moogoo/7063220895/>`__
   40km	04:26:16	0:37:57
   Finish	04:41:52	0:15:36
 
+`大會成績 <http://runnet.jp/record/userResultRaceResultShowAction.do?raceId=33419&numberCard=40290>`__
 
-連結
----------
-
-* `相簿照片 <http://www.flickr.com/photos/moogoo/sets/72157629417442536/>`__
-* `大會成績 <http://runnet.jp/record/userResultRaceResultShowAction.do?raceId=33419&numberCard=40290>`__
-
+系列文章
+==========
+`京都馬拉松五天行 <|filename|/travel/2012_kyoto_marathon.rst>`_ 
