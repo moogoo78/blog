@@ -3,8 +3,10 @@
 &lt;pre class="literal-block"&gt;
 C-q C-j
 &lt;/pre&gt;
-&lt;p&gt;&lt;cite&gt;C-q&lt;/cite&gt;: quoted-insert&lt;/p&gt;
-&lt;p&gt;&lt;cite&gt;C-j&lt;/cite&gt;: newline&lt;/p&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;&lt;cite&gt;C-q&lt;/cite&gt;: quoted-insert, &lt;cite&gt;C-j&lt;/cite&gt;: newline&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;但是我的 &lt;cite&gt;C-q&lt;/cite&gt; 和 &lt;cite&gt;C-j&lt;/cite&gt; 為了使用dvorak layout, 改成cut &amp;amp; paste:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 (global-set-key (kbd &amp;quot;C-q&amp;quot;) 'kill-region) ; cut
@@ -318,7 +320,7 @@ alt + 數字
 &lt;li&gt;&lt;a class="reference external" href="http://ja.wikipedia.org/wiki/%E5%B1%B1%E5%86%85%E7%9B%9B%E5%BD%AC"&gt;山内盛彬 - Wikipedia&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://rekioakiaki.cocolog-nifty.com/blog/2012/09/post-9a16.html"&gt;歌碑のある風景、県民を鼓舞した「ヒヤミカチ節」: レキオ・島唄アッチャー&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</summary><category term="經典翻唱"></category></entry><entry><title>Database筆記</title><link href="http://suhen.org/computer/database_note.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-05-09:computer/database_note.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
+</summary><category term="經典翻唱"></category></entry><entry><title>Database筆記</title><link href="http://suhen.org/computer/database_docs.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-05-09:computer/database_docs.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
 &lt;h2&gt;MySql&lt;/h2&gt;
 &lt;p&gt;Syntax&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;ALL&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;DISTINCT&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;DISTINCTROW&lt;/span&gt; &lt;span class="p"&gt;]&lt;/span&gt;
@@ -353,6 +355,11 @@ UPDATE user SET password=password('新密碼') where user='root';
 &lt;pre class="literal-block"&gt;
 CONVERT( 欄位名稱 using big5) 。
 &lt;/pre&gt;
+&lt;p&gt;LIMIT&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt; &lt;span class="k"&gt;LIMIT&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt;
+&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt; &lt;span class="k"&gt;LIMIT&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="k"&gt;OFFSET&lt;/span&gt; &lt;span class="mi"&gt;40&lt;/span&gt; &lt;span class="c1"&gt;-- 從40個以後抓20個&lt;/span&gt;
+&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt; &lt;span class="k"&gt;LIMIT&lt;/span&gt; &lt;span class="mi"&gt;40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="c1"&gt;-- 同上&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="function"&gt;
 &lt;h3&gt;function&lt;/h3&gt;
@@ -723,7 +730,7 @@ Engine
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="比較"></category><category term="deutsch"></category></entry><entry><title>Emacs 小抄</title><link href="http://suhen.org/computer/emacs_cheat.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-26:computer/emacs_cheat.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
+</summary><category term="比較"></category><category term="deutsch"></category></entry><entry><title>Emacs 小抄</title><link href="http://suhen.org/computer/emacs_docs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-04-26:computer/emacs_docs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
 &lt;h2&gt;Tips&lt;/h2&gt;
 &lt;p&gt;自動補齊:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;

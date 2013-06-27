@@ -38,7 +38,7 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../computer/database_note.html">Database筆記</a></h1> 
+                    <h1 class="entry-title"><a href="../computer/database_docs.html">Database筆記</a></h1> 
                     <footer class="post-info">
         <abbr class="published" title="2013-05-09T18:23:00">
                 2013-05-09 18:23
@@ -84,6 +84,11 @@ UPDATE user SET password=password('新密碼') where user='root';
 <pre class="literal-block">
 CONVERT( 欄位名稱 using big5) 。
 </pre>
+<p>LIMIT</p>
+<div class="highlight"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">foo</span> <span class="k">LIMIT</span> <span class="mi">20</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">foo</span> <span class="k">LIMIT</span> <span class="mi">20</span> <span class="k">OFFSET</span> <span class="mi">40</span> <span class="c1">-- 從40個以後抓20個</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">foo</span> <span class="k">LIMIT</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">20</span> <span class="c1">-- 同上</span>
+</pre></div>
 </div>
 <div class="section" id="function">
 <h3>function</h3>
@@ -413,7 +418,7 @@ Engine
 </tbody>
 </table>
 </div>
-<p>There are <a href="../computer/database_note.html#disqus_thread">comments</a>.</p>                </article>
+<p>There are <a href="../computer/database_docs.html#disqus_thread">comments</a>.</p>                </article>
                                     <p class="paginator">
         Page 1 / 1
     </p>
