@@ -9,9 +9,7 @@ Emacs的換行::
 
   C-q C-j 
 
-`C-q`: quoted-insert
-
-`C-j`: newline
+.. note:: `C-q`: quoted-insert, `C-j`: newline
 
 但是我的 `C-q` 和 `C-j` 為了使用dvorak layout, 改成cut & paste::
 

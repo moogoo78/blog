@@ -3,7 +3,7 @@ Database筆記
 :date: 2013-05-09 18:23
 :category: computer
 :tags: docs, mysql, sqlite
-:slug: database_note
+:slug: database_docs
 
 
 
@@ -44,6 +44,14 @@ CURD::
 
    CONVERT( 欄位名稱 using big5) 。
 
+
+LIMIT
+
+.. code-block:: sql
+
+  SELECT * FROM foo LIMIT 20
+  SELECT * FROM foo LIMIT 20 OFFSET 40 -- 從40個以後抓20個
+  SELECT * FROM foo LIMIT 40, 20 -- 同上
 
 function
 -----------

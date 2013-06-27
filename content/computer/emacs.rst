@@ -3,7 +3,7 @@ Emacs 小抄
 :date: 2013-04-26 18:37
 :tags: docs
 :category: computer
-:slug: emacs_cheat
+:slug: emacs_docs
 
 Tips
 ========
