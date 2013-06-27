@@ -38,8 +38,55 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../computer/emacs_replace-regexp.rst.html">[computer] 善用Emacs的replace-regexp</a></h1> 
+                    <h1 class="entry-title"><a href="../computer/emacs_newline.html">[computer] Emacs輸入newline符號</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-06-27T11:32:00">
+                2013-06-27 11:32
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
+        </address>
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/emacs.html">emacs</a><a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info --><p>Emacs的換行:</p>
+<pre class="literal-block">
+C-q C-j
+</pre>
+<p><cite>C-q</cite>: quoted-insert</p>
+<p><cite>C-j</cite>: newline</p>
+<p>但是我的 <cite>C-q</cite> 和 <cite>C-j</cite> 為了使用dvorak layout, 改成cut &amp; paste:</p>
+<pre class="literal-block">
+(global-set-key (kbd &quot;C-q&quot;) 'kill-region) ; cut
+(global-set-key (kbd &quot;C-j&quot;) 'kill-ring-save) ; paste
+</pre>
+<p>因此把沒用到的 <cite>C-`</cite> 跟 <cite>C-,</cite> 拿來做key-translate:</p>
+<pre class="literal-block">
+(define-key key-translation-map (kbd &quot;C-q&quot;) (kbd &quot;C-'&quot;))
+(define-key key-translation-map (kbd &quot;C-'&quot;) (kbd &quot;C-q&quot;))
+(define-key key-translation-map (kbd &quot;C-j&quot;) (kbd &quot;C-,&quot;))
+(define-key key-translation-map (kbd &quot;C-,&quot;) (kbd &quot;C-j&quot;))
+(global-set-key (kbd &quot;C-'&quot;) 'kill-region)
+(global-set-key (kbd &quot;C-,&quot;) 'kill-ring-save)
+</pre>
+<p>搞得很複雜... 先試用一下看看...</p>
+<p>There are <a href="../computer/emacs_newline.html#disqus_thread">comments</a>.</p>                </article>
+                            </aside><!-- /#featured -->
+                            <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+                                                
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="../computer/emacs_replace-regexp.rst.html" rel="bookmark"
+                           title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-06-25T10:07:00">
                 2013-06-25 10:07
         </abbr>
@@ -49,7 +96,7 @@
         </address>
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a><a href="../tag/emacs.html">emacs</a></p>
-</footer><!-- /.post-info --><p>指令:</p>
+</footer><!-- /.post-info -->                <p>指令:</p>
 <pre class="literal-block">
 M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
 </pre>
@@ -86,37 +133,11 @@ M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
 &lt;\1h\,(1+ \#2)&gt;
 
 &lt;h2&gt;silly&lt;/h2&gt;
-&lt;h3&gt;walk&lt;/h3&gt;
-</pre>
-<p>HTML link換成rst格式:</p>
-<pre class="literal-block">
-&lt;a href=\&quot;\(.+\)\&quot;\(.*\)&gt;\(.+\)&lt;/a&gt;
--&gt;
-`\3 &lt;\1&gt;`__
-</pre>
-<p>(BUG)</p>
-<p>Flickr share link to rst:</p>
-<pre class="literal-block">
-&lt;a href=\&quot;\(.+\)\&quot; \(.+\)&gt;&lt;img src=\&quot;\(.+\).jpg\&quot; \(.+\) alt=\&quot;\(.+\)\&quot;&gt;&lt;/a&gt;
--&gt;
-\5 | `flickr &lt;\1&gt;`__
-
-.. image:: \3.jpg
-</pre>
-<p>(BUG)</p>
-<p>參考</p>
-<ul class="simple">
-<li><a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_node/emacs/Regexp-Replace.html">Regexp Replace - GNU Emacs Manual</a></li>
-<li><a class="reference external" href="http://www.emacswiki.org/emacs/ReplaceRegexp">EmacsWiki: Replace Regexp</a></li>
-</ul>
-</div>
-<p>There are <a href="../computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+&lt;h3 ...</pre></div>
+                <a class="readmore" href="../computer/emacs_replace-regexp.rst.html">read more</a>
+                <p>There are <a href="../computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
 
                  
                         <li><article class="hentry">    

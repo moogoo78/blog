@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-26T22:22:57+08:00</updated><entry><title>[travel] 京都馬拉松五天行</title><link href="http://suhen.org/travel/2012_kyoto_marathon.html" rel="alternate"></link><updated>2013-06-26T22:22:57+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-26:travel/2012_kyoto_marathon.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-27T11:32:00+08:00</updated><entry><title>[computer] Emacs輸入newline符號</title><link href="http://suhen.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+C-q C-j
+&lt;/pre&gt;
+&lt;p&gt;&lt;cite&gt;C-q&lt;/cite&gt;: quoted-insert&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;C-j&lt;/cite&gt;: newline&lt;/p&gt;
+&lt;p&gt;但是我的 &lt;cite&gt;C-q&lt;/cite&gt; 和 &lt;cite&gt;C-j&lt;/cite&gt; 為了使用dvorak layout, 改成cut &amp;amp; paste:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+(global-set-key (kbd &amp;quot;C-q&amp;quot;) 'kill-region) ; cut
+(global-set-key (kbd &amp;quot;C-j&amp;quot;) 'kill-ring-save) ; paste
+&lt;/pre&gt;
+&lt;p&gt;因此把沒用到的 &lt;cite&gt;C-`&lt;/cite&gt; 跟 &lt;cite&gt;C-,&lt;/cite&gt; 拿來做key-translate:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+(define-key key-translation-map (kbd &amp;quot;C-q&amp;quot;) (kbd &amp;quot;C-'&amp;quot;))
+(define-key key-translation-map (kbd &amp;quot;C-'&amp;quot;) (kbd &amp;quot;C-q&amp;quot;))
+(define-key key-translation-map (kbd &amp;quot;C-j&amp;quot;) (kbd &amp;quot;C-,&amp;quot;))
+(define-key key-translation-map (kbd &amp;quot;C-,&amp;quot;) (kbd &amp;quot;C-j&amp;quot;))
+(global-set-key (kbd &amp;quot;C-'&amp;quot;) 'kill-region)
+(global-set-key (kbd &amp;quot;C-,&amp;quot;) 'kill-ring-save)
+&lt;/pre&gt;
+&lt;p&gt;搞得很複雜... 先試用一下看看...&lt;/p&gt;
+</summary><category term="emacs"></category><category term="note"></category></entry><entry><title>[travel] 京都馬拉松五天行</title><link href="http://suhen.org/travel/2012_kyoto_marathon.html" rel="alternate"></link><updated>2013-06-26T22:22:57+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-26:travel/2012_kyoto_marathon.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;系列文章&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://suhen.org/travel/2012_kyoto_marathon-1.html"&gt;京都行 (1/4) - 第一次的海外馬拉松&lt;/a&gt;&lt;/li&gt;

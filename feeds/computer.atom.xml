@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-25T10:07:00+08:00</updated><entry><title>[computer] 善用Emacs的replace-regexp</title><link href="http://suhen.org/computer/emacs_replace-regexp.rst.html" rel="alternate"></link><updated>2013-06-25T10:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-25:computer/emacs_replace-regexp.rst.html</id><summary type="html">&lt;p&gt;指令:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-27T11:32:00+08:00</updated><entry><title>[computer] Emacs輸入newline符號</title><link href="http://suhen.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+C-q C-j
+&lt;/pre&gt;
+&lt;p&gt;&lt;cite&gt;C-q&lt;/cite&gt;: quoted-insert&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;C-j&lt;/cite&gt;: newline&lt;/p&gt;
+&lt;p&gt;但是我的 &lt;cite&gt;C-q&lt;/cite&gt; 和 &lt;cite&gt;C-j&lt;/cite&gt; 為了使用dvorak layout, 改成cut &amp;amp; paste:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+(global-set-key (kbd &amp;quot;C-q&amp;quot;) 'kill-region) ; cut
+(global-set-key (kbd &amp;quot;C-j&amp;quot;) 'kill-ring-save) ; paste
+&lt;/pre&gt;
+&lt;p&gt;因此把沒用到的 &lt;cite&gt;C-`&lt;/cite&gt; 跟 &lt;cite&gt;C-,&lt;/cite&gt; 拿來做key-translate:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+(define-key key-translation-map (kbd &amp;quot;C-q&amp;quot;) (kbd &amp;quot;C-'&amp;quot;))
+(define-key key-translation-map (kbd &amp;quot;C-'&amp;quot;) (kbd &amp;quot;C-q&amp;quot;))
+(define-key key-translation-map (kbd &amp;quot;C-j&amp;quot;) (kbd &amp;quot;C-,&amp;quot;))
+(define-key key-translation-map (kbd &amp;quot;C-,&amp;quot;) (kbd &amp;quot;C-j&amp;quot;))
+(global-set-key (kbd &amp;quot;C-'&amp;quot;) 'kill-region)
+(global-set-key (kbd &amp;quot;C-,&amp;quot;) 'kill-ring-save)
+&lt;/pre&gt;
+&lt;p&gt;搞得很複雜... 先試用一下看看...&lt;/p&gt;
+</summary><category term="emacs"></category><category term="note"></category></entry><entry><title>[computer] 善用Emacs的replace-regexp</title><link href="http://suhen.org/computer/emacs_replace-regexp.rst.html" rel="alternate"></link><updated>2013-06-25T10:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-25:computer/emacs_replace-regexp.rst.html</id><summary type="html">&lt;p&gt;指令:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 M-x replace-regexp &amp;lt;RET&amp;gt; regexp &amp;lt;RET&amp;gt; newstring &amp;lt;RET&amp;gt;
 &lt;/pre&gt;

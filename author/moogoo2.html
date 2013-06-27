@@ -161,6 +161,46 @@ C-RET ...</pre></div>
                  
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="../computer/emacs_newline.html" rel="bookmark"
+                           title="Permalink to [computer] Emacs輸入newline符號">[computer] Emacs輸入newline符號</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-27T11:32:00">
+                2013-06-27 11:32
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
+        </address>
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/emacs.html">emacs</a><a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>Emacs的換行:</p>
+<pre class="literal-block">
+C-q C-j
+</pre>
+<p><cite>C-q</cite>: quoted-insert</p>
+<p><cite>C-j</cite>: newline</p>
+<p>但是我的 <cite>C-q</cite> 和 <cite>C-j</cite> 為了使用dvorak layout, 改成cut &amp; paste:</p>
+<pre class="literal-block">
+(global-set-key (kbd &quot;C-q&quot;) 'kill-region) ; cut
+(global-set-key (kbd &quot;C-j&quot;) 'kill-ring-save) ; paste
+</pre>
+<p>因此把沒用到的 <cite>C-`</cite> 跟 <cite>C-,</cite> 拿來做key-translate:</p>
+<pre class="literal-block">
+(define-key key-translation-map (kbd &quot;C-q&quot;) (kbd &quot;C-'&quot;))
+(define-key key-translation-map (kbd &quot;C-'&quot;) (kbd &quot;C-q&quot;))
+(define-key key-translation-map (kbd &quot;C-j&quot;) (kbd &quot;C-,&quot;))
+(define-key key-translation-map ...</pre>
+                <a class="readmore" href="../computer/emacs_newline.html">read more</a>
+                <p>There are <a href="../computer/emacs_newline.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="../computer/emacs_replace-regexp.rst.html" rel="bookmark"
                            title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
                 </header>
@@ -424,37 +464,6 @@ alt + 數字
 <div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/hBiwMT77Csg" frameborder="0"></iframe></div><p>Beck取樣的來源: THEM &amp; Van Morrison - It ...</p>
                 <a class="readmore" href="../music/jack_ass_baby_blue.html">read more</a>
                 <p>There are <a href="../music/jack_ass_baby_blue.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../nature/kapur.html" rel="bookmark"
-                           title="Permalink to 天空的拼圖 - Kapur 冰片木">天空的拼圖 - Kapur 冰片木</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-04-20T04:37:00">
-                2013-04-20 04:37
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="../author/moogoo.html">moogoo</a>
-        </address>
-        <p>In <a href="../category/nature.html">nature</a>. </p>
-<p>tags: <a href="../tag/tree.html">tree</a></p>
-</footer><!-- /.post-info -->                <p>週四參加希望山林 <a class="reference external" href="http://www.hopeforest.org.tw/">Hope_Forest</a> 的志工課程，請到荒野保護協會的香萍來上課，講的十分的精彩，投影片中有一張另我感到震撼的照片, 上面只寫著Kapur。於是我回來用關鍵字Kapur查了一下：照片是來自於馬來西亞政府一個植物研究機構 (Forest Research Institute Malaysia, <a class="reference external" href="http://www.frim.gov.my/">FRIM</a> )的園區內，有一種高大筆直的樹叫「冰片木」，Dryobalanops aromatica (Dipterocarpaceae)，可以提煉類似樟腦的香料，中藥材稱「龍腦香」或「龍腦冰片」，木材市場上稱作Kapur。</p>
-<img alt="/static/images/nature/Kapur_Trees.jpeg" src="/static/images/nature/Kapur_Trees.jpeg" />
-<p>特別的是這些在森林最高處的樹冠枝葉並不會重疊或碰在一起，每棵樹都很巧妙的保持一點點的空隙，就像一幅「天空的拼圖」，這還有個可愛的專有名詞「害羞樹冠」，“Crown Shyness” ，好像大家都很害羞不好意思接觸到彼此，形成這特別的景觀。</p>
-<p>就像香萍說的人與人之間的相處不就跟這些樹木一樣，有時需要保持一點巧妙的距離，不會太近也不會太遠。</p>
-<p>參考:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://www.frim.gov.my/?page_id=7643">Dryobalanops aromatica: Jigsaw puzzles in the sky</a></li>
-<li><a class="reference external" href="http://www.frim.gov.my/?page_id=9414">Shorea resinosa : Another ...</a></li></ul>
-                <a class="readmore" href="../nature/kapur.html">read more</a>
-                <p>There are <a href="../nature/kapur.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
