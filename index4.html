@@ -41,6 +41,91 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="./computer/git.html" rel="bookmark"
+                           title="Permalink to GIT">GIT</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-23T00:00:00">
+                2013-03-23 00:00
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/moogoo.html">moogoo</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="quick-start">
+<h2>Quick Start</h2>
+<div class="section" id="init">
+<h3>init</h3>
+<p>Server (Repository):</p>
+<pre class="literal-block">
+mkdir example.git
+cd example.git
+git --bare init # init加--bare, 表示只會在當下目錄放git的東西，不會有原始檔案, 如果要原始檔案再git clone出來就有了
+</pre>
+<p>Client:</p>
+<pre class="literal-block">
+mkdir example
+cd example
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin ssh://USERNAME&#64;REMOTE_SERVER/~/example.git
+git push origin master (第一次之後只要打git ...</pre></div></div>
+                <a class="readmore" href="./computer/git.html">read more</a>
+                <p>There are <a href="./computer/git.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="bookmark"
+                           title="Permalink to Dynamic DNS setting for Namecheap on Mac OSX">Dynamic DNS setting for Namecheap on Mac OSX</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-21T02:09:00">
+                2013-03-21 02:09
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="./author/moogoo.html">moogoo</a>
+        </address>
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>登入Namecheap啓用Dynamic <a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service">link1</a></p>
+<p>設定DNS record:</p>
+<pre class="literal-block">
+freedns1.registrar-servers.com
+freedns2.registrar-servers.com
+freedns3.registrar-servers.com
+freedns4.registrar-servers.com
+freedns5.registrar-servers.com
+</pre>
+<p><a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/532/51/how-does-free-dns-work">link2</a></p>
+<p>安裝Dynamic DNS clinet (以OS X的ddclient為例):</p>
+<pre class="literal-block">
+$ brew install ddclient
+</pre>
+<p>在/usr/local/etc/ddclient裡建立ddclient.conf (範例在/usr/local/share/doc/ddclient), 裡面有namecheap的預設選項:</p>
+<pre class="literal-block">
+protocol=namecheap
+server=dynamicdns.park-your-domain.com
+login=yourdomain.com ...</pre>
+                <a class="readmore" href="./computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html">read more</a>
+                <p>There are <a href="./computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="./music/jack_ass_baby_blue.html" rel="bookmark"
                            title="Permalink to Jack Ass (It's All Over Now Baby Blue)">Jack Ass (It's All Over Now Baby Blue)</a></h1>
                 </header>
