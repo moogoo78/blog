@@ -1118,6 +1118,14 @@ C-RET
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;Radix-Modes:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+d 0, d 2, d 8 ; 10, 2, 8進位
+d r ;然後按2到36選進位數
+&lt;/pre&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/moogoo/gentlerunner.org/content/computer/emacs.rst&lt;/tt&gt;, line 204)&lt;/p&gt;
+Literal block ends without a blank line; unexpected unindent.&lt;/div&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_mono/calc.html"&gt;GNU Emacs Calc Manual&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.emacswiki.org/emacs/AdvancedDeskCalculator"&gt;EmacsWiki: Advanced Desk Calculator&lt;/a&gt;&lt;/li&gt;
