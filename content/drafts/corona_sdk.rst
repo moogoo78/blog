@@ -1,0 +1,39 @@
+Corona SDK (draft)
+#######################
+:date: 2013-07-02 10:41
+:status: draft
+:category: computer
+:tags: docs
+:slug: corona_sdk
+
+Tips
+=================
+顯示圖層遮助其他event, via: `Corona SDK: Avoid touch events through layered screens - BLOG - Monkeybin <http://www.monkeybin.no/blog/archives/2011/08/08/corona-sdk-avoid-touch-events-through-layered-screens/>`__
+
+.. code-block:: lua
+
+  rect:addEventListener("touch", function() return true end)
+  rect:addEventListener("tap", function() return true end)
+
+
+
+Snippets
+====================
+sort by key, via: http://www.lua.org/pil/19.3.html
+
+.. code-block:: lua
+
+    function pairsByKeys (t, f)
+      local a = {}
+      for n in pairs(t) do table.insert(a, n) end
+      table.sort(a, f)
+      local i = 0      -- iterator variable
+      local iter = function ()   -- iterator function
+        i = i + 1
+        if a[i] == nil then return nil
+        else return a[i], t[a[i]]
+        end
+      end
+      return iter
+    end
+
