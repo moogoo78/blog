@@ -1,6 +1,5 @@
-
-I Fought the Law
-#############################
+[Music] I Fought the Law
+####################################
 :date: 2013-07-04 14:45
 :category: music
 :tags: 經典翻唱
