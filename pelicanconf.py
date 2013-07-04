@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u'moogoo'
-SITENAME = u'賤透走人 . Gentle Runner'
+SITENAME = u'Gentle Runner'
 SITEURL = 'http://gentlerunner.org'
 
 TIMEZONE = 'Asia/Taipei'
