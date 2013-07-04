@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-27T11:32:00+08:00</updated><entry><title>[computer] Emacs輸入newline符號</title><link href="http://suhen.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>賤透走人 . Gentle Runner</title><link href="http://suhen.org/" rel="alternate"></link><link href="http://suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://suhen.org/</id><updated>2013-06-30T22:22:00+08:00</updated><entry><title>HTML CSS</title><link href="http://suhen.org/computer/html-css.html" rel="alternate"></link><updated>2013-06-30T22:22:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-30:computer/html-css.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.icoding.co/2013/06/knowledge-about-z-index-2"&gt;» 你從未瞭解過的 z-index | iCoding&lt;/a&gt;&lt;/p&gt;
+</summary></entry><entry><title>[computer] Emacs輸入newline符號</title><link href="http://suhen.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhen.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 C-q C-j
 &lt;/pre&gt;
@@ -835,11 +836,10 @@ C-RET
 &lt;div class="section" id="calc"&gt;
 &lt;h3&gt;Calc&lt;/h3&gt;
 &lt;p&gt;M-x calc&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_mono/calc.html"&gt;GNU Emacs Calc Manual&lt;/a&gt;&lt;/p&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;
-&lt;col width="43%" /&gt;
-&lt;col width="57%" /&gt;
+&lt;col width="36%" /&gt;
+&lt;col width="64%" /&gt;
 &lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td&gt;q, C-x * c&lt;/td&gt;
@@ -848,8 +848,15 @@ C-RET
 &lt;tr&gt;&lt;td&gt;C-x * k&lt;/td&gt;
 &lt;td&gt;keypad (數字)&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-x quick-calc&lt;/td&gt;
+&lt;td&gt;在minibuffer直接做簡單計算&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_mono/calc.html"&gt;GNU Emacs Calc Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.emacswiki.org/emacs/AdvancedDeskCalculator"&gt;EmacsWiki: Advanced Desk Calculator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="html"&gt;
 &lt;h3&gt;HTML&lt;/h3&gt;
