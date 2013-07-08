@@ -19,7 +19,24 @@ Tips
 
 Snippets
 ====================
-sort by key, via: http://www.lua.org/pil/19.3.html
+
+string
+---------------------
+
+**trim**
+
+.. code-block:: lua
+
+  local function trim( str )
+     return ( str:gsub("^%s*(.-)%s*$", "%1") )
+  end
+
+via: http://www.coronalabs.com/blog/2013/07/02/tutorial-extending-libraries-without-native-code/
+
+list
+-----------
+
+**sort by key**
 
 .. code-block:: lua
 
@@ -37,3 +54,4 @@ sort by key, via: http://www.lua.org/pil/19.3.html
       return iter
     end
 
+via: http://www.lua.org/pil/19.3.html

@@ -261,3 +261,8 @@ Adv. Mode
 ==========
 * `Deft <http://jblevins.org/projects/deft/>`__ - 快速找筆記, 檔案修改工具
 
+
+configure
+=======================
+
+* `my-dot-emacs-file - steveyegge2 <https://sites.google.com/site/steveyegge2/my-dot-emacs-file>`__

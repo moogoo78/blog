@@ -378,3 +378,19 @@ ref
 
 :MySQL: RAND()
 :Sqlite: RANDOM()
+
+
+snippets
+===============
+
+單字表沒有照abc排, 要照字母順序排序(num)
+
+.. code-block:: sql
+
+  SELECT *, (SELECT COUNT(*) FROM en_word AS t2 where LOWER(t2.word) <= LOWER(t1.word)) as NUM FROM en_word AS t1 WHERE t1.id = foo ORDER BY LOWER(word)
+
+一個裝置, 安裝了2個app以上的數量統計
+
+.. code-block:: sql
+
+  select count(*) as total, num as num_of_apps from (select count(*) as num, did from log_user_data group by (did) order by num desc) t where num > 1 group by num desc
