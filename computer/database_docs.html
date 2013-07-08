@@ -411,6 +411,15 @@ Engine
 </tbody>
 </table>
 </div>
+<div class="section" id="snippets">
+<h2>snippets</h2>
+<p>單字表沒有照abc排, 要照字母順序排序(num)</p>
+<div class="highlight"><pre><span class="k">SELECT</span> <span class="o">*</span><span class="p">,</span> <span class="p">(</span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">en_word</span> <span class="k">AS</span> <span class="n">t2</span> <span class="k">where</span> <span class="k">LOWER</span><span class="p">(</span><span class="n">t2</span><span class="p">.</span><span class="n">word</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="k">LOWER</span><span class="p">(</span><span class="n">t1</span><span class="p">.</span><span class="n">word</span><span class="p">))</span> <span class="k">as</span> <span class="n">NUM</span> <span class="k">FROM</span> <span class="n">en_word</span> <span class="k">AS</span> <span class="n">t1</span> <span class="k">WHERE</span> <span class="n">t1</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">foo</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="k">LOWER</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+</pre></div>
+<p>一個裝置, 安裝了2個app以上的數量統計</p>
+<div class="highlight"><pre><span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">as</span> <span class="n">total</span><span class="p">,</span> <span class="n">num</span> <span class="k">as</span> <span class="n">num_of_apps</span> <span class="k">from</span> <span class="p">(</span><span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">as</span> <span class="n">num</span><span class="p">,</span> <span class="n">did</span> <span class="k">from</span> <span class="n">log_user_data</span> <span class="k">group</span> <span class="k">by</span> <span class="p">(</span><span class="n">did</span><span class="p">)</span> <span class="k">order</span> <span class="k">by</span> <span class="n">num</span> <span class="k">desc</span><span class="p">)</span> <span class="n">t</span> <span class="k">where</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">group</span> <span class="k">by</span> <span class="n">num</span> <span class="k">desc</span>
+</pre></div>
+</div>
 
     </div><!-- /.entry-content -->
         <div class="comments">

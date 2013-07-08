@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-04T14:45:00+08:00</updated><entry><title>[Music] I Fought the Law</title><link href="http://gentlerunner.org/music/i_faught_the_law.html" rel="alternate"></link><updated>2013-07-04T14:45:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-04:music/i_faught_the_law.html</id><summary type="html">&lt;p&gt;愛上這首歌是因為以前剛接觸搖滾樂時聽了The Clash的CD，簡單有力的節奏跟朗朗上口的歌詞，一下就很容易引起共鳴。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-09T02:33:00+08:00</updated><entry><title>[book] 舊書重讀</title><link href="http://gentlerunner.org/book/book-jiu-shu-zhong-du.html" rel="alternate"></link><updated>2013-07-09T02:33:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:book/book-jiu-shu-zhong-du.html</id><summary type="html">&lt;div class="section" id="six-degrees-the-science-of-a-connected-age-duncan-j-watts"&gt;
+&lt;h2&gt;六個人的小世界 (Six Degrees, The Science of a Connected Age), Duncan J.Watts&lt;/h2&gt;
+&lt;table class="docutils field-list" frame="void" rules="none"&gt;
+&lt;col class="field-name" /&gt;
+&lt;col class="field-body" /&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr class="field"&gt;&lt;th class="field-name"&gt;出版:&lt;/th&gt;&lt;td class="field-body"&gt;1994&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="field"&gt;&lt;th class="field-name"&gt;筆記時間:&lt;/th&gt;&lt;td class="field-body"&gt;2013-07-09 02:33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;參考資料很豐富&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;書摘&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;一個人有100個朋友，100^5就是100億，可以認識到全世界的人&lt;/li&gt;
+&lt;li&gt;約瀚桂爾 1990年的舞台劇 「六度分離」&lt;/li&gt;
+&lt;li&gt;random graphs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="literal-block"&gt;
+最大通道分支的
+連結比例
+|
+|              ______________
+|             /
+|            /
+|           /
+|----------/
+------------------------------&amp;gt; 每結點平均連結數
+           態變
+     (phase transition)
+&lt;/pre&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;a weak tie, 微弱的連結: 有效的社會協調，並不是由緊密交織的「堅強」連結所生；反倒是肇因於偶發性的微弱連結。
+=&amp;gt; 不熟的朋友幫助反而大 (通往更多新環境)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>[Music] I Fought the Law</title><link href="http://gentlerunner.org/music/i_faught_the_law.html" rel="alternate"></link><updated>2013-07-04T14:45:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-04:music/i_faught_the_law.html</id><summary type="html">&lt;p&gt;愛上這首歌是因為以前剛接觸搖滾樂時聽了The Clash的CD，簡單有力的節奏跟朗朗上口的歌詞，一下就很容易引起共鳴。&lt;/p&gt;
 &lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/tR3XY6wfSBw" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;現場版本還是比較好聽 (1979) 。&lt;/p&gt;
 &lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/FKIzjF25sP8" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;最早這首歌Sonny Curtis在1958年寫的，後來加入The Crickets，1960年初次出現在唱片 &lt;em&gt;In Style with the Crickets&lt;/em&gt; , 鄉村風味濃厚。 (The Crickets是Boddy Holly 1959去世後變成Sonny Curtis主導的樂團。)&lt;/p&gt;
 &lt;div class="youtube" align="left"&gt;&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/KJHOKwpI-Vw" frameborder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;但是真的唱出名是Bobby Fuller Four的版本 (1965)，變成比較搖滾，也是後來The Clash之後很多龐克樂團的翻唱都是那這個當範本。&lt;/p&gt;
@@ -754,6 +793,15 @@ Engine
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
+&lt;div class="section" id="snippets"&gt;
+&lt;h2&gt;snippets&lt;/h2&gt;
+&lt;p&gt;單字表沒有照abc排, 要照字母順序排序(num)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="k"&gt;COUNT&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;en_word&lt;/span&gt; &lt;span class="k"&gt;AS&lt;/span&gt; &lt;span class="n"&gt;t2&lt;/span&gt; &lt;span class="k"&gt;where&lt;/span&gt; &lt;span class="k"&gt;LOWER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;word&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="k"&gt;LOWER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;word&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;NUM&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;en_word&lt;/span&gt; &lt;span class="k"&gt;AS&lt;/span&gt; &lt;span class="n"&gt;t1&lt;/span&gt; &lt;span class="k"&gt;WHERE&lt;/span&gt; &lt;span class="n"&gt;t1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt; &lt;span class="k"&gt;ORDER&lt;/span&gt; &lt;span class="k"&gt;BY&lt;/span&gt; &lt;span class="k"&gt;LOWER&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;word&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;一個裝置, 安裝了2個app以上的數量統計&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;select&lt;/span&gt; &lt;span class="k"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;total&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;num&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;num_of_apps&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;select&lt;/span&gt; &lt;span class="k"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;num&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;did&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="n"&gt;log_user_data&lt;/span&gt; &lt;span class="k"&gt;group&lt;/span&gt; &lt;span class="k"&gt;by&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;did&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;order&lt;/span&gt; &lt;span class="k"&gt;by&lt;/span&gt; &lt;span class="n"&gt;num&lt;/span&gt; &lt;span class="k"&gt;desc&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="k"&gt;where&lt;/span&gt; &lt;span class="n"&gt;num&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;group&lt;/span&gt; &lt;span class="k"&gt;by&lt;/span&gt; &lt;span class="n"&gt;num&lt;/span&gt; &lt;span class="k"&gt;desc&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 </summary><category term="docs"></category><category term="mysql"></category><category term="sqlite"></category></entry><entry><title>各地區德語不同處</title><link href="http://gentlerunner.org/language/woerter_unterschiedlich.html" rel="alternate"></link><updated>2013-05-04T02:44:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-05-04:language/woerter_unterschiedlich.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;南北不同&lt;/h2&gt;
 &lt;p&gt;通常分成北德/Norddeutschland, 和拜仁/Bayern, 奧地利/Österreichers和瑞士人Schweizers (Schwyzerdütsch)&lt;/p&gt;
@@ -1244,6 +1292,12 @@ Literal block ends without a blank line; unexpected unindent.&lt;/div&gt;
 &lt;h2&gt;Adv. Mode&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://jblevins.org/projects/deft/"&gt;Deft&lt;/a&gt; - 快速找筆記, 檔案修改工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="configure"&gt;
+&lt;h2&gt;configure&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://sites.google.com/site/steveyegge2/my-dot-emacs-file"&gt;my-dot-emacs-file - steveyegge2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>Elscreen - Emacs好用的tab mode</title><link href="http://gentlerunner.org/computer/emacs_elscreen.html" rel="alternate"></link><updated>2013-04-23T17:28:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-04-23:computer/emacs_elscreen.html</id><summary type="html">&lt;p&gt;我以為在Emacs一直沒有好的tab顯示模式，以前用過tabbar_ mode，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。&lt;/p&gt;

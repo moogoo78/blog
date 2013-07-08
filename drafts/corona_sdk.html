@@ -51,7 +51,18 @@
 </div>
 <div class="section" id="snippets">
 <h2>Snippets</h2>
-<p>sort by key, via: <a class="reference external" href="http://www.lua.org/pil/19.3.html">http://www.lua.org/pil/19.3.html</a></p>
+<div class="section" id="string">
+<h3>string</h3>
+<p><strong>trim</strong></p>
+<div class="highlight"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">trim</span><span class="p">(</span> <span class="n">str</span> <span class="p">)</span>
+   <span class="k">return</span> <span class="p">(</span> <span class="n">str</span><span class="p">:</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">^%s*(.-)%s*$&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">%1&quot;</span><span class="p">)</span> <span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+<p>via: <a class="reference external" href="http://www.coronalabs.com/blog/2013/07/02/tutorial-extending-libraries-without-native-code/">http://www.coronalabs.com/blog/2013/07/02/tutorial-extending-libraries-without-native-code/</a></p>
+</div>
+<div class="section" id="list">
+<h3>list</h3>
+<p><strong>sort by key</strong></p>
 <div class="highlight"><pre><span class="k">function</span> <span class="nf">pairsByKeys</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">a</span> <span class="o">=</span> <span class="p">{}</span>
   <span class="k">for</span> <span class="n">n</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">do</span> <span class="nb">table.insert</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="k">end</span>
@@ -66,6 +77,8 @@
   <span class="k">return</span> <span class="n">iter</span>
 <span class="k">end</span>
 </pre></div>
+<p>via: <a class="reference external" href="http://www.lua.org/pil/19.3.html">http://www.lua.org/pil/19.3.html</a></p>
+</div>
 </div>
 
     </div><!-- /.entry-content -->

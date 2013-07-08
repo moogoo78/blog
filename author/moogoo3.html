@@ -34,6 +34,28 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="../computer/html-css.html" rel="bookmark"
+                           title="Permalink to HTML CSS">HTML CSS</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-30T22:22:00">
+                2013-06-30 22:22
+        </abbr>
+
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+
+</footer><!-- /.post-info -->                <p><a class="reference external" href="http://www.icoding.co/2013/06/knowledge-about-z-index-2">» 你從未瞭解過的 z-index | iCoding</a></p>
+
+                <a class="readmore" href="../computer/html-css.html">read more</a>
+                <p>There are <a href="../computer/html-css.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="../music/i_faught_the_law.html" rel="bookmark"
                            title="Permalink to [Music] I Fought the Law">[Music] I Fought the Law</a></h1>
                 </header>
@@ -310,50 +332,6 @@ $ make clean
 $ make rsync_upload # 用rsync上傳到你的ssh host ...</pre></div>
                 <a class="readmore" href="../computer/pelican.html">read more</a>
                 <p>There are <a href="../computer/pelican.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="../computer/pelican_github_pages.rst.html" rel="bookmark"
-                           title="Permalink to 把靜態blog放到Github Pages上，以pelican為例">把靜態blog放到Github Pages上，以pelican為例</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-06-01T11:36:00">
-                2013-06-01 11:36
-        </abbr>
-
-        <p>In <a href="../category/computer.html">computer</a>. </p>
-<p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <p>之前開始把blog轉到使用 <a class="reference external" href="../computer/pelican.html">pelican產生靜態blog</a> ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。</p>
-<p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
-<div class="section" id="id1">
-<h2>環境設定</h2>
-<p>python要用virtualenv才是王道:</p>
-<pre class="literal-block">
-$ mkvirtualenv sillywalk.org
-$ cd sillkwalk.org
-$ setvirtualenvproject
-$ workon sillywalk.org
-
-$ pip install pelican
-$ pip install ghp-import # 方便發佈到github pages的工具
-</pre>
-</div>
-<div class="section" id="html">
-<h2>產生HTML，發佈</h2>
-<p>產生HTML內容:</p>
-<pre class="literal-block">
-$ pelican -s pelican.conf.py .
-$ ghp-import output
-$ git push origin gh-pages
-
-# 其實pelican的make就可以了 ...</pre></div>
-                <a class="readmore" href="../computer/pelican_github_pages.rst.html">read more</a>
-                <p>There are <a href="../computer/pelican_github_pages.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
