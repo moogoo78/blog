@@ -201,6 +201,7 @@ Radix-Modes::
 
   d 0, d 2, d 8 ; 10, 2, 8進位
   d r ;然後按2到36選進位數
+
 * `GNU Emacs Calc Manual <http://www.gnu.org/software/emacs/manual/html_mono/calc.html>`__
 * `EmacsWiki: Advanced Desk Calculator <http://www.emacswiki.org/emacs/AdvancedDeskCalculator>`__
 
