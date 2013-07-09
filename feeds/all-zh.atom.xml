@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-09T02:33:00+08:00</updated><entry><title>[book] 舊書重讀</title><link href="http://gentlerunner.org/book/book-jiu-shu-zhong-du.html" rel="alternate"></link><updated>2013-07-09T02:33:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:book/book-jiu-shu-zhong-du.html</id><summary type="html">&lt;div class="section" id="six-degrees-the-science-of-a-connected-age-duncan-j-watts"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-09T15:57:00+08:00</updated><entry><title>歷年跑馬成績</title><link href="http://gentlerunner.org/run/run_records.html" rel="alternate"></link><updated>2013-07-09T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:run/run_records.html</id><summary type="html">&lt;pre class="literal-block"&gt;
+2006-12-17, [初半馬] 台北ING 21k, 2:03:26, 224 (25-29), 1865
+2008-11-01, 花蓮太魯閣 21k, 2:20:44, 348 (30-39), 1124
+2009-10-04 , 台中臺灣大道 21k, 2:34:45, 322(30-39), 1071
+2009-12-06, 台南黑皮杯 21k, 2:32:38, 145(30-39), 574
+2010-02-28, (1) [初馬] 高雄 42k, 5:15:06 ,179 (30-39), 992
+2010-01-31, (2) 台南古都馬拉松 42k,  4:47? `台南古都馬拉松，第二馬 &amp;lt;|filename|/run/2010-01-31_tainan.rst&amp;gt;`_
+2010-07-04, 台北金虎爺, 10k, 0:58:x
+2010-08-07, (3) 陽明山 42k, 5:25:57, 126 (30-39), 582
+2010-11-05, (4) 太魯閣 42k, 5:20:51, 392 (30-39), 1359
+2011-12-18, (5) 台北富邦, 42k, 4:27:x ?
+2012-01-07, (6) 泰雅盃 42k, 5:06:43, 54/133, 641/1329
+2012-02-05 (7) 高雄 42k
+2012-03-11, (8) 京都馬拉松 42k, `第一次的海外馬拉松 &amp;lt;|filename|/travel/2012_kyoto_marathon-1.rst&amp;gt;`_
+2012-06-24, (9) 信義葡萄馬 42k,
+2013-02-15 草山月世界, 23k(報全馬), 2:28
+2013-02-24 (10) 高雄馬拉松, 42k, 5:11
+2013-03-17 台南馬拉松, 21k(報全馬), 3hr
+2013-04-07 (11) 台南北頭洋, 42k 4:14  `台南北頭洋 &amp;lt;|filename|/run/2013-04-07_jiali.rst&amp;gt;`_
+2013-06-02 台北渣打 12.5k 1:02  `渣打路跑 &amp;lt;|filename|/run/2013-06-02_chartered.rst&amp;gt;`_
+&lt;/pre&gt;
+&lt;p&gt;注 6.
+天氣: 晴天涼爽
+氣溫: 17~22度C
+溼度: 72~80%&lt;/p&gt;
+&lt;p&gt;30-39 04:35:42 462 2026 04:25:00&lt;/p&gt;
+</summary></entry><entry><title>[book] 舊書重讀</title><link href="http://gentlerunner.org/book/book-jiu-shu-zhong-du.html" rel="alternate"></link><updated>2013-07-09T02:33:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:book/book-jiu-shu-zhong-du.html</id><summary type="html">&lt;div class="section" id="six-degrees-the-science-of-a-connected-age-duncan-j-watts"&gt;
 &lt;h2&gt;六個人的小世界 (Six Degrees, The Science of a Connected Age), Duncan J.Watts&lt;/h2&gt;
 &lt;table class="docutils field-list" frame="void" rules="none"&gt;
 &lt;col class="field-name" /&gt;
@@ -74,7 +100,55 @@ I fought the law and the law won
 I fought the law and the law won
 &lt;/pre&gt;
 &lt;p&gt;ref: &lt;a class="reference external" href="http://en.wikipedia.org/wiki/I_Fought_the_Law"&gt;I Fought the Law - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/p&gt;
-</summary><category term="經典翻唱"></category></entry><entry><title>HTML CSS</title><link href="http://gentlerunner.org/computer/html-css.html" rel="alternate"></link><updated>2013-06-30T22:22:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-30:computer/html-css.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.icoding.co/2013/06/knowledge-about-z-index-2"&gt;» 你從未瞭解過的 z-index | iCoding&lt;/a&gt;&lt;/p&gt;
+</summary><category term="經典翻唱"></category></entry><entry><title>HTML CSS</title><link href="http://gentlerunner.org/computer/html-css.html" rel="alternate"></link><updated>2013-06-30T22:22:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-30:computer/html-css.html</id><summary type="html">&lt;div class="section" id="css"&gt;
+&lt;h2&gt;CSS&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://learn.shayhowe.com/advanced-html-css/"&gt;http://learn.shayhowe.com/advanced-html-css/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nt"&gt;blue&lt;/span&gt; &lt;span class="nt"&gt;10px&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+     &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+          &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;nice checkbox selected&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.teachparentstech.org/images/checkbox.gif"&gt;http://www.teachparentstech.org/images/checkbox.gif&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#content .boxlabel{
+color:#999;
+background: url(../images/checkbox.gif) no-repeat00;
+height: 28px;
+padding-left: 20px;
+padding-right:10px;
+cursor: pointer;
+}&lt;/p&gt;
+&lt;p&gt;#content .boxlabel.selected{
+color: rgb(32, 25, 25);
+background-position:0-42px;
+}&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="font"&gt;
+&lt;h2&gt;Font&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;VAGRounded - &lt;a class="reference external" href="http://en.wikipedia.org/wiki/VAG_Rounded"&gt;VAG Rounded - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;延伸閱讀&lt;/h2&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;架構&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://channel9.msdn.com/Series/HTML5-CSS3-Fundamentals-Development-for-Absolute-Beginners"&gt;HTML5 &amp;amp; CSS3 Fundamentals: Development for Absolute Beginners | Channel 9&lt;/a&gt; 初學課程video&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://learn.shayhowe.com/advanced-html-css/"&gt;An Advanced Guide to HTML &amp;amp; CSS&lt;/a&gt; 進階架構&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.netmagazine.com/features/truth-about-structuring-html5-page"&gt;The truth about structuring an HTML5 page | Feature | .net magazine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h3&gt;屬性細節&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.icoding.co/2013/06/knowledge-about-z-index-2"&gt;» 你從未瞭解過的 z-index | iCoding&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </summary></entry><entry><title>[山] 哈盆露營</title><link href="http://gentlerunner.org/mountain/hapen_camping.rst.html" rel="alternate"></link><updated>2013-06-29T13:14:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-29:mountain/hapen_camping.rst.html</id><summary type="html">&lt;p&gt;人員: 小黑、kalas、sky、james、moogoo&lt;/p&gt;
 &lt;p&gt;原本預計去能高躍嶺西端的奇萊南峰南華山，無奈下了一場雨又把屯原登山口1k處的路沖斷了，臨時改哈盆極樂露營。就說是極樂了，所以沒有要越嶺，也沒有要攻山頭，行程就是走到露營地吃吃喝喝，玩玩水。&lt;/p&gt;
 &lt;p&gt;假日路上來玩水的人滿多的，還遇到在附近長大的原住民，他說以前哈盆的路很大條，小時候他們是可以騎馬進來的，他帶著一群朋友來打獵，說晚上要拿猴排給我們... 他們一邊走一邊跟人聊天，一邊喝台啤，後來就不知道跑到那裡去。&lt;/p&gt;
@@ -1171,9 +1245,6 @@ C-RET
 d 0, d 2, d 8 ; 10, 2, 8進位
 d r ;然後按2到36選進位數
 &lt;/pre&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/moogoo/gentlerunner.org/content/computer/emacs.rst&lt;/tt&gt;, line 204)&lt;/p&gt;
-Literal block ends without a blank line; unexpected unindent.&lt;/div&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_mono/calc.html"&gt;GNU Emacs Calc Manual&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.emacswiki.org/emacs/AdvancedDeskCalculator"&gt;EmacsWiki: Advanced Desk Calculator&lt;/a&gt;&lt;/li&gt;
@@ -2937,4 +3008,11 @@ Finish        04:41:52        0:15:36
 &lt;h2&gt;系列文章&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://gentlerunner.org/travel/2012_kyoto_marathon.html"&gt;京都馬拉松五天行&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary></entry></feed>
+</summary></entry><entry><title>[跑] 台南古都馬拉松，第二馬</title><link href="http://gentlerunner.org/run/run_2010-01-31_tainan.html" rel="alternate"></link><updated>2010-01-31T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2010-01-31:run/run_2010-01-31_tainan.html</id><summary type="html">&lt;p&gt;11月中就開始維持每星期跑2~3次10k，練了幾次間歇，原本是要好好準備2011高雄馬拉松，想要拿台南馬拉松來當練習，原本考慮跑半馬就好了，但是在填報名表時還是受不了誘惑勾了全馬。
+但是就在比賽前二星期因為感冒、天氣不好(藉口)，沒有練到LSD，這場馬拉松也是抱著一種不要被車子載回來就好的心情下去##的。
+最近晚睡的結果，也是一直到了快三點才睡，五點就要起來了...
+早上在市府廣場集合，人也很多，天氣很冷，6點起跑，天都還沒亮。以最慢的速度開始跑，希望不要到20k就掛掉。沒想到雖然跑前沒練到LSD，前面20k跑起來還不算累，甚至比起二年前來跑半馬時輕鬆許多，花了大概2小時。&lt;/p&gt;
+&lt;p&gt;過了安南區國姓大橋後的景色就是魚溫和荒地，一直到七股去，這一段好感覺好長，終於看到折返點，到25k時，開始覺得不舒##了，開始放慢一點速度，國姓大橋之後開始走走跑跑，也是擔心受傷，影嚮下個月的高雄馬，所以覺得腳酸就停下來快走。
+4:47?經過終點，成績出來&lt;/p&gt;
+&lt;p&gt;算是有跑進五小時，破個人爛PB。不過因為沒有太拚，所以跑完不到一星期就恢復了。&lt;/p&gt;
+</summary><category term="diary"></category></entry></feed>

@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/computer.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-06-30T22:22:00+08:00</updated><entry><title>HTML CSS</title><link href="http://gentlerunner.org/computer/html-css.html" rel="alternate"></link><updated>2013-06-30T22:22:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-30:computer/html-css.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.icoding.co/2013/06/knowledge-about-z-index-2"&gt;» 你從未瞭解過的 z-index | iCoding&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/computer.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-06-30T22:22:00+08:00</updated><entry><title>HTML CSS</title><link href="http://gentlerunner.org/computer/html-css.html" rel="alternate"></link><updated>2013-06-30T22:22:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-30:computer/html-css.html</id><summary type="html">&lt;div class="section" id="css"&gt;
+&lt;h2&gt;CSS&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://learn.shayhowe.com/advanced-html-css/"&gt;http://learn.shayhowe.com/advanced-html-css/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nt"&gt;blue&lt;/span&gt; &lt;span class="nt"&gt;10px&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+     &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+          &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;nice checkbox selected&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.teachparentstech.org/images/checkbox.gif"&gt;http://www.teachparentstech.org/images/checkbox.gif&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#content .boxlabel{
+color:#999;
+background: url(../images/checkbox.gif) no-repeat00;
+height: 28px;
+padding-left: 20px;
+padding-right:10px;
+cursor: pointer;
+}&lt;/p&gt;
+&lt;p&gt;#content .boxlabel.selected{
+color: rgb(32, 25, 25);
+background-position:0-42px;
+}&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="font"&gt;
+&lt;h2&gt;Font&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;VAGRounded - &lt;a class="reference external" href="http://en.wikipedia.org/wiki/VAG_Rounded"&gt;VAG Rounded - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;延伸閱讀&lt;/h2&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;架構&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://channel9.msdn.com/Series/HTML5-CSS3-Fundamentals-Development-for-Absolute-Beginners"&gt;HTML5 &amp;amp; CSS3 Fundamentals: Development for Absolute Beginners | Channel 9&lt;/a&gt; 初學課程video&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://learn.shayhowe.com/advanced-html-css/"&gt;An Advanced Guide to HTML &amp;amp; CSS&lt;/a&gt; 進階架構&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.netmagazine.com/features/truth-about-structuring-html5-page"&gt;The truth about structuring an HTML5 page | Feature | .net magazine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h3&gt;屬性細節&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.icoding.co/2013/06/knowledge-about-z-index-2"&gt;» 你從未瞭解過的 z-index | iCoding&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </summary></entry><entry><title>[computer] Emacs輸入newline符號</title><link href="http://gentlerunner.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 C-q C-j
@@ -867,9 +915,6 @@ C-RET
 d 0, d 2, d 8 ; 10, 2, 8進位
 d r ;然後按2到36選進位數
 &lt;/pre&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/moogoo/gentlerunner.org/content/computer/emacs.rst&lt;/tt&gt;, line 204)&lt;/p&gt;
-Literal block ends without a blank line; unexpected unindent.&lt;/div&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_mono/calc.html"&gt;GNU Emacs Calc Manual&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.emacswiki.org/emacs/AdvancedDeskCalculator"&gt;EmacsWiki: Advanced Desk Calculator&lt;/a&gt;&lt;/li&gt;
