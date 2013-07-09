@@ -133,43 +133,6 @@
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="./drafts/work.html" rel="bookmark"
-                           title="Permalink to work">work</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-07-09T16:29:00">
-                2013-07-09 16:29
-        </abbr>
-
-        <p>In <a href="./category/drafts.html">drafts</a>. </p>
-
-</footer><!-- /.post-info -->                <ol class="arabic">
-<li><p class="first">經常遲到: 愈夜愈做得好
-2. 懶惰: 發白日夢時會想到好主意
-3. 壓力大: 更機警, 做快手快腳
-4. 自大: 善於快速下決定
-5. 心情不穩: 富創意
-6. 虛偽: 女士說謊是為了讓別人好過
-7. 說人閒話: 製造正面, 激勵的氣氛
-8. 情緒化: 增強記憶力
-9. 過份進取: 令員工積極保護自己的東西
-10. 反社會: 是偉大領袖的特徵</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/moogoo/gentlerunner.org/content/drafts/work.rst</tt>, line 16)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<p>via : <a class="reference external" href="http://www.facebook.com/photo.php?pid=5556268&amp;id=625226780&amp;fbid=427477581780&amp;subject=143664125670645">http://www ...</a></p></blockquote></li></ol>
-                <a class="readmore" href="./drafts/work.html">read more</a>
-                <p>There are <a href="./drafts/work.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
                     <h1><a href="./run/run_records.html" rel="bookmark"
                            title="Permalink to 歷年跑馬成績">歷年跑馬成績</a></h1>
                 </header>
@@ -457,6 +420,64 @@ C-q C-j
 
                 <a class="readmore" href="./travel/2012_kyoto_marathon.html">read more</a>
                 <p>There are <a href="./travel/2012_kyoto_marathon.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/emacs_replace-regexp.rst.html" rel="bookmark"
+                           title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-25T10:07:00">
+                2013-06-25 10:07
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/note.html">note</a><a href="./tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info -->                <p>指令:</p>
+<pre class="literal-block">
+M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
+</pre>
+<p>特殊字</p>
+<ul class="simple">
+<li><tt class="docutils literal">\&amp;’</tt> 完整的匹配字</li>
+<li><tt class="docutils literal">\d</tt> d是數字, 表示匹配在第幾個group (back reference)</li>
+<li><tt class="docutils literal">\#</tt> 累加, 發生第幾次,第一次從0開始</li>
+<li><tt class="docutils literal">\,</tt> Lisp expression</li>
+<li><tt class="docutils literal">\?</tt> 詢問</li>
+</ul>
+<div class="section" id="id1">
+<h2>範例</h2>
+<p>數字編號:</p>
+<pre class="literal-block">
+1987:Bogotá
+5243:Fabergé
+
+\(.+:\)
+\#.
+
+0.Bogotá
+1.Fabergé
+
+如果要從1開始:
+\,(1+ \#).
+</pre>
+<p>HTML H降級:</p>
+<pre class="literal-block">
+&lt;h1&gt;silly&lt;/h1&gt;
+&lt;h2&gt;walk&lt;/h2&gt;
+
+&lt;\(/?\)h\([0-9]\)&gt;
+&lt;\1h\,(1+ \#2)&gt;
+
+&lt;h2&gt;silly&lt;/h2&gt;
+&lt;h3 ...</pre></div>
+                <a class="readmore" href="./computer/emacs_replace-regexp.rst.html">read more</a>
+                <p>There are <a href="./computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
