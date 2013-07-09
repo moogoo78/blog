@@ -1,5 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-09T15:57:00+08:00</updated><entry><title>歷年跑馬成績</title><link href="http://gentlerunner.org/run/run_records.html" rel="alternate"></link><updated>2013-07-09T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:run/run_records.html</id><summary type="html">&lt;pre class="literal-block"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-09T16:41:00+08:00</updated><entry><title>Deutschen Grammatik - 變格 (Deklination)</title><link href="http://gentlerunner.org/language/deutsch_deklination.html" rel="alternate"></link><updated>2013-07-09T16:41:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:language/deutsch_deklination.html</id><summary type="html">&lt;div class="section" id="deklination-des-substantivs"&gt;
+&lt;h2&gt;名詞變格 (Deklination des Substantivs)&lt;/h2&gt;
+&lt;div class="section" id="bestimmten-artikel"&gt;
+&lt;h3&gt;定冠詞 (Bestimmten Artikel)&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="17%" /&gt;
+&lt;col width="19%" /&gt;
+&lt;col width="28%" /&gt;
+&lt;col width="19%" /&gt;
+&lt;col width="19%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;singular&lt;/th&gt;
+&lt;th class="head"&gt;Nomiative&lt;/th&gt;
+&lt;th class="head"&gt;Genetiv&lt;/th&gt;
+&lt;th class="head"&gt;Dativ&lt;/th&gt;
+&lt;th class="head"&gt;Akkusativ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;maskulin&lt;/td&gt;
+&lt;td&gt;der Vater&lt;/td&gt;
+&lt;td&gt;des Vater &lt;strong&gt;s&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;dem Vater&lt;/td&gt;
+&lt;td&gt;den Vater&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;feminin&lt;/td&gt;
+&lt;td&gt;die Mutter&lt;/td&gt;
+&lt;td&gt;der Mutter&lt;/td&gt;
+&lt;td&gt;der Mutter&lt;/td&gt;
+&lt;td&gt;die Mutter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;neutral&lt;/td&gt;
+&lt;td&gt;das Kind&lt;/td&gt;
+&lt;td&gt;des Kind &lt;strong&gt;es&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;dem Kind&lt;/td&gt;
+&lt;td&gt;das Kind&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="unbestimmten-artikel"&gt;
+&lt;h3&gt;不定冠詞 (Unbestimmten Artikel)&lt;/h3&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="15%" /&gt;
+&lt;col width="18%" /&gt;
+&lt;col width="29%" /&gt;
+&lt;col width="19%" /&gt;
+&lt;col width="19%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;singular&lt;/th&gt;
+&lt;th class="head"&gt;Nomiative&lt;/th&gt;
+&lt;th class="head"&gt;Genetiv&lt;/th&gt;
+&lt;th class="head"&gt;Dativ&lt;/th&gt;
+&lt;th class="head"&gt;Akkusativ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;maskulin&lt;/td&gt;
+&lt;td&gt;ein Vater&lt;/td&gt;
+&lt;td&gt;eines Vater &lt;strong&gt;s&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;einen Vater&lt;/td&gt;
+&lt;td&gt;einen Vater&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;feminin&lt;/td&gt;
+&lt;td&gt;eine Mutter&lt;/td&gt;
+&lt;td&gt;einer Mutter&lt;/td&gt;
+&lt;td&gt;einer Mutter&lt;/td&gt;
+&lt;td&gt;eine Mutter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;neutral&lt;/td&gt;
+&lt;td&gt;ein Kind&lt;/td&gt;
+&lt;td&gt;eines Kind &lt;strong&gt;es&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;einem Kind&lt;/td&gt;
+&lt;td&gt;ein Kind&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>work</title><link href="http://gentlerunner.org/drafts/work.html" rel="alternate"></link><updated>2013-07-09T16:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:drafts/work.html</id><summary type="html">&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;經常遲到: 愈夜愈做得好
+2. 懶惰: 發白日夢時會想到好主意
+3. 壓力大: 更機警, 做快手快腳
+4. 自大: 善於快速下決定
+5. 心情不穩: 富創意
+6. 虛偽: 女士說謊是為了讓別人好過
+7. 說人閒話: 製造正面, 激勵的氣氛
+8. 情緒化: 增強記憶力
+9. 過份進取: 令員工積極保護自己的東西
+10. 反社會: 是偉大領袖的特徵&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/moogoo/gentlerunner.org/content/drafts/work.rst&lt;/tt&gt;, line 16)&lt;/p&gt;
+&lt;p&gt;Unexpected indentation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;via : &lt;a class="reference external" href="http://www.facebook.com/photo.php?pid=5556268&amp;amp;id=625226780&amp;amp;fbid=427477581780&amp;amp;subject=143664125670645"&gt;http://www.facebook.com/photo.php?pid=5556268&amp;amp;id=625226780&amp;amp;fbid=427477581780&amp;amp;subject=143664125670645&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</summary></entry><entry><title>歷年跑馬成績</title><link href="http://gentlerunner.org/run/run_records.html" rel="alternate"></link><updated>2013-07-09T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:run/run_records.html</id><summary type="html">&lt;pre class="literal-block"&gt;
 2006-12-17, [初半馬] 台北ING 21k, 2:03:26, 224 (25-29), 1865
 2008-11-01, 花蓮太魯閣 21k, 2:20:44, 348 (30-39), 1124
 2009-10-04 , 台中臺灣大道 21k, 2:34:45, 322(30-39), 1071
