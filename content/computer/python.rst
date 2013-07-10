@@ -2,7 +2,7 @@ Python
 #####################
 :date: 2013-07-10 14:02
 :category: computer
-:tags: doc
+:tags: docs
 
 
 
