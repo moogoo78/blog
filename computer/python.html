@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+        <meta charset="utf-8">
+        <title>Python</title>
+        <link rel="stylesheet" href="../theme/css/main.css">
+                <link href="http://gentlerunner.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gentle Runner Atom Feed" />
+                
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="../">Gentle Runner </a></h1>
+                <nav><ul>
+                                                                                <li class="active"><a href="../category/computer.html">電腦</a></li>
+                                <li ><a href="../category/music.html">音樂</a></li>
+                                <li ><a href="../category/mountain.html">爬山</a></li>
+                                <li ><a href="../category/run.html">跑步</a></li>
+                                <li ><a href="../category/language.html">語言</a></li>
+                                <li ><a href="../category/nature.html">自然</a></li>
+                                <li ><a href="../category/travel.html">旅遊</a></li>
+                                <li ><a href="../category/book.html">書</a></li>
+                                <li><a href="../archives.html">Archives</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="../computer/python.html" rel="bookmark"
+           title="Permalink to Python">Python</a></h1>
+          </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2013-07-10T14:02:00">
+                2013-07-10 14:02
+        </abbr>
+
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/doc.html">doc</a></p>
+</footer><!-- /.post-info -->      <div class="section" id="quick-start">
+<h2>Quick Start</h2>
+<p>path:</p>
+<pre class="literal-block">
+(Mac)$ /Library/Python/2.7/site-packages
+</pre>
+<p>snippets:</p>
+<pre class="literal-block">
+#!/usr/bin/env python
+# -.- coding: utf-8 -.-
+
+import sys
+if __name__ == '__main__':
+    if len(sys.argv) &gt; 1:
+        main(sys.argv[1])
+</pre>
+<p>if/else三元運算 (ternary operator):</p>
+<pre class="literal-block">
+A = Y if X else Z
+</pre>
+<div class="section" id="regular-expression">
+<h3>regular expression</h3>
+<p>只留a-z, A-Z, 0-9:</p>
+<pre class="literal-block">
+re.sub(r'[^a-zA-Z_0-9]', '', did)
+</pre>
+</div>
+<div class="section" id="list-compension">
+<h3>list compension</h3>
+<p>印出a到z</p>
+<div class="highlight"><pre><span class="n">a2z</span> <span class="o">=</span> <span class="p">[</span><span class="nb">chr</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">97</span><span class="p">,</span> <span class="mi">123</span><span class="p">)]</span>
+
+<span class="c"># 也可以加上tenary operator [ Y if X else Z for i in LIST]</span>
+</pre></div>
+<p>sort list(用mydict的foo去排序):</p>
+<pre class="literal-block">
+output = sorted(mydict, key = lambda x:x['foo'])
+</pre>
+<p>lambda function:</p>
+<pre class="literal-block">
+lower = (lambda x, y: x if x &lt; y else y)
+lower ('bb', 'aa') # aa
+</pre>
+</div>
+<div class="section" id="string">
+<h3>string</h3>
+<p>format:</p>
+<pre class="literal-block">
+'{0:.2f}'.format(init_scale) # 小數點後兩位
+'{0:02d}'.format(dtime.tm_mon) # 補2位0
+</pre>
+<p>replace</p>
+<pre class="literal-block">
+string.replace('old', 'new')
+</pre>
+</div>
+<div class="section" id="time">
+<h3>time</h3>
+<p>time format:</p>
+<pre class="literal-block">
+import time
+from datetime import datetime
+TIME_STR = time.strftime('%Y%m%d-%H%M%S') # 時間字串
+
+dtime = datetime.utcnow()
+ts = time.mktime(dtime.timetuple()) # datetime to unix timestamp
+ts = time.time() # unix timestamp now
+datetime.fromtimestamp(ts) # unix timestamp to datetime
+
+dtime.strftime('%Y-%m-%d') # datetime =&gt; string
+datetime.strptime(dtime, '%Y-%m-%d') # =&gt; string to datetime (格式要一樣)
+</pre>
+</div>
+<div class="section" id="id1">
+<h3>算數</h3>
+<p>random:</p>
+<pre class="literal-block">
+import random
+random.randint(0,9)
+
+''.join([str(random.randint(1,9)) for i in range(5)]) # 產生5個0-9的字串
+</pre>
+</div>
+<div class="section" id="file">
+<h3>file</h3>
+<p>write:</p>
+<pre class="literal-block">
+f = open('data.txt', 'w')
+f.write('Hello\n')
+f.close()
+</pre>
+<p>read:</p>
+<pre class="literal-block">
+f = open('data.txt') # 預設是 'r'
+bytes = f.read() # 讀出內容
+# -------------
+for line in f:
+    print line # 讀出每一行
+f.close()
+</pre>
+</div>
+</div>
+<div class="section" id="basic">
+<h2>Basic</h2>
+<div class="section" id="overview">
+<h3>overview</h3>
+<p>functions are objects in Python, just like everything else. (If you find that confusing wait till you hear that classes are objects in Python, just like everything else!)</p>
+<p>pprint:</p>
+<pre class="literal-block">
+import pprint
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint(foo)
+</pre>
+</div>
+<div class="section" id="id2">
+<h3>引數</h3>
+<p>引數傳遞:</p>
+<ol class="arabic simple">
+<li>傳值, 引數不回被改</li>
+<li>傳址標, 引數會被改 (list)</li>
+</ol>
+<p>例如:</p>
+<pre class="literal-block">
+def changer(a, b):
+    a = 2
+    b[0] = 'spam'
+
+X = 1
+L = [1, 2]
+changer(X, L)
+# &gt;&gt;&gt; (1, ['spam', 2])
+</pre>
+<p>任意多引數:</p>
+<pre class="literal-block">
+def func(*name): # tuple
+    pass
+def func(**name): # dict
+    pass
+</pre>
+</div>
+<div class="section" id="build-in-functions">
+<h3>build-in functions</h3>
+<p>filter(function, iterable):</p>
+<pre class="literal-block">
+[item for item in iterable if function(item)]
+</pre>
+<p>map(function, iterable, ...):</p>
+<pre class="literal-block">
+#
+</pre>
+<p>sum(iterable[, start]):</p>
+<pre class="literal-block">
+#
+</pre>
+<p>all(iterable):</p>
+<pre class="literal-block">
+def all(iterable):
+    for element in iterable:
+        if not element:
+            return False
+    return True
+</pre>
+<dl class="docutils">
+<dt>any(iterable)::</dt>
+<dd><dl class="first last docutils">
+<dt>def any(iterable):</dt>
+<dd><dl class="first docutils">
+<dt>for element in iterable:</dt>
+<dd><dl class="first last docutils">
+<dt>if element:</dt>
+<dd>return True</dd>
+</dl>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/Users/moogoo/gentlerunner.org/content/computer/python.rst</tt>, line 186)</p>
+Definition list ends without a blank line; unexpected unindent.</div>
+<p class="last">return False</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="io-shell-commond-line">
+<h2>IO / shell / commond line</h2>
+<p><a class="reference external" href="http://docs.python.org/2/library/os.html">15.1. os — Miscellaneous operating system interfaces — Python v2.7.3 documentation</a></p>
+<p>檢查目錄存在:</p>
+<pre class="literal-block">
+os.path.exists('/etc/passwd')
+</pre>
+<p>subprocess:</p>
+<pre class="literal-block">
+import subprocess
+subprocess.call([&quot;ls&quot;, &quot;-l&quot;]) # 輸入是list, pipe要用popen, 安全一點
+subprocess.call([&quot;ls -l&quot;], shell=True) # 完全用系統的shell, pipe, wildcards, 家目錄~都可以用, 參數直接給字串就可以了, 也許會有輸入不乾淨(shell injection)的風險
+</pre>
+<p>常用:</p>
+<pre class="literal-block">
+os.getcwd()
+os.mkdir(src)
+os.rename(src, dst)
+</pre>
+</div>
+<div class="section" id="coding">
+<h2>coding</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://blog.wahahajk.com/2009/08/unicodedecodeerror-ascii-codec-cant.html">宅之力: 解決方法: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128)</a></li>
+</ul>
+</div>
+<div class="section" id="tips">
+<h2>Tips</h2>
+<div class="section" id="syntax">
+<h3>syntax</h3>
+<p>變數決定class名稱:</p>
+<pre class="literal-block">
+all_class = { 'my_class' : my_class }
+object = all_class['my_class']()
+</pre>
+</div>
+<div class="section" id="id3">
+<h3>coding</h3>
+<p>只留ASCII:</p>
+<pre class="literal-block">
+print &quot;&quot;.join(filter(lambda x: ord(x)&lt;128, did))
+</pre>
+</div>
+<div class="section" id="array">
+<h3>array排序</h3>
+<p>有個dict有title和date二個key, 要指定用date來排序:</p>
+<pre class="literal-block">
+list = []
+list.append({'title':'abc','date':1})
+list.append({'title':'def','date':2})
+list.append({'title':'ghi','date':0})
+print sorted(list, key=lambda x: x['date'])
+# [{'title': 'ghi', 'date': 0}, {'title': 'abc', 'date': 1}, {'title': 'def', 'date': 2}]
+print sorted(list, key=lambda x: x['date'], reverse=True)
+# [{'title': 'def', 'date': 2}, {'title': 'abc', 'date': 1}, {'title': 'ghi', 'date': 0}]
+</pre>
+</div>
+</div>
+<div class="section" id="coding-style">
+<h2>Coding Style</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.pocoo.org/internal/styleguide/">The Pocoo Style Guide — Pocoo</a></li>
+<li><a class="reference external" href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google Python Style Guide</a></li>
+<li><a class="reference external" href="http://docs.python-guide.org/en/latest/writing/style/">Code Style — The Hitchhiker's Guide to Python</a></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>整理</h2>
+<p>小括弧整理程式碼:</p>
+<pre class="literal-block">
+X = (A + B +
+     C + D)
+
+if (A == 1 and
+    B == 2 and
+    C == 3):
+       print 'spam' * 3
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">斜線結尾不好看, 很難注意</p>
+</div>
+</div>
+<div class="section" id="reference">
+<h2>reference</h2>
+<div class="section" id="tutorial">
+<h3>Tutorial</h3>
+<p><a class="reference external" href="http://www.slideshare.net/moskytw">Mosky Liu, Pinkoi | SlideShare</a></p>
+</div>
+</div>
+<div class="section" id="decorator">
+<h2>decorator</h2>
+<p>沒用 from functools import wraps 的話, function的資訊會跑掉, 重複(reentrant) 會有問題, 傳參數的話會變只有最後一個</p>
+<p>via: <a class="reference external" href="http://stackoverflow.com/questions/308999/what-does-functools-wraps-do">http://stackoverflow.com/questions/308999/what-does-functools-wraps-do</a></p>
+<div class="highlight"><pre><span class="c"># -.- encoding: utf-8 -.-</span>
+
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
+<span class="k">def</span> <span class="nf">logged</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="nd">@wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">with_logging</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">print</span> <span class="n">func</span><span class="o">.</span><span class="n">__name__</span> <span class="o">+</span> <span class="s">&quot; was called&quot;</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">with_logging</span>
+
+<span class="nd">@logged</span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="sd">&quot;&quot;&quot;does some math&quot;&quot;&quot;</span>
+   <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="k">print</span> <span class="n">f</span><span class="o">.</span><span class="n">__name__</span>  <span class="c"># prints &#39;f&#39;, 沒wraps -&gt; with_logging</span>
+<span class="k">print</span> <span class="n">f</span><span class="o">.</span><span class="n">__doc__</span>   <span class="c"># prints &#39;does some math&#39; 沒wraps -&gt; None</span>
+
+<span class="k">print</span> <span class="s">&#39;-----&#39;</span>
+
+<span class="k">def</span> <span class="nf">logged_param</span><span class="p">(</span><span class="n">param</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">with_logging</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+        <span class="c">#@wraps(func)</span>
+        <span class="k">def</span> <span class="nf">log_p</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">print</span> <span class="n">func</span><span class="o">.</span><span class="n">__name__</span> <span class="o">+</span> <span class="s">&quot; was called, &quot;</span><span class="p">,</span> <span class="n">param</span>
+            <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">log_p</span>
+    <span class="k">return</span> <span class="n">with_logging</span>
+
+<span class="nd">@logged_param</span><span class="p">(</span><span class="s">&#39;foo&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">f2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="sd">&quot;&quot;&quot;does some math2&quot;&quot;&quot;</span>
+   <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="k">print</span> <span class="n">f2</span><span class="o">.</span><span class="n">__name__</span>  <span class="c"># prints &#39;f&#39;</span>
+<span class="k">print</span> <span class="n">f2</span><span class="o">.</span><span class="n">__doc__</span>   <span class="c"># prints &#39;does some math&#39;</span>
+<span class="k">print</span> <span class="n">f2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nd">@logged_param</span><span class="p">(</span><span class="s">&#39;bar&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">f3</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; math3 &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="k">print</span> <span class="n">f3</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">f2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "computer/python.html";
+        var disqus_url = "../computer/python.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://suhenorg.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+  </article>
+</section>
+        <section id="extras" class="body">
+          <div class="blogroll">
+            <h2>Links</h2>
+            <ul>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="http://blog.roodo.com/moogoo" target="_blank">舊blog</a></li>
+            <li><a href="http://moogoo78.blogspot.com" target="_blank">程式blog</a></li>
+            </ul>
+          </div>
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://gentlerunner.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="http://www.facebook.com/farseerfc">facebook</a></li>
+                                                    <li><a href="http://twitter.com/moogoo">twitter</a></li>
+                                                    <li><a href="http://github.com/moogoo78">github</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38928548-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'suhenorg';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>

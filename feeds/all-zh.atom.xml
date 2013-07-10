@@ -1,5 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-09T16:41:00+08:00</updated><entry><title>Deutschen Grammatik - 變格 (Deklination)</title><link href="http://gentlerunner.org/language/deutsch_deklination.html" rel="alternate"></link><updated>2013-07-09T16:41:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:language/deutsch_deklination.html</id><summary type="html">&lt;div class="section" id="deklination-des-substantivs"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-10T14:02:00+08:00</updated><entry><title>Python</title><link href="http://gentlerunner.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
+&lt;h2&gt;Quick Start&lt;/h2&gt;
+&lt;p&gt;path:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+(Mac)$ /Library/Python/2.7/site-packages
+&lt;/pre&gt;
+&lt;p&gt;snippets:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+#!/usr/bin/env python
+# -.- coding: utf-8 -.-
+
+import sys
+if __name__ == '__main__':
+    if len(sys.argv) &amp;gt; 1:
+        main(sys.argv[1])
+&lt;/pre&gt;
+&lt;p&gt;if/else三元運算 (ternary operator):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+A = Y if X else Z
+&lt;/pre&gt;
+&lt;div class="section" id="regular-expression"&gt;
+&lt;h3&gt;regular expression&lt;/h3&gt;
+&lt;p&gt;只留a-z, A-Z, 0-9:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+re.sub(r'[^a-zA-Z_0-9]', '', did)
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="list-compension"&gt;
+&lt;h3&gt;list compension&lt;/h3&gt;
+&lt;p&gt;印出a到z&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;a2z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;chr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;97&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;123&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+
+&lt;span class="c"&gt;# 也可以加上tenary operator [ Y if X else Z for i in LIST]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;sort list(用mydict的foo去排序):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+output = sorted(mydict, key = lambda x:x['foo'])
+&lt;/pre&gt;
+&lt;p&gt;lambda function:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+lower = (lambda x, y: x if x &amp;lt; y else y)
+lower ('bb', 'aa') # aa
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="string"&gt;
+&lt;h3&gt;string&lt;/h3&gt;
+&lt;p&gt;format:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+'{0:.2f}'.format(init_scale) # 小數點後兩位
+'{0:02d}'.format(dtime.tm_mon) # 補2位0
+&lt;/pre&gt;
+&lt;p&gt;replace&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+string.replace('old', 'new')
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="time"&gt;
+&lt;h3&gt;time&lt;/h3&gt;
+&lt;p&gt;time format:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+import time
+from datetime import datetime
+TIME_STR = time.strftime('%Y%m%d-%H%M%S') # 時間字串
+
+dtime = datetime.utcnow()
+ts = time.mktime(dtime.timetuple()) # datetime to unix timestamp
+ts = time.time() # unix timestamp now
+datetime.fromtimestamp(ts) # unix timestamp to datetime
+
+dtime.strftime('%Y-%m-%d') # datetime =&amp;gt; string
+datetime.strptime(dtime, '%Y-%m-%d') # =&amp;gt; string to datetime (格式要一樣)
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;算數&lt;/h3&gt;
+&lt;p&gt;random:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+import random
+random.randint(0,9)
+
+''.join([str(random.randint(1,9)) for i in range(5)]) # 產生5個0-9的字串
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="file"&gt;
+&lt;h3&gt;file&lt;/h3&gt;
+&lt;p&gt;write:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+f = open('data.txt', 'w')
+f.write('Hello\n')
+f.close()
+&lt;/pre&gt;
+&lt;p&gt;read:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+f = open('data.txt') # 預設是 'r'
+bytes = f.read() # 讀出內容
+# -------------
+for line in f:
+    print line # 讀出每一行
+f.close()
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="basic"&gt;
+&lt;h2&gt;Basic&lt;/h2&gt;
+&lt;div class="section" id="overview"&gt;
+&lt;h3&gt;overview&lt;/h3&gt;
+&lt;p&gt;functions are objects in Python, just like everything else. (If you find that confusing wait till you hear that classes are objects in Python, just like everything else!)&lt;/p&gt;
+&lt;p&gt;pprint:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+import pprint
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint(foo)
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;引數&lt;/h3&gt;
+&lt;p&gt;引數傳遞:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;傳值, 引數不回被改&lt;/li&gt;
+&lt;li&gt;傳址標, 引數會被改 (list)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;例如:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+def changer(a, b):
+    a = 2
+    b[0] = 'spam'
+
+X = 1
+L = [1, 2]
+changer(X, L)
+# &amp;gt;&amp;gt;&amp;gt; (1, ['spam', 2])
+&lt;/pre&gt;
+&lt;p&gt;任意多引數:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+def func(*name): # tuple
+    pass
+def func(**name): # dict
+    pass
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="build-in-functions"&gt;
+&lt;h3&gt;build-in functions&lt;/h3&gt;
+&lt;p&gt;filter(function, iterable):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[item for item in iterable if function(item)]
+&lt;/pre&gt;
+&lt;p&gt;map(function, iterable, ...):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+#
+&lt;/pre&gt;
+&lt;p&gt;sum(iterable[, start]):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+#
+&lt;/pre&gt;
+&lt;p&gt;all(iterable):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+def all(iterable):
+    for element in iterable:
+        if not element:
+            return False
+    return True
+&lt;/pre&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;any(iterable)::&lt;/dt&gt;
+&lt;dd&gt;&lt;dl class="first last docutils"&gt;
+&lt;dt&gt;def any(iterable):&lt;/dt&gt;
+&lt;dd&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;for element in iterable:&lt;/dt&gt;
+&lt;dd&gt;&lt;dl class="first last docutils"&gt;
+&lt;dt&gt;if element:&lt;/dt&gt;
+&lt;dd&gt;return True&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/moogoo/gentlerunner.org/content/computer/python.rst&lt;/tt&gt;, line 186)&lt;/p&gt;
+Definition list ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p class="last"&gt;return False&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="io-shell-commond-line"&gt;
+&lt;h2&gt;IO / shell / commond line&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://docs.python.org/2/library/os.html"&gt;15.1. os — Miscellaneous operating system interfaces — Python v2.7.3 documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;檢查目錄存在:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+os.path.exists('/etc/passwd')
+&lt;/pre&gt;
+&lt;p&gt;subprocess:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+import subprocess
+subprocess.call([&amp;quot;ls&amp;quot;, &amp;quot;-l&amp;quot;]) # 輸入是list, pipe要用popen, 安全一點
+subprocess.call([&amp;quot;ls -l&amp;quot;], shell=True) # 完全用系統的shell, pipe, wildcards, 家目錄~都可以用, 參數直接給字串就可以了, 也許會有輸入不乾淨(shell injection)的風險
+&lt;/pre&gt;
+&lt;p&gt;常用:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+os.getcwd()
+os.mkdir(src)
+os.rename(src, dst)
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="coding"&gt;
+&lt;h2&gt;coding&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://blog.wahahajk.com/2009/08/unicodedecodeerror-ascii-codec-cant.html"&gt;宅之力: 解決方法: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tips"&gt;
+&lt;h2&gt;Tips&lt;/h2&gt;
+&lt;div class="section" id="syntax"&gt;
+&lt;h3&gt;syntax&lt;/h3&gt;
+&lt;p&gt;變數決定class名稱:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+all_class = { 'my_class' : my_class }
+object = all_class['my_class']()
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h3&gt;coding&lt;/h3&gt;
+&lt;p&gt;只留ASCII:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+print &amp;quot;&amp;quot;.join(filter(lambda x: ord(x)&amp;lt;128, did))
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="array"&gt;
+&lt;h3&gt;array排序&lt;/h3&gt;
+&lt;p&gt;有個dict有title和date二個key, 要指定用date來排序:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+list = []
+list.append({'title':'abc','date':1})
+list.append({'title':'def','date':2})
+list.append({'title':'ghi','date':0})
+print sorted(list, key=lambda x: x['date'])
+# [{'title': 'ghi', 'date': 0}, {'title': 'abc', 'date': 1}, {'title': 'def', 'date': 2}]
+print sorted(list, key=lambda x: x['date'], reverse=True)
+# [{'title': 'def', 'date': 2}, {'title': 'abc', 'date': 1}, {'title': 'ghi', 'date': 0}]
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="coding-style"&gt;
+&lt;h2&gt;Coding Style&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.pocoo.org/internal/styleguide/"&gt;The Pocoo Style Guide — Pocoo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html"&gt;Google Python Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.python-guide.org/en/latest/writing/style/"&gt;Code Style — The Hitchhiker's Guide to Python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;整理&lt;/h2&gt;
+&lt;p&gt;小括弧整理程式碼:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+X = (A + B +
+     C + D)
+
+if (A == 1 and
+    B == 2 and
+    C == 3):
+       print 'spam' * 3
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;斜線結尾不好看, 很難注意&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="reference"&gt;
+&lt;h2&gt;reference&lt;/h2&gt;
+&lt;div class="section" id="tutorial"&gt;
+&lt;h3&gt;Tutorial&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.slideshare.net/moskytw"&gt;Mosky Liu, Pinkoi | SlideShare&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="decorator"&gt;
+&lt;h2&gt;decorator&lt;/h2&gt;
+&lt;p&gt;沒用 from functools import wraps 的話, function的資訊會跑掉, 重複(reentrant) 會有問題, 傳參數的話會變只有最後一個&lt;/p&gt;
+&lt;p&gt;via: &lt;a class="reference external" href="http://stackoverflow.com/questions/308999/what-does-functools-wraps-do"&gt;http://stackoverflow.com/questions/308999/what-does-functools-wraps-do&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# -.- encoding: utf-8 -.-&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;functools&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;logged&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="nd"&gt;@wraps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;with_logging&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;quot; was called&amp;quot;&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;with_logging&lt;/span&gt;
+
+&lt;span class="nd"&gt;@logged&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+   &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;does some math&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+   &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__name__&lt;/span&gt;  &lt;span class="c"&gt;# prints &amp;#39;f&amp;#39;, 沒wraps -&amp;gt; with_logging&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__doc__&lt;/span&gt;   &lt;span class="c"&gt;# prints &amp;#39;does some math&amp;#39; 沒wraps -&amp;gt; None&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;-----&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;logged_param&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;with_logging&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="c"&gt;#@wraps(func)&lt;/span&gt;
+        &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;log_p&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+            &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;quot; was called, &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;param&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;log_p&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;with_logging&lt;/span&gt;
+
+&lt;span class="nd"&gt;@logged_param&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;foo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+   &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;does some math2&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+   &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__name__&lt;/span&gt;  &lt;span class="c"&gt;# prints &amp;#39;f&amp;#39;&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__doc__&lt;/span&gt;   &lt;span class="c"&gt;# prints &amp;#39;does some math&amp;#39;&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nd"&gt;@logged_param&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;bar&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f3&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; math3 &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f3&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="doc"></category></entry><entry><title>Deutschen Grammatik - 變格 (Deklination)</title><link href="http://gentlerunner.org/language/deutsch_deklination.html" rel="alternate"></link><updated>2013-07-09T16:41:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:language/deutsch_deklination.html</id><summary type="html">&lt;div class="section" id="deklination-des-substantivs"&gt;
 &lt;h2&gt;名詞變格 (Deklination des Substantivs)&lt;/h2&gt;
 &lt;div class="section" id="bestimmten-artikel"&gt;
 &lt;h3&gt;定冠詞 (Bestimmten Artikel)&lt;/h3&gt;
@@ -2028,13 +2354,23 @@ p = Product.query.join('brand').\
     filter(Product.shop_id==g.shop_id).\
     all()
 &lt;/pre&gt;
-&lt;p&gt;foreign key constraint:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-# database level
-ForeignKey('category.id', ondelete='SET NULL')
-# pythen level
-relationship(passive_deletes=True)
-&lt;/pre&gt;
+&lt;p&gt;foreign key constraint&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# database level&lt;/span&gt;
+&lt;span class="n"&gt;ForeignKey&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;category.id&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ondelete&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;SET NULL&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c"&gt;# pythen level&lt;/span&gt;
+&lt;span class="n"&gt;relationship&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;passive_deletes&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;relationship, associate&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# db.Table&lt;/span&gt;
+&lt;span class="c"&gt;# class Foo()&lt;/span&gt;
+&lt;span class="c"&gt;# class Bar():&lt;/span&gt;
+&lt;span class="c"&gt;# foo_id = &amp;#39;foo.id&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;foo&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Foo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;db&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;db&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Bar&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="n"&gt;db&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;commit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id2"&gt;

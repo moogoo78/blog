@@ -175,13 +175,23 @@ p = Product.query.join('brand').\
     filter(Product.shop_id==g.shop_id).\
     all()
 </pre>
-<p>foreign key constraint:</p>
-<pre class="literal-block">
-# database level
-ForeignKey('category.id', ondelete='SET NULL')
-# pythen level
-relationship(passive_deletes=True)
-</pre>
+<p>foreign key constraint</p>
+<div class="highlight"><pre><span class="c"># database level</span>
+<span class="n">ForeignKey</span><span class="p">(</span><span class="s">&#39;category.id&#39;</span><span class="p">,</span> <span class="n">ondelete</span><span class="o">=</span><span class="s">&#39;SET NULL&#39;</span><span class="p">)</span>
+<span class="c"># pythen level</span>
+<span class="n">relationship</span><span class="p">(</span><span class="n">passive_deletes</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+<p>relationship, associate</p>
+<div class="highlight"><pre><span class="c"># db.Table</span>
+<span class="c"># class Foo()</span>
+<span class="c"># class Bar():</span>
+<span class="c"># foo_id = &#39;foo.id&#39;</span>
+
+<span class="n">foo</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">()</span>
+<span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">foo</span><span class="p">)</span>
+<span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Bar</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="id2">
