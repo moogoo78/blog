@@ -148,13 +148,30 @@ join, or::
       all()
 
 
-foreign key constraint::
+foreign key constraint
+
+.. code-block:: python
 
   # database level
   ForeignKey('category.id', ondelete='SET NULL')
   # pythen level
   relationship(passive_deletes=True)
- 
+
+
+relationship, associate
+
+.. code-block:: python
+
+  # db.Table
+  # class Foo()
+  # class Bar():
+  # foo_id = 'foo.id'
+
+  foo = Foo()
+  db.session.add(foo)
+  db.session.append(Bar.query.get(1))
+  db.session.commit() 
+
 比較
 ========
 * `SQLAlchemy and You | Armin Ronacher's Thoughts and Writings <http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/>`__
