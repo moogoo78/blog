@@ -154,3 +154,8 @@ Tips
   $ ffmpeg –i inputvideo.avi -vf "movie=watermarklogo.png [watermark]; [in][watermark] overlay=main_w-overlay_w-10:10 [out]" outputvideo.flv
 
 via: `How to watermark a video using FFmpeg | iDude.net <http://www.idude.net/index.php/how-to-watermark-a-video-using-ffmpeg/>`__
+
+
+examples::
+
+  ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3

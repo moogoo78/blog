@@ -56,10 +56,13 @@ LIMIT
 function
 -----------
 
-時間::
+時間
 
-  SELECT NOW(),CURDATE(),CURTIME() # | 2012-06-04 14:19:42 | 2012-06-04 | 14:19:42 |
+.. code-block:: sql
+
+  SELECT NOW(),CURDATE(),CURTIME() ; | 2012-06-04 14:19:42 | 2012-06-04 | 14:19:42 |
   SELECT MONTH(FROM_UNIXTIME(add_date)) as month 
+  SELECT NOW(), NOW() - INTERVAL 1 DAY ;今天跟昨天
 
 ref: http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html
 

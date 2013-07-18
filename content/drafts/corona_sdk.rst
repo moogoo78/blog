@@ -8,7 +8,7 @@ Corona SDK (draft)
 
 Tips
 =================
-顯示圖層遮助其他event, via: `Corona SDK: Avoid touch events through layered screens - BLOG - Monkeybin <http://www.monkeybin.no/blog/archives/2011/08/08/corona-sdk-avoid-touch-events-through-layered-screens/>`__
+顯示圖層遮住其他event, via: `Corona SDK: Avoid touch events through layered screens - BLOG - Monkeybin <http://www.monkeybin.no/blog/archives/2011/08/08/corona-sdk-avoid-touch-events-through-layered-screens/>`__
 
 .. code-block:: lua
 
@@ -55,3 +55,9 @@ list
     end
 
 via: http://www.lua.org/pil/19.3.html
+
+
+debug
+=============================
+
+adb logcat Corona:v *:s
