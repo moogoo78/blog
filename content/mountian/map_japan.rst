@@ -3,7 +3,7 @@
 :date: 2013-07-16 10:25
 :category: mountain
 :tags: japan
-:slug: map_japan
+:slug: map_japan_tsurugidake
 
 
 緣由
@@ -79,6 +79,9 @@
 
 .. image:: http://farm3.staticflickr.com/2832/9305605520_a2d41477b7.jpg
 
+印出來的樣子
+
+.. image:: http://farm8.staticflickr.com/7405/9317674890_41b7a9e7b6_n.jpg
 
 `flickr <http://www.flickr.com/photos/moogoo/sets/72157634692479891/>`__
 
