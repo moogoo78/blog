@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-10T14:02:00+08:00</updated><entry><title>Python</title><link href="http://gentlerunner.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-16T10:25:00+08:00</updated><entry><title>列印日本地形圖 - 以劍岳為例</title><link href="http://gentlerunner.org/mountain/map_japan_tsurugidake.html" rel="alternate"></link><updated>2013-07-16T10:25:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-16:mountain/map_japan_tsurugidake.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;緣由&lt;/h2&gt;
+&lt;p&gt;為了這週末要去日本 &lt;a class="reference external" href="http://zh.wikipedia.org/zh-tw/劍岳"&gt;劍岳&lt;/a&gt; ，沒有地圖只好上網找電子版。&lt;/p&gt;
+&lt;p&gt;日本 &lt;a class="reference external" href="http://www.gsi.go.jp/"&gt;国土地理院&lt;/a&gt; 有很好用的電子地圖， &lt;a class="reference external" href="http://watchizu.gsi.go.jp/index.aspx?mesh=0000"&gt;地図閲覧サービストップページ&lt;/a&gt; ，可以很快的選取區域找到精細的地形圖。但是沒辦法像 &lt;a class="reference external" href="http://map.happyman.idv.tw/twmap/login.php"&gt;地圖產生器v2.51&lt;/a&gt; 那樣根據選取的區域自動切成數張A4。因此我開始土法煉鋼，來產生漂亮的地形圖。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;下載圖檔&lt;/h2&gt;
+&lt;p&gt;觀察了一下原始圖檔，檔名也許是用日本的大地座標數字，找出最左上角 00578150025593.png，右上 00578200025593.png，左下00578150025606.png，右下00578200025606.png。&lt;/p&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;這個地圖的座標是日本測地系2000 &lt;a class="reference external" href="http://ja.wikipedia.org/wiki/測地系"&gt;測地系 - Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;找到想取得的範圍 (室堂到劍岳), 寬: 0057815-0057820 (左到右)，高: 0025593-0025606 (上到下)，總共是7x14張&lt;/p&gt;
+&lt;p&gt;前置網址有一些不一樣, 我是用最爛的方法, 遇到HTTP Error就在翻一下原始碼找出來。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os.path&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;urllib2&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;urlopen&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;URLError&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HTTPError&lt;/span&gt;
+
+
+&lt;span class="n"&gt;u1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/85/19/&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;u2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/86/10/&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;u3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/85/29/&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;u4&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/86/20/&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;25593&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;25608&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;57815&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;57822&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+
+        &lt;span class="n"&gt;url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;&lt;/span&gt;&lt;span class="si"&gt;%s%07d%07d&lt;/span&gt;&lt;span class="s"&gt;.png&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;urlopen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;downloading &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;url&lt;/span&gt;
+
+            &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;basename&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;wb&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+                &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+
+        &lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="n"&gt;HTTPError&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;HTTP Error:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;url&lt;/span&gt;
+        &lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="n"&gt;URLError&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;URL Error:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;reason&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;url&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;拼貼&lt;/h2&gt;
+&lt;p&gt;用imagemagick程式，&lt;/p&gt;
+&lt;p&gt;圖片的循序:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+1 16
+2 17
+3 18
+4 ...
+&lt;/pre&gt;
+&lt;p&gt;要做2次montage指令, 第一個產生7個1x14的組合圖&lt;/p&gt;
+&lt;p&gt;指令參考: &lt;a class="reference external" href="http://www.imagemagick.org/Usage/montage/#columns"&gt;http://www.imagemagick.org/Usage/montage/#columns&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;montage -mode concatenate -tile 1x14 *.png out.png
+&lt;span class="nv"&gt;$ &lt;/span&gt;montage -mode concatenate -tile 7x1 out-*.png final.png
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;產生出來一張A4的圖，Mac的預覽程式列印縮放成22%, 差不多寬為14cm (7格), 一格寬2cm, 比例為1/50000。&lt;/p&gt;
+&lt;p&gt;如果分成4張，2張7x4，2張7x3，可以印成4張A4，Mac的預覽程式列印縮44.5%，寬為16cm (4格), 比例為1/25000。&lt;/p&gt;
+&lt;img alt="http://farm3.staticflickr.com/2832/9305605520_a2d41477b7.jpg" src="http://farm3.staticflickr.com/2832/9305605520_a2d41477b7.jpg" /&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.flickr.com/photos/moogoo/sets/72157634692479891/"&gt;flickr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;紀錄的非常凌亂，一定有比我這好100倍的方法，希望大家不吝給予指教。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;延伸閱讀&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://portal.cyberjapan.jp/index.html"&gt;電子国土ポータル&lt;/a&gt; 可以套圖層，看出各個年代，不同資訊的圖資。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="japan"></category></entry><entry><title>Python</title><link href="http://gentlerunner.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
 &lt;h2&gt;Quick Start&lt;/h2&gt;
 &lt;p&gt;path:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -325,7 +392,7 @@ if (A == 1 and
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="doc"></category></entry><entry><title>Deutschen Grammatik - 變格 (Deklination)</title><link href="http://gentlerunner.org/language/deutsch_deklination.html" rel="alternate"></link><updated>2013-07-09T16:41:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:language/deutsch_deklination.html</id><summary type="html">&lt;div class="section" id="deklination-des-substantivs"&gt;
+</summary><category term="docs"></category></entry><entry><title>Deutschen Grammatik - 變格 (Deklination)</title><link href="http://gentlerunner.org/language/deutsch_deklination.html" rel="alternate"></link><updated>2013-07-09T16:41:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:language/deutsch_deklination.html</id><summary type="html">&lt;div class="section" id="deklination-des-substantivs"&gt;
 &lt;h2&gt;名詞變格 (Deklination des Substantivs)&lt;/h2&gt;
 &lt;div class="section" id="bestimmten-artikel"&gt;
 &lt;h3&gt;定冠詞 (Bestimmten Artikel)&lt;/h3&gt;
@@ -408,7 +475,7 @@ if (A == 1 and
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>歷年跑馬成績</title><link href="http://gentlerunner.org/run/run_records.html" rel="alternate"></link><updated>2013-07-09T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:run/run_records.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+</summary><category term="deutsch"></category></entry><entry><title>歷年跑馬成績</title><link href="http://gentlerunner.org/run/run_records.html" rel="alternate"></link><updated>2013-07-09T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:run/run_records.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;2013&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2013-06-02, 台北渣打 12.5k 1:02  &lt;a class="reference external" href="http://gentlerunner.org/run/chartered_12k.html"&gt;渣打路跑&lt;/a&gt;&lt;/li&gt;
@@ -620,7 +687,7 @@ background-position:0-42px;
 &lt;/ul&gt;
 </summary><category term="diary"></category></entry><entry><title>[language] 蘇格蘭英文</title><link href="http://gentlerunner.org/language/language-su-ge-lan-ying-wen.html" rel="alternate"></link><updated>2013-06-29T13:03:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-29:language/language-su-ge-lan-ying-wen.html</id><summary type="html">&lt;p&gt;看完2013溫布頓網球公開賽，廬彥勳雖然實力有發揮還是被排名第2的英國Murray直落三淘汰。賽後訪問，覺得Murray講的英文不是一般聽到的英國腔英文，比較平順，不饒口，也不像美國腔奔放，查了一下原來他是蘇格蘭人，這就是所謂的蘇格蘭英文吧。 ( &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Scottish_English"&gt;Scottish English - Wikipedia&lt;/a&gt; )&lt;/p&gt;
 &lt;p&gt;我覺得很有興趣，但是對語言／語音學的知識還是相當匱乏，有空再來研究~&lt;/p&gt;
-</summary><category term="todo"></category></entry><entry><title>[computer] Emacs輸入newline符號</title><link href="http://gentlerunner.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
+</summary><category term="english"></category></entry><entry><title>[computer] Emacs輸入newline符號</title><link href="http://gentlerunner.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 C-q C-j
 &lt;/pre&gt;
@@ -984,11 +1051,11 @@ CONVERT( 欄位名稱 using big5) 。
 &lt;/div&gt;
 &lt;div class="section" id="function"&gt;
 &lt;h3&gt;function&lt;/h3&gt;
-&lt;p&gt;時間:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-SELECT NOW(),CURDATE(),CURTIME() # | 2012-06-04 14:19:42 | 2012-06-04 | 14:19:42 |
-SELECT MONTH(FROM_UNIXTIME(add_date)) as month
-&lt;/pre&gt;
+&lt;p&gt;時間&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;NOW&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;&lt;span class="n"&gt;CURDATE&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;&lt;span class="n"&gt;CURTIME&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;06&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;04&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;19&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;42&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;06&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;04&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;19&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;42&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="k"&gt;MONTH&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;FROM_UNIXTIME&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;add_date&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="k"&gt;month&lt;/span&gt;
+&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;NOW&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;NOW&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="nb"&gt;INTERVAL&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;DAY&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="err"&gt;今天跟昨天&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;ref: &lt;a class="reference external" href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html"&gt;http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="schema"&gt;
@@ -2830,6 +2897,10 @@ $ ffmpeg -formats
 $ ffmpeg –i inputvideo.avi -vf &amp;quot;movie=watermarklogo.png [watermark]; [in][watermark] overlay=main_w-overlay_w-10:10 [out]&amp;quot; outputvideo.flv
 &lt;/pre&gt;
 &lt;p&gt;via: &lt;a class="reference external" href="http://www.idude.net/index.php/how-to-watermark-a-video-using-ffmpeg/"&gt;How to watermark a video using FFmpeg | iDude.net&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;examples:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

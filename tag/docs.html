@@ -31,15 +31,364 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../computer/database_docs.html">Database筆記</a></h1> 
+                    <h1 class="entry-title"><a href="../computer/python.html">Python</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-07-10T14:02:00">
+                2013-07-10 14:02
+        </abbr>
+
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/docs.html">docs</a></p>
+</footer><!-- /.post-info --><div class="section" id="quick-start">
+<h2>Quick Start</h2>
+<p>path:</p>
+<pre class="literal-block">
+(Mac)$ /Library/Python/2.7/site-packages
+</pre>
+<p>snippets:</p>
+<pre class="literal-block">
+#!/usr/bin/env python
+# -.- coding: utf-8 -.-
+
+import sys
+if __name__ == '__main__':
+    if len(sys.argv) &gt; 1:
+        main(sys.argv[1])
+</pre>
+<p>if/else三元運算 (ternary operator):</p>
+<pre class="literal-block">
+A = Y if X else Z
+</pre>
+<div class="section" id="regular-expression">
+<h3>regular expression</h3>
+<p>只留a-z, A-Z, 0-9:</p>
+<pre class="literal-block">
+re.sub(r'[^a-zA-Z_0-9]', '', did)
+</pre>
+</div>
+<div class="section" id="list-compension">
+<h3>list compension</h3>
+<p>印出a到z</p>
+<div class="highlight"><pre><span class="n">a2z</span> <span class="o">=</span> <span class="p">[</span><span class="nb">chr</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">97</span><span class="p">,</span> <span class="mi">123</span><span class="p">)]</span>
+
+<span class="c"># 也可以加上tenary operator [ Y if X else Z for i in LIST]</span>
+</pre></div>
+<p>sort list(用mydict的foo去排序):</p>
+<pre class="literal-block">
+output = sorted(mydict, key = lambda x:x['foo'])
+</pre>
+<p>lambda function:</p>
+<pre class="literal-block">
+lower = (lambda x, y: x if x &lt; y else y)
+lower ('bb', 'aa') # aa
+</pre>
+</div>
+<div class="section" id="string">
+<h3>string</h3>
+<p>format:</p>
+<pre class="literal-block">
+'{0:.2f}'.format(init_scale) # 小數點後兩位
+'{0:02d}'.format(dtime.tm_mon) # 補2位0
+</pre>
+<p>replace</p>
+<pre class="literal-block">
+string.replace('old', 'new')
+</pre>
+</div>
+<div class="section" id="time">
+<h3>time</h3>
+<p>time format:</p>
+<pre class="literal-block">
+import time
+from datetime import datetime
+TIME_STR = time.strftime('%Y%m%d-%H%M%S') # 時間字串
+
+dtime = datetime.utcnow()
+ts = time.mktime(dtime.timetuple()) # datetime to unix timestamp
+ts = time.time() # unix timestamp now
+datetime.fromtimestamp(ts) # unix timestamp to datetime
+
+dtime.strftime('%Y-%m-%d') # datetime =&gt; string
+datetime.strptime(dtime, '%Y-%m-%d') # =&gt; string to datetime (格式要一樣)
+</pre>
+</div>
+<div class="section" id="id1">
+<h3>算數</h3>
+<p>random:</p>
+<pre class="literal-block">
+import random
+random.randint(0,9)
+
+''.join([str(random.randint(1,9)) for i in range(5)]) # 產生5個0-9的字串
+</pre>
+</div>
+<div class="section" id="file">
+<h3>file</h3>
+<p>write:</p>
+<pre class="literal-block">
+f = open('data.txt', 'w')
+f.write('Hello\n')
+f.close()
+</pre>
+<p>read:</p>
+<pre class="literal-block">
+f = open('data.txt') # 預設是 'r'
+bytes = f.read() # 讀出內容
+# -------------
+for line in f:
+    print line # 讀出每一行
+f.close()
+</pre>
+</div>
+</div>
+<div class="section" id="basic">
+<h2>Basic</h2>
+<div class="section" id="overview">
+<h3>overview</h3>
+<p>functions are objects in Python, just like everything else. (If you find that confusing wait till you hear that classes are objects in Python, just like everything else!)</p>
+<p>pprint:</p>
+<pre class="literal-block">
+import pprint
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint(foo)
+</pre>
+</div>
+<div class="section" id="id2">
+<h3>引數</h3>
+<p>引數傳遞:</p>
+<ol class="arabic simple">
+<li>傳值, 引數不回被改</li>
+<li>傳址標, 引數會被改 (list)</li>
+</ol>
+<p>例如:</p>
+<pre class="literal-block">
+def changer(a, b):
+    a = 2
+    b[0] = 'spam'
+
+X = 1
+L = [1, 2]
+changer(X, L)
+# &gt;&gt;&gt; (1, ['spam', 2])
+</pre>
+<p>任意多引數:</p>
+<pre class="literal-block">
+def func(*name): # tuple
+    pass
+def func(**name): # dict
+    pass
+</pre>
+</div>
+<div class="section" id="build-in-functions">
+<h3>build-in functions</h3>
+<p>filter(function, iterable):</p>
+<pre class="literal-block">
+[item for item in iterable if function(item)]
+</pre>
+<p>map(function, iterable, ...):</p>
+<pre class="literal-block">
+#
+</pre>
+<p>sum(iterable[, start]):</p>
+<pre class="literal-block">
+#
+</pre>
+<p>all(iterable):</p>
+<pre class="literal-block">
+def all(iterable):
+    for element in iterable:
+        if not element:
+            return False
+    return True
+</pre>
+<dl class="docutils">
+<dt>any(iterable)::</dt>
+<dd><dl class="first last docutils">
+<dt>def any(iterable):</dt>
+<dd><dl class="first docutils">
+<dt>for element in iterable:</dt>
+<dd><dl class="first last docutils">
+<dt>if element:</dt>
+<dd>return True</dd>
+</dl>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/Users/moogoo/gentlerunner.org/content/computer/python.rst</tt>, line 186)</p>
+Definition list ends without a blank line; unexpected unindent.</div>
+<p class="last">return False</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="io-shell-commond-line">
+<h2>IO / shell / commond line</h2>
+<p><a class="reference external" href="http://docs.python.org/2/library/os.html">15.1. os — Miscellaneous operating system interfaces — Python v2.7.3 documentation</a></p>
+<p>檢查目錄存在:</p>
+<pre class="literal-block">
+os.path.exists('/etc/passwd')
+</pre>
+<p>subprocess:</p>
+<pre class="literal-block">
+import subprocess
+subprocess.call([&quot;ls&quot;, &quot;-l&quot;]) # 輸入是list, pipe要用popen, 安全一點
+subprocess.call([&quot;ls -l&quot;], shell=True) # 完全用系統的shell, pipe, wildcards, 家目錄~都可以用, 參數直接給字串就可以了, 也許會有輸入不乾淨(shell injection)的風險
+</pre>
+<p>常用:</p>
+<pre class="literal-block">
+os.getcwd()
+os.mkdir(src)
+os.rename(src, dst)
+</pre>
+</div>
+<div class="section" id="coding">
+<h2>coding</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://blog.wahahajk.com/2009/08/unicodedecodeerror-ascii-codec-cant.html">宅之力: 解決方法: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128)</a></li>
+</ul>
+</div>
+<div class="section" id="tips">
+<h2>Tips</h2>
+<div class="section" id="syntax">
+<h3>syntax</h3>
+<p>變數決定class名稱:</p>
+<pre class="literal-block">
+all_class = { 'my_class' : my_class }
+object = all_class['my_class']()
+</pre>
+</div>
+<div class="section" id="id3">
+<h3>coding</h3>
+<p>只留ASCII:</p>
+<pre class="literal-block">
+print &quot;&quot;.join(filter(lambda x: ord(x)&lt;128, did))
+</pre>
+</div>
+<div class="section" id="array">
+<h3>array排序</h3>
+<p>有個dict有title和date二個key, 要指定用date來排序:</p>
+<pre class="literal-block">
+list = []
+list.append({'title':'abc','date':1})
+list.append({'title':'def','date':2})
+list.append({'title':'ghi','date':0})
+print sorted(list, key=lambda x: x['date'])
+# [{'title': 'ghi', 'date': 0}, {'title': 'abc', 'date': 1}, {'title': 'def', 'date': 2}]
+print sorted(list, key=lambda x: x['date'], reverse=True)
+# [{'title': 'def', 'date': 2}, {'title': 'abc', 'date': 1}, {'title': 'ghi', 'date': 0}]
+</pre>
+</div>
+</div>
+<div class="section" id="coding-style">
+<h2>Coding Style</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.pocoo.org/internal/styleguide/">The Pocoo Style Guide — Pocoo</a></li>
+<li><a class="reference external" href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google Python Style Guide</a></li>
+<li><a class="reference external" href="http://docs.python-guide.org/en/latest/writing/style/">Code Style — The Hitchhiker's Guide to Python</a></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>整理</h2>
+<p>小括弧整理程式碼:</p>
+<pre class="literal-block">
+X = (A + B +
+     C + D)
+
+if (A == 1 and
+    B == 2 and
+    C == 3):
+       print 'spam' * 3
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">斜線結尾不好看, 很難注意</p>
+</div>
+</div>
+<div class="section" id="reference">
+<h2>reference</h2>
+<div class="section" id="tutorial">
+<h3>Tutorial</h3>
+<p><a class="reference external" href="http://www.slideshare.net/moskytw">Mosky Liu, Pinkoi | SlideShare</a></p>
+</div>
+</div>
+<div class="section" id="decorator">
+<h2>decorator</h2>
+<p>沒用 from functools import wraps 的話, function的資訊會跑掉, 重複(reentrant) 會有問題, 傳參數的話會變只有最後一個</p>
+<p>via: <a class="reference external" href="http://stackoverflow.com/questions/308999/what-does-functools-wraps-do">http://stackoverflow.com/questions/308999/what-does-functools-wraps-do</a></p>
+<div class="highlight"><pre><span class="c"># -.- encoding: utf-8 -.-</span>
+
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
+<span class="k">def</span> <span class="nf">logged</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="nd">@wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">with_logging</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">print</span> <span class="n">func</span><span class="o">.</span><span class="n">__name__</span> <span class="o">+</span> <span class="s">&quot; was called&quot;</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">with_logging</span>
+
+<span class="nd">@logged</span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="sd">&quot;&quot;&quot;does some math&quot;&quot;&quot;</span>
+   <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="k">print</span> <span class="n">f</span><span class="o">.</span><span class="n">__name__</span>  <span class="c"># prints &#39;f&#39;, 沒wraps -&gt; with_logging</span>
+<span class="k">print</span> <span class="n">f</span><span class="o">.</span><span class="n">__doc__</span>   <span class="c"># prints &#39;does some math&#39; 沒wraps -&gt; None</span>
+
+<span class="k">print</span> <span class="s">&#39;-----&#39;</span>
+
+<span class="k">def</span> <span class="nf">logged_param</span><span class="p">(</span><span class="n">param</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">with_logging</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+        <span class="c">#@wraps(func)</span>
+        <span class="k">def</span> <span class="nf">log_p</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">print</span> <span class="n">func</span><span class="o">.</span><span class="n">__name__</span> <span class="o">+</span> <span class="s">&quot; was called, &quot;</span><span class="p">,</span> <span class="n">param</span>
+            <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">log_p</span>
+    <span class="k">return</span> <span class="n">with_logging</span>
+
+<span class="nd">@logged_param</span><span class="p">(</span><span class="s">&#39;foo&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">f2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="sd">&quot;&quot;&quot;does some math2&quot;&quot;&quot;</span>
+   <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="k">print</span> <span class="n">f2</span><span class="o">.</span><span class="n">__name__</span>  <span class="c"># prints &#39;f&#39;</span>
+<span class="k">print</span> <span class="n">f2</span><span class="o">.</span><span class="n">__doc__</span>   <span class="c"># prints &#39;does some math&#39;</span>
+<span class="k">print</span> <span class="n">f2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nd">@logged_param</span><span class="p">(</span><span class="s">&#39;bar&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">f3</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; math3 &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="k">print</span> <span class="n">f3</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">f2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>There are <a href="../computer/python.html#disqus_thread">comments</a>.</p>                </article>
+                            </aside><!-- /#featured -->
+                            <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+                                                
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="../computer/database_docs.html" rel="bookmark"
+                           title="Permalink to Database筆記">Database筆記</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-05-09T18:23:00">
                 2013-05-09 18:23
         </abbr>
 
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/docs.html">docs</a><a href="../tag/mysql.html">mysql</a><a href="../tag/sqlite.html">sqlite</a></p>
-</footer><!-- /.post-info --><div class="section" id="mysql">
+</footer><!-- /.post-info -->                <div class="section" id="mysql">
 <h2>MySql</h2>
 <p>Syntax</p>
 <div class="highlight"><pre><span class="p">[</span><span class="k">ALL</span> <span class="o">|</span> <span class="k">DISTINCT</span> <span class="o">|</span> <span class="n">DISTINCTROW</span> <span class="p">]</span>
@@ -60,370 +409,11 @@
 </pre></div>
 <div class="note">
 <p class="first admonition-title">Note</p>
-<p class="last">MySQL的JOIN預設是 <tt class="docutils literal">INNER JOIN</tt> ，另一種是LEFT OUTER JOIN，通常用 <tt class="docutils literal">LEFT JOIN</tt> 就可以了。MySQL會優先處理JOIN，然後才是WHERE。</p>
-</div>
-<div class="section" id="cookbook">
-<h3>cookbook</h3>
-<p>CURD:</p>
-<pre class="literal-block">
-INSERT INTO tbl_name (col1,col2) VALUES(15,col1*2);
-INSERT INTO tbl_name (a,b,c) VALUES(1,2,3),(4,5,6),(7,8,9);
-UPDATE user SET password=password('新密碼') where user='root';
-</pre>
-<p>以中文筆畫排序:</p>
-<pre class="literal-block">
-CONVERT( 欄位名稱 using big5) 。
-</pre>
-<p>LIMIT</p>
-<div class="highlight"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">foo</span> <span class="k">LIMIT</span> <span class="mi">20</span>
-<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">foo</span> <span class="k">LIMIT</span> <span class="mi">20</span> <span class="k">OFFSET</span> <span class="mi">40</span> <span class="c1">-- 從40個以後抓20個</span>
-<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">foo</span> <span class="k">LIMIT</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">20</span> <span class="c1">-- 同上</span>
-</pre></div>
-</div>
-<div class="section" id="function">
-<h3>function</h3>
-<p>時間:</p>
-<pre class="literal-block">
-SELECT NOW(),CURDATE(),CURTIME() # | 2012-06-04 14:19:42 | 2012-06-04 | 14:19:42 |
-SELECT MONTH(FROM_UNIXTIME(add_date)) as month
-</pre>
-<p>ref: <a class="reference external" href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html">http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html</a></p>
-</div>
-<div class="section" id="schema">
-<h3>Schema</h3>
-<div class="section" id="id1">
-<h4>原則</h4>
-<ul class="simple">
-<li>小的好</li>
-<li>簡單的好, 如integers比characters好, 不用判斷collations</li>
-<li>不要用 <strong>NULL</strong>, 影響效能, 可以用 <tt class="docutils literal">0</tt>, <tt class="docutils literal">空字串</tt>或 <tt class="docutils literal">N</tt>等值來代替</li>
-</ul>
-</div>
-<div class="section" id="id2">
-<h4>整數</h4>
-<p>資料儲存上 <tt class="docutils literal">TINYINT</tt>, <tt class="docutils literal">SMALLINT</tt>, <tt class="docutils literal">MEDIUMINT</tt>, <tt class="docutils literal">INT</tt>, <tt class="docutils literal">BIGINT</tt>各使用了8, 16, 26, 32, 64 bits, 數值範圍-2^(N-1)到2(N-1)-1, 加了 <tt class="docutils literal">UNSIGNED</tt>後, 範圍從0到2^N-1. 但是MySQL在 <strong>計算</strong>上是用64-bit的BIGINT來算, 就算是32-bit的系統</p>
-<p>MySQL使用的整數長度, 如INT(11), 並不會真的有儲存限制, 只是為了command-line client的顯示, 在儲存和計算上INT(1)和INT(20)是一樣的.</p>
-</div>
-<div class="section" id="id3">
-<h4>實數</h4>
-<p>浮點數可以用 <tt class="docutils literal">FLOAT</tt> (4 bytes), <tt class="docutils literal">DOUBLE</tt> (8 bytes), <tt class="docutils literal">DECIMAL</tt> 等格式, MySQL在浮點數的計算上都是用DOUBLE, 資料儲存上以DECIMAL為佳</p>
-</div>
-<div class="section" id="varcharchar">
-<h4>VARCHAR和CHAR</h4>
-<p><tt class="docutils literal">VARCHAR</tt>是可變長度, 會用1到2byte存字串長度(MyISAM或InnoDB), <tt class="docutils literal">CHAR</tt>是固字長度, 用來存Y/N, MD5值等.</p>
-</div>
-<div class="section" id="id4">
-<h4>時間</h4>
-<p><tt class="docutils literal">DATETIME</tt> 以YYYYMMDDHHMMSS的格式儲存, 範圍從1001到9999年, 8 bytes</p>
-<p><tt class="docutils literal">TIMESTAMP</tt> 以Unix timestamp格式, 範圍從1970到2038 (格林威治標準時間)</p>
-<p>選擇用TIMESTAMP比較節省空間, 但不要把unix timestamp存在整數格式, 因為沒有什麼好處, 也很難判讀</p>
-</div>
-<div class="section" id="id5">
-<h4>其他</h4>
-<p><tt class="docutils literal">BLOB</tt>和 <tt class="docutils literal">TEXT</tt>不同的是TEXT會有character set和collation, BLOB沒有</p>
-</div>
-</div>
-<div class="section" id="id6">
-<h3>最佳化</h3>
-<p>所有資料表最佳化:</p>
-<pre class="literal-block">
-mysqlcheck -a -c -o -r --all-databases -uroot -p
-</pre>
-<p>a: analyze, c: check, o: optimize, r: repair</p>
-<p>重建索引:</p>
-<pre class="literal-block">
-myisamchk -s /var/lib/mysql/*/*.MYI
-</pre>
-<p>s: silent mode (output only errors)</p>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">mysql要先停</p>
-</div>
-</div>
-<div class="section" id="tools">
-<h3>Tools</h3>
-<p><a class="reference external" href="http://hackmysql.com/mysqlreportdoc">mysqlreport Documentation</a>:</p>
-<pre class="literal-block">
-mysqlreport  --user MY_USER --password MY_PASS
-</pre>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">Read Hit: 從硬碟/記憶體讀取key的比率, 最好不要低於99%, 太低的話, 檢查Key Report, 調高key buffer</p>
-</div>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">Slow: 要低於0.05</p>
-</div>
-<p><a class="reference external" href="http://hackmysql.com/mysqlreportguide">The Guide To Understanding mysqlreport</a></p>
-<ul class="simple">
-<li><a class="reference external" href="http://www.day32.com/MySQL/">Sundry MySQL Scripts and Docs</a> 很棒的MySQL tuning scripts</li>
-<li><a class="reference external" href="https://github.com/rackerhacker/MySQLTuner-perl">rackerhacker/MySQLTuner-perl</a></li>
-<li><a class="reference external" href="http://hackmysql.com/mysqlsla">mysqlsla :: Parse, filter and sort MySQL slow, general and binary logs</a></li>
-</ul>
-</div>
-<div class="section" id="id7">
-<h3>常用處理</h3>
-<p>改root密碼:</p>
-<pre class="literal-block">
-mysqladmin -u root -p'oldpassword' password newpass
-</pre>
-<p>via: <a class="reference external" href="http://www.cyberciti.biz/faq/mysql-change-root-password/">MySQL Change root Password</a></p>
-<div class="section" id="root">
-<h4>忘記root密碼</h4>
-<p>1.先關掉mysql server:</p>
-<pre class="literal-block">
-sudo /etc/init.d/mysql stop
-</pre>
-<p>2.開server, 但忽略grant-tables (存密碼的地方):</p>
-<pre class="literal-block">
-mysqld_safe --user=mysql --skip-grant-tables --skip-networking &amp;
-</pre>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">mysqld_safe就是用更安全的方式開啟(重載)mysqld, 如有錯誤發生時會重開, 寫log.</p>
-</div>
-<p>3.用root進入sql改密碼:</p>
-<pre class="literal-block">
-mysql -u root mysql
-&gt; UPDATE user SET Password=PASSWORD('123456') WHERE User='root';
-&gt; FLUSH PRIVILEGES;
-&gt; exit
-</pre>
-<p>或是把上面sql語法存在foo.txt裡, 用:</p>
-<pre class="literal-block">
-mysqld_safe --init-file=/pathto/foo.txt &amp;
-</pre>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">flush privileges; 重載授權表</p>
-</div>
-<p>參考</p>
-<ul class="simple">
-<li><a class="reference external" href="http://wiki.joyent.com/display/smart/Resetting+the+MySQL+Root+Password">Resetting the MySQL Root Password - SmartMachines - Joyent Customer Wiki</a></li>
-</ul>
-</div>
-<div class="section" id="id8">
-<h4>連接外部資料庫</h4>
-<p>1.改my.cnf(通常在/etc下):</p>
-<pre class="literal-block">
-# skip-networking 此行註解掉
-bind-address = 11.22.33.44 # 加上要連過來的ip
-</pre>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">OpenSolaris的my.cnf好像在加在/var/mysql才會有作用</p>
-</div>
-<p>2.重開mysql</p>
-<p>3.連線進入:</p>
-<pre class="literal-block">
-mysql -u root –p mysql
-mysql&gt; CREATE DATABASE foo;
-mysql&gt; GRANT ALL ON foo.* TO bar&#64;'11.22.33.44' IDENTIFIED BY '密碼';
-
-mysql&gt; update db set Host='11.22.33.44' where Db='資料庫名稱';
-mysql&gt; update user set Host='11.22.33.44' where user='使用者名稱';
-</pre>
-<p>4.重開mysql</p>
-<p>5.測試能不能連:</p>
-<pre class="literal-block">
-mysql -h 主機 -u root -p
-</pre>
-</div>
-<div class="section" id="id9">
-<h4>資料庫編碼</h4>
-<p>列出MySQL各種編碼變數:</p>
-<pre class="literal-block">
-show variables like &quot;character%&quot;;
-</pre>
-<p>php的 <tt class="docutils literal"><span class="pre">mysql_query(&quot;SET</span> NAMES <span class="pre">UTF8&quot;);</span></tt> 相當於MySQL:</p>
-<pre class="literal-block">
-SET character_set_client = utf8;
-SET character_set_results = utf8;
-SET character_set_connection = utf8;
-</pre>
-<p>編碼順序: <strong>client -&gt; connect -&gt; server -&gt; connect -&gt; client</strong></p>
-</div>
-<div class="section" id="id10">
-<h4>亂碼處理</h4>
-<p>原本是latin1(ISO 8859-1)編碼, 要改成utf-8:</p>
-<ol class="arabic simple">
-<li>mysqldump -uroot -p mydb --default-character-set=latin1 &gt; old.sql</li>
-<li>piconv -f utf8 -t utf8 old.sql&gt; new.sql</li>
-<li>打開new.sql裡面加 <tt class="docutils literal">SET NAMES utf8</tt>;</li>
-<li>mysql -uroot -pmypassword -Dmydb_new --default-character-set=utf8 &lt; new.sql</li>
-</ol>
-</div>
-</div>
-<div class="section" id="command">
-<h3>command</h3>
-<div class="highlight"><pre><span class="n">mysql</span> <span class="o">-</span><span class="n">uUSER</span> <span class="o">-</span><span class="n">pPASS</span> <span class="o">-</span><span class="n">e</span> <span class="ss">&quot;DROP DATABASE foo; CREATE DATABASE bar COLLATE &#39;utf8_general_ci&#39;;&quot;</span>
-
-<span class="k">SHOW</span> <span class="n">DATABASES</span><span class="p">;</span>
-<span class="k">SHOW</span> <span class="n">TABLES</span><span class="p">;</span>
-<span class="n">USE</span> <span class="n">db_name</span><span class="p">;</span>
-
-<span class="k">TRUNCATE</span> <span class="n">tbl_name</span><span class="p">;</span>
-<span class="k">DROP</span> <span class="k">DATABASE</span> <span class="n">db_name</span><span class="p">;</span>
-<span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">tbl_name</span><span class="p">;</span>
-
-<span class="k">SHOW</span> <span class="k">TABLE</span> <span class="n">STATUS</span><span class="p">;</span> <span class="o">#</span> <span class="err">看</span><span class="k">collation</span>
-<span class="k">DESCRIBE</span> <span class="n">tbl_name</span><span class="p">;</span> <span class="o">#</span> <span class="err">看</span><span class="k">table</span><span class="err">屬性</span>
-<span class="k">SHOW</span> <span class="k">FULL</span> <span class="n">COLUMNS</span> <span class="k">FROM</span> <span class="n">tbl_name</span><span class="p">;</span> <span class="o">#</span><span class="k">table</span> <span class="err">細節</span>
-<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">tablename</span> <span class="k">CONVERT</span> <span class="k">TO</span> <span class="nb">CHARACTER</span> <span class="k">SET</span> <span class="n">utf8</span> <span class="k">COLLATE</span> <span class="n">utf8_general_ci</span><span class="p">;</span> <span class="o">#</span> <span class="err">改欄位編碼</span>
-</pre></div>
-</div>
-<div class="section" id="server-management">
-<h3>Server Management</h3>
-<p>安裝, 以Debian為例:</p>
-<pre class="literal-block">
-# 清除
-sudo apt-get --purge remove mysql-server mysql-common mysql-client
-# 安裝
-sudo apt-get install mysql-server mysql-common mysql-client php5-mysql
-# 第一次設定admin密碼
-mysqladmin -u root password your-new-password
-# 啟動
-sudo /etc/init.d/mysql restart
-# data位置
-# /var/lib/mysql
-</pre>
-<div class="section" id="mac-os-x">
-<h4>Mac OS X</h4>
-<p>從MySql(<a class="reference external" href="http://dev.mysql.com/downloads/mysql/">http://dev.mysql.com/downloads/mysql/</a>) 找適何的package，裝完後:</p>
-<p>binary:</p>
-<pre class="literal-block">
-/usr/local/mysql/bin/mysql
-</pre>
-<p>path:</p>
-<pre class="literal-block">
-export PATH=/usr/local/mysql/bin:$PATH
-sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
-</pre>
-</div>
-<div class="section" id="import-export">
-<h4>Import / Export</h4>
-<p>倒整個資料庫:</p>
-<pre class="literal-block">
-$ mysqldump ---u myuser -p myuser_db &gt; myuser_db.sql
-$ mysqldump --skip-lock-tables -umysuer -ppassword --database mydb &gt; backup.sql
-</pre>
-<p>倒一個資料表:</p>
-<pre class="literal-block">
-$ mysqldump -u myuser -p myuser_db sometable &gt; myuser_db_sometable.sql
-</pre>
-<p>到多個叫foo_開頭的資料表到同一個檔案:</p>
-<pre class="literal-block">
-mysql databasename -u [root] -p[password] -e 'show tables like &quot;foo_%&quot;' | grep -v Tables_in | xargs mysqldump [databasename] -u [root] -p[password] &gt; [target_file]
-</pre>
-<p><strong>import</strong></p>
-<p>方法1:</p>
-<pre class="literal-block">
-直接import
-$ mysql  -uname -p dbname  --default-character-set=utf8  &lt;  XXX.sql
-</pre>
-<p>方法2:</p>
-<pre class="literal-block">
-先登入mysql shell介面
-$ mysql -u myuser -p
-$ use myuser_db; #select db
-$ \. myuser_db_sometable.sql
-$ \q
-</pre>
-</div>
-</div>
-<div class="section" id="configuration">
-<h3>Configuration</h3>
-<p>my.cnf選用(/usr/share/mysql/下)</p>
-<ul class="simple">
-<li>my-small.cnf(小於64MB的記憶體)</li>
-<li>my-medium.cnf (64~128MB的記憶體)</li>
-<li>my-large.cnf (128~512MB的記憶體)</li>
-<li>my-huge.cnf (1~2GB的記憶體)</li>
-<li>my-innodb-heavy-4G.cnf (4GB的記憶體)</li>
-</ul>
-<p>找my.cnf:</p>
-<pre class="literal-block">
-mysql --verbose --help | grep -A 1 'Default options'
-# CentOS: /etc/my.cnf ~/.my.cnf
-</pre>
-<p>my.cnf:</p>
-<pre class="literal-block">
-[mysqld]
-set-variable=max_connections=250
-default-storage-engine=InnoDB # 預設選用InnoDB
-
-# slow query
-log-slow-queries=/tmp/slow-query.log #
-long_query_time = 3 #query超過2秒時，則會記錄
-log-queries-not-using-indexes
-
-# optimize
-query_cache_size # 大量相同的query時, 很有用
-key_buffer_size # 越大query越快, 但最好設定1/4, 不要超過一半的系統記憶體 (看*.MYI的size多大, 就設多大)
-</pre>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">MySQL安裝時不一定會產生</p>
-</div>
-</div>
-<div class="section" id="others">
-<h3>others</h3>
-<ul class="simple">
-<li><a class="reference external" href="http://antbsd.twbbs.org/~ant/wordpress/?p=2259">探討 MySQL 授權 | Ant's ATField</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="sqlite">
-<h2>Sqlite</h2>
-<p>常用指令</p>
-<pre class="literal-block">
-$ sqlite3 new.db # create db
-$ sqlite3 myprecious.db &quot;.dump&quot; ＞ output.sql # dump sql
-$ sqlite3 new.db ＜ output.sql # import
-# or
-$ cat dumpfile.sql | sqlite3 new.db
-</pre>
-<p>ref</p>
-<ul class="simple">
-<li><a class="reference external" href="http://www.sqlite.org/sqlite.html">Command Line Shell For SQLite</a></li>
-</ul>
-<!-- Comment
-Engine
-- [[http://blog.roga.tw/2008/11/19/1288][MySQL 資料庫儲存引擎的選用]]
-- [[http://miggo.pixnet.net/blog/post/30855147][MySQL各Engine Type(MyISAM / InnoDB / Memory) 的特性說明]]
-- [[http://www.student.tw/db/showthread.php?t=174156][【問題】Mysql 中的 MyIsam 與 InnoDB 之差異 - 深藍學生論壇]]
-** type
-- [[http://www.systn.com/data/articles/304_tw.html][mysql中char與varchar的區別]] -->
-</div>
-<div class="section" id="id11">
-<h2>不同處</h2>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">MySQL:</th><td class="field-body">RAND()</td>
-</tr>
-<tr class="field"><th class="field-name">Sqlite:</th><td class="field-body">RANDOM()</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="snippets">
-<h2>snippets</h2>
-<p>單字表沒有照abc排, 要照字母順序排序(num)</p>
-<div class="highlight"><pre><span class="k">SELECT</span> <span class="o">*</span><span class="p">,</span> <span class="p">(</span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">en_word</span> <span class="k">AS</span> <span class="n">t2</span> <span class="k">where</span> <span class="k">LOWER</span><span class="p">(</span><span class="n">t2</span><span class="p">.</span><span class="n">word</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="k">LOWER</span><span class="p">(</span><span class="n">t1</span><span class="p">.</span><span class="n">word</span><span class="p">))</span> <span class="k">as</span> <span class="n">NUM</span> <span class="k">FROM</span> <span class="n">en_word</span> <span class="k">AS</span> <span class="n">t1</span> <span class="k">WHERE</span> <span class="n">t1</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">foo</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="k">LOWER</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
-</pre></div>
-<p>一個裝置, 安裝了2個app以上的數量統計</p>
-<div class="highlight"><pre><span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">as</span> <span class="n">total</span><span class="p">,</span> <span class="n">num</span> <span class="k">as</span> <span class="n">num_of_apps</span> <span class="k">from</span> <span class="p">(</span><span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">as</span> <span class="n">num</span><span class="p">,</span> <span class="n">did</span> <span class="k">from</span> <span class="n">log_user_data</span> <span class="k">group</span> <span class="k">by</span> <span class="p">(</span><span class="n">did</span><span class="p">)</span> <span class="k">order</span> <span class="k">by</span> <span class="n">num</span> <span class="k">desc</span><span class="p">)</span> <span class="n">t</span> <span class="k">where</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">group</span> <span class="k">by</span> <span class="n">num</span> <span class="k">desc</span>
-</pre></div>
-</div>
-<p>There are <a href="../computer/database_docs.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+<p class="last">MySQL的JOIN預設是 <tt class="docutils literal">INNER JOIN ...</tt></p></div></div>
+                <a class="readmore" href="../computer/database_docs.html">read more</a>
+                <p>There are <a href="../computer/database_docs.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
 
                  
                         <li><article class="hentry">    

@@ -31,15 +31,105 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="./computer/python.html">Python</a></h1> 
+                    <h1 class="entry-title"><a href="./mountain/map_japan_tsurugidake.html">列印日本地形圖 - 以劍岳為例</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-07-16T10:25:00">
+                2013-07-16 10:25
+        </abbr>
+
+        <p>In <a href="./category/mountain.html">mountain</a>. </p>
+<p>tags: <a href="./tag/japan.html">japan</a></p>
+</footer><!-- /.post-info --><div class="section" id="id2">
+<h2>緣由</h2>
+<p>為了這週末要去日本 <a class="reference external" href="http://zh.wikipedia.org/zh-tw/劍岳">劍岳</a> ，沒有地圖只好上網找電子版。</p>
+<p>日本 <a class="reference external" href="http://www.gsi.go.jp/">国土地理院</a> 有很好用的電子地圖， <a class="reference external" href="http://watchizu.gsi.go.jp/index.aspx?mesh=0000">地図閲覧サービストップページ</a> ，可以很快的選取區域找到精細的地形圖。但是沒辦法像 <a class="reference external" href="http://map.happyman.idv.tw/twmap/login.php">地圖產生器v2.51</a> 那樣根據選取的區域自動切成數張A4。因此我開始土法煉鋼，來產生漂亮的地形圖。</p>
+</div>
+<div class="section" id="id3">
+<h2>下載圖檔</h2>
+<p>觀察了一下原始圖檔，檔名也許是用日本的大地座標數字，找出最左上角 00578150025593.png，右上 00578200025593.png，左下00578150025606.png，右下00578200025606.png。</p>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">這個地圖的座標是日本測地系2000 <a class="reference external" href="http://ja.wikipedia.org/wiki/測地系">測地系 - Wikipedia</a></p>
+</div>
+<p>找到想取得的範圍 (室堂到劍岳), 寬: 0057815-0057820 (左到右)，高: 0025593-0025606 (上到下)，總共是7x14張</p>
+<p>前置網址有一些不一樣, 我是用最爛的方法, 遇到HTTP Error就在翻一下原始碼找出來。</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">from</span> <span class="nn">urllib2</span> <span class="kn">import</span> <span class="n">urlopen</span><span class="p">,</span> <span class="n">URLError</span><span class="p">,</span> <span class="n">HTTPError</span>
+
+
+<span class="n">u1</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/85/19/&#39;</span>
+<span class="n">u2</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/86/10/&#39;</span>
+<span class="n">u3</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/85/29/&#39;</span>
+<span class="n">u4</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/86/20/&#39;</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">25593</span><span class="p">,</span> <span class="mi">25608</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">57815</span><span class="p">,</span> <span class="mi">57822</span><span class="p">):</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&#39;</span><span class="si">%s%07d%07d</span><span class="s">.png&#39;</span><span class="o">%</span> <span class="p">(</span><span class="n">u4</span><span class="p">,</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+            <span class="k">print</span> <span class="s">&quot;downloading &quot;</span> <span class="o">+</span> <span class="n">url</span>
+
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">url</span><span class="p">),</span> <span class="s">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+        <span class="k">except</span> <span class="n">HTTPError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">&quot;HTTP Error:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">code</span><span class="p">,</span> <span class="n">url</span>
+        <span class="k">except</span> <span class="n">URLError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">&quot;URL Error:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">reason</span><span class="p">,</span> <span class="n">url</span>
+</pre></div>
+</div>
+<div class="section" id="id4">
+<h2>拼貼</h2>
+<p>用imagemagick程式，</p>
+<p>圖片的循序:</p>
+<pre class="literal-block">
+1 16
+2 17
+3 18
+4 ...
+</pre>
+<p>要做2次montage指令, 第一個產生7個1x14的組合圖</p>
+<p>指令參考: <a class="reference external" href="http://www.imagemagick.org/Usage/montage/#columns">http://www.imagemagick.org/Usage/montage/#columns</a></p>
+<div class="highlight"><pre><span class="nv">$ </span>montage -mode concatenate -tile 1x14 *.png out.png
+<span class="nv">$ </span>montage -mode concatenate -tile 7x1 out-*.png final.png
+</pre></div>
+<p>產生出來一張A4的圖，Mac的預覽程式列印縮放成22%, 差不多寬為14cm (7格), 一格寬2cm, 比例為1/50000。</p>
+<p>如果分成4張，2張7x4，2張7x3，可以印成4張A4，Mac的預覽程式列印縮44.5%，寬為16cm (4格), 比例為1/25000。</p>
+<img alt="http://farm3.staticflickr.com/2832/9305605520_a2d41477b7.jpg" src="http://farm3.staticflickr.com/2832/9305605520_a2d41477b7.jpg" />
+<p><a class="reference external" href="http://www.flickr.com/photos/moogoo/sets/72157634692479891/">flickr</a></p>
+<p>紀錄的非常凌亂，一定有比我這好100倍的方法，希望大家不吝給予指教。</p>
+</div>
+<div class="section" id="id5">
+<h2>延伸閱讀</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://portal.cyberjapan.jp/index.html">電子国土ポータル</a> 可以套圖層，看出各個年代，不同資訊的圖資。</li>
+</ul>
+</div>
+<p>There are <a href="./mountain/map_japan_tsurugidake.html#disqus_thread">comments</a>.</p>                </article>
+                            </aside><!-- /#featured -->
+                            <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+                                                
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/python.html" rel="bookmark"
+                           title="Permalink to Python">Python</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-07-10T14:02:00">
                 2013-07-10 14:02
         </abbr>
 
         <p>In <a href="./category/computer.html">computer</a>. </p>
-<p>tags: <a href="./tag/doc.html">doc</a></p>
-</footer><!-- /.post-info --><div class="section" id="quick-start">
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="quick-start">
 <h2>Quick Start</h2>
 <p>path:</p>
 <pre class="literal-block">
@@ -63,315 +153,11 @@ A = Y if X else Z
 <h3>regular expression</h3>
 <p>只留a-z, A-Z, 0-9:</p>
 <pre class="literal-block">
-re.sub(r'[^a-zA-Z_0-9]', '', did)
-</pre>
-</div>
-<div class="section" id="list-compension">
-<h3>list compension</h3>
-<p>印出a到z</p>
-<div class="highlight"><pre><span class="n">a2z</span> <span class="o">=</span> <span class="p">[</span><span class="nb">chr</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">97</span><span class="p">,</span> <span class="mi">123</span><span class="p">)]</span>
-
-<span class="c"># 也可以加上tenary operator [ Y if X else Z for i in LIST]</span>
-</pre></div>
-<p>sort list(用mydict的foo去排序):</p>
-<pre class="literal-block">
-output = sorted(mydict, key = lambda x:x['foo'])
-</pre>
-<p>lambda function:</p>
-<pre class="literal-block">
-lower = (lambda x, y: x if x &lt; y else y)
-lower ('bb', 'aa') # aa
-</pre>
-</div>
-<div class="section" id="string">
-<h3>string</h3>
-<p>format:</p>
-<pre class="literal-block">
-'{0:.2f}'.format(init_scale) # 小數點後兩位
-'{0:02d}'.format(dtime.tm_mon) # 補2位0
-</pre>
-<p>replace</p>
-<pre class="literal-block">
-string.replace('old', 'new')
-</pre>
-</div>
-<div class="section" id="time">
-<h3>time</h3>
-<p>time format:</p>
-<pre class="literal-block">
-import time
-from datetime import datetime
-TIME_STR = time.strftime('%Y%m%d-%H%M%S') # 時間字串
-
-dtime = datetime.utcnow()
-ts = time.mktime(dtime.timetuple()) # datetime to unix timestamp
-ts = time.time() # unix timestamp now
-datetime.fromtimestamp(ts) # unix timestamp to datetime
-
-dtime.strftime('%Y-%m-%d') # datetime =&gt; string
-datetime.strptime(dtime, '%Y-%m-%d') # =&gt; string to datetime (格式要一樣)
-</pre>
-</div>
-<div class="section" id="id1">
-<h3>算數</h3>
-<p>random:</p>
-<pre class="literal-block">
-import random
-random.randint(0,9)
-
-''.join([str(random.randint(1,9)) for i in range(5)]) # 產生5個0-9的字串
-</pre>
-</div>
-<div class="section" id="file">
-<h3>file</h3>
-<p>write:</p>
-<pre class="literal-block">
-f = open('data.txt', 'w')
-f.write('Hello\n')
-f.close()
-</pre>
-<p>read:</p>
-<pre class="literal-block">
-f = open('data.txt') # 預設是 'r'
-bytes = f.read() # 讀出內容
-# -------------
-for line in f:
-    print line # 讀出每一行
-f.close()
-</pre>
-</div>
-</div>
-<div class="section" id="basic">
-<h2>Basic</h2>
-<div class="section" id="overview">
-<h3>overview</h3>
-<p>functions are objects in Python, just like everything else. (If you find that confusing wait till you hear that classes are objects in Python, just like everything else!)</p>
-<p>pprint:</p>
-<pre class="literal-block">
-import pprint
-pp = pprint.PrettyPrinter(indent=4)
-pp.pprint(foo)
-</pre>
-</div>
-<div class="section" id="id2">
-<h3>引數</h3>
-<p>引數傳遞:</p>
-<ol class="arabic simple">
-<li>傳值, 引數不回被改</li>
-<li>傳址標, 引數會被改 (list)</li>
-</ol>
-<p>例如:</p>
-<pre class="literal-block">
-def changer(a, b):
-    a = 2
-    b[0] = 'spam'
-
-X = 1
-L = [1, 2]
-changer(X, L)
-# &gt;&gt;&gt; (1, ['spam', 2])
-</pre>
-<p>任意多引數:</p>
-<pre class="literal-block">
-def func(*name): # tuple
-    pass
-def func(**name): # dict
-    pass
-</pre>
-</div>
-<div class="section" id="build-in-functions">
-<h3>build-in functions</h3>
-<p>filter(function, iterable):</p>
-<pre class="literal-block">
-[item for item in iterable if function(item)]
-</pre>
-<p>map(function, iterable, ...):</p>
-<pre class="literal-block">
-#
-</pre>
-<p>sum(iterable[, start]):</p>
-<pre class="literal-block">
-#
-</pre>
-<p>all(iterable):</p>
-<pre class="literal-block">
-def all(iterable):
-    for element in iterable:
-        if not element:
-            return False
-    return True
-</pre>
-<dl class="docutils">
-<dt>any(iterable)::</dt>
-<dd><dl class="first last docutils">
-<dt>def any(iterable):</dt>
-<dd><dl class="first docutils">
-<dt>for element in iterable:</dt>
-<dd><dl class="first last docutils">
-<dt>if element:</dt>
-<dd>return True</dd>
-</dl>
-</dd>
-</dl>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/Users/moogoo/gentlerunner.org/content/computer/python.rst</tt>, line 186)</p>
-Definition list ends without a blank line; unexpected unindent.</div>
-<p class="last">return False</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</div>
-</div>
-<div class="section" id="io-shell-commond-line">
-<h2>IO / shell / commond line</h2>
-<p><a class="reference external" href="http://docs.python.org/2/library/os.html">15.1. os — Miscellaneous operating system interfaces — Python v2.7.3 documentation</a></p>
-<p>檢查目錄存在:</p>
-<pre class="literal-block">
-os.path.exists('/etc/passwd')
-</pre>
-<p>subprocess:</p>
-<pre class="literal-block">
-import subprocess
-subprocess.call([&quot;ls&quot;, &quot;-l&quot;]) # 輸入是list, pipe要用popen, 安全一點
-subprocess.call([&quot;ls -l&quot;], shell=True) # 完全用系統的shell, pipe, wildcards, 家目錄~都可以用, 參數直接給字串就可以了, 也許會有輸入不乾淨(shell injection)的風險
-</pre>
-<p>常用:</p>
-<pre class="literal-block">
-os.getcwd()
-os.mkdir(src)
-os.rename(src, dst)
-</pre>
-</div>
-<div class="section" id="coding">
-<h2>coding</h2>
-<ul class="simple">
-<li><a class="reference external" href="http://blog.wahahajk.com/2009/08/unicodedecodeerror-ascii-codec-cant.html">宅之力: 解決方法: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128)</a></li>
-</ul>
-</div>
-<div class="section" id="tips">
-<h2>Tips</h2>
-<div class="section" id="syntax">
-<h3>syntax</h3>
-<p>變數決定class名稱:</p>
-<pre class="literal-block">
-all_class = { 'my_class' : my_class }
-object = all_class['my_class']()
-</pre>
-</div>
-<div class="section" id="id3">
-<h3>coding</h3>
-<p>只留ASCII:</p>
-<pre class="literal-block">
-print &quot;&quot;.join(filter(lambda x: ord(x)&lt;128, did))
-</pre>
-</div>
-<div class="section" id="array">
-<h3>array排序</h3>
-<p>有個dict有title和date二個key, 要指定用date來排序:</p>
-<pre class="literal-block">
-list = []
-list.append({'title':'abc','date':1})
-list.append({'title':'def','date':2})
-list.append({'title':'ghi','date':0})
-print sorted(list, key=lambda x: x['date'])
-# [{'title': 'ghi', 'date': 0}, {'title': 'abc', 'date': 1}, {'title': 'def', 'date': 2}]
-print sorted(list, key=lambda x: x['date'], reverse=True)
-# [{'title': 'def', 'date': 2}, {'title': 'abc', 'date': 1}, {'title': 'ghi', 'date': 0}]
-</pre>
-</div>
-</div>
-<div class="section" id="coding-style">
-<h2>Coding Style</h2>
-<ul class="simple">
-<li><a class="reference external" href="http://www.pocoo.org/internal/styleguide/">The Pocoo Style Guide — Pocoo</a></li>
-<li><a class="reference external" href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google Python Style Guide</a></li>
-<li><a class="reference external" href="http://docs.python-guide.org/en/latest/writing/style/">Code Style — The Hitchhiker's Guide to Python</a></li>
-</ul>
-</div>
-<div class="section" id="id4">
-<h2>整理</h2>
-<p>小括弧整理程式碼:</p>
-<pre class="literal-block">
-X = (A + B +
-     C + D)
-
-if (A == 1 and
-    B == 2 and
-    C == 3):
-       print 'spam' * 3
-</pre>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">斜線結尾不好看, 很難注意</p>
-</div>
-</div>
-<div class="section" id="reference">
-<h2>reference</h2>
-<div class="section" id="tutorial">
-<h3>Tutorial</h3>
-<p><a class="reference external" href="http://www.slideshare.net/moskytw">Mosky Liu, Pinkoi | SlideShare</a></p>
-</div>
-</div>
-<div class="section" id="decorator">
-<h2>decorator</h2>
-<p>沒用 from functools import wraps 的話, function的資訊會跑掉, 重複(reentrant) 會有問題, 傳參數的話會變只有最後一個</p>
-<p>via: <a class="reference external" href="http://stackoverflow.com/questions/308999/what-does-functools-wraps-do">http://stackoverflow.com/questions/308999/what-does-functools-wraps-do</a></p>
-<div class="highlight"><pre><span class="c"># -.- encoding: utf-8 -.-</span>
-
-<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
-<span class="k">def</span> <span class="nf">logged</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="nd">@wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">with_logging</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">func</span><span class="o">.</span><span class="n">__name__</span> <span class="o">+</span> <span class="s">&quot; was called&quot;</span>
-        <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">with_logging</span>
-
-<span class="nd">@logged</span>
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-   <span class="sd">&quot;&quot;&quot;does some math&quot;&quot;&quot;</span>
-   <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-
-<span class="k">print</span> <span class="n">f</span><span class="o">.</span><span class="n">__name__</span>  <span class="c"># prints &#39;f&#39;, 沒wraps -&gt; with_logging</span>
-<span class="k">print</span> <span class="n">f</span><span class="o">.</span><span class="n">__doc__</span>   <span class="c"># prints &#39;does some math&#39; 沒wraps -&gt; None</span>
-
-<span class="k">print</span> <span class="s">&#39;-----&#39;</span>
-
-<span class="k">def</span> <span class="nf">logged_param</span><span class="p">(</span><span class="n">param</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">with_logging</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-        <span class="c">#@wraps(func)</span>
-        <span class="k">def</span> <span class="nf">log_p</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-            <span class="k">print</span> <span class="n">func</span><span class="o">.</span><span class="n">__name__</span> <span class="o">+</span> <span class="s">&quot; was called, &quot;</span><span class="p">,</span> <span class="n">param</span>
-            <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">log_p</span>
-    <span class="k">return</span> <span class="n">with_logging</span>
-
-<span class="nd">@logged_param</span><span class="p">(</span><span class="s">&#39;foo&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">f2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-   <span class="sd">&quot;&quot;&quot;does some math2&quot;&quot;&quot;</span>
-   <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-
-<span class="k">print</span> <span class="n">f2</span><span class="o">.</span><span class="n">__name__</span>  <span class="c"># prints &#39;f&#39;</span>
-<span class="k">print</span> <span class="n">f2</span><span class="o">.</span><span class="n">__doc__</span>   <span class="c"># prints &#39;does some math&#39;</span>
-<span class="k">print</span> <span class="n">f2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="nd">@logged_param</span><span class="p">(</span><span class="s">&#39;bar&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">f3</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; math3 &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-
-<span class="k">print</span> <span class="n">f3</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="k">print</span> <span class="n">f2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>There are <a href="./computer/python.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+re.sub(r'[^a-zA-Z_0-9]', '', did ...</pre></div></div>
+                <a class="readmore" href="./computer/python.html">read more</a>
+                <p>There are <a href="./computer/python.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
 
                  
                         <li><article class="hentry">    
@@ -387,7 +173,7 @@ if (A == 1 and
         </abbr>
 
         <p>In <a href="./category/language.html">language</a>. </p>
-
+<p>tags: <a href="./tag/deutsch.html">deutsch</a></p>
 </footer><!-- /.post-info -->                <div class="section" id="deklination-des-substantivs">
 <h2>名詞變格 (Deklination des Substantivs)</h2>
 <div class="section" id="bestimmten-artikel">
@@ -675,7 +461,7 @@ padding-right:10px ...</p></div>
         </abbr>
 
         <p>In <a href="./category/language.html">language</a>. </p>
-<p>tags: <a href="./tag/todo.html">todo</a></p>
+<p>tags: <a href="./tag/english.html">english</a></p>
 </footer><!-- /.post-info -->                <p>看完2013溫布頓網球公開賽，廬彥勳雖然實力有發揮還是被排名第2的英國Murray直落三淘汰。賽後訪問，覺得Murray講的英文不是一般聽到的英國腔英文，比較平順，不饒口，也不像美國腔奔放，查了一下原來他是蘇格蘭人，這就是所謂的蘇格蘭英文吧。 ( <a class="reference external" href="http://en.wikipedia.org/wiki/Scottish_English">Scottish English - Wikipedia</a> )</p>
 <p>我覺得很有興趣，但是對語言／語音學的知識還是相當匱乏，有空再來研究~</p>
 
@@ -720,42 +506,6 @@ C-q C-j
 (define-key ...</pre>
                 <a class="readmore" href="./computer/emacs_newline.html">read more</a>
                 <p>There are <a href="./computer/emacs_newline.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./travel/2012_kyoto_marathon.html" rel="bookmark"
-                           title="Permalink to [travel] 京都馬拉松五天行">[travel] 京都馬拉松五天行</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-06-26T22:22:57">
-                2013-06-26 22:22
-        </abbr>
-
-        <p>In <a href="./category/travel.html">travel</a>. </p>
-
-</footer><!-- /.post-info -->                <div class="section" id="id1">
-<h2>系列文章</h2>
-<ul class="simple">
-<li><a class="reference external" href="./travel/2012_kyoto_marathon-1.html">京都行 (1/4) - 第一次的海外馬拉松</a></li>
-<li><a class="reference external" href="./travel/2012_kyoto_marathon-2.html">京都行 (2/4) - 北野天滿宮、上賀茂神社、万博記念公園</a></li>
-<li><a class="reference external" href="./travel/2012_kyoto_marathon-3.html">京都行 (3/4) - 東福寺、泉湧寺</a></li>
-<li><a class="reference external" href="./travel/2012_kyoto_marathon-4.html">京都行 (4/4) - 東本願寺、西本願寺</a></li>
-</ul>
-</div>
-<div class="section" id="id6">
-<h2>照片</h2>
-<ul class="simple">
-<li><a class="reference external" href="http://www.flickr.com/photos/moogoo/sets/72157629417442536/">flickr</a></li>
-</ul>
-</div>
-
-                <a class="readmore" href="./travel/2012_kyoto_marathon.html">read more</a>
-                <p>There are <a href="./travel/2012_kyoto_marathon.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

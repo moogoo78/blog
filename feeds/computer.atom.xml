@@ -325,7 +325,7 @@ if (A == 1 and
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="doc"></category></entry><entry><title>HTML CSS</title><link href="http://gentlerunner.org/computer/html-css.html" rel="alternate"></link><updated>2013-06-30T22:22:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-30:computer/html-css.html</id><summary type="html">&lt;div class="section" id="css"&gt;
+</summary><category term="docs"></category></entry><entry><title>HTML CSS</title><link href="http://gentlerunner.org/computer/html-css.html" rel="alternate"></link><updated>2013-06-30T22:22:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-30:computer/html-css.html</id><summary type="html">&lt;div class="section" id="css"&gt;
 &lt;h2&gt;CSS&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://learn.shayhowe.com/advanced-html-css/"&gt;http://learn.shayhowe.com/advanced-html-css/&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nt"&gt;blue&lt;/span&gt; &lt;span class="nt"&gt;10px&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -578,11 +578,11 @@ CONVERT( 欄位名稱 using big5) 。
 &lt;/div&gt;
 &lt;div class="section" id="function"&gt;
 &lt;h3&gt;function&lt;/h3&gt;
-&lt;p&gt;時間:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-SELECT NOW(),CURDATE(),CURTIME() # | 2012-06-04 14:19:42 | 2012-06-04 | 14:19:42 |
-SELECT MONTH(FROM_UNIXTIME(add_date)) as month
-&lt;/pre&gt;
+&lt;p&gt;時間&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;NOW&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;&lt;span class="n"&gt;CURDATE&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;&lt;span class="n"&gt;CURTIME&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;06&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;04&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;19&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;42&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;06&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;04&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;19&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;42&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="k"&gt;MONTH&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;FROM_UNIXTIME&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;add_date&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="k"&gt;month&lt;/span&gt;
+&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;NOW&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;NOW&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="nb"&gt;INTERVAL&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;DAY&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="err"&gt;今天跟昨天&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;ref: &lt;a class="reference external" href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html"&gt;http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="schema"&gt;
@@ -2295,6 +2295,10 @@ $ ffmpeg -formats
 $ ffmpeg –i inputvideo.avi -vf &amp;quot;movie=watermarklogo.png [watermark]; [in][watermark] overlay=main_w-overlay_w-10:10 [out]&amp;quot; outputvideo.flv
 &lt;/pre&gt;
 &lt;p&gt;via: &lt;a class="reference external" href="http://www.idude.net/index.php/how-to-watermark-a-video-using-ffmpeg/"&gt;How to watermark a video using FFmpeg | iDude.net&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;examples:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

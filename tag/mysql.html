@@ -82,11 +82,11 @@ CONVERT( 欄位名稱 using big5) 。
 </div>
 <div class="section" id="function">
 <h3>function</h3>
-<p>時間:</p>
-<pre class="literal-block">
-SELECT NOW(),CURDATE(),CURTIME() # | 2012-06-04 14:19:42 | 2012-06-04 | 14:19:42 |
-SELECT MONTH(FROM_UNIXTIME(add_date)) as month
-</pre>
+<p>時間</p>
+<div class="highlight"><pre><span class="k">SELECT</span> <span class="n">NOW</span><span class="p">(),</span><span class="n">CURDATE</span><span class="p">(),</span><span class="n">CURTIME</span><span class="p">()</span> <span class="p">;</span> <span class="o">|</span> <span class="mi">2012</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">04</span> <span class="mi">14</span><span class="p">:</span><span class="mi">19</span><span class="p">:</span><span class="mi">42</span> <span class="o">|</span> <span class="mi">2012</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">04</span> <span class="o">|</span> <span class="mi">14</span><span class="p">:</span><span class="mi">19</span><span class="p">:</span><span class="mi">42</span> <span class="o">|</span>
+<span class="k">SELECT</span> <span class="k">MONTH</span><span class="p">(</span><span class="n">FROM_UNIXTIME</span><span class="p">(</span><span class="n">add_date</span><span class="p">))</span> <span class="k">as</span> <span class="k">month</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">(),</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">-</span> <span class="nb">INTERVAL</span> <span class="mi">1</span> <span class="k">DAY</span> <span class="p">;</span><span class="err">今天跟昨天</span>
+</pre></div>
 <p>ref: <a class="reference external" href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html">http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html</a></p>
 </div>
 <div class="section" id="schema">

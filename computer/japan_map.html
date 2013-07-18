@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+        <meta charset="utf-8">
+        <title>日本地形圖</title>
+        <link rel="stylesheet" href="../theme/css/main.css">
+                <link href="http://gentlerunner.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gentle Runner Atom Feed" />
+                
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="../">Gentle Runner </a></h1>
+                <nav><ul>
+                                                                                <li class="active"><a href="../category/computer.html">電腦</a></li>
+                                <li ><a href="../category/music.html">音樂</a></li>
+                                <li ><a href="../category/mountain.html">爬山</a></li>
+                                <li ><a href="../category/run.html">跑步</a></li>
+                                <li ><a href="../category/language.html">語言</a></li>
+                                <li ><a href="../category/nature.html">自然</a></li>
+                                <li ><a href="../category/travel.html">旅遊</a></li>
+                                <li ><a href="../category/book.html">書</a></li>
+                                <li><a href="../archives.html">Archives</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="../computer/japan_map.html" rel="bookmark"
+           title="Permalink to 日本地形圖">日本地形圖</a></h1>
+          </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2013-07-16T10:25:00">
+                2013-07-16 10:25
+        </abbr>
+
+        <p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/japan.html">japan</a></p>
+</footer><!-- /.post-info -->      <p>劍岳</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">from</span> <span class="nn">urllib2</span> <span class="kn">import</span> <span class="n">urlopen</span><span class="p">,</span> <span class="n">URLError</span><span class="p">,</span> <span class="n">HTTPError</span>
+
+
+<span class="n">u1</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/85/19/&#39;</span>
+<span class="n">u2</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/86/10/&#39;</span>
+<span class="n">u3</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/85/29/&#39;</span>
+<span class="n">u4</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/86/20/&#39;</span>
+
+<span class="c">#def trydl(url)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">25593</span><span class="p">,</span> <span class="mi">25608</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">57815</span><span class="p">,</span> <span class="mi">57822</span><span class="p">):</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&#39;</span><span class="si">%s%07d%07d</span><span class="s">.png&#39;</span><span class="o">%</span> <span class="p">(</span><span class="n">u4</span><span class="p">,</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+            <span class="k">print</span> <span class="s">&quot;downloading &quot;</span> <span class="o">+</span> <span class="n">url</span>
+
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">url</span><span class="p">),</span> <span class="s">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+        <span class="k">except</span> <span class="n">HTTPError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">&quot;HTTP Error:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">code</span><span class="p">,</span> <span class="n">url</span>
+        <span class="k">except</span> <span class="n">URLError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">&quot;URL Error:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">reason</span><span class="p">,</span> <span class="n">url</span>
+</pre></div>
+<ol class="arabic">
+<li><p class="first">download map images
+dl_maps.py</p>
+<p>x: 0057815-0057820 (左-右)
+y: 0025593-0025607(上-下)</p>
+</li>
+<li><p class="first">merge
+1 16
+2 17
+3 18
+4 ...</p>
+<blockquote>
+<p>$ montage -mode concatenate -tile 1x15 <em>.png out.png
+$  montage -mode concatenate -tile 7x1 out-</em>.png final.png</p>
+</blockquote>
+</li>
+</ol>
+<p><a class="reference external" href="http://www.imagemagick.org/Usage/montage/#columns">http://www.imagemagick.org/Usage/montage/#columns</a></p>
+<p><a class="reference external" href="http://watchizu.gsi.go.jp/index.aspx?mesh=0000">http://watchizu.gsi.go.jp/index.aspx?mesh=0000</a></p>
+
+    </div><!-- /.entry-content -->
+    
+  </article>
+</section>
+        <section id="extras" class="body">
+          <div class="blogroll">
+            <h2>Links</h2>
+            <ul>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="http://blog.roodo.com/moogoo" target="_blank">舊blog</a></li>
+            <li><a href="http://moogoo78.blogspot.com" target="_blank">程式blog</a></li>
+            </ul>
+          </div>
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://gentlerunner.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="http://www.facebook.com/farseerfc">facebook</a></li>
+                                                    <li><a href="http://twitter.com/moogoo">twitter</a></li>
+                                                    <li><a href="http://github.com/moogoo78">github</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
