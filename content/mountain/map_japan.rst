@@ -2,7 +2,7 @@
 ##################################
 :date: 2013-07-16 10:25
 :category: mountain
-:tags: japan
+:tags: japan, note
 :slug: map_japan_tsurugidake
 
 

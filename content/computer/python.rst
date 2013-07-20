@@ -252,6 +252,30 @@ Coding Style
 * `Google Python Style Guide <http://google-styleguide.googlecode.com/svn/trunk/pyguide.html>`__
 * `Code Style — The Hitchhiker's Guide to Python <http://docs.python-guide.org/en/latest/writing/style/>`__
 
+
+Practice
+====================
+exceptions and/or logging
+
+.. code-block:: python
+
+  class SillyWalkMinistry(Exception):
+      """ handle exception """
+      pass
+
+  try:
+      do_silly(value)
+  except AttributeError as e:
+      log.info('')
+      do_invisible(v)
+  except Exception as e:
+      log.debug(str(e))
+      raise SillyWalkMinistry(e)
+
+
+
+
+
 整理
 ===========
 
