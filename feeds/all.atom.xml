@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-30T10:52:00+08:00</updated><entry><title>日語京都腔</title><link href="http://gentlerunner.org/language/kyoto_ban.html" rel="alternate"></link><updated>2013-07-30T10:52:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-30:language/kyoto_ban.html</id><summary type="html">&lt;p&gt;京ことバ&lt;/p&gt;
 &lt;img alt="/static/images/language_ja/kyo_kotoba.jpg" src="/static/images/language_ja/kyo_kotoba.jpg" /&gt;
 </summary><category term="lang_ja"></category></entry><entry><title>台灣話惡口</title><link href="http://gentlerunner.org/language/dirty_tw_jp.html" rel="alternate"></link><updated>2013-07-30T10:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-30:language/dirty_tw_jp.html</id><summary type="html">&lt;p&gt;台灣話惡口 (日語片假名翻譯)&lt;/p&gt;
-&lt;img alt="/static/images/language_tw/tawian_dirty.jpg" src="/static/images/language_tw/tawian_dirty.jpg" /&gt;
+&lt;img alt="/static/images/language_tw/taiwan_dirty.jpg" src="/static/images/language_tw/taiwan_dirty.jpg" /&gt;
 </summary><category term="dirty"></category><category term="lang_tw"></category></entry><entry><title>2013暖東峽谷山徑越野跑</title><link href="http://gentlerunner.org/run/2013nuan-dong-xia-gu-shan-jing-yue-ye-pao.html" rel="alternate"></link><updated>2013-07-28T22:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-28:run/2013nuan-dong-xia-gu-shan-jing-yue-ye-pao.html</id><summary type="html">&lt;p&gt;原本以為只是產業道路跑一跑，沒仔細看路線，其實山路還滿多的，&lt;/p&gt;
 &lt;p&gt;報名&lt;/p&gt;
 &lt;p&gt;但是因為跑在後段班，山徑的都變成在排隊，無法超車，要跑也跑不快，&lt;/p&gt;
@@ -799,7 +799,7 @@ background-position:0-42px;
 &lt;/ul&gt;
 </summary><category term="diary"></category></entry><entry><title>[language] 蘇格蘭英文</title><link href="http://gentlerunner.org/language/language-su-ge-lan-ying-wen.html" rel="alternate"></link><updated>2013-06-29T13:03:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-29:language/language-su-ge-lan-ying-wen.html</id><summary type="html">&lt;p&gt;看完2013溫布頓網球公開賽，廬彥勳雖然實力有發揮還是被排名第2的英國Murray直落三淘汰。賽後訪問，覺得Murray講的英文不是一般聽到的英國腔英文，比較平順，不饒口，也不像美國腔奔放，查了一下原來他是蘇格蘭人，這就是所謂的蘇格蘭英文吧。 ( &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Scottish_English"&gt;Scottish English - Wikipedia&lt;/a&gt; )&lt;/p&gt;
 &lt;p&gt;我覺得很有興趣，但是對語言／語音學的知識還是相當匱乏，有空再來研究~&lt;/p&gt;
-</summary><category term="english"></category></entry><entry><title>[computer] Emacs輸入newline符號</title><link href="http://gentlerunner.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
+</summary><category term="lang_en"></category></entry><entry><title>[computer] Emacs輸入newline符號</title><link href="http://gentlerunner.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 C-q C-j
 &lt;/pre&gt;
