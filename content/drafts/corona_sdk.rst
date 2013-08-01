@@ -60,4 +60,6 @@ via: http://www.lua.org/pil/19.3.html
 debug
 =============================
 
-adb logcat Corona:v *:s
+logcat::
+
+  adb logcat Corona:v *:s

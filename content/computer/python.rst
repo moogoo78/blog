@@ -179,6 +179,7 @@ all(iterable)::
       return True
 
 any(iterable)::
+
   def any(iterable):
       for element in iterable:
           if element:

@@ -192,6 +192,9 @@ Explicit Markup
 extensions
 =================
 
+graphviz
+-----------
+
 conf.py的extension加入::
 
   extensions = ['sphinx.ext.graphviz']
