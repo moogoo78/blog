@@ -1,5 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-16T10:25:00+08:00</updated><entry><title>列印日本地形圖 - 以劍岳為例</title><link href="http://gentlerunner.org/mountain/map_japan_tsurugidake.html" rel="alternate"></link><updated>2013-07-16T10:25:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-16:mountain/map_japan_tsurugidake.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gentle Runner</title><link href="http://gentlerunner.org/" rel="alternate"></link><link href="http://gentlerunner.org/feeds/all.atom.xml" rel="self"></link><id>http://gentlerunner.org/</id><updated>2013-07-30T10:52:00+08:00</updated><entry><title>日語京都腔</title><link href="http://gentlerunner.org/language/kyoto_ban.html" rel="alternate"></link><updated>2013-07-30T10:52:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-30:language/kyoto_ban.html</id><summary type="html">&lt;p&gt;京ことバ&lt;/p&gt;
+&lt;img alt="/static/images/language_ja/kyo_kotoba.jpg" src="/static/images/language_ja/kyo_kotoba.jpg" /&gt;
+</summary><category term="lang_ja"></category></entry><entry><title>台灣話惡口</title><link href="http://gentlerunner.org/language/dirty_tw_jp.html" rel="alternate"></link><updated>2013-07-30T10:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-30:language/dirty_tw_jp.html</id><summary type="html">&lt;p&gt;台灣話惡口 (日語片假名翻譯)&lt;/p&gt;
+&lt;img alt="/static/images/language_tw/tawian_dirty.jpg" src="/static/images/language_tw/tawian_dirty.jpg" /&gt;
+</summary><category term="dirty"></category><category term="lang_tw"></category></entry><entry><title>2013暖東峽谷山徑越野跑</title><link href="http://gentlerunner.org/run/2013nuan-dong-xia-gu-shan-jing-yue-ye-pao.html" rel="alternate"></link><updated>2013-07-28T22:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-28:run/2013nuan-dong-xia-gu-shan-jing-yue-ye-pao.html</id><summary type="html">&lt;p&gt;原本以為只是產業道路跑一跑，沒仔細看路線，其實山路還滿多的，&lt;/p&gt;
+&lt;p&gt;報名&lt;/p&gt;
+&lt;p&gt;但是因為跑在後段班，山徑的都變成在排隊，無法超車，要跑也跑不快，&lt;/p&gt;
+&lt;p&gt;七月底的天氣炎熱，柏油路上跑起來真的很熱，&lt;/p&gt;
+&lt;p&gt;反而原始山徑在樹蔭地下跑起來比較舒服，很多路段很陡滑也是滿挑戰的，不過常在爬山，跑起來算是一塊蛋糕阿。&lt;/p&gt;
+&lt;p&gt;大部分都在走路&lt;/p&gt;
+&lt;img alt="/static/images/2013-07-28_nuandong/nuandong_route.jpg" src="/static/images/2013-07-28_nuandong/nuandong_route.jpg" /&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://ezfun.24tms.com.tw/sports/page2_1_4.asp?eventid=82"&gt;ezfun運動玩家-2013 暖東峽谷山徑越野跑&lt;/a&gt;&lt;/p&gt;
+</summary><category term="diary"></category></entry><entry><title>rescue</title><link href="http://gentlerunner.org/mountain/mountain_rescue.html" rel="alternate"></link><updated>2013-07-27T02:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-27:mountain/mountain_rescue.html</id><summary type="html">&lt;div class="section" id="bee"&gt;
+&lt;h2&gt;bee&lt;/h2&gt;
+&lt;p&gt;防範虎頭蜂螫:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+擦不擦香水在野外對虎頭蜂而言，應該不致造成會否近身攻擊的差異。
+其實虎頭蜂對其他顏色很少有特別的好惡，唯獨黑暗的衣褲、頭髮，是虎頭蜂集中火力攻擊的目標。
+&lt;/pre&gt;
+&lt;p&gt;via: &lt;a class="reference external" href="https://www.facebook.com/photo.php?fbid=611557438865114&amp;amp;set=a.357183714302489.80320.100000325901027&amp;amp;type=1"&gt;https://www.facebook.com/photo.php?fbid=611557438865114&amp;amp;set=a.357183714302489.80320.100000325901027&amp;amp;type=1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;蜂群攻擊時的處理:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+不可讓隊員各自奔逃，必須團結一致，聽領隊的命令，千萬別心慌，然後散開各自在原地臥倒，就算有虎頭蜂已經停在身上，也不要亂動由領隊找一節樹枝（若無樹枝，可用衣服、登山杖、石塊等代之），先將樹枝在空中旋轉一圈，再順勢將樹枝等物拋入山谷中；若非崖谷之地，則可順風向，向下風處拋擲，如此可將蜂群引開。因蜂在追尋敵人之初，先是追尋那股氣流，尤其是逃跑時的亂流，待氣流靜止時，才用搜索的方式，所以待蜂被引開後，全體隊員可先以緩慢速度朝反方向移動，待離現場百餘公尺之後，才可大步奔離危險區。
+&lt;/pre&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://tw.myblog.yahoo.com/rescueroyoung001/article?mid=1411&amp;amp;prev=1844&amp;amp;next=1275&amp;amp;l=f&amp;amp;fid=26"&gt;虎頭蜂的防範 - 山是我的一間大教室 - Yahoo!奇摩部落格&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="note"></category></entry><entry><title>劍岳</title><link href="http://gentlerunner.org/mountain/tsurugi_dake_overview.html" rel="alternate"></link><updated>2013-07-19T12:40:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-19:mountain/tsurugi_dake_overview.html</id><summary type="html">&lt;p&gt;人員: 林小黑, kalas, james, sky, moogoo&lt;/p&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;第一天 台北 -&amp;gt; 富山&lt;/h2&gt;
+&lt;p&gt;7:40華航往富山包機，人不多，位子大概坐了六、七成。因為錯過巴士，在機場等了50分鐘，機場滿無聊的。進去富山comfort check-in後，大概30分鐘就覺得沒什麼搞頭了，哈哈。&lt;/p&gt;
+&lt;p&gt;吃了當地有名的「黑拉麵」，普通，也許有更好吃的。&lt;/p&gt;
+&lt;p&gt;下午沒事我們就準備去之前在台灣查了登山用品連鎖名店 好日山莊。&lt;/p&gt;
+&lt;p&gt;走了 大太陽。&lt;/p&gt;
+&lt;p&gt;回程溜滑梯，&lt;/p&gt;
+&lt;p&gt;晚餐吃居酒屋kalas的翻譯超級好用的，不然我們不太會講實在很麻煩阿。&lt;/p&gt;
+&lt;p&gt;晚上查了天氣，降雨機率5,60%&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;第二天 富山 -&amp;gt; 立山 -&amp;gt; 室堂 -&amp;gt; 惨惨惨 -&amp;gt; 劍山莊&lt;/h2&gt;
+&lt;p&gt;抱著開心期待的心情一早坐電車往立山，但是我們沒看好時間，又多在車站喝咖啡多等了一個小時，沒錯，這就是本團的作風。&lt;/p&gt;
+&lt;p&gt;立山站到站後，先是james出站找不到他的票，後來還是在他的神祕貼身包裡翻到了，再來是進去纜車時sky又發現她的票根剛才出站時丟到站長的小盒子裡，緊急間還是找回來了。我們跟台灣旅行團坐同一班，台灣人很吵，於是我們也不太想講話。纜車7分鐘後到達美女平，再換巴士。sky突然便意來了，匆忙中又把她叫回來，後來發現我們坐到跟韓國人同班車，雖然平時運動比賽跟商場上都很討厭韓國人，但至少他們在巴士上面還不會像台灣團一樣吵吵鬧鬧。台灣這點看來真的是中國人的傳統阿。&lt;/p&gt;
+&lt;p&gt;日本人為了保護立山這片自然景觀，沒有亂開發產業道路，只能搭乘大眾交通工具，保護自然很用心。&lt;/p&gt;
+&lt;p&gt;開始感覺變涼，&lt;/p&gt;
+&lt;p&gt;巴士裡面播放的介紹影片是跟外面的景色同步的，如果影片介紹某個山脈，這段路的景色就是這個山的稜線，不過天氣沒有很好，天空都是白白的雲蓋住了。&lt;/p&gt;
+&lt;p&gt;到了室堂，這裡是各個團體的大站，人聲鼎沸，這裡海拔2xxx 馬上換上保暖的衣物了。&lt;/p&gt;
+&lt;p&gt;到商店買了一點行動糧 (我很相當依賴日本傳說中的豪華山屋，所以沒有像在台灣爬山是帶那麼多。)&lt;/p&gt;
+&lt;p&gt;下午1點，時間不早，開始往雄山前進&lt;/p&gt;
+&lt;p&gt;一開始就要穿越雪溪，幾乎沒看過雪的我很興奮的就玩了起來。&lt;/p&gt;
+&lt;p&gt;一隊在山上練跑的黝黑少年，每個人都精神抖擻的大了招呼，我確已經開始感到高山行進間的呼吸不順了。
+在台灣也爬了高山的&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;行前準備&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.mobile01.com/topicdetail.php?f=228&amp;amp;t=500771&amp;amp;p=1"&gt;讓你的Garmin台灣機的延伸到日本~繁體全日本地圖 (第1頁) - GARMIN - Mobile01&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Map Source
+windows
+解壓後檔案放在C:Program FilesGarminJAPANTOPO&lt;/p&gt;
+&lt;p&gt;註冊檔:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Garmin\MapSource\Products\JapanTopo]
+&amp;quot;LOC&amp;quot;=&amp;quot;C:\\Program Files\\GARMIN\\JAPANTOPO\\&amp;quot;
+&amp;quot;BMAP&amp;quot;=&amp;quot;C:\\Program Files\\GARMIN\\JAPANTOPO\\JapanTopo.img&amp;quot;
+&amp;quot;TDB&amp;quot;=&amp;quot;C:\\Program Files\\GARMIN\\JAPANTOPO\\JapanTopo.TDB&amp;quot;
+&lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;接上我的Garmin 60csx，要傳輸地圖資訊時會出現: this device 不能傳... 之類的，換一張新的SD卡就可以了&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;御来光&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;立山&lt;/h2&gt;
+&lt;p&gt;立山、富士山、白山為日本三靈山之一，自古以來就是山岳信仰濃厚的地方。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id6"&gt;
+&lt;h2&gt;參考行程&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.mobile01.com/topicdetail.php?f=628&amp;amp;t=3184278"&gt;&amp;lt;日本登山健行系列&amp;gt; 室堂、立山、劍岳 簡單分享 (第1頁) - 登山與健行 - Mobile01&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.wretch.cc/blog/leontsai/24163937"&gt;2012_0730-0807 日本‧黑部立山‧劍岳 Day7-1 - LEoN's WAY～ - 無名小站&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id7"&gt;
+&lt;h2&gt;地圖&lt;/h2&gt;
+&lt;p&gt;自製 &lt;a class="reference external" href="http://gentlerunner.org/mountain/map_japan_tsurugidake.html"&gt;列印日本地形圖&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.net3-tv.net/~kenzansou/index.html"&gt;剣山荘&lt;/a&gt;
+&lt;a class="reference external" href="http://www.raichozawa.net/hyutte.html"&gt;雷鳥沢山屋&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.japanican.com/Traditional-Chinese/hotels/accessmap.aspx?ty=dormyinn&amp;amp;ar=A33&amp;amp;sar=160101&amp;amp;st=5321030&amp;amp;pn=2&amp;amp;rn=1"&gt;劍之湯富山Dormy Inn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://tenkura.n-kishou.co.jp/tk/kanko/kad.html?code=16150008&amp;amp;type=15&amp;amp;ba=hr"&gt;剣岳の天気 - てんきとくらす [天気と生活情報]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.alpen-route.com/index.php"&gt;立山黒部アルペンルート　オフィシャルガイド&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;影片 &lt;a class="reference external" href="http://happydayz.jp/?p=526"&gt;立山ワンダーマウンテンズ - HAPPY DAYZ PRODUCTIONS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;其他人筆記
+* &lt;a class="reference external" href="http://blog.yahoo.com/_G6IE7WCYET4CZTG4MBHGDJARHY/articles/68790"&gt;Japan Trip 2009 – 昔日の英雄は一週間立山と劍岳と富士山へ – Part 3 | Blog | 這些年來 In All Those Travelling Years - Yahoo! Blog&lt;/a&gt;
+* &lt;a class="reference external" href="http://www.mountain.org.tw/WebBBS/Record/RecordOne.aspx?RecordID=239"&gt;日本劍岳登山見聞&lt;/a&gt; (台大登山社)
+* &lt;a class="reference external" href="http://rroyc.blogspot.com/2012/12/tsurugi-dake.html"&gt;Rroy: 日本百名山行之立山縱走、劍岳(Tsurugi dake) 前篇&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id9"&gt;
+&lt;h2&gt;動物&lt;/h2&gt;
+&lt;p&gt;雷鳥 ライチョウ&lt;/p&gt;
+&lt;p&gt;昭和30年に国の特別天然記念物に指定されました。室堂平周辺には、約240羽（平成18年調べ）のライチョウが生息しています。高山に生きる鳥で、「立山」は中部山岳の中でも生息数が多いところです。霊山立山では、昔から「神の使い」として大切にされてきました。弊社も立山のライチョウや高山植物などを守るために、「立山」の自然保護と環境保全に努力をしています。&lt;/p&gt;
+&lt;p&gt;只生育於山岳地區的雷鳥, 自古被視為「神之使者」而被愛惜保護, 因此對人們接近也特無警戒。 而且它的羽毛夏季與冬季呈現完成不同色彩, 由冰河時期至今也無滅絕, 其生態神奇又有趣, 因而被指定為特別天然紀念物。
+室堂附近大約有240隻生息, 若運氣好將可目睹其英姿。5～6月時白色殘雪中的咖啡色雷鳥將較容易發現。&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="diary"></category></entry><entry><title>列印日本地形圖 - 以劍岳為例</title><link href="http://gentlerunner.org/mountain/map_japan_tsurugidake.html" rel="alternate"></link><updated>2013-07-16T10:25:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-16:mountain/map_japan_tsurugidake.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;緣由&lt;/h2&gt;
 &lt;p&gt;為了這週末要去日本 &lt;a class="reference external" href="http://zh.wikipedia.org/zh-tw/劍岳"&gt;劍岳&lt;/a&gt; ，沒有地圖只好上網找電子版。&lt;/p&gt;
 &lt;p&gt;日本 &lt;a class="reference external" href="http://www.gsi.go.jp/"&gt;国土地理院&lt;/a&gt; 有很好用的電子地圖， &lt;a class="reference external" href="http://watchizu.gsi.go.jp/index.aspx?mesh=0000"&gt;地図閲覧サービストップページ&lt;/a&gt; ，可以很快的選取區域找到精細的地形圖。但是沒辦法像 &lt;a class="reference external" href="http://map.happyman.idv.tw/twmap/login.php"&gt;地圖產生器v2.51&lt;/a&gt; 那樣根據選取的區域自動切成數張A4。因此我開始土法煉鋼，來產生漂亮的地形圖。&lt;/p&gt;
@@ -68,7 +173,7 @@
 &lt;li&gt;&lt;a class="reference external" href="http://portal.cyberjapan.jp/index.html"&gt;電子国土ポータル&lt;/a&gt; 可以套圖層，看出各個年代，不同資訊的圖資。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="japan"></category></entry><entry><title>Python</title><link href="http://gentlerunner.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
+</summary><category term="japan"></category><category term="note"></category></entry><entry><title>Python</title><link href="http://gentlerunner.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
 &lt;h2&gt;Quick Start&lt;/h2&gt;
 &lt;p&gt;path:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -318,6 +423,23 @@ print sorted(list, key=lambda x: x['date'], reverse=True)
 &lt;li&gt;&lt;a class="reference external" href="http://docs.python-guide.org/en/latest/writing/style/"&gt;Code Style — The Hitchhiker's Guide to Python&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;div class="section" id="practice"&gt;
+&lt;h2&gt;Practice&lt;/h2&gt;
+&lt;p&gt;exceptions and/or logging&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SillyWalkMinistry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ne"&gt;Exception&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; handle exception &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+
+&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;do_silly&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;AttributeError&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;do_invisible&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;Exception&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;debug&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="n"&gt;SillyWalkMinistry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
 &lt;h2&gt;整理&lt;/h2&gt;
 &lt;p&gt;小括弧整理程式碼:&lt;/p&gt;
@@ -477,7 +599,7 @@ if (A == 1 and
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="deutsch"></category></entry><entry><title>歷年跑馬成績</title><link href="http://gentlerunner.org/run/run_records.html" rel="alternate"></link><updated>2013-07-09T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:run/run_records.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+</summary><category term="lang_de"></category></entry><entry><title>歷年跑馬成績</title><link href="http://gentlerunner.org/run/run_records.html" rel="alternate"></link><updated>2013-07-09T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-07-09:run/run_records.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;2013&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2013-06-02, 台北渣打 12.5k 1:02  &lt;a class="reference external" href="http://gentlerunner.org/run/chartered_12k.html"&gt;渣打路跑&lt;/a&gt;&lt;/li&gt;
@@ -1241,6 +1363,8 @@ SET character_set_connection = utf8;
 &lt;span class="k"&gt;DESCRIBE&lt;/span&gt; &lt;span class="n"&gt;tbl_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;看&lt;/span&gt;&lt;span class="k"&gt;table&lt;/span&gt;&lt;span class="err"&gt;屬性&lt;/span&gt;
 &lt;span class="k"&gt;SHOW&lt;/span&gt; &lt;span class="k"&gt;FULL&lt;/span&gt; &lt;span class="n"&gt;COLUMNS&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;tbl_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="k"&gt;table&lt;/span&gt; &lt;span class="err"&gt;細節&lt;/span&gt;
 &lt;span class="k"&gt;ALTER&lt;/span&gt; &lt;span class="k"&gt;TABLE&lt;/span&gt; &lt;span class="n"&gt;tablename&lt;/span&gt; &lt;span class="k"&gt;CONVERT&lt;/span&gt; &lt;span class="k"&gt;TO&lt;/span&gt; &lt;span class="nb"&gt;CHARACTER&lt;/span&gt; &lt;span class="k"&gt;SET&lt;/span&gt; &lt;span class="n"&gt;utf8&lt;/span&gt; &lt;span class="k"&gt;COLLATE&lt;/span&gt; &lt;span class="n"&gt;utf8_general_ci&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;改欄位編碼&lt;/span&gt;
+
+&lt;span class="k"&gt;SHOW&lt;/span&gt; &lt;span class="k"&gt;GLOBAL&lt;/span&gt; &lt;span class="n"&gt;VARIABLES&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="server-management"&gt;
@@ -1429,7 +1553,7 @@ Engine
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="比較"></category><category term="deutsch"></category></entry><entry><title>Emacs 小抄</title><link href="http://gentlerunner.org/computer/emacs_docs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-04-26:computer/emacs_docs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
+</summary><category term="比較"></category><category term="lang_de"></category></entry><entry><title>Emacs 小抄</title><link href="http://gentlerunner.org/computer/emacs_docs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-04-26:computer/emacs_docs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
 &lt;h2&gt;Tips&lt;/h2&gt;
 &lt;p&gt;自動補齊:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -2562,7 +2686,7 @@ $ service gmetad start
 &lt;/pre&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://sourceforge.net/apps/trac/ganglia/wiki/ganglia_quick_start"&gt;http://sourceforge.net/apps/trac/ganglia/wiki/ganglia_quick_start&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="note"></category></entry><entry><title>reST – reStructuredText與Sphinx</title><link href="http://gentlerunner.org/computer/rest-restructuredtextyu-sphinx.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-03-28:computer/rest-restructuredtextyu-sphinx.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 是Python &lt;a class="reference external" href="http://docutils.sourceforge.net/index.html"&gt;Docutils: Documentation Utilities&lt;/a&gt; 的一部分, 而 &lt;a class="reference external" href="http://sphinx.pocoo.org/"&gt;Sphinx&lt;/a&gt; 可以更方便產生，管理文件的工具&lt;/p&gt;
+</summary><category term="note"></category></entry><entry><title>reST – reStructuredText與Sphinx</title><link href="http://gentlerunner.org/computer/rest_sphinx.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-03-28:computer/rest_sphinx.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 是Python &lt;a class="reference external" href="http://docutils.sourceforge.net/index.html"&gt;Docutils: Documentation Utilities&lt;/a&gt; 的一部分, 而 &lt;a class="reference external" href="http://sphinx.pocoo.org/"&gt;Sphinx&lt;/a&gt; 可以更方便產生，管理文件的工具&lt;/p&gt;
 &lt;p&gt;縮排用二個或三個空白都可以，Emacs的ReST預設用三個&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;使用&lt;/h2&gt;
@@ -2744,6 +2868,21 @@ b) zwai
 &lt;/div&gt;
 &lt;div class="section" id="explicit-markup"&gt;
 &lt;h2&gt;Explicit Markup&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="extensions"&gt;
+&lt;h2&gt;extensions&lt;/h2&gt;
+&lt;p&gt;conf.py的extension加入:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+extensions = ['sphinx.ext.graphviz']
+&lt;/pre&gt;
+&lt;p&gt;語法:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. graphviz::
+
+   digraph foo {
+      &amp;quot;bar&amp;quot; -&amp;gt; &amp;quot;baz&amp;quot;;
+   }
+&lt;/pre&gt;
 &lt;div class="section" id="comments"&gt;
 &lt;h3&gt;Comments&lt;/h3&gt;
 &lt;/div&gt;
@@ -3016,6 +3155,35 @@ ps ca|grep uwsgi |awk '{ print $1}' | xargs --no-run-if-empty sudo kill -9
 &lt;pre class="literal-block"&gt;
 $ python -m SimpleHTTPServer 8080
 &lt;/pre&gt;
+&lt;div class="section" id="crontab"&gt;
+&lt;h3&gt;Crontab&lt;/h3&gt;
+&lt;p&gt;分鐘 小時 日期 月份 週&lt;/p&gt;
+&lt;p&gt;每5min一次:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+*/5 * * * * /home/moogoo/test.sh
+5 0 * * *
+&lt;/pre&gt;
+&lt;p&gt;每小時:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+01 * * * * /home/moogoo/test.sh
+&lt;/pre&gt;
+&lt;p&gt;每天(半夜):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+0 0 * * *
+&lt;/pre&gt;
+&lt;p&gt;每週:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+0 0 * * 0
+&lt;/pre&gt;
+&lt;p&gt;每月:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+0 0 1 * *
+&lt;/pre&gt;
+&lt;p&gt;start:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+service crond start
+&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="system"&gt;
 &lt;h2&gt;System&lt;/h2&gt;

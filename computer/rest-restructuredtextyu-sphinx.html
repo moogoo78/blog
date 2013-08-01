@@ -224,6 +224,21 @@ b) zwai
 </div>
 <div class="section" id="explicit-markup">
 <h2>Explicit Markup</h2>
+</div>
+<div class="section" id="extensions">
+<h2>extensions</h2>
+<p>conf.py的extension加入:</p>
+<pre class="literal-block">
+extensions = ['sphinx.ext.graphviz']
+</pre>
+<p>語法:</p>
+<pre class="literal-block">
+.. graphviz::
+
+   digraph foo {
+      &quot;bar&quot; -&gt; &quot;baz&quot;;
+   }
+</pre>
 <div class="section" id="comments">
 <h3>Comments</h3>
 </div>
@@ -239,19 +254,6 @@ b) zwai
 </div>
 
     </div><!-- /.entry-content -->
-        <div class="comments">
-      <h2>Comments !</h2>
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-        var disqus_identifier = "computer/rest-restructuredtextyu-sphinx.html";
-        var disqus_url = "../computer/rest-restructuredtextyu-sphinx.html";
-        (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://suhenorg.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-    </div>
     
   </article>
 </section>
@@ -284,24 +286,5 @@ b) zwai
                 <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
 
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-38928548-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
-<script type="text/javascript">
-    var disqus_shortname = 'suhenorg';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
 </body>
 </html>

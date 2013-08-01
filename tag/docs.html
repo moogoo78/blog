@@ -289,6 +289,23 @@ print sorted(list, key=lambda x: x['date'], reverse=True)
 <li><a class="reference external" href="http://docs.python-guide.org/en/latest/writing/style/">Code Style — The Hitchhiker's Guide to Python</a></li>
 </ul>
 </div>
+<div class="section" id="practice">
+<h2>Practice</h2>
+<p>exceptions and/or logging</p>
+<div class="highlight"><pre><span class="k">class</span> <span class="nc">SillyWalkMinistry</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; handle exception &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">do_silly</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">AttributeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">do_invisible</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+    <span class="k">raise</span> <span class="n">SillyWalkMinistry</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
 <div class="section" id="id4">
 <h2>整理</h2>
 <p>小括弧整理程式碼:</p>
@@ -619,7 +636,7 @@ print django.get_version()
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="../computer/rest-restructuredtextyu-sphinx.html" rel="bookmark"
+                    <h1><a href="../computer/rest_sphinx.html" rel="bookmark"
                            title="Permalink to reST – reStructuredText與Sphinx">reST – reStructuredText與Sphinx</a></h1>
                 </header>
                 
@@ -698,8 +715,8 @@ $ make html
 <p><tt class="docutils literal">有底色</tt>:</p>
 <pre class="literal-block">
 ``有底色 ...</pre></div>
-                <a class="readmore" href="../computer/rest-restructuredtextyu-sphinx.html">read more</a>
-                <p>There are <a href="../computer/rest-restructuredtextyu-sphinx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../computer/rest_sphinx.html">read more</a>
+                <p>There are <a href="../computer/rest_sphinx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 

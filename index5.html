@@ -34,6 +34,201 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="./computer/software.html" rel="bookmark"
+                           title="Permalink to Software">Software</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-28T00:00:00">
+                2013-03-28 00:00
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="desktop-tips">
+<h2>Desktop Tips</h2>
+<div class="section" id="mac-osx">
+<h3>Mac OSX</h3>
+<p>zoom in/out: Command Opt =/-</p>
+<p>強制結束: Command Opt Esc</p>
+<p>區域截圖: Command Shift 4</p>
+<p>顯示User Library: 在Finder裡的Go(前往), 按住option, 就會出現</p>
+<p>輸入特殊符號: Command + option + T</p>
+<p>放大縮小: Command + &quot;+&quot; / Command + &quot;-&quot;</p>
+<p>無線網路密碼</p>
+<ol class="arabic simple">
+<li>到&quot;鑰匙圈存取&quot;: Finder -&gt; 工具程式 -&gt; 鑰匙圈存取</li>
+<li>找基地台名稱, 分類是&quot;AirPort網路密碼&quot;, 顯示密碼</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>好用軟體</h2>
+<div class="section" id="internet">
+<h3>Internet</h3>
+<ul class="simple">
+<li>bt - Deluge (Linux)</li>
+<li>IRC Client (OS X)</li>
+</ul>
+</div>
+<div class="section" id="ebook">
+<h3>ebook ...</h3></div></div>
+                <a class="readmore" href="./computer/software.html">read more</a>
+                <p>There are <a href="./computer/software.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/unix_command.html" rel="bookmark"
+                           title="Permalink to UNIX Command 常用指令">UNIX Command 常用指令</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-28T00:00:00">
+                2013-03-28 00:00
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="id1">
+<h2>檔案</h2>
+<p>把檔案foo複製到以下全部目錄裡:</p>
+<pre class="literal-block">
+$ find . -type d |xargs -n 1 cp -i foo
+</pre>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">xargs -n 1:</th><td class="field-body">把每一行command line輸出當作一個參數</td>
+</tr>
+<tr class="field"><th class="field-name">cp -i:</th><td class="field-body">詢問y or n</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id2">
+<h3>改檔名</h3>
+<p>大寫改小寫:</p>
+<pre class="literal-block">
+$ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
+</pre>
+<p>只取數字, JPG改jpg:</p>
+<pre class="literal-block">
+for i in *.JPG ; do mv &quot;$i&quot; `echo $i ...</pre></div></div>
+                <a class="readmore" href="./computer/unix_command.html">read more</a>
+                <p>There are <a href="./computer/unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/git.html" rel="bookmark"
+                           title="Permalink to GIT">GIT</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-23T00:00:00">
+                2013-03-23 00:00
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="quick-start">
+<h2>Quick Start</h2>
+<div class="section" id="init">
+<h3>init</h3>
+<p>Server (Repository):</p>
+<pre class="literal-block">
+mkdir example.git
+cd example.git
+git --bare init # init加--bare, 表示只會在當下目錄放git的東西，不會有原始檔案, 如果要原始檔案再git clone出來就有了
+</pre>
+<p>Client:</p>
+<pre class="literal-block">
+mkdir example
+cd example
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin ssh://USERNAME&#64;REMOTE_SERVER/~/example.git
+git push origin master (第一次之後只要打git ...</pre></div></div>
+                <a class="readmore" href="./computer/git.html">read more</a>
+                <p>There are <a href="./computer/git.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="bookmark"
+                           title="Permalink to Dynamic DNS setting for Namecheap on Mac OSX">Dynamic DNS setting for Namecheap on Mac OSX</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-21T02:09:00">
+                2013-03-21 02:09
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>登入Namecheap啓用Dynamic <a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service">link1</a></p>
+<p>設定DNS record:</p>
+<pre class="literal-block">
+freedns1.registrar-servers.com
+freedns2.registrar-servers.com
+freedns3.registrar-servers.com
+freedns4.registrar-servers.com
+freedns5.registrar-servers.com
+</pre>
+<p><a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/532/51/how-does-free-dns-work">link2</a></p>
+<p>安裝Dynamic DNS clinet (以OS X的ddclient為例):</p>
+<pre class="literal-block">
+$ brew install ddclient
+</pre>
+<p>在/usr/local/etc/ddclient裡建立ddclient.conf (範例在/usr/local/share/doc/ddclient), 裡面有namecheap的預設選項:</p>
+<pre class="literal-block">
+protocol=namecheap
+server=dynamicdns.park-your-domain.com
+login=yourdomain.com ...</pre>
+                <a class="readmore" href="./computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html">read more</a>
+                <p>There are <a href="./computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./music/jack_ass_baby_blue.html" rel="bookmark"
+                           title="Permalink to Jack Ass (It's All Over Now Baby Blue)">Jack Ass (It's All Over Now Baby Blue)</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2012-07-02T23:22:33">
+                2012-07-02 23:22
+        </abbr>
+
+        <p>In <a href="./category/music.html">music</a>. </p>
+<p>tags: <a href="./tag/jing-dian-fan-chang.html">經典翻唱</a></p>
+</footer><!-- /.post-info -->                <p>最近電視看到「 <a class="reference external" href="http://app.atmovies.com.tw/movie/movie.cfm?action=filmdata&amp;film_id=flen10758752">愛情藥不藥</a> 」(<a class="reference external" href="http://www.imdb.com/title/tt0758752/">Love and Other Drugs</a>)，都會聽到Beck的 <a class="reference external" href="http://en.wikipedia.org/wiki/Jack-Ass_(song)">Jack-Ass</a> 。查了一下，小弟孤漏寡聞，原來背景飄飄然的配樂是完全取樣自北愛爾蘭催淚老將Van Morrison早期樂團Them的It's All Over Now, Baby Blue，而這首歌則是翻唱每首歌我聽起來都一樣的Bob Dylan，真的，別人翻唱他的歌都比較好聽... 詳見: The Times They Are A-Changin。然後，底特律嘻哈團Insane Clown Posse也翻唱Beck的，一首歌有這麼多種不同的詮釋，還是要感謝Bob Dylan啦。</p>
+<p>原曲中的原曲 Bob Dylan - It's All Over Now, Baby Blue</p>
+<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/hBiwMT77Csg" frameborder="0"></iframe></div><p>Beck取樣的來源: THEM &amp; Van Morrison - It ...</p>
+                <a class="readmore" href="./music/jack_ass_baby_blue.html">read more</a>
+                <p>There are <a href="./music/jack_ass_baby_blue.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="./travel/2012_kyoto_marathon-4.html" rel="bookmark"
                            title="Permalink to [travel] 京都行 (4/4) - 東本願寺、西本願寺">[travel] 京都行 (4/4) - 東本願寺、西本願寺</a></h1>
                 </header>

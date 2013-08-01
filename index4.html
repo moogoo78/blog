@@ -34,6 +34,195 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="./computer/emacs_elscreen.html" rel="bookmark"
+                           title="Permalink to Elscreen - Emacs好用的tab mode">Elscreen - Emacs好用的tab mode</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-23T17:28:00">
+                2013-04-23 17:28
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>我以為在Emacs一直沒有好的tab顯示模式，以前用過tabbar_ mode，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。</p>
+<p>下載elscreen.el: <a class="reference external" href="ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/">ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/</a></p>
+<p>elscreen.el只有一個檔案，但是他要依附一套 <a class="reference external" href="https://github.com/jeffgran/APEL">APEL</a> 才可以運作。</p>
+<pre class="literal-block">
+;; elscreen
+(add-to-list 'load-path (concat my-path &quot;goodies/APEL&quot;))
+(load &quot;elscreen&quot; &quot;ElScreen&quot; )
+(setq elscreen-display-tab t)
+
+(global-set-key (kbd &quot;C-x t&quot;) 'elscreen-create)
+(global-set-key (kbd &quot;C-x w&quot;) 'elscreen-kill)
+(global-set-key (kbd &quot;M-t&quot;) 'elscreen-previous) ;;transpose-words
+(global-set-key ...</pre>
+                <a class="readmore" href="./computer/emacs_elscreen.html">read more</a>
+                <p>There are <a href="./computer/emacs_elscreen.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./nature/kapur.html" rel="bookmark"
+                           title="Permalink to 天空的拼圖 - Kapur 冰片木">天空的拼圖 - Kapur 冰片木</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-20T04:37:00">
+                2013-04-20 04:37
+        </abbr>
+
+        <p>In <a href="./category/nature.html">nature</a>. </p>
+<p>tags: <a href="./tag/tree.html">tree</a></p>
+</footer><!-- /.post-info -->                <p>週四參加希望山林 <a class="reference external" href="http://www.hopeforest.org.tw/">Hope_Forest</a> 的志工課程，請到荒野保護協會的香萍來上課，講的十分的精彩，投影片中有一張另我感到震撼的照片, 上面只寫著Kapur。於是我回來用關鍵字Kapur查了一下：照片是來自於馬來西亞政府一個植物研究機構 (Forest Research Institute Malaysia, <a class="reference external" href="http://www.frim.gov.my/">FRIM</a> )的園區內，有一種高大筆直的樹叫「冰片木」，Dryobalanops aromatica (Dipterocarpaceae)，可以提煉類似樟腦的香料，中藥材稱「龍腦香」或「龍腦冰片」，木材市場上稱作Kapur。</p>
+<img alt="/static/images/nature/Kapur_Trees.jpeg" src="/static/images/nature/Kapur_Trees.jpeg" />
+<p>特別的是這些在森林最高處的樹冠枝葉並不會重疊或碰在一起，每棵樹都很巧妙的保持一點點的空隙，就像一幅「天空的拼圖」，這還有個可愛的專有名詞「害羞樹冠」，“Crown Shyness” ，好像大家都很害羞不好意思接觸到彼此，形成這特別的景觀。</p>
+<p>就像香萍說的人與人之間的相處不就跟這些樹木一樣，有時需要保持一點巧妙的距離，不會太近也不會太遠。</p>
+<p>參考:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.frim.gov.my/?page_id=7643">Dryobalanops aromatica: Jigsaw puzzles in the sky</a></li>
+<li><a class="reference external" href="http://www.frim.gov.my/?page_id=9414">Shorea resinosa : Another ...</a></li></ul>
+                <a class="readmore" href="./nature/kapur.html">read more</a>
+                <p>There are <a href="./nature/kapur.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/pelican.html" rel="bookmark"
+                           title="Permalink to Pelican - 邁向靜態blog之路">Pelican - 邁向靜態blog之路</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-11T12:57:00">
+                2013-04-11 12:57
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>一直想用純HTML來寫blog，做筆記，最早用PHP的 <a class="reference external" href="https://www.dokuwiki.org">dokuwiki</a> ，不想被PHP server綁住，改用Emacs的 <a class="reference external" href="http://orgmode.org/">Orgmode</a>, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 <a class="reference external" href="http://gentlerunner.org/rest-restructuredtextyu-sphinx.html">reST</a> (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。</p>
+<div class="section" id="quick-start">
+<h2>Quick-start</h2>
+<p>安裝:</p>
+<pre class="literal-block">
+$ pip install pelican
+</pre>
+<p>開始:</p>
+<pre class="literal-block">
+$ mkdir blog
+$ cd blog
+$ pelican-quickstart
+</pre>
+<p>快速產生相關的設定</p>
+<p>寫第一篇文章:</p>
+<pre class="literal-block">
+$ content/first.rst
+</pre>
+<p>工具指令:</p>
+<pre class="literal-block">
+$ make html # 顧名思義
+$ make clean
+$ make rsync_upload # 用rsync上傳到你的ssh host ...</pre></div>
+                <a class="readmore" href="./computer/pelican.html">read more</a>
+                <p>There are <a href="./computer/pelican.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./music/lee_hazlewood_sand.html" rel="bookmark"
+                           title="Permalink to Sand">Sand</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-10T17:14:00">
+                2013-04-10 17:14
+        </abbr>
+
+        <p>In <a href="./category/music.html">music</a>. </p>
+<p>tags: <a href="./tag/jing-dian-fan-chang.html">經典翻唱</a></p>
+</footer><!-- /.post-info -->                <p>1966年Lee Hazlewood寫的歌，出現在Nancy Sinatra的專輯&quot;How Does That Grab You?&quot;</p>
+<p><a class="reference external" href="http://en.wikipedia.org/wiki/Sand_%28Lee_Hazlewood_song%29">wikipedia</a></p>
+<div class="section" id="nancy-sinatra-lee-hazlewood-how-does-that-grab-you-1966">
+<h2>Nancy Sinatra &amp; Lee Hazlewood (<em>How Does That Grab You?</em>, 1966)</h2>
+<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/pGfD2j9M1dA" frameborder="0"></iframe></div><p>最有靈性的版本！</p>
+</div>
+<div class="section" id="einsturzende-neubautten-halber-mensh-1985">
+<h2>Einstürzende Neubautten (Halber Mensh*, 1985)</h2>
+<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/4BiODjvVEOw" frameborder="0"></iframe></div><p>這是我第一次聽到這首歌的版本，Blixa Bargeld一人分飾兩角，愛死了！</p>
+</div>
+<div class="section" id="op8-feat-lisa-germano-slush-1997">
+<h2>OP8 feat. Lisa Germano (<em>Slush</em>, 1997)</h2>
+<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/lNIcvmDjx0k" frameborder="0"></iframe></div><p>個性女伶Lisa Germano來伴唱</p>
+</div>
+<div class="section" id="hugo-race-and-the-true-spirit-53rd-state-2008">
+<h2>Hugo Race and the True Spirit (<em>53rd State</em>, 2008)</h2>
+<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/rjRp8TG_q08" frameborder="0"></iframe></div></div>
+<div class="section" id="cillian-murphy-breakfast-on-pluto-o-s-t-2005">
+<h2>Cillian Murphy (<em>Breakfast ...</em></h2></div>
+                <a class="readmore" href="./music/lee_hazlewood_sand.html">read more</a>
+                <p>There are <a href="./music/lee_hazlewood_sand.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/scripting-languages-draft.html" rel="bookmark"
+                           title="Permalink to Scripting Languages (draft)">Scripting Languages (draft)</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-09T11:38:00">
+                2013-04-09 11:38
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <p>PHP, Python, Javascript, Lua</p>
+<div class="section" id="basic">
+<h2>Basic</h2>
+</div>
+<div class="section" id="data-type">
+<h2>Data Type</h2>
+<p><strong>Array</strong></p>
+<pre class="literal-block">
+# python
+arr = [1, 2, 3]
+
+# lua
+squares = {1, 4, 9, 16, 25, 36, 49, 64, 81}
+squares[1] # 1
+</pre>
+</div>
+<div class="section" id="statement-expression">
+<h2>statement/expression</h2>
+<div class="section" id="id1">
+<h3>函式</h3>
+<p><strong>引數</strong></p>
+<pre class="literal-block">
+# python
+def func(a, *pargs, **kargs): print a, pargs, kargs
+# &gt;&gt;&gt; f(1, 2, 3, x=1, y=2)
+# 1 ...</pre></div></div>
+                <a class="readmore" href="./computer/scripting-languages-draft.html">read more</a>
+                <p>There are <a href="./computer/scripting-languages-draft.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="./computer/python-web-framework.html" rel="bookmark"
                            title="Permalink to Python Web Framework">Python Web Framework</a></h1>
                 </header>
@@ -204,7 +393,7 @@ There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Co
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="./computer/rest-restructuredtextyu-sphinx.html" rel="bookmark"
+                    <h1><a href="./computer/rest_sphinx.html" rel="bookmark"
                            title="Permalink to reST – reStructuredText與Sphinx">reST – reStructuredText與Sphinx</a></h1>
                 </header>
                 
@@ -283,203 +472,8 @@ $ make html
 <p><tt class="docutils literal">有底色</tt>:</p>
 <pre class="literal-block">
 ``有底色 ...</pre></div>
-                <a class="readmore" href="./computer/rest-restructuredtextyu-sphinx.html">read more</a>
-                <p>There are <a href="./computer/rest-restructuredtextyu-sphinx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./computer/software.html" rel="bookmark"
-                           title="Permalink to Software">Software</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-03-28T00:00:00">
-                2013-03-28 00:00
-        </abbr>
-
-        <p>In <a href="./category/computer.html">computer</a>. </p>
-<p>tags: <a href="./tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="desktop-tips">
-<h2>Desktop Tips</h2>
-<div class="section" id="mac-osx">
-<h3>Mac OSX</h3>
-<p>zoom in/out: Command Opt =/-</p>
-<p>強制結束: Command Opt Esc</p>
-<p>區域截圖: Command Shift 4</p>
-<p>顯示User Library: 在Finder裡的Go(前往), 按住option, 就會出現</p>
-<p>輸入特殊符號: Command + option + T</p>
-<p>放大縮小: Command + &quot;+&quot; / Command + &quot;-&quot;</p>
-<p>無線網路密碼</p>
-<ol class="arabic simple">
-<li>到&quot;鑰匙圈存取&quot;: Finder -&gt; 工具程式 -&gt; 鑰匙圈存取</li>
-<li>找基地台名稱, 分類是&quot;AirPort網路密碼&quot;, 顯示密碼</li>
-</ol>
-</div>
-</div>
-<div class="section" id="id1">
-<h2>好用軟體</h2>
-<div class="section" id="internet">
-<h3>Internet</h3>
-<ul class="simple">
-<li>bt - Deluge (Linux)</li>
-<li>IRC Client (OS X)</li>
-</ul>
-</div>
-<div class="section" id="ebook">
-<h3>ebook ...</h3></div></div>
-                <a class="readmore" href="./computer/software.html">read more</a>
-                <p>There are <a href="./computer/software.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./computer/unix_command.html" rel="bookmark"
-                           title="Permalink to UNIX Command 常用指令">UNIX Command 常用指令</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-03-28T00:00:00">
-                2013-03-28 00:00
-        </abbr>
-
-        <p>In <a href="./category/computer.html">computer</a>. </p>
-<p>tags: <a href="./tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="id1">
-<h2>檔案</h2>
-<p>把檔案foo複製到以下全部目錄裡:</p>
-<pre class="literal-block">
-$ find . -type d |xargs -n 1 cp -i foo
-</pre>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">xargs -n 1:</th><td class="field-body">把每一行command line輸出當作一個參數</td>
-</tr>
-<tr class="field"><th class="field-name">cp -i:</th><td class="field-body">詢問y or n</td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="id2">
-<h3>改檔名</h3>
-<p>大寫改小寫:</p>
-<pre class="literal-block">
-$ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
-</pre>
-<p>只取數字, JPG改jpg:</p>
-<pre class="literal-block">
-for i in *.JPG ; do mv &quot;$i&quot; `echo $i ...</pre></div></div>
-                <a class="readmore" href="./computer/unix_command.html">read more</a>
-                <p>There are <a href="./computer/unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./computer/git.html" rel="bookmark"
-                           title="Permalink to GIT">GIT</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-03-23T00:00:00">
-                2013-03-23 00:00
-        </abbr>
-
-        <p>In <a href="./category/computer.html">computer</a>. </p>
-<p>tags: <a href="./tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="quick-start">
-<h2>Quick Start</h2>
-<div class="section" id="init">
-<h3>init</h3>
-<p>Server (Repository):</p>
-<pre class="literal-block">
-mkdir example.git
-cd example.git
-git --bare init # init加--bare, 表示只會在當下目錄放git的東西，不會有原始檔案, 如果要原始檔案再git clone出來就有了
-</pre>
-<p>Client:</p>
-<pre class="literal-block">
-mkdir example
-cd example
-git init
-touch README
-git add README
-git commit -m 'first commit'
-git remote add origin ssh://USERNAME&#64;REMOTE_SERVER/~/example.git
-git push origin master (第一次之後只要打git ...</pre></div></div>
-                <a class="readmore" href="./computer/git.html">read more</a>
-                <p>There are <a href="./computer/git.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="bookmark"
-                           title="Permalink to Dynamic DNS setting for Namecheap on Mac OSX">Dynamic DNS setting for Namecheap on Mac OSX</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-03-21T02:09:00">
-                2013-03-21 02:09
-        </abbr>
-
-        <p>In <a href="./category/computer.html">computer</a>. </p>
-<p>tags: <a href="./tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <p>登入Namecheap啓用Dynamic <a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service">link1</a></p>
-<p>設定DNS record:</p>
-<pre class="literal-block">
-freedns1.registrar-servers.com
-freedns2.registrar-servers.com
-freedns3.registrar-servers.com
-freedns4.registrar-servers.com
-freedns5.registrar-servers.com
-</pre>
-<p><a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/532/51/how-does-free-dns-work">link2</a></p>
-<p>安裝Dynamic DNS clinet (以OS X的ddclient為例):</p>
-<pre class="literal-block">
-$ brew install ddclient
-</pre>
-<p>在/usr/local/etc/ddclient裡建立ddclient.conf (範例在/usr/local/share/doc/ddclient), 裡面有namecheap的預設選項:</p>
-<pre class="literal-block">
-protocol=namecheap
-server=dynamicdns.park-your-domain.com
-login=yourdomain.com ...</pre>
-                <a class="readmore" href="./computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html">read more</a>
-                <p>There are <a href="./computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./music/jack_ass_baby_blue.html" rel="bookmark"
-                           title="Permalink to Jack Ass (It's All Over Now Baby Blue)">Jack Ass (It's All Over Now Baby Blue)</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-07-02T23:22:33">
-                2012-07-02 23:22
-        </abbr>
-
-        <p>In <a href="./category/music.html">music</a>. </p>
-<p>tags: <a href="./tag/jing-dian-fan-chang.html">經典翻唱</a></p>
-</footer><!-- /.post-info -->                <p>最近電視看到「 <a class="reference external" href="http://app.atmovies.com.tw/movie/movie.cfm?action=filmdata&amp;film_id=flen10758752">愛情藥不藥</a> 」(<a class="reference external" href="http://www.imdb.com/title/tt0758752/">Love and Other Drugs</a>)，都會聽到Beck的 <a class="reference external" href="http://en.wikipedia.org/wiki/Jack-Ass_(song)">Jack-Ass</a> 。查了一下，小弟孤漏寡聞，原來背景飄飄然的配樂是完全取樣自北愛爾蘭催淚老將Van Morrison早期樂團Them的It's All Over Now, Baby Blue，而這首歌則是翻唱每首歌我聽起來都一樣的Bob Dylan，真的，別人翻唱他的歌都比較好聽... 詳見: The Times They Are A-Changin。然後，底特律嘻哈團Insane Clown Posse也翻唱Beck的，一首歌有這麼多種不同的詮釋，還是要感謝Bob Dylan啦。</p>
-<p>原曲中的原曲 Bob Dylan - It's All Over Now, Baby Blue</p>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/hBiwMT77Csg" frameborder="0"></iframe></div><p>Beck取樣的來源: THEM &amp; Van Morrison - It ...</p>
-                <a class="readmore" href="./music/jack_ass_baby_blue.html">read more</a>
-                <p>There are <a href="./music/jack_ass_baby_blue.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="./computer/rest_sphinx.html">read more</a>
+                <p>There are <a href="./computer/rest_sphinx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

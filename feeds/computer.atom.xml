@@ -249,6 +249,23 @@ print sorted(list, key=lambda x: x['date'], reverse=True)
 &lt;li&gt;&lt;a class="reference external" href="http://docs.python-guide.org/en/latest/writing/style/"&gt;Code Style — The Hitchhiker's Guide to Python&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;div class="section" id="practice"&gt;
+&lt;h2&gt;Practice&lt;/h2&gt;
+&lt;p&gt;exceptions and/or logging&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SillyWalkMinistry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ne"&gt;Exception&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; handle exception &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+
+&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;do_silly&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;AttributeError&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;do_invisible&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;Exception&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;debug&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="n"&gt;SillyWalkMinistry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
 &lt;h2&gt;整理&lt;/h2&gt;
 &lt;p&gt;小括弧整理程式碼:&lt;/p&gt;
@@ -766,6 +783,8 @@ SET character_set_connection = utf8;
 &lt;span class="k"&gt;DESCRIBE&lt;/span&gt; &lt;span class="n"&gt;tbl_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;看&lt;/span&gt;&lt;span class="k"&gt;table&lt;/span&gt;&lt;span class="err"&gt;屬性&lt;/span&gt;
 &lt;span class="k"&gt;SHOW&lt;/span&gt; &lt;span class="k"&gt;FULL&lt;/span&gt; &lt;span class="n"&gt;COLUMNS&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;tbl_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="k"&gt;table&lt;/span&gt; &lt;span class="err"&gt;細節&lt;/span&gt;
 &lt;span class="k"&gt;ALTER&lt;/span&gt; &lt;span class="k"&gt;TABLE&lt;/span&gt; &lt;span class="n"&gt;tablename&lt;/span&gt; &lt;span class="k"&gt;CONVERT&lt;/span&gt; &lt;span class="k"&gt;TO&lt;/span&gt; &lt;span class="nb"&gt;CHARACTER&lt;/span&gt; &lt;span class="k"&gt;SET&lt;/span&gt; &lt;span class="n"&gt;utf8&lt;/span&gt; &lt;span class="k"&gt;COLLATE&lt;/span&gt; &lt;span class="n"&gt;utf8_general_ci&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;改欄位編碼&lt;/span&gt;
+
+&lt;span class="k"&gt;SHOW&lt;/span&gt; &lt;span class="k"&gt;GLOBAL&lt;/span&gt; &lt;span class="n"&gt;VARIABLES&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="server-management"&gt;
@@ -1958,7 +1977,7 @@ $ service gmetad start
 &lt;/pre&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://sourceforge.net/apps/trac/ganglia/wiki/ganglia_quick_start"&gt;http://sourceforge.net/apps/trac/ganglia/wiki/ganglia_quick_start&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="note"></category></entry><entry><title>reST – reStructuredText與Sphinx</title><link href="http://gentlerunner.org/computer/rest-restructuredtextyu-sphinx.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-03-28:computer/rest-restructuredtextyu-sphinx.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 是Python &lt;a class="reference external" href="http://docutils.sourceforge.net/index.html"&gt;Docutils: Documentation Utilities&lt;/a&gt; 的一部分, 而 &lt;a class="reference external" href="http://sphinx.pocoo.org/"&gt;Sphinx&lt;/a&gt; 可以更方便產生，管理文件的工具&lt;/p&gt;
+</summary><category term="note"></category></entry><entry><title>reST – reStructuredText與Sphinx</title><link href="http://gentlerunner.org/computer/rest_sphinx.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:gentlerunner.org,2013-03-28:computer/rest_sphinx.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 是Python &lt;a class="reference external" href="http://docutils.sourceforge.net/index.html"&gt;Docutils: Documentation Utilities&lt;/a&gt; 的一部分, 而 &lt;a class="reference external" href="http://sphinx.pocoo.org/"&gt;Sphinx&lt;/a&gt; 可以更方便產生，管理文件的工具&lt;/p&gt;
 &lt;p&gt;縮排用二個或三個空白都可以，Emacs的ReST預設用三個&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;使用&lt;/h2&gt;
@@ -2140,6 +2159,21 @@ b) zwai
 &lt;/div&gt;
 &lt;div class="section" id="explicit-markup"&gt;
 &lt;h2&gt;Explicit Markup&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class="section" id="extensions"&gt;
+&lt;h2&gt;extensions&lt;/h2&gt;
+&lt;p&gt;conf.py的extension加入:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+extensions = ['sphinx.ext.graphviz']
+&lt;/pre&gt;
+&lt;p&gt;語法:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. graphviz::
+
+   digraph foo {
+      &amp;quot;bar&amp;quot; -&amp;gt; &amp;quot;baz&amp;quot;;
+   }
+&lt;/pre&gt;
 &lt;div class="section" id="comments"&gt;
 &lt;h3&gt;Comments&lt;/h3&gt;
 &lt;/div&gt;
@@ -2412,6 +2446,35 @@ ps ca|grep uwsgi |awk '{ print $1}' | xargs --no-run-if-empty sudo kill -9
 &lt;pre class="literal-block"&gt;
 $ python -m SimpleHTTPServer 8080
 &lt;/pre&gt;
+&lt;div class="section" id="crontab"&gt;
+&lt;h3&gt;Crontab&lt;/h3&gt;
+&lt;p&gt;分鐘 小時 日期 月份 週&lt;/p&gt;
+&lt;p&gt;每5min一次:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+*/5 * * * * /home/moogoo/test.sh
+5 0 * * *
+&lt;/pre&gt;
+&lt;p&gt;每小時:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+01 * * * * /home/moogoo/test.sh
+&lt;/pre&gt;
+&lt;p&gt;每天(半夜):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+0 0 * * *
+&lt;/pre&gt;
+&lt;p&gt;每週:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+0 0 * * 0
+&lt;/pre&gt;
+&lt;p&gt;每月:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+0 0 1 * *
+&lt;/pre&gt;
+&lt;p&gt;start:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+service crond start
+&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="system"&gt;
 &lt;h2&gt;System&lt;/h2&gt;

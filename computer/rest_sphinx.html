@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>UNIX Command 常用指令</title>
+        <title>reST – reStructuredText與Sphinx</title>
         <link rel="stylesheet" href="../theme/css/main.css">
                 <link href="http://gentlerunner.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gentle Runner Atom Feed" />
                 
@@ -30,8 +30,8 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="../computer/unix_command.html" rel="bookmark"
-           title="Permalink to UNIX Command 常用指令">UNIX Command 常用指令</a></h1>
+        <a href="../computer/rest_sphinx.html" rel="bookmark"
+           title="Permalink to reST – reStructuredText與Sphinx">reST – reStructuredText與Sphinx</a></h1>
           </header>
 
     <div class="entry-content">
@@ -42,153 +42,215 @@
 
         <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->      <div class="section" id="id1">
-<h2>檔案</h2>
-<p>把檔案foo複製到以下全部目錄裡:</p>
+</footer><!-- /.post-info -->      <p><a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> 是Python <a class="reference external" href="http://docutils.sourceforge.net/index.html">Docutils: Documentation Utilities</a> 的一部分, 而 <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a> 可以更方便產生，管理文件的工具</p>
+<p>縮排用二個或三個空白都可以，Emacs的ReST預設用三個</p>
+<div class="section" id="id1">
+<h2>使用</h2>
+<p>安裝:</p>
 <pre class="literal-block">
-$ find . -type d |xargs -n 1 cp -i foo
+$ pip install Sphinx
 </pre>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">xargs -n 1:</th><td class="field-body">把每一行command line輸出當作一個參數</td>
-</tr>
-<tr class="field"><th class="field-name">cp -i:</th><td class="field-body">詢問y or n</td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="id2">
-<h3>改檔名</h3>
-<p>大寫改小寫:</p>
+<p>某目錄下:</p>
 <pre class="literal-block">
-$ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
+$ sphinx-quickstart
 </pre>
-<p>只取數字, JPG改jpg:</p>
+<p>會自動設定好conf.py, 和相關檔案</p>
+<p>產生網頁檔:</p>
 <pre class="literal-block">
-for i in *.JPG ; do mv &quot;$i&quot; `echo $i | tr -dc '[0-9]'`&quot;.jpg&quot; ; done
-</pre>
-<p>for loop:</p>
-<pre class="literal-block">
-for f in *.html; do
-    base=`basename $f .html`
-    mv $f $bae.php
-done
+$ make html
 </pre>
 </div>
+<div class="section" id="id2">
+<h2>文件結構</h2>
 <div class="section" id="id3">
-<h3>找檔案</h3>
-<p>找目錄名稱:</p>
+<h3>分段</h3>
+<p>用一串連續的=*-^&quot;~等字符來標示，通常用:</p>
 <pre class="literal-block">
-$ find / -type d -name &quot;dir_name&quot;
-</pre>
-<p>找出體積最大前十檔案/目錄:</p>
-<pre class="literal-block">
-$ du -a /home | sort -n -r | head -n 10
-</pre>
-<p>via: <a class="reference external" href="http://www.hkcode.com/linux-bsd-notes/693">Linux 下找出體積最大的檔案/目錄 – 網絡技術日誌</a></p>
-<p>某目錄下的全部檔案的字串:</p>
-<pre class="literal-block">
-$ grep -rl flaskext . |xargs sed -i -e 's/flaskext/flask.ext/'
-</pre>
-<p>via: <a class="reference external" href="http://www.commandlinefu.com/commands/view/4698/recursive-search-and-replace-old-with-new-string-inside-files">recursive search and replace old with new string, inside files | commandlinefu.com</a></p>
-<p>列出各目錄大小(不顯示子目錄):</p>
-<pre class="literal-block">
-du -h | grep -v '[a-z]/.'
-</pre>
-<p>coding convert:</p>
-<pre class="literal-block">
-# big5 to utf-8
-$ iconv -f big5 -t utf-8 big5.txt -o utf8.txt
+==========
+全文標題
+==========
 
-# 簡體轉繁體
-$ cat test.txt | iconv -f gb2312 -t big5
+大標題
+========
 
-# 繁體轉簡體
-$ cat test.txt | iconv -f big5 -t gb2312
+小標題
+---------
 
-# Big5 編碼跟 UTF-8 編碼之間的轉換,如 UTF-8 轉 Big5
-$ cat test.txt | iconv -f utf-8 -t big5
+段落
+^^^^^^
 </pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">中文字用的分段標示要長一點點</p>
 </div>
 </div>
 <div class="section" id="id4">
-<h2>編輯</h2>
-<ul class="simple">
-<li><a class="reference external" href="http://coolshell.cn/articles/9070.html">AWK 简明教程 | 酷壳 - CoolShell.cn</a></li>
-</ul>
-<p>vim硬是要存檔:</p>
+<h3>分隔</h3>
+<p>像HTML裡的 <tt class="docutils literal">&lt;hr&gt;</tt>:</p>
 <pre class="literal-block">
-:w !sudo tee %
+----
+</pre>
+</div>
+</div>
+<div class="section" id="inline-markup">
+<h2>修飾字 Inline markup</h2>
+<p><em>斜體</em>:</p>
+<pre class="literal-block">
+*italic*
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">中文不能斜</p>
+</div>
+<p><strong>粗體</strong>:</p>
+<pre class="literal-block">
+**bold**
+</pre>
+<p><tt class="docutils literal">有底色</tt>:</p>
+<pre class="literal-block">
+``有底色``
+</pre>
+<p>&quot;修飾字&quot;的前後都要空格，如要跟後面的字相連可以用 <tt class="docutils literal">\</tt>跳脫，如: <strong>test</strong>123:</p>
+<pre class="literal-block">
+**test**\123
 </pre>
 </div>
 <div class="section" id="id5">
-<h2>網路</h2>
+<h2>定義</h2>
+<p>定義:</p>
 <pre class="literal-block">
-$ lsof -i # monitors network connections in real time
-$ iftop # shows bandwith usage per *connection*
-$ nethogs #shows the bandwith usage per *process*
+what
+  Definition of “what”. We add a few words to show the line wrapping.
+how
+  Definition of “how”.
+</pre>
+<dl class="docutils">
+<dt>what</dt>
+<dd>Definition of “what”. We add a few words to show the line wrapping.</dd>
+<dt>how</dt>
+<dd>Definition of “how”.</dd>
+</dl>
+</div>
+<div class="section" id="lists">
+<h2>條列 Lists</h2>
+<p>標示字符用*, +, -,等都可以:</p>
+<pre class="literal-block">
+* 第一項
 
-# iOS
-$ sudo lsof -i -P
-$ lsof -n -i4TCP:5000 | grep LISTEN # 找出port5000
+  * 子項目不是只有縮排, 上面要空一行才可以
+
+* 第二項
+
+1. uno
+2. dos
+
+a) eins
+b) zwai
 </pre>
-<p>rsync:</p>
+</div>
+<div class="section" id="blocks">
+<h2>文字區塊 Blocks</h2>
+<p>以下是區塊, 要空一行和縮排:</p>
 <pre class="literal-block">
-$ rsync -av /etc /tmp () # 將 /etc/ 的資料備份到 /tmp/etc 內(local)
-$ rsync -av -e ssh user&#64;host:/etc /tmp 將遠端 /etc 備份到local主機的 /tmp 內
+跟你說::
+
+  嘻嘻
 </pre>
+<p>註解/警告:</p>
+<pre class="literal-block">
+.. note:: this is a note.
+.. warning:: this is a warning.
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">this is a note.</p>
+</div>
+<div class="warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">this is a warning.</p>
+</div>
+<div class="section" id="syntax-highlighting">
+<h3>Syntax Highlighting</h3>
+<div class="section" id="include-source">
+<h4>Include Source</h4>
+<p>會把原始碼印出來。</p>
+<p>Python:</p>
+<pre class="literal-block">
+.. iteralinclude:: example.py
+  :linenos:
+</pre>
+<p>PHP:</p>
+<pre class="literal-block">
+.. literalinclude:: example.php
+  :language: php
+  :prepend: &lt;?php
+  :append: ?&gt;
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>連結</h2>
+<div class="section" id="id7">
+<h3>外部連結</h3>
+<p>例子:</p>
+<pre class="literal-block">
+`連結的標題 &lt;http://example.com&gt;`__
+`&lt;http://example.com&gt;`
+</pre>
+</div>
+<div class="section" id="id8">
+<h3>內部連結</h3>
+<p>在某個rst文件裡的任何一個地方定義:</p>
+<pre class="literal-block">
+.. _test_label:
+</pre>
+<p>連結:</p>
+<pre class="literal-block">
+:ref:`標題文字&lt;test_label&gt;`
+</pre>
+<p>或是用:</p>
+<pre class="literal-block">
+:doc:`reST`
+</pre>
+<p>會自動把文件標題抓出來:</p>
+</div>
+</div>
+<div class="section" id="tables">
+<h2>表格 (Tables)</h2>
+</div>
+<div class="section" id="field-list">
+<h2>(Field list)</h2>
+</div>
+<div class="section" id="explicit-markup">
+<h2>Explicit Markup</h2>
+</div>
+<div class="section" id="extensions">
+<h2>extensions</h2>
+<p>conf.py的extension加入:</p>
+<pre class="literal-block">
+extensions = ['sphinx.ext.graphviz']
+</pre>
+<p>語法:</p>
+<pre class="literal-block">
+.. graphviz::
+
+   digraph foo {
+      &quot;bar&quot; -&gt; &quot;baz&quot;;
+   }
+</pre>
+<div class="section" id="comments">
+<h3>Comments</h3>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>參考資料</h2>
 <ul class="simple">
-<li><a class="reference external" href="http://blog.longwin.com.tw/2010/02/netstat-check-connect-2010/">使用 netstat 找出不正常的連線 | Tsung's Blog</a></li>
+<li><a class="reference external" href="http://people.ee.ethz.ch/~creller/web/tricks/reST.html">reST – reStructuredText — Bits and Pieces</a> - 簡潔扼要, 還有附Emacs的ReST mode</li>
+<li><a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html#restructured-text-rest-resources">Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation</a> -</li>
+<li><a class="reference external" href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html">3.6.1. Restructured Text (reST) and Sphinx CheatSheet — openalea.doc v0.8.0 documentation</a></li>
+<li><a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html">Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation</a></li>
 </ul>
-</div>
-<div class="section" id="service">
-<h2>Service</h2>
-<p>關掉uwsgi的process:</p>
-<pre class="literal-block">
-ps ca|grep uwsgi |awk '{ print $1}' | xargs --no-run-if-empty sudo kill -9
-</pre>
-<p>快速靜態檔案server:</p>
-<pre class="literal-block">
-$ python -m SimpleHTTPServer 8080
-</pre>
-<div class="section" id="crontab">
-<h3>Crontab</h3>
-<p>分鐘 小時 日期 月份 週</p>
-<p>每5min一次:</p>
-<pre class="literal-block">
-*/5 * * * * /home/moogoo/test.sh
-5 0 * * *
-</pre>
-<p>每小時:</p>
-<pre class="literal-block">
-01 * * * * /home/moogoo/test.sh
-</pre>
-<p>每天(半夜):</p>
-<pre class="literal-block">
-0 0 * * *
-</pre>
-<p>每週:</p>
-<pre class="literal-block">
-0 0 * * 0
-</pre>
-<p>每月:</p>
-<pre class="literal-block">
-0 0 1 * *
-</pre>
-<p>start:</p>
-<pre class="literal-block">
-service crond start
-</pre>
-</div>
-</div>
-<div class="section" id="system">
-<h2>System</h2>
-<p>語系:</p>
-<pre class="literal-block">
-$ locale -a # 目前系統支援語系
-$ dpkg-reconfigure locales 安裝語系
-</pre>
 </div>
 
     </div><!-- /.entry-content -->
@@ -196,8 +258,8 @@ $ dpkg-reconfigure locales 安裝語系
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "computer/unix_command.html";
-        var disqus_url = "../computer/unix_command.html";
+        var disqus_identifier = "computer/rest_sphinx.html";
+        var disqus_url = "../computer/rest_sphinx.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';
