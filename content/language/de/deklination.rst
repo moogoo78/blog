@@ -2,7 +2,7 @@ Deutschen Grammatik - 變格 (Deklination)
 ################################################
 :date: 2013-07-09 16:41
 :category: language
-:tags: deutsch
+:tags: lang_de
 :slug: deutsch_deklination
 
 

@@ -4,6 +4,7 @@ reST – reStructuredText與Sphinx
 :date: 2013-03-28
 :category: computer
 :tags: docs
+:slug: rest_sphinx
 
 `reStructuredText <http://docutils.sourceforge.net/rst.html>`__ 是Python `Docutils: Documentation Utilities <http://docutils.sourceforge.net/index.html>`__ 的一部分, 而 `Sphinx <http://sphinx.pocoo.org/>`__ 可以更方便產生，管理文件的工具
 
@@ -26,6 +27,7 @@ reST – reStructuredText與Sphinx
 產生網頁檔::
 
    $ make html
+
 
 
 文件結構
@@ -185,6 +187,22 @@ PHP::
 
 Explicit Markup
 =================
+
+
+extensions
+=================
+
+conf.py的extension加入::
+
+  extensions = ['sphinx.ext.graphviz']
+
+語法::
+
+  .. graphviz::
+
+     digraph foo {
+        "bar" -> "baz";
+     }
 
 
 

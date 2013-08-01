@@ -126,6 +126,39 @@ Service
 
   $ python -m SimpleHTTPServer 8080
 
+
+Crontab
+-------
+分鐘 小時 日期 月份 週 
+
+每5min一次::
+
+  */5 * * * * /home/moogoo/test.sh
+  5 0 * * *
+
+每小時::
+
+  01 * * * * /home/moogoo/test.sh
+
+每天(半夜)::
+
+  0 0 * * *
+
+每週::
+
+  0 0 * * 0
+
+每月::
+
+  0 0 1 * *
+
+
+start::
+
+  service crond start 
+
+
+
 System
 ===========
 

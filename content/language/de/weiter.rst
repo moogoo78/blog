@@ -2,7 +2,7 @@ deutsch outher
 ################################################
 :date: 2013-07-09 16:45
 :category: language
-:tags: deucsch
+:tags: lang_de
 :slug: deutsch_other
 :status: draft
 

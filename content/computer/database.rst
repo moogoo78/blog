@@ -246,6 +246,8 @@ command
   SHOW FULL COLUMNS FROM tbl_name; #table 細節
   ALTER TABLE tablename CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci; # 改欄位編碼
 
+  SHOW GLOBAL VARIABLES; 
+
 
 Server Management
 ---------------------------
