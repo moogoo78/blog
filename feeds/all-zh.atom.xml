@@ -335,26 +335,14 @@ def all(iterable):
             return False
     return True
 &lt;/pre&gt;
-&lt;dl class="docutils"&gt;
-&lt;dt&gt;any(iterable)::&lt;/dt&gt;
-&lt;dd&gt;&lt;dl class="first last docutils"&gt;
-&lt;dt&gt;def any(iterable):&lt;/dt&gt;
-&lt;dd&gt;&lt;dl class="first docutils"&gt;
-&lt;dt&gt;for element in iterable:&lt;/dt&gt;
-&lt;dd&gt;&lt;dl class="first last docutils"&gt;
-&lt;dt&gt;if element:&lt;/dt&gt;
-&lt;dd&gt;return True&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/moogoo/gentlerunner.org/content/computer/python.rst&lt;/tt&gt;, line 186)&lt;/p&gt;
-Definition list ends without a blank line; unexpected unindent.&lt;/div&gt;
-&lt;p class="last"&gt;return False&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
+&lt;p&gt;any(iterable):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+def any(iterable):
+    for element in iterable:
+        if element:
+            return True
+    return False
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="io-shell-commond-line"&gt;
@@ -2871,6 +2859,8 @@ b) zwai
 &lt;/div&gt;
 &lt;div class="section" id="extensions"&gt;
 &lt;h2&gt;extensions&lt;/h2&gt;
+&lt;div class="section" id="graphviz"&gt;
+&lt;h3&gt;graphviz&lt;/h3&gt;
 &lt;p&gt;conf.py的extension加入:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 extensions = ['sphinx.ext.graphviz']
@@ -2883,6 +2873,7 @@ extensions = ['sphinx.ext.graphviz']
       &amp;quot;bar&amp;quot; -&amp;gt; &amp;quot;baz&amp;quot;;
    }
 &lt;/pre&gt;
+&lt;/div&gt;
 &lt;div class="section" id="comments"&gt;
 &lt;h3&gt;Comments&lt;/h3&gt;
 &lt;/div&gt;
