@@ -7,7 +7,7 @@
 
 台灣話惡口 (日語片假名翻譯)
 
-.. image:: /static/images/language_tw/tawian_dirty.jpg
+.. image:: /static/images/language_tw/taiwan_dirty.jpg
 
 
 
