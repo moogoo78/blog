@@ -34,6 +34,185 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="./computer/blog.html" rel="bookmark"
+                           title="Permalink to blog">blog</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-02T15:53:00">
+                2013-04-02 15:53
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="http-status-code">
+<h2>HTTP status code</h2>
+<p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
+<div class="section" id="informational-1xx">
+<h3>Informational 1xx</h3>
+<p>HTTP/1.0沒有定義</p>
+<ul class="simple">
+<li>100 Continue, proxy</li>
+<li>101 Switching Protocols, HTTP版本轉換</li>
+</ul>
+</div>
+<div class="section" id="successful-2xx">
+<h3>Successful 2xx</h3>
+<ul class="simple">
+<li>200 OK</li>
+<li>201 Created</li>
+<li>202 Accepted</li>
+<li>203 Non-Authoritative Information</li>
+<li>204 No Content</li>
+<li>205 Reset Content</li>
+<li>206 Partial Content</li>
+</ul>
+</div>
+<div class="section" id="redirection-3xx">
+<h3>Redirection 3xx</h3>
+<ul class="simple">
+<li>300 Multiple Choices</li>
+<li>301 Moved ...</li></ul></div></div>
+                <a class="readmore" href="./computer/blog.html">read more</a>
+                <p>There are <a href="./computer/blog.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/ganglia.html" rel="bookmark"
+                           title="Permalink to Ganglia">Ganglia</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-02T11:39:00">
+                2013-04-02 11:39
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
+<p>Ganglia有3個部分:</p>
+<ul class="simple">
+<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
+<li>gmetad - 詢問gmond儲存數質</li>
+<li>ganglia-web</li>
+</ul>
+<pre class="literal-block">
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+</pre>
+<p>start daemond:</p>
+<pre class="literal-block">
+service gmond start
+service gmetad start
+</pre>
+<div class="section" id="centos">
+<h2>CentOS</h2>
+<p>進入web介面時出現:</p>
+<pre class="literal-block">
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+</pre>
+<p>解決方法, 重新安裝 ...</p></div>
+                <a class="readmore" href="./computer/ganglia.html">read more</a>
+                <p>There are <a href="./computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/rest_sphinx.html" rel="bookmark"
+                           title="Permalink to reST – reStructuredText與Sphinx">reST – reStructuredText與Sphinx</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-28T00:00:00">
+                2013-03-28 00:00
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <p><a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> 是Python <a class="reference external" href="http://docutils.sourceforge.net/index.html">Docutils: Documentation Utilities</a> 的一部分, 而 <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a> 可以更方便產生，管理文件的工具</p>
+<p>縮排用二個或三個空白都可以，Emacs的ReST預設用三個</p>
+<div class="section" id="id1">
+<h2>使用</h2>
+<p>安裝:</p>
+<pre class="literal-block">
+$ pip install Sphinx
+</pre>
+<p>某目錄下:</p>
+<pre class="literal-block">
+$ sphinx-quickstart
+</pre>
+<p>會自動設定好conf.py, 和相關檔案</p>
+<p>產生網頁檔:</p>
+<pre class="literal-block">
+$ make html
+</pre>
+</div>
+<div class="section" id="id2">
+<h2>文件結構</h2>
+<div class="section" id="id3">
+<h3>分段</h3>
+<p>用一串連續的=*-^&quot;~等字符來標示，通常用:</p>
+<pre class="literal-block">
+==========
+全文標題
+==========
+
+大標題
+========
+
+小標題
+---------
+
+段落
+^^^^^^
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">中文字用的分段標示要長一點點</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>分隔</h3>
+<p>像HTML裡的 <tt class="docutils literal">&lt;hr&gt;</tt>:</p>
+<pre class="literal-block">
+----
+</pre>
+</div>
+</div>
+<div class="section" id="inline-markup">
+<h2>修飾字 Inline markup</h2>
+<p><em>斜體</em>:</p>
+<pre class="literal-block">
+*italic*
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">中文不能斜</p>
+</div>
+<p><strong>粗體</strong>:</p>
+<pre class="literal-block">
+**bold**
+</pre>
+<p><tt class="docutils literal">有底色</tt>:</p>
+<pre class="literal-block">
+``有底色 ...</pre></div>
+                <a class="readmore" href="./computer/rest_sphinx.html">read more</a>
+                <p>There are <a href="./computer/rest_sphinx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="./computer/software.html" rel="bookmark"
                            title="Permalink to Software">Software</a></h1>
                 </header>
@@ -291,110 +470,11 @@ login=yourdomain.com ...</pre>
                 <a class="readmore" href="./travel/2012_kyoto_marathon-3.html">read more</a>
                 <p>There are <a href="./travel/2012_kyoto_marathon-3.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./travel/2012_kyoto_marathon-2.html" rel="bookmark"
-                           title="Permalink to [travel] 京都行 (2/4) - 北野天滿宮、上賀茂神社、万博記念公園">[travel] 京都行 (2/4) - 北野天滿宮、上賀茂神社、万博記念公園</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-04-12T09:21:00">
-                2012-04-12 09:21
-        </abbr>
-
-        <p>In <a href="./category/travel.html">travel</a>. </p>
-
-</footer><!-- /.post-info -->                <div class="section" id="id1">
-<h2>第三天 (3/12)</h2>
-<p>早上站在旅館窗口看外面時，以為外面有人在灑紙屑，原來是飄雪啦。我跟我媽長這麼大都沒看過下雪，非常興奮。我還跑出去看，但是雪不夠大，飄下來就變雨水了。</p>
-<p>住大阪近郊的林阿姨夫婦開車來找我們，這個時後櫻花都還沒開，今年太冷，可能還會太晚開，所以這時的京都人少很多，反而悠閒，他們提議這時去 <a class="reference external" href="http://kitanotenmangu.or.jp/">北野天滿宮</a> 可以看「梅花」。</p>
-<p>北野天滿宮 | <a class="reference external" href="http://www.flickr.com/photos/moogoo/7069467243/">flickr</a></p>
-<img alt="http://farm6.staticflickr.com/5236/7069467243_ace73ff25b.jpg" src="http://farm6.staticflickr.com/5236/7069467243_ace73ff25b.jpg" />
-<div class="section" id="id2">
-<h3>北野天滿宮</h3>
-<p>北野天滿宮主要是拜學業考試，大概就像台灣的文昌帝君。</p>
-<p>北野天滿宮 | <a class="reference external" href="http://www.flickr.com/photos/moogoo/7063240657/">flickr</a></p>
-<img alt="http://farm6.staticflickr.com/5463/7063240657_d25e5a2ae9.jpg" src="http://farm6.staticflickr.com/5463/7063240657_d25e5a2ae9.jpg" />
-<p>北野天滿宮 | <a class="reference external" href="http://www.flickr.com/photos/moogoo/7063239623/">flickr</a></p>
-<img alt="http://farm8.staticflickr.com/7220/7063239623_28420f344b.jpg" src="http://farm8.staticflickr.com/7220/7063239623_28420f344b.jpg" />
-<p>這裡有一堆銅牛石牛，來這裡拜拜的都要去摸牛，會變聰明、讀書順利、考試100分。</p>
-<p>北野天滿宮 | <a class="reference external" href="http://www.flickr.com/photos/moogoo/7063230853/">flickr</a></p>
-<img alt="http://farm6.staticflickr.com/5323/7063230853_24a6cd4c51.jpg" src="http://farm6.staticflickr.com/5323/7063230853_24a6cd4c51.jpg" />
-<p>所有人來就一直摸著牛，然後拍照。</p>
-<p>北野天滿宮 | <a class="reference external" href="http://www.flickr.com/photos/moogoo/6923388336/">flickr</a></p>
-<img alt="http://farm8.staticflickr.com/7220/6923388336_43ae0e05ce.jpg" src="http://farm8.staticflickr.com/7220/6923388336_43ae0e05ce.jpg" />
-<p>北野天滿宮 | <a class="reference external" href="http://www.flickr.com/photos/moogoo/6917154962/">flickr</a>
-.. image:: <a class="reference external" href="http://farm6.staticflickr.com/5459/6917154962_9ba3b3dca4.jpg">http://farm6.staticflickr.com/5459/6917154962_9ba3b3dca4 ...</a></p></div></div>
-                <a class="readmore" href="./travel/2012_kyoto_marathon-2.html">read more</a>
-                <p>There are <a href="./travel/2012_kyoto_marathon-2.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./travel/2012_kyoto_marathon-1.html" rel="bookmark"
-                           title="Permalink to [travel] 京都行 (1/4) - 第一次的海外馬拉松">[travel] 京都行 (1/4) - 第一次的海外馬拉松</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-04-11T22:22:57">
-                2012-04-11 22:22
-        </abbr>
-
-        <p>In <a href="./category/travel.html">travel</a>. </p>
-
-</footer><!-- /.post-info -->                <div class="section" id="id1">
-<h2>行前</h2>
-<p>在ptt路跑版看到 <a class="reference external" href="http://www.kyoto-marathon.com/&quot;target=&quot;blank">京都馬拉松</a> 訊息，主要是為了幫助去年311日本東北大地震。因為很喜歡京都，沒想太多就報名了，當作第一場海外馬拉松。結果如預期有外國人優勢，一抽就抽到了。這次去京都自以為熟門熟路的並沒做什麼功課，原本全家要一起去的，最後只有媽媽跟我去。</p>
-</div>
-<div class="section" id="id2">
-<h2>第一天 (3/10)</h2>
-<p>早上8:40的飛機，吃到JAL才有的綠涼麵很爽，到關西機場後坐「JR特急はるか」往京都，一上車就聽到很熟悉的語言，在仔細聽一下，原來跟我一樣也是要去跑馬拉松的，而且每個人感覺很有趣！！（更巧的是，他們也是剛剛才認識，其中一人的老婆是另一人的同學，後來回台灣才發現那個人也是我舅舅的同學，台灣很小）</p>
-<p>報到會場 | <a class="reference external" href="http://www.flickr.com/photos/moogoo/6917092850/">flickr</a></p>
-<img alt="http://farm8.staticflickr.com/7073/6917092850_c30d276766.jpg" src="http://farm8.staticflickr.com/7073/6917092850_c30d276766.jpg" />
-<p>到京都車站道別後，就先到旅館check-in，這次住在車站附近走15分鐘路程的Rihga Royal Hotel Kyoto，我跟我媽來好幾次了，京都也是個變化不太大的城市，一路上也都很熟悉。放好行李後再坐公車到會場「京都市勧業館」報到，從平安神宮附近走到會場，一直到領完東西，就能感受到日本人做事的效率跟規劃的細心。</p>
-<p>京都マラソン2012 | <a class="reference external" href="http://www.flickr.com/photos/moogoo/7063222275/">flickr ...</a></p></div>
-                <a class="readmore" href="./travel/2012_kyoto_marathon-1.html">read more</a>
-                <p>There are <a href="./travel/2012_kyoto_marathon-1.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./run/run_2010-01-31_tainan.html" rel="bookmark"
-                           title="Permalink to [跑] 台南古都馬拉松，第二馬">[跑] 台南古都馬拉松，第二馬</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2010-01-31T00:00:00">
-                2010-01-31 00:00
-        </abbr>
-
-        <p>In <a href="./category/run.html">run</a>. </p>
-<p>tags: <a href="./tag/diary.html">diary</a></p>
-</footer><!-- /.post-info -->                <p>11月中就開始維持每星期跑2~3次10k，練了幾次間歇，原本是要好好準備2011高雄馬拉松，想要拿台南馬拉松來當練習，原本考慮跑半馬就好了，但是在填報名表時還是受不了誘惑勾了全馬。
-但是就在比賽前二星期因為感冒、天氣不好(藉口)，沒有練到LSD，這場馬拉松也是抱著一種不要被車子載回來就好的心情下去##的。
-最近晚睡的結果，也是一直到了快三點才睡，五點就要起來了...
-早上在市府廣場集合，人也很多，天氣很冷，6點起跑，天都還沒亮。以最慢的速度開始跑，希望不要到20k就掛掉。沒想到雖然跑前沒練到LSD，前面20k跑起來還不算累，甚至比起二年前來跑半馬時輕鬆許多，花了大概2小時。</p>
-<p>過了安南區國姓大橋後的景色就是魚溫和荒地，一直到七股去，這一段好感覺好長，終於看到折返點，到25k時，開始覺得不舒##了，開始放慢一點速度，國姓大橋之後開始走走跑跑，也是擔心受傷，影嚮下個月的高雄馬，所以覺得腳酸就停下來快走。
-4:47?經過終點，成績出來</p>
-<p>算是有跑進五小時，破個人爛PB。不過因為沒有太拚，所以跑完不到一星期就恢復了。</p>
-
-                <a class="readmore" href="./run/run_2010-01-31_tainan.html">read more</a>
-                <p>There are <a href="./run/run_2010-01-31_tainan.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
                         <a href="./index4.html">&laquo;</a>
-                Page 5 / 5
+                Page 5 / 6
+            <a href="./index6.html">&raquo;</a>
     </p>
                         </section><!-- /#content -->
                     <section id="extras" class="body">

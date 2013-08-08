@@ -1447,6 +1447,10 @@ $ make github #自動執行ghp-import到github pages
 this is a foo_ .
 .. _foo: http://foo.bar
 &lt;/pre&gt;
+&lt;p&gt;內部連結:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+`京都行 &amp;lt;|filename|/travel/2012_kyoto_marathon-1.rst&amp;gt;`_
+&lt;/pre&gt;
 &lt;p&gt;區塊:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 foo::
@@ -2166,7 +2170,19 @@ extensions = ['sphinx.ext.graphviz']
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="comments"&gt;
-&lt;h3&gt;Comments&lt;/h3&gt;
+&lt;h3&gt;Comments 註解&lt;/h3&gt;
+&lt;p&gt;單行:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. This is a comment.
+&lt;/pre&gt;
+&lt;p&gt;區塊:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+..
+   This whole indented block
+   is a comment.
+
+   Still in the comment.
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id9"&gt;
@@ -2260,6 +2276,14 @@ Ctrl-b [ 上/下/左/右 , q 離開
 &lt;h2&gt;Tools&lt;/h2&gt;
 &lt;div class="section" id="dot-grphviz"&gt;
 &lt;h3&gt;dot (grphviz)&lt;/h3&gt;
+&lt;p&gt;example:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+digraph foo {
+  hello [shape=&amp;quot;diamond&amp;quot;, label=&amp;quot;hihi \nhello&amp;quot;]
+  world
+  hello -&amp;gt; world [label=&amp;quot;Y&amp;quot;]
+}
+&lt;/pre&gt;
 &lt;p&gt;輸出png:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 dot foo.dot -Tpng -o foo.png
@@ -2423,6 +2447,13 @@ $ lsof -n -i4TCP:5000 | grep LISTEN # 找出port5000
 $ rsync -av /etc /tmp () # 將 /etc/ 的資料備份到 /tmp/etc 內(local)
 $ rsync -av -e ssh user&amp;#64;host:/etc /tmp 將遠端 /etc 備份到local主機的 /tmp 內
 &lt;/pre&gt;
+&lt;p&gt;dns:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+dig foobar.com        # simple query
+dig +trace foobar.com # detail
+dig foobar.com mx
+&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;.&lt;/em&gt; 表示the root of the hierarchy&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://blog.longwin.com.tw/2010/02/netstat-check-connect-2010/"&gt;使用 netstat 找出不正常的連線 | Tsung's Blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

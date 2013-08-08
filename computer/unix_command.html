@@ -138,6 +138,13 @@ $ lsof -n -i4TCP:5000 | grep LISTEN # 找出port5000
 $ rsync -av /etc /tmp () # 將 /etc/ 的資料備份到 /tmp/etc 內(local)
 $ rsync -av -e ssh user&#64;host:/etc /tmp 將遠端 /etc 備份到local主機的 /tmp 內
 </pre>
+<p>dns:</p>
+<pre class="literal-block">
+dig foobar.com        # simple query
+dig +trace foobar.com # detail
+dig foobar.com mx
+</pre>
+<p><em>.</em> 表示the root of the hierarchy</p>
 <ul class="simple">
 <li><a class="reference external" href="http://blog.longwin.com.tw/2010/02/netstat-check-connect-2010/">使用 netstat 找出不正常的連線 | Tsung's Blog</a></li>
 </ul>

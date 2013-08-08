@@ -124,6 +124,14 @@ Ctrl-b [ 上/下/左/右 , q 離開
 <h2>Tools</h2>
 <div class="section" id="dot-grphviz">
 <h3>dot (grphviz)</h3>
+<p>example:</p>
+<pre class="literal-block">
+digraph foo {
+  hello [shape=&quot;diamond&quot;, label=&quot;hihi \nhello&quot;]
+  world
+  hello -&gt; world [label=&quot;Y&quot;]
+}
+</pre>
 <p>輸出png:</p>
 <pre class="literal-block">
 dot foo.dot -Tpng -o foo.png
