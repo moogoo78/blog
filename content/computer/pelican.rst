@@ -65,6 +65,11 @@ Quick-start
   this is a foo_ .
   .. _foo: http://foo.bar
 
+內部連結::
+
+  `京都行 <|filename|/travel/2012_kyoto_marathon-1.rst>`_  
+
+
 區塊::
 
   foo::

@@ -107,6 +107,17 @@ Tools
 
 dot (grphviz)
 ----------------
+
+
+example::
+
+  digraph foo {
+    hello [shape="diamond", label="hihi \nhello"]
+    world
+    hello -> world [label="Y"]
+  }
+
+
 輸出png::
 
   dot foo.dot -Tpng -o foo.png

@@ -209,8 +209,21 @@ conf.py的extension加入::
 
 
 
-Comments
---------
+Comments 註解
+------------------
+
+單行::
+
+  .. This is a comment.
+
+區塊::
+
+  ..
+     This whole indented block
+     is a comment.
+
+     Still in the comment.
+
 
 參考資料
 ===========

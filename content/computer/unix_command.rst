@@ -108,8 +108,13 @@ rsync::
   $ rsync -av /etc /tmp () # 將 /etc/ 的資料備份到 /tmp/etc 內(local)
   $ rsync -av -e ssh user@host:/etc /tmp 將遠端 /etc 備份到local主機的 /tmp 內
 
+dns::
 
+  dig foobar.com        # simple query
+  dig +trace foobar.com # detail
+  dig foobar.com mx
 
+*.* 表示the root of the hierarchy
 
 * `使用 netstat 找出不正常的連線 | Tsung's Blog <http://blog.longwin.com.tw/2010/02/netstat-check-connect-2010/>`__
 
