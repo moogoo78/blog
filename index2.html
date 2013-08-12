@@ -2,9 +2,9 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>Gentle Runner</title>
+        <title>Suhen's blog</title>
         <link rel="stylesheet" href="./theme/css/main.css">
-                <link href="http://gentlerunner.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gentle Runner Atom Feed" />
+                <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's blog Atom Feed" />
                 
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,7 +13,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="./">Gentle Runner </a></h1>
+                <h1><a href="./">Suhen's blog </a></h1>
                 <nav><ul>
                                                                                 <li ><a href="./category/computer.html">電腦</a></li>
                                 <li ><a href="./category/music.html">音樂</a></li>
@@ -32,6 +32,51 @@
                  
                             <section id="content" class="body">
                     <ol id="posts-list" class="hfeed" start="9">
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="./computer/python.html" rel="bookmark"
+                           title="Permalink to Python">Python</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-07-10T14:02:00">
+                2013-07-10 14:02
+        </abbr>
+
+        <p>In <a href="./category/computer.html">computer</a>. </p>
+<p>tags: <a href="./tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="quick-start">
+<h2>Quick Start</h2>
+<p>path:</p>
+<pre class="literal-block">
+(Mac)$ /Library/Python/2.7/site-packages
+</pre>
+<p>snippets:</p>
+<pre class="literal-block">
+#!/usr/bin/env python
+# -.- coding: utf-8 -.-
+
+import sys
+if __name__ == '__main__':
+    if len(sys.argv) &gt; 1:
+        main(sys.argv[1])
+</pre>
+<p>if/else三元運算 (ternary operator):</p>
+<pre class="literal-block">
+A = Y if X else Z
+</pre>
+<div class="section" id="regular-expression">
+<h3>regular expression</h3>
+<p>只留a-z, A-Z, 0-9:</p>
+<pre class="literal-block">
+re.sub(r'[^a-zA-Z_0-9]', '', did ...</pre></div></div>
+                <a class="readmore" href="./computer/python.html">read more</a>
+                <p>There are <a href="./computer/python.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
                         <li><article class="hentry">    
                 <header>
                     <h1><a href="./language/deutsch_deklination.html" rel="bookmark"
@@ -415,64 +460,6 @@ C-q C-j
                 <a class="readmore" href="./travel/2012_kyoto_marathon.html">read more</a>
                 <p>There are <a href="./travel/2012_kyoto_marathon.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="./computer/emacs_replace-regexp.rst.html" rel="bookmark"
-                           title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-06-25T10:07:00">
-                2013-06-25 10:07
-        </abbr>
-
-        <p>In <a href="./category/computer.html">computer</a>. </p>
-<p>tags: <a href="./tag/note.html">note</a><a href="./tag/emacs.html">emacs</a></p>
-</footer><!-- /.post-info -->                <p>指令:</p>
-<pre class="literal-block">
-M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
-</pre>
-<p>特殊字</p>
-<ul class="simple">
-<li><tt class="docutils literal">\&amp;’</tt> 完整的匹配字</li>
-<li><tt class="docutils literal">\d</tt> d是數字, 表示匹配在第幾個group (back reference)</li>
-<li><tt class="docutils literal">\#</tt> 累加, 發生第幾次,第一次從0開始</li>
-<li><tt class="docutils literal">\,</tt> Lisp expression</li>
-<li><tt class="docutils literal">\?</tt> 詢問</li>
-</ul>
-<div class="section" id="id1">
-<h2>範例</h2>
-<p>數字編號:</p>
-<pre class="literal-block">
-1987:Bogotá
-5243:Fabergé
-
-\(.+:\)
-\#.
-
-0.Bogotá
-1.Fabergé
-
-如果要從1開始:
-\,(1+ \#).
-</pre>
-<p>HTML H降級:</p>
-<pre class="literal-block">
-&lt;h1&gt;silly&lt;/h1&gt;
-&lt;h2&gt;walk&lt;/h2&gt;
-
-&lt;\(/?\)h\([0-9]\)&gt;
-&lt;\1h\,(1+ \#2)&gt;
-
-&lt;h2&gt;silly&lt;/h2&gt;
-&lt;h3 ...</pre></div>
-                <a class="readmore" href="./computer/emacs_replace-regexp.rst.html">read more</a>
-                <p>There are <a href="./computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
                         <a href="./index.html">&laquo;</a>
@@ -492,7 +479,7 @@ M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
                                 <div class="social">
                         <h2>social</h2>
                         <ul>
-                            <li><a href="http://gentlerunner.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            <li><a href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
                             
                                                     <li><a href="http://www.facebook.com/farseerfc">facebook</a></li>
                                                     <li><a href="http://twitter.com/moogoo">twitter</a></li>
