@@ -1,9 +1,8 @@
 天空的拼圖 - Kapur 冰片木
 ###########################
 :date: 2013-04-20 04:37
-:category: nature
-:tags: tree
 :slug: kapur
+:tags: natural
 
 週四參加希望山林 Hope_Forest_ 的志工課程，請到荒野保護協會的香萍來上課，講的十分的精彩，投影片中有一張另我感到震撼的照片, 上面只寫著Kapur。於是我回來用關鍵字Kapur查了一下：照片是來自於馬來西亞政府一個植物研究機構 (Forest Research Institute Malaysia, FRIM_ )的園區內，有一種高大筆直的樹叫「冰片木」，Dryobalanops aromatica (Dipterocarpaceae)，可以提煉類似樟腦的香料，中藥材稱「龍腦香」或「龍腦冰片」，木材市場上稱作Kapur。
 
