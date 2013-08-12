@@ -26,4 +26,10 @@
 晚上在旅館查了天氣，降雨機率有5,60% ，氣象網站給了一個不適合爬山的圖示，不過不敢想太多既來之則安之。
 
 
-`日本北陸 - 立山劍岳行 系列 <|filename|/travel/2013_tsurugi_dake.rst>`_ 
+系列文章
+==========
+
+* `日本北陸 - 立山劍岳行 (1/4) - 第一天 台北 -> 富山 <|filename|/travel/2013_tsurugi_dake_1.rst>`_ 
+* `日本北陸 - 立山劍岳行 (2/4) - 第二天 室堂、雄山、劍山莊 <|filename|/travel/2013_tsurugi_dake_2.rst>`_ 
+* `日本北陸 - 立山劍岳行 (3/4) - 第三天 雷鳥澤 <|filename|/travel/2013_tsurugi_dake_3.rst>`_ 
+* `日本北陸 - 立山劍岳行 (4/4) - 第四天金澤市一日遊、回程 <|filename|/travel/2013_tsurugi_dake_4.rst>`_ 
