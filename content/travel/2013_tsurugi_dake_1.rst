@@ -6,7 +6,7 @@
 :slug: tsurugi_dake_1_toyama
 
 
-第一天 台北 -> 富山
+第一天 (7/21) 台北 -> 富山
 ===========================
 
 .. image:: http://farm4.staticflickr.com/3747/9425169001_6b97361128.jpg

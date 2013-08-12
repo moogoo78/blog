@@ -46,8 +46,18 @@ GPS 圖資
 
 立山
 =============
-立山、富士山、白山為日本三靈山之一，自古以來就是山岳信仰濃厚的地方。
+立山、富士山、白山為日本三靈山之一，自古以來就是山岳信仰濃厚的地方。其中立山又稱為日本阿爾卑斯山，?? 日本屋脊
 
+富山縣跟長野縣的交界，信濃大町 2500公尺以上，
+
+的立山車站
+
+
+一般攀登劍岳有2條路線，大部分都是走別山尾根 (南稜)，另一個是早月尾根 (北稜)，也有人是走長次郎雪溪登頂。
+
+
+.. image:: /static/images/travel/2013_tsurugidake/tsurugidake_google_earth.png
+   :width: 760px
 
 延伸連結
 ===========
@@ -60,7 +70,11 @@ GPS 圖資
 * `Japan Trip 2009 – 昔日の英雄は一週間立山と劍岳と富士山へ – Part 3 | Blog | 這些年來 In All Those Travelling Years - Yahoo! Blog <http://blog.yahoo.com/_G6IE7WCYET4CZTG4MBHGDJARHY/articles/68790>`__
 * `日本劍岳登山見聞 <http://www.mountain.org.tw/WebBBS/Record/RecordOne.aspx?RecordID=239>`__ (台大登山社)
 * `Rroy: 日本百名山行之立山縱走、劍岳(Tsurugi dake) 前篇 <http://rroyc.blogspot.com/2012/12/tsurugi-dake.html>`__
+
+網路的劍岳畫面
+------------------
 * 影片 `立山ワンダーマウンテンズ - HAPPY DAYZ PRODUCTIONS <http://happydayz.jp/?p=526>`__
+* `08.09.10-13 日本 立山黑部與劍岳(剣岳)/ The Tateyama-Kurobe area and Tsurugi Dake, Japan - a set on Flickr <http://www.flickr.com/photos/bettaman/sets/72157607412143981/>`__
 
 相關資訊
 ------------
@@ -87,9 +101,8 @@ GPS 圖資
 
 * `日本北陸 - 立山劍岳行 (1/4) - 第一天 台北 -> 富山 <|filename|/travel/2013_tsurugi_dake_1.rst>`_ 
 * `日本北陸 - 立山劍岳行 (2/4) - 第二天 室堂、雄山、劍山莊 <|filename|/travel/2013_tsurugi_dake_2.rst>`_ 
-* `日本北陸 - 立山劍岳行 (3/4) <|filename|/travel/2013_tsurugi_dake_3.rst>`_ 
-
-.. * `日本北陸 - 立山劍岳行 (4/4) <|filename|/travel/2013_tsurugi_dake_4.rst>`_ 
+* `日本北陸 - 立山劍岳行 (3/4) - 第三天 雷鳥澤 <|filename|/travel/2013_tsurugi_dake_3.rst>`_ 
+* `日本北陸 - 立山劍岳行 (4/4) - 金澤市一日游<|filename|/travel/2013_tsurugi_dake_4.rst>`_ 
 
 
 

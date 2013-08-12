@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u'moogoo'
-SITENAME = u'Gentle Runner'
-SITEURL = 'http://gentlerunner.org'
+SITENAME = u"Suhen's blog"
+SITEURL = 'http://blog.suhen.org'
 
 TIMEZONE = 'Asia/Taipei'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d %H:%M'
