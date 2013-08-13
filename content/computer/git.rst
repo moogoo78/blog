@@ -151,6 +151,7 @@ git branch::
     git checkout abcd, 移到abcd
     git branch abcd # 開新branch, 但不移駕
     git co -b abcd 開新branch, 而且移駕到新開的branch
+    git branch -m old new # rename branch
 
 git merge::
 

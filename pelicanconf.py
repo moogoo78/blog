@@ -43,7 +43,7 @@ SITEMAP = {
 #          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('facebook', 'http://www.facebook.com/farseerfc'),
+SOCIAL = (('facebook', 'http://www.facebook.com/moogee.lee'),
           ('twitter', 'http://twitter.com/moogoo'),
           ('github', 'http://github.com/moogoo78'))
           
