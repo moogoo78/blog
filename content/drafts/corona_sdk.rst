@@ -63,3 +63,11 @@ debug
 logcat::
 
   adb logcat Corona:v *:s
+
+
+unfolder
+====================
+連線測試
+https://github.com/timrichardsn/CheckDeviceInternetConnection/blob/master/checkInternet.lua
+http://developer.coronalabs.com/code/show-native-activity-indicator-while-connecting-and-downloading
+http://developer.coronalabs.com/code/check-internet-connection

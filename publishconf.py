@@ -12,7 +12,7 @@ FEED_DOMAIN = SITEURL
 
 # Uncomment following line for absolute URLs in production:
 #RELATIVE_URLS = False
-DISQUS_SITENAME = "suhenorg"
+DISQUS_SITENAME = "blogsuhenorg"
 GOOGLE_ANALYTICS = "UA-38928548-1"
 
 # for github pages
