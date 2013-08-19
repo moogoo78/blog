@@ -172,6 +172,10 @@ relationship, associate
   db.session.append(Bar.query.get(1))
   db.session.commit() 
 
+debug
+--------
+http://pythonhosted.org/Flask-SQLAlchemy/api.html#flask.ext.sqlalchemy.get_debug_queries
+
 比較
 ========
 * `SQLAlchemy and You | Armin Ronacher's Thoughts and Writings <http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/>`__
