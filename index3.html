@@ -34,6 +34,64 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html" rel="bookmark"
+                           title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-25T10:07:00">
+                2013-06-25 10:07
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a><a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info -->                <p>指令:</p>
+<pre class="literal-block">
+M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
+</pre>
+<p>特殊字</p>
+<ul class="simple">
+<li><tt class="docutils literal">\&amp;’</tt> 完整的匹配字</li>
+<li><tt class="docutils literal">\d</tt> d是數字, 表示匹配在第幾個group (back reference)</li>
+<li><tt class="docutils literal">\#</tt> 累加, 發生第幾次,第一次從0開始</li>
+<li><tt class="docutils literal">\,</tt> Lisp expression</li>
+<li><tt class="docutils literal">\?</tt> 詢問</li>
+</ul>
+<div class="section" id="id1">
+<h2>範例</h2>
+<p>數字編號:</p>
+<pre class="literal-block">
+1987:Bogotá
+5243:Fabergé
+
+\(.+:\)
+\#.
+
+0.Bogotá
+1.Fabergé
+
+如果要從1開始:
+\,(1+ \#).
+</pre>
+<p>HTML H降級:</p>
+<pre class="literal-block">
+&lt;h1&gt;silly&lt;/h1&gt;
+&lt;h2&gt;walk&lt;/h2&gt;
+
+&lt;\(/?\)h\([0-9]\)&gt;
+&lt;\1h\,(1+ \#2)&gt;
+
+&lt;h2&gt;silly&lt;/h2&gt;
+&lt;h3 ...</pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/emacs_dired_rename.html" rel="bookmark"
                            title="Permalink to [Computer] 用Emacs dired-mode批次改檔名">[Computer] 用Emacs dired-mode批次改檔名</a></h1>
                 </header>
@@ -314,47 +372,6 @@ alt + 數字
 <p>(圖片出處: <a class="reference external" href="http://homepage3.nifty.com/salonmusic/index.html">salon music ...</a></p>
                 <a class="readmore" href="http://blog.suhen.org/music/salon_music.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/music/salon_music.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/music/hiyamakachi_bushi.html" rel="bookmark"
-                           title="Permalink to 琉球(沖縄)民謡 - ヒヤミカチ節">琉球(沖縄)民謡 - ヒヤミカチ節</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-05-11T07:15:00">
-                2013-05-11 07:15
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/music.html">music</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/jing-dian-fan-chang.html">經典翻唱</a></p>
-</footer><!-- /.post-info -->                <p>這首歌聽起來輕快熱情，一下就吸引我的注意。有空再來研究一下沖繩民謠。</p>
-<p>「ヒヤミカチ」沖縄語加油打氣的意思，戰後沖縄被美國接管, 這首生負鼓舞著辛苦的沖繩人民的任務。</p>
-<p>歌詞:</p>
-<pre class="literal-block">
-作詞：平良新助
-作曲：山内盛彬
-
-名に立ちゅる沖縄  宝島でむぬ
-心うち合わち  う立ちみそり  う立ちみそり
-ヒャッ  ヒャッ  ヒャッ  ヒャッ  ヒャッ
-ヒヤミカチ起きり  ヒヤミカチ起きり
-
-稲  栗ぬなうり  みるく  世ぬ印
-心うち合わち  気張いみそり  汽張いみそり
-ヒャッ  ヒャッ  ヒャッ  ヒャッ  ヒャッ
-ヒヤミカチ起きり  ヒヤミカチ起きり
-
-がくやないじゅらさ  花や咲ち美らさ
-我したくぬ沖縄  世界に知らさ  世界に知らさ
-ヒャッ  ヒャッ  ヒャッ  ヒャッ  ヒャッ
-ヒヤミカチ起きり  ヒヤミカチ起きり ...</pre>
-                <a class="readmore" href="http://blog.suhen.org/music/hiyamakachi_bushi.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/music/hiyamakachi_bushi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
