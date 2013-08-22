@@ -56,6 +56,14 @@ list
 
 via: http://www.lua.org/pil/19.3.html
 
+sanity check
+----------------
+檢查特殊字元::
+
+  if(nick_input.text:match("%W")) then
+      alert = native.showAlert( "StudyBank App", "暱稱只接受非英文和數字", { "OK"})                
+      return
+  end
 
 debug
 =============================
