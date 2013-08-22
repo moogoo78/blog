@@ -79,6 +79,16 @@
 </pre></div>
 <p>via: <a class="reference external" href="http://www.lua.org/pil/19.3.html">http://www.lua.org/pil/19.3.html</a></p>
 </div>
+<div class="section" id="sanity-check">
+<h3>sanity check</h3>
+<p>檢查特殊字元:</p>
+<pre class="literal-block">
+if(nick_input.text:match(&quot;%W&quot;)) then
+    alert = native.showAlert( &quot;StudyBank App&quot;, &quot;暱稱只接受非英文和數字&quot;, { &quot;OK&quot;})
+    return
+end
+</pre>
+</div>
 </div>
 <div class="section" id="debug">
 <h2>debug</h2>
