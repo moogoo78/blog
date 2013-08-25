@@ -16,8 +16,7 @@ ARTICLE_URL = '{category}/{slug}.html'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
 #ARTICLE_SAVE_AS = '{date:%Y-%m-%d}_{slug}.html'
 
-#THEME = 'themes/pelican-foundation'
-THEME = 'reallynotmyidea'
+THEME = 'themes/reallynotmyidea'
 
 DELETE_OUTPUT_DIRECTORY = True
 
