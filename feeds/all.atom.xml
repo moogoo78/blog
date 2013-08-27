@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-08-22T00:54:00+08:00</updated><entry><title>書摘</title><link href="http://blog.suhen.org/book/quote.html" rel="alternate"></link><updated>2013-08-22T00:54:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-22:book/quote.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-08-27T18:07:00+08:00</updated><entry><title>用Emacs的skeleton快速建立pelican的blog內文</title><link href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="alternate"></link><updated>2013-08-27T18:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-27:computer/emacs_skeleton.html</id><summary type="html">&lt;p&gt;用 &lt;a class="reference external" href="http://blog.suhen.org/computer/pelican.html"&gt;Pelican&lt;/a&gt; 寫blog時都要輸入一堆metadata很麻煩, 利用 &lt;a class="reference external" href="http://blog.suhen.org/computer/emacs_docs.html"&gt;Emacs&lt;/a&gt; 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;define-skeleton&lt;/span&gt; &lt;span class="nv"&gt;insert-pelican-template&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;Insert templete for pelican static blog system&amp;quot;&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Title: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nv"&gt;?\n&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;#############################&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;?\n&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;:date: &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;insert-current-date&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;?\n&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;:category: &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;category: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;?\n&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;:tags: &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;tags: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;?\n&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;:slug: &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;slug: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;?\n&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;參考:
+&lt;a class="reference external" href="http://www.emacswiki.org/emacs/SkeletonMode"&gt;EmacsWiki: Skeleton Mode&lt;/a&gt;&lt;/p&gt;
+</summary><category term="emacs"></category></entry><entry><title>書摘</title><link href="http://blog.suhen.org/book/quote.html" rel="alternate"></link><updated>2013-08-22T00:54:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-22:book/quote.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;生命中不能承受之輕, 米蘭昆德拉, 尉遲秀譯, 皇冠叢書&lt;/h2&gt;
 &lt;p&gt;最沈重的負擔同時也是最激越的生命實現的形象。負擔越沈重，我們的生命就越貼近地面，生命就越寫實也越真實。相反的，完全沒有負擔會讓人的存在變得比空氣還輕，會讓人的存在飛起。遠離地面，遠離人世的存在，變的只是似真非真。一切動作都變得自由自在，卻又無足輕重。&lt;/p&gt;
 &lt;/div&gt;
@@ -3359,6 +3372,7 @@ $ rsync -av -e ssh user&amp;#64;host:/etc /tmp 將遠端 /etc 備份到local主�
 &lt;pre class="literal-block"&gt;
 dig foobar.com        # simple query
 dig +trace foobar.com # detail
+dig +short foobar.com # 不廢話
 dig foobar.com mx
 &lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;.&lt;/em&gt; 表示the root of the hierarchy&lt;/p&gt;

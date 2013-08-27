@@ -31,25 +31,59 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://blog.suhen.org/book/quote.html">書摘</a></h1> 
+                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/emacs_skeleton.html">用Emacs的skeleton快速建立pelican的blog內文</a></h1> 
                     <footer class="post-info">
-        <abbr class="published" title="2013-08-22T00:54:00">
-                2013-08-22 00:54
+        <abbr class="published" title="2013-08-27T18:07:00">
+                2013-08-27 18:07
         </abbr>
 
-        <p>In <a href="http://blog.suhen.org/category/book.html">book</a>. </p>
-
-</footer><!-- /.post-info --><div class="section" id="id2">
-<h2>生命中不能承受之輕, 米蘭昆德拉, 尉遲秀譯, 皇冠叢書</h2>
-<p>最沈重的負擔同時也是最激越的生命實現的形象。負擔越沈重，我們的生命就越貼近地面，生命就越寫實也越真實。相反的，完全沒有負擔會讓人的存在變得比空氣還輕，會讓人的存在飛起。遠離地面，遠離人世的存在，變的只是似真非真。一切動作都變得自由自在，卻又無足輕重。</p>
-</div>
-<p>There are <a href="http://blog.suhen.org/book/quote.html#disqus_thread">comments</a>.</p>                </article>
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info --><p>用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">Pelican</a> 寫blog時都要輸入一堆metadata很麻煩, 利用 <a class="reference external" href="http://blog.suhen.org/computer/emacs_docs.html">Emacs</a> 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!</p>
+<div class="highlight"><pre><span class="p">(</span><span class="nv">define-skeleton</span> <span class="nv">insert-pelican-template</span>
+  <span class="s">&quot;Insert templete for pelican static blog system&quot;</span>
+  <span class="s">&quot;&quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;Title: &quot;</span><span class="p">)</span><span class="nv">?\n</span>
+  <span class="s">&quot;#############################&quot;</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:date: &quot;</span> <span class="p">(</span><span class="nv">insert-current-date</span><span class="p">)</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:category: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;category: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:tags: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;tags: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:slug: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;slug: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
+<span class="p">)</span>
+</pre></div>
+<p>參考:
+<a class="reference external" href="http://www.emacswiki.org/emacs/SkeletonMode">EmacsWiki: Skeleton Mode</a></p>
+<p>There are <a href="http://blog.suhen.org/computer/emacs_skeleton.html#disqus_thread">comments</a>.</p>                </article>
                             </aside><!-- /#featured -->
                             <section id="content" class="body">
                     <h1>Other articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
                                                 
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/book/quote.html" rel="bookmark"
+                           title="Permalink to 書摘">書摘</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-08-22T00:54:00">
+                2013-08-22 00:54
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/book.html">book</a>. </p>
+
+</footer><!-- /.post-info -->                <div class="section" id="id2">
+<h2>生命中不能承受之輕, 米蘭昆德拉, 尉遲秀譯, 皇冠叢書</h2>
+<p>最沈重的負擔同時也是最激越的生命實現的形象。負擔越沈重，我們的生命就越貼近地面，生命就越寫實也越真實。相反的，完全沒有負擔會讓人的存在變得比空氣還輕，會讓人的存在飛起。遠離地面，遠離人世的存在，變的只是似真非真。一切動作都變得自由自在，卻又無足輕重。</p>
+</div>
+
+                <a class="readmore" href="http://blog.suhen.org/book/quote.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/book/quote.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
 
                  
                         <li><article class="hentry">    
@@ -300,42 +334,6 @@
 <p><a class="reference external" href="http://www.mobile01.com/topicdetail.php?f=228&amp;t=500771&amp;p=1">讓你的Garmin台灣機的延伸到日本~繁體全日本地圖 (第1頁) - GARMIN ...</a></p></div></div>
                 <a class="readmore" href="http://blog.suhen.org/travel/tsurugi_dake_1_overview.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/travel/tsurugi_dake_1_overview.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html" rel="bookmark"
-                           title="Permalink to 列印日本地形圖 - 以劍岳為例">列印日本地形圖 - 以劍岳為例</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-07-16T10:25:00">
-                2013-07-16 10:25
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/mountain.html">mountain</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/japan.html">japan</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="id2">
-<h2>緣由</h2>
-<p>為了這週末要去日本 <a class="reference external" href="http://zh.wikipedia.org/zh-tw/劍岳">劍岳</a> ，沒有地圖只好上網找電子版。</p>
-<p>日本 <a class="reference external" href="http://www.gsi.go.jp/">国土地理院</a> 有很好用的電子地圖， <a class="reference external" href="http://watchizu.gsi.go.jp/index.aspx?mesh=0000">地図閲覧サービストップページ</a> ，可以很快的選取區域找到精細的地形圖。但是沒辦法像 <a class="reference external" href="http://map.happyman.idv.tw/twmap/login.php">地圖產生器v2.51</a> 那樣根據選取的區域自動切成數張A4。因此我開始土法煉鋼，來產生漂亮的地形圖。</p>
-</div>
-<div class="section" id="id3">
-<h2>下載圖檔</h2>
-<p>觀察了一下原始圖檔，檔名也許是用日本的大地座標數字，找出最左上角 00578150025593.png，右上 00578200025593.png，左下00578150025606.png，右下00578200025606.png。</p>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">這個地圖的座標是日本測地系2000 <a class="reference external" href="http://ja.wikipedia.org/wiki/測地系">測地系 - Wikipedia</a></p>
-</div>
-<p>找到想取得的範圍 (室堂到劍岳), 寬: 0057815-0057820 (左到右)，高: 0025593-0025606 (上到下)，總共是7x14張</p>
-<p>前置網址有一些不一樣, 我是用最爛的方法, 遇到HTTP Error就在翻一下原始碼找出來。</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">os.path</span>
-<span class="kn">from</span> <span class="nn">urllib2 ...</span></pre></div></div>
-                <a class="readmore" href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

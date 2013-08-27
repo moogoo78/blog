@@ -34,6 +34,42 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html" rel="bookmark"
+                           title="Permalink to 列印日本地形圖 - 以劍岳為例">列印日本地形圖 - 以劍岳為例</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-07-16T10:25:00">
+                2013-07-16 10:25
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/mountain.html">mountain</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/japan.html">japan</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="id2">
+<h2>緣由</h2>
+<p>為了這週末要去日本 <a class="reference external" href="http://zh.wikipedia.org/zh-tw/劍岳">劍岳</a> ，沒有地圖只好上網找電子版。</p>
+<p>日本 <a class="reference external" href="http://www.gsi.go.jp/">国土地理院</a> 有很好用的電子地圖， <a class="reference external" href="http://watchizu.gsi.go.jp/index.aspx?mesh=0000">地図閲覧サービストップページ</a> ，可以很快的選取區域找到精細的地形圖。但是沒辦法像 <a class="reference external" href="http://map.happyman.idv.tw/twmap/login.php">地圖產生器v2.51</a> 那樣根據選取的區域自動切成數張A4。因此我開始土法煉鋼，來產生漂亮的地形圖。</p>
+</div>
+<div class="section" id="id3">
+<h2>下載圖檔</h2>
+<p>觀察了一下原始圖檔，檔名也許是用日本的大地座標數字，找出最左上角 00578150025593.png，右上 00578200025593.png，左下00578150025606.png，右下00578200025606.png。</p>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">這個地圖的座標是日本測地系2000 <a class="reference external" href="http://ja.wikipedia.org/wiki/測地系">測地系 - Wikipedia</a></p>
+</div>
+<p>找到想取得的範圍 (室堂到劍岳), 寬: 0057815-0057820 (左到右)，高: 0025593-0025606 (上到下)，總共是7x14張</p>
+<p>前置網址有一些不一樣, 我是用最爛的方法, 遇到HTTP Error就在翻一下原始碼找出來。</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">from</span> <span class="nn">urllib2 ...</span></pre></div></div>
+                <a class="readmore" href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/music/music_for_a_found_harmonium.html" rel="bookmark"
                            title="Permalink to Music For A Found Harmonium">Music For A Found Harmonium</a></h1>
                 </header>
@@ -355,93 +391,6 @@ print django.get_version()
 <p>這首作品很都地方都寫&quot;晚禱&quot; (Vespers)，但其實應該是徹夜禱(All-Night Vigir ...</p></div>
                 <a class="readmore" href="http://blog.suhen.org/music/rachmaninoff_all_night_vigil.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/music/rachmaninoff_all_night_vigil.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/rest_sphinx.html" rel="bookmark"
-                           title="Permalink to reST – reStructuredText與Sphinx">reST – reStructuredText與Sphinx</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-03-28T00:00:00">
-                2013-03-28 00:00
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <p><a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> 是Python <a class="reference external" href="http://docutils.sourceforge.net/index.html">Docutils: Documentation Utilities</a> 的一部分, 而 <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a> 可以更方便產生，管理文件的工具</p>
-<p>縮排用二個或三個空白都可以，Emacs的ReST預設用三個</p>
-<div class="section" id="id1">
-<h2>使用</h2>
-<p>安裝:</p>
-<pre class="literal-block">
-$ pip install Sphinx
-</pre>
-<p>某目錄下:</p>
-<pre class="literal-block">
-$ sphinx-quickstart
-</pre>
-<p>會自動設定好conf.py, 和相關檔案</p>
-<p>產生網頁檔:</p>
-<pre class="literal-block">
-$ make html
-</pre>
-</div>
-<div class="section" id="id2">
-<h2>文件結構</h2>
-<div class="section" id="id3">
-<h3>分段</h3>
-<p>用一串連續的=*-^&quot;~等字符來標示，通常用:</p>
-<pre class="literal-block">
-==========
-全文標題
-==========
-
-大標題
-========
-
-小標題
----------
-
-段落
-^^^^^^
-</pre>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">中文字用的分段標示要長一點點</p>
-</div>
-</div>
-<div class="section" id="id4">
-<h3>分隔</h3>
-<p>像HTML裡的 <tt class="docutils literal">&lt;hr&gt;</tt>:</p>
-<pre class="literal-block">
-----
-</pre>
-</div>
-</div>
-<div class="section" id="inline-markup">
-<h2>修飾字 Inline markup</h2>
-<p><em>斜體</em>:</p>
-<pre class="literal-block">
-*italic*
-</pre>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">中文不能斜</p>
-</div>
-<p><strong>粗體</strong>:</p>
-<pre class="literal-block">
-**bold**
-</pre>
-<p><tt class="docutils literal">有底色</tt>:</p>
-<pre class="literal-block">
-``有底色 ...</pre></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/rest_sphinx.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/rest_sphinx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

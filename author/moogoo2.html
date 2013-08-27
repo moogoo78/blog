@@ -332,6 +332,40 @@ M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
                  
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="bookmark"
+                           title="Permalink to 用Emacs的skeleton快速建立pelican的blog內文">用Emacs的skeleton快速建立pelican的blog內文</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-08-27T18:07:00">
+                2013-08-27 18:07
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info -->                <p>用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">Pelican</a> 寫blog時都要輸入一堆metadata很麻煩, 利用 <a class="reference external" href="http://blog.suhen.org/computer/emacs_docs.html">Emacs</a> 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!</p>
+<div class="highlight"><pre><span class="p">(</span><span class="nv">define-skeleton</span> <span class="nv">insert-pelican-template</span>
+  <span class="s">&quot;Insert templete for pelican static blog system&quot;</span>
+  <span class="s">&quot;&quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;Title: &quot;</span><span class="p">)</span><span class="nv">?\n</span>
+  <span class="s">&quot;#############################&quot;</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:date: &quot;</span> <span class="p">(</span><span class="nv">insert-current-date</span><span class="p">)</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:category: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;category: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:tags: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;tags: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:slug: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;slug: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
+<span class="p">)</span>
+</pre></div>
+<p>參考:
+<a class="reference external" href="http://www.emacswiki.org/emacs/SkeletonMode">EmacsWiki: Skeleton Mode</a></p>
+
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_skeleton.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_skeleton.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/ganglia.html" rel="bookmark"
                            title="Permalink to Ganglia">Ganglia</a></h1>
                 </header>
@@ -370,46 +404,6 @@ There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Co
 <p>解決方法, 重新安裝 ...</p></div>
                 <a class="readmore" href="http://blog.suhen.org/computer/ganglia.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/git.html" rel="bookmark"
-                           title="Permalink to GIT">GIT</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-03-23T00:00:00">
-                2013-03-23 00:00
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="quick-start">
-<h2>Quick Start</h2>
-<div class="section" id="init">
-<h3>init</h3>
-<p>Server (Repository):</p>
-<pre class="literal-block">
-mkdir example.git
-cd example.git
-git --bare init # init加--bare, 表示只會在當下目錄放git的東西，不會有原始檔案, 如果要原始檔案再git clone出來就有了
-</pre>
-<p>Client:</p>
-<pre class="literal-block">
-mkdir example
-cd example
-git init
-touch README
-git add README
-git commit -m 'first commit'
-git remote add origin ssh://USERNAME&#64;REMOTE_SERVER/~/example.git
-git push origin master (第一次之後只要打git ...</pre></div></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/git.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/git.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

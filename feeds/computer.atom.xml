@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-07-10T14:02:00+08:00</updated><entry><title>Python</title><link href="http://blog.suhen.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-08-27T18:07:00+08:00</updated><entry><title>用Emacs的skeleton快速建立pelican的blog內文</title><link href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="alternate"></link><updated>2013-08-27T18:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-27:computer/emacs_skeleton.html</id><summary type="html">&lt;p&gt;用 &lt;a class="reference external" href="http://blog.suhen.org/computer/pelican.html"&gt;Pelican&lt;/a&gt; 寫blog時都要輸入一堆metadata很麻煩, 利用 &lt;a class="reference external" href="http://blog.suhen.org/computer/emacs_docs.html"&gt;Emacs&lt;/a&gt; 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;define-skeleton&lt;/span&gt; &lt;span class="nv"&gt;insert-pelican-template&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;Insert templete for pelican static blog system&amp;quot;&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Title: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nv"&gt;?\n&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;#############################&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;?\n&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;:date: &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;insert-current-date&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;?\n&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;:category: &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;category: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;?\n&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;:tags: &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;tags: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;?\n&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;:slug: &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;slug: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;?\n&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;參考:
+&lt;a class="reference external" href="http://www.emacswiki.org/emacs/SkeletonMode"&gt;EmacsWiki: Skeleton Mode&lt;/a&gt;&lt;/p&gt;
+</summary><category term="emacs"></category></entry><entry><title>Python</title><link href="http://blog.suhen.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
 &lt;h2&gt;Quick Start&lt;/h2&gt;
 &lt;p&gt;path:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -2455,6 +2468,7 @@ $ rsync -av -e ssh user&amp;#64;host:/etc /tmp 將遠端 /etc 備份到local主�
 &lt;pre class="literal-block"&gt;
 dig foobar.com        # simple query
 dig +trace foobar.com # detail
+dig +short foobar.com # 不廢話
 dig foobar.com mx
 &lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;.&lt;/em&gt; 表示the root of the hierarchy&lt;/p&gt;
