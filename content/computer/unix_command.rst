@@ -112,6 +112,7 @@ dns::
 
   dig foobar.com        # simple query
   dig +trace foobar.com # detail
+  dig +short foobar.com # 不廢話
   dig foobar.com mx
 
 *.* 表示the root of the hierarchy
