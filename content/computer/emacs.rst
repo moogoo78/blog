@@ -62,6 +62,21 @@ M->            end-of-buffer
 
 search: M-c 切換case-sensitivity
 
+編輯 Editing
+------------------
+
+===================== ================================
+M-x string-replace    replace
+M-x query-replace     confirm (M-%)
+M-x replace-regexp    replace with regex
+C-t                   對調兩字元
+M-t                   對調兩word
+C-x C-t               對調兩行, 跟游標上一行對調
+M-c                   單字的第一個字大寫
+M-u                   單字改大寫
+M-l                   單字改小寫
+C-S-Backspace         刪除整行
+===================== ================================
 
 Register and Bookmark
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -93,26 +108,24 @@ C-x <RET> c raw-text <RET>    load unibyte
 ===========================   =========================
 
 
-編輯 Editing
-------------------
-
-===================== ================================
-M-x string-replace    replace
-M-x query-replace     confirm
-M-x replace-regexp    replace with regex
-C-t                   對調兩字元
-M-t                   對調兩word
-C-x C-t               對調兩行, 跟游標上一行對調
-M-c                   單字的第一個字大寫
-M-u                   單字改大寫
-M-l                   單字改小寫
-===================== ================================
-
-
 特殊符號
 ----------------------
 
 - C-q C-j 換行符號, Windows編輯器的^M: M-x replace-string [ENTER] C-q C-m [ENTER] \n [ENTER]
+
+Help
+-------------
+
+============  ===================================
+C-h ?         help的help, SPACE和Backspace上下移動
+C-h v         M-x describe-variable
+C-h f         M-x describe-function
+C-h m         M-x describe-mode
+C-h k KEYS    M-x describe-key KEYS
+C-h c KEYS    M-x describe-key-briefly
+C-h b         M-x describe-bindings
+============  ===================================
+
 
 Modes
 ===========
@@ -185,6 +198,7 @@ C-c C-u     上一層
 Agenda
 ^^^^^^^^
 C-c C-x C-s archive
+C-c [ 把檔案加入agenda
 
 Calc
 --------
