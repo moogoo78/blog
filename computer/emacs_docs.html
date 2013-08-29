@@ -102,6 +102,47 @@ C-RET
 </tbody>
 </table>
 <p>search: M-c 切換case-sensitivity</p>
+</div>
+<div class="section" id="editing">
+<h3>編輯 Editing</h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>M-x string-replace</td>
+<td>replace</td>
+</tr>
+<tr><td>M-x query-replace</td>
+<td>confirm (M-%)</td>
+</tr>
+<tr><td>M-x replace-regexp</td>
+<td>replace with regex</td>
+</tr>
+<tr><td>C-t</td>
+<td>對調兩字元</td>
+</tr>
+<tr><td>M-t</td>
+<td>對調兩word</td>
+</tr>
+<tr><td>C-x C-t</td>
+<td>對調兩行, 跟游標上一行對調</td>
+</tr>
+<tr><td>M-c</td>
+<td>單字的第一個字大寫</td>
+</tr>
+<tr><td>M-u</td>
+<td>單字改大寫</td>
+</tr>
+<tr><td>M-l</td>
+<td>單字改小寫</td>
+</tr>
+<tr><td>C-S-Backspace</td>
+<td>刪除整行</td>
+</tr>
+</tbody>
+</table>
 <div class="section" id="register-and-bookmark">
 <h4>Register and Bookmark</h4>
 <table border="1" class="docutils">
@@ -173,49 +214,43 @@ C-RET
 </tbody>
 </table>
 </div>
-<div class="section" id="editing">
-<h3>編輯 Editing</h3>
-<table border="1" class="docutils">
-<colgroup>
-<col width="40%" />
-<col width="60%" />
-</colgroup>
-<tbody valign="top">
-<tr><td>M-x string-replace</td>
-<td>replace</td>
-</tr>
-<tr><td>M-x query-replace</td>
-<td>confirm</td>
-</tr>
-<tr><td>M-x replace-regexp</td>
-<td>replace with regex</td>
-</tr>
-<tr><td>C-t</td>
-<td>對調兩字元</td>
-</tr>
-<tr><td>M-t</td>
-<td>對調兩word</td>
-</tr>
-<tr><td>C-x C-t</td>
-<td>對調兩行, 跟游標上一行對調</td>
-</tr>
-<tr><td>M-c</td>
-<td>單字的第一個字大寫</td>
-</tr>
-<tr><td>M-u</td>
-<td>單字改大寫</td>
-</tr>
-<tr><td>M-l</td>
-<td>單字改小寫</td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="section" id="id1">
 <h3>特殊符號</h3>
 <ul class="simple">
 <li>C-q C-j 換行符號, Windows編輯器的^M: M-x replace-string [ENTER] C-q C-m [ENTER] n [ENTER]</li>
 </ul>
+</div>
+<div class="section" id="help">
+<h3>Help</h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>C-h ?</td>
+<td>help的help, SPACE和Backspace上下移動</td>
+</tr>
+<tr><td>C-h v</td>
+<td>M-x describe-variable</td>
+</tr>
+<tr><td>C-h f</td>
+<td>M-x describe-function</td>
+</tr>
+<tr><td>C-h m</td>
+<td>M-x describe-mode</td>
+</tr>
+<tr><td>C-h k KEYS</td>
+<td>M-x describe-key KEYS</td>
+</tr>
+<tr><td>C-h c KEYS</td>
+<td>M-x describe-key-briefly</td>
+</tr>
+<tr><td>C-h b</td>
+<td>M-x describe-bindings</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="section" id="modes">
@@ -342,7 +377,8 @@ C-RET
 </div>
 <div class="section" id="agenda">
 <h4>Agenda</h4>
-<p>C-c C-x C-s archive</p>
+<p>C-c C-x C-s archive
+C-c [ 把檔案加入agenda</p>
 </div>
 </div>
 <div class="section" id="calc">
@@ -463,7 +499,7 @@ d r ;然後按2到36選進位數
 </ul>
 </div>
 </div>
-<div class="section" id="help">
+<div class="section" id="id4">
 <h2>Help</h2>
 <p>C-h k RET [key] 列出key的method</p>
 </div>
