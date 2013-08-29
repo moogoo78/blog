@@ -260,10 +260,6 @@ Others Mode
 - M-x artist-mode
 - M-x toggle-debug-on-error
 
-Help
-=========
-C-h k RET [key] 列出key的method
-
 Version Control
 ================
 
