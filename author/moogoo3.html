@@ -34,6 +34,50 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/ganglia.html" rel="bookmark"
+                           title="Permalink to Ganglia">Ganglia</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-02T11:39:00">
+                2013-04-02 11:39
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
+<p>Ganglia有3個部分:</p>
+<ul class="simple">
+<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
+<li>gmetad - 詢問gmond儲存數質</li>
+<li>ganglia-web</li>
+</ul>
+<pre class="literal-block">
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+</pre>
+<p>start daemond:</p>
+<pre class="literal-block">
+service gmond start
+service gmetad start
+</pre>
+<div class="section" id="centos">
+<h2>CentOS</h2>
+<p>進入web介面時出現:</p>
+<pre class="literal-block">
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+</pre>
+<p>解決方法, 重新安裝 ...</p></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/ganglia.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/git.html" rel="bookmark"
                            title="Permalink to GIT">GIT</a></h1>
                 </header>
@@ -336,45 +380,6 @@ alt + 數字
 
                 <a class="readmore" href="http://blog.suhen.org/language/language-su-ge-lan-ying-wen.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/language/language-su-ge-lan-ying-wen.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/music/lee_hazlewood_sand.html" rel="bookmark"
-                           title="Permalink to Sand">Sand</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-04-10T17:14:00">
-                2013-04-10 17:14
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/music.html">music</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/jing-dian-fan-chang.html">經典翻唱</a></p>
-</footer><!-- /.post-info -->                <p>1966年Lee Hazlewood寫的歌，出現在Nancy Sinatra的專輯&quot;How Does That Grab You?&quot;</p>
-<p><a class="reference external" href="http://en.wikipedia.org/wiki/Sand_%28Lee_Hazlewood_song%29">wikipedia</a></p>
-<div class="section" id="nancy-sinatra-lee-hazlewood-how-does-that-grab-you-1966">
-<h2>Nancy Sinatra &amp; Lee Hazlewood (<em>How Does That Grab You?</em>, 1966)</h2>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/pGfD2j9M1dA" frameborder="0"></iframe></div><p>最有靈性的版本！</p>
-</div>
-<div class="section" id="einsturzende-neubautten-halber-mensh-1985">
-<h2>Einstürzende Neubautten (Halber Mensh*, 1985)</h2>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/4BiODjvVEOw" frameborder="0"></iframe></div><p>這是我第一次聽到這首歌的版本，Blixa Bargeld一人分飾兩角，愛死了！</p>
-</div>
-<div class="section" id="op8-feat-lisa-germano-slush-1997">
-<h2>OP8 feat. Lisa Germano (<em>Slush</em>, 1997)</h2>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/lNIcvmDjx0k" frameborder="0"></iframe></div><p>個性女伶Lisa Germano來伴唱</p>
-</div>
-<div class="section" id="hugo-race-and-the-true-spirit-53rd-state-2008">
-<h2>Hugo Race and the True Spirit (<em>53rd State</em>, 2008)</h2>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/rjRp8TG_q08" frameborder="0"></iframe></div></div>
-<div class="section" id="cillian-murphy-breakfast-on-pluto-o-s-t-2005">
-<h2>Cillian Murphy (<em>Breakfast ...</em></h2></div>
-                <a class="readmore" href="http://blog.suhen.org/music/lee_hazlewood_sand.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/music/lee_hazlewood_sand.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

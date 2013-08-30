@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-08-27T18:07:00+08:00</updated><entry><title>用Emacs的skeleton快速建立pelican的blog內文</title><link href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="alternate"></link><updated>2013-08-27T18:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-27:computer/emacs_skeleton.html</id><summary type="html">&lt;p&gt;用 &lt;a class="reference external" href="http://blog.suhen.org/computer/pelican.html"&gt;Pelican&lt;/a&gt; 寫blog時都要輸入一堆metadata很麻煩, 利用 &lt;a class="reference external" href="http://blog.suhen.org/computer/emacs_docs.html"&gt;Emacs&lt;/a&gt; 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-08-30T12:06:00+08:00</updated><entry><title>強大的Emacs Macro 巨集</title><link href="http://blog.suhen.org/computer/emacs_macro.html" rel="alternate"></link><updated>2013-08-30T12:06:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-30:computer/emacs_macro.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;基本操作&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C-x&lt;/span&gt; (&lt;/tt&gt; 開始錄製&lt;/li&gt;
+&lt;li&gt;胡搞瞎搞&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C-x&lt;/span&gt; )&lt;/tt&gt; 結束&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C-x&lt;/span&gt; e&lt;/tt&gt; ABASE&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr class="docutils" /&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;執行多次 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C-u&lt;/span&gt; 次數 &lt;span class="pre"&gt;C-x&lt;/span&gt; e&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C-x&lt;/span&gt; &lt;span class="pre"&gt;C-k&lt;/span&gt; n FOO&lt;/tt&gt; 給macro取名字&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;M-x&lt;/span&gt; FOO&lt;/tt&gt; 執行&lt;/li&gt;
+&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;M-x&lt;/span&gt; &lt;span class="pre"&gt;insert-kbd-macro&lt;/span&gt;&lt;/tt&gt; 把macro存到設定檔, 他會問你要存那個macro name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="emacs"></category></entry><entry><title>用Emacs的skeleton快速建立pelican的blog內文</title><link href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="alternate"></link><updated>2013-08-27T18:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-27:computer/emacs_skeleton.html</id><summary type="html">&lt;p&gt;用 &lt;a class="reference external" href="http://blog.suhen.org/computer/pelican.html"&gt;Pelican&lt;/a&gt; 寫blog時都要輸入一堆metadata很麻煩, 利用 &lt;a class="reference external" href="http://blog.suhen.org/computer/emacs_docs.html"&gt;Emacs&lt;/a&gt; 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;define-skeleton&lt;/span&gt; &lt;span class="nv"&gt;insert-pelican-template&lt;/span&gt;
   &lt;span class="s"&gt;&amp;quot;Insert templete for pelican static blog system&amp;quot;&lt;/span&gt;
   &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Title: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nv"&gt;?\n&lt;/span&gt;

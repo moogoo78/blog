@@ -235,6 +235,43 @@ C-RET ...</pre></div>
                  
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_macro.html" rel="bookmark"
+                           title="Permalink to 強大的Emacs Macro 巨集">強大的Emacs Macro 巨集</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-08-30T12:06:00">
+                2013-08-30 12:06
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="id1">
+<h2>基本操作</h2>
+<ol class="arabic simple">
+<li><tt class="docutils literal"><span class="pre">C-x</span> (</tt> 開始錄製</li>
+<li>胡搞瞎搞</li>
+<li><tt class="docutils literal"><span class="pre">C-x</span> )</tt> 結束</li>
+<li><tt class="docutils literal"><span class="pre">C-x</span> e</tt> ABASE</li>
+</ol>
+<hr class="docutils" />
+<ul class="simple">
+<li>執行多次 <tt class="docutils literal"><span class="pre">C-u</span> 次數 <span class="pre">C-x</span> e</tt></li>
+<li><tt class="docutils literal"><span class="pre">C-x</span> <span class="pre">C-k</span> n FOO</tt> 給macro取名字</li>
+<li><tt class="docutils literal"><span class="pre">M-x</span> FOO</tt> 執行</li>
+<li><tt class="docutils literal"><span class="pre">M-x</span> <span class="pre">insert-kbd-macro</span></tt> 把macro存到設定檔, 他會問你要存那個macro name</li>
+</ul>
+</div>
+
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_macro.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_macro.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/emacs_newline.html" rel="bookmark"
                            title="Permalink to [computer] Emacs輸入newline符號">[computer] Emacs輸入newline符號</a></h1>
                 </header>
@@ -360,50 +397,6 @@ M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
 
                 <a class="readmore" href="http://blog.suhen.org/computer/emacs_skeleton.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/emacs_skeleton.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/ganglia.html" rel="bookmark"
-                           title="Permalink to Ganglia">Ganglia</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-04-02T11:39:00">
-                2013-04-02 11:39
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
-<p>Ganglia有3個部分:</p>
-<ul class="simple">
-<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
-<li>gmetad - 詢問gmond儲存數質</li>
-<li>ganglia-web</li>
-</ul>
-<pre class="literal-block">
-# config
-/etc/ganglia/gmetad.conf # CentOS
-/usr/share/ganglia/ # php files
-</pre>
-<p>start daemond:</p>
-<pre class="literal-block">
-service gmond start
-service gmetad start
-</pre>
-<div class="section" id="centos">
-<h2>CentOS</h2>
-<p>進入web介面時出現:</p>
-<pre class="literal-block">
-There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
-</pre>
-<p>解決方法, 重新安裝 ...</p></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/ganglia.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

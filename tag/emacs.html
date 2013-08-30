@@ -31,15 +31,54 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/emacs_skeleton.html">用Emacs的skeleton快速建立pelican的blog內文</a></h1> 
+                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/emacs_macro.html">強大的Emacs Macro 巨集</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-08-30T12:06:00">
+                2013-08-30 12:06
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info --><div class="section" id="id1">
+<h2>基本操作</h2>
+<ol class="arabic simple">
+<li><tt class="docutils literal"><span class="pre">C-x</span> (</tt> 開始錄製</li>
+<li>胡搞瞎搞</li>
+<li><tt class="docutils literal"><span class="pre">C-x</span> )</tt> 結束</li>
+<li><tt class="docutils literal"><span class="pre">C-x</span> e</tt> ABASE</li>
+</ol>
+<hr class="docutils" />
+<ul class="simple">
+<li>執行多次 <tt class="docutils literal"><span class="pre">C-u</span> 次數 <span class="pre">C-x</span> e</tt></li>
+<li><tt class="docutils literal"><span class="pre">C-x</span> <span class="pre">C-k</span> n FOO</tt> 給macro取名字</li>
+<li><tt class="docutils literal"><span class="pre">M-x</span> FOO</tt> 執行</li>
+<li><tt class="docutils literal"><span class="pre">M-x</span> <span class="pre">insert-kbd-macro</span></tt> 把macro存到設定檔, 他會問你要存那個macro name</li>
+</ul>
+</div>
+<p>There are <a href="http://blog.suhen.org/computer/emacs_macro.html#disqus_thread">comments</a>.</p>                </article>
+                            </aside><!-- /#featured -->
+                            <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+                                                
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="bookmark"
+                           title="Permalink to 用Emacs的skeleton快速建立pelican的blog內文">用Emacs的skeleton快速建立pelican的blog內文</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-08-27T18:07:00">
                 2013-08-27 18:07
         </abbr>
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
-</footer><!-- /.post-info --><p>用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">Pelican</a> 寫blog時都要輸入一堆metadata很麻煩, 利用 <a class="reference external" href="http://blog.suhen.org/computer/emacs_docs.html">Emacs</a> 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!</p>
+</footer><!-- /.post-info -->                <p>用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">Pelican</a> 寫blog時都要輸入一堆metadata很麻煩, 利用 <a class="reference external" href="http://blog.suhen.org/computer/emacs_docs.html">Emacs</a> 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!</p>
 <div class="highlight"><pre><span class="p">(</span><span class="nv">define-skeleton</span> <span class="nv">insert-pelican-template</span>
   <span class="s">&quot;Insert templete for pelican static blog system&quot;</span>
   <span class="s">&quot;&quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;Title: &quot;</span><span class="p">)</span><span class="nv">?\n</span>
@@ -52,13 +91,11 @@
 </pre></div>
 <p>參考:
 <a class="reference external" href="http://www.emacswiki.org/emacs/SkeletonMode">EmacsWiki: Skeleton Mode</a></p>
-<p>There are <a href="http://blog.suhen.org/computer/emacs_skeleton.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_skeleton.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_skeleton.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
 
                  
                         <li><article class="hentry">    
