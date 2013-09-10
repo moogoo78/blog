@@ -176,6 +176,20 @@ debug
 --------
 http://pythonhosted.org/Flask-SQLAlchemy/api.html#flask.ext.sqlalchemy.get_debug_queries
 
+
+常見error
+------------
+
+0.8更新::
+
+  'dynamic' loaders cannot be used with many-to-one/one-to-one relationships and/or uselist=False.
+
+0.8以後的SQLAlchemy的relationship如果是是many-to-one, one-to-one的關係用了dynamic loader ``lazy='dynamic'`` , 或是加了 ``uselist=False`` , 都會吐錯誤訊息出來. (以前只是warning)
+
+changelog (0.8): http://docs.sqlalchemy.org/en/latest/changelog/changelog_08.html#change-5f7f7241c49f5c13956148d68788a5b4
+
+文件 (0.7): http://docs.sqlalchemy.org/en/rel_0_7/orm/collections.html#dynamic-relationship
+
 比較
 ========
 * `SQLAlchemy and You | Armin Ronacher's Thoughts and Writings <http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/>`__

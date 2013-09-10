@@ -3,7 +3,7 @@ Emacs 小抄
 :date: 2013-04-26 18:37
 :tags: docs
 :category: computer
-:slug: emacs_docs
+:slug: emacs
 
 Tips
 ========
@@ -275,5 +275,9 @@ Adv. Mode
 
 configure
 =======================
+
+Font
+--------
+M-x describe-font 看現在用的字形
 
 * `my-dot-emacs-file - steveyegge2 <https://sites.google.com/site/steveyegge2/my-dot-emacs-file>`__
