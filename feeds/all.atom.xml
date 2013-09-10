@@ -15,7 +15,7 @@
 &lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;M-x&lt;/span&gt; &lt;span class="pre"&gt;insert-kbd-macro&lt;/span&gt;&lt;/tt&gt; 把macro存到設定檔, 他會問你要存那個macro name&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="emacs"></category></entry><entry><title>用Emacs的skeleton快速建立pelican的blog內文</title><link href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="alternate"></link><updated>2013-08-27T18:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-27:computer/emacs_skeleton.html</id><summary type="html">&lt;p&gt;用 &lt;a class="reference external" href="http://blog.suhen.org/computer/pelican.html"&gt;Pelican&lt;/a&gt; 寫blog時都要輸入一堆metadata很麻煩, 利用 &lt;a class="reference external" href="http://blog.suhen.org/computer/emacs_docs.html"&gt;Emacs&lt;/a&gt; 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!&lt;/p&gt;
+</summary><category term="emacs"></category></entry><entry><title>用Emacs的skeleton快速建立pelican的blog內文</title><link href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="alternate"></link><updated>2013-08-27T18:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-27:computer/emacs_skeleton.html</id><summary type="html">&lt;p&gt;用 &lt;a class="reference external" href="http://blog.suhen.org/computer/pelican.html"&gt;Pelican&lt;/a&gt; 寫blog時都要輸入一堆metadata很麻煩, 利用 &lt;a class="reference external" href="http://blog.suhen.org/computer/emacs.html"&gt;Emacs&lt;/a&gt; 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;define-skeleton&lt;/span&gt; &lt;span class="nv"&gt;insert-pelican-template&lt;/span&gt;
   &lt;span class="s"&gt;&amp;quot;Insert templete for pelican static blog system&amp;quot;&lt;/span&gt;
   &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Title: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nv"&gt;?\n&lt;/span&gt;
@@ -1765,7 +1765,7 @@ Engine
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="比較"></category><category term="lang_de"></category></entry><entry><title>Emacs 小抄</title><link href="http://blog.suhen.org/computer/emacs_docs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-26:computer/emacs_docs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
+</summary><category term="比較"></category><category term="lang_de"></category></entry><entry><title>Emacs 小抄</title><link href="http://blog.suhen.org/computer/emacs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-26:computer/emacs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
 &lt;h2&gt;Tips&lt;/h2&gt;
 &lt;p&gt;自動補齊:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -2247,9 +2247,13 @@ d r ;然後按2到36選進位數
 &lt;/div&gt;
 &lt;div class="section" id="configure"&gt;
 &lt;h2&gt;configure&lt;/h2&gt;
+&lt;div class="section" id="font"&gt;
+&lt;h3&gt;Font&lt;/h3&gt;
+&lt;p&gt;M-x describe-font 看現在用的字形&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://sites.google.com/site/steveyegge2/my-dot-emacs-file"&gt;my-dot-emacs-file - steveyegge2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>Elscreen - Emacs好用的tab mode</title><link href="http://blog.suhen.org/computer/emacs_elscreen.html" rel="alternate"></link><updated>2013-04-23T17:28:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-23:computer/emacs_elscreen.html</id><summary type="html">&lt;p&gt;我以為在Emacs一直沒有好的tab顯示模式，以前用過tabbar_ mode，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。&lt;/p&gt;
 &lt;p&gt;下載elscreen.el: &lt;a class="reference external" href="ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/"&gt;ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/&lt;/a&gt;&lt;/p&gt;
@@ -2816,6 +2820,16 @@ p = Product.query.join('brand').\
 &lt;div class="section" id="debug"&gt;
 &lt;h3&gt;debug&lt;/h3&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://pythonhosted.org/Flask-SQLAlchemy/api.html#flask.ext.sqlalchemy.get_debug_queries"&gt;http://pythonhosted.org/Flask-SQLAlchemy/api.html#flask.ext.sqlalchemy.get_debug_queries&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="error"&gt;
+&lt;h3&gt;常見error&lt;/h3&gt;
+&lt;p&gt;0.8更新:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+'dynamic' loaders cannot be used with many-to-one/one-to-one relationships and/or uselist=False.
+&lt;/pre&gt;
+&lt;p&gt;0.8以後的SQLAlchemy的relationship如果是是many-to-one, one-to-one的關係用了dynamic loader &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;lazy='dynamic'&lt;/span&gt;&lt;/tt&gt; , 或是加了 &lt;tt class="docutils literal"&gt;uselist=False&lt;/tt&gt; , 都會吐錯誤訊息出來. (以前只是warning)&lt;/p&gt;
+&lt;p&gt;changelog (0.8): &lt;a class="reference external" href="http://docs.sqlalchemy.org/en/latest/changelog/changelog_08.html#change-5f7f7241c49f5c13956148d68788a5b4"&gt;http://docs.sqlalchemy.org/en/latest/changelog/changelog_08.html#change-5f7f7241c49f5c13956148d68788a5b4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文件 (0.7): &lt;a class="reference external" href="http://docs.sqlalchemy.org/en/rel_0_7/orm/collections.html#dynamic-relationship"&gt;http://docs.sqlalchemy.org/en/rel_0_7/orm/collections.html#dynamic-relationship&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id2"&gt;

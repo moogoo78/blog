@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>用Emacs的skeleton快速建立pelican的blog內文</title>
+        <title>Python & unicode</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's blog Atom Feed" />
                 
@@ -30,46 +30,73 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="bookmark"
-           title="Permalink to 用Emacs的skeleton快速建立pelican的blog內文">用Emacs的skeleton快速建立pelican的blog內文</a></h1>
+        <a href="http://blog.suhen.org/computer/python-unicode.html" rel="bookmark"
+           title="Permalink to Python & unicode">Python & unicode</a></h1>
           </header>
 
     <div class="entry-content">
       <footer class="post-info">
-        <abbr class="published" title="2013-08-27T18:07:00">
-                2013-08-27 18:07
+        <abbr class="published" title="2013-09-03T16:51:00">
+                2013-09-03 16:51
         </abbr>
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
-</footer><!-- /.post-info -->      <p>用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">Pelican</a> 寫blog時都要輸入一堆metadata很麻煩, 利用 <a class="reference external" href="http://blog.suhen.org/computer/emacs.html">Emacs</a> 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!</p>
-<div class="highlight"><pre><span class="p">(</span><span class="nv">define-skeleton</span> <span class="nv">insert-pelican-template</span>
-  <span class="s">&quot;Insert templete for pelican static blog system&quot;</span>
-  <span class="s">&quot;&quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;Title: &quot;</span><span class="p">)</span><span class="nv">?\n</span>
-  <span class="s">&quot;#############################&quot;</span> <span class="nv">?\n</span>
-  <span class="s">&quot;:date: &quot;</span> <span class="p">(</span><span class="nv">insert-current-date</span><span class="p">)</span> <span class="nv">?\n</span>
-  <span class="s">&quot;:category: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;category: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
-  <span class="s">&quot;:tags: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;tags: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
-  <span class="s">&quot;:slug: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;slug: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
-<span class="p">)</span>
-</pre></div>
-<p>參考:
-<a class="reference external" href="http://www.emacswiki.org/emacs/SkeletonMode">EmacsWiki: Skeleton Mode</a></p>
 
+</footer><!-- /.post-info -->      <h1>Byte</h1>
+<p>電腦, 檔案系統,</p>
+<p>Ascii
+不夠
+ using a number between 32 and 127. Space was 32, the letter "A" was 65, etc.
+7bits</p>
+<p>128-255 可用? -&gt; The trouble was, lots of people had this idea at the same time, and they had their own ideas of what should go where in the space from 128 to 255. </p>
+<p>code pages: Israel DOS used a code page called 862, while Greek users used 737.
+The national versions of MS-DOS had dozens of these code pages</p>
+<p>In Asia: DBCS, the "double byte character set"</p>
+<p>ISO/IEC 8859-1 又稱Latin-1</p>
+<p>map 1 byte to 1 char 
+map 2 bype to 1 char: Shift-JIS, GB2312, Big5</p>
+<h1>unicode</h1>
+<p>http://www.unicode.org/
+In Unicode, a letter maps to something called a code point which is still just a theoretical concept. How that code point is represented in memory or on disk is a whole nuther story.</p>
+<p>unicode 1M code points, 110k assigned ?</p>
+<p>encoding: UTF-8
+variable length, ASCII, 也是用1個byte</p>
+<h2>encoding</h2>
+<p>BOM</p>
+<ul>
+<li>The traditional store-it-in-two-byte methods are called UCS-2 (because it has two bytes) or UTF-16 (because it has 16 bits), and you still have to figure out if it's high-endian UCS-2 or low-endian UCS-2.</li>
+<li>popular UTF-8 standard which has the nice property of also working respectably if you have the happy coincidence of English text and braindead programs that are completely unaware that there is anything other than ASCII.</li>
+</ul>
+<p>-There are actually a bunch of other ways of encoding Unicode. There's something called UTF-7, which is a lot like UTF-8 but guarantees that the high bit will always be zero, so that if you have to pass Unicode through some kind of draconian police-state email system that thinks 7 bits are quite enough, thank you it can still squeeze through unscathed. There's UCS-4, which stores each code point in 4 bytes, which has the nice property that every single code point can be stored in the same number of bytes, but, golly, even the Texans wouldn't be so bold as to waste that much memory.</p>
+<p>There Ain't No Such Thing As Plain Text.</p>
+<h1>python</h1>
+<p>str, unicode</p>
+<p>str: a sequence of bytes
+unicode: a sequence of code points (unicode)</p>
+<p>unicode -&gt; encode() =&gt; bytes (str)
+bytes -&gt; decode() =&gt; unicode</p>
+<p>http://nedbatchelder.com/text/unipain/unipain.html#19</p>
+<p>length</p>
+<p>Traceback (most recent call last):
+UnicodeEncodeError: 'ascii' codec can't encode characters in
+          position 3-8: ordinal not in range(128)</p>
+<blockquote>
+<p>s.encode('u8')</p>
+</blockquote>
+<p>UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in
+          position 3: ordinal not in range(128)</p>
+<h1>參雜</h1>
+<p>u'' + ''</p>
+<p>'aa%s' % (aa)</p>
+<p>my_list = {}
+my_list.append()</p>
+<p>if a in b:
+  p</p>
+<p>for i in my_list:
+    if </p>
+<p>http://nedbatchelder.com/text/unipain.html</p>
+<p>http://www.charbase.com/1f40d-unicode-snake</p>
     </div><!-- /.entry-content -->
-        <div class="comments">
-      <h2>Comments !</h2>
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-        var disqus_identifier = "computer/emacs_skeleton.html";
-        var disqus_url = "http://blog.suhen.org/computer/emacs_skeleton.html";
-        (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://suhenorg.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-    </div>
     
   </article>
 </section>

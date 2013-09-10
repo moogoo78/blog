@@ -197,6 +197,16 @@ p = Product.query.join('brand').\
 <h3>debug</h3>
 <p><a class="reference external" href="http://pythonhosted.org/Flask-SQLAlchemy/api.html#flask.ext.sqlalchemy.get_debug_queries">http://pythonhosted.org/Flask-SQLAlchemy/api.html#flask.ext.sqlalchemy.get_debug_queries</a></p>
 </div>
+<div class="section" id="error">
+<h3>常見error</h3>
+<p>0.8更新:</p>
+<pre class="literal-block">
+'dynamic' loaders cannot be used with many-to-one/one-to-one relationships and/or uselist=False.
+</pre>
+<p>0.8以後的SQLAlchemy的relationship如果是是many-to-one, one-to-one的關係用了dynamic loader <tt class="docutils literal"><span class="pre">lazy='dynamic'</span></tt> , 或是加了 <tt class="docutils literal">uselist=False</tt> , 都會吐錯誤訊息出來. (以前只是warning)</p>
+<p>changelog (0.8): <a class="reference external" href="http://docs.sqlalchemy.org/en/latest/changelog/changelog_08.html#change-5f7f7241c49f5c13956148d68788a5b4">http://docs.sqlalchemy.org/en/latest/changelog/changelog_08.html#change-5f7f7241c49f5c13956148d68788a5b4</a></p>
+<p>文件 (0.7): <a class="reference external" href="http://docs.sqlalchemy.org/en/rel_0_7/orm/collections.html#dynamic-relationship">http://docs.sqlalchemy.org/en/rel_0_7/orm/collections.html#dynamic-relationship</a></p>
+</div>
 </div>
 <div class="section" id="id2">
 <h2>比較</h2>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+        <meta charset="utf-8">
+        <title>Emacs 小抄</title>
+        <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
+                <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's blog Atom Feed" />
+                
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://blog.suhen.org/">Suhen's blog </a></h1>
+                <nav><ul>
+                                                                                <li class="active"><a href="http://blog.suhen.org/category/computer.html">電腦</a></li>
+                                <li ><a href="http://blog.suhen.org/category/music.html">音樂</a></li>
+                                <li ><a href="http://blog.suhen.org/category/mountain.html">爬山</a></li>
+                                <li ><a href="http://blog.suhen.org/category/run.html">跑步</a></li>
+                                <li ><a href="http://blog.suhen.org/category/language.html">語言</a></li>
+                                <li ><a href="http://blog.suhen.org/category/travel.html">旅遊</a></li>
+                                <li ><a href="http://blog.suhen.org/category/book.html">書</a></li>
+                                <li ><a href="http://blog.suhen.org/category/misc.html">其他</a></li>
+                                <li><a href="http://blog.suhen.org/archives.html">Archives</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://blog.suhen.org/computer/emacs.html" rel="bookmark"
+           title="Permalink to Emacs 小抄">Emacs 小抄</a></h1>
+          </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2013-04-26T18:37:00">
+                2013-04-26 18:37
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->      <div class="section" id="tips">
+<h2>Tips</h2>
+<p>自動補齊:</p>
+<pre class="literal-block">
+M-/
+</pre>
+<p>變數對齊:</p>
+<pre class="literal-block">
+M-x align-regexp
+</pre>
+<p>輸入 <tt class="docutils literal">=</tt></p>
+<p>列出全部字串:</p>
+<pre class="literal-block">
+M-x occur
+</pre>
+<p>刪除整行(vim's dd):</p>
+<pre class="literal-block">
+C-S-Backspace
+</pre>
+<p>刪除空白行:</p>
+<pre class="literal-block">
+M-x flush-lines RET ^$ RET ;純空白行
+M-x flush-lines RET ^\s-*$ RET ; 有空白的空白行
+</pre>
+<p>編輯每行文字:</p>
+<pre class="literal-block">
+;; 把每行的文字foo加indent和quote 'foo' =&gt;'  &quot;foo&quot;'
+M-x replace-regexp RET ^ RET SPACE SPACE&quot; RET ;; 開頭加3個空白和&quot;
+M-x replace-regexp RET $ RET &quot;, RET ;; 結尾加&quot;
+</pre>
+<p>每行加2空白:</p>
+<pre class="literal-block">
+M-x cua-mode
+選好區塊
+C-RET
+移到第一行
+按2個空白
+</pre>
+<p><strong>參考</strong>
+<a class="reference external" href="http://stackoverflow.com/questions/60367/the-single-most-useful-emacs-feature">polls - The single most useful Emacs feature - Stack Overflow</a></p>
+</div>
+<div class="section" id="basic">
+<h2>Basic</h2>
+<div class="section" id="movement">
+<h3>移動 Movement</h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>M-&lt;</td>
+<td>beginning-of-buffer</td>
+</tr>
+<tr><td>M-&gt;</td>
+<td>end-of-buffer</td>
+</tr>
+</tbody>
+</table>
+<p>search: M-c 切換case-sensitivity</p>
+</div>
+<div class="section" id="editing">
+<h3>編輯 Editing</h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>M-x string-replace</td>
+<td>replace</td>
+</tr>
+<tr><td>M-x query-replace</td>
+<td>confirm (M-%)</td>
+</tr>
+<tr><td>M-x replace-regexp</td>
+<td>replace with regex</td>
+</tr>
+<tr><td>C-t</td>
+<td>對調兩字元</td>
+</tr>
+<tr><td>M-t</td>
+<td>對調兩word</td>
+</tr>
+<tr><td>C-x C-t</td>
+<td>對調兩行, 跟游標上一行對調</td>
+</tr>
+<tr><td>M-c</td>
+<td>單字的第一個字大寫</td>
+</tr>
+<tr><td>M-u</td>
+<td>單字改大寫</td>
+</tr>
+<tr><td>M-l</td>
+<td>單字改小寫</td>
+</tr>
+<tr><td>C-S-Backspace</td>
+<td>刪除整行</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="register-and-bookmark">
+<h4>Register and Bookmark</h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>C-x r SPACE</td>
+<td>設定register, 出現Point to register後輸入一字元</td>
+</tr>
+<tr><td>C-x r j</td>
+<td>移動到register, 出現Jump to register後輸入一字元</td>
+</tr>
+<tr><td>C-x r s a</td>
+<td>copy-to-register, 把region內的文字copy到register a</td>
+</tr>
+<tr><td>C-x r i a</td>
+<td>insert-register, insert register a</td>
+</tr>
+<tr><td>C-x r w a</td>
+<td>把window的狀態存起來, window-configuration-to-register, C-x r j叫出來</td>
+</tr>
+<tr><td>C-x r f a</td>
+<td>frame-configuration-to-register</td>
+</tr>
+<tr><td>C-x r m</td>
+<td>設定bookmark, bookmark會永久存起來(~/.emacs.bmk), register不會</td>
+</tr>
+<tr><td>C-x r b</td>
+<td>goto bookmark</td>
+</tr>
+<tr><td>C-x r l</td>
+<td>list bookmark</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="coding">
+<h3>Coding</h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="52%" />
+<col width="48%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>C-h C &lt;RET&gt;</td>
+<td>看目前coding</td>
+</tr>
+<tr><td>M-x list-coding-systems</td>
+<td>列出所有coding system</td>
+</tr>
+<tr><td>C-x &lt;RET&gt; r coding &lt;RET&gt;</td>
+<td>選coding system重新讀檔</td>
+</tr>
+<tr><td>C-x &lt;RET&gt; f coding &lt;RET&gt;</td>
+<td>coding system存檔</td>
+</tr>
+<tr><td>C-x &lt;RET&gt; c coding &lt;RET&gt;</td>
+<td>coding system buffer?</td>
+</tr>
+<tr><td>C-u C-x =</td>
+<td>詳細coding system</td>
+</tr>
+<tr><td>C-x &lt;RET&gt; c raw-text &lt;RET&gt;</td>
+<td>load unibyte</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id1">
+<h3>特殊符號</h3>
+<ul class="simple">
+<li>C-q C-j 換行符號, Windows編輯器的^M: M-x replace-string [ENTER] C-q C-m [ENTER] n [ENTER]</li>
+</ul>
+</div>
+<div class="section" id="help">
+<h3>Help</h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>C-h ?</td>
+<td>help的help, SPACE和Backspace上下移動</td>
+</tr>
+<tr><td>C-h v</td>
+<td>M-x describe-variable</td>
+</tr>
+<tr><td>C-h f</td>
+<td>M-x describe-function</td>
+</tr>
+<tr><td>C-h m</td>
+<td>M-x describe-mode</td>
+</tr>
+<tr><td>C-h k KEYS</td>
+<td>M-x describe-key KEYS</td>
+</tr>
+<tr><td>C-h c KEYS</td>
+<td>M-x describe-key-briefly</td>
+</tr>
+<tr><td>C-h b</td>
+<td>M-x describe-bindings</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="modes">
+<h2>Modes</h2>
+<div class="section" id="dired">
+<h3>Dired</h3>
+<p>M-x dired</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>^</td>
+<td>回上目錄</td>
+</tr>
+<tr><td>j</td>
+<td>jump 移動游標</td>
+</tr>
+<tr><td>*</td>
+<td>標示</td>
+</tr>
+<tr><td>u</td>
+<td>取消標示</td>
+</tr>
+<tr><td>f</td>
+<td>(like C-x C-f 開檔)</td>
+</tr>
+<tr><td>RET</td>
+<td>同上</td>
+</tr>
+<tr><td>o</td>
+<td>開檔, but開在另一window</td>
+</tr>
+<tr><td>a</td>
+<td>開檔, 但是不會新開一個buffer</td>
+</tr>
+<tr><td>C</td>
+<td>copy</td>
+</tr>
+<tr><td>R</td>
+<td>rename, 可以當&quot;mv&quot;用</td>
+</tr>
+<tr><td>d</td>
+<td>標示delete</td>
+</tr>
+<tr><td>x</td>
+<td>執行delete</td>
+</tr>
+<tr><td>+</td>
+<td>create dir</td>
+</tr>
+<tr><td>M</td>
+<td>chmod</td>
+</tr>
+<tr><td>O</td>
+<td>chown</td>
+</tr>
+<tr><td>G</td>
+<td>chgrp</td>
+</tr>
+<tr><td>g</td>
+<td>refresh</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id2">
+<h4>批次改檔名</h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>C-x C-q</td>
+<td>wdired-change-to-wdired-mode</td>
+</tr>
+<tr><td>C-c C-c</td>
+<td>wdired-finish-edit</td>
+</tr>
+<tr><td>C-c C-Esc</td>
+<td>wdired-abort-changes</td>
+</tr>
+</tbody>
+</table>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">C-x C-q (23.1以後)</p>
+</div>
+<p>ref: <a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html">Emacs: Rename Files Interactively by Pattern (regex; wdired)</a></p>
+</div>
+</div>
+<div class="section" id="org-mode">
+<h3>Org-mode</h3>
+<p>預設開啟狀態:</p>
+<pre class="literal-block">
+#+STARTUP: overview
+#+STARTUP: content
+#+STARTUP: showall
+#+STARTUP: showeverything
+
+#+STARTUP: hideblocks
+#+STARTUP: nohideblock
+</pre>
+<div class="section" id="id3">
+<h4>移動</h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="73%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>C-c C-n/p</td>
+<td>下/上一個outline</td>
+</tr>
+<tr><td>C-c C-f/b</td>
+<td>下/上一個outline (同lever)</td>
+</tr>
+<tr><td>C-c C-u</td>
+<td>上一層</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="agenda">
+<h4>Agenda</h4>
+<p>C-c C-x C-s archive
+C-c [ 把檔案加入agenda</p>
+</div>
+</div>
+<div class="section" id="calc">
+<h3>Calc</h3>
+<p>M-x calc</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="64%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>q, C-x * c</td>
+<td>離開</td>
+</tr>
+<tr><td>C-x * k</td>
+<td>keypad (數字)</td>
+</tr>
+<tr><td>M-x quick-calc</td>
+<td>在minibuffer直接做簡單計算</td>
+</tr>
+</tbody>
+</table>
+<p>Radix-Modes:</p>
+<pre class="literal-block">
+d 0, d 2, d 8 ; 10, 2, 8進位
+d r ;然後按2到36選進位數
+</pre>
+<ul class="simple">
+<li><a class="reference external" href="http://www.gnu.org/software/emacs/manual/html_mono/calc.html">GNU Emacs Calc Manual</a></li>
+<li><a class="reference external" href="http://www.emacswiki.org/emacs/AdvancedDeskCalculator">EmacsWiki: Advanced Desk Calculator</a></li>
+</ul>
+</div>
+<div class="section" id="html">
+<h3>HTML</h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>C-c C-t</td>
+<td>加tag, 然後照指示加attribute: property, value.</td>
+</tr>
+<tr><td>C-c C-v</td>
+<td>開browser看</td>
+</tr>
+<tr><td>C-c C-f</td>
+<td>移到下個匹配tag</td>
+</tr>
+<tr><td>C-c C-b</td>
+<td>移到上個匹配tag</td>
+</tr>
+<tr><td>C-c Tab</td>
+<td>隱藏HTML tag, 再打一次C-c Tab就顯示回來</td>
+</tr>
+<tr><td>C-c  /</td>
+<td>加入結尾tag</td>
+</tr>
+<tr><td>C-c C-a</td>
+<td>在HTML tag裡加attribute</td>
+</tr>
+<tr><td>C-c C-d</td>
+<td>刪除HTML tag開頭和結尾都會一起刪</td>
+</tr>
+<tr><td>C-c RET</td>
+<td>插入&lt;p&gt;</td>
+</tr>
+<tr><td>C-c j</td>
+<td>插入&lt;br&gt;</td>
+</tr>
+<tr><td>C-c C-n</td>
+<td>插入特殊字元, 像空白&amp;nbsp;, 小於&amp;lt;, 大於&amp;gt;...</td>
+</tr>
+<tr><td>C-c C-c h</td>
+<td>插入&lt;a href=...&gt;</td>
+</tr>
+<tr><td>C-c C-c u</td>
+<td>插入&lt;ul&gt;&lt;li&gt;...&lt;/ul&gt;</td>
+</tr>
+<tr><td>C-c C-c o</td>
+<td>插入&lt;ol&gt;&lt;li&gt;...&lt;/ol&gt;</td>
+</tr>
+<tr><td>C-c C-c c</td>
+<td>插入checkbox</td>
+</tr>
+<tr><td>C-c C-c r</td>
+<td>插入radio</td>
+</tr>
+<tr><td>C-c C-h</td>
+<td>看說明</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="graphviz-dot">
+<h3>Graphviz (dot)</h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>C-c c</td>
+<td>compile dot ($ dot -Tpng foo.dot &gt; foo.png)</td>
+</tr>
+<tr><td>C-c p</td>
+<td>display png</td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html">Graphviz dot mode for emacs</a></p>
+</div>
+<div class="section" id="others-mode">
+<h3>Others Mode</h3>
+<ul class="simple">
+<li>M-x artist-mode</li>
+<li>M-x toggle-debug-on-error</li>
+</ul>
+</div>
+</div>
+<div class="section" id="version-control">
+<h2>Version Control</h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="78%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>C-x v v</td>
+<td>commit (C-c C-c結束)</td>
+</tr>
+<tr><td>C-x v d</td>
+<td>version control status</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="adv-mode">
+<h2>Adv. Mode</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://jblevins.org/projects/deft/">Deft</a> - 快速找筆記, 檔案修改工具</li>
+</ul>
+</div>
+<div class="section" id="configure">
+<h2>configure</h2>
+<div class="section" id="font">
+<h3>Font</h3>
+<p>M-x describe-font 看現在用的字形</p>
+<ul class="simple">
+<li><a class="reference external" href="https://sites.google.com/site/steveyegge2/my-dot-emacs-file">my-dot-emacs-file - steveyegge2</a></li>
+</ul>
+</div>
+</div>
+
+    </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "computer/emacs.html";
+        var disqus_url = "http://blog.suhen.org/computer/emacs.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://suhenorg.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+  </article>
+</section>
+        <section id="extras" class="body">
+          <div class="blogroll">
+            <h2>Links</h2>
+            <ul>
+            <li><a href="http://blog.suhen.org/pages/about.html">About</a></li>
+            <li><a href="http://blog.roodo.com/moogoo" target="_blank">舊blog</a></li>
+            <li><a href="http://moogoo78.blogspot.com" target="_blank">程式blog</a></li>
+            </ul>
+          </div>
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="http://www.facebook.com/moogee.lee">facebook</a></li>
+                                                    <li><a href="http://twitter.com/moogoo">twitter</a></li>
+                                                    <li><a href="http://github.com/moogoo78">github</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38928548-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'suhenorg';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
