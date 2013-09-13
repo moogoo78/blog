@@ -33,6 +33,45 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_newline.html" rel="bookmark"
+                           title="Permalink to [computer] Emacs輸入newline符號">[computer] Emacs輸入newline符號</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-27T11:32:00">
+                2013-06-27 11:32
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>Emacs的換行:</p>
+<pre class="literal-block">
+C-q C-j
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last"><cite>C-q</cite>: quoted-insert, <cite>C-j</cite>: newline</p>
+</div>
+<p>但是我的 <cite>C-q</cite> 和 <cite>C-j</cite> 為了使用dvorak layout, 改成cut &amp; paste:</p>
+<pre class="literal-block">
+(global-set-key (kbd &quot;C-q&quot;) 'kill-region) ; cut
+(global-set-key (kbd &quot;C-j&quot;) 'kill-ring-save) ; paste
+</pre>
+<p>因此把沒用到的 <cite>C-`</cite> 跟 <cite>C-,</cite> 拿來做key-translate:</p>
+<pre class="literal-block">
+(define-key key-translation-map (kbd &quot;C-q&quot;) (kbd &quot;C-'&quot;))
+(define-key key-translation-map (kbd &quot;C-'&quot;) (kbd &quot;C-q&quot;))
+(define-key key-translation-map (kbd &quot;C-j&quot;) (kbd &quot;C-,&quot;))
+(define-key ...</pre>
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_newline.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_newline.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/travel/2012_kyoto_marathon.html" rel="bookmark"
                            title="Permalink to [travel] 京都馬拉松五天行">[travel] 京都馬拉松五天行</a></h1>
                 </header>
@@ -334,51 +373,6 @@ $ git push origin gh-pages
 # 其實pelican的make就可以了 ...</pre></div>
                 <a class="readmore" href="http://blog.suhen.org/computer/pelican_github_pages.rst.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/pelican_github_pages.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/irc_screen_irssi.html" rel="bookmark"
-                           title="Permalink to 用screen+irssi上IRC聊天不斷線">用screen+irssi上IRC聊天不斷線</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-05-26T15:21:00">
-                2013-05-26 15:21
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <p>一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).</p>
-<p>安裝screen和irssi:</p>
-<pre class="literal-block">
-aptitude install screen
-aptitude install irssi
-</pre>
-<p>開screen (detach/reattach參數):</p>
-<pre class="literal-block">
-screen -RD
-</pre>
-<p>進入irssi:</p>
-<pre class="literal-block">
-/connect irc.freenode.net # 連server
-/nick moogoolee           # 改匿名
-/j #python.tw             # 開channel
-/wc                       # 離開channal
-/disconnect               # server斷線
-/quit                     # 離開irssi
-</pre>
-<p>切換channel:</p>
-<pre class="literal-block">
-alt + 數字
-</pre>
-<p>但是Mac的Alt會變成輸入特殊字, 用iTerm的話, 可以如以下設定:</p>
-<p>Bookmarks ...</p>
-                <a class="readmore" href="http://blog.suhen.org/computer/irc_screen_irssi.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/irc_screen_irssi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
