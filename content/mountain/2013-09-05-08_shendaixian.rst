@@ -126,6 +126,14 @@ GPS航跡圖:
 
 * `flickr照片 <http://www.flickr.com/photos/moogoo/sets/72157635497214695/>`__
 * `地圖產生器 列印 <http://map.happyman.idv.tw/twmap/show.php?info=295000x2718000-4x11&version=3&mid=29995>`__
+
+隊友紀錄
+-----------
+* `Plover Tsai: 2013小腳ㄚ會師「神代線」--- 森林、激流、草原、湖泊、星空 <http://plovertsai.blogspot.tw/2013/09/2013.html>`__
 * `Plover Tsai: 神代線超黑超危險蚊子超級毒 <http://plovertsai.blogspot.tw/2013/09/blog-post.html>`__
 
-
+其他隊伍紀錄
+------------
+* `102.9.8小腳ㄚ會師加羅湖 @ 這是我的部落格 :: 隨意窩 Xuite日誌 <http://blog.xuite.net/brian267/twblog/110116579>`__
+* `102.9.7加羅湖小腳ㄚ會師 @ 這是我的部落格 :: 隨意窩 Xuite日誌 <http://blog.xuite.net/brian267/twblog/108930152>`__
+* `米家: 2013/09/07-08小腳ㄚ四路會師之太加縱走 - yam天空部落 <http://blog.yam.com/amimitea/article/69214530>`__
