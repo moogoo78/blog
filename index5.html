@@ -350,31 +350,21 @@ $ make html
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="id1">
+</footer><!-- /.post-info -->                <div class="section" id="script">
+<h2>好用script</h2>
+<p>把&quot;/t&quot;分隔的檔案轉成sql語法, 用awk和sed</p>
+<div class="highlight"><pre>awk -F <span class="s1">&#39;\t&#39;</span> <span class="s1">&#39;{print &quot;INSERT INTO word (\&quot;s3id\&quot;,\&quot;content\&quot;,\&quot;freq\&quot;,\&quot;translate\&quot;,\&quot;ex1\&quot;,\&quot;ex1_translate\&quot;,\&quot;ex2\&quot;,\&quot;ex2_translate\&quot;) VALUES(\&quot;&quot;$1&quot;\&quot;,\&quot;&quot;$2&quot;\&quot;,\&quot;&quot;$3&quot;\&quot;,\&quot;&quot;$4&quot;\&quot;,\&quot;&quot;$5&quot;\&quot;,\&quot;&quot;$6&quot;\&quot;,\&quot;&quot;$7&quot;\&quot;,\&quot;&quot;$8&quot;\&quot;)&quot;}&#39;</span> data_all_u.txt | sed -e <span class="s1">&#39;s/^M//g&#39;</span> &gt; out.sql
+</pre></div>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">先用awk轉好, 再用sed去除最後換行符號, &quot;^M&quot;在commend-line裡要Ctrl-V + Ctrl-M表示</p>
+</div>
+</div>
+<div class="section" id="id1">
 <h2>檔案</h2>
 <p>把檔案foo複製到以下全部目錄裡:</p>
 <pre class="literal-block">
-$ find . -type d |xargs -n 1 cp -i foo
-</pre>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">xargs -n 1:</th><td class="field-body">把每一行command line輸出當作一個參數</td>
-</tr>
-<tr class="field"><th class="field-name">cp -i:</th><td class="field-body">詢問y or n</td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="id2">
-<h3>改檔名</h3>
-<p>大寫改小寫:</p>
-<pre class="literal-block">
-$ for i in $( ls | grep [A-Z] ); do mv -i $i `echo $i | tr 'A-Z' 'a-z'`; done
-</pre>
-<p>只取數字, JPG改jpg:</p>
-<pre class="literal-block">
-for i in *.JPG ; do mv &quot;$i&quot; `echo $i ...</pre></div></div>
+$ find . -type d |xargs ...</pre></div>
                 <a class="readmore" href="http://blog.suhen.org/computer/unix_command.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

@@ -3390,7 +3390,17 @@ ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://blog.suhen.org/computer/unix_command.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/unix_command.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+</summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://blog.suhen.org/computer/unix_command.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/unix_command.html</id><summary type="html">&lt;div class="section" id="script"&gt;
+&lt;h2&gt;好用script&lt;/h2&gt;
+&lt;p&gt;把&amp;quot;/t&amp;quot;分隔的檔案轉成sql語法, 用awk和sed&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;awk -F &lt;span class="s1"&gt;&amp;#39;\t&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;{print &amp;quot;INSERT INTO word (\&amp;quot;s3id\&amp;quot;,\&amp;quot;content\&amp;quot;,\&amp;quot;freq\&amp;quot;,\&amp;quot;translate\&amp;quot;,\&amp;quot;ex1\&amp;quot;,\&amp;quot;ex1_translate\&amp;quot;,\&amp;quot;ex2\&amp;quot;,\&amp;quot;ex2_translate\&amp;quot;) VALUES(\&amp;quot;&amp;quot;$1&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$2&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$3&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$4&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$5&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$6&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$7&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$8&amp;quot;\&amp;quot;)&amp;quot;}&amp;#39;&lt;/span&gt; data_all_u.txt | sed -e &lt;span class="s1"&gt;&amp;#39;s/^M//g&amp;#39;&lt;/span&gt; &amp;gt; out.sql
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;先用awk轉好, 再用sed去除最後換行符號, &amp;quot;^M&amp;quot;在commend-line裡要Ctrl-V + Ctrl-M表示&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;檔案&lt;/h2&gt;
 &lt;p&gt;把檔案foo複製到以下全部目錄裡:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
