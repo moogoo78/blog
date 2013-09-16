@@ -5,6 +5,20 @@ UNIX Command 常用指令
 :tags: docs
 :slug: unix_command
 
+
+
+好用script
+================
+
+把"/t"分隔的檔案轉成sql語法, 用awk和sed
+
+.. code-block:: bash
+
+  awk -F '\t' '{print "INSERT INTO word (\"s3id\",\"content\",\"freq\",\"translate\",\"ex1\",\"ex1_translate\",\"ex2\",\"ex2_translate\") VALUES(\""$1"\",\""$2"\",\""$3"\",\""$4"\",\""$5"\",\""$6"\",\""$7"\",\""$8"\")"}' data_all_u.txt | sed -e 's/^M//g' > out.sql
+
+.. note:: 先用awk轉好, 再用sed去除最後換行符號, "^M"在commend-line裡要Ctrl-V + Ctrl-M表示
+
+
 檔案
 ========
 

@@ -96,3 +96,6 @@ http://nedbatchelder.com/text/unipain.html
 
 http://www.charbase.com/1f40d-unicode-snake
 
+好用unicode
+==================
+◎
