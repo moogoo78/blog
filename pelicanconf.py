@@ -36,10 +36,10 @@ SITEMAP = {
 }
 
 # Blogroll
-#LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
-#          ('Python.org', 'http://python.org'),
-#          ('Jinja2', 'http://jinja.pocoo.org'),
-#          ('You can modify those links in your config file', '#'),)
+LINKS =  (
+    ('About', SITEURL +'/pages/about.html'),
+    (u'舊blog', 'http://blog.roodo.com/moogoo'),
+    (u'電腦程式blog', 'http://moogoo78.blogspot.com'))
 
 # Social widget
 SOCIAL = (('facebook', 'http://www.facebook.com/moogee.lee'),
