@@ -79,3 +79,13 @@ unfolder
 https://github.com/timrichardsn/CheckDeviceInternetConnection/blob/master/checkInternet.lua
 http://developer.coronalabs.com/code/show-native-activity-indicator-while-connecting-and-downloading
 http://developer.coronalabs.com/code/check-internet-connection
+
+
+
+old from evernote
+---------------------
+
+android key hash
+http://developer.coronalabs.com/forum/2012/03/20/facebook-and-android-key-hash
+
+http://developers.facebook.com/docs/mobile/android/build/
