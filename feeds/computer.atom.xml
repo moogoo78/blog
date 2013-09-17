@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-08-30T12:06:00+08:00</updated><entry><title>強大的Emacs Macro 巨集</title><link href="http://blog.suhen.org/computer/emacs_macro.html" rel="alternate"></link><updated>2013-08-30T12:06:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-30:computer/emacs_macro.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-09-13T12:14:00+08:00</updated><entry><title>Corona SDK 設定</title><link href="http://blog.suhen.org/computer/corona_sdk_setting.html" rel="alternate"></link><updated>2013-09-13T12:14:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-13:computer/corona_sdk_setting.html</id><summary type="html">&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="17%" /&gt;
+&lt;col width="28%" /&gt;
+&lt;col width="55%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;寬高比
+Aspect
+ratio&lt;/th&gt;
+&lt;th class="head"&gt;解析度
+Resolution&lt;/th&gt;
+&lt;th class="head"&gt;裝置&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td rowspan="3"&gt;4:3&lt;/td&gt;
+&lt;td&gt;320x240&lt;/td&gt;
+&lt;td&gt;iPhone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1024x768&lt;/td&gt;
+&lt;td&gt;iPad 1, iPad&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2048x1536&lt;/td&gt;
+&lt;td&gt;iPad 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td rowspan="2"&gt;3:2&lt;/td&gt;
+&lt;td&gt;480x320&lt;/td&gt;
+&lt;td&gt;iPhone 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;960x640&lt;/td&gt;
+&lt;td&gt;iPhone 4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;16:10&lt;/td&gt;
+&lt;td&gt;800x400
+1280x800&lt;/td&gt;
+&lt;td&gt;and
+Nexus 7, Galaxy Tab 10.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;17:10&lt;/td&gt;
+&lt;td&gt;1024x600&lt;/td&gt;
+&lt;td&gt;Galaxy Tab 7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;16:9&lt;/td&gt;
+&lt;td&gt;1136:640&lt;/td&gt;
+&lt;td&gt;iPhone 5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.coronalabs.com/blog/2012/03/22/developing-for-ipad-retina-display/"&gt;http://www.coronalabs.com/blog/2012/03/22/developing-for-ipad-retina-display/&lt;/a&gt;
+&lt;a class="reference external" href="http://www.coronalabs.com/blog/2010/11/20/content-scaling-made-easy/"&gt;http://www.coronalabs.com/blog/2010/11/20/content-scaling-made-easy/&lt;/a&gt;
+&lt;a class="reference external" href="http://developer.coronalabs.com/content/configuring-projects#Runtime_Configuration:_config.lua"&gt;http://developer.coronalabs.com/content/configuring-projects#Runtime_Configuration:_config.lua&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;380 wide by 570 high. This is the current “magic size” that fills the screen on all common devices.&lt;/p&gt;
+&lt;p&gt;1280 x 960&lt;/p&gt;
+&lt;p&gt;1024 x 768&lt;/p&gt;
+</summary><category term="corona sdk"></category></entry><entry><title>強大的Emacs Macro 巨集</title><link href="http://blog.suhen.org/computer/emacs_macro.html" rel="alternate"></link><updated>2013-08-30T12:06:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-30:computer/emacs_macro.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;基本操作&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C-x&lt;/span&gt; (&lt;/tt&gt; 開始錄製&lt;/li&gt;
@@ -2433,7 +2488,7 @@ ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
 </summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://blog.suhen.org/computer/unix_command.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/unix_command.html</id><summary type="html">&lt;div class="section" id="script"&gt;
 &lt;h2&gt;好用script&lt;/h2&gt;
 &lt;p&gt;把&amp;quot;/t&amp;quot;分隔的檔案轉成sql語法, 用awk和sed&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;awk -F &lt;span class="s1"&gt;&amp;#39;\t&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;{print &amp;quot;INSERT INTO word (\&amp;quot;s3id\&amp;quot;,\&amp;quot;content\&amp;quot;,\&amp;quot;freq\&amp;quot;,\&amp;quot;translate\&amp;quot;,\&amp;quot;ex1\&amp;quot;,\&amp;quot;ex1_translate\&amp;quot;,\&amp;quot;ex2\&amp;quot;,\&amp;quot;ex2_translate\&amp;quot;) VALUES(\&amp;quot;&amp;quot;$1&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$2&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$3&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$4&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$5&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$6&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$7&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$8&amp;quot;\&amp;quot;)&amp;quot;}&amp;#39;&lt;/span&gt; data_all_u.txt | sed -e &lt;span class="s1"&gt;&amp;#39;s/^M//g&amp;#39;&lt;/span&gt; &amp;gt; out.sql
+&lt;div class="highlight"&gt;&lt;pre&gt;awk -F &lt;span class="s1"&gt;&amp;#39;\t&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;{print &amp;quot;INSERT INTO word (\&amp;quot;s3id\&amp;quot;,\&amp;quot;content\&amp;quot;,\&amp;quot;freq\&amp;quot;,\&amp;quot;translate\&amp;quot;,\&amp;quot;ex1\&amp;quot;,\&amp;quot;ex1_translate\&amp;quot;,\&amp;quot;ex2\&amp;quot;,\&amp;quot;ex2_translate\&amp;quot;) VALUES(\&amp;quot;&amp;quot;$1&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$2&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$3&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$4&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$5&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$6&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$7&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$8&amp;quot;\&amp;quot;);&amp;quot;}&amp;#39;&lt;/span&gt; data_all_u.txt | sed -e &lt;span class="s1"&gt;&amp;#39;s/^M//g&amp;#39;&lt;/span&gt; &amp;gt; out.sql
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;

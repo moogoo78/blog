@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-09-11T20:04:00+08:00</updated><entry><title>2013小腳丫會師 - 加蘭灣, 神代池, 嘉平林道, 加羅湖</title><link href="http://blog.suhen.org/mountain/shendaixian.html" rel="alternate"></link><updated>2013-09-11T20:04:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-11:mountain/shendaixian.html</id><summary type="html">&lt;p&gt;參加小腳丫的會師，很久沒參加林教授探勘的活動，大家都有一陣子沒見面了，很期待這次的行程。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-09-13T12:14:00+08:00</updated><entry><title>Corona SDK 設定</title><link href="http://blog.suhen.org/computer/corona_sdk_setting.html" rel="alternate"></link><updated>2013-09-13T12:14:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-13:computer/corona_sdk_setting.html</id><summary type="html">&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="17%" /&gt;
+&lt;col width="28%" /&gt;
+&lt;col width="55%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;寬高比
+Aspect
+ratio&lt;/th&gt;
+&lt;th class="head"&gt;解析度
+Resolution&lt;/th&gt;
+&lt;th class="head"&gt;裝置&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td rowspan="3"&gt;4:3&lt;/td&gt;
+&lt;td&gt;320x240&lt;/td&gt;
+&lt;td&gt;iPhone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1024x768&lt;/td&gt;
+&lt;td&gt;iPad 1, iPad&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2048x1536&lt;/td&gt;
+&lt;td&gt;iPad 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td rowspan="2"&gt;3:2&lt;/td&gt;
+&lt;td&gt;480x320&lt;/td&gt;
+&lt;td&gt;iPhone 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;960x640&lt;/td&gt;
+&lt;td&gt;iPhone 4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;16:10&lt;/td&gt;
+&lt;td&gt;800x400
+1280x800&lt;/td&gt;
+&lt;td&gt;and
+Nexus 7, Galaxy Tab 10.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;17:10&lt;/td&gt;
+&lt;td&gt;1024x600&lt;/td&gt;
+&lt;td&gt;Galaxy Tab 7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;16:9&lt;/td&gt;
+&lt;td&gt;1136:640&lt;/td&gt;
+&lt;td&gt;iPhone 5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.coronalabs.com/blog/2012/03/22/developing-for-ipad-retina-display/"&gt;http://www.coronalabs.com/blog/2012/03/22/developing-for-ipad-retina-display/&lt;/a&gt;
+&lt;a class="reference external" href="http://www.coronalabs.com/blog/2010/11/20/content-scaling-made-easy/"&gt;http://www.coronalabs.com/blog/2010/11/20/content-scaling-made-easy/&lt;/a&gt;
+&lt;a class="reference external" href="http://developer.coronalabs.com/content/configuring-projects#Runtime_Configuration:_config.lua"&gt;http://developer.coronalabs.com/content/configuring-projects#Runtime_Configuration:_config.lua&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;380 wide by 570 high. This is the current “magic size” that fills the screen on all common devices.&lt;/p&gt;
+&lt;p&gt;1280 x 960&lt;/p&gt;
+&lt;p&gt;1024 x 768&lt;/p&gt;
+</summary><category term="corona sdk"></category></entry><entry><title>2013小腳丫會師 - 加蘭灣, 神代池, 嘉平林道, 加羅湖</title><link href="http://blog.suhen.org/mountain/shendaixian.html" rel="alternate"></link><updated>2013-09-11T20:04:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-11:mountain/shendaixian.html</id><summary type="html">&lt;p&gt;參加小腳丫的會師，很久沒參加林教授探勘的活動，大家都有一陣子沒見面了，很期待這次的行程。&lt;/p&gt;
 &lt;p&gt;行前印地圖有找一下資料，沒看到從加蘭灣走嘉平林道的紀錄，不過是有人從另一邊林道走神代山、神代池，所以至少後半段的路應該會比較明確一點。想說教授會開的行程應該都是沒什麼人走過的，這也是我喜歡的原因。&lt;/p&gt;
 &lt;p&gt;日期: 2013-09-05 ~ 2013-09-08&lt;/p&gt;
 &lt;p&gt;人員: 教授，阿來，祺聖，孟根，思賢&lt;/p&gt;
@@ -226,7 +281,71 @@ As she comes rolling by.
 &lt;li&gt;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Freight_Train_(song)"&gt;Freight Train (song) - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="經典翻唱"></category></entry><entry><title>日本北陸 - 立山劍岳行 (5/5) - 金澤市一日游</title><link href="http://blog.suhen.org/travel/tsurugi_dake_5_kanezawa.html" rel="alternate"></link><updated>2013-08-11T11:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-11:travel/tsurugi_dake_5_kanezawa.html</id><summary type="html">&lt;p&gt;金澤是個歷史城市，又稱小京都，附近有溫泉跟有名的加賀屋旅館。&lt;/p&gt;
+</summary><category term="經典翻唱"></category></entry><entry><title>[希望山林] 三貂嶺場堪心得</title><link href="http://blog.suhen.org/misc/sandiaoling.html" rel="alternate"></link><updated>2013-08-18T18:38:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-18:misc/sandiaoling.html</id><summary type="html">&lt;p&gt;老鷹帶領的希望山林三貂嶺場堪。&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.facebook.com/HopeForestTaiwan"&gt;https://www.facebook.com/HopeForestTaiwan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;心得:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+到了三貂嶺車站，參加人數遠超過預期，老鷹把大家分成&amp;quot;勘察組&amp;quot;跟&amp;quot;單純來走走&amp;quot;組，
+2組的任務不太一樣，然後全部的人再分成幾個小組，每組發一張紙。
+發給大家一人一張小紙條，上面寫著今天活動的10個重點。
+大家先選出最喜歡、最想去的。
+老鷹先問大家，這10個重點關鍵字是怎麼出來的。
+有人說是半夢半醒之間想出來的，
+老鷹說是打坐時想出這些字，
+活動的內容則是到現場再臨機應變。
+
+
+第一關: 秘境車站
+在車站附近到處看，找出為什麼取名秘境車站
+
+-&amp;gt; 從出發點開始熱身, 思考今天行程的意義
+
+第二關和第三關分開進行:
+1,3組 古往今來 (三貂嶺附近聚落)
+2,4組 碩仁快閃 (碩仁國小)
+各選出三個地方, 用1.輪廓 2. 描述 3. 我們自己想
+
+-&amp;gt; 用不的方式觀察，猜測別組的觀察，別人想的跟我們想的一不一樣
+
+再碩仁國小集合，各組再跟大家分享剛才觀察到的東西，分享心得，
+老鷹詢問大家喜歡帶人或被帶。
+
+第三關 十分快&amp;quot;熱&amp;quot; :
+爬一段上坡，找一個陰涼的地方，休息，轉換心情，走進山林。
+拜見山林儀式。
+
+發“神來之筆”的小紙條，分第2次組, 重新打散。
+-&amp;gt; 感覺到進入活動重點，重新分組認識其他朋友。
+
+從神來之筆圈出5個題目當關鍵字，走進山林裡尋找。
+
+中午休息老鷹要大家把食物分享出來，全部分給大家享用。
+沒帶食物的人也可以一起分享到。
+
+-&amp;gt; 大家一起吃的東西感覺更好吃
+
+瀑布沒有水，所以無法&amp;quot;聽瀑&amp;quot;,
+
+午餐後走到一段比較平緩的路，老鷹要我們閉上眼睛，搭著前面人的肩走。
+
+-&amp;gt; 信任前方的隊伍, 帶領後面看不到的朋友
+
+吊橋上大合照
+
+2人一組渡鵲橋，想一個動作。
+一個人獨走，放空。
+
+-&amp;gt; 緩和今天的活動, 重新整理思緒
+
+摩天觀瀑
+
+-&amp;gt; 雖然瀑布水量不多, 但是山谷看起來很很壯觀
+
+最後: 拿神來之筆的紙條，4個關鍵字，再加3個字，變成7言絕句，感覺詩很容易就寫出來了。
+
+拿神來之筆的紙條，找一句來說出今天活動的感想，總結。
+&lt;/pre&gt;
+</summary><category term="event"></category></entry><entry><title>日本北陸 - 立山劍岳行 (5/5) - 金澤市一日游</title><link href="http://blog.suhen.org/travel/tsurugi_dake_5_kanezawa.html" rel="alternate"></link><updated>2013-08-11T11:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-11:travel/tsurugi_dake_5_kanezawa.html</id><summary type="html">&lt;p&gt;金澤是個歷史城市，又稱小京都，附近有溫泉跟有名的加賀屋旅館。&lt;/p&gt;
 &lt;div class="section" id="id2"&gt;
 &lt;h2&gt;第四天 (7/24) 金澤市一日游&lt;/h2&gt;
 &lt;p&gt;早上我跟小黑吃完早餐後，無聊到附近亂走，進去一間歐式風情的咖啡廳，只有一位阿姨，應該就是老闆，各點了黑咖啡，是用手沖的，不錯喝。&lt;/p&gt;
@@ -3407,7 +3526,7 @@ ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
 </summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://blog.suhen.org/computer/unix_command.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/unix_command.html</id><summary type="html">&lt;div class="section" id="script"&gt;
 &lt;h2&gt;好用script&lt;/h2&gt;
 &lt;p&gt;把&amp;quot;/t&amp;quot;分隔的檔案轉成sql語法, 用awk和sed&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;awk -F &lt;span class="s1"&gt;&amp;#39;\t&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;{print &amp;quot;INSERT INTO word (\&amp;quot;s3id\&amp;quot;,\&amp;quot;content\&amp;quot;,\&amp;quot;freq\&amp;quot;,\&amp;quot;translate\&amp;quot;,\&amp;quot;ex1\&amp;quot;,\&amp;quot;ex1_translate\&amp;quot;,\&amp;quot;ex2\&amp;quot;,\&amp;quot;ex2_translate\&amp;quot;) VALUES(\&amp;quot;&amp;quot;$1&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$2&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$3&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$4&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$5&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$6&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$7&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$8&amp;quot;\&amp;quot;)&amp;quot;}&amp;#39;&lt;/span&gt; data_all_u.txt | sed -e &lt;span class="s1"&gt;&amp;#39;s/^M//g&amp;#39;&lt;/span&gt; &amp;gt; out.sql
+&lt;div class="highlight"&gt;&lt;pre&gt;awk -F &lt;span class="s1"&gt;&amp;#39;\t&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;{print &amp;quot;INSERT INTO word (\&amp;quot;s3id\&amp;quot;,\&amp;quot;content\&amp;quot;,\&amp;quot;freq\&amp;quot;,\&amp;quot;translate\&amp;quot;,\&amp;quot;ex1\&amp;quot;,\&amp;quot;ex1_translate\&amp;quot;,\&amp;quot;ex2\&amp;quot;,\&amp;quot;ex2_translate\&amp;quot;) VALUES(\&amp;quot;&amp;quot;$1&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$2&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$3&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$4&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$5&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$6&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$7&amp;quot;\&amp;quot;,\&amp;quot;&amp;quot;$8&amp;quot;\&amp;quot;);&amp;quot;}&amp;#39;&lt;/span&gt; data_all_u.txt | sed -e &lt;span class="s1"&gt;&amp;#39;s/^M//g&amp;#39;&lt;/span&gt; &amp;gt; out.sql
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;

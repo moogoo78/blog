@@ -33,6 +33,79 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/music/rachmaninoff_all_night_vigil.html" rel="bookmark"
+                           title="Permalink to 拉赫曼尼諾夫 - 徹夜禱 / All-Night Vigil">拉赫曼尼諾夫 - 徹夜禱 / All-Night Vigil</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-04T09:47:00">
+                2013-06-04 09:47
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/music.html">music</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/diary.html">diary</a></p>
+</footer><!-- /.post-info -->                <p>因為朋友的介紹，去聽了一場特別的合唱音樂：亞歷山大 索羅夫耶夫(Alexander Solovyev)指揮台北愛樂合唱團的拉赫曼尼諾夫「徹夜禱」 (op.37, 1915)。我沒有信基督教，但是我很喜歡傳統宗教聖歌，那種純粹寧靜的感覺。</p>
+<div class="section" id="sergei-rachmaninoff">
+<h2>拉赫曼尼諾夫 / Sergei Rachmaninoff</h2>
+<p>俄文: Серге́й Васи́льевич Рахма́нинов, 1873-1943, 年是140歲冥誕。
+常看到的英文譯名會有Rachmaninov或是Rachmaninoff兩種，其實只是翻譯的不同，看看中文翻英或英翻中的混亂... 但是為什麼普羅高菲夫 (Prokofiev) 是v不是off，也許是拉赫曼尼諾夫1918年為逃避俄國大革命，移居美國後，可能比較懂英文，用接近英文的發音來翻譯，所以 <tt class="docutils literal">v</tt> 結尾可能只是俄國人一廂情願的音譯，這有待俄文專家解惑。據說他自己簽名是寫的是Rachmaninoff。</p>
+</div>
+<div class="section" id="id1">
+<h2>徹夜禱 / All-night Vigil</h2>
+<p>這首作品很都地方都寫&quot;晚禱&quot; (Vespers)，但其實應該是徹夜禱(All-Night Vigir ...</p></div>
+                <a class="readmore" href="http://blog.suhen.org/music/rachmaninoff_all_night_vigil.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/music/rachmaninoff_all_night_vigil.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/pelican_github_pages.rst.html" rel="bookmark"
+                           title="Permalink to 把靜態blog放到Github Pages上，以pelican為例">把靜態blog放到Github Pages上，以pelican為例</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-01T11:36:00">
+                2013-06-01 11:36
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>之前開始把blog轉到使用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">pelican產生靜態blog</a> ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。</p>
+<p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
+<div class="section" id="id1">
+<h2>環境設定</h2>
+<p>python要用virtualenv才是王道:</p>
+<pre class="literal-block">
+$ mkvirtualenv sillywalk.org
+$ cd sillkwalk.org
+$ setvirtualenvproject
+$ workon sillywalk.org
+
+$ pip install pelican
+$ pip install ghp-import # 方便發佈到github pages的工具
+</pre>
+</div>
+<div class="section" id="html">
+<h2>產生HTML，發佈</h2>
+<p>產生HTML內容:</p>
+<pre class="literal-block">
+$ pelican -s pelican.conf.py .
+$ ghp-import output
+$ git push origin gh-pages
+
+# 其實pelican的make就可以了 ...</pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/pelican_github_pages.rst.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/pelican_github_pages.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/irc_screen_irssi.html" rel="bookmark"
                            title="Permalink to 用screen+irssi上IRC聊天不斷線">用screen+irssi上IRC聊天不斷線</a></h1>
                 </header>
@@ -342,91 +415,6 @@ $ make clean
 $ make rsync_upload # 用rsync上傳到你的ssh host ...</pre></div>
                 <a class="readmore" href="http://blog.suhen.org/computer/pelican.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/pelican.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/music/lee_hazlewood_sand.html" rel="bookmark"
-                           title="Permalink to Sand">Sand</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-04-10T17:14:00">
-                2013-04-10 17:14
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/music.html">music</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/jing-dian-fan-chang.html">經典翻唱</a></p>
-</footer><!-- /.post-info -->                <p>1966年Lee Hazlewood寫的歌，出現在Nancy Sinatra的專輯&quot;How Does That Grab You?&quot;</p>
-<p><a class="reference external" href="http://en.wikipedia.org/wiki/Sand_%28Lee_Hazlewood_song%29">wikipedia</a></p>
-<div class="section" id="nancy-sinatra-lee-hazlewood-how-does-that-grab-you-1966">
-<h2>Nancy Sinatra &amp; Lee Hazlewood (<em>How Does That Grab You?</em>, 1966)</h2>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/pGfD2j9M1dA" frameborder="0"></iframe></div><p>最有靈性的版本！</p>
-</div>
-<div class="section" id="einsturzende-neubautten-halber-mensh-1985">
-<h2>Einstürzende Neubautten (Halber Mensh*, 1985)</h2>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/4BiODjvVEOw" frameborder="0"></iframe></div><p>這是我第一次聽到這首歌的版本，Blixa Bargeld一人分飾兩角，愛死了！</p>
-</div>
-<div class="section" id="op8-feat-lisa-germano-slush-1997">
-<h2>OP8 feat. Lisa Germano (<em>Slush</em>, 1997)</h2>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/lNIcvmDjx0k" frameborder="0"></iframe></div><p>個性女伶Lisa Germano來伴唱</p>
-</div>
-<div class="section" id="hugo-race-and-the-true-spirit-53rd-state-2008">
-<h2>Hugo Race and the True Spirit (<em>53rd State</em>, 2008)</h2>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/rjRp8TG_q08" frameborder="0"></iframe></div></div>
-<div class="section" id="cillian-murphy-breakfast-on-pluto-o-s-t-2005">
-<h2>Cillian Murphy (<em>Breakfast ...</em></h2></div>
-                <a class="readmore" href="http://blog.suhen.org/music/lee_hazlewood_sand.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/music/lee_hazlewood_sand.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/scripting-languages-draft.html" rel="bookmark"
-                           title="Permalink to Scripting Languages (draft)">Scripting Languages (draft)</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-04-09T11:38:00">
-                2013-04-09 11:38
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <p>PHP, Python, Javascript, Lua</p>
-<div class="section" id="basic">
-<h2>Basic</h2>
-</div>
-<div class="section" id="data-type">
-<h2>Data Type</h2>
-<p><strong>Array</strong></p>
-<pre class="literal-block">
-# python
-arr = [1, 2, 3]
-
-# lua
-squares = {1, 4, 9, 16, 25, 36, 49, 64, 81}
-squares[1] # 1
-</pre>
-</div>
-<div class="section" id="statement-expression">
-<h2>statement/expression</h2>
-<div class="section" id="id1">
-<h3>函式</h3>
-<p><strong>引數</strong></p>
-<pre class="literal-block">
-# python
-def func(a, *pargs, **kargs): print a, pargs, kargs
-# &gt;&gt;&gt; f(1, 2, 3, x=1, y=2)
-# 1 ...</pre></div></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/scripting-languages-draft.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/scripting-languages-draft.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

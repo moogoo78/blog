@@ -33,6 +33,40 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="bookmark"
+                           title="Permalink to 用Emacs的skeleton快速建立pelican的blog內文">用Emacs的skeleton快速建立pelican的blog內文</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-08-27T18:07:00">
+                2013-08-27 18:07
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info -->                <p>用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">Pelican</a> 寫blog時都要輸入一堆metadata很麻煩, 利用 <a class="reference external" href="http://blog.suhen.org/computer/emacs.html">Emacs</a> 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!</p>
+<div class="highlight"><pre><span class="p">(</span><span class="nv">define-skeleton</span> <span class="nv">insert-pelican-template</span>
+  <span class="s">&quot;Insert templete for pelican static blog system&quot;</span>
+  <span class="s">&quot;&quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;Title: &quot;</span><span class="p">)</span><span class="nv">?\n</span>
+  <span class="s">&quot;#############################&quot;</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:date: &quot;</span> <span class="p">(</span><span class="nv">insert-current-date</span><span class="p">)</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:category: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;category: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:tags: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;tags: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
+  <span class="s">&quot;:slug: &quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;slug: &quot;</span><span class="p">)</span> <span class="nv">?\n</span>
+<span class="p">)</span>
+</pre></div>
+<p>參考:
+<a class="reference external" href="http://www.emacswiki.org/emacs/SkeletonMode">EmacsWiki: Skeleton Mode</a></p>
+
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_skeleton.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_skeleton.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/ganglia.html" rel="bookmark"
                            title="Permalink to Ganglia">Ganglia</a></h1>
                 </header>
@@ -356,29 +390,6 @@ alt + 數字
 <li><a class="reference external" href="http://www.frim.gov.my/?page_id=9414">Shorea resinosa : Another ...</a></li></ul>
                 <a class="readmore" href="http://blog.suhen.org/misc/kapur.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/misc/kapur.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/misc/language-su-ge-lan-ying-wen.html" rel="bookmark"
-                           title="Permalink to [language] 蘇格蘭英文">[language] 蘇格蘭英文</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-06-29T13:03:00">
-                2013-06-29 13:03
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/misc.html">misc</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/language.html">language</a></p>
-</footer><!-- /.post-info -->                <p>看完2013溫布頓網球公開賽，廬彥勳雖然實力有發揮還是被排名第2的英國Murray直落三淘汰。賽後訪問，覺得Murray講的英文不是一般聽到的英國腔英文，比較平順，不饒口，也不像美國腔奔放，查了一下原來他是蘇格蘭人，這就是所謂的蘇格蘭英文吧。 ( <a class="reference external" href="http://en.wikipedia.org/wiki/Scottish_English">Scottish English - Wikipedia</a> )</p>
-<p>我覺得很有興趣，但是對語言／語音學的知識還是相當匱乏，有空再來研究~</p>
-
-                <a class="readmore" href="http://blog.suhen.org/misc/language-su-ge-lan-ying-wen.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/misc/language-su-ge-lan-ying-wen.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
