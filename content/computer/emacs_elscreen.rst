@@ -6,11 +6,11 @@ Elscreen - Emacs好用的tab mode
 :slug: emacs_elscreen
 
 
-我以為在Emacs一直沒有好的tab顯示模式，以前用過tabbar_ mode，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。
+我以為在Emacs一直沒有好的tab顯示模式，以前用過 `tabbar mode <http://emacswiki.org/emacs/TabBarMode>`__ ，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。
 
 下載elscreen.el: ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/
 
-elscreen.el只有一個檔案，但是他要依附一套 APEL_ 才可以運作。
+elscreen.el只有一個檔案，但是他要依附一套 `APEL <https://github.com/jeffgran/APEL>`__ 才可以運作。
 
 ::
 
@@ -29,6 +29,3 @@ elscreen.el只有一個檔案，但是他要依附一套 APEL_ 才可以運作�
 
 - `elscreen 改め tabbar のインストールログ - テクノ組曲 <http://d.hatena.ne.jp/plasticster/20110825/1314271209>`__
 - `emacs-fu: keeping related buffers together with elscreen <http://emacs-fu.blogspot.tw/2009/07/keeping-related-buffers-together-with.html>`__
-
-.. _tabbar: http://emacswiki.org/emacs/TabBarMode
-.. _APEL: https://github.com/jeffgran/APEL
