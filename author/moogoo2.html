@@ -191,7 +191,7 @@ C-RET ...</pre></div>
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
 </footer><!-- /.post-info -->                <p>看到 <a class="reference external" href="http://xahlee.org">XahLee</a> 的一篇文章: <a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html">Emacs: Rename Files Interactively by Pattern (regex; wdired)</a> ，用Emacs來處理批次改檔名實在太方便了。</p>
-<p>在Dired模式下，**C-x C-q** 進入修改模式，或是執行 <strong>wdired-change-to-wdired-mode</strong>, 這時改檔名就像改一般文字檔一樣，可以用 <em>query-replace</em>, <em>query-replace-regexp</em> 或 <em>cua-mode</em> , 改完後 <strong>C-c C-c</strong> 送出, 或是 <strong>C-c C-Esc</strong> 取消就可以了,  比寫script直覺多了。</p>
+<p>在Dired模式下，<strong>C-x C-q</strong> 進入修改模式，或是執行 <strong>wdired-change-to-wdired-mode</strong>, 這時改檔名就像改一般文字檔一樣，可以用 <em>query-replace</em>, <em>query-replace-regexp</em> 或 <em>cua-mode</em> , 改完後 <strong>C-c C-c</strong> 送出, 或是 <strong>C-c C-Esc</strong> 取消就可以了,  比寫script直覺多了。</p>
 
                 <a class="readmore" href="http://blog.suhen.org/computer/emacs_dired_rename.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/emacs_dired_rename.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
@@ -213,7 +213,7 @@ C-RET ...</pre></div>
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <p>我以為在Emacs一直沒有好的tab顯示模式，以前用過tabbar_ mode，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。</p>
+</footer><!-- /.post-info -->                <p>我以為在Emacs一直沒有好的tab顯示模式，以前用過 <a class="reference external" href="http://emacswiki.org/emacs/TabBarMode">tabbar mode</a> ，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。</p>
 <p>下載elscreen.el: <a class="reference external" href="ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/">ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/</a></p>
 <p>elscreen.el只有一個檔案，但是他要依附一套 <a class="reference external" href="https://github.com/jeffgran/APEL">APEL</a> 才可以運作。</p>
 <pre class="literal-block">
@@ -224,8 +224,7 @@ C-RET ...</pre></div>
 
 (global-set-key (kbd &quot;C-x t&quot;) 'elscreen-create)
 (global-set-key (kbd &quot;C-x w&quot;) 'elscreen-kill)
-(global-set-key (kbd &quot;M-t&quot;) 'elscreen-previous) ;;transpose-words
-(global-set-key ...</pre>
+(global-set-key (kbd &quot;M-t&quot;) 'elscreen-previous) ;;transpose-words ...</pre>
                 <a class="readmore" href="http://blog.suhen.org/computer/emacs_elscreen.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/emacs_elscreen.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
