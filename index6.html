@@ -33,6 +33,46 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/git.html" rel="bookmark"
+                           title="Permalink to GIT">GIT</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-23T00:00:00">
+                2013-03-23 00:00
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="quick-start">
+<h2>Quick Start</h2>
+<div class="section" id="init">
+<h3>init</h3>
+<p>Server (Repository):</p>
+<pre class="literal-block">
+mkdir example.git
+cd example.git
+git --bare init # init加--bare, 表示只會在當下目錄放git的東西，不會有原始檔案, 如果要原始檔案再git clone出來就有了
+</pre>
+<p>Client:</p>
+<pre class="literal-block">
+mkdir example
+cd example
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin ssh://USERNAME&#64;REMOTE_SERVER/~/example.git
+git push origin master (第一次之後只要打git ...</pre></div></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/git.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/git.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="bookmark"
                            title="Permalink to Dynamic DNS setting for Namecheap on Mac OSX">Dynamic DNS setting for Namecheap on Mac OSX</a></h1>
                 </header>

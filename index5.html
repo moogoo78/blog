@@ -33,6 +33,49 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/pelican.html" rel="bookmark"
+                           title="Permalink to Pelican - 邁向靜態blog之路">Pelican - 邁向靜態blog之路</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-11T12:57:00">
+                2013-04-11 12:57
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>一直想用純HTML來寫blog，做筆記，最早用PHP的 <a class="reference external" href="https://www.dokuwiki.org">dokuwiki</a> ，不想被PHP server綁住，改用Emacs的 <a class="reference external" href="http://orgmode.org/">Orgmode</a>, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 <a class="reference external" href="http://gentlerunner.org/rest-restructuredtextyu-sphinx.html">reST</a> (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。</p>
+<div class="section" id="quick-start">
+<h2>Quick-start</h2>
+<p>安裝:</p>
+<pre class="literal-block">
+$ pip install pelican
+</pre>
+<p>開始:</p>
+<pre class="literal-block">
+$ mkdir blog
+$ cd blog
+$ pelican-quickstart
+</pre>
+<p>快速產生相關的設定</p>
+<p>寫第一篇文章:</p>
+<pre class="literal-block">
+$ content/first.rst
+</pre>
+<p>工具指令:</p>
+<pre class="literal-block">
+$ make html # 顧名思義
+$ make clean
+$ make rsync_upload # 用rsync上傳到你的ssh host ...</pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/pelican.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/pelican.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/music/lee_hazlewood_sand.html" rel="bookmark"
                            title="Permalink to Sand">Sand</a></h1>
                 </header>
@@ -452,46 +495,6 @@ $ make html
 $ find . -type d |xargs ...</pre></div>
                 <a class="readmore" href="http://blog.suhen.org/computer/unix_command.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/git.html" rel="bookmark"
-                           title="Permalink to GIT">GIT</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-03-23T00:00:00">
-                2013-03-23 00:00
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="quick-start">
-<h2>Quick Start</h2>
-<div class="section" id="init">
-<h3>init</h3>
-<p>Server (Repository):</p>
-<pre class="literal-block">
-mkdir example.git
-cd example.git
-git --bare init # init加--bare, 表示只會在當下目錄放git的東西，不會有原始檔案, 如果要原始檔案再git clone出來就有了
-</pre>
-<p>Client:</p>
-<pre class="literal-block">
-mkdir example
-cd example
-git init
-touch README
-git add README
-git commit -m 'first commit'
-git remote add origin ssh://USERNAME&#64;REMOTE_SERVER/~/example.git
-git push origin master (第一次之後只要打git ...</pre></div></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/git.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/git.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

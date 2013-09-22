@@ -95,6 +95,43 @@
                  
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/lua_ternary.html" rel="bookmark"
+                           title="Permalink to Lua的3元運算子 (Ternary Operator)">Lua的3元運算子 (Ternary Operator)</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-09-23T00:39:00">
+                2013-09-23 00:39
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/lua.html">lua</a></p>
+</footer><!-- /.post-info -->                <p>很多語言都有簡潔的3元運算, 但是lua不支援這樣的語法.</p>
+<div class="highlight"><pre><span class="c1">// C</span>
+<span class="n">sign</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="s">&quot;negative&quot;</span> <span class="o">:</span> <span class="s">&quot;non-negative&quot;</span><span class="p">;</span>
+</pre></div>
+<div class="highlight"><pre><span class="cp">&lt;?php</span>
+<span class="nv">$action</span> <span class="o">=</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]))</span> <span class="o">?</span> <span class="s1">&#39;default&#39;</span> <span class="o">:</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">];</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+<div class="highlight"><pre><span class="c"># Python</span>
+<span class="s">&#39;true&#39;</span> <span class="k">if</span> <span class="bp">True</span> <span class="k">else</span> <span class="s">&#39;false&#39;</span>
+</pre></div>
+<div class="highlight"><pre><span class="c1">// JavaScript</span>
+<span class="nx">x</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="o">?</span> <span class="kc">true</span> <span class="o">:</span> <span class="kc">false</span><span class="p">;</span>
+</pre></div>
+<p>不過, 還是可以利用 <strong>and</strong>, <strong>or</strong> 運算子的特性來達成. 例如:</p>
+<div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">x is &#39;</span> <span class="o">..</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="s">negative&#39;</span> <span class="ow">or</span> <span class="s1">&#39;</span><span class="s">non-negative&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">x is &#39;</span> <span class="o">..</span> <span class="p">((</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="s">negative ...</span></pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/lua_ternary.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/lua_ternary.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html" rel="bookmark"
                            title="Permalink to 列印日本地形圖 - 以劍岳為例">列印日本地形圖 - 以劍岳為例</a></h1>
                 </header>
@@ -346,58 +383,6 @@ A = Y if X else Z
 re.sub(r'[^a-zA-Z_0-9]', '', did ...</pre></div></div>
                 <a class="readmore" href="http://blog.suhen.org/computer/python.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/python.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/python-web-framework.html" rel="bookmark"
-                           title="Permalink to Python Web Framework">Python Web Framework</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-04-09T11:36:00">
-                2013-04-09 11:36
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="django">
-<h2>Django</h2>
-<div class="section" id="quick-start">
-<h3>Quick Start</h3>
-<pre class="literal-block">
-$ pip install Django
-$ django-admin.py startproject mysite
-$ python manage.py startapp myapp
-</pre>
-<p>check version:</p>
-<pre class="literal-block">
-import django
-print django.get_version()
-</pre>
-</div>
-<div class="section" id="docs">
-<h3>docs</h3>
-<ul class="simple">
-<li><a class="reference external" href="https://docs.djangoproject.com/en/1.3/">Django | Django documentation | Django documentation</a></li>
-<li><a class="reference external" href="http://djangosnippets.org/snippets/1811/">Django snippets: django paginator</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="flask">
-<h2>Flask</h2>
-<div class="section" id="id1">
-<h3>Docs</h3>
-<ul class="simple">
-<li><a class="reference external" href="http://flask.pocoo.org/docs/">Flask documentation</a>, <a class="reference external" href="https://github.com/mitsuhiko/flask">github</a></li>
-<li><a class="reference external" href="http://jinja.pocoo.org/docs/">Jinja2 documentation</a></li>
-<li><a class="reference external" href="http://packages.python.org/Flask-SQLAlchemy/">Flask-SQLAlchemy documentation</a>, <a class="reference external" href="https://github.com/brosner/sqlalchemy">github</a>, <a class="reference external" href="http://docs.sqlalchemy.org/en/latest/index.html">SQLAlchemy Documentation</a></li>
-<li><a class="reference external" href="http://packages.python.org/Flask-Login/">Flask-Login documentation</a>, <a class="reference external" href="https://bitbucket.org/leafstorm/flask-login">leafstorm / flask-login / overview — Bitbucket ...</a></li></ul></div></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/python-web-framework.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/python-web-framework.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
