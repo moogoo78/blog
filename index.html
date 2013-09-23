@@ -30,15 +30,44 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/lua_ternary.html">Lua的3元運算子 (Ternary Operator)</a></h1> 
+                    <h1 class="entry-title"><a href="http://blog.suhen.org/misc/blackbird.html">Blackbird是烏鶇，跟烏鴉不一樣</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-09-23T10:29:00">
+                2013-09-23 10:29
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/misc.html">misc</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/natural.html">natural</a></p>
+</footer><!-- /.post-info --><p>原來英文的blackbird指的是 <a class="reference external" href="http://zh.wikipedia.org/wiki/烏鶇">烏鶇</a> ，我一直以為是「烏鴉」。台灣本島很沒有烏鶇，有的話也是 <a class="reference external" href="http://zh.wikipedia.org/zh-tw/迷鸟">迷鳥</a> 。當然最容易讓我聯想到的是The Beatles的歌，歌詞據說是影射當時黑人人權問題。</p>
+<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/oAgceen153I" frameborder="0"></iframe></div><p>參考:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://blog.yam.com/birdprimaries/article/59717179">初級飛羽 Wild Birds in Taiwan: 20130127 烏鶇公鳥01_金門慈湖路一段 - yam天空部落</a></li>
+<li><a class="reference external" href="http://taibif.tw/zh/catalogue_of_life/page/ae2d-362a-2a5e-8dd5-a384-5646-8ad9-c707-namecode-380404">Turdus merula mandarinus (Bonaparte, 1850) 烏鶇 | 台灣生物多樣性資訊入口網</a></li>
+</ul>
+<p>There are <a href="http://blog.suhen.org/misc/blackbird.html#disqus_thread">comments</a>.</p>                </article>
+                            </aside><!-- /#featured -->
+                            <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+                                                
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/lua_ternary.html" rel="bookmark"
+                           title="Permalink to Lua的3元運算子 (Ternary Operator)">Lua的3元運算子 (Ternary Operator)</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-09-23T00:39:00">
                 2013-09-23 00:39
         </abbr>
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/lua.html">lua</a></p>
-</footer><!-- /.post-info --><p>很多語言都有簡潔的3元運算, 但是lua不支援這樣的語法.</p>
+</footer><!-- /.post-info -->                <p>很多語言都有簡潔的3元運算, 但是lua不支援這樣的語法.</p>
 <div class="highlight"><pre><span class="c1">// C</span>
 <span class="n">sign</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="s">&quot;negative&quot;</span> <span class="o">:</span> <span class="s">&quot;non-negative&quot;</span><span class="p">;</span>
 </pre></div>
@@ -54,30 +83,11 @@
 </pre></div>
 <p>不過, 還是可以利用 <strong>and</strong>, <strong>or</strong> 運算子的特性來達成. 例如:</p>
 <div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">x is &#39;</span> <span class="o">..</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="s">negative&#39;</span> <span class="ow">or</span> <span class="s1">&#39;</span><span class="s">non-negative&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">x is &#39;</span> <span class="o">..</span> <span class="p">((</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="s">negative&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="s1">&#39;</span><span class="s">non-negative&#39;</span><span class="p">))</span> <span class="c1">-- 這樣好懂一點</span>
-</pre></div>
-<p>道理何在?!</p>
-<p>主要是利用 <strong>and</strong> 和 <strong>or</strong> 的優先循序規則看以下例子:</p>
-<div class="highlight"><pre><span class="nb">print</span><span class="p">(</span> <span class="mi">1</span> <span class="ow">and</span> <span class="s2">&quot;</span><span class="s">hello&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">hello&quot;</span> <span class="ow">and</span> <span class="s2">&quot;</span><span class="s">there&quot;</span> <span class="p">)</span>
-<span class="c1">-- hello   there</span>
-<span class="c1">-- a, b 都是 *true*, 回傳b (第二個)</span>
-
-<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">hello&quot;</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">there&quot;</span><span class="p">,</span> <span class="mi">1</span> <span class="ow">or</span> <span class="mi">0</span> <span class="p">)</span>
-<span class="c1">-- hello   1</span>
-<span class="c1">-- a,b 都是 *true*, 回傳a (第一個)</span>
-</pre></div>
-<p>Lua是很活的語言, 另外還可以用很多不同方式實現, 有興趣的人可以參考一下連結:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://lua-users.org/wiki/TernaryOperator">lua-users wiki: Ternary Operator</a></li>
-<li><a class="reference external" href="http://lua-users.org/wiki/ExpressionsTutorial">lua-users wiki: Expressions Tutorial</a></li>
-</ul>
-<p>There are <a href="http://blog.suhen.org/computer/lua_ternary.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">x is &#39;</span> <span class="o">..</span> <span class="p">((</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="s">negative ...</span></pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/lua_ternary.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/lua_ternary.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
 
                  
                         <li><article class="hentry">    
@@ -332,39 +342,6 @@ D3 C2 → 加羅北池 → 加羅山 → 加羅湖會師 → 四季 ...</pre>
 <p>很有歷史風味的犀川大橋，過橋走到西茶屋，不過這整個感覺都是重新蓋的 ...</p></div>
                 <a class="readmore" href="http://blog.suhen.org/travel/tsurugi_dake_5_kanezawa.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/travel/tsurugi_dake_5_kanezawa.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/travel/tsurugi_dake_4_raichozawa.html" rel="bookmark"
-                           title="Permalink to 日本北陸 - 立山劍岳行 (4/5) - 第三天 雷鳥澤">日本北陸 - 立山劍岳行 (4/5) - 第三天 雷鳥澤</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-08-09T02:20:00">
-                2013-08-09 02:20
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/travel.html">travel</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/diary.html">diary</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="id2">
-<h2>第三天 (7/23) 劍山莊 -&gt; 雷鳥澤 -&gt; 室堂 -&gt; 富山 -&gt; 金澤</h2>
-<img alt="http://farm3.staticflickr.com/2807/9469228439_89caa970e2.jpg" src="http://farm3.staticflickr.com/2807/9469228439_89caa970e2.jpg" />
-<p>雖然住了這輩子住過最舒適的山屋，很容易入睡的我卻一直沒睡好，半夜一直醒來，果然是乞丐命。早上5點起來到食堂吃早餐，外面還是在下大雨，看來各隊都放棄攻頂了。吃完早餐後緩慢的在山屋閒晃，睡回籠覺。 一個從東京來的日本阿姨會說一點英文跑來跟我們攀談，是少數有跟我們聊天的日本山友。山屋內還遇到一隊從台灣來的2個女生，遇到同胞總是感到欣慰。</p>
-<img alt="http://farm8.staticflickr.com/7384/9472013302_6e523ab0b9.jpg" src="http://farm8.staticflickr.com/7384/9472013302_6e523ab0b9.jpg" />
-<p>小黑提議我們乾脆下午直接回到平地，晚上去住金澤市，明天就金澤一日游，那裡也至少比富山熱鬧有趣，待在天氣不好的山上，也沒別的選擇，就這麼決定了。 一直摸到9:10才出發，我們也是拖拖拉拉最後離開山屋的，(鄙旅行團都是山屋愛好者)。</p>
-<img alt="http://farm8.staticflickr.com/7406/9469229005_3105d87db8.jpg" src="http://farm8.staticflickr.com/7406/9469229005_3105d87db8.jpg" />
-<p>休息的多也不見得走的比較快，從劍山莊出來要到劍御前小屋這段路是上坡，走的有點辛苦，還好雨變小了一點，雪溪裡變成大冰塊很滑，一步一步走的很小心。</p>
-<img alt="http://farm8.staticflickr.com/7290/9469222193_307ed971f2.jpg" src="http://farm8.staticflickr.com/7290/9469222193_307ed971f2.jpg" />
-<img alt="http://farm4.staticflickr.com/3708/9472001878_a49f1e9971.jpg" src="http://farm4.staticflickr.com/3708/9472001878_a49f1e9971.jpg" />
-<p>10:50 到了劍御前小屋，時間充足，買個泡麵調劑身心。</p>
-<img alt="http://farm6.staticflickr.com/5476/9471996858_f208bf7a89.jpg" src="http://farm6.staticflickr.com/5476/9471996858_f208bf7a89.jpg" />
-<p>11:10開始走這一路下去就是沿著雪溪下到雷鳥澤了。遇到幾個面色紅潤的七十幾歲的歐吉桑，知道我們是台灣來的，很開心的說他也去台灣爬過山，是日本登山協會的，跟台灣的登山協會都有在交流 ...</p></div>
-                <a class="readmore" href="http://blog.suhen.org/travel/tsurugi_dake_4_raichozawa.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/travel/tsurugi_dake_4_raichozawa.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

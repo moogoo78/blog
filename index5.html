@@ -33,6 +33,34 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/misc/kapur.html" rel="bookmark"
+                           title="Permalink to 天空的拼圖 - Kapur 冰片木">天空的拼圖 - Kapur 冰片木</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-20T04:37:00">
+                2013-04-20 04:37
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/misc.html">misc</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/natural.html">natural</a></p>
+</footer><!-- /.post-info -->                <p>週四參加希望山林 <a class="reference external" href="http://www.hopeforest.org.tw/">Hope_Forest</a> 的志工課程，請到荒野保護協會的香萍來上課，講的十分的精彩，投影片中有一張另我感到震撼的照片, 上面只寫著Kapur。於是我回來用關鍵字Kapur查了一下：照片是來自於馬來西亞政府一個植物研究機構 (Forest Research Institute Malaysia, <a class="reference external" href="http://www.frim.gov.my/">FRIM</a> )的園區內，有一種高大筆直的樹叫「冰片木」，Dryobalanops aromatica (Dipterocarpaceae)，可以提煉類似樟腦的香料，中藥材稱「龍腦香」或「龍腦冰片」，木材市場上稱作Kapur。</p>
+<img alt="/static/images/nature/Kapur_Trees.jpeg" src="/static/images/nature/Kapur_Trees.jpeg" />
+<p>特別的是這些在森林最高處的樹冠枝葉並不會重疊或碰在一起，每棵樹都很巧妙的保持一點點的空隙，就像一幅「天空的拼圖」，這還有個可愛的專有名詞「害羞樹冠」，“Crown Shyness” ，好像大家都很害羞不好意思接觸到彼此，形成這特別的景觀。</p>
+<p>就像香萍說的人與人之間的相處不就跟這些樹木一樣，有時需要保持一點巧妙的距離，不會太近也不會太遠。</p>
+<p>參考:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.frim.gov.my/?page_id=7643">Dryobalanops aromatica: Jigsaw puzzles in the sky</a></li>
+<li><a class="reference external" href="http://www.frim.gov.my/?page_id=9414">Shorea resinosa : Another ...</a></li></ul>
+                <a class="readmore" href="http://blog.suhen.org/misc/kapur.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/misc/kapur.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/pelican.html" rel="bookmark"
                            title="Permalink to Pelican - 邁向靜態blog之路">Pelican - 邁向靜態blog之路</a></h1>
                 </header>
@@ -460,41 +488,6 @@ $ make html
 <h3>ebook ...</h3></div></div>
                 <a class="readmore" href="http://blog.suhen.org/computer/software.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/software.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/unix_command.html" rel="bookmark"
-                           title="Permalink to UNIX Command 常用指令">UNIX Command 常用指令</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-03-28T00:00:00">
-                2013-03-28 00:00
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="script">
-<h2>好用script</h2>
-<p>把&quot;/t&quot;分隔的檔案轉成sql語法, 用awk和sed</p>
-<div class="highlight"><pre>awk -F <span class="s1">&#39;\t&#39;</span> <span class="s1">&#39;{print &quot;INSERT INTO word (\&quot;s3id\&quot;,\&quot;content\&quot;,\&quot;freq\&quot;,\&quot;translate\&quot;,\&quot;ex1\&quot;,\&quot;ex1_translate\&quot;,\&quot;ex2\&quot;,\&quot;ex2_translate\&quot;) VALUES(\&quot;&quot;$1&quot;\&quot;,\&quot;&quot;$2&quot;\&quot;,\&quot;&quot;$3&quot;\&quot;,\&quot;&quot;$4&quot;\&quot;,\&quot;&quot;$5&quot;\&quot;,\&quot;&quot;$6&quot;\&quot;,\&quot;&quot;$7&quot;\&quot;,\&quot;&quot;$8&quot;\&quot;);&quot;}&#39;</span> data_all_u.txt | sed -e <span class="s1">&#39;s/^M//g&#39;</span> &gt; out.sql
-</pre></div>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">先用awk轉好, 再用sed去除最後換行符號, &quot;^M&quot;在commend-line裡要Ctrl-V + Ctrl-M表示</p>
-</div>
-</div>
-<div class="section" id="id1">
-<h2>檔案</h2>
-<p>把檔案foo複製到以下全部目錄裡:</p>
-<pre class="literal-block">
-$ find . -type d |xargs ...</pre></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/unix_command.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
