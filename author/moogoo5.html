@@ -33,6 +33,50 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/pelican_github_pages.rst.html" rel="bookmark"
+                           title="Permalink to 把靜態blog放到Github Pages上，以pelican為例">把靜態blog放到Github Pages上，以pelican為例</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-01T11:36:00">
+                2013-06-01 11:36
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>之前開始把blog轉到使用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">pelican產生靜態blog</a> ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。</p>
+<p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
+<div class="section" id="id1">
+<h2>環境設定</h2>
+<p>python要用virtualenv才是王道:</p>
+<pre class="literal-block">
+$ mkvirtualenv sillywalk.org
+$ cd sillkwalk.org
+$ setvirtualenvproject
+$ workon sillywalk.org
+
+$ pip install pelican
+$ pip install ghp-import # 方便發佈到github pages的工具
+</pre>
+</div>
+<div class="section" id="html">
+<h2>產生HTML，發佈</h2>
+<p>產生HTML內容:</p>
+<pre class="literal-block">
+$ pelican -s pelican.conf.py .
+$ ghp-import output
+$ git push origin gh-pages
+
+# 其實pelican的make就可以了 ...</pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/pelican_github_pages.rst.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/pelican_github_pages.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/pelican_rest_markdown.html" rel="bookmark"
                            title="Permalink to [電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?">[電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?</a></h1>
                 </header>
@@ -392,55 +436,10 @@ $ make html
                 <a class="readmore" href="http://blog.suhen.org/music/salon_music.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/music/salon_music.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/misc/sandiaoling.html" rel="bookmark"
-                           title="Permalink to [希望山林] 三貂嶺場堪心得">[希望山林] 三貂嶺場堪心得</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-08-18T18:38:00">
-                2013-08-18 18:38
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/misc.html">misc</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/event.html">event</a></p>
-</footer><!-- /.post-info -->                <p>老鷹帶領的希望山林三貂嶺場堪。</p>
-<p><a class="reference external" href="https://www.facebook.com/HopeForestTaiwan">https://www.facebook.com/HopeForestTaiwan</a></p>
-<p>心得:</p>
-<pre class="literal-block">
-到了三貂嶺車站，參加人數遠超過預期，老鷹把大家分成&quot;勘察組&quot;跟&quot;單純來走走&quot;組，
-2組的任務不太一樣，然後全部的人再分成幾個小組，每組發一張紙。
-發給大家一人一張小紙條，上面寫著今天活動的10個重點。
-大家先選出最喜歡、最想去的。
-老鷹先問大家，這10個重點關鍵字是怎麼出來的。
-有人說是半夢半醒之間想出來的，
-老鷹說是打坐時想出這些字，
-活動的內容則是到現場再臨機應變。
-
-
-第一關: 秘境車站
-在車站附近到處看，找出為什麼取名秘境車站
-
--&gt; 從出發點開始熱身, 思考今天行程的意義
-
-第二關和第三關分開進行:
-1,3組 古往今來 (三貂嶺附近聚落)
-2,4組 碩仁快閃 (碩仁國小)
-各選出三個地方, 用1.輪廓 2. 描述 3. 我們自己想
-
--&gt; 用不的方式觀察，猜測別組的觀察 ...</pre>
-                <a class="readmore" href="http://blog.suhen.org/misc/sandiaoling.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/misc/sandiaoling.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
                         <a href="http://blog.suhen.org/author/moogoo4.html">&laquo;</a>
-                Page 5 / 6
+                Page 5 / 7
             <a href="http://blog.suhen.org/author/moogoo6.html">&raquo;</a>
     </p>
                         </section><!-- /#content -->

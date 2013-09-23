@@ -30,15 +30,58 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/pelican_rest_markdown.html">[電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?</a></h1> 
+                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/dian-nao-xiao-gong-ju-luade-debughan-shi.html">[電腦] 小工具 - Lua的debug函示</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-09-23T12:26:00">
+                2013-09-23 12:26
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/lua.html">lua</a><a href="http://blog.suhen.org/tag/snippet.html">snippet</a></p>
+</footer><!-- /.post-info --><p>Lua的debug library有很多資訊可用:</p>
+<div class="highlight"><pre><span class="c1">-- ## lua debug function</span>
+<span class="c1">-- # 1: simple print, 就跟print一樣</span>
+<span class="c1">-- # 2: verbose info, 印出呼叫的函示名稱跟函示所在的檔案行數</span>
+
+<span class="kd">local</span> <span class="n">debug_level</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">log</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">debug_level</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">then</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">!!! log:&quot;</span> <span class="o">..</span> <span class="n">s</span><span class="p">)</span>
+    <span class="k">elseif</span> <span class="n">debug_level</span> <span class="o">==</span> <span class="mi">2</span> <span class="k">then</span>
+            <span class="n">d</span> <span class="o">=</span> <span class="nb">debug.getinfo</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;</span><span class="s">Sln&#39;</span><span class="p">)</span>
+            <span class="n">func_name</span> <span class="o">=</span> <span class="n">d</span><span class="p">.</span><span class="n">name</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">&quot;</span>
+            <span class="n">ln</span> <span class="o">=</span> <span class="n">d</span><span class="p">.</span><span class="n">currentline</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">?&quot;</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">------ log -------&quot;</span><span class="p">)</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">&gt;&gt; &quot;</span> <span class="o">..</span> <span class="n">s</span><span class="p">)</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">&gt;&gt; &quot;</span> <span class="o">..</span> <span class="n">d</span><span class="p">.</span><span class="n">short_src</span> <span class="o">..</span> <span class="s2">&quot;</span><span class="s">:&quot;</span> <span class="o">..</span> <span class="n">ln</span> <span class="o">..</span> <span class="s2">&quot;</span><span class="s">:&quot;</span> <span class="o">..</span> <span class="n">func_name</span><span class="p">)</span>
+    <span class="k">else</span>
+        <span class="k">return</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+</pre></div><p>There are <a href="http://blog.suhen.org/computer/dian-nao-xiao-gong-ju-luade-debughan-shi.html#disqus_thread">comments</a>.</p>                </article>
+                            </aside><!-- /#featured -->
+                            <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+                                                
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/pelican_rest_markdown.html" rel="bookmark"
+                           title="Permalink to [電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?">[電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-09-23T11:01:00">
                 2013-09-23 11:01
         </abbr>
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/pelican.html">pelican</a></p>
-</footer><!-- /.post-info --><p>活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。</p>
+</footer><!-- /.post-info -->                <p>活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。</p>
 <p>但是reST還是有一些很討厭的地方，像:</p>
 <ul>
 <li>連結的語法我永遠很難記得，都是用自己寫的javascript bookmarklet解決</li>
@@ -49,22 +92,11 @@
 <h2>補充</h2>
 <p>bookmarklet:</p>
 <div class="highlight"><pre><span class="c1">// reST</span>
-<span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;`&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; &lt;&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;&gt;`__&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&#39;</span><span class="p">);</span><span class="nx">win</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;form&gt;&lt;textarea name=&quot;a&quot; rows=&quot;5&quot; cols=&quot;50&quot; onClick=&quot;javascript:this.form.a.focus();this.form.a.select();&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">t</span><span class="o">+</span><span class="s1">&#39;&lt;/textarea&gt;&lt;/form&gt;&#39;</span><span class="p">);})()</span>
-<span class="c1">// markdown</span>
-<span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;[&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;](&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;)&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&#39;</span><span class="p">);</span><span class="nx">win</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;form&gt;&lt;textarea name=&quot;a&quot; rows=&quot;5&quot; cols=&quot;50&quot; onClick=&quot;javascript:this.form.a.focus();this.form.a.select();&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">t</span><span class="o">+</span><span class="s1">&#39;&lt;/textarea&gt;&lt;/form&gt;&#39;</span><span class="p">);})()</span>
-</pre></div>
-
-
-<ul>
-<li><a href="http://blog.suhen.org/computer/pelican.html">pelican (reST)</a></li>
-<li><a href="http://markdown.tw/">Markdown 語法說明</a></li>
-</ul><p>There are <a href="http://blog.suhen.org/computer/pelican_rest_markdown.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
+<span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;`&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; &lt;&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;&gt;`__&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars ...</span></pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/pelican_rest_markdown.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/pelican_rest_markdown.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
 
                  
                         <li><article class="hentry">    
@@ -304,54 +336,9 @@ D3 C2 → 加羅北池 → 加羅山 → 加羅湖會師 → 四季 ...</pre>
                 <a class="readmore" href="http://blog.suhen.org/music/cotten_freight_train.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/music/cotten_freight_train.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/misc/sandiaoling.html" rel="bookmark"
-                           title="Permalink to [希望山林] 三貂嶺場堪心得">[希望山林] 三貂嶺場堪心得</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-08-18T18:38:00">
-                2013-08-18 18:38
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/misc.html">misc</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/event.html">event</a></p>
-</footer><!-- /.post-info -->                <p>老鷹帶領的希望山林三貂嶺場堪。</p>
-<p><a class="reference external" href="https://www.facebook.com/HopeForestTaiwan">https://www.facebook.com/HopeForestTaiwan</a></p>
-<p>心得:</p>
-<pre class="literal-block">
-到了三貂嶺車站，參加人數遠超過預期，老鷹把大家分成&quot;勘察組&quot;跟&quot;單純來走走&quot;組，
-2組的任務不太一樣，然後全部的人再分成幾個小組，每組發一張紙。
-發給大家一人一張小紙條，上面寫著今天活動的10個重點。
-大家先選出最喜歡、最想去的。
-老鷹先問大家，這10個重點關鍵字是怎麼出來的。
-有人說是半夢半醒之間想出來的，
-老鷹說是打坐時想出這些字，
-活動的內容則是到現場再臨機應變。
-
-
-第一關: 秘境車站
-在車站附近到處看，找出為什麼取名秘境車站
-
--&gt; 從出發點開始熱身, 思考今天行程的意義
-
-第二關和第三關分開進行:
-1,3組 古往今來 (三貂嶺附近聚落)
-2,4組 碩仁快閃 (碩仁國小)
-各選出三個地方, 用1.輪廓 2. 描述 3. 我們自己想
-
--&gt; 用不的方式觀察，猜測別組的觀察 ...</pre>
-                <a class="readmore" href="http://blog.suhen.org/misc/sandiaoling.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/misc/sandiaoling.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
-        Page 1 / 6
+        Page 1 / 7
             <a href="http://blog.suhen.org/index2.html">&raquo;</a>
     </p>
                         </section><!-- /#content -->

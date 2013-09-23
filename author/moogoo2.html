@@ -103,6 +103,42 @@
                  
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/dian-nao-xiao-gong-ju-luade-debughan-shi.html" rel="bookmark"
+                           title="Permalink to [電腦] 小工具 - Lua的debug函示">[電腦] 小工具 - Lua的debug函示</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-09-23T12:26:00">
+                2013-09-23 12:26
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/lua.html">lua</a><a href="http://blog.suhen.org/tag/snippet.html">snippet</a></p>
+</footer><!-- /.post-info -->                <p>Lua的debug library有很多資訊可用:</p>
+<div class="highlight"><pre><span class="c1">-- ## lua debug function</span>
+<span class="c1">-- # 1: simple print, 就跟print一樣</span>
+<span class="c1">-- # 2: verbose info, 印出呼叫的函示名稱跟函示所在的檔案行數</span>
+
+<span class="kd">local</span> <span class="n">debug_level</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">log</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">debug_level</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">then</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">!!! log:&quot;</span> <span class="o">..</span> <span class="n">s</span><span class="p">)</span>
+    <span class="k">elseif</span> <span class="n">debug_level</span> <span class="o">==</span> <span class="mi">2</span> <span class="k">then</span>
+            <span class="n">d</span> <span class="o">=</span> <span class="nb">debug.getinfo</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;</span><span class="s">Sln&#39;</span><span class="p">)</span>
+            <span class="n">func_name</span> <span class="o">=</span> <span class="n">d</span><span class="p">.</span><span class="n">name</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">&quot;</span>
+            <span class="n">ln</span> <span class="o">=</span> <span class="n">d</span><span class="p">.</span><span class="n">currentline</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">?&quot;</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">------ log -------&quot;</span><span class="p">)</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">&gt;&gt; &quot;</span> <span class="o">..</span> <span class="n">s</span><span class="p">)</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">&gt;&gt; &quot;</span> <span class="o">..</span> <span class="n">d ...</span></pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/dian-nao-xiao-gong-ju-luade-debughan-shi.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/dian-nao-xiao-gong-ju-luade-debughan-shi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/misc/dirty_tw_jp.html" rel="bookmark"
                            title="Permalink to 台灣話惡口">台灣話惡口</a></h1>
                 </header>
@@ -346,68 +382,10 @@ C-q C-j
                 <a class="readmore" href="http://blog.suhen.org/computer/emacs_newline.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/emacs_newline.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html" rel="bookmark"
-                           title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-06-25T10:07:00">
-                2013-06-25 10:07
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a><a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
-</footer><!-- /.post-info -->                <p>指令:</p>
-<pre class="literal-block">
-M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
-</pre>
-<p>特殊字</p>
-<ul class="simple">
-<li><tt class="docutils literal">\&amp;’</tt> 完整的匹配字</li>
-<li><tt class="docutils literal">\d</tt> d是數字, 表示匹配在第幾個group (back reference)</li>
-<li><tt class="docutils literal">\#</tt> 累加, 發生第幾次,第一次從0開始</li>
-<li><tt class="docutils literal">\,</tt> Lisp expression</li>
-<li><tt class="docutils literal">\?</tt> 詢問</li>
-</ul>
-<div class="section" id="id1">
-<h2>範例</h2>
-<p>數字編號:</p>
-<pre class="literal-block">
-1987:Bogotá
-5243:Fabergé
-
-\(.+:\)
-\#.
-
-0.Bogotá
-1.Fabergé
-
-如果要從1開始:
-\,(1+ \#).
-</pre>
-<p>HTML H降級:</p>
-<pre class="literal-block">
-&lt;h1&gt;silly&lt;/h1&gt;
-&lt;h2&gt;walk&lt;/h2&gt;
-
-&lt;\(/?\)h\([0-9]\)&gt;
-&lt;\1h\,(1+ \#2)&gt;
-
-&lt;h2&gt;silly&lt;/h2&gt;
-&lt;h3 ...</pre></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
                         <a href="http://blog.suhen.org/author/moogoo.html">&laquo;</a>
-                Page 2 / 6
+                Page 2 / 7
             <a href="http://blog.suhen.org/author/moogoo3.html">&raquo;</a>
     </p>
                         </section><!-- /#content -->
