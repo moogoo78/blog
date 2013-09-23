@@ -4,7 +4,7 @@ Category: misc
 Tags: natural
 Slug: blackbird
 
-原來英文的blackbird指的是「烏鶇」 ，我一直以為是「烏鴉」。台灣本島很沒有烏鶇，有的話也是 `迷鳥 <http://zh.wikipedia.org/zh-tw/迷鸟>`__ 。當然最容易讓我聯想到的是The Beatles的歌，歌詞據說是影射當時黑人人權問題。
+原來英文的blackbird指的是「烏鶇」 ，我一直以為是「烏鴉」。台灣本島很沒有烏鶇，有的話也是[迷鳥](http://zh.wikipedia.org/zh-tw/迷鸟) 。當然最容易讓我聯想到的是The Beatles的歌，歌詞據說是影射當時黑人人權問題。
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/oAgceen153I" frameborder="0" allowfullscreen></iframe>
 
