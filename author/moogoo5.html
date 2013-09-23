@@ -33,6 +33,38 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/pelican_rest_markdown.html" rel="bookmark"
+                           title="Permalink to [電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?">[電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-09-23T11:01:00">
+                2013-09-23 11:01
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/pelican.html">pelican</a></p>
+</footer><!-- /.post-info -->                <p>活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。</p>
+<p>但是reST還是有一些很討厭的地方，像:</p>
+<ul>
+<li>連結的語法我永遠很難記得，都是用自己寫的javascript bookmarklet解決</li>
+<li>連結跟內容文字之間要有空白，不然會錯，除非加上跳脫字元 <strong>/</strong></li>
+<li>標題用 ######...，長度要跟標題文字一樣長，雖然編輯器都有快速鍵可以補齊，但是還是會在修改標題後，常常忘了補滿而出現錯誤</li>
+</ul>
+<p>簡潔的markdown實在比reST好用很多，不過，預設沒有表格 (table)的語法。所以，如果用到表格，或是覺得以後要用Sphinx產生文件，減少轉換問題，就用reST，其他一般用markdown。</p>
+<h2>補充</h2>
+<p>reST連結bookmarklet</p>
+<div class="highlight"><pre><span class="c1">// reST</span>
+<span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;`&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; &lt;&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;&gt;`__&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars ...</span></pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/pelican_rest_markdown.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/pelican_rest_markdown.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/python.html" rel="bookmark"
                            title="Permalink to Python">Python</a></h1>
                 </header>
@@ -404,52 +436,6 @@ $ make html
 -&gt; 用不的方式觀察，猜測別組的觀察 ...</pre>
                 <a class="readmore" href="http://blog.suhen.org/misc/sandiaoling.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/misc/sandiaoling.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/scripting-languages-draft.html" rel="bookmark"
-                           title="Permalink to Scripting Languages (draft)">Scripting Languages (draft)</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-04-09T11:38:00">
-                2013-04-09 11:38
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <p>PHP, Python, Javascript, Lua</p>
-<div class="section" id="basic">
-<h2>Basic</h2>
-</div>
-<div class="section" id="data-type">
-<h2>Data Type</h2>
-<p><strong>Array</strong></p>
-<pre class="literal-block">
-# python
-arr = [1, 2, 3]
-
-# lua
-squares = {1, 4, 9, 16, 25, 36, 49, 64, 81}
-squares[1] # 1
-</pre>
-</div>
-<div class="section" id="statement-expression">
-<h2>statement/expression</h2>
-<div class="section" id="id1">
-<h3>函式</h3>
-<p><strong>引數</strong></p>
-<pre class="literal-block">
-# python
-def func(a, *pargs, **kargs): print a, pargs, kargs
-# &gt;&gt;&gt; f(1, 2, 3, x=1, y=2)
-# 1 ...</pre></div></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/scripting-languages-draft.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/scripting-languages-draft.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
