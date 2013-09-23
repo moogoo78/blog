@@ -33,29 +33,6 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="http://blog.suhen.org/music/jack_ass_baby_blue.html" rel="bookmark"
-                           title="Permalink to Jack Ass (It's All Over Now Baby Blue)">Jack Ass (It's All Over Now Baby Blue)</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-07-02T23:22:33">
-                2012-07-02 23:22
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/music.html">music</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/jing-dian-fan-chang.html">經典翻唱</a></p>
-</footer><!-- /.post-info -->                <p>最近電視看到「 <a class="reference external" href="http://app.atmovies.com.tw/movie/movie.cfm?action=filmdata&amp;film_id=flen10758752">愛情藥不藥</a> 」(<a class="reference external" href="http://www.imdb.com/title/tt0758752/">Love and Other Drugs</a>)，都會聽到Beck的 <a class="reference external" href="http://en.wikipedia.org/wiki/Jack-Ass_(song)">Jack-Ass</a> 。查了一下，小弟孤漏寡聞，原來背景飄飄然的配樂是完全取樣自北愛爾蘭催淚老將Van Morrison早期樂團Them的It's All Over Now, Baby Blue，而這首歌則是翻唱每首歌我聽起來都一樣的Bob Dylan，真的，別人翻唱他的歌都比較好聽... 詳見: The Times They Are A-Changin。然後，底特律嘻哈團Insane Clown Posse也翻唱Beck的，一首歌有這麼多種不同的詮釋，還是要感謝Bob Dylan啦。</p>
-<p>原曲中的原曲 Bob Dylan - It's All Over Now, Baby Blue</p>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/hBiwMT77Csg" frameborder="0"></iframe></div><p>Beck取樣的來源: THEM &amp; Van Morrison - It ...</p>
-                <a class="readmore" href="http://blog.suhen.org/music/jack_ass_baby_blue.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/music/jack_ass_baby_blue.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
                     <h1><a href="http://blog.suhen.org/misc/kapur.html" rel="bookmark"
                            title="Permalink to 天空的拼圖 - Kapur 冰片木">天空的拼圖 - Kapur 冰片木</a></h1>
                 </header>
@@ -140,6 +117,42 @@
 <h2>Cillian Murphy (<em>Breakfast ...</em></h2></div>
                 <a class="readmore" href="http://blog.suhen.org/music/lee_hazlewood_sand.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/music/lee_hazlewood_sand.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/lua_debug.html" rel="bookmark"
+                           title="Permalink to [電腦] 小工具 - Lua的debug函示">[電腦] 小工具 - Lua的debug函示</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-09-23T12:26:00">
+                2013-09-23 12:26
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/lua.html">lua</a><a href="http://blog.suhen.org/tag/snippet.html">snippet</a></p>
+</footer><!-- /.post-info -->                <p>Lua的debug library有很多資訊可用:</p>
+<div class="highlight"><pre><span class="c1">-- ## lua debug function</span>
+<span class="c1">-- # 1: simple print, 就跟print一樣</span>
+<span class="c1">-- # 2: verbose info, 印出呼叫的函示名稱跟函示所在的檔案行數</span>
+
+<span class="kd">local</span> <span class="n">debug_level</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">log</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">debug_level</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">then</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">!!! log:&quot;</span> <span class="o">..</span> <span class="n">s</span><span class="p">)</span>
+    <span class="k">elseif</span> <span class="n">debug_level</span> <span class="o">==</span> <span class="mi">2</span> <span class="k">then</span>
+            <span class="n">d</span> <span class="o">=</span> <span class="nb">debug.getinfo</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;</span><span class="s">Sln&#39;</span><span class="p">)</span>
+            <span class="n">func_name</span> <span class="o">=</span> <span class="n">d</span><span class="p">.</span><span class="n">name</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">&quot;</span>
+            <span class="n">ln</span> <span class="o">=</span> <span class="n">d</span><span class="p">.</span><span class="n">currentline</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">?&quot;</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">------ log -------&quot;</span><span class="p">)</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">&gt;&gt; &quot;</span> <span class="o">..</span> <span class="n">s</span><span class="p">)</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">&gt;&gt; &quot;</span> <span class="o">..</span> <span class="n">d ...</span></pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/lua_debug.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/lua_debug.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
