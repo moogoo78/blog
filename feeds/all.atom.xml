@@ -19,7 +19,12 @@
         &lt;span class="k"&gt;return&lt;/span&gt;
     &lt;span class="k"&gt;end&lt;/span&gt;
 &lt;span class="k"&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="lua"></category><category term="snippet"></category></entry><entry><title>[電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?</title><link href="http://blog.suhen.org/computer/pelican_rest_markdown.html" rel="alternate"></link><updated>2013-09-23T11:01:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-23:computer/pelican_rest_markdown.html</id><summary type="html">&lt;p&gt;活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.lua.org/pil/23.html"&gt;Programming in Lua : 23&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="lua"></category><category term="snippet"></category></entry><entry><title>[電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?</title><link href="http://blog.suhen.org/computer/pelican_rest_markdown.html" rel="alternate"></link><updated>2013-09-23T11:01:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-23:computer/pelican_rest_markdown.html</id><summary type="html">&lt;p&gt;活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。&lt;/p&gt;
 &lt;p&gt;但是reST還是有一些很討厭的地方，像:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;連結的語法我永遠很難記得，都是用自己寫的javascript bookmarklet解決&lt;/li&gt;
