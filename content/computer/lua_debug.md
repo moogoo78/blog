@@ -9,7 +9,7 @@ Lua的debug library有很多資訊可用:
     :::lua
     -- ## lua debug function
     -- # 1: simple print, 就跟print一樣
-    -- # 2: verbose info, 印出呼叫的函式名稱跟函示所在的檔案行數
+    -- # 2: verbose info, 印出呼叫的函式名稱跟函式所在的檔案行數
     
     local debug_level = 0 
     local function log(s)
