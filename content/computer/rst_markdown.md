@@ -15,7 +15,7 @@ Slug: pelican_rest_markdown
 簡潔的markdown實在比reST好用很多，不過，預設沒有表格 (table)的語法。所以，如果用到表格，或是覺得以後要用Sphinx產生文件，減少轉換問題，就用reST，其他一般用markdown。
 
 ## 補充
-reST連結bookmarklet
+bookmarklet:
 
     :::javascript
     // reST
