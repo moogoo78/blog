@@ -46,7 +46,7 @@
 <span class="kd">local</span> <span class="n">debug_level</span> <span class="o">=</span> <span class="mi">0</span> 
 <span class="kd">local</span> <span class="k">function</span> <span class="nf">log</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">debug_level</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">then</span>
-        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">!!! log:&quot;</span> <span class="o">..</span> <span class="n">s</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="s">&gt;&gt; log: &quot;</span> <span class="o">..</span> <span class="n">s</span><span class="p">)</span>
     <span class="k">elseif</span> <span class="n">debug_level</span> <span class="o">==</span> <span class="mi">2</span> <span class="k">then</span>
             <span class="n">d</span> <span class="o">=</span> <span class="nb">debug.getinfo</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;</span><span class="s">Sln&#39;</span><span class="p">)</span>
             <span class="n">func_name</span> <span class="o">=</span> <span class="n">d</span><span class="p">.</span><span class="n">name</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">&quot;</span>
