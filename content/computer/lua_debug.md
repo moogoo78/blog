@@ -26,3 +26,6 @@ Lua的debug library有很多資訊可用:
             return
         end
     end
+
+
+* [Programming in Lua : 23](http://www.lua.org/pil/23.html)
