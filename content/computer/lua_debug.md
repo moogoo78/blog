@@ -2,6 +2,7 @@ Title: [電腦] 小工具 - Lua的debug函示
 Date: 2013-09-23 12:26
 Category: computer
 Tags: lua, snippet
+Slug: lua_debug
 
 Lua的debug library有很多資訊可用:
 
