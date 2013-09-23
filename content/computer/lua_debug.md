@@ -1,4 +1,4 @@
-Title: [電腦] 小工具 - Lua的debug函示
+Title: [電腦] 小工具 - Lua的debug函式
 Date: 2013-09-23 12:26
 Category: computer
 Tags: lua, snippet
@@ -9,7 +9,7 @@ Lua的debug library有很多資訊可用:
     :::lua
     -- ## lua debug function
     -- # 1: simple print, 就跟print一樣
-    -- # 2: verbose info, 印出呼叫的函示名稱跟函示所在的檔案行數
+    -- # 2: verbose info, 印出呼叫的函式名稱跟函示所在的檔案行數
     
     local debug_level = 0 
     local function log(s)
