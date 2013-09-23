@@ -14,7 +14,7 @@ Lua的debug library有很多資訊可用:
     local debug_level = 0 
     local function log(s)
         if debug_level == 1 then
-            print ("!!! log:" .. s)
+            print (">> log: " .. s)
         elseif debug_level == 2 then
                 d = debug.getinfo(2, 'Sln')
                 func_name = d.name or ""
