@@ -93,6 +93,9 @@ C-x r b        goto bookmark
 C-x r l        list bookmark
 ============   ====================================================================
 
+其他:
+
+* M-x bookmark-delete <RET> bookmark名字 <RET>
 
 Coding
 --------

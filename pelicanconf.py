@@ -38,6 +38,8 @@ SITEMAP = {
 # Blogroll
 LINKS =  (
     ('About', SITEURL +'/pages/about.html'),
+    ('Language', 'http://language.suhen.org'),
+    ('Natural', 'http://natural.suhen.org'),
     (u'舊blog', 'http://blog.roodo.com/moogoo'),
     (u'電腦程式blog', 'http://moogoo78.blogspot.com'))
 
