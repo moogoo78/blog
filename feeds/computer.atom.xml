@@ -1165,6 +1165,10 @@ C-RET
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;其他:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;M-x bookmark-delete &amp;lt;RET&amp;gt; bookmark名字 &amp;lt;RET&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="coding"&gt;
