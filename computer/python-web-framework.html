@@ -90,11 +90,25 @@ request.form.getlist('')</p>
 </div>
 <div class="section" id="sqlalchemy">
 <h2>SQLAlchemy</h2>
+<div class="section" id="setting">
+<h3>setting</h3>
+<p>sqlite path:</p>
+<pre class="literal-block">
+# sqlite://&lt;nohostname&gt;/&lt;path&gt;
+# where &lt;path&gt; is relative:
+engine = create_engine('sqlite:///foo.db')
+
+# or absolute, starting with a slash:
+engine = create_engine('sqlite:////absolute/path/to/foo.db')
+</pre>
 <p>import:</p>
 <pre class="literal-block">
 from flask.ext.sqlalchemy import BaseQuery
 from sqlalchemy.sql import func
 </pre>
+</div>
+<div class="section" id="schema">
+<h3>schema</h3>
 <p>column parameters:</p>
 <pre class="literal-block">
 primary_key =True
@@ -143,6 +157,7 @@ query.group_by(func.day(LogUserData.dtime).all()
 votes = db.session.query(EventDC1Vote,
 func.count(uid).label('cnt'), 'uid').group_by('uid').order_by('cnt DESC').all()
 </pre>
+</div>
 <div class="section" id="example">
 <h3>example</h3>
 <p>in/limit/order:</p>

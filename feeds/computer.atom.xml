@@ -993,6 +993,12 @@ $ sqlite3 new.db ＜ output.sql # import
 # or
 $ cat dumpfile.sql | sqlite3 new.db
 &lt;/pre&gt;
+&lt;p&gt;進入sqlite3後:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.tables  # MySQL的show tables
+.schema TABLENAME
+.help
+&lt;/pre&gt;
 &lt;p&gt;ref&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.sqlite.org/sqlite.html"&gt;Command Line Shell For SQLite&lt;/a&gt;&lt;/li&gt;
@@ -1914,11 +1920,25 @@ request.form.getlist('')&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="sqlalchemy"&gt;
 &lt;h2&gt;SQLAlchemy&lt;/h2&gt;
+&lt;div class="section" id="setting"&gt;
+&lt;h3&gt;setting&lt;/h3&gt;
+&lt;p&gt;sqlite path:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# sqlite://&amp;lt;nohostname&amp;gt;/&amp;lt;path&amp;gt;
+# where &amp;lt;path&amp;gt; is relative:
+engine = create_engine('sqlite:///foo.db')
+
+# or absolute, starting with a slash:
+engine = create_engine('sqlite:////absolute/path/to/foo.db')
+&lt;/pre&gt;
 &lt;p&gt;import:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 from flask.ext.sqlalchemy import BaseQuery
 from sqlalchemy.sql import func
 &lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="schema"&gt;
+&lt;h3&gt;schema&lt;/h3&gt;
 &lt;p&gt;column parameters:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 primary_key =True
@@ -1967,6 +1987,7 @@ query.group_by(func.day(LogUserData.dtime).all()
 votes = db.session.query(EventDC1Vote,
 func.count(uid).label('cnt'), 'uid').group_by('uid').order_by('cnt DESC').all()
 &lt;/pre&gt;
+&lt;/div&gt;
 &lt;div class="section" id="example"&gt;
 &lt;h3&gt;example&lt;/h3&gt;
 &lt;p&gt;in/limit/order:&lt;/p&gt;
