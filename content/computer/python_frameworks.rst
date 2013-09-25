@@ -55,12 +55,24 @@ request.form.getlist('')
 SQLAlchemy
 ==============
 
+setting
+-----------------
+sqlite path::
+
+  # sqlite://<nohostname>/<path>
+  # where <path> is relative:
+  engine = create_engine('sqlite:///foo.db')
+
+  # or absolute, starting with a slash:
+  engine = create_engine('sqlite:////absolute/path/to/foo.db')
 
 import::
 
   from flask.ext.sqlalchemy import BaseQuery
   from sqlalchemy.sql import func
 
+schema
+---------
 
 column parameters::
 

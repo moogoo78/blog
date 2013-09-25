@@ -365,6 +365,12 @@ Sqlite
   # or
   $ cat dumpfile.sql | sqlite3 new.db
 
+進入sqlite3後::
+
+  .tables  # MySQL的show tables
+  .schema TABLENAME
+  .help
+
 
 ref
 
