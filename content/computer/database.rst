@@ -390,6 +390,7 @@ ref
 :MySQL: RAND()
 :Sqlite: RANDOM()
 
+MySQL有ROW_NUMBER(), Sqlite沒有, 只能用SQL語法的奇技淫巧來達成.
 
 snippets
 ===============
