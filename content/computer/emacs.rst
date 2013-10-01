@@ -58,6 +58,8 @@ Basic
 ============   ========================================================
 M-<            beginning-of-buffer
 M->            end-of-buffer 
+C-M-V          other window page down
+C-M-S-V        other window page up
 ============   ========================================================
 
 search: M-c 切換case-sensitivity
