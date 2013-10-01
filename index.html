@@ -39,64 +39,64 @@
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/snippet.html">snippet</a><a href="http://blog.suhen.org/tag/corona_sdk.html">corona_sdk</a></p>
 </footer><!-- /.post-info --><div class="highlight"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">info</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">========= display info =========&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">pixel: %dx%d, ratio: %.02f&quot;</span><span class="p">,</span> 
-                    <span class="n">display</span><span class="p">.</span><span class="n">pixelWidth</span><span class="p">,</span>
-                    <span class="n">display</span><span class="p">.</span><span class="n">pixelHeight</span><span class="p">,</span>
-                    <span class="n">display</span><span class="p">.</span><span class="n">pixelHeight</span><span class="o">/</span><span class="n">display</span><span class="p">.</span><span class="n">pixelWidth</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">content: %dx%d, ratio: %.02f&quot;</span><span class="p">,</span> 
-                    <span class="n">display</span><span class="p">.</span><span class="n">contentWidth</span><span class="p">,</span>
-                    <span class="n">display</span><span class="p">.</span><span class="n">contentHeight</span><span class="p">,</span>
-                    <span class="n">display</span><span class="p">.</span><span class="n">contentHeight</span><span class="o">/</span><span class="n">display</span><span class="p">.</span><span class="n">contentWidth</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">actual: %dx%d&quot;</span><span class="p">,</span>
-                    <span class="n">display</span><span class="p">.</span><span class="n">actualContentWidth</span><span class="p">,</span>
-                    <span class="n">display</span><span class="p">.</span><span class="n">actualContentHeight</span>
-                    <span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">scale: (%.02f, %.02f)&quot;</span><span class="p">,</span>
-                     <span class="n">display</span><span class="p">.</span><span class="n">contentScaleX</span><span class="p">,</span>
-                     <span class="n">display</span><span class="p">.</span><span class="n">contentScaleY</span>
-                    <span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">origin: (%d, %d)&quot;</span><span class="p">,</span>
-                     <span class="n">display</span><span class="p">.</span><span class="n">screenOriginX</span><span class="p">,</span>
-                     <span class="n">display</span><span class="p">.</span><span class="n">screenOriginY</span>
-                    <span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">-------- system.getInfo --------&quot;</span><span class="p">)</span>
-<span class="kd">local</span> <span class="n">prop</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;</span><span class="s">model&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">platformName&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">platformVersion&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">environment&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">architectureInfo&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">build&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">name&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">appname&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">appVersionString&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">deviceID&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">maxTexturueSize&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">maxTextureUnits&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">textureMemoryUsed&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">targetAppStore&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">iosAdvertisingIdentifier&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">iosAdvertisingTrackingEnabled&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">iosIdentifierForVendor&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">androidDisplayApproximateDpi&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">androidDisplayDensityName&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">androidDisplayXDpi&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;</span><span class="s">androidDisplayYDpi&quot;</span><span class="p">,</span>
-<span class="p">}</span>
-<span class="k">for</span> <span class="n">_</span><span class="p">,</span><span class="n">v</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">prop</span><span class="p">)</span> <span class="k">do</span>
-    <span class="nb">print</span> <span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">%s: %s&quot;</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">system</span><span class="p">.</span><span class="n">getInfo</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">nil&quot;</span><span class="p">))</span>
-<span class="k">end</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">--------- language ----------&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.country: %s&quot;</span><span class="p">,</span> 
-                    <span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">country&quot;</span> <span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.idettifier: %s&quot;</span><span class="p">,</span>
-                    <span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">identifier&quot;</span> <span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.language: %s&quot;</span><span class="p">,</span>
-                    <span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">language&quot;</span> <span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">ui.language: %s&quot;</span><span class="p">,</span>
-                    <span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">ui&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">language&quot;</span> <span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">===============================&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">========= display info =========&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">pixel: %dx%d, ratio: %.02f&quot;</span><span class="p">,</span> 
+                        <span class="n">display</span><span class="p">.</span><span class="n">pixelWidth</span><span class="p">,</span>
+                        <span class="n">display</span><span class="p">.</span><span class="n">pixelHeight</span><span class="p">,</span>
+                        <span class="n">display</span><span class="p">.</span><span class="n">pixelHeight</span><span class="o">/</span><span class="n">display</span><span class="p">.</span><span class="n">pixelWidth</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">content: %dx%d, ratio: %.02f&quot;</span><span class="p">,</span> 
+                        <span class="n">display</span><span class="p">.</span><span class="n">contentWidth</span><span class="p">,</span>
+                        <span class="n">display</span><span class="p">.</span><span class="n">contentHeight</span><span class="p">,</span>
+                        <span class="n">display</span><span class="p">.</span><span class="n">contentHeight</span><span class="o">/</span><span class="n">display</span><span class="p">.</span><span class="n">contentWidth</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">actual: %dx%d&quot;</span><span class="p">,</span>
+                        <span class="n">display</span><span class="p">.</span><span class="n">actualContentWidth</span><span class="p">,</span>
+                        <span class="n">display</span><span class="p">.</span><span class="n">actualContentHeight</span>
+                        <span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">scale: (%.02f, %.02f)&quot;</span><span class="p">,</span>
+                         <span class="n">display</span><span class="p">.</span><span class="n">contentScaleX</span><span class="p">,</span>
+                         <span class="n">display</span><span class="p">.</span><span class="n">contentScaleY</span>
+                        <span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">origin: (%d, %d)&quot;</span><span class="p">,</span>
+                         <span class="n">display</span><span class="p">.</span><span class="n">screenOriginX</span><span class="p">,</span>
+                         <span class="n">display</span><span class="p">.</span><span class="n">screenOriginY</span>
+                        <span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">-------- system.getInfo --------&quot;</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">prop</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;</span><span class="s">model&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">platformName&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">platformVersion&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">environment&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">architectureInfo&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">build&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">name&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">appname&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">appVersionString&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">deviceID&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">maxTexturueSize&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">maxTextureUnits&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">textureMemoryUsed&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">targetAppStore&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">iosAdvertisingIdentifier&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">iosAdvertisingTrackingEnabled&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">iosIdentifierForVendor&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">androidDisplayApproximateDpi&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">androidDisplayDensityName&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">androidDisplayXDpi&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="s">androidDisplayYDpi&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="k">for</span> <span class="n">_</span><span class="p">,</span><span class="n">v</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">prop</span><span class="p">)</span> <span class="k">do</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">%s: %s&quot;</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">system</span><span class="p">.</span><span class="n">getInfo</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">nil&quot;</span><span class="p">))</span>
+    <span class="k">end</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">--------- language ----------&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.country: %s&quot;</span><span class="p">,</span> 
+                        <span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">country&quot;</span> <span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.idettifier: %s&quot;</span><span class="p">,</span>
+                        <span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">identifier&quot;</span> <span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.language: %s&quot;</span><span class="p">,</span>
+                        <span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">language&quot;</span> <span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">ui.language: %s&quot;</span><span class="p">,</span>
+                        <span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">ui&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">language&quot;</span> <span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">===============================&quot;</span><span class="p">)</span>
 <span class="k">end</span>
 </pre></div><p>There are <a href="http://blog.suhen.org/computer/corona_sdk_info.html#disqus_thread">comments</a>.</p>                </article>
                             </aside><!-- /#featured -->
