@@ -137,3 +137,5 @@ GPS航跡圖:
 * `102.9.8小腳ㄚ會師加羅湖 @ 這是我的部落格 :: 隨意窩 Xuite日誌 <http://blog.xuite.net/brian267/twblog/110116579>`__
 * `102.9.7加羅湖小腳ㄚ會師 @ 這是我的部落格 :: 隨意窩 Xuite日誌 <http://blog.xuite.net/brian267/twblog/108930152>`__
 * `米家: 2013/09/07-08小腳ㄚ四路會師之太加縱走 - yam天空部落 <http://blog.yam.com/amimitea/article/69214530>`__
+* `加羅湖會師三疊線 <https://www.facebook.com/download/1382781598621593/201309%E5%8A%A0%E7%BE%85%E6%B9%96%E6%9C%83%E5%B8%AB%E4%B8%89%E7%96%8A%E7%B7%9A.pdf>`__
+* `三疊記事 <https://www.facebook.com/download/480880375341144/%E4%B8%89%E7%96%8A%E8%A8%98%E4%BA%8B.docx>`__
