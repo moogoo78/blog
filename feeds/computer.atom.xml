@@ -1134,6 +1134,7 @@ Engine
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;MySQL有ROW_NUMBER(), Sqlite沒有, 只能用SQL語法的奇技淫巧來達成.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="snippets"&gt;
 &lt;h2&gt;snippets&lt;/h2&gt;
