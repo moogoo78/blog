@@ -33,6 +33,50 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/ganglia.html" rel="bookmark"
+                           title="Permalink to Ganglia">Ganglia</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-02T11:39:00">
+                2013-04-02 11:39
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
+<p>Ganglia有3個部分:</p>
+<ul class="simple">
+<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
+<li>gmetad - 詢問gmond儲存數質</li>
+<li>ganglia-web</li>
+</ul>
+<pre class="literal-block">
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+</pre>
+<p>start daemond:</p>
+<pre class="literal-block">
+service gmond start
+service gmetad start
+</pre>
+<div class="section" id="centos">
+<h2>CentOS</h2>
+<p>進入web介面時出現:</p>
+<pre class="literal-block">
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+</pre>
+<p>解決方法, 重新安裝 ...</p></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/ganglia.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/rest_sphinx.html" rel="bookmark"
                            title="Permalink to reST – reStructuredText與Sphinx">reST – reStructuredText與Sphinx</a></h1>
                 </header>
@@ -407,37 +451,6 @@ login=yourdomain.com ...</pre>
 .. image:: <a class="reference external" href="http://farm6.staticflickr.com/5459/6917154962_9ba3b3dca4.jpg">http://farm6.staticflickr.com/5459/6917154962_9ba3b3dca4 ...</a></p></div></div>
                 <a class="readmore" href="http://blog.suhen.org/travel/2012_kyoto_marathon-2.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/travel/2012_kyoto_marathon-2.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/travel/2012_kyoto_marathon-1.html" rel="bookmark"
-                           title="Permalink to [travel] 京都行 (1/4) - 第一次的海外馬拉松">[travel] 京都行 (1/4) - 第一次的海外馬拉松</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-04-11T22:22:57">
-                2012-04-11 22:22
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/travel.html">travel</a>. </p>
-
-</footer><!-- /.post-info -->                <div class="section" id="id1">
-<h2>行前</h2>
-<p>在ptt路跑版看到 <a class="reference external" href="http://www.kyoto-marathon.com/&quot;target=&quot;blank">京都馬拉松</a> 訊息，主要是為了幫助去年311日本東北大地震。因為很喜歡京都，沒想太多就報名了，當作第一場海外馬拉松。結果如預期有外國人優勢，一抽就抽到了。這次去京都自以為熟門熟路的並沒做什麼功課，原本全家要一起去的，最後只有媽媽跟我去。</p>
-</div>
-<div class="section" id="id2">
-<h2>第一天 (3/10)</h2>
-<p>早上8:40的飛機，吃到JAL才有的綠涼麵很爽，到關西機場後坐「JR特急はるか」往京都，一上車就聽到很熟悉的語言，在仔細聽一下，原來跟我一樣也是要去跑馬拉松的，而且每個人感覺很有趣！！（更巧的是，他們也是剛剛才認識，其中一人的老婆是另一人的同學，後來回台灣才發現那個人也是我舅舅的同學，台灣很小）</p>
-<p>報到會場 | <a class="reference external" href="http://www.flickr.com/photos/moogoo/6917092850/">flickr</a></p>
-<img alt="http://farm8.staticflickr.com/7073/6917092850_c30d276766.jpg" src="http://farm8.staticflickr.com/7073/6917092850_c30d276766.jpg" />
-<p>到京都車站道別後，就先到旅館check-in，這次住在車站附近走15分鐘路程的Rihga Royal Hotel Kyoto，我跟我媽來好幾次了，京都也是個變化不太大的城市，一路上也都很熟悉。放好行李後再坐公車到會場「京都市勧業館」報到，從平安神宮附近走到會場，一直到領完東西，就能感受到日本人做事的效率跟規劃的細心。</p>
-<p>京都マラソン2012 | <a class="reference external" href="http://www.flickr.com/photos/moogoo/7063222275/">flickr ...</a></p></div>
-                <a class="readmore" href="http://blog.suhen.org/travel/2012_kyoto_marathon-1.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/travel/2012_kyoto_marathon-1.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

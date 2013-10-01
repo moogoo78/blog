@@ -366,27 +366,35 @@
                  
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="http://blog.suhen.org/music/cotten_freight_train.html" rel="bookmark"
-                           title="Permalink to Elizabeth Cotten - Freight Train">Elizabeth Cotten - Freight Train</a></h1>
+                    <h1><a href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="bookmark"
+                           title="Permalink to [snippet] Corona SDK 顯示各種資訊">[snippet] Corona SDK 顯示各種資訊</a></h1>
                 </header>
                 
                 <div class="entry-content">
                 <footer class="post-info">
-        <abbr class="published" title="2013-08-20T02:40:00">
-                2013-08-20 02:40
+        <abbr class="published" title="2013-10-01T10:31:00">
+                2013-10-01 10:31
         </abbr>
 
-        <p>In <a href="http://blog.suhen.org/category/music.html">music</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/jing-dian-fan-chang.html">經典翻唱</a></p>
-</footer><!-- /.post-info -->                <img alt="http://farm3.staticflickr.com/2329/2178413657_fd959e7f69.jpg" src="http://farm3.staticflickr.com/2329/2178413657_fd959e7f69.jpg" />
-<p>圖片來源: <a class="reference external" href="http://www.flickr.com/photos/library_of_congress/2178413657/">Santa Fe R.R. west bound freight stopping for water, Melrose, N[ew] Mex[ico] (LOC) | Flickr - Photo Sharing!</a></p>
-<p>忘記在Facebook上誰分享這首歌，YouTube畫面中的老太太沙啞的嗓音，樸實的吉他播弦，聽過一次就一直深深被吸引，不斷的重播。</p>
-<div class="youtube" align="left"><iframe width="420" height="315" src="http://www.youtube.com/embed/IUK8emiWabU" frameborder="0"></iframe></div><p>自彈自唱的Elizabeth &quot;Libba&quot; Cotten (1893-1987)，來自美國北卡羅來納州的一個小鎮，出身音樂世家，11歲就寫下了這首有名的Feirght Train。小時候跟著她媽媽當女傭，15歲結婚後，除了偶爾在教堂表演外，幾乎有25年沒有再彈吉他了。後來在著名Seeger民謠族當家管，幫忙帶Seeger夫婦的4個小孩，開始重新學起40年前她就會的吉他，人生60才開始，她開始錄音和公開表演，一直到92歲時還在唱。</p>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">Charles Seeger就是美國民謠著名的Pete Seeger他老爸，後來再婚，又生了Mike, Peggy ...</p></div>
-                <a class="readmore" href="http://blog.suhen.org/music/cotten_freight_train.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/music/cotten_freight_train.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/snippet.html">snippet</a><a href="http://blog.suhen.org/tag/corona_sdk.html">corona_sdk</a></p>
+</footer><!-- /.post-info -->                <div class="highlight"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">info</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">========= display info =========&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">pixel: %dx%d, ratio: %.02f&quot;</span><span class="p">,</span> 
+                    <span class="n">display</span><span class="p">.</span><span class="n">pixelWidth</span><span class="p">,</span>
+                    <span class="n">display</span><span class="p">.</span><span class="n">pixelHeight</span><span class="p">,</span>
+                    <span class="n">display</span><span class="p">.</span><span class="n">pixelHeight</span><span class="o">/</span><span class="n">display</span><span class="p">.</span><span class="n">pixelWidth</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">content: %dx%d, ratio: %.02f&quot;</span><span class="p">,</span> 
+                    <span class="n">display</span><span class="p">.</span><span class="n">contentWidth</span><span class="p">,</span>
+                    <span class="n">display</span><span class="p">.</span><span class="n">contentHeight</span><span class="p">,</span>
+                    <span class="n">display</span><span class="p">.</span><span class="n">contentHeight</span><span class="o">/</span><span class="n">display</span><span class="p">.</span><span class="n">contentWidth</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">actual: %dx%d&quot;</span><span class="p">,</span>
+                    <span class="n">display</span><span class="p">.</span><span class="n">actualContentWidth</span><span class="p">,</span>
+                    <span class="n">display</span><span class="p">.</span><span class="n">actualContentHeight</span>
+                    <span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">string ...</span></pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/corona_sdk_info.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/corona_sdk_info.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">
