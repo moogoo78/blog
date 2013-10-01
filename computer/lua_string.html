@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>[電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?</title>
+        <title>Lua String / 字串</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's blog Atom Feed" />
                 
@@ -29,47 +29,76 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://blog.suhen.org/computer/pelican_rest_markdown.html" rel="bookmark"
-           title="Permalink to [電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?">[電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?</a></h1>
+        <a href="http://blog.suhen.org/computer/lua_string.html" rel="bookmark"
+           title="Permalink to Lua String / 字串">Lua String / 字串</a></h1>
           </header>
 
     <div class="entry-content">
       <footer class="post-info">
-        <abbr class="published" title="2013-09-23T11:01:00">
-                2013-09-23 11:01
+        <abbr class="published" title="2013-10-01T12:36:00">
+                2013-10-01 12:36
         </abbr>
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/pelican.html">pelican</a></p>
-</footer><!-- /.post-info -->      <p>活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。</p>
-<p>但是reST還是有一些很討厭的地方，像:</p>
-<ul>
-<li>連結的語法我永遠很難記得，都是用自己寫的javascript bookmarklet解決</li>
-<li>連結跟內容文字之間要有空白，不然會錯，除非加上跳脫字元 <strong>/</strong></li>
-<li>標題用 ######...，長度要跟標題文字一樣長，雖然編輯器都有快速鍵可以補齊，但是還是會在修改標題後，常常忘了補滿而出現錯誤</li>
-</ul>
-<p>簡潔的markdown實在比reST好用很多，不過，預設沒有表格 (table)的語法。所以，如果用到表格，或是覺得以後要用Sphinx產生文件，減少轉換問題，就用reST，其他一般用markdown。</p>
-<p>markdown可以直接貼HTML也是超級方便的!</p>
-<h2>補充</h2>
-<p>bookmarklet:</p>
-<div class="highlight"><pre><span class="c1">// reST</span>
-<span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;`&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; &lt;&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;&gt;`__&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&#39;</span><span class="p">);</span><span class="nx">win</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;form&gt;&lt;textarea name=&quot;a&quot; rows=&quot;5&quot; cols=&quot;50&quot; onClick=&quot;javascript:this.form.a.focus();this.form.a.select();&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">t</span><span class="o">+</span><span class="s1">&#39;&lt;/textarea&gt;&lt;/form&gt;&#39;</span><span class="p">);})()</span>
-<span class="c1">// markdown</span>
-<span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;[&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;](&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;)&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&#39;</span><span class="p">);</span><span class="nx">win</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;form&gt;&lt;textarea name=&quot;a&quot; rows=&quot;5&quot; cols=&quot;50&quot; onClick=&quot;javascript:this.form.a.focus();this.form.a.select();&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">t</span><span class="o">+</span><span class="s1">&#39;&lt;/textarea&gt;&lt;/form&gt;&#39;</span><span class="p">);})()</span>
+<p>tags: <a href="http://blog.suhen.org/tag/lua.html">lua</a></p>
+</footer><!-- /.post-info -->      <h1>Standard</h1>
+<div class="highlight"><pre><span class="nb">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="p">])</span>
+<span class="nb">string.format</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="o">...</span><span class="p">)</span>
+<span class="nb">string.sub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">i</span> <span class="p">[,</span> <span class="n">j</span><span class="p">])</span>
+
+<span class="nb">string.len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">s</span><span class="p">:</span><span class="n">len</span><span class="p">()</span>
+
+<span class="nb">string.gmatch</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">)</span>
+<span class="nb">string.gsub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="n">replace</span> <span class="p">[,</span> <span class="n">n</span><span class="p">])</span>
+
+<span class="nb">string.lower</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">string.upper</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+
+<span class="nb">string.byte</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">A&quot;</span><span class="p">)</span> <span class="c1">-- 65</span>
+<span class="nb">string.char</span><span class="p">(</span><span class="mi">65</span><span class="p">)</span> <span class="c1">-- A</span>
 </pre></div>
 
 
+<h1>regular expression (patterns)</h1>
+<table align="center" border="1">
+<tbody><tr><td><code>.</code></td><td>all characters</td></tr>
+<tr><td><code>%a</code></td><td>letters</td></tr>
+<tr><td><code>%c</code></td><td>control characters</td></tr>
+<tr><td><code>%d</code></td><td>digits</td></tr>
+<tr><td><code>%l</code></td><td>lower case letters</td></tr>
+<tr><td><code>%p</code></td><td>punctuation characters</td></tr>
+<tr><td><code>%s</code></td><td>space characters</td></tr>
+<tr><td><code>%u</code></td><td>upper case letters</td></tr>
+<tr><td><code>%w</code></td><td>alphanumeric characters</td></tr>
+<tr><td><code>%x</code></td><td>hexadecimal digits</td></tr>
+<tr><td><code>%z</code></td><td>the character with representation 0</td></tr>
+</tbody></table>
+
+<p>大寫表示逆向，例如: <strong>%A</strong> 就是非字串的意思</p>
+<p>特殊字元:</p>
+<div class="highlight"><pre><span class="p">(</span> <span class="p">)</span> <span class="p">.</span> <span class="o">%</span> <span class="o">+</span> <span class="o">-</span> <span class="o">*</span> <span class="o">?</span> <span class="p">[</span> <span class="o">^</span> <span class="err">$</span>
+</pre></div>
+
+
+<p>ex:</p>
+<div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="nb">string.gsub</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">hello, up-down!&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">%A&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">.&quot;</span><span class="p">))</span>
+<span class="c1">-- hello..up.down. 4</span>
+</pre></div>
+
+
+<p>相關連結</p>
 <ul>
-<li><a href="http://blog.suhen.org/computer/pelican.html">pelican (reST)</a></li>
-<li><a href="http://markdown.tw/">Markdown 語法說明</a></li>
+<li><a href="http://lua-users.org/wiki/StringLibraryTutorial">lua-users wiki: String Library Tutorial</a></li>
+<li><a href="http://www.lua.org/pil/2.4.html">Programming in Lua : 2.4</a></li>
 </ul>
     </div><!-- /.entry-content -->
         <div class="comments">
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "computer/pelican_rest_markdown.html";
-        var disqus_url = "http://blog.suhen.org/computer/pelican_rest_markdown.html";
+        var disqus_identifier = "computer/lua_string.html";
+        var disqus_url = "http://blog.suhen.org/computer/lua_string.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';

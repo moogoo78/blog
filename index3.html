@@ -33,6 +33,42 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html" rel="bookmark"
+                           title="Permalink to 列印日本地形圖 - 以劍岳為例">列印日本地形圖 - 以劍岳為例</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-07-16T10:25:00">
+                2013-07-16 10:25
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/mountain.html">mountain</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/japan.html">japan</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="id2">
+<h2>緣由</h2>
+<p>為了這週末要去日本 <a class="reference external" href="http://zh.wikipedia.org/zh-tw/劍岳">劍岳</a> ，沒有地圖只好上網找電子版。</p>
+<p>日本 <a class="reference external" href="http://www.gsi.go.jp/">国土地理院</a> 有很好用的電子地圖， <a class="reference external" href="http://watchizu.gsi.go.jp/index.aspx?mesh=0000">地図閲覧サービストップページ</a> ，可以很快的選取區域找到精細的地形圖。但是沒辦法像 <a class="reference external" href="http://map.happyman.idv.tw/twmap/login.php">地圖產生器v2.51</a> 那樣根據選取的區域自動切成數張A4。因此我開始土法煉鋼，來產生漂亮的地形圖。</p>
+</div>
+<div class="section" id="id3">
+<h2>下載圖檔</h2>
+<p>觀察了一下原始圖檔，檔名也許是用日本的大地座標數字，找出最左上角 00578150025593.png，右上 00578200025593.png，左下00578150025606.png，右下00578200025606.png。</p>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">這個地圖的座標是日本測地系2000 <a class="reference external" href="http://ja.wikipedia.org/wiki/測地系">測地系 - Wikipedia</a></p>
+</div>
+<p>找到想取得的範圍 (室堂到劍岳), 寬: 0057815-0057820 (左到右)，高: 0025593-0025606 (上到下)，總共是7x14張</p>
+<p>前置網址有一些不一樣, 我是用最爛的方法, 遇到HTTP Error就在翻一下原始碼找出來。</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">from</span> <span class="nn">urllib2 ...</span></pre></div></div>
+                <a class="readmore" href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+                 
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/python.html" rel="bookmark"
                            title="Permalink to Python">Python</a></h1>
                 </header>
@@ -376,64 +412,6 @@ C-q C-j
 
                 <a class="readmore" href="http://blog.suhen.org/travel/2012_kyoto_marathon.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/travel/2012_kyoto_marathon.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html" rel="bookmark"
-                           title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-06-25T10:07:00">
-                2013-06-25 10:07
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a><a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
-</footer><!-- /.post-info -->                <p>指令:</p>
-<pre class="literal-block">
-M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
-</pre>
-<p>特殊字</p>
-<ul class="simple">
-<li><tt class="docutils literal">\&amp;’</tt> 完整的匹配字</li>
-<li><tt class="docutils literal">\d</tt> d是數字, 表示匹配在第幾個group (back reference)</li>
-<li><tt class="docutils literal">\#</tt> 累加, 發生第幾次,第一次從0開始</li>
-<li><tt class="docutils literal">\,</tt> Lisp expression</li>
-<li><tt class="docutils literal">\?</tt> 詢問</li>
-</ul>
-<div class="section" id="id1">
-<h2>範例</h2>
-<p>數字編號:</p>
-<pre class="literal-block">
-1987:Bogotá
-5243:Fabergé
-
-\(.+:\)
-\#.
-
-0.Bogotá
-1.Fabergé
-
-如果要從1開始:
-\,(1+ \#).
-</pre>
-<p>HTML H降級:</p>
-<pre class="literal-block">
-&lt;h1&gt;silly&lt;/h1&gt;
-&lt;h2&gt;walk&lt;/h2&gt;
-
-&lt;\(/?\)h\([0-9]\)&gt;
-&lt;\1h\,(1+ \#2)&gt;
-
-&lt;h2&gt;silly&lt;/h2&gt;
-&lt;h3 ...</pre></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             </ol><!-- /#posts-list -->
                             <p class="paginator">

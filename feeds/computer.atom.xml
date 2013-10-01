@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-10-01T10:31:00+08:00</updated><entry><title>[snippet] Corona SDK 顯示各種資訊</title><link href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="alternate"></link><updated>2013-10-01T10:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/corona_sdk_info.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;info&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-10-01T12:36:00+08:00</updated><entry><title>Lua String / 字串</title><link href="http://blog.suhen.org/computer/lua_string.html" rel="alternate"></link><updated>2013-10-01T12:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/lua_string.html</id><summary type="html">&lt;h1&gt;Standard&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;string.find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e2&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;string.sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="p"&gt;[,&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+
+&lt;span class="nb"&gt;string.len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;len&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="nb"&gt;string.gmatch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;string.gsub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;replace&lt;/span&gt; &lt;span class="p"&gt;[,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+
+&lt;span class="nb"&gt;string.lower&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;string.upper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nb"&gt;string.byte&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;A&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;-- 65&lt;/span&gt;
+&lt;span class="nb"&gt;string.char&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;65&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;-- A&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;regular expression (patterns)&lt;/h1&gt;
+&lt;table align="center" border="1"&gt;
+&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;&lt;td&gt;all characters&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;%a&lt;/code&gt;&lt;/td&gt;&lt;td&gt;letters&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;%c&lt;/code&gt;&lt;/td&gt;&lt;td&gt;control characters&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;%d&lt;/code&gt;&lt;/td&gt;&lt;td&gt;digits&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;%l&lt;/code&gt;&lt;/td&gt;&lt;td&gt;lower case letters&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;%p&lt;/code&gt;&lt;/td&gt;&lt;td&gt;punctuation characters&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;%s&lt;/code&gt;&lt;/td&gt;&lt;td&gt;space characters&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;%u&lt;/code&gt;&lt;/td&gt;&lt;td&gt;upper case letters&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;%w&lt;/code&gt;&lt;/td&gt;&lt;td&gt;alphanumeric characters&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;%x&lt;/code&gt;&lt;/td&gt;&lt;td&gt;hexadecimal digits&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;code&gt;%z&lt;/code&gt;&lt;/td&gt;&lt;td&gt;the character with representation 0&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;大寫表示逆向，例如: &lt;strong&gt;%A&lt;/strong&gt; 就是非字串的意思&lt;/p&gt;
+&lt;p&gt;特殊字元:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="o"&gt;^&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ex:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.gsub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello, up-down!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;%A&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="c1"&gt;-- hello..up.down. 4&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;相關連結&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://lua-users.org/wiki/StringLibraryTutorial"&gt;lua-users wiki: String Library Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.lua.org/pil/2.4.html"&gt;Programming in Lua : 2.4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="lua"></category></entry><entry><title>[snippet] Corona SDK 顯示各種資訊</title><link href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="alternate"></link><updated>2013-10-01T10:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/corona_sdk_info.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;info&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;========= display info =========&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;pixel: %dx%d, ratio: %.02f&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
                         &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pixelWidth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -92,6 +142,7 @@
 &lt;li&gt;標題用 ######...，長度要跟標題文字一樣長，雖然編輯器都有快速鍵可以補齊，但是還是會在修改標題後，常常忘了補滿而出現錯誤&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;簡潔的markdown實在比reST好用很多，不過，預設沒有表格 (table)的語法。所以，如果用到表格，或是覺得以後要用Sphinx產生文件，減少轉換問題，就用reST，其他一般用markdown。&lt;/p&gt;
+&lt;p&gt;markdown可以直接貼HTML也是超級方便的!&lt;/p&gt;
 &lt;h2&gt;補充&lt;/h2&gt;
 &lt;p&gt;bookmarklet:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// reST&lt;/span&gt;
@@ -1197,6 +1248,9 @@ C-RET
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;C-S-Backspace&lt;/td&gt;
 &lt;td&gt;刪除整行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-&lt;/td&gt;
+&lt;td&gt;刪除游標前後全部空白, tab&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
