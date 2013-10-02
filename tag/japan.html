@@ -26,95 +26,17 @@
                 </ul></nav>
         </header><!-- /#banner -->
                 
-            
-
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html">列印日本地形圖 - 以劍岳為例</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2013-07-16T10:25:00">
-                2013-07-16 10:25
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/mountain.html">mountain</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/japan.html">japan</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
-</footer><!-- /.post-info --><div class="section" id="id2">
-<h2>緣由</h2>
-<p>為了這週末要去日本 <a class="reference external" href="http://zh.wikipedia.org/zh-tw/劍岳">劍岳</a> ，沒有地圖只好上網找電子版。</p>
-<p>日本 <a class="reference external" href="http://www.gsi.go.jp/">国土地理院</a> 有很好用的電子地圖， <a class="reference external" href="http://watchizu.gsi.go.jp/index.aspx?mesh=0000">地図閲覧サービストップページ</a> ，可以很快的選取區域找到精細的地形圖。但是沒辦法像 <a class="reference external" href="http://map.happyman.idv.tw/twmap/login.php">地圖產生器v2.51</a> 那樣根據選取的區域自動切成數張A4。因此我開始土法煉鋼，來產生漂亮的地形圖。</p>
+<div style="margin:auto;width:800px">
+<a href="/category/computer.html"><img src="/theme/images/computer.jpg" width="200"></a>
+<a href="/category/music.html"><img src="/theme/images/music.jpg" width="200"></a>
+<a href="/category/mountain.html"><img src="/theme/images/mountain.jpg" width="200"></a>
+<a href="/category/running.html"><img src="/theme/images/running.jpg" width="200"></a>
+<a href="/category/travel.html"><img src="/theme/images/travel.jpg" width="200"></a>
+<a href="/category/misc.html"><img src="/theme/images/misc.jpg" width="200"></a>
+<a href="/category/book.html"><img src="/theme/images/book.jpg" width="200"></a>
+<a href="/archives.html"><img src="/theme/images/archives.jpg" width="200"></a>
 </div>
-<div class="section" id="id3">
-<h2>下載圖檔</h2>
-<p>觀察了一下原始圖檔，檔名也許是用日本的大地座標數字，找出最左上角 00578150025593.png，右上 00578200025593.png，左下00578150025606.png，右下00578200025606.png。</p>
-<div class="note">
-<p class="first admonition-title">Note</p>
-<p class="last">這個地圖的座標是日本測地系2000 <a class="reference external" href="http://ja.wikipedia.org/wiki/測地系">測地系 - Wikipedia</a></p>
-</div>
-<p>找到想取得的範圍 (室堂到劍岳), 寬: 0057815-0057820 (左到右)，高: 0025593-0025606 (上到下)，總共是7x14張</p>
-<p>前置網址有一些不一樣, 我是用最爛的方法, 遇到HTTP Error就在翻一下原始碼找出來。</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">os.path</span>
-<span class="kn">from</span> <span class="nn">urllib2</span> <span class="kn">import</span> <span class="n">urlopen</span><span class="p">,</span> <span class="n">URLError</span><span class="p">,</span> <span class="n">HTTPError</span>
-
-
-<span class="n">u1</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/85/19/&#39;</span>
-<span class="n">u2</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/86/10/&#39;</span>
-<span class="n">u3</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/85/29/&#39;</span>
-<span class="n">u4</span> <span class="o">=</span> <span class="s">&#39;http://cyberjapandata.gsi.go.jp/sqras/all/DJBMM/latest/16/00/00/52/75/86/20/&#39;</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">25593</span><span class="p">,</span> <span class="mi">25608</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">57815</span><span class="p">,</span> <span class="mi">57822</span><span class="p">):</span>
-
-        <span class="n">url</span> <span class="o">=</span> <span class="s">&#39;</span><span class="si">%s%07d%07d</span><span class="s">.png&#39;</span><span class="o">%</span> <span class="p">(</span><span class="n">u4</span><span class="p">,</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">r</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-            <span class="k">print</span> <span class="s">&quot;downloading &quot;</span> <span class="o">+</span> <span class="n">url</span>
-
-            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">url</span><span class="p">),</span> <span class="s">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-
-        <span class="k">except</span> <span class="n">HTTPError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
-            <span class="k">print</span> <span class="s">&quot;HTTP Error:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">code</span><span class="p">,</span> <span class="n">url</span>
-        <span class="k">except</span> <span class="n">URLError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
-            <span class="k">print</span> <span class="s">&quot;URL Error:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">reason</span><span class="p">,</span> <span class="n">url</span>
-</pre></div>
-</div>
-<div class="section" id="id4">
-<h2>拼貼</h2>
-<p>用imagemagick程式，</p>
-<p>圖片的循序:</p>
-<pre class="literal-block">
-1 16
-2 17
-3 18
-4 ...
-</pre>
-<p>要做2次montage指令, 第一個產生7個1x14的組合圖</p>
-<p>指令參考: <a class="reference external" href="http://www.imagemagick.org/Usage/montage/#columns">http://www.imagemagick.org/Usage/montage/#columns</a></p>
-<div class="highlight"><pre><span class="nv">$ </span>montage -mode concatenate -tile 1x14 *.png out.png
-<span class="nv">$ </span>montage -mode concatenate -tile 7x1 out-*.png final.png
-</pre></div>
-<p>產生出來一張A4的圖，Mac的預覽程式列印縮放成22%, 差不多寬為14cm (7格), 一格寬2cm, 比例為1/50000。</p>
-<p>如果分成4張，2張7x4，2張7x3，可以印成4張A4，Mac的預覽程式列印縮44.5%，寬為16cm (4格), 比例為1/25000。</p>
-<img alt="http://farm3.staticflickr.com/2832/9305605520_a2d41477b7.jpg" src="http://farm3.staticflickr.com/2832/9305605520_a2d41477b7.jpg" />
-<p>印出來的樣子</p>
-<img alt="http://farm8.staticflickr.com/7405/9317674890_41b7a9e7b6_n.jpg" src="http://farm8.staticflickr.com/7405/9317674890_41b7a9e7b6_n.jpg" />
-<p><a class="reference external" href="http://www.flickr.com/photos/moogoo/sets/72157634692479891/">flickr</a></p>
-<p>紀錄的非常凌亂，一定有比我這好100倍的方法，希望大家不吝給予指教。</p>
-</div>
-<div class="section" id="id5">
-<h2>延伸閱讀</h2>
-<ul class="simple">
-<li><a class="reference external" href="http://portal.cyberjapan.jp/index.html">電子国土ポータル</a> 可以套圖層，看出各個年代，不同資訊的圖資。</li>
-</ul>
-</div>
-<p>There are <a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html#disqus_thread">comments</a>.</p>                </article>
-                                    <p class="paginator">
-        Page 1 / 1
-    </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
+                        <section id="extras" class="body">
                         <div class="blogroll">
                         <h2>blogroll</h2>
                         <ul>

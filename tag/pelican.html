@@ -26,47 +26,17 @@
                 </ul></nav>
         </header><!-- /#banner -->
                 
-            
-
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/pelican_rest_markdown.html">[電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2013-09-23T11:01:00">
-                2013-09-23 11:01
-        </abbr>
-
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/pelican.html">pelican</a></p>
-</footer><!-- /.post-info --><p>活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。</p>
-<p>但是reST還是有一些很討厭的地方，像:</p>
-<ul>
-<li>連結的語法我永遠很難記得，都是用自己寫的javascript bookmarklet解決</li>
-<li>連結跟內容文字之間要有空白，不然會錯，除非加上跳脫字元 <strong>/</strong></li>
-<li>標題用 ######...，長度要跟標題文字一樣長，雖然編輯器都有快速鍵可以補齊，但是還是會在修改標題後，常常忘了補滿而出現錯誤</li>
-</ul>
-<p>簡潔的markdown實在比reST好用很多，不過，預設沒有表格 (table)的語法。所以，如果用到表格，或是覺得以後要用Sphinx產生文件，減少轉換問題，就用reST，其他一般用markdown。</p>
-<p>markdown可以直接貼HTML也是超級方便的!</p>
-<h2>補充</h2>
-<p>bookmarklet:</p>
-<div class="highlight"><pre><span class="c1">// reST</span>
-<span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;`&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; &lt;&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;&gt;`__&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&#39;</span><span class="p">);</span><span class="nx">win</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;form&gt;&lt;textarea name=&quot;a&quot; rows=&quot;5&quot; cols=&quot;50&quot; onClick=&quot;javascript:this.form.a.focus();this.form.a.select();&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">t</span><span class="o">+</span><span class="s1">&#39;&lt;/textarea&gt;&lt;/form&gt;&#39;</span><span class="p">);})()</span>
-<span class="c1">// markdown</span>
-<span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;[&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;](&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;)&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&#39;</span><span class="p">);</span><span class="nx">win</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;form&gt;&lt;textarea name=&quot;a&quot; rows=&quot;5&quot; cols=&quot;50&quot; onClick=&quot;javascript:this.form.a.focus();this.form.a.select();&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">t</span><span class="o">+</span><span class="s1">&#39;&lt;/textarea&gt;&lt;/form&gt;&#39;</span><span class="p">);})()</span>
-</pre></div>
-
-
-<ul>
-<li><a href="http://blog.suhen.org/computer/pelican.html">pelican (reST)</a></li>
-<li><a href="http://markdown.tw/">Markdown 語法說明</a></li>
-</ul><p>There are <a href="http://blog.suhen.org/computer/pelican_rest_markdown.html#disqus_thread">comments</a>.</p>                </article>
-                                    <p class="paginator">
-        Page 1 / 1
-    </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
+<div style="margin:auto;width:800px">
+<a href="/category/computer.html"><img src="/theme/images/computer.jpg" width="200"></a>
+<a href="/category/music.html"><img src="/theme/images/music.jpg" width="200"></a>
+<a href="/category/mountain.html"><img src="/theme/images/mountain.jpg" width="200"></a>
+<a href="/category/running.html"><img src="/theme/images/running.jpg" width="200"></a>
+<a href="/category/travel.html"><img src="/theme/images/travel.jpg" width="200"></a>
+<a href="/category/misc.html"><img src="/theme/images/misc.jpg" width="200"></a>
+<a href="/category/book.html"><img src="/theme/images/book.jpg" width="200"></a>
+<a href="/archives.html"><img src="/theme/images/archives.jpg" width="200"></a>
+</div>
+                        <section id="extras" class="body">
                         <div class="blogroll">
                         <h2>blogroll</h2>
                         <ul>
