@@ -1,10 +1,22 @@
 {% extends "base.html" %}
 {% block content_title %}{% endblock %}
 {% block content %}        
+<div style="margin:auto;width:800px">
+<a href="{{ SITE_URL }}/category/computer.html"><img src="/theme/images/computer.jpg" width="200"></a>
+<a href="{{ SITE_URL }}/category/music.html"><img src="/theme/images/music.jpg" width="200"></a>
+<a href="{{ SITE_URL }}/category/mountain.html"><img src="/theme/images/mountain.jpg" width="200"></a>
+<a href="{{ SITE_URL }}/category/running.html"><img src="/theme/images/running.jpg" width="200"></a>
+<a href="{{ SITE_URL }}/category/travel.html"><img src="/theme/images/travel.jpg" width="200"></a>
+<a href="{{ SITE_URL }}/category/misc.html"><img src="/theme/images/misc.jpg" width="200"></a>
+<a href="{{ SITE_URL }}/category/book.html"><img src="/theme/images/book.jpg" width="200"></a>
+<a href="{{ SITE_URL }}/archives.html"><img src="/theme/images/archives.jpg" width="200"></a>
+</div>
+{#
 {% if articles %}
     {% for article in articles_page.object_list %}        
-
+#}
         {# First item #}
+{#
         {% if loop.first and not articles_page.has_previous() %}
             <aside id="featured" class="body">
                 <article>
@@ -21,7 +33,9 @@
                     <hr />
                     <ol id="posts-list" class="hfeed">
             {% endif %}
+#}
         {# other items #}
+{#
         {% else %} 
             {% if loop.first and articles_page.has_previous %}
                 <section id="content" class="body">
@@ -58,4 +72,5 @@
     {% endfor %}
 </section>
 {% endif %}
+#}
 {% endblock content %}
