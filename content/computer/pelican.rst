@@ -53,17 +53,25 @@ Quick-start
 
 圖片::
 
+  # reST
   .. image:: /path/to/filename.jpg
      :height: 450 px
      :width: 600 px
      :alt: alternate text
 
+  # markdown
+  ![title](/path/to/filename.jpg)
+
 連結::
 
+  # reST
   .. `title <http://foo.bar>`__ 跟reST一樣
   
   this is a foo_ .
   .. _foo: http://foo.bar
+
+  # markdown
+  [title](http://foo.bar)
 
 內部連結::
 
