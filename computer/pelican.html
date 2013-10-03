@@ -83,17 +83,25 @@ $ make github #自動執行ghp-import到github pages
 </pre>
 <p>圖片:</p>
 <pre class="literal-block">
+# reST
 .. image:: /path/to/filename.jpg
    :height: 450 px
    :width: 600 px
    :alt: alternate text
+
+# markdown
+![title](/path/to/filename.jpg)
 </pre>
 <p>連結:</p>
 <pre class="literal-block">
+# reST
 .. `title &lt;http://foo.bar&gt;`__ 跟reST一樣
 
 this is a foo_ .
 .. _foo: http://foo.bar
+
+# markdown
+[title](http://foo.bar)
 </pre>
 <p>內部連結:</p>
 <pre class="literal-block">
