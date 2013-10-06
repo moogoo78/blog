@@ -3,7 +3,8 @@
 
 AUTHOR = u'moogoo'
 SITENAME = u"Suhen's blog"
-SITEURL = 'http://blog.suhen.org'
+#SITEURL = 'http://blog.suhen.org'
+SITEURL = ''
 
 TIMEZONE = 'Asia/Taipei'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d %H:%M'
