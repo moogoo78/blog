@@ -24,6 +24,11 @@ Slug: rachmaninoff_lilya_zilberstein
     樂興之時，作品94（D780）
     Moments Musicaux, Op.94 D.780
 
+    Encore第一首: ?
+    Encore第二首: Liadov: The Musical Snuff-Box 
+
+<iframe width="420" height="315" src="//www.youtube.com/embed/jSP1YX4xlNo" frameborder="0" allowfullscreen></iframe>
+
 * [Lilya Zilberstein – Wikipedia](http://de.wikipedia.org/wiki/Lilya_Zilberstein)
 * [國立中正文化中心-表演節目偏愛 拉赫瑪尼諾夫－齊柏絲坦鋼琴獨奏會](Http://www.ntch.edu.tw/program/show/2c9081373bc98886013c0505758605f2?lang=zh)
 * [音樂節《偏愛》 拉赫瑪尼諾夫：一個憂鬱巨人的浪漫小時代 - LaVie 設計美學家](http://www.wowlavie.com/agenda_in.php?article_id=AE1300132&c=聽音樂)
