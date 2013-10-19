@@ -2,7 +2,7 @@ Title: 2013 MiniRun擎天崗越野路跑賽
 Date: 2013-10-19 16:17
 Category: run
 Tags: run, diary
-Slug: qingtiangang
+Slug: 2013_minirun_yangming
 
 因為有訂閱林義傑的facebook，一直在宣傳這個活動，現在路跑這麼熱門，還要隔Facebook喊話找人來報的這種狀況實在罕見。想說**人少、樹多、離家近**，就來跑一下，報名挑戰組15公里，從中山樓跑到擎天崗到再回來。
 
@@ -20,6 +20,7 @@ Slug: qingtiangang
 ![ ](/static/images/2013-10-19_qingtiangang/tn_PA190478.JPG)
 
 晶片時間是: 01:23:54 (有點懷疑有沒有滿15km，比想像中快...)
+
 這場中間跑起來腳很麻，左腳從腳掌開始，一直麻到小腿，不知道為什麼，第一次遇到。回來查網路，原因還是不明，有可能鞋帶綁太緊吧... 可能。
 
 ----
