@@ -4,7 +4,7 @@ Category: run
 Tags: run, diary
 Slug: qingtiangang
 
-因為有訂閱林義傑的facebook，一直在宣傳這個活動，現在路跑這麼熱門，還要隔Facebook喊話找人來報的這種狀況實在罕見。想說**樹多、人少、離家近**，就來跑一下，報名挑戰組15公里，從中山樓跑到擎天崗到再回來。
+因為有訂閱林義傑的facebook，一直在宣傳這個活動，現在路跑這麼熱門，還要隔Facebook喊話找人來報的這種狀況實在罕見。想說**人少、樹多、離家近**，就來跑一下，報名挑戰組15公里，從中山樓跑到擎天崗到再回來。
 
 ![ ](/static/images/2013-10-19_qingtiangang/sr4-1_yam_mn010.png)
 
