@@ -28,3 +28,5 @@ Slug: 2013_minirun_yangming
 中午前回到山下，還可以享受半天悠閒的假期，這就是主場優勢阿～
 
 * [KevinLin Website - 超馬賽事](http://www.superrace.org/SR4-1.aspx#)
+* [2013 MiniRun擎天崗越野路跑賽 - 相片搜尋](http://www.sportsnote.com.tw/running/album_search.aspx?id=25077e72-ce4d-4aea-95cc-9dcc98b8893a&b=220)
+* [照片搜尋結果 - 照片列表 - All Sports Community](http://www.allsports.tw/photo/photo_list_tag_search.php?tag_code=zekken&page_id=194116&tag=220)
