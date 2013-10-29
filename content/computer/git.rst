@@ -226,3 +226,10 @@ other
 * `Why Git is Better Than X <http://whygitisbetterthanx.com/>`__
 * `Git Magic - Preface <http://www-cs-students.stanford.edu/~blynn/gitmagic/>`__
 * `Git 教育訓練課程投影片 (2012) | ihower { blogging } <http://ihower.tw/blog/archives/6696/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+ihower+({|ihower.tw|+blog+})&utm_content=Google+Reader>`__
+
+setting
+==========
+
+Git 2.0 的push.default把預設的設定從 `matching` 改稱 `simple`, matching: 預設把目前全部branch push上去, simple只會push目前所在的branch::
+
+  git config --global push.default [matching|simple...]
