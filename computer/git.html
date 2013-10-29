@@ -273,6 +273,13 @@ git checkout remotes/origin/experimental
 <li><a class="reference external" href="http://ihower.tw/blog/archives/6696/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+ihower+({|ihower.tw|+blog+})&amp;utm_content=Google+Reader">Git 教育訓練課程投影片 (2012) | ihower { blogging }</a></li>
 </ul>
 </div>
+<div class="section" id="setting">
+<h2>setting</h2>
+<p>Git 2.0 的push.default把預設的設定從 <cite>matching</cite> 改稱 <cite>simple</cite>, matching: 預設把目前全部branch push上去, simple只會push目前所在的branch:</p>
+<pre class="literal-block">
+git config --global push.default [matching|simple...]
+</pre>
+</div>
 
     </div><!-- /.entry-content -->
     

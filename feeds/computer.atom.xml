@@ -3071,6 +3071,13 @@ git checkout remotes/origin/experimental
 &lt;li&gt;&lt;a class="reference external" href="http://ihower.tw/blog/archives/6696/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed:+ihower+({|ihower.tw|+blog+})&amp;amp;utm_content=Google+Reader"&gt;Git 教育訓練課程投影片 (2012) | ihower { blogging }&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;div class="section" id="setting"&gt;
+&lt;h2&gt;setting&lt;/h2&gt;
+&lt;p&gt;Git 2.0 的push.default把預設的設定從 &lt;cite&gt;matching&lt;/cite&gt; 改稱 &lt;cite&gt;simple&lt;/cite&gt;, matching: 預設把目前全部branch push上去, simple只會push目前所在的branch:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git config --global push.default [matching|simple...]
+&lt;/pre&gt;
+&lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>Dynamic DNS setting for Namecheap on Mac OSX</title><link href="/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="alternate"></link><updated>2013-03-21T02:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:,2013-03-21:computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html</id><summary type="html">&lt;p&gt;登入Namecheap啓用Dynamic &lt;a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service"&gt;link1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定DNS record:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
