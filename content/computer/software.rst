@@ -170,3 +170,15 @@ via: `How to watermark a video using FFmpeg | iDude.net <http://www.idude.net/in
 examples::
 
   ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
+
+
+System
+===========
+
+* Mac 更新到iOX 10.9, pip安裝出現錯誤 (gcc編譯相關)
+
+  1. 更新xcode
+  2. sudo xcodebuild -license
+  3. xcode-select --install 
+
+
