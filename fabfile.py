@@ -12,3 +12,7 @@ def deploy():
     local('git add .')
     local("git commit -am 'auto commit: "+TIME_STR+"'")
     local('git push;make github;')
+
+def stop():
+    local('./develop_server.sh stop')
+    #local('deactivate')

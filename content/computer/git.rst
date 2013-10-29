@@ -233,3 +233,5 @@ setting
 Git 2.0 的push.default把預設的設定從 `matching` 改稱 `simple`, matching: 預設把目前全部branch push上去, simple只會push目前所在的branch::
 
   git config --global push.default [matching|simple...]
+
+`git-config <http://git-scm.com/docs/git-config.html>`__

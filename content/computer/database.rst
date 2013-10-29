@@ -1,5 +1,5 @@
-Database筆記
-#################
+Database筆記 (MySQL, SQLite)
+#####################################
 :date: 2013-05-09 18:23
 :category: computer
 :tags: docs, mysql, sqlite
@@ -279,6 +279,8 @@ path::
   export PATH=/usr/local/mysql/bin:$PATH
   sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
 
+.. note:: 原本沒有 /etc/my.conf, 可以從 /usr/local/mysql/support-files/ 找一個官方範本來改
+
 
 Import / Export
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -347,12 +349,23 @@ my.cnf::
 
 .. note:: MySQL安裝時不一定會產生
 
+Q & A
+--------
+
+error: MySQL server has gone away::
+
+  ; my.cnf
+  max_allowed_packet = 1M ; 超過SQL設定最大長度, 改大一點
+  ; or 連線逾時
+  wait_timeout
+  interactive_timeout
 
 
 
 others
 ------------------
 * `探討 MySQL 授權 | Ant's ATField <http://antbsd.twbbs.org/~ant/wordpress/?p=2259>`__
+
 
 Sqlite
 ===============
