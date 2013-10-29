@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>Database筆記</title>
+        <title>Database筆記 (MySQL, SQLite)</title>
         <link rel="stylesheet" href="/theme/css/main.css">
                 <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's blog Atom Feed" />
                 
@@ -30,7 +30,7 @@
     <header>
       <h1 class="entry-title">
         <a href="/computer/database_docs.html" rel="bookmark"
-           title="Permalink to Database筆記">Database筆記</a></h1>
+           title="Permalink to Database筆記 (MySQL, SQLite)">Database筆記 (MySQL, SQLite)</a></h1>
           </header>
 
     <div class="entry-content">
@@ -303,6 +303,10 @@ sudo /etc/init.d/mysql restart
 export PATH=/usr/local/mysql/bin:$PATH
 sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
 </pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">原本沒有 /etc/my.conf, 可以從 /usr/local/mysql/support-files/ 找一個官方範本來改</p>
+</div>
 </div>
 <div class="section" id="import-export">
 <h4>Import / Export</h4>
@@ -369,6 +373,17 @@ key_buffer_size # 越大query越快, 但最好設定1/4, 不要超過一半的�
 <p class="first admonition-title">Note</p>
 <p class="last">MySQL安裝時不一定會產生</p>
 </div>
+</div>
+<div class="section" id="q-a">
+<h3>Q &amp; A</h3>
+<p>error: MySQL server has gone away:</p>
+<pre class="literal-block">
+; my.cnf
+max_allowed_packet = 1M ; 超過SQL設定最大長度, 改大一點
+; or 連線逾時
+wait_timeout
+interactive_timeout
+</pre>
 </div>
 <div class="section" id="others">
 <h3>others</h3>

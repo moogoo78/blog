@@ -758,7 +758,7 @@ alt + 數字
 &lt;p&gt;但是Mac的Alt會變成輸入特殊字, 用iTerm的話, 可以如以下設定:&lt;/p&gt;
 &lt;p&gt;Bookmarks -&amp;gt; Manage Profiles -&amp;gt; Keyboard Profiles -&amp;gt; Global, 點選&amp;quot;Option Key as +Esc&amp;quot;&lt;/p&gt;
 &lt;p&gt;參考連結: &lt;a class="reference external" href="http://lzy-blah.blogspot.tw/2007/08/screen-irssi-irc-q.html"&gt;lzy's 543: 用 screen + irssi 上 irc 之鄉民版教學 (含Q&amp;amp;A)&lt;/a&gt;&lt;/p&gt;
-</summary><category term="note"></category></entry><entry><title>Database筆記</title><link href="/computer/database_docs.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:,2013-05-09:computer/database_docs.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
+</summary><category term="note"></category></entry><entry><title>Database筆記 (MySQL, SQLite)</title><link href="/computer/database_docs.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:,2013-05-09:computer/database_docs.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
 &lt;h2&gt;MySql&lt;/h2&gt;
 &lt;p&gt;Syntax&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;ALL&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;DISTINCT&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;DISTINCTROW&lt;/span&gt; &lt;span class="p"&gt;]&lt;/span&gt;
@@ -1020,6 +1020,10 @@ sudo /etc/init.d/mysql restart
 export PATH=/usr/local/mysql/bin:$PATH
 sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
 &lt;/pre&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;原本沒有 /etc/my.conf, 可以從 /usr/local/mysql/support-files/ 找一個官方範本來改&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="import-export"&gt;
 &lt;h4&gt;Import / Export&lt;/h4&gt;
@@ -1086,6 +1090,17 @@ key_buffer_size # 越大query越快, 但最好設定1/4, 不要超過一半的�
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;MySQL安裝時不一定會產生&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="q-a"&gt;
+&lt;h3&gt;Q &amp;amp; A&lt;/h3&gt;
+&lt;p&gt;error: MySQL server has gone away:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+; my.cnf
+max_allowed_packet = 1M ; 超過SQL設定最大長度, 改大一點
+; or 連線逾時
+wait_timeout
+interactive_timeout
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="others"&gt;
 &lt;h3&gt;others&lt;/h3&gt;
@@ -3077,6 +3092,7 @@ git checkout remotes/origin/experimental
 &lt;pre class="literal-block"&gt;
 git config --global push.default [matching|simple...]
 &lt;/pre&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://git-scm.com/docs/git-config.html"&gt;git-config&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>Dynamic DNS setting for Namecheap on Mac OSX</title><link href="/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="alternate"></link><updated>2013-03-21T02:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:,2013-03-21:computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html</id><summary type="html">&lt;p&gt;登入Namecheap啓用Dynamic &lt;a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service"&gt;link1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定DNS record:&lt;/p&gt;
