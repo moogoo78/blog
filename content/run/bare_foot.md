@@ -1,5 +1,5 @@
 Title: 赤腳跑步小試 
-Date: 2013-10-31 16:10
+Date: 2010-04-30 16:10
 Category: run
 Tags: diary
 Slug: first_bare_foot
