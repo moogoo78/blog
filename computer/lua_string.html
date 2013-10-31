@@ -42,7 +42,7 @@
         <p>In <a href="/category/computer.html">computer</a>. </p>
 <p>tags: <a href="/tag/lua.html">lua</a></p>
 </footer><!-- /.post-info -->      <h1>Standard</h1>
-<div class="highlight"><pre><span class="nb">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="p">])</span>
+<div class="codehilite"><pre><span class="nb">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="p">])</span>
 <span class="nb">string.format</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="o">...</span><span class="p">)</span>
 <span class="nb">string.sub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">i</span> <span class="p">[,</span> <span class="n">j</span><span class="p">])</span>
 
@@ -77,12 +77,12 @@
 
 <p>大寫表示逆向，例如: <strong>%A</strong> 就是非字串的意思</p>
 <p>特殊字元:</p>
-<div class="highlight"><pre><span class="p">(</span> <span class="p">)</span> <span class="p">.</span> <span class="o">%</span> <span class="o">+</span> <span class="o">-</span> <span class="o">*</span> <span class="o">?</span> <span class="p">[</span> <span class="o">^</span> <span class="err">$</span>
+<div class="codehilite"><pre><span class="p">(</span> <span class="p">)</span> <span class="p">.</span> <span class="c">% + - * ? [ ^ $</span>
 </pre></div>
 
 
 <p>ex:</p>
-<div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="nb">string.gsub</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">hello, up-down!&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">%A&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">.&quot;</span><span class="p">))</span>
+<div class="codehilite"><pre><span class="nb">print</span><span class="p">(</span><span class="nb">string.gsub</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">hello, up-down!&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">%A&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">.&quot;</span><span class="p">))</span>
 <span class="c1">-- hello..up.down. 4</span>
 </pre></div>
 
