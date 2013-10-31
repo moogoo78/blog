@@ -279,7 +279,7 @@ path::
   export PATH=/usr/local/mysql/bin:$PATH
   sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
 
-.. note:: 原本沒有 /etc/my.conf, 可以從 /usr/local/mysql/support-files/ 找一個官方範本來改
+.. note:: 原本沒有 /etc/my.cnf, 可以從 /usr/local/mysql/support-files/ 找一個官方範本來改
 
 
 Import / Export
