@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="/" rel="alternate"></link><link href="/feeds/run.atom.xml" rel="self"></link><id>/</id><updated>2013-10-31T15:57:00+08:00</updated><entry><title>歷年跑馬成績</title><link href="/run/run_records.html" rel="alternate"></link><updated>2013-10-31T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:,2013-10-31:run/run_records.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="/" rel="alternate"></link><link href="/feeds/run.atom.xml" rel="self"></link><id>/</id><updated>2013-11-03T12:04:00+08:00</updated><entry><title>2013八里左岸馬拉松</title><link href="/run/2013_bali_marathon.html" rel="alternate"></link><updated>2013-11-03T12:04:00+08:00</updated><author><name>moogoo</name></author><id>tag:,2013-11-03:run/2013_bali_marathon.html</id><summary type="html">&lt;p&gt;同事的吆喝下一群人浩浩蕩蕩的報了這場半馬跟9k，我把這場當作21k的速度測試，之前跑全馬後一直不知道半馬可以跑多久，這場平地賽就剛好可以測試看看。&lt;/p&gt;
+&lt;p&gt;賽前有練一些長間歇，短間歇，山路，所以覺得心肺有增強許多，5k練習有跑出21:28的PB。原本設定21k要跑1:40 ~ 1:45之間 (5分速)，看有沒有機會挑戰100分以下，前1k跟大家聊天慢慢跑，後面才衝，用比平常 (全馬) 跟快的速度在跑。天氣陰陰的，跑起來後有點小小悶熱，前半段跑了52:20，後半段53:01。中間折返後，大概16, 7k的地方慢了下來，有點快抽筋跟喘不過氣的感覺，可能是最近還是很少跑到那麼長的距離，又是用比較快的速度，受不了，還好最後5, 6k有拼回來。&lt;/p&gt;
+&lt;p&gt;成績
+    :::text
+    1:45:06 全部排名: 132/1579， 分組排名: 142/516&lt;/p&gt;
+&lt;p&gt;比賽路線特色跟補給都算普通，所以這種就悶著頭一直跑就好了。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="路線圖" src="/static/images/run/2013_bali_marathon.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;主辦單位的比賽路線還是用紙上掃描的不是電子地圖，還滿少見的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ibodygo.com/web/online_reg/detail.asp?n=25"&gt;iBodyGo就是愛動-馬拉松 自行車 報名系統 路跑賽事訊息&lt;/a&gt;&lt;/p&gt;</summary><category term="diary"></category></entry><entry><title>歷年跑馬成績</title><link href="/run/run_records.html" rel="alternate"></link><updated>2013-10-31T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:,2013-10-31:run/run_records.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;2013&lt;/h2&gt;
 &lt;ul class="simple"&gt;
+&lt;li&gt;2013-11-03 &lt;a class="reference external" href="/run/2013_bali_marathon.html"&gt;八里左岸馬拉松&lt;/a&gt;, 21k, 1:45:06, 全部: 132/1579 ,分組: 142/516&lt;/li&gt;
 &lt;li&gt;2013-10-19, &lt;a class="reference external" href="/run/2013_minirun_yangming.html"&gt;MiniRun擎天崗越野路跑&lt;/a&gt;, 15k, 1:23:54,&lt;/li&gt;
 &lt;li&gt;2013-10-06, &lt;a class="reference external" href="/run/2013_xinyi_marathon.html"&gt;信義葡萄馬拉松&lt;/a&gt;, 25k, 02:31:26,&lt;/li&gt;
 &lt;li&gt;2013-07-28, &lt;a class="reference external" href="/run/nuandong.html"&gt;暖東峽谷&lt;/a&gt;, 16k越野&lt;/li&gt;
@@ -12,7 +21,7 @@
 &lt;li&gt;2013-02-15, 草山月世界, 23k(報全馬), 2:28&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id7"&gt;
+&lt;div class="section" id="id8"&gt;
 &lt;h2&gt;2012&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;台東之美三鐵&lt;/li&gt;
@@ -22,14 +31,14 @@
 &lt;li&gt;2012-01-07, (6) &lt;a class="reference external" href="/run/taiya_marathon.html"&gt;泰雅盃&lt;/a&gt;, 42k, 5:06:43, 54/133, 641/1329&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id10"&gt;
+&lt;div class="section" id="id11"&gt;
 &lt;h2&gt;2011&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2011-12-18, (5) &lt;a class="reference external" href="/run/2011-12-18_taipei_marathon.html"&gt;台北富邦&lt;/a&gt;, 42k, 4:27:x ?&lt;/li&gt;
 &lt;li&gt;2011-01-23 (4) &lt;a class="reference external" href="/run/2011-01-23_tainan_marathon.html"&gt;台南全馬&lt;/a&gt;, 42k, 04:50:01&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id13"&gt;
+&lt;div class="section" id="id14"&gt;
 &lt;h2&gt;2010&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2010-11-05, (3) 太魯閣 42k, 5:20:51, 392 (30-39), 1359&lt;/li&gt;
@@ -38,7 +47,7 @@
 &lt;li&gt;2010-02-28, (1) [初馬] &lt;a class="reference external" href="/run/2010_kaosiung_marathon.html"&gt;2010 高雄馬拉松&lt;/a&gt; , 42k, 5:15:06 ,179 (30-39), 992&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id17"&gt;
+&lt;div class="section" id="id18"&gt;
 &lt;h2&gt;2009&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2009-12-06, 台南黑皮杯, 21k, 2:32:38, 145(30-39), 574&lt;/li&gt;
@@ -46,13 +55,13 @@
 &lt;li&gt;2009-02-20, &lt;a class="reference external" href="/run/2009_tainan_marathon.html"&gt;台南古都半馬&lt;/a&gt;, 21k&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id20"&gt;
+&lt;div class="section" id="id21"&gt;
 &lt;h2&gt;2008&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2008-11-01, &lt;a class="reference external" href="/run/2008_taroko_marathon.html"&gt;花蓮太魯閣&lt;/a&gt;, 21k,2:20:44, 348 (30-39), 1124&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id22"&gt;
+&lt;div class="section" id="id23"&gt;
 &lt;h2&gt;2006&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2006-12-17, [初半馬] &lt;a class="reference external" href="/run/2006_taipei_marathon.html"&gt;台北ING&lt;/a&gt;, 21k, 2:03:26, 224 (25-29), 1865 '&lt;/li&gt;
