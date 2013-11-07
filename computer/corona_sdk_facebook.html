@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>Suhen's blog - corona_sdk</title>
+        <title>Corona SDK串接Facebook</title>
         <link rel="stylesheet" href="/theme/css/main.css">
                 <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's blog Atom Feed" />
                 
@@ -15,7 +15,7 @@
         <header id="banner" class="body">
                 <h1><a href="/">Suhen's blog </a></h1>
                 <nav><ul>
-                                                                                <li ><a href="/category/computer.html">電腦</a></li>
+                                                                                <li class="active"><a href="/category/computer.html">電腦</a></li>
                                 <li ><a href="/category/music.html">音樂</a></li>
                                 <li ><a href="/category/mountain.html">爬山</a></li>
                                 <li ><a href="/category/run.html">跑步</a></li>
@@ -25,19 +25,23 @@
                                 <li><a href="/archives.html">Archives</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
-                    
+        <section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/computer/corona_sdk_facebook.html" rel="bookmark"
+           title="Permalink to Corona SDK串接Facebook">Corona SDK串接Facebook</a></h1>
+          </header>
 
-                    <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/computer/corona_sdk_facebook.html">Corona SDK串接Facebook</a></h1> 
-                    <footer class="post-info">
+    <div class="entry-content">
+      <footer class="post-info">
         <abbr class="published" title="2013-11-07T20:00:00">
                 2013-11-07 20:00
         </abbr>
 
         <p>In <a href="/category/computer.html">computer</a>. </p>
 <p>tags: <a href="/tag/corona_sdk.html">corona_sdk</a><a href="/tag/facebook.html">facebook</a></p>
-</footer><!-- /.post-info --><p>Corona SDK提供了<a href="http://docs.coronalabs.com/api/library/facebook/index.html">facebook API</a>可以很方便的跟facebook串接。</p>
+</footer><!-- /.post-info -->      <p>Corona SDK提供了<a href="http://docs.coronalabs.com/api/library/facebook/index.html">facebook API</a>可以很方便的跟facebook串接。</p>
 <ol>
 <li>先到developers.facebook.com產生一個app，取得app id</li>
 <li>如果是android的話，需要產生keyhash，回填到developers.facebook.com的app</li>
@@ -57,54 +61,11 @@
 </pre></div>
 
 
-<p>也可以拿來回填~</p><p>There are <a href="/computer/corona_sdk_facebook.html#disqus_thread">comments</a>.</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-                            
-
-         
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="/computer/corona_sdk_info.html" rel="bookmark"
-                           title="Permalink to [snippet] Corona SDK 顯示各種資訊">[snippet] Corona SDK 顯示各種資訊</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-10-01T10:31:00">
-                2013-10-01 10:31
-        </abbr>
-
-        <p>In <a href="/category/computer.html">computer</a>. </p>
-<p>tags: <a href="/tag/snippet.html">snippet</a><a href="/tag/corona_sdk.html">corona_sdk</a></p>
-</footer><!-- /.post-info -->                <div class="highlight"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">info</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">========= display info =========&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">pixel: %dx%d, ratio: %.02f&quot;</span><span class="p">,</span> 
-                        <span class="n">display</span><span class="p">.</span><span class="n">pixelWidth</span><span class="p">,</span>
-                        <span class="n">display</span><span class="p">.</span><span class="n">pixelHeight</span><span class="p">,</span>
-                        <span class="n">display</span><span class="p">.</span><span class="n">pixelHeight</span><span class="o">/</span><span class="n">display</span><span class="p">.</span><span class="n">pixelWidth</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">content: %dx%d, ratio: %.02f&quot;</span><span class="p">,</span> 
-                        <span class="n">display</span><span class="p">.</span><span class="n">contentWidth</span><span class="p">,</span>
-                        <span class="n">display</span><span class="p">.</span><span class="n">contentHeight</span><span class="p">,</span>
-                        <span class="n">display</span><span class="p">.</span><span class="n">contentHeight</span><span class="o">/</span><span class="n">display</span><span class="p">.</span><span class="n">contentWidth</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">actual: %dx%d&quot;</span><span class="p">,</span>
-                        <span class="n">display</span><span class="p">.</span><span class="n">actualContentWidth</span><span class="p">,</span>
-                        <span class="n">display</span><span class="p">.</span><span class="n">actualContentHeight</span>
-                        <span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">string ...</span></pre></div>
-                <a class="readmore" href="/computer/corona_sdk_info.html">read more</a>
-                <p>There are <a href="/computer/corona_sdk_info.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-                            </ol><!-- /#posts-list -->
-                            <p class="paginator">
-        Page 1 / 1
-    </p>
-                        </section><!-- /#content -->
-            
+<p>也可以拿來回填~</p>
+    </div><!-- /.entry-content -->
+    
+  </article>
+</section>
         <section id="extras" class="body">
                         <div class="blogroll">
                         <h2>blogroll</h2>

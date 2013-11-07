@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="/" rel="alternate"></link><link href="/feeds/all-zh.atom.xml" rel="self"></link><id>/</id><updated>2013-11-03T12:04:00+08:00</updated><entry><title>2013八里左岸馬拉松</title><link href="/run/2013_bali_marathon.html" rel="alternate"></link><updated>2013-11-03T12:04:00+08:00</updated><author><name>moogoo</name></author><id>tag:,2013-11-03:run/2013_bali_marathon.html</id><summary type="html">&lt;p&gt;同事的吆喝下一群人浩浩蕩蕩的報了這場半馬跟9k，我把這場當作21k的速度測試，之前跑全馬後一直不知道半馬可以跑多久，這場平地賽就剛好可以測試看看。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="/" rel="alternate"></link><link href="/feeds/all-zh.atom.xml" rel="self"></link><id>/</id><updated>2013-11-07T20:00:00+08:00</updated><entry><title>Corona SDK串接Facebook</title><link href="/computer/corona_sdk_facebook.html" rel="alternate"></link><updated>2013-11-07T20:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:,2013-11-07:computer/corona_sdk_facebook.html</id><summary type="html">&lt;p&gt;Corona SDK提供了&lt;a href="http://docs.coronalabs.com/api/library/facebook/index.html"&gt;facebook API&lt;/a&gt;可以很方便的跟facebook串接。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;先到developers.facebook.com產生一個app，取得app id&lt;/li&gt;
+&lt;li&gt;如果是android的話，需要產生keyhash，回填到developers.facebook.com的app&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;可以用corona sdk提供的debug.keystore&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;/Applications/CoronaSDK/Resource Library/Android/debug.keystore
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在mac上用JavaVM提供的keytool指令，產生android的keyhash&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;如果keyhash有問題的話，可以在裝置上看debug log，會出現:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Key hash [這一串是keyhash] does not match any stored key hashes.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;也可以拿來回填~&lt;/p&gt;</summary><category term="corona_sdk"></category><category term="facebook"></category></entry><entry><title>2013八里左岸馬拉松</title><link href="/run/2013_bali_marathon.html" rel="alternate"></link><updated>2013-11-03T12:04:00+08:00</updated><author><name>moogoo</name></author><id>tag:,2013-11-03:run/2013_bali_marathon.html</id><summary type="html">&lt;p&gt;同事的吆喝下一群人浩浩蕩蕩的報了這場半馬跟9k，我把這場當作21k的速度測試，之前跑全馬後一直不知道半馬可以跑多久，這場平地賽就剛好可以測試看看。&lt;/p&gt;
 &lt;p&gt;賽前有練一些長間歇，短間歇，山路，所以覺得心肺有增強許多，5k練習有跑出21:28的PB。原本設定21k要跑1:40 ~ 1:45之間 (5分速)，看有沒有機會挑戰100分以下，前1k跟大家聊天慢慢跑，後面才衝，用比平常 (全馬) 跟快的速度在跑。天氣陰陰的，跑起來後有點小小悶熱，前半段跑了52:20，後半段53:01。中間折返後，大概16, 7k的地方慢了下來，有點快抽筋跟喘不過氣的感覺，可能是最近還是很少跑到那麼長的距離，又是用比較快的速度，受不了，還好最後5, 6k有拼回來。&lt;/p&gt;
 &lt;p&gt;成績&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;1:45:06 全部排名: 132/1579， 分組排名: 142/516
