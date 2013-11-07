@@ -25,18 +25,55 @@
                                 <li><a href="/archives.html">Archives</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
+                    
+
+         
+                            <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="bookmark"
+                           title="Permalink to Dynamic DNS setting for Namecheap on Mac OSX">Dynamic DNS setting for Namecheap on Mac OSX</a></h1>
+                </header>
                 
-<div style="margin:auto;width:800px">
-<a href="/category/computer.html"><img src="/theme/images/computer.jpg" width="200"></a>
-<a href="/category/music.html"><img src="/theme/images/music.jpg" width="200"></a>
-<a href="/category/mountain.html"><img src="/theme/images/mountain.jpg" width="200"></a>
-<a href="/category/run.html"><img src="/theme/images/running.jpg" width="200"></a>
-<a href="/category/travel.html"><img src="/theme/images/travel.jpg" width="200"></a>
-<a href="/category/misc.html"><img src="/theme/images/misc.jpg" width="200"></a>
-<a href="/category/book.html"><img src="/theme/images/book.jpg" width="200"></a>
-<a href="/archives.html"><img src="/theme/images/archives.jpg" width="200"></a>
-</div>
-                        <section id="extras" class="body">
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-21T02:09:00">
+                2013-03-21 02:09
+        </abbr>
+
+        <p>In <a href="/category/computer.html">computer</a>. </p>
+<p>tags: <a href="/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>登入Namecheap啓用Dynamic <a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service">link1</a></p>
+<p>設定DNS record:</p>
+<pre class="literal-block">
+freedns1.registrar-servers.com
+freedns2.registrar-servers.com
+freedns3.registrar-servers.com
+freedns4.registrar-servers.com
+freedns5.registrar-servers.com
+</pre>
+<p><a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/532/51/how-does-free-dns-work">link2</a></p>
+<p>安裝Dynamic DNS clinet (以OS X的ddclient為例):</p>
+<pre class="literal-block">
+$ brew install ddclient
+</pre>
+<p>在/usr/local/etc/ddclient裡建立ddclient.conf (範例在/usr/local/share/doc/ddclient), 裡面有namecheap的預設選項:</p>
+<pre class="literal-block">
+protocol=namecheap
+server=dynamicdns.park-your-domain.com
+login=yourdomain.com ...</pre>
+                <a class="readmore" href="/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html">read more</a>
+                <p>There are <a href="/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            </ol><!-- /#posts-list -->
+                            <p class="paginator">
+                        <a href="/tag/note.html">&laquo;</a>
+                Page 2 / 2
+    </p>
+                        </section><!-- /#content -->
+            
+        <section id="extras" class="body">
                         <div class="blogroll">
                         <h2>blogroll</h2>
                         <ul>
