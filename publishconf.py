@@ -5,7 +5,7 @@ import sys
 sys.path.append('.')
 from pelicanconf import *
 
-#SITEURL = 'http://suhen.org'
+SITEURL = 'http://blog.suhen.org'
 FEED_DOMAIN = SITEURL
 
 # Following items are often useful when publishing
