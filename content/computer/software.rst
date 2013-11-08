@@ -182,3 +182,12 @@ System
   3. xcode-select --install 
 
 
+Browser plugin/extensions
+============================
+
+* 顯示網站使用fromeworks, web server, service...
+  * [GC] `Chrome Sniffer | Bao's Blog <http://www.nqbao.com/chrome-sniffer>`__
+  * [FF] `Wappalyzer <http://wappalyzer.com/>`__
+
+
+
