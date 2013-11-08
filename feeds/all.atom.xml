@@ -4067,9 +4067,11 @@ ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
 &lt;div class="section" id="browser-plugin-extensions"&gt;
 &lt;h2&gt;Browser plugin/extensions&lt;/h2&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;顯示網站使用fromeworks, web server, service...
-* [GC] &lt;a class="reference external" href="http://www.nqbao.com/chrome-sniffer"&gt;Chrome Sniffer | Bao's Blog&lt;/a&gt;
-* [FF] &lt;a class="reference external" href="http://wappalyzer.com/"&gt;Wappalyzer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;顯示網站使用fromeworks, web server, service...&lt;ul&gt;
+&lt;li&gt;[GC] &lt;a class="reference external" href="http://www.nqbao.com/chrome-sniffer"&gt;Chrome Sniffer | Bao's Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FF] &lt;a class="reference external" href="http://wappalyzer.com/"&gt;Wappalyzer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://blog.suhen.org/computer/unix_command.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/unix_command.html</id><summary type="html">&lt;div class="section" id="script"&gt;
