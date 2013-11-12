@@ -30,8 +30,8 @@ body {
 
 /* Headings */
 h1 {font-size: 2em }
-h2 {font-size: 1.571em; border-bottom: 3px solid #DDD; border-left: 5px solid #DDD; margin-top: 20px;}	/* 22px */
-h3 {font-size: 1.429em; border-bottom: 2px solid #98B0B0;}	/* 20px */
+h2 {font-size: 1.571em; border-left: 5px solid #DDD; margin-top: 20px; padding-left:2px;}	/* 22px */ /*border-bottom: 3px solid #DDD;*/
+h3 {font-size: 1.429em; border-left: 3px solid #67E667; padding-left:1px;}	/* 20px */ /*border-bottom: 2px solid #98B0B0;*/
 h4 {font-size: 1.286em}	/* 18px */
 h5 {font-size: 1.143em}	/* 16px */
 h6 {font-size: 1em}		/* 14px */

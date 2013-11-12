@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-11-08T12:09:00+08:00</updated><entry><title>鋼筆初體驗</title><link href="http://blog.suhen.org/misc/lamy_safary.html" rel="alternate"></link><updated>2013-11-08T12:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-08:misc/lamy_safary.html</id><summary type="html">&lt;p&gt;最近常常在手寫筆記，連明年的年度手札都不想用買的，決定用20孔A5活頁紙自己做。然後又覺得用爛爛的原子筆寫起來很沒質感，想找一隻好筆。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-11-12T17:31:00+08:00</updated><entry><title>Deploying Flask (Python) to AWS Elastic Beanstalk</title><link href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html" rel="alternate"></link><updated>2013-11-12T17:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:computer/aws_elastic_beanstalk_flask.html</id><summary type="html">&lt;h1&gt;quickstart&lt;/h1&gt;
+&lt;h2&gt;1. 安裝eb commend tools&lt;/h2&gt;
+&lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;設定好路徑(以mac為例), 就可以開始了&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;2. 跑起來&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;eb init
+; 會有選單, 開始勾選
+; 平台選這個
+64bit Amazon Linux 2013.09 running Python 2.7
+; 勾完後, 就可以啟動餓了
+eb start 
+; 等個幾分鐘
+eb status --verbose
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;git aws.push&lt;/p&gt;
+&lt;h3&gt;限制&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bundle size can be up to 512MB&lt;/li&gt;
+&lt;li&gt;沒有filesystem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;參考&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python_flask.html"&gt;Deploying a Flask Application to AWS Elastic Beanstalk - AWS Elastic Beanstalk&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://aws.amazon.com/elasticbeanstalk/faqs/"&gt;AWS Elastic Beanstalk FAQs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.RDS.html"&gt;Using AWS Elastic Beanstalk with Amazon RDS - AWS Elastic Beanstalk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;http://blog.uptill3.com/2012/08/25/python-on-elastic-beanstalk.html
+http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob
+https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
+https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>2013 吃不停的田中馬拉松</title><link href="http://blog.suhen.org/run/2013_tianzhong_marathon.html" rel="alternate"></link><updated>2013-11-11T20:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-11:run/2013_tianzhong_marathon.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.tienchun.gov.tw/marathon/index.php?i=1"&gt;台灣米倉田中馬拉松&lt;/a&gt;&lt;/p&gt;</summary><category term="diary"></category></entry><entry><title>鋼筆初體驗</title><link href="http://blog.suhen.org/misc/lamy_safary.html" rel="alternate"></link><updated>2013-11-08T12:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-08:misc/lamy_safary.html</id><summary type="html">&lt;p&gt;最近常常在手寫筆記，連明年的年度手札都不想用買的，決定用20孔A5活頁紙自己做。然後又覺得用爛爛的原子筆寫起來很沒質感，想找一隻好筆。&lt;/p&gt;
 &lt;p&gt;那不如... 就來用鋼筆吧，網路搜尋鋼筆，果然出現專賣店: &lt;a href="http://tylee.tw/"&gt;小品雅集&lt;/a&gt; 。抽空走到大安高工後面的小巷子裡，店裡很多人在把玩各種筆，整個很有"品味"的感覺，於是我很沒有品味的問店員：「我想買鋼筆，要怎麼開始」。店員：「就從這裡開始」。&lt;/p&gt;
 &lt;p&gt;櫃檯擺了一盤試用的德國Lamy牌，最入門的叫Safari，我一眼就看中消光黑的那隻，不會太秋! 這隻鋼筆有附吸水器，可以選墨水，本來覺得藍色像原子筆，想選黑色，但發現剛才試寫時有一種很深的藍色，更特別，他叫藍黑色，就是他了。選筆尖，我寫的字算小，就用最&lt;del&gt;賤&lt;/del&gt;尖的&lt;em&gt;EF&lt;/em&gt;。&lt;/p&gt;
 &lt;p&gt;總共花不到一千元，就完成了鋼筆初體驗，專業的店員節省了我很多上網查資料的時間。&lt;/p&gt;
