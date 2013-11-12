@@ -1,0 +1,22 @@
+[高山植物] 一枝黃花
+#############################
+:date: 2013-08-28 01:01
+:category: nature
+:tags: 黃花, 高山, herb, 觀察
+
+他就是一枝黃花。
+
+.. image:: /static/images/nature/plant/0008/4947236345_136dac099d_z.jpg
+
+* [2010-08-27] 志佳陽大山
+
+.. image:: /static/images/nature/plant/0008/4947824232_2a5a6c92f1_z.jpg
+
+.. image:: /static/images/nature/plant/0008/2994044400_85a3f0072c_z.jpg
+
+
+
+* [2008-10-25] 桃山步道
+
+
+

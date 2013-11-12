@@ -1,0 +1,19 @@
+[高山植物] 石松
+#############################
+:date: 2013-08-28 01:18
+:category: nature
+:tags: 高山, fern, 觀察
+
+匍匐性地上蕨類，莖會立起來。和玉山石松很像，但玉山石松的直立莖一根一個，石松是一根會有多幾個。
+
+.. image:: /static/images/nature/plant/0009/2993227895_d3e7579531_z.jpg
+
+.. image:: /static/images/nature/plant/0009/2994069346_c1e971067b_z.jpg
+
+.. image:: /static/images/nature/plant/0009/2993222693_aaf03eb593_z.jpg
+
+* [2008-10-25] 桃山
+
+.. image:: /static/images/nature/plant/0009/4947210155_73950fa287_z.jpg
+
+* [2010-08-27] 志佳陽大山

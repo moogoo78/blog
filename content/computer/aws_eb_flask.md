@@ -11,26 +11,32 @@ Slug: aws_elastic_beanstalk_flask
     
    設定好路徑(以mac為例), 就可以開始了
 
-    :::text
+    :::bash
     AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
+
+    # 環境變數, 可以在shell下export或是寫在~/.elasticbeanstalk/aws_credential_file裡 (忘記是我自己加的還是eb工具自動加的)
+    AWSAccessKeyId=Write your AWS access ID
+    AWSSecretKey=Write your AWS secret key
 
 ## 2. 跑起來
 
     :::bash
+    # 在git目錄下操作, 如果沒有repo就會叫你git init
     eb init
-    ; 會有選單, 開始勾選
-    ; 平台選這個
+    # 會有選單, 開始勾選
+    # 平台選這個
     64bit Amazon Linux 2013.09 running Python 2.7
-    ; 勾完後, 就可以啟動餓了
-    eb start 
-    ; 等個幾分鐘
+    # 勾完後, 就可以啟動餓了
+    eb start
+    # 問你要用那個version deploy, 預設最新的
+    # 等個幾分鐘
+
+    # 改程式後git commit
+    # git aws.push -> 自動傳到eb環境
+
+    # 其他指令
     eb status --verbose 
-git aws.push
 
-### 限制
-
-* bundle size can be up to 512MB
-* 沒有filesystem
 
 ### 參考
 
