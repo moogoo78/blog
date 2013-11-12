@@ -4,27 +4,32 @@
 &lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定好路徑(以mac為例), 就可以開始了&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
+
+&lt;span class="c"&gt;# 環境變數, 可以在shell下export或是寫在~/.elasticbeanstalk/aws_credential_file裡 (忘記是我自己加的還是eb工具自動加的)&lt;/span&gt;
+&lt;span class="nv"&gt;AWSAccessKeyId&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Write your AWS access ID
+&lt;span class="nv"&gt;AWSSecretKey&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Write your AWS secret key
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;2. 跑起來&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;eb init
-; 會有選單, 開始勾選
-; 平台選這個
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 在git目錄下操作, 如果沒有repo就會叫你git init&lt;/span&gt;
+eb init
+&lt;span class="c"&gt;# 會有選單, 開始勾選&lt;/span&gt;
+&lt;span class="c"&gt;# 平台選這個&lt;/span&gt;
 64bit Amazon Linux 2013.09 running Python 2.7
-; 勾完後, 就可以啟動餓了
-eb start 
-; 等個幾分鐘
+&lt;span class="c"&gt;# 勾完後, 就可以啟動餓了&lt;/span&gt;
+eb start
+&lt;span class="c"&gt;# 問你要用那個version deploy, 預設最新的&lt;/span&gt;
+&lt;span class="c"&gt;# 等個幾分鐘&lt;/span&gt;
+
+&lt;span class="c"&gt;# 改程式後git commit&lt;/span&gt;
+&lt;span class="c"&gt;# git aws.push -&amp;gt; 自動傳到eb環境&lt;/span&gt;
+
+&lt;span class="c"&gt;# 其他指令&lt;/span&gt;
 eb status --verbose
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;git aws.push&lt;/p&gt;
-&lt;h3&gt;限制&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;bundle size can be up to 512MB&lt;/li&gt;
-&lt;li&gt;沒有filesystem&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h3&gt;參考&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python_flask.html"&gt;Deploying a Flask Application to AWS Elastic Beanstalk - AWS Elastic Beanstalk&lt;/a&gt; &lt;/li&gt;

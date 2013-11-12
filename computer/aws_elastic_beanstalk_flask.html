@@ -17,10 +17,12 @@
                 <nav><ul>
                                                                                 <li class="active"><a href="http://blog.suhen.org/category/computer.html">電腦</a></li>
                                 <li ><a href="http://blog.suhen.org/category/music.html">音樂</a></li>
-                                <li ><a href="http://blog.suhen.org/category/mountain.html">爬山</a></li>
                                 <li ><a href="http://blog.suhen.org/category/run.html">跑步</a></li>
+                                <li ><a href="http://blog.suhen.org/category/mountain.html">爬山</a></li>
+                                <li ><a href="http://blog.suhen.org/category/nature.html">自然</a></li>
                                 <li ><a href="http://blog.suhen.org/category/travel.html">旅遊</a></li>
                                 <li ><a href="http://blog.suhen.org/category/book.html">書</a></li>
+                                <li ><a href="http://blog.suhen.org/category/language.html">語言</a></li>
                                 <li ><a href="http://blog.suhen.org/category/misc.html">其他</a></li>
                                 <li><a href="http://blog.suhen.org/archives.html">Archives</a></li>
                 </ul></nav>
@@ -46,27 +48,32 @@
 <p>下載: <a href="http://aws.amazon.com/code/6752709412171743">AWS Elastic Beanstalk Command Line Tool : Sample Code &amp; Libraries : Amazon Web Services</a></p>
 <p>設定好路徑(以mac為例), 就可以開始了</p>
 <div class="highlight"><pre>AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
+
+<span class="c"># 環境變數, 可以在shell下export或是寫在~/.elasticbeanstalk/aws_credential_file裡 (忘記是我自己加的還是eb工具自動加的)</span>
+<span class="nv">AWSAccessKeyId</span><span class="o">=</span>Write your AWS access ID
+<span class="nv">AWSSecretKey</span><span class="o">=</span>Write your AWS secret key
 </pre></div>
 
 
 <h2>2. 跑起來</h2>
-<div class="highlight"><pre>eb init
-; 會有選單, 開始勾選
-; 平台選這個
+<div class="highlight"><pre><span class="c"># 在git目錄下操作, 如果沒有repo就會叫你git init</span>
+eb init
+<span class="c"># 會有選單, 開始勾選</span>
+<span class="c"># 平台選這個</span>
 64bit Amazon Linux 2013.09 running Python 2.7
-; 勾完後, 就可以啟動餓了
-eb start 
-; 等個幾分鐘
+<span class="c"># 勾完後, 就可以啟動餓了</span>
+eb start
+<span class="c"># 問你要用那個version deploy, 預設最新的</span>
+<span class="c"># 等個幾分鐘</span>
+
+<span class="c"># 改程式後git commit</span>
+<span class="c"># git aws.push -&gt; 自動傳到eb環境</span>
+
+<span class="c"># 其他指令</span>
 eb status --verbose
 </pre></div>
 
 
-<p>git aws.push</p>
-<h3>限制</h3>
-<ul>
-<li>bundle size can be up to 512MB</li>
-<li>沒有filesystem</li>
-</ul>
 <h3>參考</h3>
 <ul>
 <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python_flask.html">Deploying a Flask Application to AWS Elastic Beanstalk - AWS Elastic Beanstalk</a> </li>
@@ -99,8 +106,6 @@ https://github.com/adamcrosby/elastic-flask-baseline</p>
                         <h2>blogroll</h2>
                         <ul>
                                                     <li><a href="/pages/about.html">About</a></li>
-                                                    <li><a href="http://language.suhen.org">Language</a></li>
-                                                    <li><a href="http://natural.suhen.org">Natural</a></li>
                                                     <li><a href="http://blog.roodo.com/moogoo">舊blog</a></li>
                                                     <li><a href="http://moogoo78.blogspot.com">電腦程式blog</a></li>
                                                 </ul>

@@ -17,10 +17,12 @@
                 <nav><ul>
                                                                                 <li ><a href="http://blog.suhen.org/category/computer.html">電腦</a></li>
                                 <li ><a href="http://blog.suhen.org/category/music.html">音樂</a></li>
-                                <li ><a href="http://blog.suhen.org/category/mountain.html">爬山</a></li>
                                 <li ><a href="http://blog.suhen.org/category/run.html">跑步</a></li>
+                                <li ><a href="http://blog.suhen.org/category/mountain.html">爬山</a></li>
+                                <li ><a href="http://blog.suhen.org/category/nature.html">自然</a></li>
                                 <li ><a href="http://blog.suhen.org/category/travel.html">旅遊</a></li>
                                 <li ><a href="http://blog.suhen.org/category/book.html">書</a></li>
+                                <li ><a href="http://blog.suhen.org/category/language.html">語言</a></li>
                                 <li ><a href="http://blog.suhen.org/category/misc.html">其他</a></li>
                                 <li><a href="http://blog.suhen.org/archives.html">Archives</a></li>
                 </ul></nav>
@@ -30,6 +32,93 @@
          
                             <section id="content" class="body">
                     <ol id="posts-list" class="hfeed" start="9">
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/pelican.html" rel="bookmark"
+                           title="Permalink to Pelican - 邁向靜態blog之路">Pelican - 邁向靜態blog之路</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-11T12:57:00">
+                2013-04-11 12:57
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>一直想用純HTML來寫blog，做筆記，最早用PHP的 <a class="reference external" href="https://www.dokuwiki.org">dokuwiki</a> ，不想被PHP server綁住，改用Emacs的 <a class="reference external" href="http://orgmode.org/">Orgmode</a>, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 <a class="reference external" href="http://gentlerunner.org/rest-restructuredtextyu-sphinx.html">reST</a> (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。</p>
+<div class="section" id="quick-start">
+<h2>Quick-start</h2>
+<p>安裝:</p>
+<pre class="literal-block">
+$ pip install pelican
+</pre>
+<p>開始:</p>
+<pre class="literal-block">
+$ mkdir blog
+$ cd blog
+$ pelican-quickstart
+</pre>
+<p>快速產生相關的設定</p>
+<p>寫第一篇文章:</p>
+<pre class="literal-block">
+$ content/first.rst
+</pre>
+<p>工具指令:</p>
+<pre class="literal-block">
+$ make html # 顧名思義
+$ make clean
+$ make rsync_upload # 用rsync上傳到你的ssh host ...</pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/pelican.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/pelican.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/ganglia.html" rel="bookmark"
+                           title="Permalink to Ganglia">Ganglia</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-02T11:39:00">
+                2013-04-02 11:39
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
+<p>Ganglia有3個部分:</p>
+<ul class="simple">
+<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
+<li>gmetad - 詢問gmond儲存數質</li>
+<li>ganglia-web</li>
+</ul>
+<pre class="literal-block">
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+</pre>
+<p>start daemond:</p>
+<pre class="literal-block">
+service gmond start
+service gmetad start
+</pre>
+<div class="section" id="centos">
+<h2>CentOS</h2>
+<p>進入web介面時出現:</p>
+<pre class="literal-block">
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+</pre>
+<p>解決方法, 重新安裝 ...</p></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/ganglia.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
                         <li><article class="hentry">    
                 <header>
                     <h1><a href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="bookmark"
@@ -78,8 +167,6 @@ login=yourdomain.com ...</pre>
                         <h2>blogroll</h2>
                         <ul>
                                                     <li><a href="/pages/about.html">About</a></li>
-                                                    <li><a href="http://language.suhen.org">Language</a></li>
-                                                    <li><a href="http://natural.suhen.org">Natural</a></li>
                                                     <li><a href="http://blog.roodo.com/moogoo">舊blog</a></li>
                                                     <li><a href="http://moogoo78.blogspot.com">電腦程式blog</a></li>
                                                 </ul>
