@@ -18,7 +18,26 @@ Slug: aws_elastic_beanstalk_flask
     AWSAccessKeyId=Write your AWS access ID
     AWSSecretKey=Write your AWS secret key
 
-## 2. 跑起來
+## 2. 準備部署
+
+### WSGI
+
+預設是application.py:application, 自己要改application.py名字失敗
+
+    :::plain
+    [aws:elasticbeanstalk:container:python]
+    ...
+    WSGIPath=my_fail_wsgi
+
+### 連接原本的RDS
+要去RDS的security group那裡新增一個(因為等於是開了一個新的EC2)，通常是awseb-xxx 開頭的
+
+### Elastic Beanstalk沒有filesystem
+
+* 所以原本的media檔要改存到S3
+* 原本logger有自己存檔, 也要取消 (反正會出現在eb的log裡)
+
+## 3. 跑起來
 
     :::bash
     # 在git目錄下操作, 如果沒有repo就會叫你git init
@@ -36,6 +55,16 @@ Slug: aws_elastic_beanstalk_flask
 
     # 其他指令
     eb status --verbose 
+
+
+
+
+## 設定
+產生 **.ebextensions**目錄, 新增 python.config:
+
+    option_settings:
+      "aws:elasticbeanstalk:container:python:staticfiles":
+        "/static/": "myapp/static/"
 
 
 ### 參考
