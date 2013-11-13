@@ -11,7 +11,23 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;2. 跑起來&lt;/h2&gt;
+&lt;h2&gt;2. 準備部署&lt;/h2&gt;
+&lt;h3&gt;WSGI&lt;/h3&gt;
+&lt;p&gt;預設是application.py:application, 自己要改application.py名字失敗&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;[aws:elasticbeanstalk:container:python]&lt;/span&gt;
+&lt;span class="err"&gt;...&lt;/span&gt;
+&lt;span class="na"&gt;WSGIPath&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;my_fail_wsgi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;連接原本的RDS&lt;/h3&gt;
+&lt;p&gt;要去RDS的security group那裡新增一個(因為等於是開了一個新的EC2)，通常是awseb-xxx 開頭的&lt;/p&gt;
+&lt;h3&gt;Elastic Beanstalk沒有filesystem&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;所以原本的media檔要改存到S3&lt;/li&gt;
+&lt;li&gt;原本logger有自己存檔, 也要取消 (反正會出現在eb的log裡)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;3. 跑起來&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 在git目錄下操作, 如果沒有repo就會叫你git init&lt;/span&gt;
 eb init
 &lt;span class="c"&gt;# 會有選單, 開始勾選&lt;/span&gt;
@@ -27,6 +43,14 @@ eb start
 
 &lt;span class="c"&gt;# 其他指令&lt;/span&gt;
 eb status --verbose
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;設定&lt;/h2&gt;
+&lt;p&gt;產生 &lt;strong&gt;.ebextensions&lt;/strong&gt;目錄, 新增 python.config:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nl"&gt;option_settings:&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;aws:elasticbeanstalk:container:python:staticfiles&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="s"&gt;&amp;quot;/static/&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;myapp/static/&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

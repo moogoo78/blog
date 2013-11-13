@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-11-12T19:48:00+08:00</updated><entry><title>[荒野24解] 第二堂室內課 荒野的腳步 - 認識荒野</title><link href="http://blog.suhen.org/nature/sow24-2.html" rel="alternate"></link><updated>2013-11-12T19:48:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:nature/sow24-2.html</id><summary type="html">&lt;h3&gt;第二堂室內課 荒野的腳步 - 認識荒野&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-11-13T23:58:00+08:00</updated><entry><title>[draft]Start With Why - Simon Sinek (2009)</title><link href="http://blog.suhen.org/book/start_with_why_simon_sinek.html" rel="alternate"></link><updated>2013-11-13T23:58:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-13:book/start_with_why_simon_sinek.html</id><summary type="html">&lt;h1&gt;Start With Why: How Great Leaders Inspire Everyone to Take Action&lt;/h1&gt;
+&lt;p&gt;Golden Circle&lt;/p&gt;
+&lt;p&gt;The danger of manupulations is that they work.
+pp. 33&lt;/p&gt;
+&lt;p&gt;pp. 67
+A WHY is just a belief. That's all it is. HOWs are the actions you take to realize those actions,&lt;/p&gt;</summary></entry><entry><title>[荒野24解] 第二堂室內課 荒野的腳步 - 認識荒野</title><link href="http://blog.suhen.org/nature/sow24-2.html" rel="alternate"></link><updated>2013-11-12T19:48:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:nature/sow24-2.html</id><summary type="html">&lt;h3&gt;第二堂室內課 荒野的腳步 - 認識荒野&lt;/h3&gt;
 &lt;p&gt;講者: 副秘書長李建安 (小彎嘴)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;荒野成立:1995年6月25&lt;/li&gt;
@@ -24,7 +29,23 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;2. 跑起來&lt;/h2&gt;
+&lt;h2&gt;2. 準備部署&lt;/h2&gt;
+&lt;h3&gt;WSGI&lt;/h3&gt;
+&lt;p&gt;預設是application.py:application, 自己要改application.py名字失敗&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;[aws:elasticbeanstalk:container:python]&lt;/span&gt;
+&lt;span class="err"&gt;...&lt;/span&gt;
+&lt;span class="na"&gt;WSGIPath&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;my_fail_wsgi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;連接原本的RDS&lt;/h3&gt;
+&lt;p&gt;要去RDS的security group那裡新增一個(因為等於是開了一個新的EC2)，通常是awseb-xxx 開頭的&lt;/p&gt;
+&lt;h3&gt;Elastic Beanstalk沒有filesystem&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;所以原本的media檔要改存到S3&lt;/li&gt;
+&lt;li&gt;原本logger有自己存檔, 也要取消 (反正會出現在eb的log裡)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;3. 跑起來&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 在git目錄下操作, 如果沒有repo就會叫你git init&lt;/span&gt;
 eb init
 &lt;span class="c"&gt;# 會有選單, 開始勾選&lt;/span&gt;
@@ -43,6 +64,14 @@ eb status --verbose
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;h2&gt;設定&lt;/h2&gt;
+&lt;p&gt;產生 &lt;strong&gt;.ebextensions&lt;/strong&gt;目錄, 新增 python.config:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nl"&gt;option_settings:&lt;/span&gt;
+  &lt;span class="s"&gt;&amp;quot;aws:elasticbeanstalk:container:python:staticfiles&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="s"&gt;&amp;quot;/static/&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;myapp/static/&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h3&gt;參考&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python_flask.html"&gt;Deploying a Flask Application to AWS Elastic Beanstalk - AWS Elastic Beanstalk&lt;/a&gt; &lt;/li&gt;
@@ -52,7 +81,32 @@ eb status --verbose
 &lt;p&gt;http://blog.uptill3.com/2012/08/25/python-on-elastic-beanstalk.html
 http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
-https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>2013 吃不停的田中馬拉松</title><link href="http://blog.suhen.org/run/2013_tianzhong_marathon.html" rel="alternate"></link><updated>2013-11-11T20:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-11:run/2013_tianzhong_marathon.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.tienchun.gov.tw/marathon/index.php?i=1"&gt;台灣米倉田中馬拉松&lt;/a&gt;&lt;/p&gt;</summary><category term="diary"></category></entry><entry><title>鋼筆初體驗</title><link href="http://blog.suhen.org/misc/lamy_safary.html" rel="alternate"></link><updated>2013-11-08T12:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-08:misc/lamy_safary.html</id><summary type="html">&lt;p&gt;最近常常在手寫筆記，連明年的年度手札都不想用買的，決定用20孔A5活頁紙自己做。然後又覺得用爛爛的原子筆寫起來很沒質感，想找一隻好筆。&lt;/p&gt;
+https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>2013 吃不停的田中馬拉松</title><link href="http://blog.suhen.org/run/2013_tianzhong_marathon.html" rel="alternate"></link><updated>2013-11-11T20:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-11:run/2013_tianzhong_marathon.html</id><summary type="html">&lt;h1&gt;2013-11-09 第一天 - 移動，吃喝&lt;/h1&gt;
+&lt;p&gt;之前聽說是口碑很好的馬拉松賽事，這次浩浩蕩蕩一群朋友一起參加了，順便去很少去的彰化員林附近玩玩。因為是歡樂的馬拉松決定要好好的來變裝，星期五下班到台北車站後站的太原路那裡找靈感，看來看去有只有可愛風的道具比較適合，買了各種動物頭套。&lt;/p&gt;
+&lt;p&gt;早上從台北出發，想去新竹風城攀岩場看看，結果剛好那天是青少年的比賽，只好看個熱鬧就離去，不過也遇到朋友，聊聊天也滿不錯的。之後開車到彰化已經中午了。下交流道經過北斗，看到路邊市場的肉圓，就停下來吃，本來不是特別喜歡中部炸的肉圓，但這裡的還滿好吃的，又便宜。之後先到田尾找我們的民宿，因為馬拉松早就訂滿了，我們就睡民宿主人阿成哥浪漫田邊的的空地，弄好帳篷，轉往員林去吃吃喝喝。&lt;/p&gt;
+&lt;p&gt;一行人因為在台北找不出時間看&lt;a href="http://www.atmovies.com.tw/movie/fbtw46649993/"&gt;看見台灣&lt;/a&gt;，到員林這裡來看剛好，我們就先買了電影票。然後走到附近的牛肉火鍋 (感謝在地的Amy推薦)，真的非常好吃，牛肉很鮮美，都不太需要用醬料，配上肉燥飯，就在喝咖啡單品般純粹的享受啊。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;台南土產牛肉店
+地址: 彰化縣員林鎮東和里萬年路 2 段 85 號
+電話: 04-8327296
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;吃飽後，到老舊的電影院，時間到，電影片頭馬上開始，我們習慣在大都市看電影，都會有廣告，宣導短片，影城短片...等。這裡直接就進入播放的影片，感覺很豪邁啊。本來對電影期待很高，看了後有點小小的失望，雖然很多空拍的角度，真的是我們沒看過的台灣，但是敘述不太有趣，有點像國家公園的短片，畫面也單調，如果多一點藝術感會比較好，我們被寵壞了。也許是一直就有在看齊柏林的blog，也算是有在注意台灣環境相關議題，所以才會覺得不是特別的令我感動。&lt;/p&gt;
+&lt;p&gt;看完電影，肚子又餓了，樓下的烤玉米超香，原來也是有名的店，又吃了米糕謝，米糕感覺比台南高雄吃到的濕，比較接近肉燥飯，招牌燒肉也很好吃，可惜肚子很飽，不然還想點很多。然後買了隔壁的圓仔豆花回去當宵夜，明天的早餐就附近隨便買個雞肉飯，跑步前補一下啊。&lt;/p&gt;
+&lt;h1&gt;2013-11-10 第二天 - 跑步&lt;/h1&gt;
+&lt;p&gt;這場時為了幾星期後的阿公店路跑，所以當作LSD在慢慢跑，順便變裝，享受比賽的樂趣。穿上時下最流行的黃色小鴨，果然有變裝民眾的加油會比較熱情，一路上一直跟人擊掌，喊小鴨鴨。一路的補給真的很多，幾公里就一個，而且食物的量跟樣式都比一般比賽多很多，路上很多地方在施工，其實稱不上是漂亮的馬拉松景點，但是鄉民的熱情真的是很感動，我還是喜歡享受在這種鄉下比賽的感覺。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=" " src="/static/images/2013-11-10_tianzhong_marathon/tn_IMI5136.JPG" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;成績: 05:38:05&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;跑完後買了票選第一名的豆花，點了綠豆豆花，綠豆是冰沙，很爽快。收工滾回台北~&lt;/p&gt;
+&lt;h1&gt;相關資訊&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.tienchun.gov.tw/marathon/index.php?i=1"&gt;台灣米倉田中馬拉松&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tienchun.gov.tw/ufiles/marathon/cont_f1030061000946.pdf"&gt;路線(pdf)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.don1don.com/archives/17261"&gt;全鎮大動員─2013台灣米倉田中馬拉松 | Don1Don&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.libertytimes.com.tw/2013/new/may/22/today-center10.htm"&gt;自由電子報 - 「古亭畚」背包客旅店 老外朝聖&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="diary"></category></entry><entry><title>鋼筆初體驗</title><link href="http://blog.suhen.org/misc/lamy_safary.html" rel="alternate"></link><updated>2013-11-08T12:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-08:misc/lamy_safary.html</id><summary type="html">&lt;p&gt;最近常常在手寫筆記，連明年的年度手札都不想用買的，決定用20孔A5活頁紙自己做。然後又覺得用爛爛的原子筆寫起來很沒質感，想找一隻好筆。&lt;/p&gt;
 &lt;p&gt;那不如... 就來用鋼筆吧，網路搜尋鋼筆，果然出現專賣店: &lt;a href="http://tylee.tw/"&gt;小品雅集&lt;/a&gt; 。抽空走到大安高工後面的小巷子裡，店裡很多人在把玩各種筆，整個很有"品味"的感覺，於是我很沒有品味的問店員：「我想買鋼筆，要怎麼開始」。店員：「就從這裡開始」。&lt;/p&gt;
 &lt;p&gt;櫃檯擺了一盤試用的德國Lamy牌，最入門的叫Safari，我一眼就看中消光黑的那隻，不會太秋! 這隻鋼筆有附吸水器，可以選墨水，本來覺得藍色像原子筆，想選黑色，但發現剛才試寫時有一種很深的藍色，更特別，他叫藍黑色，就是他了。選筆尖，我寫的字算小，就用最&lt;del&gt;賤&lt;/del&gt;尖的&lt;em&gt;EF&lt;/em&gt;。&lt;/p&gt;
 &lt;p&gt;總共花不到一千元，就完成了鋼筆初體驗，專業的店員節省了我很多上網查資料的時間。&lt;/p&gt;
@@ -149,6 +203,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;p&gt;外接硬碟接上iMac，重新開機。開機時按住&lt;em&gt;Option&lt;/em&gt;會跳出選擇開機磁碟，就選剛才製作好的開機碟。就會開始自動安裝了。 爽快。&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>歷年跑馬成績</title><link href="http://blog.suhen.org/run/run_records.html" rel="alternate"></link><updated>2013-10-31T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-31:run/run_records.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;2013&lt;/h2&gt;
 &lt;ul class="simple"&gt;
+&lt;li&gt;2013-11-10 &lt;a class="reference external" href="http://blog.suhen.org/run/2013_tianzhong_marathon.html"&gt;田中米倉馬拉松&lt;/a&gt;, 42k, 05:38:05 , 全部: 2575/4400 ,分組: 888&lt;/li&gt;
 &lt;li&gt;2013-11-03 &lt;a class="reference external" href="http://blog.suhen.org/run/2013_bali_marathon.html"&gt;八里左岸馬拉松&lt;/a&gt;, 21k, 1:45:06, 全部: 132/1579 ,分組: 142/516&lt;/li&gt;
 &lt;li&gt;2013-10-19, &lt;a class="reference external" href="http://blog.suhen.org/run/2013_minirun_yangming.html"&gt;MiniRun擎天崗越野路跑&lt;/a&gt;, 15k, 1:23:54,&lt;/li&gt;
 &lt;li&gt;2013-10-06, &lt;a class="reference external" href="http://blog.suhen.org/run/2013_xinyi_marathon.html"&gt;信義葡萄馬拉松&lt;/a&gt;, 25k, 02:31:26,&lt;/li&gt;
@@ -160,7 +215,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;2013-02-15, 草山月世界, 23k(報全馬), 2:28&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id8"&gt;
+&lt;div class="section" id="id9"&gt;
 &lt;h2&gt;2012&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;台東之美三鐵&lt;/li&gt;
@@ -170,14 +225,14 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;2012-01-07, (6) &lt;a class="reference external" href="http://blog.suhen.org/run/taiya_marathon.html"&gt;泰雅盃&lt;/a&gt;, 42k, 5:06:43, 54/133, 641/1329&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id11"&gt;
+&lt;div class="section" id="id12"&gt;
 &lt;h2&gt;2011&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2011-12-18, (5) &lt;a class="reference external" href="http://blog.suhen.org/run/2011-12-18_taipei_marathon.html"&gt;台北富邦&lt;/a&gt;, 42k, 4:27:x ?&lt;/li&gt;
 &lt;li&gt;2011-01-23 (4) &lt;a class="reference external" href="http://blog.suhen.org/run/2011-01-23_tainan_marathon.html"&gt;台南全馬&lt;/a&gt;, 42k, 04:50:01&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id14"&gt;
+&lt;div class="section" id="id15"&gt;
 &lt;h2&gt;2010&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2010-11-05, (3) 太魯閣 42k, 5:20:51, 392 (30-39), 1359&lt;/li&gt;
@@ -186,7 +241,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;2010-02-28, (1) [初馬] &lt;a class="reference external" href="http://blog.suhen.org/run/2010_kaosiung_marathon.html"&gt;2010 高雄馬拉松&lt;/a&gt; , 42k, 5:15:06 ,179 (30-39), 992&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id18"&gt;
+&lt;div class="section" id="id19"&gt;
 &lt;h2&gt;2009&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2009-12-06, 台南黑皮杯, 21k, 2:32:38, 145(30-39), 574&lt;/li&gt;
@@ -194,13 +249,13 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;2009-02-20, &lt;a class="reference external" href="http://blog.suhen.org/run/2009_tainan_marathon.html"&gt;台南古都半馬&lt;/a&gt;, 21k&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id21"&gt;
+&lt;div class="section" id="id22"&gt;
 &lt;h2&gt;2008&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2008-11-01, &lt;a class="reference external" href="http://blog.suhen.org/run/2008_taroko_marathon.html"&gt;花蓮太魯閣&lt;/a&gt;, 21k,2:20:44, 348 (30-39), 1124&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id23"&gt;
+&lt;div class="section" id="id24"&gt;
 &lt;h2&gt;2006&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2006-12-17, [初半馬] &lt;a class="reference external" href="http://blog.suhen.org/run/2006_taipei_marathon.html"&gt;台北ING&lt;/a&gt;, 21k, 2:03:26, 224 (25-29), 1865 '&lt;/li&gt;
@@ -3617,17 +3672,17 @@ M-x replace-regexp &amp;lt;RET&amp;gt; regexp &amp;lt;RET&amp;gt; newstring &amp
 &lt;/div&gt;
 </summary><category term="note"></category><category term="emacs"></category></entry><entry><title>[Computer] 用Emacs dired-mode批次改檔名</title><link href="http://blog.suhen.org/computer/emacs_dired_rename.html" rel="alternate"></link><updated>2013-06-17T14:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-17:computer/emacs_dired_rename.html</id><summary type="html">&lt;p&gt;看到 &lt;a class="reference external" href="http://xahlee.org"&gt;XahLee&lt;/a&gt; 的一篇文章: &lt;a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html"&gt;Emacs: Rename Files Interactively by Pattern (regex; wdired)&lt;/a&gt; ，用Emacs來處理批次改檔名實在太方便了。&lt;/p&gt;
 &lt;p&gt;在Dired模式下，&lt;strong&gt;C-x C-q&lt;/strong&gt; 進入修改模式，或是執行 &lt;strong&gt;wdired-change-to-wdired-mode&lt;/strong&gt;, 這時改檔名就像改一般文字檔一樣，可以用 &lt;em&gt;query-replace&lt;/em&gt;, &lt;em&gt;query-replace-regexp&lt;/em&gt; 或 &lt;em&gt;cua-mode&lt;/em&gt; , 改完後 &lt;strong&gt;C-c C-c&lt;/strong&gt; 送出, 或是 &lt;strong&gt;C-c C-Esc&lt;/strong&gt; 取消就可以了,  比寫script直覺多了。&lt;/p&gt;
-</summary><category term="emacs"></category><category term="note"></category></entry><entry><title>[book] 梅棹忠夫（1969）。知識誕生的奧秘。志文出版社。</title><link href="http://blog.suhen.org/book/umesao_tadao_knowledge.html" rel="alternate"></link><updated>2013-06-16T13:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-16:book/umesao_tadao_knowledge.html</id><summary type="html">&lt;img alt="/static/images/book/umesao_tadao-knowlegde.jpg" src="/static/images/book/umesao_tadao-knowlegde.jpg" /&gt;
-&lt;div class="section" id="id1"&gt;
+</summary><category term="emacs"></category><category term="note"></category></entry><entry><title>知識誕生的奧秘 - 梅棹忠夫 - 志文出版社 (1969)</title><link href="http://blog.suhen.org/book/umesao_tadao_knowledge.html" rel="alternate"></link><updated>2013-06-16T13:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-16:book/umesao_tadao_knowledge.html</id><summary type="html">&lt;img alt="/static/images/book/umesao_tadao-knowlegde.jpg" src="/static/images/book/umesao_tadao-knowlegde.jpg" /&gt;
+&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;原書名：知性生產技術&lt;/h2&gt;
 &lt;p&gt;忘記在那裡買了這本2手書，也忘了是什麼機緣下買的，作者 &lt;a class="reference external" href="http://ja.wikipedia.org/wiki/梅棹忠夫"&gt;梅棹忠夫&lt;/a&gt; 是日本重要的生態學家，民族學家，但我認識他卻是因為登山相關書籍。翻譯很棒，譯者叫林景淵，會適時加譯注，讓不熟日本文化的台灣人可以更了解作者想表達的意思。&lt;/p&gt;
 &lt;p&gt;日本對「知識整理」這方面實在著墨很深，如何整理，用什麼方式，工具，巨細靡遺的都討論的很透徹。這本書年代比較久遠，所以當時電腦還沒有普及，所以像為了整齊的「美感」，把日文用羅馬文字打字幾打出來，或是後來發明了假名文字打字機，現在讀起來都很有趣。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id2"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h2&gt;札記簿，卡片&lt;/h2&gt;
 &lt;p&gt;從達文西的札記簿得到啟發，隨時都帶著筆記本，紀錄所有的事情。但是紀錄完後如果時候不檢索，全部往櫃子裡塞也是沒有用的，所以開始使用「卡片系統」來紀錄。&lt;/p&gt;
 &lt;p&gt;發明「京大式」（取名京都大學），12.8x18.2cm，105磅畫刊紙，可以任意抽換。&lt;/p&gt;
-&lt;div class="section" id="id3"&gt;
+&lt;div class="section" id="id4"&gt;
 &lt;h3&gt;不分類&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;分類是為了儲藏，卡片的知識如果不加以活用的話就沒什麼意義。&lt;/li&gt;
@@ -3636,10 +3691,10 @@ M-x replace-regexp &amp;lt;RET&amp;gt; regexp &amp;lt;RET&amp;gt; newstring &amp
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id4"&gt;
+&lt;div class="section" id="id5"&gt;
 &lt;h2&gt;打字機&lt;/h2&gt;
 &lt;p&gt;筆，墨，鉛筆，鋼筆到打字機：效率，美。&lt;/p&gt;
-&lt;div class="section" id="id5"&gt;
+&lt;div class="section" id="id6"&gt;
 &lt;h3&gt;日本文字改革&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;明治初期「羅馬字國字論」（羅馬字運動）&lt;/li&gt;

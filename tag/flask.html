@@ -51,7 +51,23 @@
 </pre></div>
 
 
-<h2>2. 跑起來</h2>
+<h2>2. 準備部署</h2>
+<h3>WSGI</h3>
+<p>預設是application.py:application, 自己要改application.py名字失敗</p>
+<div class="highlight"><pre><span class="k">[aws:elasticbeanstalk:container:python]</span>
+<span class="err">...</span>
+<span class="na">WSGIPath</span><span class="o">=</span><span class="s">my_fail_wsgi</span>
+</pre></div>
+
+
+<h3>連接原本的RDS</h3>
+<p>要去RDS的security group那裡新增一個(因為等於是開了一個新的EC2)，通常是awseb-xxx 開頭的</p>
+<h3>Elastic Beanstalk沒有filesystem</h3>
+<ul>
+<li>所以原本的media檔要改存到S3</li>
+<li>原本logger有自己存檔, 也要取消 (反正會出現在eb的log裡)</li>
+</ul>
+<h2>3. 跑起來</h2>
 <div class="highlight"><pre><span class="c"># 在git目錄下操作, 如果沒有repo就會叫你git init</span>
 eb init
 <span class="c"># 會有選單, 開始勾選</span>
@@ -67,6 +83,14 @@ eb start
 
 <span class="c"># 其他指令</span>
 eb status --verbose
+</pre></div>
+
+
+<h2>設定</h2>
+<p>產生 <strong>.ebextensions</strong>目錄, 新增 python.config:</p>
+<div class="highlight"><pre><span class="nl">option_settings:</span>
+  <span class="s">&quot;aws:elasticbeanstalk:container:python:staticfiles&quot;</span><span class="o">:</span>
+    <span class="s">&quot;/static/&quot;</span><span class="o">:</span> <span class="s">&quot;myapp/static/&quot;</span>
 </pre></div>
 
 
