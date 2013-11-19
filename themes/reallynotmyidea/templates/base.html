@@ -40,7 +40,7 @@
                 {% for cat in cat_map %}
                 <li {% if cat.0 == category %}class="active"{% endif %}><a href="{{ SITEURL }}/category/{{ cat.0 }}.html">{{ cat.1 }}</a></li>
                 {% endfor %}
-                <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+                {#<li><a href="{{ SITEURL }}/archives.html">Archives</a></li>#}
                 </ul></nav>
         </header><!-- /#banner -->
         {% block content %}
