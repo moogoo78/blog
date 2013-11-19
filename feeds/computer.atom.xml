@@ -13,10 +13,11 @@
 
 &lt;h2&gt;2. 準備部署&lt;/h2&gt;
 &lt;h3&gt;WSGI&lt;/h3&gt;
-&lt;p&gt;預設是application.py:application, 自己要改application.py名字失敗&lt;/p&gt;
+&lt;p&gt;預設是application.py:application, 自己要改application.py名字失敗..&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;[aws:elasticbeanstalk:container:python]&lt;/span&gt;
 &lt;span class="err"&gt;...&lt;/span&gt;
 &lt;span class="na"&gt;WSGIPath&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;my_fail_wsgi&lt;/span&gt;
+&lt;span class="err"&gt;eb&lt;/span&gt; &lt;span class="err"&gt;update?&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -54,12 +55,17 @@ eb status --verbose
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html#command-options-python"&gt;Option Values - AWS Elastic Beanstalk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;參考&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python_flask.html"&gt;Deploying a Flask Application to AWS Elastic Beanstalk - AWS Elastic Beanstalk&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="http://aws.amazon.com/elasticbeanstalk/faqs/"&gt;AWS Elastic Beanstalk FAQs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.RDS.html"&gt;Using AWS Elastic Beanstalk with Amazon RDS - AWS Elastic Beanstalk&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2&gt;eb stop&lt;/h2&gt;
+&lt;p&gt;rds的security group要拿掉, 否則會失敗&lt;/p&gt;
 &lt;p&gt;http://blog.uptill3.com/2012/08/25/python-on-elastic-beanstalk.html
 http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
@@ -2633,8 +2639,10 @@ extensions = ['sphinx.ext.graphviz']
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>Software</title><link href="http://blog.suhen.org/computer/software.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/software.html</id><summary type="html">&lt;div class="section" id="desktop-tips"&gt;
 &lt;h2&gt;Desktop Tips&lt;/h2&gt;
+&lt;div class="section" id="system"&gt;
+&lt;h3&gt;System&lt;/h3&gt;
 &lt;div class="section" id="mac-osx"&gt;
-&lt;h3&gt;Mac OSX&lt;/h3&gt;
+&lt;h4&gt;Mac OSX&lt;/h4&gt;
 &lt;p&gt;zoom in/out: Command Opt =/-&lt;/p&gt;
 &lt;p&gt;強制結束: Command Opt Esc&lt;/p&gt;
 &lt;p&gt;區域截圖: Command Shift 4&lt;/p&gt;
@@ -2646,6 +2654,57 @@ extensions = ['sphinx.ext.graphviz']
 &lt;li&gt;到&amp;quot;鑰匙圈存取&amp;quot;: Finder -&amp;gt; 工具程式 -&amp;gt; 鑰匙圈存取&lt;/li&gt;
 &lt;li&gt;找基地台名稱, 分類是&amp;quot;AirPort網路密碼&amp;quot;, 顯示密碼&lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="browser"&gt;
+&lt;h3&gt;Browser&lt;/h3&gt;
+&lt;div class="section" id="firefox"&gt;
+&lt;h4&gt;Firefox&lt;/h4&gt;
+&lt;p&gt;快速鍵 (整理過, 只列出自己常用):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# bookmark
+Ctrl+B   顯示bookmark (側邊欄)
+Ctrl+D   加入bookmark
+
+# tab
+Ctrl+T   開新tab
+Ctrl+W   關Tab
+Ctrl+tab 下一個tab
+Ctrl+PageUp/PageDown 上/下一個tab
+
+# window/frame
+Ctrl+L 移到網址列
+Ctrl+J download
+F6     move to frame
+
+# search
+Ctrl+F   search
+Ctrl+G   search next
+Shift+F3 serach privious
+
+# other
+Alt+Enter open link in new tab
+F11 fullscreen
+F7 鍵盤瀏覽
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="developer-s-tools"&gt;
+&lt;h4&gt;Developer's tools&lt;/h4&gt;
+&lt;p&gt;scratchpad: 按shift+F4&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;[重新介紹 Firefox 開發者工具之二 | 訊息中心 | Mozilla Taiwan](&lt;a class="reference external" href="http://blog.mozilla.com.tw/posts/4200/reintroducing-the-firefox-developer-tools-part-2-the-scratchpad-and-the-style-editor"&gt;http://blog.mozilla.com.tw/posts/4200/reintroducing-the-firefox-developer-tools-part-2-the-scratchpad-and-the-style-editor&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="browser-plugin-extensions"&gt;
+&lt;h4&gt;Browser plugin/extensions&lt;/h4&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;顯示網站使用fromeworks, web server, service...&lt;ul&gt;
+&lt;li&gt;[GC] &lt;a class="reference external" href="http://www.nqbao.com/chrome-sniffer"&gt;Chrome Sniffer | Bao's Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FF] &lt;a class="reference external" href="http://wappalyzer.com/"&gt;Wappalyzer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id1"&gt;
@@ -2788,7 +2847,7 @@ ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="section" id="system"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h2&gt;System&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Mac 更新到iOX 10.9, pip安裝出現錯誤 (gcc編譯相關)&lt;ol class="arabic"&gt;
@@ -2796,16 +2855,6 @@ ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
 &lt;li&gt;sudo xcodebuild -license&lt;/li&gt;
 &lt;li&gt;xcode-select --install&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="browser-plugin-extensions"&gt;
-&lt;h2&gt;Browser plugin/extensions&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;顯示網站使用fromeworks, web server, service...&lt;ul&gt;
-&lt;li&gt;[GC] &lt;a class="reference external" href="http://www.nqbao.com/chrome-sniffer"&gt;Chrome Sniffer | Bao's Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[FF] &lt;a class="reference external" href="http://wappalyzer.com/"&gt;Wappalyzer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
