@@ -22,12 +22,13 @@ Slug: aws_elastic_beanstalk_flask
 
 ### WSGI
 
-預設是application.py:application, 自己要改application.py名字失敗
+預設是application.py:application, 自己要改application.py名字失敗..
 
     :::plain
     [aws:elasticbeanstalk:container:python]
     ...
     WSGIPath=my_fail_wsgi
+    eb update?
 
 ### 連接原本的RDS
 要去RDS的security group那裡新增一個(因為等於是開了一個新的EC2)，通常是awseb-xxx 開頭的
@@ -57,8 +58,6 @@ Slug: aws_elastic_beanstalk_flask
     eb status --verbose 
 
 
-
-
 ## 設定
 產生 **.ebextensions**目錄, 新增 python.config:
 
@@ -66,6 +65,7 @@ Slug: aws_elastic_beanstalk_flask
       "aws:elasticbeanstalk:container:python:staticfiles":
         "/static/": "myapp/static/"
 
+* [Option Values - AWS Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html#command-options-python)
 
 ### 參考
 
@@ -75,6 +75,8 @@ Slug: aws_elastic_beanstalk_flask
 
 
 
+## eb stop
+rds的security group要拿掉, 否則會失敗
 
 http://blog.uptill3.com/2012/08/25/python-on-elastic-beanstalk.html
 http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob

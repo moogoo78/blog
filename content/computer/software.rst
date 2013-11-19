@@ -1,5 +1,5 @@
 Software
-############
+################
 :date: 2013-03-28
 :category: computer
 :tags: docs
@@ -7,8 +7,11 @@ Software
 Desktop Tips
 ========================
 
+System
+----------
+
 Mac OSX
-----------------
+^^^^^^^^^^^^^^^
 
 zoom in/out: Command Opt =/-
 
@@ -26,6 +29,54 @@ zoom in/out: Command Opt =/-
 
 1. 到"鑰匙圈存取": Finder -> 工具程式 -> 鑰匙圈存取
 2. 找基地台名稱, 分類是"AirPort網路密碼", 顯示密碼
+
+Browser
+-----------
+
+Firefox
+^^^^^^^^^^^
+
+快速鍵 (整理過, 只列出自己常用)::
+
+    # bookmark
+    Ctrl+B   顯示bookmark (側邊欄)
+    Ctrl+D   加入bookmark
+
+    # tab
+    Ctrl+T   開新tab
+    Ctrl+W   關Tab
+    Ctrl+tab 下一個tab
+    Ctrl+PageUp/PageDown 上/下一個tab
+
+    # window/frame
+    Ctrl+L 移到網址列
+    Ctrl+J download
+    F6     move to frame
+
+    # search
+    Ctrl+F   search
+    Ctrl+G   search next
+    Shift+F3 serach privious
+
+    # other
+    Alt+Enter open link in new tab
+    F11 fullscreen    
+    F7 鍵盤瀏覽
+
+Developer's tools
+^^^^^^^^^^^^^^^^^^^
+scratchpad: 按shift+F4
+
+* [重新介紹 Firefox 開發者工具之二 | 訊息中心 | Mozilla Taiwan](http://blog.mozilla.com.tw/posts/4200/reintroducing-the-firefox-developer-tools-part-2-the-scratchpad-and-the-style-editor)
+
+Browser plugin/extensions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* 顯示網站使用fromeworks, web server, service...
+
+  * [GC] `Chrome Sniffer | Bao's Blog <http://www.nqbao.com/chrome-sniffer>`__
+  * [FF] `Wappalyzer <http://wappalyzer.com/>`__
+
 
 
 好用軟體
@@ -180,15 +231,6 @@ System
   1. 更新xcode
   2. sudo xcodebuild -license
   3. xcode-select --install 
-
-
-Browser plugin/extensions
-============================
-
-* 顯示網站使用fromeworks, web server, service...
-
-  * [GC] `Chrome Sniffer | Bao's Blog <http://www.nqbao.com/chrome-sniffer>`__
-  * [FF] `Wappalyzer <http://wappalyzer.com/>`__
 
 
 
