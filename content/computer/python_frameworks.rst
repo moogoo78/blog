@@ -96,6 +96,9 @@ relationship::
   employees = relationship('Employee',
                   backref='company', cascade='all, delete-orphan')
 
+  # 原本backref是one-to-many, 如果要one-to-one:
+  child = relationship("Child", backref=backref("parent", uselist=False))
+
 relationship+filter::
 
   products = db.relationship(
