@@ -2222,6 +2222,9 @@ __mapper_args__ = {'primary_key':(app_id, num_log)} # 沒有primary key時用!
 &lt;pre class="literal-block"&gt;
 employees = relationship('Employee',
                 backref='company', cascade='all, delete-orphan')
+
+# 原本backref是one-to-many, 如果要one-to-one:
+child = relationship(&amp;quot;Child&amp;quot;, backref=backref(&amp;quot;parent&amp;quot;, uselist=False))
 &lt;/pre&gt;
 &lt;p&gt;relationship+filter:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
