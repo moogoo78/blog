@@ -158,6 +158,8 @@ git merge::
     git mergetool kdiff3
     git merge --abort, 不要merge了
 
+git分master跟branchA, 在master下 **$ git merge branchA** 會把branchA更改過的merge到master裡, 反之, 在branchA下 **$ git merge master** 會把master更新的家到branchA, branchA改過的不會影響master
+
 git tag
 -------
 加tag::
