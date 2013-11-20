@@ -1,5 +1,5 @@
-Scripting Languages (draft)
-############################
+Scripting 比較 (draft)
+#######################################
 :date: 2013-04-09 11:38
 :category: computer
 :tags: docs
@@ -8,8 +8,53 @@ Scripting Languages (draft)
 PHP, Python, Javascript, Lua
 
 
-Basic
+易搞混
 ================
+
+hash/dictionary/table
+------------------------
+json:
+
+.. code-block:: json
+
+  {
+       "firstName": "John",
+       "lastName": "Smith",
+       "male": true,
+       "age": 25,
+       "address": 
+       {
+           "streetAddress": "21 2nd Street",
+           "city": "New York",
+           "state": "NY",
+           "postalCode": "10021"
+       },
+       "phoneNumber": 
+       [
+           {
+             "type": "home",
+             "number": "212 555-1234"
+           },
+           {
+             "type": "fax",
+             "number": "646 555-4567"
+           }
+       ]
+   }
+
+
+python dictionary:
+
+.. code-block:: python
+
+  dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}
+
+
+lua table:
+
+.. code-block:: lua
+
+  t = {"a", "b", [123]="foo", "c", name="bar", "d", "e"}
 
 
 Data Type
