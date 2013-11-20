@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>Scripting Languages (draft)</title>
+        <title>Scripting 比較 (draft)</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's blog Atom Feed" />
                 
@@ -30,8 +30,8 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://blog.suhen.org/computer/scripting-languages-draft.html" rel="bookmark"
-           title="Permalink to Scripting Languages (draft)">Scripting Languages (draft)</a></h1>
+        <a href="http://blog.suhen.org/computer/scripting-bi-jiao-draft.html" rel="bookmark"
+           title="Permalink to Scripting 比較 (draft)">Scripting 比較 (draft)</a></h1>
           </header>
 
     <div class="entry-content">
@@ -43,8 +43,43 @@
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
 </footer><!-- /.post-info -->      <p>PHP, Python, Javascript, Lua</p>
-<div class="section" id="basic">
-<h2>Basic</h2>
+<div class="section" id="id1">
+<h2>易搞混</h2>
+<div class="section" id="hash-dictionary-table">
+<h3>hash/dictionary/table</h3>
+<p>json:</p>
+<div class="highlight"><pre><span class="p">{</span>
+     <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Smith&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;male&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+     <span class="nt">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+     <span class="nt">&quot;address&quot;</span><span class="p">:</span>
+     <span class="p">{</span>
+         <span class="nt">&quot;streetAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;21 2nd Street&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;New York&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;NY&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;postalCode&quot;</span><span class="p">:</span> <span class="s2">&quot;10021&quot;</span>
+     <span class="p">},</span>
+     <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span>
+     <span class="p">[</span>
+         <span class="p">{</span>
+           <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;home&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;212 555-1234&quot;</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+           <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;fax&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;646 555-4567&quot;</span>
+         <span class="p">}</span>
+     <span class="p">]</span>
+ <span class="p">}</span>
+</pre></div>
+<p>python dictionary:</p>
+<div class="highlight"><pre><span class="n">dishes</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;eggs&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;sausage&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;bacon&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;spam&#39;</span><span class="p">:</span> <span class="mi">500</span><span class="p">}</span>
+</pre></div>
+<p>lua table:</p>
+<div class="highlight"><pre><span class="n">t</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;</span><span class="s">a&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">b&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">123</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">foo&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">c&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">bar&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">d&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">e&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="data-type">
 <h2>Data Type</h2>
@@ -60,7 +95,7 @@ squares[1] # 1
 </div>
 <div class="section" id="statement-expression">
 <h2>statement/expression</h2>
-<div class="section" id="id1">
+<div class="section" id="id2">
 <h3>函式</h3>
 <p><strong>引數</strong></p>
 <pre class="literal-block">
@@ -232,7 +267,7 @@ count(arr)
 <span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="c"># min: 0</span>
 </pre></div>
 </div>
-<div class="section" id="id2">
+<div class="section" id="id3">
 <h3>Array</h3>
 <table border="1" class="docutils">
 <colgroup>
@@ -290,8 +325,8 @@ count(arr)
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "computer/scripting-languages-draft.html";
-        var disqus_url = "http://blog.suhen.org/computer/scripting-languages-draft.html";
+        var disqus_identifier = "computer/scripting-bi-jiao-draft.html";
+        var disqus_url = "http://blog.suhen.org/computer/scripting-bi-jiao-draft.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';
