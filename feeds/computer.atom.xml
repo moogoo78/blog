@@ -357,9 +357,13 @@ A = Y if X else Z
 &lt;div class="section" id="regular-expression"&gt;
 &lt;h3&gt;regular expression&lt;/h3&gt;
 &lt;p&gt;只留a-z, A-Z, 0-9:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-re.sub(r'[^a-zA-Z_0-9]', '', did)
-&lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;re&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;r&amp;#39;[^a-zA-Z_0-9]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;did&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;parse出每個sql欄位
+.. code-block:: python&lt;/p&gt;
+&lt;blockquote&gt;
+# (1, 'The Three Little Pigs', '三隻小豬', 350, '這是有關於三隻...', 28, 16000, 'en', 280, ''),
+m = re.match(r'((d+), '(.*)', '(.*)', (d+), '(.*)', (d+), (d+), '(.*)', (d+), '(.*)')', i)&lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="section" id="list-compension"&gt;
 &lt;h3&gt;list compension&lt;/h3&gt;
@@ -504,6 +508,11 @@ def any(iterable):
             return True
     return False
 &lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="regex"&gt;
+&lt;h3&gt;regex&lt;/h3&gt;
+&lt;p&gt;re.search()跟re.match()的不同, match()是字串開頭也要符合, search()只要字串中間有符合的pattern就可以了&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://docs.python.org/2/library/re.html#search-vs-match"&gt;7.2. re — Regular expression operations — Python v2.7.6 documentation&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="io-shell-commond-line"&gt;
@@ -3224,6 +3233,7 @@ git branch -m old new # rename branch
 git mergetool kdiff3
 git merge --abort, 不要merge了
 &lt;/pre&gt;
+&lt;p&gt;git分master跟branchA, 在master下 &lt;strong&gt;$ git merge branchA&lt;/strong&gt; 會把branchA更改過的merge到master裡, 反之, 在branchA下 &lt;strong&gt;$ git merge master&lt;/strong&gt; 會把master更新的家到branchA, branchA改過的不會影響master&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="git-tag"&gt;
 &lt;h3&gt;git tag&lt;/h3&gt;
