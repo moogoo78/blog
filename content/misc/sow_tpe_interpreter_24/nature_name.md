@@ -1,6 +1,6 @@
 Title: 自然名 
 Date: 2013-11-25 17:29
-Category: nature
+Category: misc
 Tags: sow_tpe_interpreter24
 Slug: nature_name
 
