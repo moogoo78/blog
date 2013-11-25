@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-11-12T17:31:00+08:00</updated><entry><title>Deploying Flask (Python) to AWS Elastic Beanstalk</title><link href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html" rel="alternate"></link><updated>2013-11-12T17:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:computer/aws_elastic_beanstalk_flask.html</id><summary type="html">&lt;h1&gt;quickstart&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog / 爛部落格</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-11-12T17:31:00+08:00</updated><entry><title>Deploying Flask (Python) to AWS Elastic Beanstalk</title><link href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html" rel="alternate"></link><updated>2013-11-12T17:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:computer/aws_elastic_beanstalk_flask.html</id><summary type="html">&lt;h1&gt;quickstart&lt;/h1&gt;
 &lt;h2&gt;1. 安裝eb commend tools&lt;/h2&gt;
 &lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定好路徑(以mac為例), 就可以開始了&lt;/p&gt;
@@ -809,56 +809,7 @@ M-x replace-regexp &amp;lt;RET&amp;gt; regexp &amp;lt;RET&amp;gt; newstring &amp
 &lt;/div&gt;
 </summary><category term="note"></category><category term="emacs"></category></entry><entry><title>[Computer] 用Emacs dired-mode批次改檔名</title><link href="http://blog.suhen.org/computer/emacs_dired_rename.html" rel="alternate"></link><updated>2013-06-17T14:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-17:computer/emacs_dired_rename.html</id><summary type="html">&lt;p&gt;看到 &lt;a class="reference external" href="http://xahlee.org"&gt;XahLee&lt;/a&gt; 的一篇文章: &lt;a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html"&gt;Emacs: Rename Files Interactively by Pattern (regex; wdired)&lt;/a&gt; ，用Emacs來處理批次改檔名實在太方便了。&lt;/p&gt;
 &lt;p&gt;在Dired模式下，&lt;strong&gt;C-x C-q&lt;/strong&gt; 進入修改模式，或是執行 &lt;strong&gt;wdired-change-to-wdired-mode&lt;/strong&gt;, 這時改檔名就像改一般文字檔一樣，可以用 &lt;em&gt;query-replace&lt;/em&gt;, &lt;em&gt;query-replace-regexp&lt;/em&gt; 或 &lt;em&gt;cua-mode&lt;/em&gt; , 改完後 &lt;strong&gt;C-c C-c&lt;/strong&gt; 送出, 或是 &lt;strong&gt;C-c C-Esc&lt;/strong&gt; 取消就可以了,  比寫script直覺多了。&lt;/p&gt;
-</summary><category term="emacs"></category><category term="note"></category></entry><entry><title>把靜態blog放到Github Pages上，以pelican為例</title><link href="http://blog.suhen.org/computer/pelican_github_pages.rst.html" rel="alternate"></link><updated>2013-06-01T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-01:computer/pelican_github_pages.rst.html</id><summary type="html">&lt;p&gt;之前開始把blog轉到使用 &lt;a class="reference external" href="http://blog.suhen.org/computer/pelican.html"&gt;pelican產生靜態blog&lt;/a&gt; ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually"&gt;Creating Project Pages manually · GitHub Help&lt;/a&gt;&lt;/p&gt;
-&lt;div class="section" id="id1"&gt;
-&lt;h2&gt;環境設定&lt;/h2&gt;
-&lt;p&gt;python要用virtualenv才是王道:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ mkvirtualenv sillywalk.org
-$ cd sillkwalk.org
-$ setvirtualenvproject
-$ workon sillywalk.org
-
-$ pip install pelican
-$ pip install ghp-import # 方便發佈到github pages的工具
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="html"&gt;
-&lt;h2&gt;產生HTML，發佈&lt;/h2&gt;
-&lt;p&gt;產生HTML內容:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ pelican -s pelican.conf.py .
-$ ghp-import output
-$ git push origin gh-pages
-
-# 其實pelican的make就可以了
-$ make github
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="domain"&gt;
-&lt;h2&gt;自訂domain&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;在你的domain設定指向github的IP&lt;/li&gt;
-&lt;li&gt;在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。&lt;/p&gt;
-&lt;p&gt;先產生content/extra/CNAME，然後在pelicanconf.py加入:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-FILES_TO_COPY = (
-    ('extra/CNAME', 'CNAME'),
-)
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id2"&gt;
-&lt;h2&gt;參考&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew"&gt;Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html"&gt;Tips — Pelican 3 documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages"&gt;Setting up a custom domain with Pages · GitHub Help&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-</summary><category term="note"></category></entry><entry><title>用screen+irssi上IRC聊天不斷線</title><link href="http://blog.suhen.org/computer/irc_screen_irssi.html" rel="alternate"></link><updated>2013-05-26T15:21:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-05-26:computer/irc_screen_irssi.html</id><summary type="html">&lt;p&gt;一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).&lt;/p&gt;
+</summary><category term="emacs"></category><category term="note"></category></entry><entry><title>用screen+irssi上IRC聊天不斷線</title><link href="http://blog.suhen.org/computer/irc_screen_irssi.html" rel="alternate"></link><updated>2013-05-26T15:21:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-05-26:computer/irc_screen_irssi.html</id><summary type="html">&lt;p&gt;一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).&lt;/p&gt;
 &lt;p&gt;安裝screen和irssi:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 aptitude install screen
@@ -1809,6 +1760,8 @@ d r ;然後按2到36選進位數
 &lt;li&gt;&lt;a class="reference external" href="http://emacs-fu.blogspot.tw/2009/07/keeping-related-buffers-together-with.html"&gt;emacs-fu: keeping related buffers together with elscreen&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </summary><category term="note"></category></entry><entry><title>Pelican - 邁向靜態blog之路</title><link href="http://blog.suhen.org/computer/pelican.html" rel="alternate"></link><updated>2013-04-11T12:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-11:computer/pelican.html</id><summary type="html">&lt;p&gt;一直想用純HTML來寫blog，做筆記，最早用PHP的 &lt;a class="reference external" href="https://www.dokuwiki.org"&gt;dokuwiki&lt;/a&gt; ，不想被PHP server綁住，改用Emacs的 &lt;a class="reference external" href="http://orgmode.org/"&gt;Orgmode&lt;/a&gt;, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 &lt;a class="reference external" href="http://gentlerunner.org/rest-restructuredtextyu-sphinx.html"&gt;reST&lt;/a&gt; (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。&lt;/p&gt;
+&lt;p&gt;用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually"&gt;Creating Project Pages manually · GitHub Help&lt;/a&gt;&lt;/p&gt;
 &lt;div class="section" id="quick-start"&gt;
 &lt;h2&gt;Quick-start&lt;/h2&gt;
 &lt;p&gt;安裝:&lt;/p&gt;
@@ -1892,12 +1845,66 @@ import os
 :::text
 &lt;/pre&gt;
 &lt;/div&gt;
+&lt;div class="section" id="git-hub"&gt;
+&lt;h2&gt;git hub&lt;/h2&gt;
 &lt;div class="section" id="id2"&gt;
-&lt;h2&gt;其他&lt;/h2&gt;
+&lt;h3&gt;環境設定&lt;/h3&gt;
+&lt;p&gt;python要用virtualenv才是王道:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ mkvirtualenv sillywalk.org
+$ cd sillkwalk.org
+$ setvirtualenvproject
+$ workon sillywalk.org
+
+$ pip install pelican
+$ pip install ghp-import # 方便發佈到github pages的工具
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="html"&gt;
+&lt;h3&gt;產生HTML，發佈&lt;/h3&gt;
+&lt;p&gt;產生HTML內容:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ pelican -s pelican.conf.py .
+$ ghp-import output
+$ git push origin gh-pages
+
+# 其實pelican的make就可以了
+$ make github
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="domain"&gt;
+&lt;h3&gt;自訂domain&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;在你的domain設定指向github的IP&lt;/li&gt;
+&lt;li&gt;在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。&lt;/p&gt;
+&lt;p&gt;先產生content/extra/CNAME，然後在pelicanconf.py加入:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+FILES_TO_COPY = (
+    ('extra/CNAME', 'CNAME'),
+)
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;參考&lt;/h2&gt;
+&lt;div class="section" id="blog-generator"&gt;
+&lt;h3&gt;靜態blog generator&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Hyde (看起來很複雜，沒仔細看) - &lt;a class="reference external" href="http://ringce.com/hyde"&gt;http://ringce.com/hyde&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Nikola 有image gallery (把圖片丟到某個目錄下就好了) - &lt;a class="reference external" href="http://nikola.ralsina.com.ar/"&gt;http://nikola.ralsina.com.ar/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;mynt - &lt;a class="reference external" href="http://mynt.mirroredwhite.com/"&gt;http://mynt.mirroredwhite.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="deploy-to-github"&gt;
+&lt;h3&gt;deploy to github&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew"&gt;Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html"&gt;Tips — Pelican 3 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages"&gt;Setting up a custom domain with Pages · GitHub Help&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="note"></category></entry><entry><title>Scripting 比較 (draft)</title><link href="http://blog.suhen.org/computer/scripting-bi-jiao-draft.html" rel="alternate"></link><updated>2013-04-09T11:38:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/scripting-bi-jiao-draft.html</id><summary type="html">&lt;p&gt;PHP, Python, Javascript, Lua&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;

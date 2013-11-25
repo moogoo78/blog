@@ -2,9 +2,9 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>Suhen's blog - note</title>
+        <title> Suhen's blog / 爛部落格 - note</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
-                <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's blog Atom Feed" />
+                <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog / 爛部落格 Atom Feed" />
                 
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,7 +13,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://blog.suhen.org/">Suhen's blog </a></h1>
+                <h1><a href="http://blog.suhen.org/"> Suhen's blog / 爛部落格 </a></h1>
                 <nav><ul>
                                                                                 <li ><a href="http://blog.suhen.org/category/computer.html">電腦</a></li>
                                 <li ><a href="http://blog.suhen.org/category/music.html">音樂</a></li>
@@ -46,6 +46,8 @@
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
 </footer><!-- /.post-info -->                <p>一直想用純HTML來寫blog，做筆記，最早用PHP的 <a class="reference external" href="https://www.dokuwiki.org">dokuwiki</a> ，不想被PHP server綁住，改用Emacs的 <a class="reference external" href="http://orgmode.org/">Orgmode</a>, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 <a class="reference external" href="http://gentlerunner.org/rest-restructuredtextyu-sphinx.html">reST</a> (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。</p>
+<p>用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。</p>
+<p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
 <div class="section" id="quick-start">
 <h2>Quick-start</h2>
 <p>安裝:</p>
@@ -59,15 +61,7 @@ $ cd blog
 $ pelican-quickstart
 </pre>
 <p>快速產生相關的設定</p>
-<p>寫第一篇文章:</p>
-<pre class="literal-block">
-$ content/first.rst
-</pre>
-<p>工具指令:</p>
-<pre class="literal-block">
-$ make html # 顧名思義
-$ make clean
-$ make rsync_upload # 用rsync上傳到你的ssh host ...</pre></div>
+<p>寫第一篇文章 ...</p></div>
                 <a class="readmore" href="http://blog.suhen.org/computer/pelican.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/pelican.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

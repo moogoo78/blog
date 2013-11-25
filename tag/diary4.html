@@ -2,9 +2,9 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>把靜態blog放到Github Pages上，以pelican為例</title>
+        <title> Suhen's blog / 爛部落格 - diary</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
-                <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Suhen's blog Atom Feed" />
+                <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog / 爛部落格 Atom Feed" />
                 
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,9 +13,9 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://blog.suhen.org/">Suhen's blog </a></h1>
+                <h1><a href="http://blog.suhen.org/"> Suhen's blog / 爛部落格 </a></h1>
                 <nav><ul>
-                                                                                <li class="active"><a href="http://blog.suhen.org/category/computer.html">電腦</a></li>
+                                                                                <li ><a href="http://blog.suhen.org/category/computer.html">電腦</a></li>
                                 <li ><a href="http://blog.suhen.org/category/music.html">音樂</a></li>
                                 <li ><a href="http://blog.suhen.org/category/run.html">跑步</a></li>
                                 <li ><a href="http://blog.suhen.org/category/mountain.html">爬山</a></li>
@@ -26,89 +26,38 @@
                                 <li ><a href="http://blog.suhen.org/category/misc.html">其他</a></li>
                                                 </ul></nav>
         </header><!-- /#banner -->
-        <section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="http://blog.suhen.org/computer/pelican_github_pages.rst.html" rel="bookmark"
-           title="Permalink to 把靜態blog放到Github Pages上，以pelican為例">把靜態blog放到Github Pages上，以pelican為例</a></h1>
-          </header>
+                    
 
-    <div class="entry-content">
-      <footer class="post-info">
-        <abbr class="published" title="2013-06-01T11:36:00">
-                2013-06-01 11:36
+         
+                            <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/run/first_run.html" rel="bookmark"
+                           title="Permalink to 跑步的開始">跑步的開始</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2006-11-02T01:49:28">
+                2006-11-02 01:49
         </abbr>
 
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
-</footer><!-- /.post-info -->      <p>之前開始把blog轉到使用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">pelican產生靜態blog</a> ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。</p>
-<p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
-<div class="section" id="id1">
-<h2>環境設定</h2>
-<p>python要用virtualenv才是王道:</p>
-<pre class="literal-block">
-$ mkvirtualenv sillywalk.org
-$ cd sillkwalk.org
-$ setvirtualenvproject
-$ workon sillywalk.org
-
-$ pip install pelican
-$ pip install ghp-import # 方便發佈到github pages的工具
-</pre>
-</div>
-<div class="section" id="html">
-<h2>產生HTML，發佈</h2>
-<p>產生HTML內容:</p>
-<pre class="literal-block">
-$ pelican -s pelican.conf.py .
-$ ghp-import output
-$ git push origin gh-pages
-
-# 其實pelican的make就可以了
-$ make github
-</pre>
-</div>
-<div class="section" id="domain">
-<h2>自訂domain</h2>
-<ol class="arabic simple">
-<li>在你的domain設定指向github的IP</li>
-<li>在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain</li>
-</ol>
-<p>放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。</p>
-<p>先產生content/extra/CNAME，然後在pelicanconf.py加入:</p>
-<pre class="literal-block">
-FILES_TO_COPY = (
-    ('extra/CNAME', 'CNAME'),
-)
-</pre>
-</div>
-<div class="section" id="id2">
-<h2>參考</h2>
-<ul class="simple">
-<li><a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew">Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry</a></li>
-<li><a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html">Tips — Pelican 3 documentation</a></li>
-<li><a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">Setting up a custom domain with Pages · GitHub Help</a></li>
-</ul>
-</div>
-
-    </div><!-- /.entry-content -->
-        <div class="comments">
-      <h2>Comments !</h2>
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-        var disqus_identifier = "computer/pelican_github_pages.rst.html";
-        var disqus_url = "http://blog.suhen.org/computer/pelican_github_pages.rst.html";
-        (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://suhenorg.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-    </div>
-    
-  </article>
-</section>
+        <p>In <a href="http://blog.suhen.org/category/run.html">run</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/diary.html">diary</a></p>
+</footer><!-- /.post-info -->                <p>原標題: 挑戰12月</p>
+<p>之前曾經說我要比三項鐵人，結果到後來是比肚子越來越大，最近開始認真騎單車、跑步，也報名了<a href="http://www.ingtaipeiinternationalmarathon.com/2006/html/index.htm">2006年ING台北國際馬拉松</a>，我一開始就報21公里，其實我跟本就沒跑過那麼遠，之前最長跑10公里，就覺得腳很痛，過二天還會"鐵腿"。上周買了Mizuno的專業慢跑鞋，也是第一次，跑起來真的很舒服，改天有研究多一點時再來寫。另外也上網看<a href="http://www.runnersworld.com/subtopic/0,7123,s6-238-244-258-0,00.html">如何跑半程馬拉松</a> (英文的)，開始安排自已的訓練時程，希望不要中斷才好。</p>
+<p>我還不到跑步是為了健康的年齡，只是很喜歡那種挑戰自己的感覺，我也準備報名<a href="http://www.cyclingland.org.tw/Enter_1_1.asp?Id=104&action=1">陽金P字山道賽</a>，一天要騎三個山，我也只連續騎過二個山就累到不行了，這也是挑戰！！ 意志力和耐力的挑戰！！　另外一種不同的是在公司裡提出意見要被人家"Challenge"，研究所發表論文也是被"挑戰"到下不了台(前幾天就做了一個累似的惡夢)，離題了，改天再來練游泳。</p>
+                <a class="readmore" href="http://blog.suhen.org/run/first_run.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/run/first_run.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            </ol><!-- /#posts-list -->
+                            <p class="paginator">
+                        <a href="http://blog.suhen.org/tag/diary3.html">&laquo;</a>
+                Page 4 / 4
+    </p>
+                        </section><!-- /#content -->
+            
         <section id="extras" class="body">
                         <div class="blogroll">
                         <h2>blogroll</h2>
