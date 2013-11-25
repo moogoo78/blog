@@ -3,7 +3,7 @@
 &lt;h2&gt;1. 安裝eb commend tools&lt;/h2&gt;
 &lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定好路徑(以mac為例), 就可以開始了&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
+&lt;div class="highlight"&gt;&lt;pre&gt;AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
 
 &lt;span class="c"&gt;# 環境變數, 可以在shell下export或是寫在~/.elasticbeanstalk/aws_credential_file裡 (忘記是我自己加的還是eb工具自動加的)&lt;/span&gt;
 &lt;span class="nv"&gt;AWSAccessKeyId&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Write your AWS access ID
@@ -14,7 +14,7 @@
 &lt;h2&gt;2. 準備部署&lt;/h2&gt;
 &lt;h3&gt;WSGI&lt;/h3&gt;
 &lt;p&gt;預設是application.py:application, 自己要改application.py名字失敗..&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;[aws:elasticbeanstalk:container:python]&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;[aws:elasticbeanstalk:container:python]&lt;/span&gt;
 &lt;span class="err"&gt;...&lt;/span&gt;
 &lt;span class="na"&gt;WSGIPath&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;my_fail_wsgi&lt;/span&gt;
 &lt;span class="err"&gt;eb&lt;/span&gt; &lt;span class="err"&gt;update?&lt;/span&gt;
@@ -29,7 +29,7 @@
 &lt;li&gt;原本logger有自己存檔, 也要取消 (反正會出現在eb的log裡)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;3. 跑起來&lt;/h2&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 在git目錄下操作, 如果沒有repo就會叫你git init&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 在git目錄下操作, 如果沒有repo就會叫你git init&lt;/span&gt;
 eb init
 &lt;span class="c"&gt;# 會有選單, 開始勾選&lt;/span&gt;
 &lt;span class="c"&gt;# 平台選這個&lt;/span&gt;
@@ -49,7 +49,7 @@ eb status --verbose
 
 &lt;h2&gt;設定&lt;/h2&gt;
 &lt;p&gt;產生 &lt;strong&gt;.ebextensions&lt;/strong&gt;目錄, 新增 python.config:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nl"&gt;option_settings:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nl"&gt;option_settings:&lt;/span&gt;
   &lt;span class="s"&gt;&amp;quot;aws:elasticbeanstalk:container:python:staticfiles&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="s"&gt;&amp;quot;/static/&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;myapp/static/&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -75,17 +75,17 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;如果是android的話，需要產生keyhash，回填到developers.facebook.com的app&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;可以用corona sdk提供的debug.keystore&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;/Applications/CoronaSDK/Resource Library/Android/debug.keystore
+&lt;div class="highlight"&gt;&lt;pre&gt;/Applications/CoronaSDK/Resource Library/Android/debug.keystore
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;在mac上用JavaVM提供的keytool指令，產生android的keyhash&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
+&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;如果keyhash有問題的話，可以在裝置上看debug log，會出現:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;Key hash [這一串是keyhash] does not match any stored key hashes.
+&lt;div class="highlight"&gt;&lt;pre&gt;Key hash [這一串是keyhash] does not match any stored key hashes.
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -95,7 +95,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;h1&gt;1. 下載Mavericks&lt;/h1&gt;
 &lt;p&gt;我的MacBook Air已經更新10.9了，但還是可以再下載。&lt;/p&gt;
 &lt;p&gt;改一個系統檔:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
+&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
 # 把10.9的地方改稱10.8
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -103,7 +103,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;p&gt;然後到iTunes Mavericks官方頁面&lt;a href="https://itunes.apple.com/tw/app/id675248567?mt=12"&gt;Mavericks&lt;/a&gt;就可以"重新"下載了。下載完的檔案會放在 &lt;em&gt;/Applications/Install\ OS\ X\ Mavericks.app&lt;/em&gt;，大概有5G多，iTunes載完會自動跳出安裝視窗，但是先不理他，可以把這個目錄copy到其他地方，不然系統以為安裝完後就會自動殺掉。&lt;/p&gt;
 &lt;h1&gt;2. 製作開機磁碟&lt;/h1&gt;
 &lt;p&gt;用Terminal打入以下:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;sudo /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/MY_EXTURNAL_HD --applicationpath /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app --nointeraction
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/MY_EXTURNAL_HD --applicationpath /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app --nointeraction
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -111,13 +111,13 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;p&gt;ref: &lt;a href="http://www.macworld.com/article/2056561/how-to-make-a-bootable-mavericks-install-drive.html"&gt;How to make a bootable Mavericks install drive | Macworld&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;3. 安裝&lt;/h1&gt;
 &lt;p&gt;改系統檔(不確定這是不是一定要):&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
+&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
 # 把10.5.8改成10.68
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;外接硬碟接上iMac，重新開機。開機時按住&lt;em&gt;Option&lt;/em&gt;會跳出選擇開機磁碟，就選剛才製作好的開機碟。就會開始自動安裝了。 爽快。&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>Lua String / 字串</title><link href="http://blog.suhen.org/computer/lua_string.html" rel="alternate"></link><updated>2013-10-01T12:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/lua_string.html</id><summary type="html">&lt;h1&gt;Standard&lt;/h1&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;string.find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;string.find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e2&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;string.sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="p"&gt;[,&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 
@@ -152,12 +152,12 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 
 &lt;p&gt;大寫表示逆向，例如: &lt;strong&gt;%A&lt;/strong&gt; 就是非字串的意思&lt;/p&gt;
 &lt;p&gt;特殊字元:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="o"&gt;^&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="o"&gt;^&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;ex:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.gsub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello, up-down!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;%A&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.gsub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello, up-down!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;%A&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="c1"&gt;-- hello..up.down. 4&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -166,7 +166,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://lua-users.org/wiki/StringLibraryTutorial"&gt;lua-users wiki: String Library Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.lua.org/pil/2.4.html"&gt;Programming in Lua : 2.4&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="lua"></category></entry><entry><title>[snippet] Corona SDK 顯示各種資訊</title><link href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="alternate"></link><updated>2013-10-01T10:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/corona_sdk_info.html</id><summary type="html">&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;info&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/ul&gt;</summary><category term="lua"></category></entry><entry><title>[snippet] Corona SDK 顯示各種資訊</title><link href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="alternate"></link><updated>2013-10-01T10:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/corona_sdk_info.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;info&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;========= display info =========&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;pixel: %dx%d, ratio: %.02f&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
                         &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pixelWidth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -227,7 +227,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;===============================&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="k"&gt;end&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="snippet"></category><category term="corona_sdk"></category></entry><entry><title>[電腦] 小工具 - Lua的debug函式</title><link href="http://blog.suhen.org/computer/lua_debug.html" rel="alternate"></link><updated>2013-09-23T12:26:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-23:computer/lua_debug.html</id><summary type="html">&lt;p&gt;Lua的debug library有很多資訊可用:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;-- ## lua debug function&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;-- ## lua debug function&lt;/span&gt;
 &lt;span class="c1"&gt;-- # 1: simple print, 就跟print一樣&lt;/span&gt;
 &lt;span class="c1"&gt;-- # 2: verbose info, 印出呼叫的函式名稱跟函式所在的檔案行數&lt;/span&gt;
 
@@ -262,7 +262,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;p&gt;markdown可以直接貼HTML也是超級方便的!&lt;/p&gt;
 &lt;h2&gt;補充&lt;/h2&gt;
 &lt;p&gt;bookmarklet:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// reST&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// reST&lt;/span&gt;
 &lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;`&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39; &amp;lt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;gt;`__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
 &lt;span class="c1"&gt;// markdown&lt;/span&gt;
 &lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;[&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;](&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
@@ -808,7 +808,7 @@ M-x replace-regexp &amp;lt;RET&amp;gt; regexp &amp;lt;RET&amp;gt; newstring &amp
 &lt;/ul&gt;
 &lt;/div&gt;
 </summary><category term="note"></category><category term="emacs"></category></entry><entry><title>[Computer] 用Emacs dired-mode批次改檔名</title><link href="http://blog.suhen.org/computer/emacs_dired_rename.html" rel="alternate"></link><updated>2013-06-17T14:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-17:computer/emacs_dired_rename.html</id><summary type="html">&lt;p&gt;看到 &lt;a class="reference external" href="http://xahlee.org"&gt;XahLee&lt;/a&gt; 的一篇文章: &lt;a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html"&gt;Emacs: Rename Files Interactively by Pattern (regex; wdired)&lt;/a&gt; ，用Emacs來處理批次改檔名實在太方便了。&lt;/p&gt;
-&lt;p&gt;在Dired模式下，**C-x C-q** 進入修改模式，或是執行 &lt;strong&gt;wdired-change-to-wdired-mode&lt;/strong&gt;, 這時改檔名就像改一般文字檔一樣，可以用 &lt;em&gt;query-replace&lt;/em&gt;, &lt;em&gt;query-replace-regexp&lt;/em&gt; 或 &lt;em&gt;cua-mode&lt;/em&gt; , 改完後 &lt;strong&gt;C-c C-c&lt;/strong&gt; 送出, 或是 &lt;strong&gt;C-c C-Esc&lt;/strong&gt; 取消就可以了,  比寫script直覺多了。&lt;/p&gt;
+&lt;p&gt;在Dired模式下，&lt;strong&gt;C-x C-q&lt;/strong&gt; 進入修改模式，或是執行 &lt;strong&gt;wdired-change-to-wdired-mode&lt;/strong&gt;, 這時改檔名就像改一般文字檔一樣，可以用 &lt;em&gt;query-replace&lt;/em&gt;, &lt;em&gt;query-replace-regexp&lt;/em&gt; 或 &lt;em&gt;cua-mode&lt;/em&gt; , 改完後 &lt;strong&gt;C-c C-c&lt;/strong&gt; 送出, 或是 &lt;strong&gt;C-c C-Esc&lt;/strong&gt; 取消就可以了,  比寫script直覺多了。&lt;/p&gt;
 </summary><category term="emacs"></category><category term="note"></category></entry><entry><title>把靜態blog放到Github Pages上，以pelican為例</title><link href="http://blog.suhen.org/computer/pelican_github_pages.rst.html" rel="alternate"></link><updated>2013-06-01T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-01:computer/pelican_github_pages.rst.html</id><summary type="html">&lt;p&gt;之前開始把blog轉到使用 &lt;a class="reference external" href="http://blog.suhen.org/computer/pelican.html"&gt;pelican產生靜態blog&lt;/a&gt; ，既然用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually"&gt;Creating Project Pages manually · GitHub Help&lt;/a&gt;&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;

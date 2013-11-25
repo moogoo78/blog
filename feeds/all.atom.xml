@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-11-25T17:29:00+08:00</updated><entry><title>自然名</title><link href="http://blog.suhen.org/nature/nature_name.html" rel="alternate"></link><updated>2013-11-25T17:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-25:nature/nature_name.html</id><summary type="html">&lt;p&gt;其實這個綽號是大學時候開始的，原本只是為了在網路bbs申請一個「沒有人用過」的帳號。就亂掰了一個狀聲字: moogoo。然後中文念起來像蘑菇，自己也滿喜歡的「吃」蘑菇，蘑菇在我的印象中，也直接聯想到小時候很喜歡的卡通藍色小精靈的蘑菇屋，因此就一直沿用這個外號了。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-11-25T17:29:00+08:00</updated><entry><title>自然名</title><link href="http://blog.suhen.org/misc/nature_name.html" rel="alternate"></link><updated>2013-11-25T17:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-25:misc/nature_name.html</id><summary type="html">&lt;p&gt;其實這個綽號是大學時候開始的，原本只是為了在網路bbs申請一個「沒有人用過」的帳號。就亂掰了一個狀聲字: moogoo。然後中文念起來像蘑菇，自己也滿喜歡的「吃」蘑菇，蘑菇在我的印象中，也直接聯想到小時候很喜歡的卡通藍色小精靈的蘑菇屋，因此就一直沿用這個外號了。&lt;/p&gt;
 &lt;p&gt;加入荒野時有想過這個自然名跟我的生命故事之間的連接，其實十分枯燥，就是一個無聊宅男無意義的聯想。只好查了一下蘑菇的資料，原來是「蘑菇科傘菌屬」的部分食用菌的總稱,專業一點的話就是「真菌有性生殖階段的真菌子實體」- 很好，這種含糊不明的俗稱，就符合了本人不學無術跟不知上進的人格特徵。&lt;/p&gt;
 &lt;p&gt;為了要完成自然名的學分作業，只好再找一些資料來自圓其說。維基百科有寫: 真菌 (菇類)，自成一界，分類上從植物界分出來，所以不算動物、植物或細菌，感覺性格相當孤僻。但是他們通常很小，生活在土壤、腐質上，跟植物、動物或其他真菌共生，就是一個可以跟大家一起生活又若即若離的怪咖。又，真菌不能自行製造養分。無法獨立於自然界生存，必須與別種生物借由寄生、腐生或共生方式來吸取生活需要的營養，簡直就是一個生活在大地之母下的媽寶。&lt;/p&gt;
 &lt;p&gt;實在跟我太貼切了，因此現在很得意的沿用這個自然名，繼續苟活於自然中。&lt;/p&gt;
@@ -59,7 +59,7 @@ A WHY is just a belief. That's all it is. HOWs are the actions you take to reali
 &lt;h2&gt;1. 安裝eb commend tools&lt;/h2&gt;
 &lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定好路徑(以mac為例), 就可以開始了&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
+&lt;div class="highlight"&gt;&lt;pre&gt;AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
 
 &lt;span class="c"&gt;# 環境變數, 可以在shell下export或是寫在~/.elasticbeanstalk/aws_credential_file裡 (忘記是我自己加的還是eb工具自動加的)&lt;/span&gt;
 &lt;span class="nv"&gt;AWSAccessKeyId&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Write your AWS access ID
@@ -70,7 +70,7 @@ A WHY is just a belief. That's all it is. HOWs are the actions you take to reali
 &lt;h2&gt;2. 準備部署&lt;/h2&gt;
 &lt;h3&gt;WSGI&lt;/h3&gt;
 &lt;p&gt;預設是application.py:application, 自己要改application.py名字失敗..&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;[aws:elasticbeanstalk:container:python]&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;[aws:elasticbeanstalk:container:python]&lt;/span&gt;
 &lt;span class="err"&gt;...&lt;/span&gt;
 &lt;span class="na"&gt;WSGIPath&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;my_fail_wsgi&lt;/span&gt;
 &lt;span class="err"&gt;eb&lt;/span&gt; &lt;span class="err"&gt;update?&lt;/span&gt;
@@ -85,7 +85,7 @@ A WHY is just a belief. That's all it is. HOWs are the actions you take to reali
 &lt;li&gt;原本logger有自己存檔, 也要取消 (反正會出現在eb的log裡)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;3. 跑起來&lt;/h2&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 在git目錄下操作, 如果沒有repo就會叫你git init&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 在git目錄下操作, 如果沒有repo就會叫你git init&lt;/span&gt;
 eb init
 &lt;span class="c"&gt;# 會有選單, 開始勾選&lt;/span&gt;
 &lt;span class="c"&gt;# 平台選這個&lt;/span&gt;
@@ -105,7 +105,7 @@ eb status --verbose
 
 &lt;h2&gt;設定&lt;/h2&gt;
 &lt;p&gt;產生 &lt;strong&gt;.ebextensions&lt;/strong&gt;目錄, 新增 python.config:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nl"&gt;option_settings:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nl"&gt;option_settings:&lt;/span&gt;
   &lt;span class="s"&gt;&amp;quot;aws:elasticbeanstalk:container:python:staticfiles&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="s"&gt;&amp;quot;/static/&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;myapp/static/&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -129,7 +129,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;p&gt;之前聽說是口碑很好的馬拉松賽事，這次浩浩蕩蕩一群朋友一起參加了，順便去很少去的彰化員林附近玩玩。因為是歡樂的馬拉松決定要好好的來變裝，星期五下班到台北車站後站的太原路那裡找靈感，看來看去有只有可愛風的道具比較適合，買了各種動物頭套。&lt;/p&gt;
 &lt;p&gt;早上從台北出發，想去新竹風城攀岩場看看，結果剛好那天是青少年的比賽，只好看個熱鬧就離去，不過也遇到朋友，聊聊天也滿不錯的。之後開車到彰化已經中午了。下交流道經過北斗，看到路邊市場的肉圓，就停下來吃，本來不是特別喜歡中部炸的肉圓，但這裡的還滿好吃的，又便宜。之後先到田尾找我們的民宿，因為馬拉松早就訂滿了，我們就睡民宿主人阿成哥浪漫田邊的的空地，弄好帳篷，轉往員林去吃吃喝喝。&lt;/p&gt;
 &lt;p&gt;一行人因為在台北找不出時間看&lt;a href="http://www.atmovies.com.tw/movie/fbtw46649993/"&gt;看見台灣&lt;/a&gt;，到員林這裡來看剛好，我們就先買了電影票。然後走到附近的牛肉火鍋 (感謝在地的Amy推薦)，真的非常好吃，牛肉很鮮美，都不太需要用醬料，配上肉燥飯，就在喝咖啡單品般純粹的享受啊。&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;台南土產牛肉店
+&lt;div class="highlight"&gt;&lt;pre&gt;台南土產牛肉店
 地址: 彰化縣員林鎮東和里萬年路 2 段 85 號
 電話: 04-8327296
 &lt;/pre&gt;&lt;/div&gt;
@@ -165,17 +165,17 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;如果是android的話，需要產生keyhash，回填到developers.facebook.com的app&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;可以用corona sdk提供的debug.keystore&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;/Applications/CoronaSDK/Resource Library/Android/debug.keystore
+&lt;div class="highlight"&gt;&lt;pre&gt;/Applications/CoronaSDK/Resource Library/Android/debug.keystore
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;在mac上用JavaVM提供的keytool指令，產生android的keyhash&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
+&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;如果keyhash有問題的話，可以在裝置上看debug log，會出現:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;Key hash [這一串是keyhash] does not match any stored key hashes.
+&lt;div class="highlight"&gt;&lt;pre&gt;Key hash [這一串是keyhash] does not match any stored key hashes.
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -210,7 +210,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;/ol&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>2013八里左岸馬拉松</title><link href="http://blog.suhen.org/run/2013_bali_marathon.html" rel="alternate"></link><updated>2013-11-03T12:04:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-03:run/2013_bali_marathon.html</id><summary type="html">&lt;p&gt;同事的吆喝下一群人浩浩蕩蕩的報了這場半馬跟9k，我把這場當作21k的速度測試，之前跑全馬後一直不知道半馬可以跑多久，這場平地賽就剛好可以測試看看。&lt;/p&gt;
 &lt;p&gt;賽前有練一些長間歇，短間歇，山路，所以覺得心肺有增強許多，5k練習有跑出21:28的PB。原本設定21k要跑1:40 ~ 1:45之間 (5分速)，看有沒有機會挑戰100分以下，前1k跟大家聊天慢慢跑，後面才衝，用比平常 (全馬) 跟快的速度在跑。天氣陰陰的，跑起來後有點小小悶熱，前半段跑了52:20，後半段53:01。中間折返後，大概16, 7k的地方慢了下來，有點快抽筋跟喘不過氣的感覺，可能是最近還是很少跑到那麼長的距離，又是用比較快的速度，受不了，還好最後5, 6k有拼回來。&lt;/p&gt;
 &lt;p&gt;成績&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;1:45:06 全部排名: 132/1579， 分組排名: 142/516
+&lt;div class="highlight"&gt;&lt;pre&gt;1:45:06 全部排名: 132/1579， 分組排名: 142/516
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -223,7 +223,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;h1&gt;1. 下載Mavericks&lt;/h1&gt;
 &lt;p&gt;我的MacBook Air已經更新10.9了，但還是可以再下載。&lt;/p&gt;
 &lt;p&gt;改一個系統檔:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
+&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
 # 把10.9的地方改稱10.8
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -231,7 +231,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;p&gt;然後到iTunes Mavericks官方頁面&lt;a href="https://itunes.apple.com/tw/app/id675248567?mt=12"&gt;Mavericks&lt;/a&gt;就可以"重新"下載了。下載完的檔案會放在 &lt;em&gt;/Applications/Install\ OS\ X\ Mavericks.app&lt;/em&gt;，大概有5G多，iTunes載完會自動跳出安裝視窗，但是先不理他，可以把這個目錄copy到其他地方，不然系統以為安裝完後就會自動殺掉。&lt;/p&gt;
 &lt;h1&gt;2. 製作開機磁碟&lt;/h1&gt;
 &lt;p&gt;用Terminal打入以下:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;sudo /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/MY_EXTURNAL_HD --applicationpath /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app --nointeraction
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/MY_EXTURNAL_HD --applicationpath /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app --nointeraction
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -239,7 +239,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;p&gt;ref: &lt;a href="http://www.macworld.com/article/2056561/how-to-make-a-bootable-mavericks-install-drive.html"&gt;How to make a bootable Mavericks install drive | Macworld&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;3. 安裝&lt;/h1&gt;
 &lt;p&gt;改系統檔(不確定這是不是一定要):&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
+&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
 # 把10.5.8改成10.68
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -311,7 +311,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;p&gt;30-39 04:35:42 462 2026 04:25:00&lt;/p&gt;
 &lt;/div&gt;
 </summary></entry><entry><title>數字, 月份...</title><link href="http://blog.suhen.org/language/deutsch_nummer.html" rel="alternate"></link><updated>2013-10-27T00:42:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-27:language/deutsch_nummer.html</id><summary type="html">&lt;h1&gt;數字 Die Nummer / 序數&lt;/h1&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;eins: erste
+&lt;div class="highlight"&gt;&lt;pre&gt;eins: erste
 zwei: zweite
 drei: dritte
 vier: vierte
@@ -371,7 +371,7 @@ zehn: zehnte
 &lt;li&gt;&lt;a href="http://www.sportsnote.com.tw/running/album_search.aspx?id=25077e72-ce4d-4aea-95cc-9dcc98b8893a&amp;amp;b=220"&gt;2013 MiniRun擎天崗越野路跑賽 - 相片搜尋&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.allsports.tw/photo/photo_list_tag_search.php?tag_code=zekken&amp;amp;page_id=194116&amp;amp;tag=220"&gt;照片搜尋結果 - 照片列表 - All Sports Community&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="run"></category><category term="diary"></category></entry><entry><title>四季溯溪 莫很溪線</title><link href="http://blog.suhen.org/mountain/mohen_jialuohu.html" rel="alternate"></link><updated>2013-10-18T01:40:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-18:mountain/mohen_jialuohu.html</id><summary type="html">&lt;p&gt;記錄&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;D1 開開心心出發, 準備享受逍遙行程
+&lt;div class="highlight"&gt;&lt;pre&gt;D1 開開心心出發, 準備享受逍遙行程
 D2 天氣好好, 水量多多, 高繞也多多, 還摸黑垂降
 D3 大雨下不停, 冷的發抖的一天, 順經比亞毫古道看看金漏駐在所, 驚險中找到不會冷死的營地
 D4 原以為分岔溪順利上加羅湖, 結果還是走的很累, 最後在芒草堆裡游了一陣子終於倒地目的地
@@ -436,7 +436,7 @@ D4 原以為分岔溪順利上加羅湖, 結果還是走的很累, 最後在芒�
 &lt;li&gt;&lt;a href="http://www.marathonsworld.com/artapp/marathon_photo.php?rid=2388"&gt;2013信義鄉葡萄馬拉松 - 馬拉松比賽照片 | Marathon's World&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="diary"></category></entry><entry><title>拉赫瑪尼諾夫 - 齊柏絲坦鋼琴獨奏會</title><link href="http://blog.suhen.org/music/rachmaninoff_lilya_zilberstein.html" rel="alternate"></link><updated>2013-10-05T09:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-05:music/rachmaninoff_lilya_zilberstein.html</id><summary type="html">&lt;p&gt;也是朋友邀約參加了這場音樂會，上次接觸了拉赫瑪尼諾夫的&lt;a href="http://blog.suhen.org/music/rachmaninoff_all_night_vigil.html"&gt;徹夜禱 (All-Night Vigil)&lt;/a&gt;，很想再聽他的其他作品，這次又是外國大師，就只好當外行來湊熱鬧。同時也認識一下「塔涅耶夫」這位很陌生的作曲家。&lt;/p&gt;
 &lt;p&gt;曲目:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;拉赫瑪尼諾夫（S. Rachmaninov）：
+&lt;div class="highlight"&gt;&lt;pre&gt;拉赫瑪尼諾夫（S. Rachmaninov）：
 《柯雷里主題變奏曲》，作品42
 Variations on a Theme of Corelli, Op. 42
 樂興之時，作品16
@@ -474,7 +474,7 @@ Encore第二首: Liadov: The Musical Snuff-Box
 &lt;p&gt;過3次溪，回到原本上來的步道，有一個地方不要下切回溪谷，會從另一邊出去，比較平坦好走。出去後會多繞一下柏油路，接回內寮公車站牌。&lt;/p&gt;
 &lt;p&gt;用很悠閒的速凍總共花了4個小時，包括停留休息的時間，不過，同伴回家發現褲子一灘血，被螞蝗攻擊了。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Google Earth" src="/static/images/2013-09-29_neiliaogudao/gearth.png" /&gt;&lt;/p&gt;</summary><category term="陽明山"></category></entry><entry><title>Lua String / 字串</title><link href="http://blog.suhen.org/computer/lua_string.html" rel="alternate"></link><updated>2013-10-01T12:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/lua_string.html</id><summary type="html">&lt;h1&gt;Standard&lt;/h1&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;string.find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;string.find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e2&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;string.sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="p"&gt;[,&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 
@@ -509,12 +509,12 @@ Encore第二首: Liadov: The Musical Snuff-Box
 
 &lt;p&gt;大寫表示逆向，例如: &lt;strong&gt;%A&lt;/strong&gt; 就是非字串的意思&lt;/p&gt;
 &lt;p&gt;特殊字元:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="o"&gt;^&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="o"&gt;^&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;ex:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.gsub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello, up-down!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;%A&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.gsub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello, up-down!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;%A&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="c1"&gt;-- hello..up.down. 4&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -523,7 +523,7 @@ Encore第二首: Liadov: The Musical Snuff-Box
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://lua-users.org/wiki/StringLibraryTutorial"&gt;lua-users wiki: String Library Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.lua.org/pil/2.4.html"&gt;Programming in Lua : 2.4&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="lua"></category></entry><entry><title>[snippet] Corona SDK 顯示各種資訊</title><link href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="alternate"></link><updated>2013-10-01T10:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/corona_sdk_info.html</id><summary type="html">&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;info&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/ul&gt;</summary><category term="lua"></category></entry><entry><title>[snippet] Corona SDK 顯示各種資訊</title><link href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="alternate"></link><updated>2013-10-01T10:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/corona_sdk_info.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;info&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;========= display info =========&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;pixel: %dx%d, ratio: %.02f&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
                         &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pixelWidth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -1838,7 +1838,7 @@ ngai3 tsong3&lt;/td&gt;
 &lt;/table&gt;
 
 &lt;p&gt;來源不明&lt;/p&gt;</summary><category term="hakka"></category></entry><entry><title>[電腦] 小工具 - Lua的debug函式</title><link href="http://blog.suhen.org/computer/lua_debug.html" rel="alternate"></link><updated>2013-09-23T12:26:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-23:computer/lua_debug.html</id><summary type="html">&lt;p&gt;Lua的debug library有很多資訊可用:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;-- ## lua debug function&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;-- ## lua debug function&lt;/span&gt;
 &lt;span class="c1"&gt;-- # 1: simple print, 就跟print一樣&lt;/span&gt;
 &lt;span class="c1"&gt;-- # 2: verbose info, 印出呼叫的函式名稱跟函式所在的檔案行數&lt;/span&gt;
 
@@ -1873,7 +1873,7 @@ ngai3 tsong3&lt;/td&gt;
 &lt;p&gt;markdown可以直接貼HTML也是超級方便的!&lt;/p&gt;
 &lt;h2&gt;補充&lt;/h2&gt;
 &lt;p&gt;bookmarklet:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// reST&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// reST&lt;/span&gt;
 &lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;`&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39; &amp;lt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;gt;`__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
 &lt;span class="c1"&gt;// markdown&lt;/span&gt;
 &lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;[&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;](&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
@@ -1971,7 +1971,7 @@ ngai3 tsong3&lt;/td&gt;
 
 &lt;h2&gt;歌詞&lt;/h2&gt;
 &lt;p&gt;原文歌詞:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;Aissera, oje Nanniné, me ne sagliette,
+&lt;div class="highlight"&gt;&lt;pre&gt;Aissera, oje Nanniné, me ne sagliette,
 tu saje addó, tu saje addó
 Addó &amp;#39;stu core &amp;#39;ngrato cchiù dispietto
 farme nun pò! Farme nun pò!
@@ -2012,7 +2012,7 @@ Jamme, jamme ...
 
 
 &lt;p&gt;中文翻譯:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;親愛的妮娜，今晚我征服了內心的妳
+&lt;div class="highlight"&gt;&lt;pre&gt;親愛的妮娜，今晚我征服了內心的妳
 我將告訴你在哪裡！
 自從愛上你之後，我的心情沈重
 但在那山上，我的心卻像輕如空氣！
@@ -2193,7 +2193,7 @@ D3 C2 → 加羅北池 → 加羅山 → 加羅湖會師 → 四季 → 礁溪�
 &lt;ul class="simple"&gt;
 &lt;li&gt;[2008-10-25] 桃山&lt;/li&gt;
 &lt;/ul&gt;
-</summary><category term="高山"></category><category term="裸子"></category><category term="tree"></category><category term="觀察"></category></entry><entry><title>[高山植物] 尼泊爾籟蕭</title><link href="http://blog.suhen.org/nature/gao-shan-zhi-wu-ni-bo-er-lai-xiao.html" rel="alternate"></link><updated>2013-09-01T06:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-01:nature/gao-shan-zhi-wu-ni-bo-er-lai-xiao.html</id><summary type="html">&lt;p&gt;冬枯多年生草本植物，最早是叫玉山籟蕭，和 &lt;a class="reference external" href="|filename|0016-玉山抱莖籟蕭.rst"&gt;玉山抱莖籟蕭&lt;/a&gt; 容易搞混（應紹舜先生的臺灣的高山植物也是寫玉山籟蕭）。&lt;/p&gt;
+</summary><category term="高山"></category><category term="裸子"></category><category term="tree"></category><category term="觀察"></category></entry><entry><title>[高山植物] 尼泊爾籟蕭</title><link href="http://blog.suhen.org/nature/gao-shan-zhi-wu-ni-bo-er-lai-xiao.html" rel="alternate"></link><updated>2013-09-01T06:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-01:nature/gao-shan-zhi-wu-ni-bo-er-lai-xiao.html</id><summary type="html">&lt;p&gt;冬枯多年生草本植物，最早是叫玉山籟蕭，和 &lt;a class="reference external" href="http://blog.suhen.org/nature/gao-shan-zhi-wu-yu-shan-bao-jing-lai-xiao.html"&gt;玉山抱莖籟蕭&lt;/a&gt; 容易搞混（應紹舜先生的臺灣的高山植物也是寫玉山籟蕭）。&lt;/p&gt;
 &lt;p&gt;日本時代時叫「兒玉菊」，被印在「台灣始政紀念」的明信片上(沒圖沒真相，有空再來找圖)，葉子有絨毛。&lt;/p&gt;
 &lt;img alt="/static/images/nature/plant/0017/3035596564_a4c17845ef_z.jpeg" src="/static/images/nature/plant/0017/3035596564_a4c17845ef_z.jpeg" /&gt;
 &lt;img alt="/static/images/nature/plant/0017/3035597730_6fa2fa3aa0_z.jpeg" src="/static/images/nature/plant/0017/3035597730_6fa2fa3aa0_z.jpeg" /&gt;
@@ -2201,7 +2201,7 @@ D3 C2 → 加羅北池 → 加羅山 → 加羅湖會師 → 四季 → 礁溪�
 &lt;ul class="simple"&gt;
 &lt;li&gt;[2008-10-25] 桃山&lt;/li&gt;
 &lt;/ul&gt;
-</summary><category term="有毛"></category><category term="白花"></category><category term="高山"></category><category term="herb"></category></entry><entry><title>[高山植物] 玉山抱莖籟蕭</title><link href="http://blog.suhen.org/nature/gao-shan-zhi-wu-yu-shan-bao-jing-lai-xiao.html" rel="alternate"></link><updated>2013-09-01T06:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-01:nature/gao-shan-zhi-wu-yu-shan-bao-jing-lai-xiao.html</id><summary type="html">&lt;p&gt;和 &lt;a class="reference external" href="|filename|0017-尼泊爾籟蕭.rst"&gt;尼泊爾籟蕭&lt;/a&gt; 葉子長的很像，玉山抱莖籟蕭葉子比較細，尼泊爾籟蕭葉子比較胖，玉山抱莖籟蕭的白色花瓣和花色花蕊的比例差不多，尼泊爾籟蕭好像的白色花瓣範圍較大 (有待查證)，花可以泡茶。&lt;/p&gt;
+</summary><category term="有毛"></category><category term="白花"></category><category term="高山"></category><category term="herb"></category></entry><entry><title>[高山植物] 玉山抱莖籟蕭</title><link href="http://blog.suhen.org/nature/gao-shan-zhi-wu-yu-shan-bao-jing-lai-xiao.html" rel="alternate"></link><updated>2013-09-01T06:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-01:nature/gao-shan-zhi-wu-yu-shan-bao-jing-lai-xiao.html</id><summary type="html">&lt;p&gt;和 &lt;a class="reference external" href="http://blog.suhen.org/nature/gao-shan-zhi-wu-ni-bo-er-lai-xiao.html"&gt;尼泊爾籟蕭&lt;/a&gt; 葉子長的很像，玉山抱莖籟蕭葉子比較細，尼泊爾籟蕭葉子比較胖，玉山抱莖籟蕭的白色花瓣和花色花蕊的比例差不多，尼泊爾籟蕭好像的白色花瓣範圍較大 (有待查證)，花可以泡茶。&lt;/p&gt;
 &lt;img alt="/static/images/nature/plant/0016/2993409007_85b97cf96e_z.jpeg" src="/static/images/nature/plant/0016/2993409007_85b97cf96e_z.jpeg" /&gt;
 &lt;img alt="/static/images/nature/plant/0016/2994252364_0aa694189c_z.jpeg" src="/static/images/nature/plant/0016/2994252364_0aa694189c_z.jpeg" /&gt;
 &lt;img alt="/static/images/nature/plant/0016/2993411481_051f55148d_z.jpeg" src="/static/images/nature/plant/0016/2993411481_051f55148d_z.jpeg" /&gt;
@@ -2519,7 +2519,7 @@ Sie kommt nicht aus Deutschland.
 &lt;li&gt;陽明花語, p.272&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="藍花"></category><category term="herb"></category><category term="觀察"></category></entry><entry><title>Präpositionen</title><link href="http://blog.suhen.org/language/prapositionen.html" rel="alternate"></link><updated>2013-08-23T04:01:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-23:language/prapositionen.html</id><summary type="html">&lt;div class="section" id="mit-dem-dative"&gt;
+</summary><category term="藍花"></category><category term="herb"></category><category term="觀察"></category></entry><entry><title>Präpositionen</title><link href="http://blog.suhen.org/language/praepositionen.html" rel="alternate"></link><updated>2013-08-23T04:01:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-23:language/praepositionen.html</id><summary type="html">&lt;div class="section" id="mit-dem-dative"&gt;
 &lt;h2&gt;mit dem Dative&lt;/h2&gt;
 &lt;pre class="literal-block"&gt;
 []-&amp;gt;    aus
@@ -3724,7 +3724,7 @@ M-x replace-regexp &amp;lt;RET&amp;gt; regexp &amp;lt;RET&amp;gt; newstring &amp
 &lt;/ul&gt;
 &lt;/div&gt;
 </summary><category term="note"></category><category term="emacs"></category></entry><entry><title>[Computer] 用Emacs dired-mode批次改檔名</title><link href="http://blog.suhen.org/computer/emacs_dired_rename.html" rel="alternate"></link><updated>2013-06-17T14:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-17:computer/emacs_dired_rename.html</id><summary type="html">&lt;p&gt;看到 &lt;a class="reference external" href="http://xahlee.org"&gt;XahLee&lt;/a&gt; 的一篇文章: &lt;a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html"&gt;Emacs: Rename Files Interactively by Pattern (regex; wdired)&lt;/a&gt; ，用Emacs來處理批次改檔名實在太方便了。&lt;/p&gt;
-&lt;p&gt;在Dired模式下，**C-x C-q** 進入修改模式，或是執行 &lt;strong&gt;wdired-change-to-wdired-mode&lt;/strong&gt;, 這時改檔名就像改一般文字檔一樣，可以用 &lt;em&gt;query-replace&lt;/em&gt;, &lt;em&gt;query-replace-regexp&lt;/em&gt; 或 &lt;em&gt;cua-mode&lt;/em&gt; , 改完後 &lt;strong&gt;C-c C-c&lt;/strong&gt; 送出, 或是 &lt;strong&gt;C-c C-Esc&lt;/strong&gt; 取消就可以了,  比寫script直覺多了。&lt;/p&gt;
+&lt;p&gt;在Dired模式下，&lt;strong&gt;C-x C-q&lt;/strong&gt; 進入修改模式，或是執行 &lt;strong&gt;wdired-change-to-wdired-mode&lt;/strong&gt;, 這時改檔名就像改一般文字檔一樣，可以用 &lt;em&gt;query-replace&lt;/em&gt;, &lt;em&gt;query-replace-regexp&lt;/em&gt; 或 &lt;em&gt;cua-mode&lt;/em&gt; , 改完後 &lt;strong&gt;C-c C-c&lt;/strong&gt; 送出, 或是 &lt;strong&gt;C-c C-Esc&lt;/strong&gt; 取消就可以了,  比寫script直覺多了。&lt;/p&gt;
 </summary><category term="emacs"></category><category term="note"></category></entry><entry><title>知識誕生的奧秘 - 梅棹忠夫 - 志文出版社 (1969)</title><link href="http://blog.suhen.org/book/umesao_tadao_knowledge.html" rel="alternate"></link><updated>2013-06-16T13:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-16:book/umesao_tadao_knowledge.html</id><summary type="html">&lt;img alt="/static/images/book/umesao_tadao-knowlegde.jpg" src="/static/images/book/umesao_tadao-knowlegde.jpg" /&gt;
 &lt;div class="section" id="id2"&gt;
 &lt;h2&gt;原書名：知性生產技術&lt;/h2&gt;
@@ -6804,7 +6804,7 @@ Finish        04:41:52        0:15:36
 &lt;p&gt;從海拔450M的泰雅渡假村先往下跑到375M的糯米橋附近，最後上到惠蓀林場798M。
 回來後右腳底很痛，應該是跑富邦馬之前就隱隱有感覺了，懷疑是足底筋膜炎。
 跟之前跑太魯閣比起來，一樣是山路，感覺更不好跑，但是山路成績有進步，再接再厲！！&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;時間: 5:06:43
+&lt;div class="highlight"&gt;&lt;pre&gt;時間: 5:06:43
 總排名: 641/1329
 分組: 54/133
 天氣: 晴天涼爽
@@ -6814,7 +6814,7 @@ Finish        04:41:52        0:15:36
 
 
 &lt;p&gt;&lt;a href="http://www.flickr.com/photos/moogoo/6665898805/" title="星光賽德克 by MooGoo, on Flickr"&gt;&lt;img src="http://farm8.staticflickr.com/7158/6665898805_090fa96f19.jpg" width="500" height="333" alt="星光賽德克"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.flickr.com/photos/moogoo/sets/72157628790841813/"&gt;全部照片&lt;/a&gt;&lt;/p&gt;</summary><category term="diary"></category></entry><entry><title>2011 富邦馬拉松心得</title><link href="http://blog.suhen.org/run/2011-12-18_taipei_marathon.html" rel="alternate"></link><updated>2011-12-18T15:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2011-12-18:run/2011-12-18_taipei_marathon.html</id><summary type="html">&lt;div class="codehilite"&gt;&lt;pre&gt;1. 可能是個人最佳成積, 但是晶片出包, 起跑時間被偷了十幾分鐘
+&lt;p&gt;&lt;a href="http://www.flickr.com/photos/moogoo/sets/72157628790841813/"&gt;全部照片&lt;/a&gt;&lt;/p&gt;</summary><category term="diary"></category></entry><entry><title>2011 富邦馬拉松心得</title><link href="http://blog.suhen.org/run/2011-12-18_taipei_marathon.html" rel="alternate"></link><updated>2011-12-18T15:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2011-12-18:run/2011-12-18_taipei_marathon.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;1. 可能是個人最佳成積, 但是晶片出包, 起跑時間被偷了十幾分鐘
 2. 半馬和全馬寄物處要繞好遠, 我雖然6點就到了, 還是搞到要很趕的擠到起跑點, 也沒熱身
 3. 今年不用跑高架橋, 但是2/3都在河濱公園跑, 沒有城市馬拉松的特色
 4. 補給真的太普通了, 除了最後松山那一攤有水果最感心之外, 其他的真的乏善可陳, 連鹽都沒有, 還好我都自己帶...
@@ -6915,7 +6915,7 @@ Finish        04:41:52        0:15:36
 &lt;p&gt;今年拿到衣服是綿質的，比起一些品質不太好的排汗衣，我寧願穿綿質內衣，不過活動當天還是穿古都馬拉松的衣服，覺得比較好穿。另外，獎牌很醜，浴巾ok(這種東西還不是都一樣)，因為想趕快排接泊車就沒拿餐盒了，聽說還有水龍頭一開就有喝不完的舒跑。&lt;/p&gt;
 &lt;p&gt;照片: &lt;a href="http://www.flickr.com/photos/moogoo/sets/72157622529220658/"&gt;20091004 - 台中馬拉松&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;結果成績出來果然相當悠閒。&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;Pos&lt;/span&gt; &lt;span class="n"&gt;Bibnr&lt;/span&gt;   &lt;span class="n"&gt;Name&lt;/span&gt;    &lt;span class="n"&gt;Category&lt;/span&gt;    &lt;span class="n"&gt;FinishTime&lt;/span&gt;  &lt;span class="n"&gt;RankAll&lt;/span&gt; &lt;span class="n"&gt;RankCat&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Pos&lt;/span&gt; &lt;span class="n"&gt;Bibnr&lt;/span&gt;   &lt;span class="n"&gt;Name&lt;/span&gt;    &lt;span class="n"&gt;Category&lt;/span&gt;    &lt;span class="n"&gt;FinishTime&lt;/span&gt;  &lt;span class="n"&gt;RankAll&lt;/span&gt; &lt;span class="n"&gt;RankCat&lt;/span&gt;
 &lt;span class="mi"&gt;322&lt;/span&gt; &lt;span class="mi"&gt;326&lt;/span&gt; &lt;span class="err"&gt;李思賢&lt;/span&gt; &lt;span class="err"&gt;男&lt;/span&gt;&lt;span class="mi"&gt;30&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;39&lt;/span&gt;&lt;span class="err"&gt;歲&lt;/span&gt; &lt;span class="mo"&gt;02&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;34&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;45&lt;/span&gt;    &lt;span class="mi"&gt;1071&lt;/span&gt;    &lt;span class="mi"&gt;322&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="diary"></category></entry><entry><title>2009台南古都馬拉松</title><link href="http://blog.suhen.org/run/2009_tainan_marathon.html" rel="alternate"></link><updated>2009-02-20T15:54:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2009-02-20:run/2009_tainan_marathon.html</id><summary type="html">&lt;p&gt;這次報名完全是因為在我最喜歡的台南跑，而且有經過許多古蹟很另人心動，跑完還可以順便去吃吃玩玩，但是事情總是不會那麼順利，我錯過報名時間，忘了報名，還好在ptt路跑版看到有人不能去要賣號碼布，就用別人的名字去跑了。感謝！！&lt;/p&gt;
 &lt;p&gt;最大的問題就是有夠久沒跑的，都不知能不能跑完，而且到台南後一直大吃大喝，跑步當天感覺東西都沒消化完，像挺著一個石頭跑，從四草橋後就開始邊跑邊走了，還好當天沒有很熱，不然就直接去吃豆花了。最後跑完是二個小時二十幾分，太慘了，發憤！&lt;/p&gt;

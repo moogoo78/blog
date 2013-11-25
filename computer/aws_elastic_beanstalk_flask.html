@@ -46,7 +46,7 @@
 <h2>1. 安裝eb commend tools</h2>
 <p>下載: <a href="http://aws.amazon.com/code/6752709412171743">AWS Elastic Beanstalk Command Line Tool : Sample Code &amp; Libraries : Amazon Web Services</a></p>
 <p>設定好路徑(以mac為例), 就可以開始了</p>
-<div class="codehilite"><pre>AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
+<div class="highlight"><pre>AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
 
 <span class="c"># 環境變數, 可以在shell下export或是寫在~/.elasticbeanstalk/aws_credential_file裡 (忘記是我自己加的還是eb工具自動加的)</span>
 <span class="nv">AWSAccessKeyId</span><span class="o">=</span>Write your AWS access ID
@@ -57,7 +57,7 @@
 <h2>2. 準備部署</h2>
 <h3>WSGI</h3>
 <p>預設是application.py:application, 自己要改application.py名字失敗..</p>
-<div class="codehilite"><pre><span class="k">[aws:elasticbeanstalk:container:python]</span>
+<div class="highlight"><pre><span class="k">[aws:elasticbeanstalk:container:python]</span>
 <span class="err">...</span>
 <span class="na">WSGIPath</span><span class="o">=</span><span class="s">my_fail_wsgi</span>
 <span class="err">eb</span> <span class="err">update?</span>
@@ -72,7 +72,7 @@
 <li>原本logger有自己存檔, 也要取消 (反正會出現在eb的log裡)</li>
 </ul>
 <h2>3. 跑起來</h2>
-<div class="codehilite"><pre><span class="c"># 在git目錄下操作, 如果沒有repo就會叫你git init</span>
+<div class="highlight"><pre><span class="c"># 在git目錄下操作, 如果沒有repo就會叫你git init</span>
 eb init
 <span class="c"># 會有選單, 開始勾選</span>
 <span class="c"># 平台選這個</span>
@@ -92,7 +92,7 @@ eb status --verbose
 
 <h2>設定</h2>
 <p>產生 <strong>.ebextensions</strong>目錄, 新增 python.config:</p>
-<div class="codehilite"><pre><span class="nl">option_settings:</span>
+<div class="highlight"><pre><span class="nl">option_settings:</span>
   <span class="s">&quot;aws:elasticbeanstalk:container:python:staticfiles&quot;</span><span class="o">:</span>
     <span class="s">&quot;/static/&quot;</span><span class="o">:</span> <span class="s">&quot;myapp/static/&quot;</span>
 </pre></div>
