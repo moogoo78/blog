@@ -92,6 +92,10 @@ done
 <pre class="literal-block">
 $ find / -type d -name &quot;dir_name&quot;
 </pre>
+<p>刪除5分鐘內建立的檔案:</p>
+<pre class="literal-block">
+$ find -cmin -5 -type f -exec rm -rf {} \;
+</pre>
 <p>找出體積最大前十檔案/目錄:</p>
 <pre class="literal-block">
 $ du -a /home | sort -n -r | head -n 10

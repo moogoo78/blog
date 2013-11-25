@@ -44,17 +44,17 @@
 <li>如果是android的話，需要產生keyhash，回填到developers.facebook.com的app</li>
 </ol>
 <p>可以用corona sdk提供的debug.keystore</p>
-<div class="highlight"><pre>/Applications/CoronaSDK/Resource Library/Android/debug.keystore
+<div class="codehilite"><pre>/Applications/CoronaSDK/Resource Library/Android/debug.keystore
 </pre></div>
 
 
 <p>在mac上用JavaVM提供的keytool指令，產生android的keyhash</p>
-<div class="highlight"><pre>/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
+<div class="codehilite"><pre>/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
 </pre></div>
 
 
 <p>如果keyhash有問題的話，可以在裝置上看debug log，會出現:</p>
-<div class="highlight"><pre>Key hash [這一串是keyhash] does not match any stored key hashes.
+<div class="codehilite"><pre>Key hash [這一串是keyhash] does not match any stored key hashes.
 </pre></div>
 
 

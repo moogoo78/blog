@@ -44,17 +44,17 @@
 <li>如果是android的話，需要產生keyhash，回填到developers.facebook.com的app</li>
 </ol>
 <p>可以用corona sdk提供的debug.keystore</p>
-<div class="highlight"><pre>/Applications/CoronaSDK/Resource Library/Android/debug.keystore
+<div class="codehilite"><pre>/Applications/CoronaSDK/Resource Library/Android/debug.keystore
 </pre></div>
 
 
 <p>在mac上用JavaVM提供的keytool指令，產生android的keyhash</p>
-<div class="highlight"><pre>/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
+<div class="codehilite"><pre>/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
 </pre></div>
 
 
 <p>如果keyhash有問題的話，可以在裝置上看debug log，會出現:</p>
-<div class="highlight"><pre>Key hash [這一串是keyhash] does not match any stored key hashes.
+<div class="codehilite"><pre>Key hash [這一串是keyhash] does not match any stored key hashes.
 </pre></div>
 
 
@@ -82,7 +82,7 @@
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/snippet.html">snippet</a><a href="http://blog.suhen.org/tag/corona_sdk.html">corona_sdk</a></p>
-</footer><!-- /.post-info -->                <div class="highlight"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">info</span><span class="p">()</span>
+</footer><!-- /.post-info -->                <div class="codehilite"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">info</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">========= display info =========&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">pixel: %dx%d, ratio: %.02f&quot;</span><span class="p">,</span> 
                         <span class="n">display</span><span class="p">.</span><span class="n">pixelWidth</span><span class="p">,</span>

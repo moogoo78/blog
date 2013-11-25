@@ -48,7 +48,7 @@
 <h1>1. 下載Mavericks</h1>
 <p>我的MacBook Air已經更新10.9了，但還是可以再下載。</p>
 <p>改一個系統檔:</p>
-<div class="highlight"><pre>/System/Library/CoreServices/SystemVersion.plist
+<div class="codehilite"><pre>/System/Library/CoreServices/SystemVersion.plist
 # 把10.9的地方改稱10.8
 </pre></div>
 
@@ -56,7 +56,7 @@
 <p>然後到iTunes Mavericks官方頁面<a href="https://itunes.apple.com/tw/app/id675248567?mt=12">Mavericks</a>就可以"重新"下載了。下載完的檔案會放在 <em>/Applications/Install\ OS\ X\ Mavericks.app</em>，大概有5G多，iTunes載完會自動跳出安裝視窗，但是先不理他，可以把這個目錄copy到其他地方，不然系統以為安裝完後就會自動殺掉。</p>
 <h1>2. 製作開機磁碟</h1>
 <p>用Terminal打入以下:</p>
-<div class="highlight"><pre>sudo /Applications/Install<span class="se">\ </span>OS<span class="se">\ </span>X<span class="se">\ </span>Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/MY_EXTURNAL_HD --applicationpath /Applications/Install<span class="se">\ </span>OS<span class="se">\ </span>X<span class="se">\ </span>Mavericks.app --nointeraction
+<div class="codehilite"><pre>sudo /Applications/Install<span class="se">\ </span>OS<span class="se">\ </span>X<span class="se">\ </span>Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/MY_EXTURNAL_HD --applicationpath /Applications/Install<span class="se">\ </span>OS<span class="se">\ </span>X<span class="se">\ </span>Mavericks.app --nointeraction
 </pre></div>
 
 
@@ -64,7 +64,7 @@
 <p>ref: <a href="http://www.macworld.com/article/2056561/how-to-make-a-bootable-mavericks-install-drive.html">How to make a bootable Mavericks install drive | Macworld</a></p>
 <h1>3. 安裝</h1>
 <p>改系統檔(不確定這是不是一定要):</p>
-<div class="highlight"><pre>/System/Library/CoreServices/SystemVersion.plist
+<div class="codehilite"><pre>/System/Library/CoreServices/SystemVersion.plist
 # 把10.5.8改成10.68
 </pre></div>
 
