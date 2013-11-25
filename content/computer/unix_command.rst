@@ -58,6 +58,9 @@ for loop::
 
   $ find / -type d -name "dir_name"
 
+刪除5分鐘內建立的檔案::
+
+  $ find -cmin -5 -type f -exec rm -rf {} \;
 
 找出體積最大前十檔案/目錄:: 
   
