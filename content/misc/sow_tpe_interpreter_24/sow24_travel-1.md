@@ -1,8 +1,8 @@
 Title: [荒野台北24解] 第一次旅行 - 人與自然的學習
 Date: 2013-11-27 09:56
 Category: misc
-Tags: sow_tpe_interperer
-Slug: sow_taipei_inperperter_24-travel-1
+Tags: sow_tpe_interperer24
+Slug: sow_taipei_interperer_24-travel-1
 
     ::text
     活動主題: 人與自然的學習
