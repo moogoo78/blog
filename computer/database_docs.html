@@ -82,6 +82,14 @@ CONVERT( 欄位名稱 using big5) 。
 <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">foo</span> <span class="k">LIMIT</span> <span class="mi">20</span> <span class="k">OFFSET</span> <span class="mi">40</span> <span class="c1">-- 從40個以後抓20個</span>
 <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">foo</span> <span class="k">LIMIT</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">20</span> <span class="c1">-- 同上</span>
 </pre></div>
+<p>查看database容量:</p>
+<div class="highlight"><pre><span class="k">SELECT</span> <span class="n">table_schema</span> <span class="ss">&quot;database_name&quot;</span><span class="p">,</span>
+<span class="k">sum</span><span class="p">(</span> <span class="n">data_length</span> <span class="o">+</span> <span class="n">index_length</span> <span class="p">)</span> <span class="o">/</span> <span class="mi">1024</span> <span class="o">/</span>
+<span class="mi">1024</span> <span class="ss">&quot;Data Base Size in MB&quot;</span><span class="p">,</span>
+<span class="k">sum</span><span class="p">(</span> <span class="n">data_free</span> <span class="p">)</span><span class="o">/</span> <span class="mi">1024</span> <span class="o">/</span> <span class="mi">1024</span> <span class="ss">&quot;Free Space in MB&quot;</span>
+<span class="k">FROM</span> <span class="n">information_schema</span><span class="p">.</span><span class="n">TABLES</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">table_schema</span> <span class="p">;</span>
+</pre></div>
 </div>
 <div class="section" id="function">
 <h3>function</h3>

@@ -875,6 +875,14 @@ CONVERT( 欄位名稱 using big5) 。
 &lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt; &lt;span class="k"&gt;LIMIT&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="k"&gt;OFFSET&lt;/span&gt; &lt;span class="mi"&gt;40&lt;/span&gt; &lt;span class="c1"&gt;-- 從40個以後抓20個&lt;/span&gt;
 &lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt; &lt;span class="k"&gt;LIMIT&lt;/span&gt; &lt;span class="mi"&gt;40&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="c1"&gt;-- 同上&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;查看database容量:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;table_schema&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;database_name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;data_length&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;index_length&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;1024&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="mi"&gt;1024&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;Data Base Size in MB&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;data_free&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;1024&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;1024&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;Free Space in MB&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;information_schema&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;TABLES&lt;/span&gt;
+&lt;span class="k"&gt;GROUP&lt;/span&gt; &lt;span class="k"&gt;BY&lt;/span&gt; &lt;span class="n"&gt;table_schema&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="function"&gt;
 &lt;h3&gt;function&lt;/h3&gt;
