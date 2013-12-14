@@ -53,6 +53,17 @@ LIMIT
   SELECT * FROM foo LIMIT 20 OFFSET 40 -- 從40個以後抓20個
   SELECT * FROM foo LIMIT 40, 20 -- 同上
 
+查看database容量:
+
+.. code-block:: sql
+
+    SELECT table_schema "database_name", 
+    sum( data_length + index_length ) / 1024 / 
+    1024 "Data Base Size in MB", 
+    sum( data_free )/ 1024 / 1024 "Free Space in MB" 
+    FROM information_schema.TABLES 
+    GROUP BY table_schema ;  
+
 function
 -----------
 
