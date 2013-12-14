@@ -251,28 +251,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.lua.org/pil/23.html"&gt;Programming in Lua : 23&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="lua"></category><category term="snippet"></category></entry><entry><title>[電腦] Pelican寫blog用reST (reStructuredText) 還是markdown好?</title><link href="http://blog.suhen.org/computer/pelican_rest_markdown.html" rel="alternate"></link><updated>2013-09-23T11:01:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-23:computer/pelican_rest_markdown.html</id><summary type="html">&lt;p&gt;活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。&lt;/p&gt;
-&lt;p&gt;但是reST還是有一些很討厭的地方，像:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;連結的語法我永遠很難記得，都是用自己寫的javascript bookmarklet解決&lt;/li&gt;
-&lt;li&gt;連結跟內容文字之間要有空白，不然會錯，除非加上跳脫字元 &lt;strong&gt;/&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;標題用 ######...，長度要跟標題文字一樣長，雖然編輯器都有快速鍵可以補齊，但是還是會在修改標題後，常常忘了補滿而出現錯誤&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;簡潔的markdown實在比reST好用很多，不過，預設沒有表格 (table)的語法。所以，如果用到表格，或是覺得以後要用Sphinx產生文件，減少轉換問題，就用reST，其他一般用markdown。&lt;/p&gt;
-&lt;p&gt;markdown可以直接貼HTML也是超級方便的!&lt;/p&gt;
-&lt;h2&gt;補充&lt;/h2&gt;
-&lt;p&gt;bookmarklet:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// reST&lt;/span&gt;
-&lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;`&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39; &amp;lt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;gt;`__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
-&lt;span class="c1"&gt;// markdown&lt;/span&gt;
-&lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;[&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;](&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.suhen.org/computer/pelican.html"&gt;pelican (reST)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://markdown.tw/"&gt;Markdown 語法說明&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="pelican"></category></entry><entry><title>Lua的3元運算子 (Ternary Operator)</title><link href="http://blog.suhen.org/computer/lua_ternary.html" rel="alternate"></link><updated>2013-09-23T00:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-23:computer/lua_ternary.html</id><summary type="html">&lt;p&gt;很多語言都有簡潔的3元運算, 但是lua不支援這樣的語法.&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="lua"></category><category term="snippet"></category></entry><entry><title>Lua的3元運算子 (Ternary Operator)</title><link href="http://blog.suhen.org/computer/lua_ternary.html" rel="alternate"></link><updated>2013-09-23T00:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-09-23:computer/lua_ternary.html</id><summary type="html">&lt;p&gt;很多語言都有簡潔的3元運算, 但是lua不支援這樣的語法.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// C&lt;/span&gt;
 &lt;span class="n"&gt;sign&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;negative&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;non-negative&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -321,7 +300,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;M-x&lt;/span&gt; &lt;span class="pre"&gt;insert-kbd-macro&lt;/span&gt;&lt;/tt&gt; 把macro存到設定檔, 他會問你要存那個macro name&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="emacs"></category></entry><entry><title>用Emacs的skeleton快速建立pelican的blog內文</title><link href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="alternate"></link><updated>2013-08-27T18:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-27:computer/emacs_skeleton.html</id><summary type="html">&lt;p&gt;用 &lt;a class="reference external" href="http://blog.suhen.org/computer/pelican.html"&gt;Pelican&lt;/a&gt; 寫blog時都要輸入一堆metadata很麻煩, 利用 &lt;a class="reference external" href="http://blog.suhen.org/computer/emacs.html"&gt;Emacs&lt;/a&gt; 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!&lt;/p&gt;
+</summary><category term="emacs"></category></entry><entry><title>用Emacs的skeleton快速建立pelican的blog內文</title><link href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="alternate"></link><updated>2013-08-27T18:07:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-27:computer/emacs_skeleton.html</id><summary type="html">&lt;p&gt;用 &lt;a class="reference external" href="|filename|/computer/pelican.rst"&gt;Pelican&lt;/a&gt; 寫blog時都要輸入一堆metadata很麻煩, 利用 &lt;a class="reference external" href="http://blog.suhen.org/computer/emacs.html"&gt;Emacs&lt;/a&gt; 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;define-skeleton&lt;/span&gt; &lt;span class="nv"&gt;insert-pelican-template&lt;/span&gt;
   &lt;span class="s"&gt;&amp;quot;Insert templete for pelican static blog system&amp;quot;&lt;/span&gt;
   &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;skeleton-read&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Title: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nv"&gt;?\n&lt;/span&gt;
@@ -1767,40 +1746,43 @@ d r ;然後按2到36選進位數
 &lt;li&gt;&lt;a class="reference external" href="http://d.hatena.ne.jp/plasticster/20110825/1314271209"&gt;elscreen 改め tabbar のインストールログ - テクノ組曲&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://emacs-fu.blogspot.tw/2009/07/keeping-related-buffers-together-with.html"&gt;emacs-fu: keeping related buffers together with elscreen&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</summary><category term="note"></category></entry><entry><title>Pelican - 邁向靜態blog之路</title><link href="http://blog.suhen.org/computer/pelican.html" rel="alternate"></link><updated>2013-04-11T12:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-11:computer/pelican.html</id><summary type="html">&lt;p&gt;一直想用純HTML來寫blog，做筆記，最早用PHP的 &lt;a class="reference external" href="https://www.dokuwiki.org"&gt;dokuwiki&lt;/a&gt; ，不想被PHP server綁住，改用Emacs的 &lt;a class="reference external" href="http://orgmode.org/"&gt;Orgmode&lt;/a&gt;, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 &lt;a class="reference external" href="http://gentlerunner.org/rest-restructuredtextyu-sphinx.html"&gt;reST&lt;/a&gt; (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。&lt;/p&gt;
+</summary><category term="note"></category></entry><entry><title>Pelican - 邁向靜態blog之路 (reST and markdown)</title><link href="http://blog.suhen.org/computer/pelican.html" rel="alternate"></link><updated>2013-04-11T12:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-11:computer/pelican.html</id><summary type="html">&lt;p&gt;一直想用純HTML來寫blog，做筆記，最早用PHP的&lt;a href="https://www.dokuwiki.org"&gt;Dokuwiki&lt;/a&gt; ，不想被PHP server綁住，改用Emacs的&lt;a href="http://orgmode.org"&gt;Org-mode&lt;/a&gt;, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了&lt;a href="http://blog.suhen.org/computer/rest_sphinx.html"&gt;ReStructuredText&lt;/a&gt;, 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。&lt;/p&gt;
 &lt;p&gt;用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually"&gt;Creating Project Pages manually · GitHub Help&lt;/a&gt;&lt;/p&gt;
-&lt;div class="section" id="quick-start"&gt;
-&lt;h2&gt;Quick-start&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://help.github.com/articles/creating-project-pages-manually"&gt;Creating Project Pages manually · GitHub Help&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Quick-start&lt;/h1&gt;
 &lt;p&gt;安裝:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ pip install pelican
-&lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pelican
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;開始:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ mkdir blog
-$ cd blog
-$ pelican-quickstart
-&lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir blog
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
+&lt;span class="nv"&gt;$ &lt;/span&gt;pelican-quickstart
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;快速產生相關的設定&lt;/p&gt;
 &lt;p&gt;寫第一篇文章:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ content/first.rst
-&lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vim content/first.rst
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;工具指令:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ make html # 顧名思義
-$ make clean
-$ make rsync_upload # 用rsync上傳到你的ssh host
-$ make serve # 啟動python的SimpleHTTPServer
-$ make devserver # 修改rst會自動reload, 重啓server
-$ make github #自動執行ghp-import到github pages
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id1"&gt;
-&lt;h2&gt;文章格式&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;make html &lt;span class="c"&gt;# 顧名思義&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;make clean 
+&lt;span class="nv"&gt;$ &lt;/span&gt;make rsync_upload &lt;span class="c"&gt;# 用rsync上傳到你的ssh host&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;make serve &lt;span class="c"&gt;# 啟動python的SimpleHTTPServer&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;make devserver &lt;span class="c"&gt;# 修改rst會自動reload, 重啓server&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;make github &lt;span class="c"&gt;#自動執行ghp-import到github pages&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;文章格式 (reST, markdown)&lt;/h1&gt;
 &lt;p&gt;屬性:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# rst
+hello
+############
 :date: 2013-04-14 (必填)
 :category: music
 :tags: foo, bar
@@ -1808,113 +1790,147 @@ $ make github #自動執行ghp-import到github pages
 :lang:
 :author:
 :status: draft (不會處理)
-&lt;/pre&gt;
-&lt;p&gt;圖片:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-# reST
-.. image:: /path/to/filename.jpg
-   :height: 450 px
-   :width: 600 px
-   :alt: alternate text
 
-# markdown
+#md
+Title: hello
+Date: 2013-04-14 (必填)
+Category: music
+Tags: foo, bar
+...
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;圖片:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# rst
+.. image:: /path/to/filename.jpg
+           :height: 450 px
+           :width: 600 px
+           :alt: alternate text
+
+# md
 ![title](/path/to/filename.jpg)
-&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;連結:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-# reST
-.. `title &amp;lt;http://foo.bar&amp;gt;`__ 跟reST一樣
+&lt;div class="highlight"&gt;&lt;pre&gt;# rst
+`title &amp;lt;http://foo.bar&amp;gt;`__ 跟reST一樣
 
 this is a foo_ .
-.. _foo: http://foo.bar
+_foo: http://foo.bar
+
+# md
+[title](http://foo.bar)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;內部連結:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# reST
+`京都行 &amp;lt;|filename|/travel/2012_kyoto_marathon-1.rst&amp;gt;`_
 
 # markdown
-[title](http://foo.bar)
-&lt;/pre&gt;
-&lt;p&gt;內部連結:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-`京都行 &amp;lt;|filename|/travel/2012_kyoto_marathon-1.rst&amp;gt;`_
-&lt;/pre&gt;
+[玉山小檗](|filename|/nature/plant/0005-玉山小檗.rst)
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;區塊:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# rst
 foo::
 
-spam spam spam spam
-&lt;/pre&gt;
+  spam spam spam spam
+
+# md
+
+    spam spam spam spam
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;syntax highlight:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# rst
 .. code-block:: python
 
 import os
 
+# md
+    :::c++
+    :::python
+    :::text
+&lt;/pre&gt;&lt;/div&gt;
 
-:::c++
-:::python
-:::text
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="git-hub"&gt;
-&lt;h2&gt;git hub&lt;/h2&gt;
-&lt;div class="section" id="id2"&gt;
-&lt;h3&gt;環境設定&lt;/h3&gt;
+
+&lt;h1&gt;git hub&lt;/h1&gt;
+&lt;h2&gt;環境設定&lt;/h2&gt;
 &lt;p&gt;python要用virtualenv才是王道:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ mkvirtualenv sillywalk.org
-$ cd sillkwalk.org
-$ setvirtualenvproject
-$ workon sillywalk.org
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkvirtualenv sillywalk.org
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;sillkwalk.org
+&lt;span class="nv"&gt;$ &lt;/span&gt;setvirtualenvproject
+&lt;span class="nv"&gt;$ &lt;/span&gt;workon sillywalk.org
 
-$ pip install pelican
-$ pip install ghp-import # 方便發佈到github pages的工具
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="html"&gt;
-&lt;h3&gt;產生HTML，發佈&lt;/h3&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pelican
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install ghp-import &lt;span class="c"&gt;# 方便發佈到github pages的工具&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;產生HTML，發佈&lt;/h2&gt;
 &lt;p&gt;產生HTML內容:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ pelican -s pelican.conf.py .
-$ ghp-import output
-$ git push origin gh-pages
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pelican -s pelican.conf.py .
+&lt;span class="nv"&gt;$ &lt;/span&gt;ghp-import output
+&lt;span class="nv"&gt;$ &lt;/span&gt;git push origin gh-pages
 
-# 其實pelican的make就可以了
-$ make github
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="domain"&gt;
-&lt;h3&gt;自訂domain&lt;/h3&gt;
-&lt;ol class="arabic simple"&gt;
+&lt;span class="c"&gt;# 其實pelican的make就可以了&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;make github
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;自訂domain&lt;/h2&gt;
+&lt;ol&gt;
 &lt;li&gt;在你的domain設定指向github的IP&lt;/li&gt;
 &lt;li&gt;在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。&lt;/p&gt;
 &lt;p&gt;先產生content/extra/CNAME，然後在pelicanconf.py加入:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-FILES_TO_COPY = (
-    ('extra/CNAME', 'CNAME'),
+&lt;div class="highlight"&gt;&lt;pre&gt;FILES_TO_COPY = (
+    (&amp;#39;extra/CNAME&amp;#39;, &amp;#39;CNAME&amp;#39;),
 )
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id3"&gt;
-&lt;h2&gt;參考&lt;/h2&gt;
-&lt;div class="section" id="blog-generator"&gt;
-&lt;h3&gt;靜態blog generator&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Hyde (看起來很複雜，沒仔細看) - &lt;a class="reference external" href="http://ringce.com/hyde"&gt;http://ringce.com/hyde&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Nikola 有image gallery (把圖片丟到某個目錄下就好了) - &lt;a class="reference external" href="http://nikola.ralsina.com.ar/"&gt;http://nikola.ralsina.com.ar/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;mynt - &lt;a class="reference external" href="http://mynt.mirroredwhite.com/"&gt;http://mynt.mirroredwhite.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;用reST (reStructuredText) 還是markdown好?&lt;/h1&gt;
+&lt;p&gt;活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。&lt;/p&gt;
+&lt;p&gt;但是reST還是有一些很討厭的地方，像:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;連結的語法我永遠很難記得，都是用自己寫的javascript bookmarklet解決&lt;/li&gt;
+&lt;li&gt;連結跟內容文字之間要有空白，不然會錯，除非加上跳脫字元 &lt;strong&gt;/&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;標題用 ######...，長度要跟標題文字一樣長，雖然編輯器都有快速鍵可以補齊，但是還是會在修改標題後，常常忘了補滿而出現錯誤&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="deploy-to-github"&gt;
-&lt;h3&gt;deploy to github&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew"&gt;Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html"&gt;Tips — Pelican 3 documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages"&gt;Setting up a custom domain with Pages · GitHub Help&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;簡潔的markdown實在比reST好用很多，不過，預設沒有表格 (table)的語法。所以，如果用到表格，或是覺得以後要用Sphinx產生文件，減少轉換問題，就用reST，其他一般用markdown。&lt;/p&gt;
+&lt;p&gt;markdown可以直接貼HTML也是超級方便的!&lt;/p&gt;
+&lt;h2&gt;補充&lt;/h2&gt;
+&lt;p&gt;bookmarklet:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// reST&lt;/span&gt;
+&lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;`&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39; &amp;lt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;gt;`__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
+&lt;span class="c1"&gt;// markdown&lt;/span&gt;
+&lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;[&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;](&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;參考&lt;/h1&gt;
+&lt;h2&gt;靜態blog generator&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hyde (看起來很複雜，沒仔細看) - http://ringce.com/hyde&lt;/li&gt;
+&lt;li&gt;Nikola 有image gallery (把圖片丟到某個目錄下就好了) - http://nikola.ralsina.com.ar/&lt;/li&gt;
+&lt;li&gt;mynt - http://mynt.mirroredwhite.com/&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</summary><category term="note"></category></entry><entry><title>Scripting 比較 (draft)</title><link href="http://blog.suhen.org/computer/scripting-bi-jiao-draft.html" rel="alternate"></link><updated>2013-04-09T11:38:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/scripting-bi-jiao-draft.html</id><summary type="html">&lt;p&gt;PHP, Python, Javascript, Lua&lt;/p&gt;
+&lt;h2&gt;deploy to github&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew"&gt;Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://docs.getpelican.com/en/3.0/tips.html"&gt;Tips — Pelican 3 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages"&gt;Setting up a custom domain with Pages · GitHub Help&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;syntax&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://markdown.tw/"&gt;Markdown 語法說明&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>Scripting 比較 (draft)</title><link href="http://blog.suhen.org/computer/scripting-bi-jiao-draft.html" rel="alternate"></link><updated>2013-04-09T11:38:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/scripting-bi-jiao-draft.html</id><summary type="html">&lt;p&gt;PHP, Python, Javascript, Lua&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;易搞混&lt;/h2&gt;
 &lt;div class="section" id="hash-dictionary-table"&gt;

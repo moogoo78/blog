@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>Pelican - 邁向靜態blog之路</title>
+        <title>Pelican - 邁向靜態blog之路 (reST and markdown)</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog / 孢子的成長 Atom Feed" />
                 
@@ -31,7 +31,7 @@
     <header>
       <h1 class="entry-title">
         <a href="http://blog.suhen.org/computer/pelican.html" rel="bookmark"
-           title="Permalink to Pelican - 邁向靜態blog之路">Pelican - 邁向靜態blog之路</a></h1>
+           title="Permalink to Pelican - 邁向靜態blog之路 (reST and markdown)">Pelican - 邁向靜態blog之路 (reST and markdown)</a></h1>
           </header>
 
     <div class="entry-content">
@@ -42,40 +42,43 @@
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
-</footer><!-- /.post-info -->      <p>一直想用純HTML來寫blog，做筆記，最早用PHP的 <a class="reference external" href="https://www.dokuwiki.org">dokuwiki</a> ，不想被PHP server綁住，改用Emacs的 <a class="reference external" href="http://orgmode.org/">Orgmode</a>, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了 <a class="reference external" href="http://gentlerunner.org/rest-restructuredtextyu-sphinx.html">reST</a> (ReStructuredText), 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。</p>
+</footer><!-- /.post-info -->      <p>一直想用純HTML來寫blog，做筆記，最早用PHP的<a href="https://www.dokuwiki.org">Dokuwiki</a> ，不想被PHP server綁住，改用Emacs的<a href="http://orgmode.org">Org-mode</a>, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了<a href="http://blog.suhen.org/computer/rest_sphinx.html">ReStructuredText</a>, 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。</p>
 <p>用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。</p>
-<p><a class="reference external" href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
-<div class="section" id="quick-start">
-<h2>Quick-start</h2>
+<p><a href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
+<h1>Quick-start</h1>
 <p>安裝:</p>
-<pre class="literal-block">
-$ pip install pelican
-</pre>
+<div class="highlight"><pre><span class="nv">$ </span>pip install pelican
+</pre></div>
+
+
 <p>開始:</p>
-<pre class="literal-block">
-$ mkdir blog
-$ cd blog
-$ pelican-quickstart
-</pre>
+<div class="highlight"><pre><span class="nv">$ </span>mkdir blog
+<span class="nv">$ </span><span class="nb">cd </span>blog
+<span class="nv">$ </span>pelican-quickstart
+</pre></div>
+
+
 <p>快速產生相關的設定</p>
 <p>寫第一篇文章:</p>
-<pre class="literal-block">
-$ content/first.rst
-</pre>
+<div class="highlight"><pre><span class="nv">$ </span>vim content/first.rst
+</pre></div>
+
+
 <p>工具指令:</p>
-<pre class="literal-block">
-$ make html # 顧名思義
-$ make clean
-$ make rsync_upload # 用rsync上傳到你的ssh host
-$ make serve # 啟動python的SimpleHTTPServer
-$ make devserver # 修改rst會自動reload, 重啓server
-$ make github #自動執行ghp-import到github pages
-</pre>
-</div>
-<div class="section" id="id1">
-<h2>文章格式</h2>
+<div class="highlight"><pre><span class="nv">$ </span>make html <span class="c"># 顧名思義</span>
+<span class="nv">$ </span>make clean 
+<span class="nv">$ </span>make rsync_upload <span class="c"># 用rsync上傳到你的ssh host</span>
+<span class="nv">$ </span>make serve <span class="c"># 啟動python的SimpleHTTPServer</span>
+<span class="nv">$ </span>make devserver <span class="c"># 修改rst會自動reload, 重啓server</span>
+<span class="nv">$ </span>make github <span class="c">#自動執行ghp-import到github pages</span>
+</pre></div>
+
+
+<h1>文章格式 (reST, markdown)</h1>
 <p>屬性:</p>
-<pre class="literal-block">
+<div class="highlight"><pre># rst
+hello
+############
 :date: 2013-04-14 (必填)
 :category: music
 :tags: foo, bar
@@ -83,113 +86,147 @@ $ make github #自動執行ghp-import到github pages
 :lang:
 :author:
 :status: draft (不會處理)
-</pre>
-<p>圖片:</p>
-<pre class="literal-block">
-# reST
-.. image:: /path/to/filename.jpg
-   :height: 450 px
-   :width: 600 px
-   :alt: alternate text
 
-# markdown
+#md
+Title: hello
+Date: 2013-04-14 (必填)
+Category: music
+Tags: foo, bar
+...
+</pre></div>
+
+
+<p>圖片:</p>
+<div class="highlight"><pre># rst
+.. image:: /path/to/filename.jpg
+           :height: 450 px
+           :width: 600 px
+           :alt: alternate text
+
+# md
 ![title](/path/to/filename.jpg)
-</pre>
+</pre></div>
+
+
 <p>連結:</p>
-<pre class="literal-block">
-# reST
-.. `title &lt;http://foo.bar&gt;`__ 跟reST一樣
+<div class="highlight"><pre># rst
+`title &lt;http://foo.bar&gt;`__ 跟reST一樣
 
 this is a foo_ .
-.. _foo: http://foo.bar
+_foo: http://foo.bar
+
+# md
+[title](http://foo.bar)
+</pre></div>
+
+
+<p>內部連結:</p>
+<div class="highlight"><pre># reST
+`京都行 &lt;|filename|/travel/2012_kyoto_marathon-1.rst&gt;`_
 
 # markdown
-[title](http://foo.bar)
-</pre>
-<p>內部連結:</p>
-<pre class="literal-block">
-`京都行 &lt;|filename|/travel/2012_kyoto_marathon-1.rst&gt;`_
-</pre>
+[玉山小檗](|filename|/nature/plant/0005-玉山小檗.rst)
+</pre></div>
+
+
 <p>區塊:</p>
-<pre class="literal-block">
+<div class="highlight"><pre># rst
 foo::
 
-spam spam spam spam
-</pre>
+  spam spam spam spam
+
+# md
+
+    spam spam spam spam
+</pre></div>
+
+
 <p>syntax highlight:</p>
-<pre class="literal-block">
+<div class="highlight"><pre># rst
 .. code-block:: python
 
 import os
 
+# md
+    :::c++
+    :::python
+    :::text
+</pre></div>
 
-:::c++
-:::python
-:::text
-</pre>
-</div>
-<div class="section" id="git-hub">
-<h2>git hub</h2>
-<div class="section" id="id2">
-<h3>環境設定</h3>
+
+<h1>git hub</h1>
+<h2>環境設定</h2>
 <p>python要用virtualenv才是王道:</p>
-<pre class="literal-block">
-$ mkvirtualenv sillywalk.org
-$ cd sillkwalk.org
-$ setvirtualenvproject
-$ workon sillywalk.org
+<div class="highlight"><pre><span class="nv">$ </span>mkvirtualenv sillywalk.org
+<span class="nv">$ </span><span class="nb">cd </span>sillkwalk.org
+<span class="nv">$ </span>setvirtualenvproject
+<span class="nv">$ </span>workon sillywalk.org
 
-$ pip install pelican
-$ pip install ghp-import # 方便發佈到github pages的工具
-</pre>
-</div>
-<div class="section" id="html">
-<h3>產生HTML，發佈</h3>
+<span class="nv">$ </span>pip install pelican
+<span class="nv">$ </span>pip install ghp-import <span class="c"># 方便發佈到github pages的工具</span>
+</pre></div>
+
+
+<h2>產生HTML，發佈</h2>
 <p>產生HTML內容:</p>
-<pre class="literal-block">
-$ pelican -s pelican.conf.py .
-$ ghp-import output
-$ git push origin gh-pages
+<div class="highlight"><pre><span class="nv">$ </span>pelican -s pelican.conf.py .
+<span class="nv">$ </span>ghp-import output
+<span class="nv">$ </span>git push origin gh-pages
 
-# 其實pelican的make就可以了
-$ make github
-</pre>
-</div>
-<div class="section" id="domain">
-<h3>自訂domain</h3>
-<ol class="arabic simple">
+<span class="c"># 其實pelican的make就可以了</span>
+<span class="nv">$ </span>make github
+</pre></div>
+
+
+<h2>自訂domain</h2>
+<ol>
 <li>在你的domain設定指向github的IP</li>
 <li>在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain</li>
 </ol>
 <p>放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。</p>
 <p>先產生content/extra/CNAME，然後在pelicanconf.py加入:</p>
-<pre class="literal-block">
-FILES_TO_COPY = (
-    ('extra/CNAME', 'CNAME'),
+<div class="highlight"><pre>FILES_TO_COPY = (
+    (&#39;extra/CNAME&#39;, &#39;CNAME&#39;),
 )
-</pre>
-</div>
-</div>
-<div class="section" id="id3">
-<h2>參考</h2>
-<div class="section" id="blog-generator">
-<h3>靜態blog generator</h3>
-<ul class="simple">
-<li>Hyde (看起來很複雜，沒仔細看) - <a class="reference external" href="http://ringce.com/hyde">http://ringce.com/hyde</a></li>
-<li>Nikola 有image gallery (把圖片丟到某個目錄下就好了) - <a class="reference external" href="http://nikola.ralsina.com.ar/">http://nikola.ralsina.com.ar/</a></li>
-<li>mynt - <a class="reference external" href="http://mynt.mirroredwhite.com/">http://mynt.mirroredwhite.com/</a></li>
-</ul>
-</div>
-<div class="section" id="deploy-to-github">
-<h3>deploy to github</h3>
-<ul class="simple">
-<li><a class="reference external" href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew">Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry</a></li>
-<li><a class="reference external" href="http://docs.getpelican.com/en/3.0/tips.html">Tips — Pelican 3 documentation</a></li>
-<li><a class="reference external" href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">Setting up a custom domain with Pages · GitHub Help</a></li>
-</ul>
-</div>
-</div>
+</pre></div>
 
+
+<h1>用reST (reStructuredText) 還是markdown好?</h1>
+<p>活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。</p>
+<p>但是reST還是有一些很討厭的地方，像:</p>
+<ul>
+<li>連結的語法我永遠很難記得，都是用自己寫的javascript bookmarklet解決</li>
+<li>連結跟內容文字之間要有空白，不然會錯，除非加上跳脫字元 <strong>/</strong></li>
+<li>標題用 ######...，長度要跟標題文字一樣長，雖然編輯器都有快速鍵可以補齊，但是還是會在修改標題後，常常忘了補滿而出現錯誤</li>
+</ul>
+<p>簡潔的markdown實在比reST好用很多，不過，預設沒有表格 (table)的語法。所以，如果用到表格，或是覺得以後要用Sphinx產生文件，減少轉換問題，就用reST，其他一般用markdown。</p>
+<p>markdown可以直接貼HTML也是超級方便的!</p>
+<h2>補充</h2>
+<p>bookmarklet:</p>
+<div class="highlight"><pre><span class="c1">// reST</span>
+<span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;`&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; &lt;&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;&gt;`__&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&#39;</span><span class="p">);</span><span class="nx">win</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;form&gt;&lt;textarea name=&quot;a&quot; rows=&quot;5&quot; cols=&quot;50&quot; onClick=&quot;javascript:this.form.a.focus();this.form.a.select();&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">t</span><span class="o">+</span><span class="s1">&#39;&lt;/textarea&gt;&lt;/form&gt;&#39;</span><span class="p">);})()</span>
+<span class="c1">// markdown</span>
+<span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;[&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;](&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;)&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&#39;</span><span class="p">);</span><span class="nx">win</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;form&gt;&lt;textarea name=&quot;a&quot; rows=&quot;5&quot; cols=&quot;50&quot; onClick=&quot;javascript:this.form.a.focus();this.form.a.select();&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">t</span><span class="o">+</span><span class="s1">&#39;&lt;/textarea&gt;&lt;/form&gt;&#39;</span><span class="p">);})()</span>
+</pre></div>
+
+
+<h1>參考</h1>
+<h2>靜態blog generator</h2>
+<ul>
+<li>Hyde (看起來很複雜，沒仔細看) - http://ringce.com/hyde</li>
+<li>Nikola 有image gallery (把圖片丟到某個目錄下就好了) - http://nikola.ralsina.com.ar/</li>
+<li>mynt - http://mynt.mirroredwhite.com/</li>
+</ul>
+<h2>deploy to github</h2>
+<ul>
+<li><a href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew">Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry</a></li>
+<li><a href="http://docs.getpelican.com/en/3.0/tips.html">Tips — Pelican 3 documentation</a></li>
+<li><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">Setting up a custom domain with Pages · GitHub Help</a></li>
+</ul>
+<h2>syntax</h2>
+<ul>
+<li><a href="http://markdown.tw/">Markdown 語法說明</a></li>
+</ul>
     </div><!-- /.entry-content -->
         <div class="comments">
       <h2>Comments !</h2>
