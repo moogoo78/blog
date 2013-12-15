@@ -7,6 +7,6 @@ Slug: taxonomy
 # 依分佈
 ## 高山
 
-* [玉山小檗](|filename|/nature/plant/0005-玉山小檗.rst)
+* [小檗科: 玉山小檗、台灣小檗](|filename|/nature/plant/family-小檗科.rst)
 
 
