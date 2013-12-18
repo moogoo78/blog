@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u'moogoo'
-SITENAME = u" Suhen's blog / 孢子的成長"
+#SITENAME = u" Suhen's blog / 孢子的成長"
+SITENAME = u" Suhen's blog"
 #SITEURL = 'http://blog.suhen.org'
 SITEURL = ''
 

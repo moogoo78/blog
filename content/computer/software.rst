@@ -108,7 +108,7 @@ DevTools
 Command Line
 ===================
 
-tumx
+tmux
 ---------
 # 開新視窗
 C-b c
