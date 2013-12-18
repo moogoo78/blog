@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog / 孢子的成長</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-11-12T17:31:00+08:00</updated><entry><title>Deploying Flask (Python) to AWS Elastic Beanstalk</title><link href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html" rel="alternate"></link><updated>2013-11-12T17:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:computer/aws_elastic_beanstalk_flask.html</id><summary type="html">&lt;h1&gt;quickstart&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-12-18T18:08:00+08:00</updated><entry><title>web develop</title><link href="http://blog.suhen.org/computer/web-develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web-develop.html</id><summary type="html">&lt;h1&gt;layout&lt;/h1&gt;
+&lt;p&gt;圖片塞滿browser&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://paulmason.name/item/full-screen-background-image-pure-css-code"&gt;Full Screen Background Image - Pure CSS Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>Deploying Flask (Python) to AWS Elastic Beanstalk</title><link href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html" rel="alternate"></link><updated>2013-11-12T17:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:computer/aws_elastic_beanstalk_flask.html</id><summary type="html">&lt;h1&gt;quickstart&lt;/h1&gt;
 &lt;h2&gt;1. 安裝eb commend tools&lt;/h2&gt;
 &lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定好路徑(以mac為例), 就可以開始了&lt;/p&gt;
@@ -2813,8 +2817,8 @@ F7 鍵盤瀏覽
 &lt;/div&gt;
 &lt;div class="section" id="command-line"&gt;
 &lt;h2&gt;Command Line&lt;/h2&gt;
-&lt;div class="section" id="tumx"&gt;
-&lt;h3&gt;tumx&lt;/h3&gt;
+&lt;div class="section" id="tmux"&gt;
+&lt;h3&gt;tmux&lt;/h3&gt;
 &lt;p&gt;# 開新視窗
 C-b c&lt;/p&gt;
 &lt;p&gt;# 前/後一個視窗
