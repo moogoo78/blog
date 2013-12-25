@@ -14,7 +14,9 @@ path::
   (Mac)$ /Library/Python/2.7/site-packages
 
 
-snippets::
+snippets:
+
+.. code-block::
 
   #!/usr/bin/env python
   # -.- coding: utf-8 -.-
@@ -24,6 +26,10 @@ snippets::
       if len(sys.argv) > 1:
           main(sys.argv[1])
 
+
+.. code-block::
+
+  dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}
 
 if/else三元運算 (ternary operator)::
 
@@ -264,6 +270,13 @@ array排序
   # [{'title': 'ghi', 'date': 0}, {'title': 'abc', 'date': 1}, {'title': 'def', 'date': 2}]
   print sorted(list, key=lambda x: x['date'], reverse=True)
   # [{'title': 'def', 'date': 2}, {'title': 'abc', 'date': 1}, {'title': 'ghi', 'date': 0}]
+
+
+simple http server
+---------------------
+在當下目錄::
+
+  $ python -m SimpleHTTPServer # 預設的port 8000, http://127.0.0.1:8000
 
 
 Coding Style
