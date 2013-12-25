@@ -16,7 +16,7 @@ path::
 
 snippets:
 
-.. code-block::
+.. code-block:: python
 
   #!/usr/bin/env python
   # -.- coding: utf-8 -.-
@@ -27,7 +27,7 @@ snippets:
           main(sys.argv[1])
 
 
-.. code-block::
+.. code-block:: python
 
   dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}
 
