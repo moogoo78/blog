@@ -49,35 +49,16 @@
 (Mac)$ /Library/Python/2.7/site-packages
 </pre>
 <p>snippets:</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/moogoo/gh/blog.suhen.org/content/computer/python.rst</tt>, line 19)</p>
-<p>Error in &quot;code-block&quot; directive:
-1 argument(s) required, 0 supplied.</p>
-<pre class="literal-block">
-.. code-block::
+<div class="highlight"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -.- coding: utf-8 -.-</span>
 
-  #!/usr/bin/env python
-  # -.- coding: utf-8 -.-
-
-  import sys
-  if __name__ == '__main__':
-      if len(sys.argv) &gt; 1:
-          main(sys.argv[1])
-
-
-</pre>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/moogoo/gh/blog.suhen.org/content/computer/python.rst</tt>, line 30)</p>
-<p>Error in &quot;code-block&quot; directive:
-1 argument(s) required, 0 supplied.</p>
-<pre class="literal-block">
-.. code-block::
-
-  dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}
-
-</pre>
-</div>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">main</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+<div class="highlight"><pre><span class="n">dishes</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;eggs&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;sausage&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;bacon&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;spam&#39;</span><span class="p">:</span> <span class="mi">500</span><span class="p">}</span>
+</pre></div>
 <p>if/else三元運算 (ternary operator):</p>
 <pre class="literal-block">
 A = Y if X else Z

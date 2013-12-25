@@ -3657,35 +3657,16 @@ As she comes rolling by.
 (Mac)$ /Library/Python/2.7/site-packages
 &lt;/pre&gt;
 &lt;p&gt;snippets:&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/moogoo/gh/blog.suhen.org/content/computer/python.rst&lt;/tt&gt;, line 19)&lt;/p&gt;
-&lt;p&gt;Error in &amp;quot;code-block&amp;quot; directive:
-1 argument(s) required, 0 supplied.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. code-block::
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class="c"&gt;# -.- coding: utf-8 -.-&lt;/span&gt;
 
-  #!/usr/bin/env python
-  # -.- coding: utf-8 -.-
-
-  import sys
-  if __name__ == '__main__':
-      if len(sys.argv) &amp;gt; 1:
-          main(sys.argv[1])
-
-
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/moogoo/gh/blog.suhen.org/content/computer/python.rst&lt;/tt&gt;, line 30)&lt;/p&gt;
-&lt;p&gt;Error in &amp;quot;code-block&amp;quot; directive:
-1 argument(s) required, 0 supplied.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. code-block::
-
-  dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}
-
-&lt;/pre&gt;
-&lt;/div&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;dishes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;eggs&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;sausage&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;bacon&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;spam&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;if/else三元運算 (ternary operator):&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 A = Y if X else Z
