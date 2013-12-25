@@ -27,6 +27,8 @@ snippets:
           main(sys.argv[1])
 
 
+struct dict:
+
 .. code-block:: python
 
   dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}
