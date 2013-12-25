@@ -45,15 +45,35 @@
 (Mac)$ /Library/Python/2.7/site-packages
 </pre>
 <p>snippets:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/moogoo/gh/blog.suhen.org/content/computer/python.rst</tt>, line 19)</p>
+<p>Error in &quot;code-block&quot; directive:
+1 argument(s) required, 0 supplied.</p>
 <pre class="literal-block">
-#!/usr/bin/env python
-# -.- coding: utf-8 -.-
+.. code-block::
 
-import sys
-if __name__ == '__main__':
-    if len(sys.argv) &gt; 1:
-        main(sys.argv[1])
+  #!/usr/bin/env python
+  # -.- coding: utf-8 -.-
+
+  import sys
+  if __name__ == '__main__':
+      if len(sys.argv) &gt; 1:
+          main(sys.argv[1])
+
+
 </pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/moogoo/gh/blog.suhen.org/content/computer/python.rst</tt>, line 30)</p>
+<p>Error in &quot;code-block&quot; directive:
+1 argument(s) required, 0 supplied.</p>
+<pre class="literal-block">
+.. code-block::
+
+  dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}
+
+</pre>
+</div>
 <p>if/else三元運算 (ternary operator):</p>
 <pre class="literal-block">
 A = Y if X else Z
@@ -274,6 +294,13 @@ print sorted(list, key=lambda x: x['date'])
 # [{'title': 'ghi', 'date': 0}, {'title': 'abc', 'date': 1}, {'title': 'def', 'date': 2}]
 print sorted(list, key=lambda x: x['date'], reverse=True)
 # [{'title': 'def', 'date': 2}, {'title': 'abc', 'date': 1}, {'title': 'ghi', 'date': 0}]
+</pre>
+</div>
+<div class="section" id="simple-http-server">
+<h3>simple http server</h3>
+<p>在當下目錄:</p>
+<pre class="literal-block">
+$ python -m SimpleHTTPServer # 預設的port 8000, http://127.0.0.1:8000
 </pre>
 </div>
 </div>

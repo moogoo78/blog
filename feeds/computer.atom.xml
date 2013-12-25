@@ -324,15 +324,35 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 (Mac)$ /Library/Python/2.7/site-packages
 &lt;/pre&gt;
 &lt;p&gt;snippets:&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/moogoo/gh/blog.suhen.org/content/computer/python.rst&lt;/tt&gt;, line 19)&lt;/p&gt;
+&lt;p&gt;Error in &amp;quot;code-block&amp;quot; directive:
+1 argument(s) required, 0 supplied.&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-#!/usr/bin/env python
-# -.- coding: utf-8 -.-
+.. code-block::
 
-import sys
-if __name__ == '__main__':
-    if len(sys.argv) &amp;gt; 1:
-        main(sys.argv[1])
+  #!/usr/bin/env python
+  # -.- coding: utf-8 -.-
+
+  import sys
+  if __name__ == '__main__':
+      if len(sys.argv) &amp;gt; 1:
+          main(sys.argv[1])
+
+
 &lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/moogoo/gh/blog.suhen.org/content/computer/python.rst&lt;/tt&gt;, line 30)&lt;/p&gt;
+&lt;p&gt;Error in &amp;quot;code-block&amp;quot; directive:
+1 argument(s) required, 0 supplied.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. code-block::
+
+  dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}
+
+&lt;/pre&gt;
+&lt;/div&gt;
 &lt;p&gt;if/else三元運算 (ternary operator):&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 A = Y if X else Z
@@ -553,6 +573,13 @@ print sorted(list, key=lambda x: x['date'])
 # [{'title': 'ghi', 'date': 0}, {'title': 'abc', 'date': 1}, {'title': 'def', 'date': 2}]
 print sorted(list, key=lambda x: x['date'], reverse=True)
 # [{'title': 'def', 'date': 2}, {'title': 'abc', 'date': 1}, {'title': 'ghi', 'date': 0}]
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="simple-http-server"&gt;
+&lt;h3&gt;simple http server&lt;/h3&gt;
+&lt;p&gt;在當下目錄:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ python -m SimpleHTTPServer # 預設的port 8000, http://127.0.0.1:8000
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
