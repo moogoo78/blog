@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title> Suhen's blog - computer</title>
+        <title>[Lua] table sort by key</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog Atom Feed" />
                 
@@ -27,70 +27,66 @@
                                                 </ul></nav>
         </header><!-- /#banner -->
         <section id="content" class="body">
-<h1>computer</h1>
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://blog.suhen.org/computer/lua_table_sort_by_key.html" rel="bookmark"
+           title="Permalink to [Lua] table sort by key">[Lua] table sort by key</a></h1>
+          </header>
 
-<dl>
-    <dt>2013-12-27 18:46</dt>
-    <dd><a href="http://blog.suhen.org/computer/lua_table_sort_by_key.html">[Lua] table sort by key</a></dd>
-    <dt>2013-12-18 18:08</dt>
-    <dd><a href="http://blog.suhen.org/computer/web-develop.html">web develop</a></dd>
-    <dt>2013-11-12 17:31</dt>
-    <dd><a href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html">Deploying Flask (Python) to AWS Elastic Beanstalk</a></dd>
-    <dt>2013-11-07 20:00</dt>
-    <dd><a href="http://blog.suhen.org/computer/corona_sdk_facebook.html">Corona SDK串接Facebook</a></dd>
-    <dt>2013-11-02 00:46</dt>
-    <dd><a href="http://blog.suhen.org/computer/mac_leopard_mavericks.html">[Mac] 從Leopard升級到Mavericks</a></dd>
-    <dt>2013-10-01 12:36</dt>
-    <dd><a href="http://blog.suhen.org/computer/lua_string.html">Lua String / 字串</a></dd>
-    <dt>2013-10-01 10:31</dt>
-    <dd><a href="http://blog.suhen.org/computer/corona_sdk_info.html">[snippet] Corona SDK 顯示各種資訊</a></dd>
-    <dt>2013-09-23 12:26</dt>
-    <dd><a href="http://blog.suhen.org/computer/lua_debug.html">[電腦] 小工具 - Lua的debug函式</a></dd>
-    <dt>2013-09-23 00:39</dt>
-    <dd><a href="http://blog.suhen.org/computer/lua_ternary.html">Lua的3元運算子 (Ternary Operator)</a></dd>
-    <dt>2013-08-30 12:06</dt>
-    <dd><a href="http://blog.suhen.org/computer/emacs_macro.html">強大的Emacs Macro 巨集</a></dd>
-    <dt>2013-08-27 18:07</dt>
-    <dd><a href="http://blog.suhen.org/computer/emacs_skeleton.html">用Emacs的skeleton快速建立pelican的blog內文</a></dd>
-    <dt>2013-07-10 14:02</dt>
-    <dd><a href="http://blog.suhen.org/computer/python.html">Python</a></dd>
-    <dt>2013-06-30 22:22</dt>
-    <dd><a href="http://blog.suhen.org/computer/html-css.html">HTML CSS</a></dd>
-    <dt>2013-06-27 11:32</dt>
-    <dd><a href="http://blog.suhen.org/computer/emacs_newline.html">[computer] Emacs輸入newline符號</a></dd>
-    <dt>2013-06-25 10:07</dt>
-    <dd><a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html">[computer] 善用Emacs的replace-regexp</a></dd>
-    <dt>2013-06-17 14:55</dt>
-    <dd><a href="http://blog.suhen.org/computer/emacs_dired_rename.html">[Computer] 用Emacs dired-mode批次改檔名</a></dd>
-    <dt>2013-05-26 15:21</dt>
-    <dd><a href="http://blog.suhen.org/computer/irc_screen_irssi.html">用screen+irssi上IRC聊天不斷線</a></dd>
-    <dt>2013-05-09 18:23</dt>
-    <dd><a href="http://blog.suhen.org/computer/database_docs.html">Database筆記 (MySQL, SQLite)</a></dd>
-    <dt>2013-04-26 18:37</dt>
-    <dd><a href="http://blog.suhen.org/computer/emacs.html">Emacs 小抄</a></dd>
-    <dt>2013-04-23 17:28</dt>
-    <dd><a href="http://blog.suhen.org/computer/emacs_elscreen.html">Elscreen - Emacs好用的tab mode</a></dd>
-    <dt>2013-04-11 12:57</dt>
-    <dd><a href="http://blog.suhen.org/computer/pelican.html">Pelican - 邁向靜態blog之路 (reST and markdown)</a></dd>
-    <dt>2013-04-09 11:38</dt>
-    <dd><a href="http://blog.suhen.org/computer/scripting-bi-jiao-draft.html">Scripting 比較 (draft)</a></dd>
-    <dt>2013-04-09 11:36</dt>
-    <dd><a href="http://blog.suhen.org/computer/python-web-framework.html">Python Web Framework</a></dd>
-    <dt>2013-04-02 15:53</dt>
-    <dd><a href="http://blog.suhen.org/computer/blog.html">blog</a></dd>
-    <dt>2013-04-02 11:39</dt>
-    <dd><a href="http://blog.suhen.org/computer/ganglia.html">Ganglia</a></dd>
-    <dt>2013-03-28 00:00</dt>
-    <dd><a href="http://blog.suhen.org/computer/rest_sphinx.html">reST – reStructuredText與Sphinx</a></dd>
-    <dt>2013-03-28 00:00</dt>
-    <dd><a href="http://blog.suhen.org/computer/software.html">Software</a></dd>
-    <dt>2013-03-28 00:00</dt>
-    <dd><a href="http://blog.suhen.org/computer/unix_command.html">UNIX Command 常用指令</a></dd>
-    <dt>2013-03-23 00:00</dt>
-    <dd><a href="http://blog.suhen.org/computer/git.html">GIT</a></dd>
-    <dt>2013-03-21 02:09</dt>
-    <dd><a href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html">Dynamic DNS setting for Namecheap on Mac OSX</a></dd>
-</dl>
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2013-12-27T18:46:00">
+                2013-12-27 18:46
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/lua.html">lua</a></p>
+</footer><!-- /.post-info -->      <p>用key來排序:</p>
+<div class="highlight"><pre><span class="p">:::</span> <span class="n">lua</span>
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">pairsByKeys</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">a</span> <span class="o">=</span> <span class="p">{}</span>
+  <span class="k">for</span> <span class="n">n</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">do</span> <span class="nb">table.insert</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="k">end</span>
+  <span class="nb">table.sort</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>      <span class="c1">-- iterator variable</span>
+  <span class="kd">local</span> <span class="n">iter</span> <span class="o">=</span> <span class="k">function</span> <span class="p">()</span>   <span class="c1">-- iterator function</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">then</span> <span class="k">return</span> <span class="kc">nil</span>
+    <span class="k">else</span> <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">t</span><span class="p">[</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+  <span class="k">return</span> <span class="n">iter</span>
+<span class="k">end</span>
+
+<span class="n">lines</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">luaH_set</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="n">luaH_get</span> <span class="o">=</span> <span class="mi">24</span><span class="p">,</span>
+  <span class="n">luaH_present</span> <span class="o">=</span> <span class="mi">48</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">line</span> <span class="k">in</span> <span class="n">pairsByKeys</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span> <span class="k">do</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+
+
+<p>來源: http://www.lua.org/pil/19.3.html</p>
+    </div><!-- /.entry-content -->
+        <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "computer/lua_table_sort_by_key.html";
+        var disqus_url = "http://blog.suhen.org/computer/lua_table_sort_by_key.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://suhenorg.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+  </article>
 </section>
         <section id="extras" class="body">
                         <div class="blogroll">
