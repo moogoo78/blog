@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2013-12-27T18:46:00+08:00</updated><entry><title>[Lua] table sort by key</title><link href="http://blog.suhen.org/computer/lua_table_sort_by_key.html" rel="alternate"></link><updated>2013-12-27T18:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-27:computer/lua_table_sort_by_key.html</id><summary type="html">&lt;p&gt;用key來排序:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;:::&lt;/span&gt; &lt;span class="n"&gt;lua&lt;/span&gt;
-&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;pairsByKeys&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;pairsByKeys&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
   &lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
   &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;pairs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="nb"&gt;table.insert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;end&lt;/span&gt;
   &lt;span class="nb"&gt;table.sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -27,7 +26,7 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;來源: http://www.lua.org/pil/19.3.html&lt;/p&gt;</summary><category term="lua"></category></entry><entry><title>web develop</title><link href="http://blog.suhen.org/computer/web-develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web-develop.html</id><summary type="html">&lt;h1&gt;layout&lt;/h1&gt;
+&lt;p&gt;來源: &lt;a href="http://www.lua.org/pil/19.3.html"&gt;Programming in Lua : 19.3&lt;/a&gt;&lt;/p&gt;</summary><category term="lua"></category></entry><entry><title>web develop</title><link href="http://blog.suhen.org/computer/web-develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web-develop.html</id><summary type="html">&lt;h1&gt;layout&lt;/h1&gt;
 &lt;p&gt;圖片塞滿browser&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://paulmason.name/item/full-screen-background-image-pure-css-code"&gt;Full Screen Background Image - Pure CSS Code&lt;/a&gt;&lt;/li&gt;
