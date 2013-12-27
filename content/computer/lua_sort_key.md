@@ -7,7 +7,7 @@ Slug: lua_table_sort_by_key
 
 用key來排序:
 
-    ::: lua
+    :::lua
     local function pairsByKeys (t, f)
       local a = {}
       for n in pairs(t) do table.insert(a, n) end
@@ -32,4 +32,4 @@ Slug: lua_table_sort_by_key
       print(name, line)
     end
 
-來源: http://www.lua.org/pil/19.3.html
+來源: [Programming in Lua : 19.3](http://www.lua.org/pil/19.3.html)
