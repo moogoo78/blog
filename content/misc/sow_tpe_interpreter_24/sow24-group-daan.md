@@ -15,6 +15,8 @@ Slug: sow_taipei_interpreter_24-group-daan-1
 
 開場時間不要拖太長，影響主題
 
+![](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280003.JPG)
+
 # 植物介紹
 
 ## 島榕
@@ -50,6 +52,10 @@ Slug: sow_taipei_interpreter_24-group-daan-1
 * 日本圍棋棋盤用梔的木頭做，腳用梔子花的果實，代表觀棋不語真君子
 * 棋盤腳的果實就是長這個樣子
 
+三角托葉
+
+![三角托葉](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280005.JPG)
+
 ## 茄冬
 
 * 要念jia，(加冬，過一年多一歲)，秋風木
@@ -65,6 +71,14 @@ Slug: sow_taipei_interpreter_24-group-daan-1
 * 紅雞油，救荒樹
 * 枝條下垂，腋生花
 * 榆科葉有歪基，頁面完全凹下，頁背突起
+
+![](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280006.JPG)
+
+![](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280007.JPG)
+
+![](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280009.JPG)
+
+![](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280011.JPG)
 
 ## 豔紫荊
 
