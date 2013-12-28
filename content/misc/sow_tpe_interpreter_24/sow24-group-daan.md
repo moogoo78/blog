@@ -6,7 +6,6 @@ Slug: sow_taipei_interpreter_24-group-daan-1
 
 講師: 玉山圓柏
 
-
 #  開場
 
 * 台北市最大公園: 1. 青年公園 2. 大安森林公園 (生物多樣性比較多, 有200多種)
@@ -96,6 +95,7 @@ Slug: sow_taipei_interpreter_24-group-daan-1
 
 解說tips:
 
+    :::text
     很多成語可以讓大家發想
     食衣住行的應用
 
