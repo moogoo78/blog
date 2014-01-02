@@ -2,7 +2,8 @@
 #############
 :date: 2013-08-22 00:54
 :category: book
-:slug: quote
+:quote: quote
+:slug: book_quote
 
 
 生命中不能承受之輕, 米蘭昆德拉, 尉遲秀譯, 皇冠叢書
