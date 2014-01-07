@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-01-06T01:16:00+08:00</updated><entry><title>五股定點觀察</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-group-wugu-1.html" rel="alternate"></link><updated>2014-01-06T01:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-01-06:misc/sow_taipei_interpreter_24-group-wugu-1.html</id><summary type="html">&lt;p&gt;今天是星星小隊在五股的第一次活動，活動結束後，剛好是五股組的周周定點解說，就順便參加了。解說員是稻穗，旁邊還有酋長跟小雪跟著補充。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all-zh.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-01-07T11:18:00+08:00</updated><entry><title>2014 第九屆泰雅森林馬拉松</title><link href="http://blog.suhen.org/run/2014_ataya_marathon.html" rel="alternate"></link><updated>2014-01-07T11:18:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-01-07:run/2014_ataya_marathon.html</id><summary type="html">&lt;p&gt;2014-01-04&lt;/p&gt;
+&lt;p&gt;第一次赤腳跑馬拉松，&lt;/p&gt;
+&lt;p&gt;01:56&lt;/p&gt;
+&lt;p&gt;&lt;img alt="照片" src="http://d2kkb4ziuc5v74.cloudfront.net/04339768-f481-4362-bfbf-cb2053490d5d/s600_1390e27e-b61e-4f95-acf0-eca5b3f7540f.jpg" /&gt;
+來源: &lt;a href="http://www.sportsnote.com.tw/running/album_picdata.aspx?id=1390e27e-b61e-4f95-acf0-eca5b3f7540f"&gt;第九屆南投泰雅盃大腳ㄚ森林馬拉松 - 相片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ibodygo.com/web/online_reg/HeightInfo.asp?n=38"&gt;第9屆南投泰雅盃大腳丫森林馬拉松賽&lt;/a&gt;&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>魂牽夢縈 - John Adams的China Gates</title><link href="http://blog.suhen.org/music/john_adams_china_gates.html" rel="alternate"></link><updated>2014-01-06T18:25:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-01-06:music/john_adams_china_gates.html</id><summary type="html">&lt;iframe width="420" height="315" src="//www.youtube.com/embed/kY1PeH9fg5A" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;木琴&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/Ti6Q-RdrsQA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;吉他&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/MB-eTUXzSYs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term=""></category></entry><entry><title>五股定點觀察</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-group-wugu-1.html" rel="alternate"></link><updated>2014-01-06T01:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-01-06:misc/sow_taipei_interpreter_24-group-wugu-1.html</id><summary type="html">&lt;p&gt;今天是星星小隊在五股的第一次活動，活動結束後，剛好是五股組的周周定點解說，就順便參加了。解說員是稻穗，旁邊還有酋長跟小雪跟著補充。&lt;/p&gt;
 &lt;h1&gt;五股溼地短片&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;城市三寶：麻雀、白頭翁、綠繡眼&lt;/li&gt;
@@ -1112,10 +1123,12 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;p&gt;&lt;a href="http://oblitet.blogspot.tw/2013/07/edelweiss.html"&gt;跟我一起 去旅行: Edelweiss&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Edelweiss 真善美&lt;/p&gt;
 &lt;p&gt;二戰時德軍的山地師會特別上阿爾卑斯山取得這種植物配戴在身上, 以象徵山地師的驍勇善戰, 當時101空降師發現敵人身上別有Edelweiss, 因此更加警戒。&lt;/p&gt;</summary><category term="高山"></category><category term="白花"></category><category term="herb"></category><category term="觀察"></category></entry><entry><title>Corona SDK串接Facebook</title><link href="http://blog.suhen.org/computer/corona_sdk_facebook.html" rel="alternate"></link><updated>2013-11-07T20:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-07:computer/corona_sdk_facebook.html</id><summary type="html">&lt;p&gt;Corona SDK提供了&lt;a href="http://docs.coronalabs.com/api/library/facebook/index.html"&gt;facebook API&lt;/a&gt;可以很方便的跟facebook串接。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;先到developers.facebook.com產生一個app，取得app id&lt;/li&gt;
-&lt;li&gt;如果是android的話，需要產生keyhash，回填到developers.facebook.com的app&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h1&gt;1. facebook app id&lt;/h1&gt;
+&lt;p&gt;先到developers.facebook.com產生一個app，取得app id&lt;/p&gt;
+&lt;h1&gt;2. 設定&lt;/h1&gt;
+&lt;h2&gt;Android&lt;/h2&gt;
+&lt;h3&gt;keyhash&lt;/h3&gt;
+&lt;p&gt;如果是android的話，需要產生keyhash，回填到developers.facebook.com的app&lt;/p&gt;
 &lt;p&gt;可以用corona sdk提供的debug.keystore&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;/Applications/CoronaSDK/Resource Library/Android/debug.keystore
 &lt;/pre&gt;&lt;/div&gt;
@@ -1131,7 +1144,10 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;也可以拿來回填~&lt;/p&gt;</summary><category term="corona_sdk"></category><category term="facebook"></category></entry><entry><title>[荒野台北24解] 第一堂室內課 我們的土地 - 認識台灣</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-1.html" rel="alternate"></link><updated>2013-11-05T11:27:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-05:misc/sow_taipei_interpreter_24-1.html</id><summary type="html">&lt;p&gt;自己喜歡觀察大自然，但是都很不專業，很高興參加「荒野保護協會」的第二十四屆解說員訓練，希望多學習認識自然，可以介紹給別人，也同時學習人與人之間的相處。&lt;/p&gt;
+&lt;p&gt;也可以拿來回填~&lt;/p&gt;
+&lt;h3&gt;class name&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ansca&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;corona&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;CoronaActivity&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="corona_sdk"></category><category term="facebook"></category></entry><entry><title>[荒野台北24解] 第一堂室內課 我們的土地 - 認識台灣</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-1.html" rel="alternate"></link><updated>2013-11-05T11:27:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-05:misc/sow_taipei_interpreter_24-1.html</id><summary type="html">&lt;p&gt;自己喜歡觀察大自然，但是都很不專業，很高興參加「荒野保護協會」的第二十四屆解說員訓練，希望多學習認識自然，可以介紹給別人，也同時學習人與人之間的相處。&lt;/p&gt;
 &lt;h3&gt;第一堂室內課 我們的土地 - 認識台灣&lt;/h3&gt;
 &lt;p&gt;講者: 小馬 (豆丁海馬)&lt;/p&gt;
 &lt;ul&gt;
@@ -1208,6 +1224,12 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 
 
 &lt;p&gt;外接硬碟接上iMac，重新開機。開機時按住&lt;em&gt;Option&lt;/em&gt;會跳出選擇開機磁碟，就選剛才製作好的開機碟。就會開始自動安裝了。 爽快。&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>歷年跑馬成績</title><link href="http://blog.suhen.org/run/run_records.html" rel="alternate"></link><updated>2013-10-31T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-31:run/run_records.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;2014&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;2014-01-04 &lt;a class="reference external" href="|filename|run/2014-01-04_泰雅馬.md"&gt;泰雅森林馬拉松&lt;/a&gt;, 42k, 01:56:00, 全部, 分組: 47?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
 &lt;h2&gt;2013&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2013-12-01 &lt;a class="reference external" href="http://blog.suhen.org/run/agongdian.html"&gt;阿公店盃漁鄉風情馬拉松&lt;/a&gt;, 42k, 03:59:04 , 全部: 404/2000? ,分組: 76&lt;/li&gt;
@@ -1223,7 +1245,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;2013-02-15, 草山月世界, 23k(報全馬), 2:28&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id10"&gt;
+&lt;div class="section" id="id12"&gt;
 &lt;h2&gt;2012&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;台東之美三鐵&lt;/li&gt;
@@ -1233,14 +1255,14 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;2012-01-07, (6) &lt;a class="reference external" href="http://blog.suhen.org/run/taiya_marathon.html"&gt;泰雅盃&lt;/a&gt;, 42k, 5:06:43, 54/133, 641/1329&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id13"&gt;
+&lt;div class="section" id="id15"&gt;
 &lt;h2&gt;2011&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2011-12-18, (5) &lt;a class="reference external" href="http://blog.suhen.org/run/2011-12-18_taipei_marathon.html"&gt;台北富邦&lt;/a&gt;, 42k, 4:27:x ?&lt;/li&gt;
 &lt;li&gt;2011-01-23 (4) &lt;a class="reference external" href="http://blog.suhen.org/run/2011-01-23_tainan_marathon.html"&gt;台南全馬&lt;/a&gt;, 42k, 04:50:01&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id16"&gt;
+&lt;div class="section" id="id18"&gt;
 &lt;h2&gt;2010&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2010-11-05, (3) 太魯閣 42k, 5:20:51, 392 (30-39), 1359&lt;/li&gt;
@@ -1249,7 +1271,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;2010-02-28, (1) [初馬] &lt;a class="reference external" href="http://blog.suhen.org/run/2010_kaosiung_marathon.html"&gt;2010 高雄馬拉松&lt;/a&gt; , 42k, 5:15:06 ,179 (30-39), 992&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id20"&gt;
+&lt;div class="section" id="id22"&gt;
 &lt;h2&gt;2009&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2009-12-06, 台南黑皮杯, 21k, 2:32:38, 145(30-39), 574&lt;/li&gt;
@@ -1257,13 +1279,13 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 &lt;li&gt;2009-02-20, &lt;a class="reference external" href="http://blog.suhen.org/run/2009_tainan_marathon.html"&gt;台南古都半馬&lt;/a&gt;, 21k&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id23"&gt;
+&lt;div class="section" id="id25"&gt;
 &lt;h2&gt;2008&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2008-11-01, &lt;a class="reference external" href="http://blog.suhen.org/run/2008_taroko_marathon.html"&gt;花蓮太魯閣&lt;/a&gt;, 21k,2:20:44, 348 (30-39), 1124&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id25"&gt;
+&lt;div class="section" id="id27"&gt;
 &lt;h2&gt;2006&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2006-12-17, [初半馬] &lt;a class="reference external" href="http://blog.suhen.org/run/2006_taipei_marathon.html"&gt;台北ING&lt;/a&gt;, 21k, 2:03:26, 224 (25-29), 1865 '&lt;/li&gt;
