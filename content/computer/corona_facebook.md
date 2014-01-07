@@ -6,8 +6,16 @@ Slug: corona_sdk_facebook
 
 Corona SDK提供了[facebook API](http://docs.coronalabs.com/api/library/facebook/index.html)可以很方便的跟facebook串接。
 
-1. 先到developers.facebook.com產生一個app，取得app id
-2. 如果是android的話，需要產生keyhash，回填到developers.facebook.com的app
+# 1. facebook app id
+
+先到developers.facebook.com產生一個app，取得app id
+
+# 2. 設定
+
+## Android
+
+### keyhash
+如果是android的話，需要產生keyhash，回填到developers.facebook.com的app
 
 可以用corona sdk提供的debug.keystore
 
@@ -26,5 +34,6 @@ Corona SDK提供了[facebook API](http://docs.coronalabs.com/api/library/faceboo
 
 也可以拿來回填~
 
+### class name
 
-
+    com.ansca.corona.CoronaActivity
