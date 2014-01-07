@@ -124,13 +124,44 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><categor
 
 &lt;p&gt;也可以拿來回填~&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;補充&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;keytool -list -keystore foo.keystore # 列出alias
+&lt;div class="highlight"&gt;&lt;pre&gt;# 列出alias
+keytool -list -keystore foo.keystore
+# 產生keystore
+keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;class name&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;com.ansca.corona.CoronaActivity
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="corona_sdk"></category><category term="facebook"></category></entry><entry><title>[Mac] 從Leopard升級到Mavericks</title><link href="http://blog.suhen.org/computer/mac_leopard_mavericks.html" rel="alternate"></link><updated>2013-11-02T00:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-02:computer/mac_leopard_mavericks.html</id><summary type="html">&lt;p&gt;家裡一台很舊的iMac，作業系統跑Leopard (OS X 10.5.8)，很多軟體都不支援如 LINE桌面版... ，或是連Chrome都不更新了，倒是Firefox還很照顧這些老電腦...&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;iOS&lt;/h2&gt;
+&lt;p&gt;build.settings:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;settings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+   &lt;span class="n"&gt;iphone&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+   &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="n"&gt;plist&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+      &lt;span class="p"&gt;{&lt;/span&gt;
+         &lt;span class="n"&gt;UIApplicationExitsOnSuspend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+         &lt;span class="n"&gt;FacebookAppID&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;934738748374738&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+         &lt;span class="n"&gt;CFBundleURLTypes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+         &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="p"&gt;{&lt;/span&gt;
+               &lt;span class="n"&gt;CFBundleURLSchemes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+               &lt;span class="p"&gt;{&lt;/span&gt;
+                  &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;fb934738748374738&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+               &lt;span class="p"&gt;}&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+         &lt;span class="p"&gt;}&lt;/span&gt;
+      &lt;span class="p"&gt;},&lt;/span&gt;
+   &lt;span class="p"&gt;},&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://coronalabs.com/blog/2013/07/30/understanding-facebook-authentication/"&gt;Understanding Facebook Authentication | Corona Labs&lt;/a&gt;&lt;/p&gt;</summary><category term="corona_sdk"></category><category term="facebook"></category></entry><entry><title>[Mac] 從Leopard升級到Mavericks</title><link href="http://blog.suhen.org/computer/mac_leopard_mavericks.html" rel="alternate"></link><updated>2013-11-02T00:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-02:computer/mac_leopard_mavericks.html</id><summary type="html">&lt;p&gt;家裡一台很舊的iMac，作業系統跑Leopard (OS X 10.5.8)，很多軟體都不支援如 LINE桌面版... ，或是連Chrome都不更新了，倒是Firefox還很照顧這些老電腦...&lt;/p&gt;
 &lt;p&gt;最近Mavericks開放免費更新，我的MacBook Air (Lion) 免費升級新的Mavericks後，覺得很好用，實在也很想更新這台iMac，Leopard一般是無法直接升級到Mavericks的，除非花一點錢，先升級成Snow Leopard (OS X 10.6)，才可以免費升級到Mavericks。但是網路上果然有解決方法！！&lt;/p&gt;
 &lt;p&gt;參考這篇: &lt;a href="http://www.macworld.com/article/2056564/how-to-install-mavericks-over-leopard.html"&gt;How to install Mavericks over Leopard | Macworld&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;1. 下載Mavericks&lt;/h1&gt;

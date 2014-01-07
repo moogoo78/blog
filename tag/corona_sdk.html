@@ -62,13 +62,44 @@
 
 <p>也可以拿來回填~</p>
 <p><strong>補充</strong>:</p>
-<div class="highlight"><pre>keytool -list -keystore foo.keystore # 列出alias
+<div class="highlight"><pre># 列出alias
+keytool -list -keystore foo.keystore
+# 產生keystore
+keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999
 </pre></div>
 
 
 <h3>class name</h3>
 <div class="highlight"><pre>com.ansca.corona.CoronaActivity
-</pre></div><p>There are <a href="http://blog.suhen.org/computer/corona_sdk_facebook.html#disqus_thread">comments</a>.</p>                </article>
+</pre></div>
+
+
+<h2>iOS</h2>
+<p>build.settings:</p>
+<div class="highlight"><pre><span class="n">settings</span> <span class="o">=</span>
+<span class="p">{</span>
+   <span class="n">iphone</span> <span class="o">=</span>
+   <span class="p">{</span>
+      <span class="n">plist</span> <span class="o">=</span>
+      <span class="p">{</span>
+         <span class="n">UIApplicationExitsOnSuspend</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+         <span class="n">FacebookAppID</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="s">934738748374738&quot;</span><span class="p">,</span>
+         <span class="n">CFBundleURLTypes</span> <span class="o">=</span>
+         <span class="p">{</span>
+            <span class="p">{</span>
+               <span class="n">CFBundleURLSchemes</span> <span class="o">=</span>
+               <span class="p">{</span>
+                  <span class="s2">&quot;</span><span class="s">fb934738748374738&quot;</span><span class="p">,</span>
+               <span class="p">}</span>
+            <span class="p">}</span>
+         <span class="p">}</span>
+      <span class="p">},</span>
+   <span class="p">},</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p><a href="http://coronalabs.com/blog/2013/07/30/understanding-facebook-authentication/">Understanding Facebook Authentication | Corona Labs</a></p><p>There are <a href="http://blog.suhen.org/computer/corona_sdk_facebook.html#disqus_thread">comments</a>.</p>                </article>
                             </aside><!-- /#featured -->
                             <section id="content" class="body">
                     <h1>Other articles</h1>
