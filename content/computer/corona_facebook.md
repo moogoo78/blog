@@ -19,21 +19,27 @@ Corona SDK提供了[facebook API](http://docs.coronalabs.com/api/library/faceboo
 
 可以用corona sdk提供的debug.keystore
 
-    ::text
+    :::text
     /Applications/CoronaSDK/Resource Library/Android/debug.keystore
 
 在mac上用JavaVM提供的keytool指令，產生android的keyhash
 
-    ::text
+    :::text
     /System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
 
 如果keyhash有問題的話，可以在裝置上看debug log，會出現:
 
-    ::text
+    :::text
     Key hash [這一串是keyhash] does not match any stored key hashes.
 
 也可以拿來回填~
 
+**補充**:
+
+    :::text
+    keytool -list -keystore foo.keystore # 列出alias
+
 ### class name
 
+    :::text
     com.ansca.corona.CoronaActivity
