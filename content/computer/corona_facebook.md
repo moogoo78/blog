@@ -37,9 +37,42 @@ Corona SDK提供了[facebook API](http://docs.coronalabs.com/api/library/faceboo
 **補充**:
 
     :::text
-    keytool -list -keystore foo.keystore # 列出alias
+    # 列出alias
+    keytool -list -keystore foo.keystore
+    # 產生keystore
+    keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999
 
 ### class name
 
     :::text
     com.ansca.corona.CoronaActivity
+
+## iOS
+
+build.settings:
+
+    :::lua
+    settings =
+    {
+       iphone =
+       {
+          plist =
+          {
+             UIApplicationExitsOnSuspend = false,
+             FacebookAppID = "934738748374738",
+             CFBundleURLTypes =
+             {
+                {
+                   CFBundleURLSchemes =
+                   {
+                      "fb934738748374738",
+                   }
+                }
+             }
+          },
+       }, 
+    }
+
+
+
+[Understanding Facebook Authentication | Corona Labs](http://coronalabs.com/blog/2013/07/30/understanding-facebook-authentication/)
