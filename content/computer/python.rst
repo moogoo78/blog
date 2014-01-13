@@ -106,6 +106,11 @@ time
   
   datetime.strptime(dtime.strftime('%Y-%m-%d'), '%Y-%m-%d') # 取得年月日0分0時0秒
 
+  # 取得當周的第1天跟最後一天
+  d = datetime(2014, 1, 15)
+  w = d.weekday()
+  t1 = d + timedelta(days=-w)
+  t2 = d + timedelta(days=+(7-w))
 
 算數
 -----------
