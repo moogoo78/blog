@@ -106,20 +106,21 @@ string.replace('old', 'new')
 </div>
 <div class="section" id="time">
 <h3>time</h3>
-<p>time format:</p>
-<pre class="literal-block">
-import time
-from datetime import datetime
-TIME_STR = time.strftime('%Y%m%d-%H%M%S') # 時間字串
+<p><strong>time format</strong></p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="n">TIME_STR</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y%m</span><span class="si">%d</span><span class="s">-%H%M%S&#39;</span><span class="p">)</span> <span class="c"># 時間字串</span>
 
-dtime = datetime.utcnow()
-ts = time.mktime(dtime.timetuple()) # datetime to unix timestamp
-ts = time.time() # unix timestamp now
-datetime.fromtimestamp(ts) # unix timestamp to datetime
+<span class="n">dtime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">()</span> <span class="c"># UTC 格式</span>
+<span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">mktime</span><span class="p">(</span><span class="n">dtime</span><span class="o">.</span><span class="n">timetuple</span><span class="p">())</span> <span class="c"># datetime to unix timestamp</span>
+<span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="c"># unix timestamp now</span>
+<span class="n">datetime</span><span class="o">.</span><span class="n">fromtimestamp</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span> <span class="c"># unix timestamp to datetime</span>
 
-dtime.strftime('%Y-%m-%d') # datetime =&gt; string
-datetime.strptime(dtime, '%Y-%m-%d') # =&gt; string to datetime (格式要一樣)
-</pre>
+<span class="n">dtime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span> <span class="c"># datetime =&gt; string</span>
+<span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">dtime</span><span class="p">,</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span> <span class="c"># =&gt; string to datetime (格式要一樣)</span>
+
+<span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">dtime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">),</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span> <span class="c"># 取得年月日0分0時0秒</span>
+</pre></div>
 </div>
 <div class="section" id="id1">
 <h3>算數</h3>
