@@ -116,6 +116,12 @@ string.replace('old', 'new')
 <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">dtime</span><span class="p">,</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span> <span class="c"># =&gt; string to datetime (格式要一樣)</span>
 
 <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">dtime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">),</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span> <span class="c"># 取得年月日0分0時0秒</span>
+
+<span class="c"># 取得當周的第1天跟最後一天</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="n">d</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=-</span><span class="n">w</span><span class="p">)</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="n">d</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=+</span><span class="p">(</span><span class="mi">7</span><span class="o">-</span><span class="n">w</span><span class="p">))</span>
 </pre></div>
 </div>
 <div class="section" id="id1">
