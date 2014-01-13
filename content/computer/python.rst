@@ -84,22 +84,27 @@ replace ::
 
   string.replace('old', 'new')
 
+
 time
 ------
 
-time format::
+**time format**
+
+.. code-block:: python
 
   import time
   from datetime import datetime
   TIME_STR = time.strftime('%Y%m%d-%H%M%S') # 時間字串
 
-  dtime = datetime.utcnow() 
+  dtime = datetime.utcnow() # UTC 格式
   ts = time.mktime(dtime.timetuple()) # datetime to unix timestamp
   ts = time.time() # unix timestamp now
   datetime.fromtimestamp(ts) # unix timestamp to datetime
   
   dtime.strftime('%Y-%m-%d') # datetime => string
   datetime.strptime(dtime, '%Y-%m-%d') # => string to datetime (格式要一樣)
+  
+  datetime.strptime(dtime.strftime('%Y-%m-%d'), '%Y-%m-%d') # 取得年月日0分0時0秒
 
 
 算數
