@@ -24,7 +24,7 @@ Slug: aws_elastic_beanstalk_flask
 
 預設是application.py:application, 自己要改application.py名字失敗..
 
-    :::plain
+    :::text
     [aws:elasticbeanstalk:container:python]
     ...
     WSGIPath=my_fail_wsgi
@@ -58,7 +58,9 @@ Slug: aws_elastic_beanstalk_flask
     eb status --verbose 
 
 
-## 設定
+## 其他設定
+
+### 環境設定
 產生 **.ebextensions**目錄, 新增 python.config:
 
     option_settings:
@@ -66,6 +68,11 @@ Slug: aws_elastic_beanstalk_flask
         "/static/": "myapp/static/"
 
 * [Option Values - AWS Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html#command-options-python)
+
+### custom domain
+
+到原domain註冊商去加一筆CNAME, 指到EB提供的public url
+
 
 ### 參考
 
@@ -77,6 +84,7 @@ Slug: aws_elastic_beanstalk_flask
 
 ## eb stop
 rds的security group要拿掉, 否則會失敗
+
 
 http://blog.uptill3.com/2012/08/25/python-on-elastic-beanstalk.html
 http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob
