@@ -73,6 +73,45 @@ Slug: aws_elastic_beanstalk_flask
 
 到原domain註冊商去加一筆CNAME, 指到EB提供的public url
 
+### HTTPS
+
+1. startssl申請: 產生 ssl.crt, ssl.key (encrypted), 還有一組密碼
+   [The Will Will Web | 免費申請 StartSSL™ 個人數位簽章與網站 SSL 憑證完全攻略](http://blog.miniasp.com/post/2013/01/10/The-Complete-Guide-Free-StartSSL-personal-and-web-site-ssl-tls-certificates.aspx)
+
+產生private key:
+
+    openssl rsa -in ssl.key -out private.key # 要求輸入那一組密碼
+
+
+**無效(self signed cert.):**
+
+private key:
+
+    openssl genrsa 1024 > privatekey.pem
+
+cert. pem:
+
+    openssl req -new -key privatekey.pem -out csr.pem
+
+server cert:
+
+    openssl x509 -req -days 365 -in csr.pem -signkey privatekey.pem -out server.crt # 會問一些問題
+
+    
+
+2. 到AWS Management Console選EC2, load-balancer加入https (對應instance是http): SSL Certificate填入剛才的ssl.key, private.key
+
+
+
+## 下載 iam 命令列
+
+pip install awscli
+
+aws configure
+輸入 id, sec key,
+
+
+[Configuring HTTPS for your AWS Elastic Beanstalk Environment - AWS Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-https.html)
 
 ### 參考
 
