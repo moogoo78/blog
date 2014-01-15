@@ -1061,10 +1061,10 @@ A WHY is just a belief. That's all it is. HOWs are the actions you take to reali
 &lt;h2&gt;2. 準備部署&lt;/h2&gt;
 &lt;h3&gt;WSGI&lt;/h3&gt;
 &lt;p&gt;預設是application.py:application, 自己要改application.py名字失敗..&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;[aws:elasticbeanstalk:container:python]&lt;/span&gt;
-&lt;span class="err"&gt;...&lt;/span&gt;
-&lt;span class="na"&gt;WSGIPath&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;my_fail_wsgi&lt;/span&gt;
-&lt;span class="err"&gt;eb&lt;/span&gt; &lt;span class="err"&gt;update?&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;[aws:elasticbeanstalk:container:python]
+...
+WSGIPath=my_fail_wsgi
+eb update?
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1094,7 +1094,8 @@ eb status --verbose
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;設定&lt;/h2&gt;
+&lt;h2&gt;其他設定&lt;/h2&gt;
+&lt;h3&gt;環境設定&lt;/h3&gt;
 &lt;p&gt;產生 &lt;strong&gt;.ebextensions&lt;/strong&gt;目錄, 新增 python.config:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nl"&gt;option_settings:&lt;/span&gt;
   &lt;span class="s"&gt;&amp;quot;aws:elasticbeanstalk:container:python:staticfiles&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
@@ -1105,6 +1106,8 @@ eb status --verbose
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html#command-options-python"&gt;Option Values - AWS Elastic Beanstalk&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3&gt;custom domain&lt;/h3&gt;
+&lt;p&gt;到原domain註冊商去加一筆CNAME, 指到EB提供的public url&lt;/p&gt;
 &lt;h3&gt;參考&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python_flask.html"&gt;Deploying a Flask Application to AWS Elastic Beanstalk - AWS Elastic Beanstalk&lt;/a&gt; &lt;/li&gt;

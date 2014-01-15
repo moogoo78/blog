@@ -57,10 +57,10 @@
 <h2>2. 準備部署</h2>
 <h3>WSGI</h3>
 <p>預設是application.py:application, 自己要改application.py名字失敗..</p>
-<div class="highlight"><pre><span class="k">[aws:elasticbeanstalk:container:python]</span>
-<span class="err">...</span>
-<span class="na">WSGIPath</span><span class="o">=</span><span class="s">my_fail_wsgi</span>
-<span class="err">eb</span> <span class="err">update?</span>
+<div class="highlight"><pre>[aws:elasticbeanstalk:container:python]
+...
+WSGIPath=my_fail_wsgi
+eb update?
 </pre></div>
 
 
@@ -90,7 +90,8 @@ eb status --verbose
 </pre></div>
 
 
-<h2>設定</h2>
+<h2>其他設定</h2>
+<h3>環境設定</h3>
 <p>產生 <strong>.ebextensions</strong>目錄, 新增 python.config:</p>
 <div class="highlight"><pre><span class="nl">option_settings:</span>
   <span class="s">&quot;aws:elasticbeanstalk:container:python:staticfiles&quot;</span><span class="o">:</span>
@@ -101,6 +102,8 @@ eb status --verbose
 <ul>
 <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html#command-options-python">Option Values - AWS Elastic Beanstalk</a></li>
 </ul>
+<h3>custom domain</h3>
+<p>到原domain註冊商去加一筆CNAME, 指到EB提供的public url</p>
 <h3>參考</h3>
 <ul>
 <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python_flask.html">Deploying a Flask Application to AWS Elastic Beanstalk - AWS Elastic Beanstalk</a> </li>
