@@ -75,7 +75,7 @@ Slug: aws_elastic_beanstalk_flask
 
 ### HTTPS
 
-1. startssl申請: 產生 ssl.crt, ssl.key (encrypted), 還有一組密碼
+#### 1. startssl申請: 產生 ssl.crt, ssl.key (encrypted), 還有一組密碼
    [The Will Will Web | 免費申請 StartSSL™ 個人數位簽章與網站 SSL 憑證完全攻略](http://blog.miniasp.com/post/2013/01/10/The-Complete-Guide-Free-StartSSL-personal-and-web-site-ssl-tls-certificates.aspx)
 
 產生private key:
@@ -99,19 +99,26 @@ server cert:
 
     
 
-2. 到AWS Management Console選EC2, load-balancer加入https (對應instance是http): SSL Certificate填入剛才的ssl.key, private.key
+#### 2. 設定到AWS
 
+下載 iam 命令列:
 
+    pip install awscli
 
-## 下載 iam 命令列
+執行前要先:
 
-pip install awscli
-
-aws configure
+    aws configure
+    
 輸入 id, sec key,
 
+    iam-servercertupload -b server.crt -k privatekey.pem -s server -v
+
+[[TODO]]
+
+然後AWS Management Console選EC2, load-balancer加入https (對應instance是http): SSL Certificate填入剛才的ssl.key, private.key
 
 [Configuring HTTPS for your AWS Elastic Beanstalk Environment - AWS Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-https.html)
+
 
 ### 參考
 
