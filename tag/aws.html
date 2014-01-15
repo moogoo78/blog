@@ -100,6 +100,40 @@ eb status --verbose
 </ul>
 <h3>custom domain</h3>
 <p>到原domain註冊商去加一筆CNAME, 指到EB提供的public url</p>
+<h3>HTTPS</h3>
+<ol>
+<li>startssl申請: 產生 ssl.crt, ssl.key (encrypted), 還有一組密碼
+   <a href="http://blog.miniasp.com/post/2013/01/10/The-Complete-Guide-Free-StartSSL-personal-and-web-site-ssl-tls-certificates.aspx">The Will Will Web | 免費申請 StartSSL™ 個人數位簽章與網站 SSL 憑證完全攻略</a></li>
+</ol>
+<p>產生private key:</p>
+<div class="highlight"><pre><span class="n">openssl</span> <span class="n">rsa</span> <span class="o">-</span><span class="n">in</span> <span class="n">ssl</span><span class="p">.</span><span class="n">key</span> <span class="o">-</span><span class="n">out</span> <span class="n">private</span><span class="p">.</span><span class="n">key</span> <span class="err">#</span> <span class="err">要求輸入那一組密碼</span>
+</pre></div>
+
+
+<p><strong>無效(self signed cert.):</strong></p>
+<p>private key:</p>
+<div class="highlight"><pre><span class="n">openssl</span> <span class="n">genrsa</span> <span class="mi">1024</span> <span class="o">&gt;</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span>
+</pre></div>
+
+
+<p>cert. pem:</p>
+<div class="highlight"><pre><span class="n">openssl</span> <span class="n">req</span> <span class="o">-</span><span class="n">new</span> <span class="o">-</span><span class="n">key</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">out</span> <span class="n">csr</span><span class="p">.</span><span class="n">pem</span>
+</pre></div>
+
+
+<p>server cert:</p>
+<div class="highlight"><pre><span class="n">openssl</span> <span class="n">x509</span> <span class="o">-</span><span class="n">req</span> <span class="o">-</span><span class="n">days</span> <span class="mi">365</span> <span class="o">-</span><span class="n">in</span> <span class="n">csr</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">signkey</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">out</span> <span class="n">server</span><span class="p">.</span><span class="n">crt</span> <span class="err">#</span> <span class="err">會問一些問題</span>
+</pre></div>
+
+
+<ol>
+<li>到AWS Management Console選EC2, load-balancer加入https (對應instance是http): SSL Certificate填入剛才的ssl.key, private.key</li>
+</ol>
+<h2>下載 iam 命令列</h2>
+<p>pip install awscli</p>
+<p>aws configure
+輸入 id, sec key,</p>
+<p><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-https.html">Configuring HTTPS for your AWS Elastic Beanstalk Environment - AWS Elastic Beanstalk</a></p>
 <h3>參考</h3>
 <ul>
 <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python_flask.html">Deploying a Flask Application to AWS Elastic Beanstalk - AWS Elastic Beanstalk</a> </li>
