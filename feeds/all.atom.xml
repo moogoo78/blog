@@ -245,6 +245,7 @@ What is it that stands higher than action?  Silence.
 &lt;/ul&gt;
 &lt;h1&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;水樹(代)&lt;/strong&gt;&lt;/p&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 大安森林公園導覽1 - 主題: 樹幹</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-group-daan-1.html" rel="alternate"></link><updated>2013-12-28T19:13:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-28:misc/sow_taipei_interpreter_24-group-daan-1.html</id><summary type="html">&lt;p&gt;講師: 玉山圓柏&lt;/p&gt;
+&lt;p&gt;日期: 2013-12-28&lt;/p&gt;
 &lt;h1&gt;開場&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;台北市最大公園: 1. 青年公園 2. 大安森林公園 (生物多樣性比較多, 有200多種)&lt;/li&gt;
@@ -433,7 +434,23 @@ What is it that stands higher than action?  Silence.
 &lt;p&gt;圖片塞滿browser&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://paulmason.name/item/full-screen-background-image-pure-css-code"&gt;Full Screen Background Image - Pure CSS Code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>[荒野台北24解] 第六堂室內課 專業課程: 植物 - 行道樹的故事</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-6.html" rel="alternate"></link><updated>2013-12-17T19:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-17:misc/sow_taipei_interpreter_24-6.html</id><summary type="html">&lt;p&gt;講師: 玉山圓柏 (吳惠敏)&lt;/p&gt;
+&lt;/ul&gt;
+&lt;h1&gt;server&lt;/h1&gt;
+&lt;h2&gt;performance&lt;/h2&gt;
+&lt;h3&gt;ab&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ab&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//testme.com&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;參數:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;HTTP&lt;/span&gt; &lt;span class="n"&gt;Keep&lt;/span&gt; &lt;span class="n"&gt;Alive&lt;/span&gt;
+&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;concurrency&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="err"&gt;同時連線&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;num&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="err"&gt;測試的&lt;/span&gt;&lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="err"&gt;總數&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="err"&gt;用完就結束&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;timelimit&lt;/span&gt;
+&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;postfile&lt;/span&gt;
+&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;type&lt;/span&gt;
+&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;help&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>[荒野台北24解] 第六堂室內課 專業課程: 植物 - 行道樹的故事</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-6.html" rel="alternate"></link><updated>2013-12-17T19:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-17:misc/sow_taipei_interpreter_24-6.html</id><summary type="html">&lt;p&gt;講師: 玉山圓柏 (吳惠敏)&lt;/p&gt;
 &lt;p&gt;yushanyuanbo@gmail.com??&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;2.&lt;/li&gt;
