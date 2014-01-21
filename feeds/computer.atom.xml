@@ -39,13 +39,13 @@
 
 
 &lt;p&gt;參數:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;HTTP&lt;/span&gt; &lt;span class="n"&gt;Keep&lt;/span&gt; &lt;span class="n"&gt;Alive&lt;/span&gt;
-&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;concurrency&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="err"&gt;同時連線&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;num&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="err"&gt;測試的&lt;/span&gt;&lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="err"&gt;總數&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="err"&gt;用完就結束&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;timelimit&lt;/span&gt;
-&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;postfile&lt;/span&gt;
-&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;type&lt;/span&gt;
-&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;help&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;k: HTTP Keep Alive
+c: concurrency (同時連線)
+n: num of requests (測試的request總數, 用完就結束)
+t: timelimit
+p: postfile
+T: content-type
+h: help
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>Deploying Flask (Python) to AWS Elastic Beanstalk</title><link href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html" rel="alternate"></link><updated>2013-11-12T17:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:computer/aws_elastic_beanstalk_flask.html</id><summary type="html">&lt;h1&gt;quickstart&lt;/h1&gt;
 &lt;h2&gt;1. 安裝eb commend tools&lt;/h2&gt;
 &lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
@@ -132,6 +132,7 @@ eb status --verbose
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;p&gt;檢查SSL工具: &lt;a href="http://www.sslshopper.com/ssl-checker.html"&gt;SSL Checker - SSL Certificate Verify&lt;/a&gt;&lt;/p&gt;
 &lt;h4&gt;2. 設定到AWS&lt;/h4&gt;
 &lt;p&gt;下載 iam 命令列:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;awscli&lt;/span&gt;
