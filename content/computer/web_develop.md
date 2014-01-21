@@ -21,6 +21,7 @@ Tags: html, css
 
 參數:
 
+    :::text
     k: HTTP Keep Alive
     c: concurrency (同時連線)
     n: num of requests (測試的request總數, 用完就結束)

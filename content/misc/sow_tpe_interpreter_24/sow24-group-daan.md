@@ -6,7 +6,7 @@ Slug: sow_taipei_interpreter_24-group-daan-1
 
 講師: 玉山圓柏
 
-日期: 2013-12-28
+日期: 2013-12-28 (六)
 
 #  開場
 
