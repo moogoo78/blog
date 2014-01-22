@@ -28,7 +28,7 @@ Slug: sow_taipei_interpreter_24-group-daan-1
 * 桑科榕樹特徵:
   1. 無花果 (隱花果)
   2. 乳汁
-  3. 脫葉遺痕
+  3. 托葉遺痕
   
 ## 正榕
 
