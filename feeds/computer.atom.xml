@@ -448,7 +448,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;參考:
 &lt;a class="reference external" href="http://www.emacswiki.org/emacs/SkeletonMode"&gt;EmacsWiki: Skeleton Mode&lt;/a&gt;&lt;/p&gt;
-</summary><category term="emacs"></category></entry><entry><title>Python</title><link href="http://blog.suhen.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
+</summary><category term="emacs"></category></entry><entry><title>==== Python ====</title><link href="http://blog.suhen.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
 &lt;h2&gt;Quick Start&lt;/h2&gt;
 &lt;p&gt;path:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -2358,7 +2358,7 @@ count(arr)
 &lt;p&gt;ternary operator&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Python Web Framework</title><link href="http://blog.suhen.org/computer/python-web-framework.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/python-web-framework.html</id><summary type="html">&lt;div class="section" id="django"&gt;
+</summary><category term="docs"></category></entry><entry><title>Python Web Framework (Flask, SQLAlchemy)</title><link href="http://blog.suhen.org/computer/python-web-framework-flask-sqlalchemy.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/python-web-framework-flask-sqlalchemy.html</id><summary type="html">&lt;div class="section" id="django"&gt;
 &lt;h2&gt;Django&lt;/h2&gt;
 &lt;div class="section" id="quick-start"&gt;
 &lt;h3&gt;Quick Start&lt;/h3&gt;
