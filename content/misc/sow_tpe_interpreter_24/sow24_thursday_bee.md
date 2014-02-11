@@ -8,6 +8,8 @@ Slug: sow_taipei_interpreter_24-thursday_bee
 
 導演: 李偉傑
 
+時間:
+
 # 關於蜂
 
 * 「九九蜂鷹」拍了6年
