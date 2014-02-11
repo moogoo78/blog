@@ -8,7 +8,7 @@ Slug: sow_taipei_interpreter_24-thursday_bee
 
 導演: 李偉傑
 
-時間:
+時間: 2014-01−23
 
 # 關於蜂
 
