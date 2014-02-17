@@ -137,3 +137,9 @@ http://blog.uptill3.com/2012/08/25/python-on-elastic-beanstalk.html
 http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
 https://github.com/adamcrosby/elastic-flask-baseline
+
+
+# message, celery
+
+* [Celery with Amazon SQS - Stack Overflow](http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs)
+* [Using Django and Celery with Amazon SQS](http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/)
