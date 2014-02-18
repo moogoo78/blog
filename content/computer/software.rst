@@ -30,6 +30,8 @@ zoom in/out: Command Opt =/-
 1. 到"鑰匙圈存取": Finder -> 工具程式 -> 鑰匙圈存取
 2. 找基地台名稱, 分類是"AirPort網路密碼", 顯示密碼
 
+[14 Mac Hacks That Will Change The Way You Use Your Computer](http://www.buzzfeed.com/peggy/14-mac-hacks-that-will-change-the-way-you-use-your-computer)
+
 Browser
 -----------
 
