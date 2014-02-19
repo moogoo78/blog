@@ -47,12 +47,21 @@ Slug: sow_taipei_interpreter_24-group-daan-1
 ## 山黃梔 (zhi)
 
 * 梔子花，無言花 (江惠的歌)
+
+> 日文: クチナシ，「口無し」
+
 * 茜草科，葉對生，三角托葉，喜歡長在稜線，材質縝密，花會變色
 * 梔:
   1. 玉做的酒器
   2. 黃色的染料 (果實)
 * 日本圍棋棋盤用梔的木頭做，腳用梔子花的果實，代表觀棋不語真君子
 * 棋盤腳的果實就是長這個樣子
+
+補充: Billie Holiday的頭飾
+
+![Billie Holiday](/static/images/misc/sow24/2013-12-28_daan_tree/billie_holiday.jpg)
+
+ref: [floral inspired sculpture & jewelry – karenlandis.com » Billie Holiday’s Iconic Gardenias](http://karenlandis.com/billie-holidays-iconic-gardenias/)
 
 三角托葉
 
