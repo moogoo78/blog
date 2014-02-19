@@ -136,6 +136,13 @@ dns::
 * `使用 netstat 找出不正常的連線 | Tsung's Blog <http://blog.longwin.com.tw/2010/02/netstat-check-connect-2010/>`__
 
 
+curl::
+
+  curl http://example.com
+  curl http://example -d"tag=foo&cat=bar" # 這個預設會送POST
+  curl http://example/edit -XPOST # http method
+
+
 Service
 ===========
 
