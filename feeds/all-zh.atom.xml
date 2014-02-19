@@ -7663,6 +7663,12 @@ dig foobar.com mx
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://blog.longwin.com.tw/2010/02/netstat-check-connect-2010/"&gt;使用 netstat 找出不正常的連線 | Tsung's Blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;curl:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+curl http://example.com
+curl http://example -d&amp;quot;tag=foo&amp;amp;cat=bar&amp;quot; # 這個預設會送POST
+curl http://example/edit -XPOST # http method
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="service"&gt;
 &lt;h2&gt;Service&lt;/h2&gt;
