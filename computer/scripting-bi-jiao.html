@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>Scripting 比較 (draft)</title>
+        <title>Scripting 比較</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog Atom Feed" />
                 
@@ -30,8 +30,8 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://blog.suhen.org/computer/scripting-bi-jiao-draft.html" rel="bookmark"
-           title="Permalink to Scripting 比較 (draft)">Scripting 比較 (draft)</a></h1>
+        <a href="http://blog.suhen.org/computer/scripting-bi-jiao.html" rel="bookmark"
+           title="Permalink to Scripting 比較">Scripting 比較</a></h1>
           </header>
 
     <div class="entry-content">
@@ -115,6 +115,26 @@ end
 foo(1, 'lovely') -- 1, nil
 foo(1,'lovely') -- 1, lovely
 </pre>
+</div>
+<div class="section" id="ternary-operator">
+<h3>ternary operator</h3>
+<div class="highlight"><pre><span class="c1">// C</span>
+<span class="n">sign</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="s">&quot;negative&quot;</span> <span class="o">:</span> <span class="s">&quot;non-negative&quot;</span><span class="p">;</span>
+</pre></div>
+<div class="highlight"><pre><span class="cp">&lt;?php</span>
+<span class="nv">$action</span> <span class="o">=</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]))</span> <span class="o">?</span> <span class="s1">&#39;default&#39;</span> <span class="o">:</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">];</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+<div class="highlight"><pre><span class="c"># Python</span>
+<span class="s">&#39;true&#39;</span> <span class="k">if</span> <span class="bp">True</span> <span class="k">else</span> <span class="s">&#39;false&#39;</span>
+</pre></div>
+<div class="highlight"><pre><span class="c1">// JavaScript</span>
+<span class="nx">x</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="o">?</span> <span class="kc">true</span> <span class="o">:</span> <span class="kc">false</span><span class="p">;</span>
+</pre></div>
+<div class="highlight"><pre><span class="c1">-- 利用 and, or 運算子的特性來達成</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">x is &#39;</span> <span class="o">..</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="s">negative&#39;</span> <span class="ow">or</span> <span class="s1">&#39;</span><span class="s">non-negative&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">x is &#39;</span> <span class="o">..</span> <span class="p">((</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="s">negative&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="s1">&#39;</span><span class="s">non-negative&#39;</span><span class="p">))</span> <span class="c1">-- 這樣好懂一點</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="lib-funtions">
@@ -314,10 +334,6 @@ count(arr)
 </ul>
 <p><a class="reference external" href="http://code.google.com/p/ppython/wiki/data_convert">http://code.google.com/p/ppython/wiki/data_convert</a></p>
 </div>
-<div class="section" id="tmp">
-<h3>tmp</h3>
-<p>ternary operator</p>
-</div>
 </div>
 
     </div><!-- /.entry-content -->
@@ -325,8 +341,8 @@ count(arr)
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "computer/scripting-bi-jiao-draft.html";
-        var disqus_url = "http://blog.suhen.org/computer/scripting-bi-jiao-draft.html";
+        var disqus_identifier = "computer/scripting-bi-jiao.html";
+        var disqus_url = "http://blog.suhen.org/computer/scripting-bi-jiao.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';

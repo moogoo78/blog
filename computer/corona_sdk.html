@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>Lua String / 字串</title>
+        <title>Corona SDK 筆記</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog Atom Feed" />
                 
@@ -30,76 +30,84 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://blog.suhen.org/computer/lua_string.html" rel="bookmark"
-           title="Permalink to Lua String / 字串">Lua String / 字串</a></h1>
+        <a href="http://blog.suhen.org/computer/corona_sdk.html" rel="bookmark"
+           title="Permalink to Corona SDK 筆記">Corona SDK 筆記</a></h1>
           </header>
 
     <div class="entry-content">
       <footer class="post-info">
-        <abbr class="published" title="2013-10-01T12:36:00">
-                2013-10-01 12:36
+        <abbr class="published" title="2014-02-26T12:13:00">
+                2014-02-26 12:13
         </abbr>
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/lua.html">lua</a></p>
-</footer><!-- /.post-info -->      <h1>Standard</h1>
-<div class="highlight"><pre><span class="nb">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="p">])</span>
-<span class="nb">string.format</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="o">...</span><span class="p">)</span>
-<span class="nb">string.sub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">i</span> <span class="p">[,</span> <span class="n">j</span><span class="p">])</span>
 
-<span class="nb">string.len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="n">s</span><span class="p">:</span><span class="n">len</span><span class="p">()</span>
-
-<span class="nb">string.gmatch</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">)</span>
-<span class="nb">string.gsub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="n">replace</span> <span class="p">[,</span> <span class="n">n</span><span class="p">])</span>
-
-<span class="nb">string.lower</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="nb">string.upper</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-
-<span class="nb">string.byte</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">A&quot;</span><span class="p">)</span> <span class="c1">-- 65</span>
-<span class="nb">string.char</span><span class="p">(</span><span class="mi">65</span><span class="p">)</span> <span class="c1">-- A</span>
+</footer><!-- /.post-info -->      <h1>System</h1>
+<div class="highlight"><pre><span class="n">system</span><span class="p">.</span><span class="n">setIdleTimer</span><span class="p">(</span> <span class="n">enabled</span> <span class="p">)</span>
+<span class="n">display</span><span class="p">.</span><span class="n">setStatusBar</span><span class="p">(</span> <span class="n">display</span><span class="p">.</span><span class="n">HiddenStatusBar</span> <span class="p">)</span>
+<span class="nb">collectgarbage</span><span class="p">()</span>
 </pre></div>
 
 
-<h1>regular expression (patterns)</h1>
-<table align="center" border="1">
-<tbody><tr><td><code>.</code></td><td>all characters</td></tr>
-<tr><td><code>%a</code></td><td>letters</td></tr>
-<tr><td><code>%c</code></td><td>control characters</td></tr>
-<tr><td><code>%d</code></td><td>digits</td></tr>
-<tr><td><code>%l</code></td><td>lower case letters</td></tr>
-<tr><td><code>%p</code></td><td>punctuation characters</td></tr>
-<tr><td><code>%s</code></td><td>space characters</td></tr>
-<tr><td><code>%u</code></td><td>upper case letters</td></tr>
-<tr><td><code>%w</code></td><td>alphanumeric characters</td></tr>
-<tr><td><code>%x</code></td><td>hexadecimal digits</td></tr>
-<tr><td><code>%z</code></td><td>the character with representation 0</td></tr>
-</tbody></table>
-
-<p>大寫表示逆向，例如: <strong>%A</strong> 就是非字串的意思</p>
-<p>特殊字元:</p>
-<div class="highlight"><pre><span class="p">(</span> <span class="p">)</span> <span class="p">.</span> <span class="o">%</span> <span class="o">+</span> <span class="o">-</span> <span class="o">*</span> <span class="o">?</span> <span class="p">[</span> <span class="o">^</span> <span class="err">$</span>
+<h1>Event / Timer</h1>
+<div class="highlight"><pre><span class="n">AnimTimer</span>  <span class="o">=</span> <span class="n">timer</span><span class="p">.</span><span class="n">performWithDelay</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">V</span><span class="p">.</span><span class="n">PAnimate</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
+<span class="n">timer</span><span class="p">.</span><span class="n">cancel</span><span class="p">(</span><span class="n">AnimTimer</span><span class="p">)</span>
 </pre></div>
 
 
-<p>ex:</p>
-<div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="nb">string.gsub</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">hello, up-down!&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">%A&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">.&quot;</span><span class="p">))</span>
-<span class="c1">-- hello..up.down. 4</span>
+<h1>network / link</h1>
+<div class="highlight"><pre><span class="c1">-- link to market</span>
+<span class="n">system</span><span class="p">.</span><span class="n">openURL</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">market://details?id=com.yourdoman.packagename&quot;</span> <span class="p">)</span>
 </pre></div>
 
 
-<p>相關連結</p>
+<h1>locale</h1>
+<div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">ui.language&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">ui&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">language&quot;</span> <span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.country&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">country&quot;</span> <span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.identifier&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">identifier&quot;</span> <span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.language&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">language&quot;</span> <span class="p">))</span>
+
+
+<span class="c1">-- iOS:</span>
+<span class="c1">-- &gt; ui.language     zh-Hant</span>
+<span class="c1">-- &gt; locale.country     TW</span>
+<span class="c1">-- &gt; locale.identifier     zh_TW</span>
+<span class="c1">-- &gt; locale.language     zh</span>
+
+<span class="c1">-- Android:</span>
+<span class="c1">-- &gt; ui.language  中文</span>
+<span class="c1">-- &gt; locale.country       TW</span>
+<span class="c1">-- &gt; locale.identifier    zh_TW</span>
+<span class="c1">-- &gt; locale.language      zh</span>
+
+<span class="c1">-- &gt; ui.language  日本語</span>
+<span class="c1">-- &gt; locale.country       JP</span>
+<span class="c1">-- &gt; locale.identifier    ja_JP</span>
+<span class="c1">-- &gt; locale.language      ja</span>
+</pre></div>
+
+
+<p>在iPad上測試: locale.* 不管語系怎麼設定, 都會是zh_TW (綁帳號?),</p>
+<h1>Setting</h1>
+<p><a href="http://docs.coronalabs.com/guide/basics/configSettings/">Corona Docs: guide &gt; basics &gt; configSettings</a></p>
+<h2>scale</h2>
 <ul>
-<li><a href="http://lua-users.org/wiki/StringLibraryTutorial">lua-users wiki: String Library Tutorial</a></li>
-<li><a href="http://www.lua.org/pil/2.4.html">Programming in Lua : 2.4</a></li>
+<li>letterbox: 等比例縮放, 把所有內容放入screen內, 所以會有"空白"跑出來, 可以用大一點的背景圖填滿</li>
+<li>zoomEven: 等比例縮放, 內容可能會"凸"出去</li>
+<li>zoomStretch: 適應螢幕大小縮放, 比例會跑掉</li>
 </ul>
+<p>display.screenOriginX</p>
+<p>width = 320</p>
+<p>height = 480</p>
+<p>letterbox時, 到iPad上會左右多出20, display.screenOriginX = -20</p>
+<p>座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。</p>
     </div><!-- /.entry-content -->
         <div class="comments">
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "computer/lua_string.html";
-        var disqus_url = "http://blog.suhen.org/computer/lua_string.html";
+        var disqus_identifier = "computer/corona_sdk.html";
+        var disqus_url = "http://blog.suhen.org/computer/corona_sdk.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';
