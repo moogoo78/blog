@@ -1,4 +1,4 @@
-Scripting 比較 (draft)
+Scripting 比較
 #######################################
 :date: 2013-04-09 11:38
 :category: computer
@@ -98,6 +98,37 @@ statement/expression
 
   foo(1, 'lovely') -- 1, nil
   foo(1,'lovely') -- 1, lovely
+
+
+ternary operator
+------------------
+.. code-block:: c
+
+    // C
+    sign = (x < 0) ? "negative" : "non-negative";
+
+.. code-block:: php
+
+    <?php
+    $action = (empty($_POST['action'])) ? 'default' : $_POST['action'];
+    ?>
+
+.. code-block:: python
+
+    # Python
+    'true' if True else 'false'
+
+.. code-block:: javascript
+
+    // JavaScript
+    x = (1 < 2) ? true : false;
+
+.. code-block:: lua
+
+    -- 利用 and, or 運算子的特性來達成
+    print('x is ' .. (x < 0 and 'negative' or 'non-negative'))
+    print('x is ' .. ((x < 0 and 'negative') or 'non-negative')) -- 這樣好懂一點
+
 
 
 Lib funtions
@@ -318,8 +349,3 @@ ActionScript |
 
 http://code.google.com/p/ppython/wiki/data_convert
 
-
-
-tmp
-----
-ternary operator
