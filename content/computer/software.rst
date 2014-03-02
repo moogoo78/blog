@@ -19,6 +19,8 @@ zoom in/out: Command Opt =/-
 
 區域截圖: Command Shift 4
 
+貼上無格式文字 (plain-text): Shift + Option + Command + v
+
 顯示User Library: 在Finder裡的Go(前往), 按住option, 就會出現
 
 輸入特殊符號: Command + option + T

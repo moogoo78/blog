@@ -1,7 +1,7 @@
 Title: ## 台灣野生杜鵑 ##
 Date: 2013-12-14 17:55
 Category: nature
-Tags: plant_summary
+Tags: plant_family
 Slug: taiwan_dujuan
 
 

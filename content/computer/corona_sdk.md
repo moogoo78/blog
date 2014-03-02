@@ -19,9 +19,20 @@ Slug: corona_sdk
     timer.cancel(AnimTimer)
 
 
-# network / link
+# Network
 
     :::lua
+    local function networkListener( event )
+        if ( event.isError ) then
+                print( "Network error!")
+        else
+                print ( "RESPONSE: " .. event.response )
+        end
+    end
+
+    -- Access Google over SSL:
+    network.request( "https://encrypted.google.com", "GET", networkListener )
+
     -- link to market
     system.openURL( "market://details?id=com.yourdoman.packagename" )
 
