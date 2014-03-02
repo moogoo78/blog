@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-02-26T12:13:00+08:00</updated><entry><title>Corona SDK 筆記</title><link href="http://blog.suhen.org/computer/corona_sdk.html" rel="alternate"></link><updated>2014-02-26T12:13:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-26:computer/corona_sdk.html</id><summary type="html">&lt;h1&gt;System&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-03-02T18:10:00+08:00</updated><entry><title>## 棕櫚科 ##</title><link href="http://blog.suhen.org/nature/zonglv_family.html" rel="alternate"></link><updated>2014-03-02T18:10:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-03-02:nature/zonglv_family.html</id><summary type="html">&lt;p&gt;台灣棕櫚樹不多，但是
+日本人來時種了很多，尤其在公家單位、學校... 等。&lt;/p&gt;
+&lt;h1&gt;亞力山大椰子 (澳洲)&lt;/h1&gt;
+&lt;p&gt;細長直立，環紋明顯，基部膨大，花序成串下垂&lt;/p&gt;
+&lt;h1&gt;可可椰子 (太平洋、亞熱帶)&lt;/h1&gt;
+&lt;h1&gt;[台灣原生] 蒲葵 (熱帶亞洲)&lt;/h1&gt;
+&lt;p&gt;掌葉中裂，螺旋互生，先端再二淺裂
+葉柄三角形，兩側具逆刺&lt;/p&gt;
+&lt;h1&gt;棍棒椰子 (非洲)&lt;/h1&gt;
+&lt;p&gt;葉痕跟花序遺痕明顯，樹幹上部略膨大 (看起來像小的大王椰子)
+小葉劍形&lt;/p&gt;
+&lt;h1&gt;羅比親王海藻 (印度、中南半島)&lt;/h1&gt;
+&lt;p&gt;幹面凸起裝葉痕，基部有氣生根
+小葉線狀長披針形，柔軟，葉柄具刺&lt;/p&gt;
+&lt;h1&gt;[台灣原生] 台灣海藻 (熱帶亞洲)&lt;/h1&gt;
+&lt;h1&gt;大王椰子 (熱帶美洲)&lt;/h1&gt;
+&lt;p&gt;高大，節環明顯，&lt;/p&gt;
+&lt;h1&gt;酒瓶椰子 (印度洋)&lt;/h1&gt;
+&lt;p&gt;基部如酒瓶般肥大&lt;/p&gt;
+&lt;h1&gt;黃椰子 (馬達加斯加島)&lt;/h1&gt;
+&lt;p&gt;明顯節環 (縫線痕跡)，葉子細長，常與竹子長在一起&lt;/p&gt;</summary><category term="plant_family"></category></entry><entry><title>Corona SDK 筆記</title><link href="http://blog.suhen.org/computer/corona_sdk.html" rel="alternate"></link><updated>2014-02-26T12:13:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-26:computer/corona_sdk.html</id><summary type="html">&lt;h1&gt;System&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setIdleTimer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;enabled&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setStatusBar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;HiddenStatusBar&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;collectgarbage&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -12,8 +32,19 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;network / link&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;-- link to market&lt;/span&gt;
+&lt;h1&gt;Network&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;networkListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;event&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isError&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+            &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;Network error!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;
+            &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;RESPONSE: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;..&lt;/span&gt; &lt;span class="n"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="c1"&gt;-- Access Google over SSL:&lt;/span&gt;
+&lt;span class="n"&gt;network&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;https://encrypted.google.com&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;GET&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;networkListener&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;-- link to market&lt;/span&gt;
 &lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;openURL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;market://details?id=com.yourdoman.packagename&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -846,7 +877,7 @@ h: help
 &lt;li&gt;&lt;a href="http://www.osa.nchu.edu.tw/group/group19/Connections/clubmembers03/3.htm"&gt;台灣野生杜鵑花資源介紹&lt;/a&gt; (中興大學保育社)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://plant.climb.com.tw/modules/mediawiki/index.php/台灣高山杜鵑花季"&gt;台灣高山杜鵑花季 - 山羊百科&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.appledaily.com.tw/appledaily/article/supplement/20120530/34262861/"&gt;百岳記行1 台中 攀登南湖大山 賞高山杜鵑 | 蘋果日報&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="plant_summary"></category></entry><entry><title># 分類 #</title><link href="http://blog.suhen.org/nature/taxonomy.html" rel="alternate"></link><updated>2013-12-14T14:45:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-14:nature/taxonomy.html</id><summary type="html">&lt;h1&gt;依分佈&lt;/h1&gt;
+&lt;/ul&gt;</summary><category term="plant_family"></category></entry><entry><title># 分類 #</title><link href="http://blog.suhen.org/nature/taxonomy.html" rel="alternate"></link><updated>2013-12-14T14:45:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-14:nature/taxonomy.html</id><summary type="html">&lt;h1&gt;依分佈&lt;/h1&gt;
 &lt;h2&gt;高山&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.suhen.org/nature/xiao_bo.html"&gt;小檗科: 玉山小檗、台灣小檗&lt;/a&gt;&lt;/li&gt;
@@ -3963,7 +3994,7 @@ Sie kommt nicht aus Deutschland.
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="台灣特有種"></category><category term="有刺"></category><category term="紅葉"></category><category term="高山"></category><category term="黃花"></category><category term="紅果"></category><category term="漿果"></category><category term="黑果"></category><category term=""></category></entry><entry><title>油桐花</title><link href="http://blog.suhen.org/nature/you-tong-hua.html" rel="alternate"></link><updated>2013-08-26T01:34:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-26:nature/you-tong-hua.html</id><summary type="html">&lt;p&gt;葉子後面有2個像螃蟹眼睛的腺體，會分泌甜汁，吸引螞蟻取食，而螞蟻會趕走其他吃葉子的昆蟲，達到共生。&lt;/p&gt;
+</summary><category term="台灣特有種"></category><category term="有刺"></category><category term="紅葉"></category><category term="高山"></category><category term="黃花"></category><category term="紅果"></category><category term="漿果"></category><category term="黑果"></category><category term="plant_family"></category></entry><entry><title>油桐花</title><link href="http://blog.suhen.org/nature/you-tong-hua.html" rel="alternate"></link><updated>2013-08-26T01:34:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-26:nature/you-tong-hua.html</id><summary type="html">&lt;p&gt;葉子後面有2個像螃蟹眼睛的腺體，會分泌甜汁，吸引螞蟻取食，而螞蟻會趕走其他吃葉子的昆蟲，達到共生。&lt;/p&gt;
 &lt;img alt="/static/images/nature/plant/0004/R0025485.JPG" src="/static/images/nature/plant/0004/R0025485.JPG" /&gt;
 &lt;img alt="/static/images/nature/plant/0004/R0025484.JPG" src="/static/images/nature/plant/0004/R0025484.JPG" /&gt;
 &lt;ul class="simple"&gt;
@@ -7465,6 +7496,7 @@ extensions = ['sphinx.ext.graphviz']
 &lt;p&gt;zoom in/out: Command Opt =/-&lt;/p&gt;
 &lt;p&gt;強制結束: Command Opt Esc&lt;/p&gt;
 &lt;p&gt;區域截圖: Command Shift 4&lt;/p&gt;
+&lt;p&gt;貼上無格式文字 (plain-text): Shift + Option + Command + v&lt;/p&gt;
 &lt;p&gt;顯示User Library: 在Finder裡的Go(前往), 按住option, 就會出現&lt;/p&gt;
 &lt;p&gt;輸入特殊符號: Command + option + T&lt;/p&gt;
 &lt;p&gt;放大縮小: Command + &amp;quot;+&amp;quot; / Command + &amp;quot;-&amp;quot;&lt;/p&gt;

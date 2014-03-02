@@ -55,8 +55,19 @@
 </pre></div>
 
 
-<h1>network / link</h1>
-<div class="highlight"><pre><span class="c1">-- link to market</span>
+<h1>Network</h1>
+<div class="highlight"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">networkListener</span><span class="p">(</span> <span class="n">event</span> <span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="n">event</span><span class="p">.</span><span class="n">isError</span> <span class="p">)</span> <span class="k">then</span>
+            <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">Network error!&quot;</span><span class="p">)</span>
+    <span class="k">else</span>
+            <span class="nb">print</span> <span class="p">(</span> <span class="s2">&quot;</span><span class="s">RESPONSE: &quot;</span> <span class="o">..</span> <span class="n">event</span><span class="p">.</span><span class="n">response</span> <span class="p">)</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1">-- Access Google over SSL:</span>
+<span class="n">network</span><span class="p">.</span><span class="n">request</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">https://encrypted.google.com&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">GET&quot;</span><span class="p">,</span> <span class="n">networkListener</span> <span class="p">)</span>
+
+<span class="c1">-- link to market</span>
 <span class="n">system</span><span class="p">.</span><span class="n">openURL</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">market://details?id=com.yourdoman.packagename&quot;</span> <span class="p">)</span>
 </pre></div>
 
