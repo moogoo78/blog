@@ -725,13 +725,42 @@ What is it that stands higher than action?  Silence.
 &lt;p&gt;翡翠樹蛙: 過眼金線&lt;/p&gt;
 &lt;p&gt;照片用光陰魔術手修&lt;/p&gt;
 &lt;p&gt;酸藤 春天火紅, 在樹上&lt;/p&gt;
-&lt;p&gt;新店烏來很多&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>web develop</title><link href="http://blog.suhen.org/computer/web-develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web-develop.html</id><summary type="html">&lt;h1&gt;layout&lt;/h1&gt;
-&lt;p&gt;圖片塞滿browser&lt;/p&gt;
+&lt;p&gt;新店烏來很多&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>web develop</title><link href="http://blog.suhen.org/computer/web-develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web-develop.html</id><summary type="html">&lt;h1&gt;Frontend&lt;/h1&gt;
+&lt;h2&gt;CSS&lt;/h2&gt;
+&lt;h3&gt;基本語法&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="nd"&gt;:5px&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nt"&gt;red&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* 常用style: none, dotted, dashed, solid, double */&lt;/span&gt;
+&lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;odd&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#99ff99&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://paulmason.name/item/full-screen-background-image-pure-css-code"&gt;Full Screen Background Image - Pure CSS Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css_border.asp"&gt;CSS Border&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dev.opera.com/articles/view/zebra-striping-tables-with-css3/"&gt;Zebra striping tables with CSS3 - Dev.Opera&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;server&lt;/h1&gt;
-&lt;h2&gt;performance&lt;/h2&gt;
+&lt;h3&gt;應用&lt;/h3&gt;
+&lt;p&gt;圖片塞滿browser
+* &lt;a href="http://paulmason.name/item/full-screen-background-image-pure-css-code"&gt;Full Screen Background Image - Pure CSS Code&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;工具&lt;/h2&gt;
+&lt;h3&gt;layout&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.placehold.it/"&gt;Placehold.it - Quick and simple image placeholders&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gomockingbird.com/mockingbird/"&gt;Mockingbird&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;color&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://nipponcolors.com/"&gt;NIPPON COLORS - 日本の伝統色&lt;/a&gt; (Firefox有問題)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Font&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://chengyinliu.com/whatfont.html"&gt;WhatFont Tool - The easiest way to inspect fonts in webpages « Chengyin Liu&lt;/a&gt; 方便看網頁字體的bookmarklet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;資源&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://copypastecharacter.com/"&gt;✿ Our favorite set — CopyPasteCharacter.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://thenounproject.com/"&gt;NounProject&lt;/a&gt; 剪影 icon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Backend&lt;/h1&gt;
+&lt;h2&gt;Server Performance&lt;/h2&gt;
 &lt;h3&gt;ab&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ab&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//testme.com&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
