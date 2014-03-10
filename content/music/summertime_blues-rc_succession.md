@@ -7,6 +7,8 @@ Slug: summertime_blues_kiyoshiro
 
 這首 Summertime Blues，大概常聽西洋歌曲的都耳熟能詳，也很多人都翻唱過，但是忌野清志郎為主的 RC Succession (RCサクセション) 現場版本最令我感動。除了忌野清志郎特有的日文念歌式唱法、美式老藍調搖滾曲風、日本搖滾細緻又富層次感的編曲，最厲害的還是歌詞改編成反核的內容。原本收錄在1988年發行，改編翻唱西洋歌曲的『COVERS』，沒想到當年寫的歌詞內容句句命中23年後東日本311地震，引起的福島核災。
 
+![](/static/images/music/rc_succession-covers.jpg)
+
 忌野清志郎的故事很多，但是今天打算到此為止，聽歌吧。
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/IaUHCFF5BU8" frameborder="0" allowfullscreen></iframe>
