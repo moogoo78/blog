@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>==== Python ====</title>
+        <title>!!! Python</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog Atom Feed" />
                 
@@ -31,7 +31,7 @@
     <header>
       <h1 class="entry-title">
         <a href="http://blog.suhen.org/computer/python.html" rel="bookmark"
-           title="Permalink to ==== Python ====">==== Python ====</a></h1>
+           title="Permalink to !!! Python">!!! Python</a></h1>
           </header>
 
     <div class="entry-content">
@@ -396,6 +396,34 @@ if (A == 1 and
 <span class="k">print</span> <span class="n">f3</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="k">print</span> <span class="n">f2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+<p>另一例:</p>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
+
+<span class="c"># Imperative Programming</span>
+<span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="n">topic</span><span class="p">):</span>
+    <span class="k">print</span> <span class="s">&quot;My speach is &quot;</span> <span class="o">+</span> <span class="n">topic</span>
+
+<span class="k">def</span> <span class="nf">timer</span><span class="p">(</span><span class="n">fn</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
+        <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s">&quot;took {time}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">t</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">inner</span>
+
+<span class="n">speaker</span> <span class="o">=</span> <span class="n">timer</span><span class="p">(</span><span class="n">speak</span><span class="p">)</span>
+<span class="n">speaker</span><span class="p">(</span><span class="s">&quot;FP with Python&quot;</span><span class="p">)</span>
+
+<span class="c"># Decorator (Functional Programming)</span>
+<span class="nd">@timer</span>
+<span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="n">topic</span><span class="p">):</span>
+    <span class="k">print</span> <span class="s">&quot;My speach is &quot;</span> <span class="o">+</span> <span class="n">topic</span>
+
+<span class="n">speak</span><span class="p">(</span><span class="s">&quot;FP with Python&quot;</span><span class="p">)</span>
+
+<span class="c"># &gt; My speach is FP with Python</span>
+<span class="c"># &gt; took 5.96046447754e-06</span>
 </pre></div>
 </div>
 

@@ -231,8 +231,11 @@ eb status --verbose
 &lt;li&gt;&lt;a href="http://aws.amazon.com/elasticbeanstalk/faqs/"&gt;AWS Elastic Beanstalk FAQs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.RDS.html"&gt;Using AWS Elastic Beanstalk with Amazon RDS - AWS Elastic Beanstalk&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;eb stop&lt;/h2&gt;
-&lt;p&gt;rds的security group要拿掉, 否則會失敗&lt;/p&gt;
+&lt;h2&gt;eb stop / delete&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;rds的security group要拿掉, 否則會失敗&lt;/li&gt;
+&lt;li&gt;如果有eb start有create新的RDS, delete時會把那個RDS也殺掉&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;http://blog.uptill3.com/2012/08/25/python-on-elastic-beanstalk.html
 http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
@@ -579,7 +582,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;參考:
 &lt;a class="reference external" href="http://www.emacswiki.org/emacs/SkeletonMode"&gt;EmacsWiki: Skeleton Mode&lt;/a&gt;&lt;/p&gt;
-</summary><category term="emacs"></category></entry><entry><title>==== Python ====</title><link href="http://blog.suhen.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
+</summary><category term="emacs"></category></entry><entry><title>!!! Python</title><link href="http://blog.suhen.org/computer/python.html" rel="alternate"></link><updated>2013-07-10T14:02:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-07-10:computer/python.html</id><summary type="html">&lt;div class="section" id="quick-start"&gt;
 &lt;h2&gt;Quick Start&lt;/h2&gt;
 &lt;p&gt;path:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -933,6 +936,34 @@ if (A == 1 and
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f3&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;f2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;另一例:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;
+
+&lt;span class="c"&gt;# Imperative Programming&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;speak&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;topic&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;My speach is &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;topic&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;timer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;inner&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+        &lt;span class="n"&gt;fn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;took {time}&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;inner&lt;/span&gt;
+
+&lt;span class="n"&gt;speaker&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;timer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;speak&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;speaker&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;FP with Python&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c"&gt;# Decorator (Functional Programming)&lt;/span&gt;
+&lt;span class="nd"&gt;@timer&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;speak&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;topic&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;My speach is &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;topic&lt;/span&gt;
+
+&lt;span class="n"&gt;speak&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;FP with Python&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c"&gt;# &amp;gt; My speach is FP with Python&lt;/span&gt;
+&lt;span class="c"&gt;# &amp;gt; took 5.96046447754e-06&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>HTML CSS</title><link href="http://blog.suhen.org/computer/html-css.html" rel="alternate"></link><updated>2013-06-30T22:22:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-30:computer/html-css.html</id><summary type="html">&lt;div class="section" id="css"&gt;
@@ -3108,6 +3139,13 @@ F7 鍵盤瀏覽
 &lt;h3&gt;DevTools&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.pixelwindowapp.com/"&gt;PixelWindow&lt;/a&gt; resolution ruler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="html5-slides"&gt;
+&lt;h3&gt;HTML5 Slides&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://bartaz.github.io/impress.js/#/bored"&gt;impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka &amp;#64;bartaz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/hakimel/reveal.js"&gt;hakimel/reveal.js&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
