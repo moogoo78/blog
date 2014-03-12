@@ -1,4 +1,4 @@
-==== Python ====
+!!! Python 
 #####################
 :date: 2013-07-10 14:02
 :category: computer
@@ -400,3 +400,35 @@ via: http://stackoverflow.com/questions/308999/what-does-functools-wraps-do
   print f3(2)
    
   print f2(2)
+
+
+另一例:
+
+.. code-block:: python
+
+    from time import time
+
+    # Imperative Programming
+    def speak(topic):
+        print "My speach is " + topic
+     
+    def timer(fn):
+        def inner(*args, **kwargs):
+            t = time()
+            fn(*args, **kwargs)
+            print "took {time}".format(time=time()-t)
+     
+        return inner
+     
+    speaker = timer(speak)
+    speaker("FP with Python")
+     
+    # Decorator (Functional Programming)
+    @timer
+    def speak(topic):
+        print "My speach is " + topic
+        
+    speak("FP with Python")
+     
+    # > My speach is FP with Python
+    # > took 5.96046447754e-06

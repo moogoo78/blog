@@ -129,8 +129,11 @@ server cert:
 
 
 
-## eb stop
-rds的security group要拿掉, 否則會失敗
+## eb stop / delete
+
+* rds的security group要拿掉, 否則會失敗
+* 如果有eb start有create新的RDS, delete時會把那個RDS也殺掉
+
 
 
 http://blog.uptill3.com/2012/08/25/python-on-elastic-beanstalk.html

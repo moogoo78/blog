@@ -109,6 +109,14 @@ DevTools
 * `PixelWindow <http://www.pixelwindowapp.com/>`__ resolution ruler
 
 
+HTML5 Slides
+-----------------
+
+* `impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz <http://bartaz.github.io/impress.js/#/bored>`__
+* `hakimel/reveal.js <https://github.com/hakimel/reveal.js>`__
+
+
+
 Command Line
 ===================
 
