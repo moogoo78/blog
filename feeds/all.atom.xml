@@ -7166,54 +7166,7 @@ count(arr)
 &lt;p&gt;&lt;a class="reference external" href="http://code.google.com/p/ppython/wiki/data_convert"&gt;http://code.google.com/p/ppython/wiki/data_convert&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Python Web Framework (Flask, SQLAlchemy)</title><link href="http://blog.suhen.org/computer/python-web-framework-flask-sqlalchemy.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/python-web-framework-flask-sqlalchemy.html</id><summary type="html">&lt;div class="section" id="django"&gt;
-&lt;h2&gt;Django&lt;/h2&gt;
-&lt;div class="section" id="quick-start"&gt;
-&lt;h3&gt;Quick Start&lt;/h3&gt;
-&lt;pre class="literal-block"&gt;
-$ pip install Django
-$ django-admin.py startproject mysite
-$ python manage.py startapp myapp
-&lt;/pre&gt;
-&lt;p&gt;check version:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-import django
-print django.get_version()
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="docs"&gt;
-&lt;h3&gt;docs&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://docs.djangoproject.com/en/1.3/"&gt;Django | Django documentation | Django documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://djangosnippets.org/snippets/1811/"&gt;Django snippets: django paginator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="flask"&gt;
-&lt;h2&gt;Flask&lt;/h2&gt;
-&lt;div class="section" id="id1"&gt;
-&lt;h3&gt;Docs&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://flask.pocoo.org/docs/"&gt;Flask documentation&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/mitsuhiko/flask"&gt;github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://jinja.pocoo.org/docs/"&gt;Jinja2 documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/Flask-SQLAlchemy/"&gt;Flask-SQLAlchemy documentation&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/brosner/sqlalchemy"&gt;github&lt;/a&gt;, &lt;a class="reference external" href="http://docs.sqlalchemy.org/en/latest/index.html"&gt;SQLAlchemy Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/Flask-Login/"&gt;Flask-Login documentation&lt;/a&gt;, &lt;a class="reference external" href="https://bitbucket.org/leafstorm/flask-login"&gt;leafstorm / flask-login / overview — Bitbucket&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/Flask-WTF/"&gt;Flask-WTF&lt;/a&gt;, &lt;a class="reference external" href="http://wtforms.simplecodes.com/docs/dev/"&gt;WTForms Documentation&lt;/a&gt;, &lt;a class="reference external" href="https://bitbucket.org/danjac/flask-wtf"&gt;danjac / flask-wtf / overview — Bitbucket&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="tips"&gt;
-&lt;h3&gt;Tips&lt;/h3&gt;
-&lt;p&gt;看Flask版本:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-import flask
-
-flask.__version__
-&lt;/pre&gt;
-&lt;p&gt;request.args
-request.form.getlist('')&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="sqlalchemy"&gt;
+</summary><category term="docs"></category></entry><entry><title>Python Web Framework (SQLAlchemy, Django, Flask)</title><link href="http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/python-web-framework-sqlalchemy-django-flask.html</id><summary type="html">&lt;div class="section" id="sqlalchemy"&gt;
 &lt;h2&gt;SQLAlchemy&lt;/h2&gt;
 &lt;div class="section" id="setting"&gt;
 &lt;h3&gt;setting&lt;/h3&gt;
@@ -7270,6 +7223,9 @@ products = db.relationship(
 products.filter_by(type=1).all()
 &lt;/pre&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://docs.sqlalchemy.org/en/latest/orm/inheritance.html"&gt;http://docs.sqlalchemy.org/en/latest/orm/inheritance.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="query"&gt;
+&lt;h3&gt;Query&lt;/h3&gt;
 &lt;p&gt;rand:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 from sqlalchemy.sql import func
@@ -7285,6 +7241,9 @@ query.group_by(func.day(LogUserData.dtime).all()
 votes = db.session.query(EventDC1Vote,
 func.count(uid).label('cnt'), 'uid').group_by('uid').order_by('cnt DESC').all()
 &lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sqlalchemy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;distinct&lt;/span&gt;
+&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;distinct&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="example"&gt;
 &lt;h3&gt;example&lt;/h3&gt;
@@ -7350,11 +7309,58 @@ p = Product.query.join('brand').\
 &lt;p&gt;文件 (0.7): &lt;a class="reference external" href="http://docs.sqlalchemy.org/en/rel_0_7/orm/collections.html#dynamic-relationship"&gt;http://docs.sqlalchemy.org/en/rel_0_7/orm/collections.html#dynamic-relationship&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id2"&gt;
+&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;比較&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/"&gt;SQLAlchemy and You | Armin Ronacher's Thoughts and Writings&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="django"&gt;
+&lt;h2&gt;Django&lt;/h2&gt;
+&lt;div class="section" id="quick-start"&gt;
+&lt;h3&gt;Quick Start&lt;/h3&gt;
+&lt;pre class="literal-block"&gt;
+$ pip install Django
+$ django-admin.py startproject mysite
+$ python manage.py startapp myapp
+&lt;/pre&gt;
+&lt;p&gt;check version:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+import django
+print django.get_version()
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="docs"&gt;
+&lt;h3&gt;docs&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://docs.djangoproject.com/en/1.3/"&gt;Django | Django documentation | Django documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://djangosnippets.org/snippets/1811/"&gt;Django snippets: django paginator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="flask"&gt;
+&lt;h2&gt;Flask&lt;/h2&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h3&gt;Docs&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://flask.pocoo.org/docs/"&gt;Flask documentation&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/mitsuhiko/flask"&gt;github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://jinja.pocoo.org/docs/"&gt;Jinja2 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/Flask-SQLAlchemy/"&gt;Flask-SQLAlchemy documentation&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/brosner/sqlalchemy"&gt;github&lt;/a&gt;, &lt;a class="reference external" href="http://docs.sqlalchemy.org/en/latest/index.html"&gt;SQLAlchemy Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/Flask-Login/"&gt;Flask-Login documentation&lt;/a&gt;, &lt;a class="reference external" href="https://bitbucket.org/leafstorm/flask-login"&gt;leafstorm / flask-login / overview — Bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/Flask-WTF/"&gt;Flask-WTF&lt;/a&gt;, &lt;a class="reference external" href="http://wtforms.simplecodes.com/docs/dev/"&gt;WTForms Documentation&lt;/a&gt;, &lt;a class="reference external" href="https://bitbucket.org/danjac/flask-wtf"&gt;danjac / flask-wtf / overview — Bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tips"&gt;
+&lt;h3&gt;Tips&lt;/h3&gt;
+&lt;p&gt;看Flask版本:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+import flask
+
+flask.__version__
+&lt;/pre&gt;
+&lt;p&gt;request.args
+request.form.getlist('')&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>[跑] 北頭洋走標路跑賽</title><link href="http://blog.suhen.org/run/pao-bei-tou-yang-zou-biao-lu-pao-sai.html" rel="alternate"></link><updated>2013-04-07T04:17:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-07:run/pao-bei-tou-yang-zou-biao-lu-pao-sai.html</id><summary type="html">&lt;p&gt;前幾年開始跑馬拉松時就看到這個比賽： &lt;a class="reference external" href="http://www.soulang.org.tw/news.htm#45"&gt;北頭洋走標路跑賽&lt;/a&gt; ，一開始吸引我的是這個很特別的名字，北頭洋是什麼？ 走鏢又是什麼！？感覺很特別，但一直拖到今年才播時間冒名。看網站的介紹：走鏢是西拉雅人跑步競賽的意思，西拉雅人為了獵鹿，從小就訓練跑步，還有一個飛蕃“程天與”的故鄉野傳奇。而北頭洋就是在佳里區西北方小山北頭，平埔語「巫女」的意思，北頭洋為「巫山」。&lt;/p&gt;
 &lt;img alt="/static/images/2013-04-07_jiali/12403_10151628913261289_2048866220_n.jpg" src="/static/images/2013-04-07_jiali/12403_10151628913261289_2048866220_n.jpg" style="width: 500px;" /&gt;

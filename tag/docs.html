@@ -584,8 +584,8 @@ C-RET ...</pre></div>
          
                         <li><article class="hentry">    
                 <header>
-                    <h1><a href="http://blog.suhen.org/computer/python-web-framework-flask-sqlalchemy.html" rel="bookmark"
-                           title="Permalink to Python Web Framework (Flask, SQLAlchemy)">Python Web Framework (Flask, SQLAlchemy)</a></h1>
+                    <h1><a href="http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask.html" rel="bookmark"
+                           title="Permalink to Python Web Framework (SQLAlchemy, Django, Flask)">Python Web Framework (SQLAlchemy, Django, Flask)</a></h1>
                 </header>
                 
                 <div class="entry-content">
@@ -596,40 +596,34 @@ C-RET ...</pre></div>
 
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
-</footer><!-- /.post-info -->                <div class="section" id="django">
-<h2>Django</h2>
-<div class="section" id="quick-start">
-<h3>Quick Start</h3>
+</footer><!-- /.post-info -->                <div class="section" id="sqlalchemy">
+<h2>SQLAlchemy</h2>
+<div class="section" id="setting">
+<h3>setting</h3>
+<p>sqlite path:</p>
 <pre class="literal-block">
-$ pip install Django
-$ django-admin.py startproject mysite
-$ python manage.py startapp myapp
+# sqlite://&lt;nohostname&gt;/&lt;path&gt;
+# where &lt;path&gt; is relative:
+engine = create_engine('sqlite:///foo.db')
+
+# or absolute, starting with a slash:
+engine = create_engine('sqlite:////absolute/path/to/foo.db')
 </pre>
-<p>check version:</p>
+<p>import:</p>
 <pre class="literal-block">
-import django
-print django.get_version()
+from flask.ext.sqlalchemy import BaseQuery
+from sqlalchemy.sql import func
 </pre>
 </div>
-<div class="section" id="docs">
-<h3>docs</h3>
-<ul class="simple">
-<li><a class="reference external" href="https://docs.djangoproject.com/en/1.3/">Django | Django documentation | Django documentation</a></li>
-<li><a class="reference external" href="http://djangosnippets.org/snippets/1811/">Django snippets: django paginator</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="flask">
-<h2>Flask</h2>
-<div class="section" id="id1">
-<h3>Docs</h3>
-<ul class="simple">
-<li><a class="reference external" href="http://flask.pocoo.org/docs/">Flask documentation</a>, <a class="reference external" href="https://github.com/mitsuhiko/flask">github</a></li>
-<li><a class="reference external" href="http://jinja.pocoo.org/docs/">Jinja2 documentation</a></li>
-<li><a class="reference external" href="http://packages.python.org/Flask-SQLAlchemy/">Flask-SQLAlchemy documentation</a>, <a class="reference external" href="https://github.com/brosner/sqlalchemy">github</a>, <a class="reference external" href="http://docs.sqlalchemy.org/en/latest/index.html">SQLAlchemy Documentation</a></li>
-<li><a class="reference external" href="http://packages.python.org/Flask-Login/">Flask-Login documentation</a>, <a class="reference external" href="https://bitbucket.org/leafstorm/flask-login">leafstorm / flask-login / overview — Bitbucket ...</a></li></ul></div></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/python-web-framework-flask-sqlalchemy.html">read more</a>
-                <p>There are <a href="http://blog.suhen.org/computer/python-web-framework-flask-sqlalchemy.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+<div class="section" id="schema">
+<h3>schema</h3>
+<p>column parameters:</p>
+<pre class="literal-block">
+primary_key =True
+nullable=False
+unique ...</pre></div></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
                             
 
