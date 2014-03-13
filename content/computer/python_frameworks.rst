@@ -1,56 +1,9 @@
-Python Web Framework (Flask, SQLAlchemy)
-#######################################################
+Python Web Framework (SQLAlchemy, Django, Flask)
+#########################################################
 :date: 2013-04-09 11:36
 :category: computer
 :tags: docs
 
-Django
-===========
-
-Quick Start
-------------
-
-::
-
-  $ pip install Django
-  $ django-admin.py startproject mysite
-  $ python manage.py startapp myapp
-
-check version::
-
-  import django
-  print django.get_version()
-
-
-docs
------
-* `Django | Django documentation | Django documentation <https://docs.djangoproject.com/en/1.3/>`__
-* `Django snippets: django paginator <http://djangosnippets.org/snippets/1811/>`__
-
-
-Flask
-===========
-
-Docs
------
-
-* `Flask documentation <http://flask.pocoo.org/docs/>`__, `github <https://github.com/mitsuhiko/flask>`__
-* `Jinja2 documentation <http://jinja.pocoo.org/docs/>`__
-* `Flask-SQLAlchemy documentation <http://packages.python.org/Flask-SQLAlchemy/>`__, `github <https://github.com/brosner/sqlalchemy>`__, `SQLAlchemy Documentation <http://docs.sqlalchemy.org/en/latest/index.html>`__
-* `Flask-Login documentation <http://packages.python.org/Flask-Login/>`__, `leafstorm / flask-login / overview — Bitbucket <https://bitbucket.org/leafstorm/flask-login>`__
-* `Flask-WTF <http://packages.python.org/Flask-WTF/>`__, `WTForms Documentation <http://wtforms.simplecodes.com/docs/dev/>`__, `danjac / flask-wtf / overview — Bitbucket <https://bitbucket.org/danjac/flask-wtf>`__
-
-Tips
-------
-看Flask版本::
-
-  import flask
-
-  flask.__version__
-
-
-request.args
-request.form.getlist('')
 
 SQLAlchemy
 ==============
@@ -112,6 +65,10 @@ relationship+filter::
 
 http://docs.sqlalchemy.org/en/latest/orm/inheritance.html
 
+
+Query
+-----------
+
 rand::
 
   from sqlalchemy.sql import func
@@ -129,6 +86,11 @@ group by::
     votes = db.session.query(EventDC1Vote,
     func.count(uid).label('cnt'), 'uid').group_by('uid').order_by('cnt DESC').all()
 
+
+.. code-block:: python
+
+    from sqlalchemy import distinct
+    session.query(func.count(distinct(User.name)))
 
 example
 -----------
@@ -208,3 +170,51 @@ changelog (0.8): http://docs.sqlalchemy.org/en/latest/changelog/changelog_08.htm
 比較
 ========
 * `SQLAlchemy and You | Armin Ronacher's Thoughts and Writings <http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/>`__
+
+Django
+===========
+
+Quick Start
+------------
+
+::
+
+  $ pip install Django
+  $ django-admin.py startproject mysite
+  $ python manage.py startapp myapp
+
+check version::
+
+  import django
+  print django.get_version()
+
+
+docs
+-----
+* `Django | Django documentation | Django documentation <https://docs.djangoproject.com/en/1.3/>`__
+* `Django snippets: django paginator <http://djangosnippets.org/snippets/1811/>`__
+
+
+Flask
+===========
+
+Docs
+-----
+
+* `Flask documentation <http://flask.pocoo.org/docs/>`__, `github <https://github.com/mitsuhiko/flask>`__
+* `Jinja2 documentation <http://jinja.pocoo.org/docs/>`__
+* `Flask-SQLAlchemy documentation <http://packages.python.org/Flask-SQLAlchemy/>`__, `github <https://github.com/brosner/sqlalchemy>`__, `SQLAlchemy Documentation <http://docs.sqlalchemy.org/en/latest/index.html>`__
+* `Flask-Login documentation <http://packages.python.org/Flask-Login/>`__, `leafstorm / flask-login / overview — Bitbucket <https://bitbucket.org/leafstorm/flask-login>`__
+* `Flask-WTF <http://packages.python.org/Flask-WTF/>`__, `WTForms Documentation <http://wtforms.simplecodes.com/docs/dev/>`__, `danjac / flask-wtf / overview — Bitbucket <https://bitbucket.org/danjac/flask-wtf>`__
+
+Tips
+------
+看Flask版本::
+
+  import flask
+
+  flask.__version__
+
+
+request.args
+request.form.getlist('')
