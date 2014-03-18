@@ -1,4 +1,4 @@
-!!! Python 
+< Python >
 #####################
 :date: 2013-07-10 14:02
 :category: computer
@@ -225,13 +225,17 @@ json
 
 .. code-block:: python
 
-  # obj to json string
+  # obj to json string (serialize)
   json.dumps({'foo':'bar'}, ensure_ascii=False) # ensure_ascii = False (Default: True), 中文不會變成 u\xxxx 的 unicode 格式
 
-  # obj to json
-  json.dump({'foo':'bar'})
+  # obj to json fp
+  json.dump({'foo':'bar'}, fp)
 
+  # json fp to obj
+  json.load(fp)
 
+  # json string
+  json.loads(s)
 
 IO / shell / commond line
 ================================
