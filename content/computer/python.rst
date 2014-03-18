@@ -237,6 +237,31 @@ json
   # json string
   json.loads(s)
 
+
+算數
+===================
+
+.. code-block:: python
+
+  import random
+
+  random.random() # 產生 [0.0, 1.0) 的亂數
+
+  # test 百分比
+  a = 0
+  b = 0
+  c = 0
+  for i in range(10000):
+      r = random.random()
+      if r >= 0.95: # 5 %
+          c += 1
+      elif r >= 0.70 and r < 0.95: # 25 %
+          b += 1
+      else: # 70 %
+          a+= 1
+  print a, b,c, a/10000.0, b/10000.0, c/10000.0
+
+
 IO / shell / commond line
 ================================
 `15.1. os — Miscellaneous operating system interfaces — Python v2.7.3 documentation <http://docs.python.org/2/library/os.html>`__
