@@ -247,6 +247,27 @@ def any(iterable):
 </pre></div>
 </div>
 </div>
+<div class="section" id="id3">
+<h2>算數</h2>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="c"># 產生 [0.0, 1.0) 的亂數</span>
+
+<span class="c"># test 百分比</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">r</span> <span class="o">&gt;=</span> <span class="mf">0.95</span><span class="p">:</span> <span class="c"># 5 %</span>
+        <span class="n">c</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">r</span> <span class="o">&gt;=</span> <span class="mf">0.70</span> <span class="ow">and</span> <span class="n">r</span> <span class="o">&lt;</span> <span class="mf">0.95</span><span class="p">:</span> <span class="c"># 25 %</span>
+        <span class="n">b</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c"># 70 %</span>
+        <span class="n">a</span><span class="o">+=</span> <span class="mi">1</span>
+<span class="k">print</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span> <span class="n">a</span><span class="o">/</span><span class="mf">10000.0</span><span class="p">,</span> <span class="n">b</span><span class="o">/</span><span class="mf">10000.0</span><span class="p">,</span> <span class="n">c</span><span class="o">/</span><span class="mf">10000.0</span>
+</pre></div>
+</div>
 <div class="section" id="io-shell-commond-line">
 <h2>IO / shell / commond line</h2>
 <p><a class="reference external" href="http://docs.python.org/2/library/os.html">15.1. os — Miscellaneous operating system interfaces — Python v2.7.3 documentation</a></p>
@@ -283,7 +304,7 @@ all_class = { 'my_class' : my_class }
 object = all_class['my_class']()
 </pre>
 </div>
-<div class="section" id="id3">
+<div class="section" id="id4">
 <h3>coding</h3>
 <p>只留ASCII:</p>
 <pre class="literal-block">
@@ -371,7 +392,7 @@ $ python -m SimpleHTTPServer # 預設的port 8000, http://127.0.0.1:8000
     <span class="k">raise</span> <span class="n">SillyWalkMinistry</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="section" id="id4">
+<div class="section" id="id5">
 <h2>整理</h2>
 <p>小括弧整理程式碼:</p>
 <pre class="literal-block">
