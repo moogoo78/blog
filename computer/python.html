@@ -231,6 +231,15 @@ def any(iterable):
 <p>re.search()跟re.match()的不同, match()是字串開頭也要符合, search()只要字串中間有符合的pattern就可以了</p>
 <p><a class="reference external" href="http://docs.python.org/2/library/re.html#search-vs-match">7.2. re — Regular expression operations — Python v2.7.6 documentation</a></p>
 </div>
+<div class="section" id="json">
+<h3>json</h3>
+<div class="highlight"><pre><span class="c"># obj to json string</span>
+<span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s">&#39;foo&#39;</span><span class="p">:</span><span class="s">&#39;bar&#39;</span><span class="p">},</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span> <span class="c"># ensure_ascii = False (Default: True), 中文不會變成 u\xxxx 的 unicode 格式</span>
+
+<span class="c"># obj to json</span>
+<span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">({</span><span class="s">&#39;foo&#39;</span><span class="p">:</span><span class="s">&#39;bar&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="io-shell-commond-line">
 <h2>IO / shell / commond line</h2>
