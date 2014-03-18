@@ -220,7 +220,16 @@ re.search()跟re.match()的不同, match()是字串開頭也要符合, search()�
 
 `7.2. re — Regular expression operations — Python v2.7.6 documentation <http://docs.python.org/2/library/re.html#search-vs-match>`__
 
+json
+------
 
+.. code-block:: python
+
+  # obj to json string
+  json.dumps({'foo':'bar'}, ensure_ascii=False) # ensure_ascii = False (Default: True), 中文不會變成 u\xxxx 的 unicode 格式
+
+  # obj to json
+  json.dump({'foo':'bar'})
 
 
 
