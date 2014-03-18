@@ -30,7 +30,7 @@
 
                     <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/python.html">!!! Python</a></h1> 
+                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/python.html">&lt; Python &gt;</a></h1> 
                     <footer class="post-info">
         <abbr class="published" title="2013-07-10T14:02:00">
                 2013-07-10 14:02
@@ -229,11 +229,17 @@ def any(iterable):
 </div>
 <div class="section" id="json">
 <h3>json</h3>
-<div class="highlight"><pre><span class="c"># obj to json string</span>
+<div class="highlight"><pre><span class="c"># obj to json string (serialize)</span>
 <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s">&#39;foo&#39;</span><span class="p">:</span><span class="s">&#39;bar&#39;</span><span class="p">},</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span> <span class="c"># ensure_ascii = False (Default: True), 中文不會變成 u\xxxx 的 unicode 格式</span>
 
-<span class="c"># obj to json</span>
-<span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">({</span><span class="s">&#39;foo&#39;</span><span class="p">:</span><span class="s">&#39;bar&#39;</span><span class="p">})</span>
+<span class="c"># obj to json fp</span>
+<span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">({</span><span class="s">&#39;foo&#39;</span><span class="p">:</span><span class="s">&#39;bar&#39;</span><span class="p">},</span> <span class="n">fp</span><span class="p">)</span>
+
+<span class="c"># json fp to obj</span>
+<span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">fp</span><span class="p">)</span>
+
+<span class="c"># json string</span>
+<span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
