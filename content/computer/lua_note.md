@@ -10,7 +10,7 @@ Slug: lua_note
     :::lua
     string.find(s, pattern, [index])
     string.format(s, e1, e2...)
-    string.sub(s, i [, j])
+    string.sub(s, i [, j]) -- string.sub("abcd", 1, 3) >> abc
     
     string.len(s)
     s:len()
@@ -28,6 +28,9 @@ Slug: lua_note
     string.find("hyphenated-word", "hyphenated-word") -- 找不到
     string.find("hyphenated-word", "hyphenated%-word") 才有
 
+    -- date
+    os.date()
+    
 ## regular expression (patterns)
 
 <table align="center" border="1">

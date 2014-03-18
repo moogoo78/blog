@@ -198,6 +198,13 @@ docs
 Flask
 ===========
 
+request::
+
+  request.remote_addr # client id
+  request.access_route # all ip addresses from client (access_route[0]) to the last proxy server,
+  # 判斷環境變數 HTTP_X_FORWARDED_FOR
+
+
 Docs
 -----
 
