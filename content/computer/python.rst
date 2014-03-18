@@ -112,14 +112,6 @@ time
   t1 = d + timedelta(days=-w)
   t2 = d + timedelta(days=+(7-w))
 
-算數
------------
-random::
-
-  import random
-  random.randint(0,9)
-
-  ''.join([str(random.randint(1,9)) for i in range(5)]) # 產生5個0-9的字串
 
 file
 --------
@@ -244,6 +236,9 @@ json
 .. code-block:: python
 
   import random
+
+  random.randint(0,9)
+  # ''.join([str(random.randint(1,9)) for i in range(5)]) # 產生5個0-9的字串
 
   random.random() # 產生 [0.0, 1.0) 的亂數
 
