@@ -124,16 +124,6 @@ string.replace('old', 'new')
 <span class="n">t2</span> <span class="o">=</span> <span class="n">d</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=+</span><span class="p">(</span><span class="mi">7</span><span class="o">-</span><span class="n">w</span><span class="p">))</span>
 </pre></div>
 </div>
-<div class="section" id="id1">
-<h3>算數</h3>
-<p>random:</p>
-<pre class="literal-block">
-import random
-random.randint(0,9)
-
-''.join([str(random.randint(1,9)) for i in range(5)]) # 產生5個0-9的字串
-</pre>
-</div>
 <div class="section" id="file">
 <h3>file</h3>
 <p>write:</p>
@@ -165,7 +155,7 @@ pp = pprint.PrettyPrinter(indent=4)
 pp.pprint(foo)
 </pre>
 </div>
-<div class="section" id="id2">
+<div class="section" id="id1">
 <h3>引數</h3>
 <p>引數傳遞:</p>
 <ol class="arabic simple">
@@ -243,9 +233,12 @@ def any(iterable):
 </pre></div>
 </div>
 </div>
-<div class="section" id="id3">
+<div class="section" id="id2">
 <h2>算數</h2>
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+<span class="c"># &#39;&#39;.join([str(random.randint(1,9)) for i in range(5)]) # 產生5個0-9的字串</span>
 
 <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="c"># 產生 [0.0, 1.0) 的亂數</span>
 
@@ -300,7 +293,7 @@ all_class = { 'my_class' : my_class }
 object = all_class['my_class']()
 </pre>
 </div>
-<div class="section" id="id4">
+<div class="section" id="id3">
 <h3>coding</h3>
 <p>只留ASCII:</p>
 <pre class="literal-block">
@@ -388,7 +381,7 @@ $ python -m SimpleHTTPServer # 預設的port 8000, http://127.0.0.1:8000
     <span class="k">raise</span> <span class="n">SillyWalkMinistry</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="section" id="id5">
+<div class="section" id="id4">
 <h2>整理</h2>
 <p>小括弧整理程式碼:</p>
 <pre class="literal-block">

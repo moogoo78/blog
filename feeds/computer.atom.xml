@@ -671,16 +671,6 @@ string.replace('old', 'new')
 &lt;span class="n"&gt;t2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;timedelta&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;days&lt;/span&gt;&lt;span class="o"&gt;=+&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id1"&gt;
-&lt;h3&gt;算數&lt;/h3&gt;
-&lt;p&gt;random:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-import random
-random.randint(0,9)
-
-''.join([str(random.randint(1,9)) for i in range(5)]) # 產生5個0-9的字串
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;div class="section" id="file"&gt;
 &lt;h3&gt;file&lt;/h3&gt;
 &lt;p&gt;write:&lt;/p&gt;
@@ -712,7 +702,7 @@ pp = pprint.PrettyPrinter(indent=4)
 pp.pprint(foo)
 &lt;/pre&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id2"&gt;
+&lt;div class="section" id="id1"&gt;
 &lt;h3&gt;引數&lt;/h3&gt;
 &lt;p&gt;引數傳遞:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
@@ -790,9 +780,12 @@ def any(iterable):
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id3"&gt;
+&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;算數&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;random&lt;/span&gt;
+
+&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;randint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c"&gt;# &amp;#39;&amp;#39;.join([str(random.randint(1,9)) for i in range(5)]) # 產生5個0-9的字串&lt;/span&gt;
 
 &lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# 產生 [0.0, 1.0) 的亂數&lt;/span&gt;
 
@@ -847,7 +840,7 @@ all_class = { 'my_class' : my_class }
 object = all_class['my_class']()
 &lt;/pre&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id4"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h3&gt;coding&lt;/h3&gt;
 &lt;p&gt;只留ASCII:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -935,7 +928,7 @@ $ python -m SimpleHTTPServer # 預設的port 8000, http://127.0.0.1:8000
     &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="n"&gt;SillyWalkMinistry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id5"&gt;
+&lt;div class="section" id="id4"&gt;
 &lt;h2&gt;整理&lt;/h2&gt;
 &lt;p&gt;小括弧整理程式碼:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
