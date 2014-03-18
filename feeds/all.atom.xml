@@ -2109,7 +2109,7 @@ Encore第二首: Liadov: The Musical Snuff-Box
 &lt;h2&gt;Standard&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;string.find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e2&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nb"&gt;string.sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="p"&gt;[,&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="nb"&gt;string.sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="p"&gt;[,&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="c1"&gt;-- string.sub(&amp;quot;abcd&amp;quot;, 1, 3) &amp;gt;&amp;gt; abc&lt;/span&gt;
 
 &lt;span class="nb"&gt;string.len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;len&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -2126,6 +2126,9 @@ Encore第二首: Liadov: The Musical Snuff-Box
 
 &lt;span class="nb"&gt;string.find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hyphenated-word&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hyphenated-word&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;-- 找不到&lt;/span&gt;
 &lt;span class="nb"&gt;string.find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hyphenated-word&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hyphenated%-word&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="err"&gt;才有&lt;/span&gt;
+
+&lt;span class="c1"&gt;-- date&lt;/span&gt;
+&lt;span class="nb"&gt;os.date&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5024,6 +5027,40 @@ $ python -m SimpleHTTPServer # 預設的port 8000, http://127.0.0.1:8000
 &lt;li&gt;&lt;a class="reference external" href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html"&gt;Google Python Style Guide&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://docs.python-guide.org/en/latest/writing/style/"&gt;Code Style — The Hitchhiker's Guide to Python&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div class="section" id="comments-google-style"&gt;
+&lt;h3&gt;Comments (google style)&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;fetch_bigtable_rows&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;big_table&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;keys&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;other_silly_variable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Fetches rows from a Bigtable.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    Retrieves rows pertaining to the given keys from the Table instance&lt;/span&gt;
+&lt;span class="sd"&gt;    represented by big_table.  Silly things may happen if&lt;/span&gt;
+&lt;span class="sd"&gt;    other_silly_variable is not None.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    Args:&lt;/span&gt;
+&lt;span class="sd"&gt;        big_table: An open Bigtable Table instance.&lt;/span&gt;
+&lt;span class="sd"&gt;        keys: A sequence of strings representing the key of each table row&lt;/span&gt;
+&lt;span class="sd"&gt;            to fetch.&lt;/span&gt;
+&lt;span class="sd"&gt;        other_silly_variable: Another optional variable, that has a much&lt;/span&gt;
+&lt;span class="sd"&gt;            longer name than the other args, and which does nothing.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    Returns:&lt;/span&gt;
+&lt;span class="sd"&gt;        A dict mapping keys to the corresponding table row data&lt;/span&gt;
+&lt;span class="sd"&gt;        fetched. Each row is represented as a tuple of strings. For&lt;/span&gt;
+&lt;span class="sd"&gt;        example:&lt;/span&gt;
+
+&lt;span class="sd"&gt;        {&amp;#39;Serak&amp;#39;: (&amp;#39;Rigel VII&amp;#39;, &amp;#39;Preparer&amp;#39;),&lt;/span&gt;
+&lt;span class="sd"&gt;         &amp;#39;Zim&amp;#39;: (&amp;#39;Irk&amp;#39;, &amp;#39;Invader&amp;#39;),&lt;/span&gt;
+&lt;span class="sd"&gt;         &amp;#39;Lrrr&amp;#39;: (&amp;#39;Omicron Persei 8&amp;#39;, &amp;#39;Emperor&amp;#39;)}&lt;/span&gt;
+
+&lt;span class="sd"&gt;        If a key from the keys argument is missing from the dictionary,&lt;/span&gt;
+&lt;span class="sd"&gt;        then that row was not found in the table.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    Raises:&lt;/span&gt;
+&lt;span class="sd"&gt;        IOError: An error occurred accessing the bigtable.Table object.&lt;/span&gt;
+&lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="practice"&gt;
 &lt;h2&gt;Practice&lt;/h2&gt;
@@ -7344,6 +7381,12 @@ print django.get_version()
 &lt;/div&gt;
 &lt;div class="section" id="flask"&gt;
 &lt;h2&gt;Flask&lt;/h2&gt;
+&lt;p&gt;request:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+request.remote_addr # client id
+request.access_route # all ip addresses from client (access_route[0]) to the last proxy server,
+# 判斷環境變數 HTTP_X_FORWARDED_FOR
+&lt;/pre&gt;
 &lt;div class="section" id="id2"&gt;
 &lt;h3&gt;Docs&lt;/h3&gt;
 &lt;ul class="simple"&gt;

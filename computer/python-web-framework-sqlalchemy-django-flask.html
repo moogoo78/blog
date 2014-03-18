@@ -216,6 +216,12 @@ print django.get_version()
 </div>
 <div class="section" id="flask">
 <h2>Flask</h2>
+<p>request:</p>
+<pre class="literal-block">
+request.remote_addr # client id
+request.access_route # all ip addresses from client (access_route[0]) to the last proxy server,
+# 判斷環境變數 HTTP_X_FORWARDED_FOR
+</pre>
 <div class="section" id="id2">
 <h3>Docs</h3>
 <ul class="simple">
