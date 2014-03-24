@@ -34,8 +34,22 @@ zoom in/out: Command Opt =/-
 
 [14 Mac Hacks That Will Change The Way You Use Your Computer](http://www.buzzfeed.com/peggy/14-mac-hacks-that-will-change-the-way-you-use-your-computer)
 
+
+
+瘦身::
+
+  ~/Library/Application\ Support/MobileSync # 檔案很大, iPhone, iPad, iPod...的備份
+
+  iTunes -> Perference -> Devices -> 刪除備份
+
+
 Browser
 -----------
+
+browser 網輸入一下, 可以當記事本::
+
+  data:text/html, <html contenteditable>
+
 
 Firefox
 ^^^^^^^^^^^
@@ -78,9 +92,9 @@ Browser plugin/extensions
 
 * 顯示網站使用fromeworks, web server, service...
 
-  * [GC] `Chrome Sniffer | Bao's Blog <http://www.nqbao.com/chrome-sniffer>`__
-  * [FF] `Wappalyzer <http://wappalyzer.com/>`__
-
+  * `Chrome Sniffer | Bao's Blog <http://www.nqbao.com/chrome-sniffer>`__ (Chrome)
+  * `Wappalyzer <http://wappalyzer.com/>`__ (Firefox)
+  * `Find your extension, accelerator and addon for the browsers safari, internet explorer(ie), chrome and firefox <http://www.tcpiputils.com/browser-extensions-addons-accelerators>`__ (Chrome, Firefox, Opera, Safari)
 
 
 好用軟體

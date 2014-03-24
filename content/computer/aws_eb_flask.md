@@ -141,6 +141,14 @@ http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cron
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
 https://github.com/adamcrosby/elastic-flask-baseline
 
+# note
+
+* http session -> 用stateless (access token)
+* 自己存session
+  * load balance上啓動stick session  (load balance產生一個table),
+  * memcached session manager
+  * redis session manager
+  * amazon DynamoDB session manager
 
 # message, celery
 
