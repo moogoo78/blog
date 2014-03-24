@@ -30,7 +30,7 @@
 
                     <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/web-develop.html">web develop</a></h1> 
+                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/.html">< web develop ></a></h1> 
                     <footer class="post-info">
         <abbr class="published" title="2013-12-18T18:08:00">
                 2013-12-18 18:08
@@ -50,6 +50,35 @@
 <li><a href="http://www.w3schools.com/css/css_border.asp">CSS Border</a></li>
 <li><a href="http://dev.opera.com/articles/view/zebra-striping-tables-with-css3/">Zebra striping tables with CSS3 - Dev.Opera</a></li>
 </ul>
+<h3>position, box</h3>
+<p>layout (float, clear):</p>
+<div class="highlight"><pre><span class="o">|===========</span> <span class="n">header</span> <span class="o">==========|</span>
+<span class="o">|</span>                             <span class="o">|</span>
+<span class="o">|==</span> <span class="n">section</span> <span class="o">==|</span> <span class="o">|==</span> <span class="n">section</span> <span class="o">==|</span>
+<span class="o">|</span> <span class="kt">float</span><span class="o">:</span> <span class="n">left</span><span class="p">;</span>   <span class="kt">float</span><span class="o">:</span> <span class="n">right</span><span class="p">;</span><span class="o">|</span>
+<span class="o">|===========</span> <span class="n">footer</span> <span class="o">==========|</span>
+<span class="o">|</span>          <span class="n">clear</span><span class="o">:</span><span class="n">both</span><span class="p">;</span>        <span class="o">|</span>
+<span class="o">|-----------------------------|</span>
+</pre></div>
+
+
+<p>css:</p>
+<div class="highlight"><pre><span class="nt">section</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">600px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">aside</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">320px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">footer</span> <span class="p">{</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <h3>應用</h3>
 <p>圖片塞滿browser
 * <a href="http://paulmason.name/item/full-screen-background-image-pure-css-code">Full Screen Background Image - Pure CSS Code</a></p>
@@ -87,7 +116,35 @@ t: timelimit
 p: postfile
 T: content-type
 h: help
-</pre></div><p>There are <a href="http://blog.suhen.org/computer/web-develop.html#disqus_thread">comments</a>.</p>                </article>
+</pre></div>
+
+
+<p>http://www.teachparentstech.org/images/checkbox.gif</p>
+<h1>content .boxlabel{</h1>
+<p>color:#999;
+background: url(../images/checkbox.gif) no-repeat00;
+height: 28px;
+padding-left: 20px;
+padding-right:10px;
+cursor: pointer;
+}</p>
+<h1>content .boxlabel.selected{</h1>
+<p>color: rgb(32, 25, 25);
+background-position:0-42px;
+}</p>
+<!--
+
+架構
+-----------
+* `HTML5 & CSS3 Fundamentals: Development for Absolute Beginners | Channel 9 <http://channel9.msdn.com/Series/HTML5-CSS3-Fundamentals-Development-for-Absolute-Beginners>`__ 初學課程video
+* `An Advanced Guide to HTML & CSS <http://learn.shayhowe.com/advanced-html-css/>`__ 進階架構
+* `The truth about structuring an HTML5 page | Feature | .net magazine <http://www.netmagazine.com/features/truth-about-structuring-html5-page>`__
+
+屬性細節
+-----------
+
+* `» 你從未瞭解過的 z-index | iCoding <http://www.icoding.co/2013/06/knowledge-about-z-index-2>`__
+--><p>There are <a href="http://blog.suhen.org/computer/.html#disqus_thread">comments</a>.</p>                </article>
                                     <p class="paginator">
         Page 1 / 1
     </p>
