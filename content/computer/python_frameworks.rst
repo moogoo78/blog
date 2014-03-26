@@ -1,4 +1,5 @@
-Python Web Framework (SQLAlchemy, Django, Flask)
+
+Python Web Framework (SQLAlchemy, Django, Flask, Jinja2)
 #########################################################
 :date: 2013-04-09 11:36
 :category: computer
@@ -231,3 +232,12 @@ Tips
 
 request.args
 request.form.getlist('')
+
+Jinja2
+==============
+
+sort(value, reverse=False, case_sensitive=False, attribute=None)::
+
+  {% for item in iterable|sort(attribute='date') %}
+    ...
+  {% endfor %}

@@ -2,7 +2,7 @@ Title: < web develop >
 Date: 2013-12-18 18:08
 Category: computer
 Tags: html, css
-
+Slug: web_develop
 
 # Frontend
 
