@@ -117,6 +117,12 @@ query.group_by(func.day(LogUserData.dtime).all()
 votes = db.session.query(EventDC1Vote,
 func.count(uid).label('cnt'), 'uid').group_by('uid').order_by('cnt DESC').all()
 </pre>
+<p>between, like:</p>
+<pre class="literal-block">
+q = db.session.query(func.count('*')).\
+        filter(API2Log.dtime.between(i[0], i[1]),
+               API2Log.data.like('%%%s%%' % j['data']))
+</pre>
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">distinct</span>
 <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">func</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">distinct</span><span class="p">(</span><span class="n">User</span><span class="o">.</span><span class="n">name</span><span class="p">)))</span>
 </pre></div>

@@ -2694,6 +2694,12 @@ query.group_by(func.day(LogUserData.dtime).all()
 votes = db.session.query(EventDC1Vote,
 func.count(uid).label('cnt'), 'uid').group_by('uid').order_by('cnt DESC').all()
 &lt;/pre&gt;
+&lt;p&gt;between, like:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+q = db.session.query(func.count('*')).\
+        filter(API2Log.dtime.between(i[0], i[1]),
+               API2Log.data.like('%%%s%%' % j['data']))
+&lt;/pre&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sqlalchemy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;distinct&lt;/span&gt;
 &lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;distinct&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
