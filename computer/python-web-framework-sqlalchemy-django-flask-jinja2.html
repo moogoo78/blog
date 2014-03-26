@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>Python Web Framework (SQLAlchemy, Django, Flask)</title>
+        <title>Python Web Framework (SQLAlchemy, Django, Flask, Jinja2)</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog Atom Feed" />
                 
@@ -30,8 +30,8 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask.html" rel="bookmark"
-           title="Permalink to Python Web Framework (SQLAlchemy, Django, Flask)">Python Web Framework (SQLAlchemy, Django, Flask)</a></h1>
+        <a href="http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask-jinja2.html" rel="bookmark"
+           title="Permalink to Python Web Framework (SQLAlchemy, Django, Flask, Jinja2)">Python Web Framework (SQLAlchemy, Django, Flask, Jinja2)</a></h1>
           </header>
 
     <div class="entry-content">
@@ -250,14 +250,23 @@ flask.__version__
 request.form.getlist('')</p>
 </div>
 </div>
+<div class="section" id="jinja2">
+<h2>Jinja2</h2>
+<p>sort(value, reverse=False, case_sensitive=False, attribute=None):</p>
+<pre class="literal-block">
+{% for item in iterable|sort(attribute='date') %}
+  ...
+{% endfor %}
+</pre>
+</div>
 
     </div><!-- /.entry-content -->
         <div class="comments">
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "computer/python-web-framework-sqlalchemy-django-flask.html";
-        var disqus_url = "http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask.html";
+        var disqus_identifier = "computer/python-web-framework-sqlalchemy-django-flask-jinja2.html";
+        var disqus_url = "http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask-jinja2.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';

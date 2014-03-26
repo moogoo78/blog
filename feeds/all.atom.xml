@@ -896,7 +896,7 @@ What is it that stands higher than action?  Silence.
 &lt;p&gt;翡翠樹蛙: 過眼金線&lt;/p&gt;
 &lt;p&gt;照片用光陰魔術手修&lt;/p&gt;
 &lt;p&gt;酸藤 春天火紅, 在樹上&lt;/p&gt;
-&lt;p&gt;新店烏來很多&lt;/p&gt;</summary><category term="note"></category></entry><entry><title></title><link href="http://blog.suhen.org/computer/.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/.html</id><summary type="html">&lt;h1&gt;Frontend&lt;/h1&gt;
+&lt;p&gt;新店烏來很多&lt;/p&gt;</summary><category term="note"></category></entry><entry><title></title><link href="http://blog.suhen.org/computer/web_develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web_develop.html</id><summary type="html">&lt;h1&gt;Frontend&lt;/h1&gt;
 &lt;h2&gt;CSS&lt;/h2&gt;
 &lt;h3&gt;基本語法&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="nd"&gt;:5px&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nt"&gt;red&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* 常用style: none, dotted, dashed, solid, double */&lt;/span&gt;
@@ -7273,7 +7273,7 @@ count(arr)
 &lt;p&gt;&lt;a class="reference external" href="http://code.google.com/p/ppython/wiki/data_convert"&gt;http://code.google.com/p/ppython/wiki/data_convert&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Python Web Framework (SQLAlchemy, Django, Flask)</title><link href="http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/python-web-framework-sqlalchemy-django-flask.html</id><summary type="html">&lt;div class="section" id="sqlalchemy"&gt;
+</summary><category term="docs"></category></entry><entry><title>Python Web Framework (SQLAlchemy, Django, Flask, Jinja2)</title><link href="http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask-jinja2.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/python-web-framework-sqlalchemy-django-flask-jinja2.html</id><summary type="html">&lt;div class="section" id="sqlalchemy"&gt;
 &lt;h2&gt;SQLAlchemy&lt;/h2&gt;
 &lt;div class="section" id="setting"&gt;
 &lt;h3&gt;setting&lt;/h3&gt;
@@ -7480,6 +7480,15 @@ flask.__version__
 &lt;p&gt;request.args
 request.form.getlist('')&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="jinja2"&gt;
+&lt;h2&gt;Jinja2&lt;/h2&gt;
+&lt;p&gt;sort(value, reverse=False, case_sensitive=False, attribute=None):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+{% for item in iterable|sort(attribute='date') %}
+  ...
+{% endfor %}
+&lt;/pre&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>[跑] 北頭洋走標路跑賽</title><link href="http://blog.suhen.org/run/pao-bei-tou-yang-zou-biao-lu-pao-sai.html" rel="alternate"></link><updated>2013-04-07T04:17:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-07:run/pao-bei-tou-yang-zou-biao-lu-pao-sai.html</id><summary type="html">&lt;p&gt;前幾年開始跑馬拉松時就看到這個比賽： &lt;a class="reference external" href="http://www.soulang.org.tw/news.htm#45"&gt;北頭洋走標路跑賽&lt;/a&gt; ，一開始吸引我的是這個很特別的名字，北頭洋是什麼？ 走鏢又是什麼！？感覺很特別，但一直拖到今年才播時間冒名。看網站的介紹：走鏢是西拉雅人跑步競賽的意思，西拉雅人為了獵鹿，從小就訓練跑步，還有一個飛蕃“程天與”的故鄉野傳奇。而北頭洋就是在佳里區西北方小山北頭，平埔語「巫女」的意思，北頭洋為「巫山」。&lt;/p&gt;
 &lt;img alt="/static/images/2013-04-07_jiali/12403_10151628913261289_2048866220_n.jpg" src="/static/images/2013-04-07_jiali/12403_10151628913261289_2048866220_n.jpg" style="width: 500px;" /&gt;

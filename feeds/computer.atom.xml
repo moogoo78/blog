@@ -70,7 +70,7 @@
 &lt;p&gt;letterbox時, 到iPad上會左右多出20, display.screenOriginX = -20&lt;/p&gt;
 &lt;p&gt;座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。&lt;/p&gt;</summary></entry><entry><title>裝置</title><link href="http://blog.suhen.org/computer/mobile_develop.html" rel="alternate"></link><updated>2014-02-17T13:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-17:computer/mobile_develop.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.emirweb.com/ScreenDeviceStatistics.php"&gt;EmirWeb&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Android
-&lt;a href="http://developer.android.com/guide/practices/screens_support.html"&gt;Supporting Multiple Screens | Android Developers&lt;/a&gt;&lt;/p&gt;</summary><category term="mobile"></category></entry><entry><title></title><link href="http://blog.suhen.org/computer/.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/.html</id><summary type="html">&lt;h1&gt;Frontend&lt;/h1&gt;
+&lt;a href="http://developer.android.com/guide/practices/screens_support.html"&gt;Supporting Multiple Screens | Android Developers&lt;/a&gt;&lt;/p&gt;</summary><category term="mobile"></category></entry><entry><title></title><link href="http://blog.suhen.org/computer/web_develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web_develop.html</id><summary type="html">&lt;h1&gt;Frontend&lt;/h1&gt;
 &lt;h2&gt;CSS&lt;/h2&gt;
 &lt;h3&gt;基本語法&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="nd"&gt;:5px&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nt"&gt;red&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* 常用style: none, dotted, dashed, solid, double */&lt;/span&gt;
@@ -2619,7 +2619,7 @@ count(arr)
 &lt;p&gt;&lt;a class="reference external" href="http://code.google.com/p/ppython/wiki/data_convert"&gt;http://code.google.com/p/ppython/wiki/data_convert&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Python Web Framework (SQLAlchemy, Django, Flask)</title><link href="http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/python-web-framework-sqlalchemy-django-flask.html</id><summary type="html">&lt;div class="section" id="sqlalchemy"&gt;
+</summary><category term="docs"></category></entry><entry><title>Python Web Framework (SQLAlchemy, Django, Flask, Jinja2)</title><link href="http://blog.suhen.org/computer/python-web-framework-sqlalchemy-django-flask-jinja2.html" rel="alternate"></link><updated>2013-04-09T11:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/python-web-framework-sqlalchemy-django-flask-jinja2.html</id><summary type="html">&lt;div class="section" id="sqlalchemy"&gt;
 &lt;h2&gt;SQLAlchemy&lt;/h2&gt;
 &lt;div class="section" id="setting"&gt;
 &lt;h3&gt;setting&lt;/h3&gt;
@@ -2826,6 +2826,15 @@ flask.__version__
 &lt;p&gt;request.args
 request.form.getlist('')&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="jinja2"&gt;
+&lt;h2&gt;Jinja2&lt;/h2&gt;
+&lt;p&gt;sort(value, reverse=False, case_sensitive=False, attribute=None):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+{% for item in iterable|sort(attribute='date') %}
+  ...
+{% endfor %}
+&lt;/pre&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>blog</title><link href="http://blog.suhen.org/computer/blog.html" rel="alternate"></link><updated>2013-04-02T15:53:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-02:computer/blog.html</id><summary type="html">&lt;div class="section" id="http-status-code"&gt;
 &lt;h2&gt;HTTP status code&lt;/h2&gt;
