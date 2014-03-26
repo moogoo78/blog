@@ -87,6 +87,12 @@ group by::
     func.count(uid).label('cnt'), 'uid').group_by('uid').order_by('cnt DESC').all()
 
 
+between, like::
+
+    q = db.session.query(func.count('*')).\
+            filter(API2Log.dtime.between(i[0], i[1]),
+                   API2Log.data.like('%%%s%%' % j['data']))
+
 .. code-block:: python
 
     from sqlalchemy import distinct
