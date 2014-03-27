@@ -106,7 +106,28 @@
 <li><a href="http://thenounproject.com/">NounProject</a> 剪影 icon</li>
 </ul>
 <h1>Backend</h1>
-<h2>Server Performance</h2>
+<h2>service / daemon</h2>
+<h3>uwsgi</h3>
+<div class="highlight"><pre><span class="cp"># kill existing uwsgi</span>
+<span class="n">ps</span> <span class="n">aux</span><span class="o">|</span><span class="n">grep</span> <span class="n">uwsgi</span> <span class="o">|</span><span class="n">awk</span> <span class="err">&#39;</span><span class="p">{</span> <span class="n">print</span> <span class="err">$</span><span class="mi">2</span><span class="p">}</span><span class="err">&#39;</span> <span class="o">|</span> <span class="n">xargs</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">run</span><span class="o">-</span><span class="k">if</span><span class="o">-</span><span class="n">empty</span> <span class="n">sudo</span> <span class="n">kill</span> <span class="o">-</span><span class="mi">9</span>
+<span class="n">sleep</span> <span class="mi">1</span>
+<span class="cp"># start with virtualhost setting</span>
+<span class="n">sudo</span> <span class="n">uwsgi</span> <span class="o">-</span><span class="n">s</span> <span class="o">:</span><span class="mi">9090</span> <span class="o">-</span><span class="n">M</span> <span class="o">-</span><span class="n">p</span> <span class="mi">4</span> <span class="o">--</span><span class="n">vhost</span> <span class="o">&amp;</span>
+</pre></div>
+
+
+<h3>PHP</h3>
+<p>PHP session:</p>
+<div class="highlight"><pre><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">php</span><span class="o">/</span><span class="n">session</span>
+</pre></div>
+
+
+<p>php start:</p>
+<div class="highlight"><pre><span class="n">sudo</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">init</span><span class="p">.</span><span class="n">d</span><span class="o">/</span><span class="n">php_cgi</span> <span class="n">start</span>
+</pre></div>
+
+
+<h2>Performance</h2>
 <h3>ab</h3>
 <div class="highlight"><pre><span class="n">ab</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">c</span> <span class="mi">1000</span> <span class="o">-</span><span class="n">n</span> <span class="mi">1000</span> <span class="n">http</span><span class="o">:</span><span class="c1">//testme.com</span>
 </pre></div>

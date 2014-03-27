@@ -960,7 +960,28 @@ What is it that stands higher than action?  Silence.
 &lt;li&gt;&lt;a href="http://thenounproject.com/"&gt;NounProject&lt;/a&gt; 剪影 icon&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Backend&lt;/h1&gt;
-&lt;h2&gt;Server Performance&lt;/h2&gt;
+&lt;h2&gt;service / daemon&lt;/h2&gt;
+&lt;h3&gt;uwsgi&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# kill existing uwsgi&lt;/span&gt;
+&lt;span class="n"&gt;ps&lt;/span&gt; &lt;span class="n"&gt;aux&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;uwsgi&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;awk&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;print&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;xargs&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;no&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;empty&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;kill&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;
+&lt;span class="n"&gt;sleep&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="cp"&gt;# start with virtualhost setting&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;uwsgi&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;9090&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;M&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;vhost&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;PHP&lt;/h3&gt;
+&lt;p&gt;PHP session:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;php start:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;php_cgi&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Performance&lt;/h2&gt;
 &lt;h3&gt;ab&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ab&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//testme.com&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -7835,13 +7856,26 @@ extensions = ['sphinx.ext.graphviz']
 &lt;h3&gt;System&lt;/h3&gt;
 &lt;div class="section" id="mac-osx"&gt;
 &lt;h4&gt;Mac OSX&lt;/h4&gt;
+&lt;p&gt;Finder:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Command Shift D: 移駕「桌面」&lt;/li&gt;
+&lt;li&gt;Command Shift H: Home&lt;/li&gt;
+&lt;li&gt;Command Shift G: 輸入資料夾名稱&lt;/li&gt;
+&lt;li&gt;Command Shift U:「工具程式」檔案夾&lt;/li&gt;
+&lt;li&gt;Command M: 縮小視窗&lt;/li&gt;
+&lt;li&gt;Command Option T:隱藏 / 顯示工具列&lt;/li&gt;
+&lt;li&gt;Command 1/2/3/4: 顯示方式&lt;/li&gt;
+&lt;li&gt;Command [ / ]: 上/下一個資料夾&lt;/li&gt;
+&lt;li&gt;Command 上: 上一層資料夾&lt;/li&gt;
+&lt;li&gt;顯示User Library(資料庫): 在Finder裡的Go(前往)選單, 按住option, 就會出現&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;清空垃圾桶: Command Shift Delete&lt;/p&gt;
 &lt;p&gt;zoom in/out: Command Opt =/-&lt;/p&gt;
 &lt;p&gt;強制結束: Command Opt Esc&lt;/p&gt;
 &lt;p&gt;區域截圖: Command Shift 4&lt;/p&gt;
-&lt;p&gt;貼上無格式文字 (plain-text): Shift + Option + Command + v&lt;/p&gt;
-&lt;p&gt;顯示User Library: 在Finder裡的Go(前往), 按住option, 就會出現&lt;/p&gt;
-&lt;p&gt;輸入特殊符號: Command + option + T&lt;/p&gt;
-&lt;p&gt;放大縮小: Command + &amp;quot;+&amp;quot; / Command + &amp;quot;-&amp;quot;&lt;/p&gt;
+&lt;p&gt;貼上無格式文字 (plain-text): ShiftOption Command-v&lt;/p&gt;
+&lt;p&gt;輸入特殊符號: Command option T&lt;/p&gt;
+&lt;p&gt;放大縮小: Command + / Command -&lt;/p&gt;
 &lt;p&gt;無線網路密碼&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;到&amp;quot;鑰匙圈存取&amp;quot;: Finder -&amp;gt; 工具程式 -&amp;gt; 鑰匙圈存取&lt;/li&gt;
@@ -7858,7 +7892,7 @@ iTunes -&amp;gt; Perference -&amp;gt; Devices -&amp;gt; 刪除備份
 &lt;/div&gt;
 &lt;div class="section" id="browser"&gt;
 &lt;h3&gt;Browser&lt;/h3&gt;
-&lt;p&gt;browser 網輸入一下, 可以當記事本:&lt;/p&gt;
+&lt;p&gt;browser 網址輸入以下, 可以當記事本:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 data:text/html, &amp;lt;html contenteditable&amp;gt;
 &lt;/pre&gt;
