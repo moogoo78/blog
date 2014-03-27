@@ -75,10 +75,31 @@ css:
 
 # Backend
 
-## Server Performance
+## service / daemon
+
+### uwsgi
+
+    # kill existing uwsgi
+    ps aux|grep uwsgi |awk '{ print $2}' | xargs --no-run-if-empty sudo kill -9
+    sleep 1
+    # start with virtualhost setting
+    sudo uwsgi -s :9090 -M -p 4 --vhost &
+
+
+### PHP
+
+PHP session:
+
+    /var/lib/php/session
+
+
+php start:
+
+    sudo /etc/init.d/php_cgi start
+
+## Performance
 
 ### ab
-
 
     ab -k -c 1000 -n 1000 http://testme.com
 

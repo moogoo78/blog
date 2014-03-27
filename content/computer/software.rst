@@ -13,19 +13,33 @@ System
 Mac OSX
 ^^^^^^^^^^^^^^^
 
+
+Finder:
+
+* Command Shift D: 移駕「桌面」
+* Command Shift H: Home
+* Command Shift G: 輸入資料夾名稱
+* Command Shift U:「工具程式」檔案夾
+* Command M: 縮小視窗
+* Command Option T:隱藏 / 顯示工具列
+* Command 1/2/3/4: 顯示方式
+* Command [ / ]: 上/下一個資料夾
+* Command 上: 上一層資料夾 
+* 顯示User Library(資料庫): 在Finder裡的Go(前往)選單, 按住option, 就會出現
+
+清空垃圾桶: Command Shift Delete
+
 zoom in/out: Command Opt =/-
 
 強制結束: Command Opt Esc
 
 區域截圖: Command Shift 4
 
-貼上無格式文字 (plain-text): Shift + Option + Command + v
+貼上無格式文字 (plain-text): ShiftOption Command-v
 
-顯示User Library: 在Finder裡的Go(前往), 按住option, 就會出現
+輸入特殊符號: Command option T
 
-輸入特殊符號: Command + option + T
-
-放大縮小: Command + "+" / Command + "-"
+放大縮小: Command + / Command -
 
 無線網路密碼
 
@@ -46,7 +60,7 @@ zoom in/out: Command Opt =/-
 Browser
 -----------
 
-browser 網輸入一下, 可以當記事本::
+browser 網址輸入以下, 可以當記事本::
 
   data:text/html, <html contenteditable>
 
