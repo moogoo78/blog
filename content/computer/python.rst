@@ -500,3 +500,41 @@ via: http://stackoverflow.com/questions/308999/what-does-functools-wraps-do
      
     # > My speach is FP with Python
     # > took 5.96046447754e-06
+
+
+Package
+================
+
+easy_install
+-------------------
+
+upgrade pip::
+
+  easy_install --upgrade pip
+
+pip
+-----------
+
+pip::
+
+  pip --version
+
+~/.pip/pip.conf::
+
+  [global]
+  index-url = http://d.pypi.python.org/simple
+
+  [install]
+  use-mirrors = true
+  mirrors =
+      http://d.pypi.python.org
+      http://b.pypi.python.org
+
+
+連不到d.pypi.python.org...時::
+
+  pip install -i http://pypi.python.org/simple PACKAGE
+
+
+`PyPI Mirror Status <http://www.pypi-mirrors.org/>`__
+

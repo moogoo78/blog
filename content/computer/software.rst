@@ -145,6 +145,15 @@ HTML5 Slides
 
 
 
+VIM
+=============
+
+行號::
+
+  :set nonu
+  :set nu
+q
+
 Command Line
 ===================
 
