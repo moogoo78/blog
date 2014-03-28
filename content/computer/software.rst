@@ -152,7 +152,7 @@ VIM
 
   :set nonu
   :set nu
-q
+
 
 Command Line
 ===================
