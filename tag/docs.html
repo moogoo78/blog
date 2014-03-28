@@ -485,6 +485,39 @@ if (A == 1 and
 <span class="c"># &gt; took 5.96046447754e-06</span>
 </pre></div>
 </div>
+<div class="section" id="package">
+<h2>Package</h2>
+<div class="section" id="easy-install">
+<h3>easy_install</h3>
+<p>upgrade pip:</p>
+<pre class="literal-block">
+easy_install --upgrade pip
+</pre>
+</div>
+<div class="section" id="pip">
+<h3>pip</h3>
+<p>pip:</p>
+<pre class="literal-block">
+pip --version
+</pre>
+<p>~/.pip/pip.conf:</p>
+<pre class="literal-block">
+[global]
+index-url = http://d.pypi.python.org/simple
+
+[install]
+use-mirrors = true
+mirrors =
+    http://d.pypi.python.org
+    http://b.pypi.python.org
+</pre>
+<p>連不到d.pypi.python.org...時:</p>
+<pre class="literal-block">
+pip install -i http://pypi.python.org/simple PACKAGE
+</pre>
+<p><a class="reference external" href="http://www.pypi-mirrors.org/">PyPI Mirror Status</a></p>
+</div>
+</div>
 <p>There are <a href="http://blog.suhen.org/computer/python.html#disqus_thread">comments</a>.</p>                </article>
                             </aside><!-- /#featured -->
                             <section id="content" class="body">

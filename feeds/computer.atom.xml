@@ -1119,6 +1119,39 @@ if (A == 1 and
 &lt;span class="c"&gt;# &amp;gt; took 5.96046447754e-06&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;div class="section" id="package"&gt;
+&lt;h2&gt;Package&lt;/h2&gt;
+&lt;div class="section" id="easy-install"&gt;
+&lt;h3&gt;easy_install&lt;/h3&gt;
+&lt;p&gt;upgrade pip:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+easy_install --upgrade pip
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pip"&gt;
+&lt;h3&gt;pip&lt;/h3&gt;
+&lt;p&gt;pip:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+pip --version
+&lt;/pre&gt;
+&lt;p&gt;~/.pip/pip.conf:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[global]
+index-url = http://d.pypi.python.org/simple
+
+[install]
+use-mirrors = true
+mirrors =
+    http://d.pypi.python.org
+    http://b.pypi.python.org
+&lt;/pre&gt;
+&lt;p&gt;連不到d.pypi.python.org...時:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+pip install -i http://pypi.python.org/simple PACKAGE
+&lt;/pre&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.pypi-mirrors.org/"&gt;PyPI Mirror Status&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>[computer] Emacs輸入newline符號</title><link href="http://blog.suhen.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 C-q C-j
@@ -3303,6 +3336,18 @@ F7 鍵盤瀏覽
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/hakimel/reveal.js"&gt;hakimel/reveal.js&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="vim"&gt;
+&lt;h2&gt;VIM&lt;/h2&gt;
+&lt;p&gt;行號:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+:set nonu
+:set nu
+&lt;/pre&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/Users/moogoo/gh/blog.suhen.org/content/computer/software.rst&lt;/tt&gt;, line 155)&lt;/p&gt;
+Literal block ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;q&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="command-line"&gt;
 &lt;h2&gt;Command Line&lt;/h2&gt;
