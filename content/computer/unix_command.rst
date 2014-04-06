@@ -96,8 +96,28 @@ coding convert::
   $ cat test.txt | iconv -f utf-8 -t big5
 
 
+工具 utils
+================
+
+壓縮/解壓縮 compress/depress::
+
+  ## tar
+  # compress (tar 打包, zip壓縮)
+  $ tar -zcvf foo.tgz foo
+  # decompress
+  $ tar -zxvf foo.tgz
+
+  $ tar -jcvf foo.tar.bz2 foo
+  $ tar -jxvf too.tar.bz2
+
+  ## bzip2
+  $ bzip2 foo # 會把 foo 變成 foo.bz2
+  $ bzip2 -d foo.bz2 # 把 foo.bz2 變 foo
+
+bzip2 的壓縮率比較大, 運算時間長
+
 編輯
-==========
+-------------
 
 * `AWK 简明教程 | 酷壳 - CoolShell.cn <http://coolshell.cn/articles/9070.html>`__
 

@@ -30,7 +30,7 @@ layout (float, clear):
     |-----------------------------|
 
 
-css:
+style:
 
     :::css
     section {
@@ -46,6 +46,15 @@ css:
     footer {
         clear: both;
     }
+
+
+css:
+
+    :::css
+    .center {
+        width:xxxpx;margin-left:auto;margin-right:auto;
+    }
+
 
 ### 應用
 
