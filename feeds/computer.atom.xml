@@ -94,7 +94,7 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;css:&lt;/p&gt;
+&lt;p&gt;style:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;section&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -107,6 +107,13 @@
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="nt"&gt;footer&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;css:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.center&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;xxxpx&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -3554,8 +3561,26 @@ $ cat test.txt | iconv -f utf-8 -t big5
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class="section" id="utils"&gt;
+&lt;h2&gt;工具 utils&lt;/h2&gt;
+&lt;p&gt;壓縮/解壓縮 compress/depress:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+## tar
+# compress (tar 打包, zip壓縮)
+$ tar -zcvf foo.tgz foo
+# decompress
+$ tar -zxvf foo.tgz
+
+$ tar -jcvf foo.tar.bz2 foo
+$ tar -jxvf too.tar.bz2
+
+## bzip2
+$ bzip2 foo # 會把 foo 變成 foo.bz2
+$ bzip2 -d foo.bz2 # 把 foo.bz2 變 foo
+&lt;/pre&gt;
+&lt;p&gt;bzip2 的壓縮率比較大, 運算時間長&lt;/p&gt;
 &lt;div class="section" id="id4"&gt;
-&lt;h2&gt;編輯&lt;/h2&gt;
+&lt;h3&gt;編輯&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://coolshell.cn/articles/9070.html"&gt;AWK 简明教程 | 酷壳 - CoolShell.cn&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -3563,6 +3588,7 @@ $ cat test.txt | iconv -f utf-8 -t big5
 &lt;pre class="literal-block"&gt;
 :w !sudo tee %
 &lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id5"&gt;
 &lt;h2&gt;網路&lt;/h2&gt;

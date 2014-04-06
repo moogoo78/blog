@@ -126,8 +126,26 @@ $ cat test.txt | iconv -f utf-8 -t big5
 </pre>
 </div>
 </div>
+<div class="section" id="utils">
+<h2>工具 utils</h2>
+<p>壓縮/解壓縮 compress/depress:</p>
+<pre class="literal-block">
+## tar
+# compress (tar 打包, zip壓縮)
+$ tar -zcvf foo.tgz foo
+# decompress
+$ tar -zxvf foo.tgz
+
+$ tar -jcvf foo.tar.bz2 foo
+$ tar -jxvf too.tar.bz2
+
+## bzip2
+$ bzip2 foo # 會把 foo 變成 foo.bz2
+$ bzip2 -d foo.bz2 # 把 foo.bz2 變 foo
+</pre>
+<p>bzip2 的壓縮率比較大, 運算時間長</p>
 <div class="section" id="id4">
-<h2>編輯</h2>
+<h3>編輯</h3>
 <ul class="simple">
 <li><a class="reference external" href="http://coolshell.cn/articles/9070.html">AWK 简明教程 | 酷壳 - CoolShell.cn</a></li>
 </ul>
@@ -135,6 +153,7 @@ $ cat test.txt | iconv -f utf-8 -t big5
 <pre class="literal-block">
 :w !sudo tee %
 </pre>
+</div>
 </div>
 <div class="section" id="id5">
 <h2>網路</h2>
