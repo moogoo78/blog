@@ -130,6 +130,8 @@ vim硬是要存檔::
 ============
 ::
 
+  $ lsof # list open files
+  $ lsof -n # network files
   $ lsof -i # monitors network connections in real time
   $ iftop # shows bandwith usage per *connection*
   $ nethogs #shows the bandwith usage per *process*

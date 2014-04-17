@@ -98,8 +98,6 @@ server cert:
     openssl x509 -req -days 365 -in csr.pem -signkey privatekey.pem -out server.crt # 會問一些問題
 
 
-檢查SSL工具: [SSL Checker - SSL Certificate Verify](http://www.sslshopper.com/ssl-checker.html)
-
 #### 2. 設定到AWS
 
 下載 iam 命令列:

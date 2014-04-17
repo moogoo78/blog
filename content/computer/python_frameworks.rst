@@ -241,3 +241,9 @@ sort(value, reverse=False, case_sensitive=False, attribute=None)::
   {% for item in iterable|sort(attribute='date') %}
     ...
   {% endfor %}
+
+dictsort(value, case_sensitive=False, by='key')::
+
+  {% for item in mydict|dictsort(false, 'value') %}
+      sort the dict by key, case insensitive, sorted
+      normally and ordered by value.

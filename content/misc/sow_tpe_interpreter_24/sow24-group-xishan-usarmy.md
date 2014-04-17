@@ -1,4 +1,4 @@
-Title: 美軍宿舍
+Title: [荒野] 陽明山山仔后 - 美軍宿舍
 Date: 2014-03-22 05:55
 Category: misc
 Tags: note, sow_tpe_interpreter24

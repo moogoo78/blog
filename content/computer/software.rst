@@ -13,6 +13,7 @@ System
 Mac OSX
 ^^^^^^^^^^^^^^^
 
+(Mac的Option也是Alt鍵)
 
 Finder:
 
@@ -31,7 +32,7 @@ Finder:
 
 zoom in/out: Command Opt =/-
 
-強制結束: Command Opt Esc
+強制結束: Command Opt Esc (force quit)
 
 區域截圖: Command Shift 4
 
