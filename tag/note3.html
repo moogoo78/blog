@@ -33,6 +33,167 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/mac_leopard_mavericks.html" rel="bookmark"
+                           title="Permalink to [Mac] 從Leopard升級到Mavericks">[Mac] 從Leopard升級到Mavericks</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-11-02T00:46:00">
+                2013-11-02 00:46
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>家裡一台很舊的iMac，作業系統跑Leopard (OS X 10.5.8)，很多軟體都不支援如 LINE桌面版... ，或是連Chrome都不更新了，倒是Firefox還很照顧這些老電腦...</p>
+<p>最近Mavericks開放免費更新，我的MacBook Air (Lion) 免費升級新的Mavericks後，覺得很好用，實在也很想更新這台iMac，Leopard一般是無法直接升級到Mavericks的，除非花一點錢，先升級成Snow Leopard (OS X 10.6)，才可以免費升級到Mavericks。但是網路上果然有解決方法！！</p>
+<p>參考這篇: <a href="http://www.macworld.com/article/2056564/how-to-install-mavericks-over-leopard.html">How to install Mavericks over Leopard | Macworld</a></p>
+<h1>1. 下載Mavericks</h1>
+<p>我的MacBook Air已經更新10.9了，但還是可以再下載。</p>
+<p>改一個系統檔:</p>
+<div class="codehilite"><pre>/System/Library/CoreServices/SystemVersion.plist
+# 把10.9的地方改稱10 ...</pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/mac_leopard_mavericks.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/mac_leopard_mavericks.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html" rel="bookmark"
+                           title="Permalink to 列印日本地形圖 - 以劍岳為例">列印日本地形圖 - 以劍岳為例</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-07-16T10:25:00">
+                2013-07-16 10:25
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/mountain.html">mountain</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/japan.html">japan</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <div class="section" id="id2">
+<h2>緣由</h2>
+<p>為了這週末要去日本 <a class="reference external" href="http://zh.wikipedia.org/zh-tw/劍岳">劍岳</a> ，沒有地圖只好上網找電子版。</p>
+<p>日本 <a class="reference external" href="http://www.gsi.go.jp/">国土地理院</a> 有很好用的電子地圖， <a class="reference external" href="http://watchizu.gsi.go.jp/index.aspx?mesh=0000">地図閲覧サービストップページ</a> ，可以很快的選取區域找到精細的地形圖。但是沒辦法像 <a class="reference external" href="http://map.happyman.idv.tw/twmap/login.php">地圖產生器v2.51</a> 那樣根據選取的區域自動切成數張A4。因此我開始土法煉鋼，來產生漂亮的地形圖。</p>
+</div>
+<div class="section" id="id3">
+<h2>下載圖檔</h2>
+<p>觀察了一下原始圖檔，檔名也許是用日本的大地座標數字，找出最左上角 00578150025593.png，右上 00578200025593.png，左下00578150025606.png，右下00578200025606.png。</p>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">這個地圖的座標是日本測地系2000 <a class="reference external" href="http://ja.wikipedia.org/wiki/測地系">測地系 - Wikipedia</a></p>
+</div>
+<p>找到想取得的範圍 (室堂到劍岳), 寬: 0057815-0057820 (左到右)，高: 0025593-0025606 (上到下)，總共是7x14張</p>
+<p>前置網址有一些不一樣, 我是用最爛的方法, 遇到HTTP Error就在翻一下原始碼找出來。</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">from</span> <span class="nn">urllib2 ...</span></pre></div></div>
+                <a class="readmore" href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_newline.html" rel="bookmark"
+                           title="Permalink to [computer] Emacs輸入newline符號">[computer] Emacs輸入newline符號</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-27T11:32:00">
+                2013-06-27 11:32
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>Emacs的換行:</p>
+<pre class="literal-block">
+C-q C-j
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last"><cite>C-q</cite>: quoted-insert, <cite>C-j</cite>: newline</p>
+</div>
+<p>但是我的 <cite>C-q</cite> 和 <cite>C-j</cite> 為了使用dvorak layout, 改成cut &amp; paste:</p>
+<pre class="literal-block">
+(global-set-key (kbd &quot;C-q&quot;) 'kill-region) ; cut
+(global-set-key (kbd &quot;C-j&quot;) 'kill-ring-save) ; paste
+</pre>
+<p>因此把沒用到的 <cite>C-`</cite> 跟 <cite>C-,</cite> 拿來做key-translate:</p>
+<pre class="literal-block">
+(define-key key-translation-map (kbd &quot;C-q&quot;) (kbd &quot;C-'&quot;))
+(define-key key-translation-map (kbd &quot;C-'&quot;) (kbd &quot;C-q&quot;))
+(define-key key-translation-map (kbd &quot;C-j&quot;) (kbd &quot;C-,&quot;))
+(define-key ...</pre>
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_newline.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_newline.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html" rel="bookmark"
+                           title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-25T10:07:00">
+                2013-06-25 10:07
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a><a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info -->                <p>指令:</p>
+<pre class="literal-block">
+M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
+</pre>
+<p>特殊字</p>
+<ul class="simple">
+<li><tt class="docutils literal">\&amp;’</tt> 完整的匹配字</li>
+<li><tt class="docutils literal">\d</tt> d是數字, 表示匹配在第幾個group (back reference)</li>
+<li><tt class="docutils literal">\#</tt> 累加, 發生第幾次,第一次從0開始</li>
+<li><tt class="docutils literal">\,</tt> Lisp expression</li>
+<li><tt class="docutils literal">\?</tt> 詢問</li>
+</ul>
+<div class="section" id="id1">
+<h2>範例</h2>
+<p>數字編號:</p>
+<pre class="literal-block">
+1987:Bogotá
+5243:Fabergé
+
+\(.+:\)
+\#.
+
+0.Bogotá
+1.Fabergé
+
+如果要從1開始:
+\,(1+ \#).
+</pre>
+<p>HTML H降級:</p>
+<pre class="literal-block">
+&lt;h1&gt;silly&lt;/h1&gt;
+&lt;h2&gt;walk&lt;/h2&gt;
+
+&lt;\(/?\)h\([0-9]\)&gt;
+&lt;\1h\,(1+ \#2)&gt;
+
+&lt;h2&gt;silly&lt;/h2&gt;
+&lt;h3 ...</pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/emacs_dired_rename.html" rel="bookmark"
                            title="Permalink to [Computer] 用Emacs dired-mode批次改檔名">[Computer] 用Emacs dired-mode批次改檔名</a></h1>
                 </header>
@@ -150,12 +311,12 @@ alt + 數字
 <p><a href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
 <h1>Quick-start</h1>
 <p>安裝:</p>
-<div class="highlight"><pre><span class="nv">$ </span>pip install pelican
+<div class="codehilite"><pre><span class="nv">$ </span>pip install pelican
 </pre></div>
 
 
 <p>開始:</p>
-<div class="highlight"><pre><span class="nv">$ </span>mkdir blog
+<div class="codehilite"><pre><span class="nv">$ </span>mkdir blog
 <span class="nv">$ </span><span class="nb">cd </span>blog
 <span class="nv">$ </span>pelican-quickstart
 </pre></div>
@@ -163,7 +324,7 @@ alt + 數字
 
 <p>快速產生相關的設定</p>
 <p>寫第一篇文章:</p>
-<div class="highlight"><pre><span class="nv">$ </span>vim ...</pre></div>
+<div class="codehilite"><pre><span class="nv">$ </span>vim ...</pre></div>
                 <a class="readmore" href="http://blog.suhen.org/computer/pelican.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/pelican.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

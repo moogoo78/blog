@@ -43,20 +43,20 @@
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 
 </footer><!-- /.post-info -->      <h1>System</h1>
-<div class="highlight"><pre><span class="n">system</span><span class="p">.</span><span class="n">setIdleTimer</span><span class="p">(</span> <span class="n">enabled</span> <span class="p">)</span>
+<div class="codehilite"><pre><span class="n">system</span><span class="p">.</span><span class="n">setIdleTimer</span><span class="p">(</span> <span class="n">enabled</span> <span class="p">)</span>
 <span class="n">display</span><span class="p">.</span><span class="n">setStatusBar</span><span class="p">(</span> <span class="n">display</span><span class="p">.</span><span class="n">HiddenStatusBar</span> <span class="p">)</span>
 <span class="nb">collectgarbage</span><span class="p">()</span>
 </pre></div>
 
 
 <h1>Event / Timer</h1>
-<div class="highlight"><pre><span class="n">AnimTimer</span>  <span class="o">=</span> <span class="n">timer</span><span class="p">.</span><span class="n">performWithDelay</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">V</span><span class="p">.</span><span class="n">PAnimate</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
+<div class="codehilite"><pre><span class="n">AnimTimer</span>  <span class="o">=</span> <span class="n">timer</span><span class="p">.</span><span class="n">performWithDelay</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">V</span><span class="p">.</span><span class="n">PAnimate</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
 <span class="n">timer</span><span class="p">.</span><span class="n">cancel</span><span class="p">(</span><span class="n">AnimTimer</span><span class="p">)</span>
 </pre></div>
 
 
 <h1>Network</h1>
-<div class="highlight"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">networkListener</span><span class="p">(</span> <span class="n">event</span> <span class="p">)</span>
+<div class="codehilite"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">networkListener</span><span class="p">(</span> <span class="n">event</span> <span class="p">)</span>
     <span class="k">if</span> <span class="p">(</span> <span class="n">event</span><span class="p">.</span><span class="n">isError</span> <span class="p">)</span> <span class="k">then</span>
             <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">Network error!&quot;</span><span class="p">)</span>
     <span class="k">else</span>
@@ -73,7 +73,7 @@
 
 
 <h1>locale</h1>
-<div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">ui.language&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">ui&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">language&quot;</span> <span class="p">))</span>
+<div class="codehilite"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">ui.language&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">ui&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">language&quot;</span> <span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.country&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">country&quot;</span> <span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.identifier&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">identifier&quot;</span> <span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.language&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">language&quot;</span> <span class="p">))</span>

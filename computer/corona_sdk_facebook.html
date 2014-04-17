@@ -50,23 +50,23 @@
 <h3>keyhash</h3>
 <p>如果是android的話，需要產生keyhash，回填到developers.facebook.com的app</p>
 <p>可以用corona sdk提供的debug.keystore</p>
-<div class="highlight"><pre>/Applications/CoronaSDK/Resource Library/Android/debug.keystore
+<div class="codehilite"><pre>/Applications/CoronaSDK/Resource Library/Android/debug.keystore
 </pre></div>
 
 
 <p>在mac上用JavaVM提供的keytool指令，產生android的keyhash</p>
-<div class="highlight"><pre>/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
+<div class="codehilite"><pre>/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
 </pre></div>
 
 
 <p>如果keyhash有問題的話，可以在裝置上看debug log，會出現:</p>
-<div class="highlight"><pre>Key hash [這一串是keyhash] does not match any stored key hashes.
+<div class="codehilite"><pre>Key hash [這一串是keyhash] does not match any stored key hashes.
 </pre></div>
 
 
 <p>也可以拿來回填~</p>
 <p><strong>補充</strong>:</p>
-<div class="highlight"><pre># 列出alias
+<div class="codehilite"><pre># 列出alias
 keytool -list -keystore foo.keystore
 # 產生keystore
 keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999
@@ -74,13 +74,13 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 
 
 <h3>class name</h3>
-<div class="highlight"><pre>com.ansca.corona.CoronaActivity
+<div class="codehilite"><pre>com.ansca.corona.CoronaActivity
 </pre></div>
 
 
 <h2>iOS</h2>
 <p>build.settings:</p>
-<div class="highlight"><pre><span class="n">settings</span> <span class="o">=</span>
+<div class="codehilite"><pre><span class="n">settings</span> <span class="o">=</span>
 <span class="p">{</span>
    <span class="n">iphone</span> <span class="o">=</span>
    <span class="p">{</span>

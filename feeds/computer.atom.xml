@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-02-26T12:13:00+08:00</updated><entry><title>Corona SDK 筆記</title><link href="http://blog.suhen.org/computer/corona_sdk.html" rel="alternate"></link><updated>2014-02-26T12:13:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-26:computer/corona_sdk.html</id><summary type="html">&lt;h1&gt;System&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setIdleTimer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;enabled&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-04-10T18:26:00+08:00</updated><entry><title>[網路] SSL</title><link href="http://blog.suhen.org/computer/ssl.html" rel="alternate"></link><updated>2014-04-10T18:26:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-04-10:computer/ssl.html</id><summary type="html">&lt;p&gt;CSR: Certificate Signing Request
+CA: Certificate Authority&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.sslshopper.com/ssl-checker.html"&gt;SSL Checker - SSL Certificate Verify&lt;/a&gt; 檢查SSL&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sslshopper.com/csr-decoder.html"&gt;CSR Decoder - Check CSR to verify its contents&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>Corona SDK 筆記</title><link href="http://blog.suhen.org/computer/corona_sdk.html" rel="alternate"></link><updated>2014-02-26T12:13:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-26:computer/corona_sdk.html</id><summary type="html">&lt;h1&gt;System&lt;/h1&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setIdleTimer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;enabled&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setStatusBar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;HiddenStatusBar&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;collectgarbage&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;Event / Timer&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;AnimTimer&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;timer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;performWithDelay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PAnimate&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;AnimTimer&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;timer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;performWithDelay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PAnimate&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;timer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cancel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;AnimTimer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;Network&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;networkListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;event&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;networkListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;event&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isError&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
             &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;Network error!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;else&lt;/span&gt;
@@ -30,7 +35,7 @@
 
 
 &lt;h1&gt;locale&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;ui.language&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;ui&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;language&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;ui.language&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;ui&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;language&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale.country&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;country&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale.identifier&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;identifier&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale.language&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;language&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;))&lt;/span&gt;
@@ -73,7 +78,7 @@
 &lt;a href="http://developer.android.com/guide/practices/screens_support.html"&gt;Supporting Multiple Screens | Android Developers&lt;/a&gt;&lt;/p&gt;</summary><category term="mobile"></category></entry><entry><title></title><link href="http://blog.suhen.org/computer/web_develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web_develop.html</id><summary type="html">&lt;h1&gt;Frontend&lt;/h1&gt;
 &lt;h2&gt;CSS&lt;/h2&gt;
 &lt;h3&gt;基本語法&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="nd"&gt;:5px&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nt"&gt;red&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* 常用style: none, dotted, dashed, solid, double */&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="nd"&gt;:5px&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nt"&gt;red&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* 常用style: none, dotted, dashed, solid, double */&lt;/span&gt;
 &lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;odd&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#99ff99&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -84,7 +89,7 @@
 &lt;/ul&gt;
 &lt;h3&gt;position, box&lt;/h3&gt;
 &lt;p&gt;layout (float, clear):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;|===========&lt;/span&gt; &lt;span class="n"&gt;header&lt;/span&gt; &lt;span class="o"&gt;==========|&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;|===========&lt;/span&gt; &lt;span class="n"&gt;header&lt;/span&gt; &lt;span class="o"&gt;==========|&lt;/span&gt;
 &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;
 &lt;span class="o"&gt;|==&lt;/span&gt; &lt;span class="n"&gt;section&lt;/span&gt; &lt;span class="o"&gt;==|&lt;/span&gt; &lt;span class="o"&gt;|==&lt;/span&gt; &lt;span class="n"&gt;section&lt;/span&gt; &lt;span class="o"&gt;==|&lt;/span&gt;
 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="kt"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;   &lt;span class="kt"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
@@ -95,7 +100,7 @@
 
 
 &lt;p&gt;style:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;section&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;section&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;600px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -112,7 +117,7 @@
 
 
 &lt;p&gt;css:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.center&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.center&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;xxxpx&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -143,7 +148,7 @@
 &lt;h1&gt;Backend&lt;/h1&gt;
 &lt;h2&gt;service / daemon&lt;/h2&gt;
 &lt;h3&gt;uwsgi&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# kill existing uwsgi&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# kill existing uwsgi&lt;/span&gt;
 &lt;span class="n"&gt;ps&lt;/span&gt; &lt;span class="n"&gt;aux&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;uwsgi&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;awk&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;print&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;xargs&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;no&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;empty&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;kill&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;
 &lt;span class="n"&gt;sleep&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
 &lt;span class="cp"&gt;# start with virtualhost setting&lt;/span&gt;
@@ -153,23 +158,23 @@
 
 &lt;h3&gt;PHP&lt;/h3&gt;
 &lt;p&gt;PHP session:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;php start:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;php_cgi&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;php_cgi&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;Performance&lt;/h2&gt;
 &lt;h3&gt;ab&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ab&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//testme.com&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;ab&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//testme.com&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;參數:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;k: HTTP Keep Alive
+&lt;div class="codehilite"&gt;&lt;pre&gt;k: HTTP Keep Alive
 c: concurrency (同時連線)
 n: num of requests (測試的request總數, 用完就結束)
 t: timelimit
@@ -208,7 +213,7 @@ background-position:0-42px;
 &lt;h2&gt;1. 安裝eb commend tools&lt;/h2&gt;
 &lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定好路徑(以mac為例), 就可以開始了&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
+&lt;div class="codehilite"&gt;&lt;pre&gt;AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
 
 &lt;span class="c"&gt;# 環境變數, 可以在shell下export或是寫在~/.elasticbeanstalk/aws_credential_file裡 (忘記是我自己加的還是eb工具自動加的)&lt;/span&gt;
 &lt;span class="nv"&gt;AWSAccessKeyId&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Write your AWS access ID
@@ -219,7 +224,7 @@ background-position:0-42px;
 &lt;h2&gt;2. 準備部署&lt;/h2&gt;
 &lt;h3&gt;WSGI&lt;/h3&gt;
 &lt;p&gt;預設是application.py:application, 自己要改application.py名字失敗..&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;[aws:elasticbeanstalk:container:python]
+&lt;div class="codehilite"&gt;&lt;pre&gt;[aws:elasticbeanstalk:container:python]
 ...
 WSGIPath=my_fail_wsgi
 eb update?
@@ -234,7 +239,7 @@ eb update?
 &lt;li&gt;原本logger有自己存檔, 也要取消 (反正會出現在eb的log裡)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;3. 跑起來&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 在git目錄下操作, 如果沒有repo就會叫你git init&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 在git目錄下操作, 如果沒有repo就會叫你git init&lt;/span&gt;
 eb init
 &lt;span class="c"&gt;# 會有選單, 開始勾選&lt;/span&gt;
 &lt;span class="c"&gt;# 平台選這個&lt;/span&gt;
@@ -255,7 +260,7 @@ eb status --verbose
 &lt;h2&gt;其他設定&lt;/h2&gt;
 &lt;h3&gt;環境設定&lt;/h3&gt;
 &lt;p&gt;產生 &lt;strong&gt;.ebextensions&lt;/strong&gt;目錄, 新增 python.config:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nl"&gt;option_settings:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nl"&gt;option_settings:&lt;/span&gt;
   &lt;span class="s"&gt;&amp;quot;aws:elasticbeanstalk:container:python:staticfiles&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="s"&gt;&amp;quot;/static/&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;myapp/static/&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -270,40 +275,39 @@ eb status --verbose
 &lt;h4&gt;1. startssl申請: 產生 ssl.crt, ssl.key (encrypted), 還有一組密碼&lt;/h4&gt;
 &lt;p&gt;&lt;a href="http://blog.miniasp.com/post/2013/01/10/The-Complete-Guide-Free-StartSSL-personal-and-web-site-ssl-tls-certificates.aspx"&gt;The Will Will Web | 免費申請 StartSSL™ 個人數位簽章與網站 SSL 憑證完全攻略&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;產生private key:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;openssl&lt;/span&gt; &lt;span class="n"&gt;rsa&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;ssl&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="n"&gt;private&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="err"&gt;要求輸入那一組密碼&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;openssl&lt;/span&gt; &lt;span class="n"&gt;rsa&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;ssl&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="n"&gt;private&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="err"&gt;要求輸入那一組密碼&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;strong&gt;無效(self signed cert.):&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;private key:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;openssl&lt;/span&gt; &lt;span class="n"&gt;genrsa&lt;/span&gt; &lt;span class="mi"&gt;1024&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;privatekey&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;openssl&lt;/span&gt; &lt;span class="n"&gt;genrsa&lt;/span&gt; &lt;span class="mi"&gt;1024&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;privatekey&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;cert. pem:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;openssl&lt;/span&gt; &lt;span class="n"&gt;req&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt; &lt;span class="n"&gt;privatekey&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="n"&gt;csr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;openssl&lt;/span&gt; &lt;span class="n"&gt;req&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt; &lt;span class="n"&gt;privatekey&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="n"&gt;csr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;server cert:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;openssl&lt;/span&gt; &lt;span class="n"&gt;x509&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;req&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;days&lt;/span&gt; &lt;span class="mi"&gt;365&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;csr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;signkey&lt;/span&gt; &lt;span class="n"&gt;privatekey&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="n"&gt;server&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;crt&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="err"&gt;會問一些問題&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;openssl&lt;/span&gt; &lt;span class="n"&gt;x509&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;req&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;days&lt;/span&gt; &lt;span class="mi"&gt;365&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;csr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;signkey&lt;/span&gt; &lt;span class="n"&gt;privatekey&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="n"&gt;server&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;crt&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="err"&gt;會問一些問題&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;檢查SSL工具: &lt;a href="http://www.sslshopper.com/ssl-checker.html"&gt;SSL Checker - SSL Certificate Verify&lt;/a&gt;&lt;/p&gt;
 &lt;h4&gt;2. 設定到AWS&lt;/h4&gt;
 &lt;p&gt;下載 iam 命令列:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;awscli&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;awscli&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;執行前要先:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;aws&lt;/span&gt; &lt;span class="n"&gt;configure&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;aws&lt;/span&gt; &lt;span class="n"&gt;configure&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;輸入 id, sec key,&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;iam&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;servercertupload&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;server&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;crt&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="n"&gt;privatekey&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="n"&gt;server&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;iam&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;servercertupload&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;server&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;crt&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="n"&gt;privatekey&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pem&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="n"&gt;server&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -346,23 +350,23 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;
 &lt;h3&gt;keyhash&lt;/h3&gt;
 &lt;p&gt;如果是android的話，需要產生keyhash，回填到developers.facebook.com的app&lt;/p&gt;
 &lt;p&gt;可以用corona sdk提供的debug.keystore&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/Applications/CoronaSDK/Resource Library/Android/debug.keystore
+&lt;div class="codehilite"&gt;&lt;pre&gt;/Applications/CoronaSDK/Resource Library/Android/debug.keystore
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;在mac上用JavaVM提供的keytool指令，產生android的keyhash&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
+&lt;div class="codehilite"&gt;&lt;pre&gt;/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;如果keyhash有問題的話，可以在裝置上看debug log，會出現:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;Key hash [這一串是keyhash] does not match any stored key hashes.
+&lt;div class="codehilite"&gt;&lt;pre&gt;Key hash [這一串是keyhash] does not match any stored key hashes.
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;也可以拿來回填~&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;補充&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# 列出alias
+&lt;div class="codehilite"&gt;&lt;pre&gt;# 列出alias
 keytool -list -keystore foo.keystore
 # 產生keystore
 keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999
@@ -370,13 +374,13 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 
 
 &lt;h3&gt;class name&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;com.ansca.corona.CoronaActivity
+&lt;div class="codehilite"&gt;&lt;pre&gt;com.ansca.corona.CoronaActivity
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;iOS&lt;/h2&gt;
 &lt;p&gt;build.settings:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;settings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;settings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
    &lt;span class="n"&gt;iphone&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
    &lt;span class="p"&gt;{&lt;/span&gt;
@@ -405,7 +409,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;h1&gt;1. 下載Mavericks&lt;/h1&gt;
 &lt;p&gt;我的MacBook Air已經更新10.9了，但還是可以再下載。&lt;/p&gt;
 &lt;p&gt;改一個系統檔:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
+&lt;div class="codehilite"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
 # 把10.9的地方改稱10.8
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -413,7 +417,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;p&gt;然後到iTunes Mavericks官方頁面&lt;a href="https://itunes.apple.com/tw/app/id675248567?mt=12"&gt;Mavericks&lt;/a&gt;就可以"重新"下載了。下載完的檔案會放在 &lt;em&gt;/Applications/Install\ OS\ X\ Mavericks.app&lt;/em&gt;，大概有5G多，iTunes載完會自動跳出安裝視窗，但是先不理他，可以把這個目錄copy到其他地方，不然系統以為安裝完後就會自動殺掉。&lt;/p&gt;
 &lt;h1&gt;2. 製作開機磁碟&lt;/h1&gt;
 &lt;p&gt;用Terminal打入以下:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/MY_EXTURNAL_HD --applicationpath /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app --nointeraction
+&lt;div class="codehilite"&gt;&lt;pre&gt;sudo /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/MY_EXTURNAL_HD --applicationpath /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app --nointeraction
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -421,14 +425,14 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;p&gt;ref: &lt;a href="http://www.macworld.com/article/2056561/how-to-make-a-bootable-mavericks-install-drive.html"&gt;How to make a bootable Mavericks install drive | Macworld&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;3. 安裝&lt;/h1&gt;
 &lt;p&gt;改系統檔(不確定這是不是一定要):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
+&lt;div class="codehilite"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
 # 把10.5.8改成10.68
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;外接硬碟接上iMac，重新開機。開機時按住&lt;em&gt;Option&lt;/em&gt;會跳出選擇開機磁碟，就選剛才製作好的開機碟。就會開始自動安裝了。 爽快。&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>Lua 筆記</title><link href="http://blog.suhen.org/computer/lua_note.html" rel="alternate"></link><updated>2013-10-01T12:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/lua_note.html</id><summary type="html">&lt;h1&gt;String&lt;/h1&gt;
 &lt;h2&gt;Standard&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;string.find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;string.find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;e2&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;string.sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="p"&gt;[,&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="c1"&gt;-- string.sub(&amp;quot;abcd&amp;quot;, 1, 3) &amp;gt;&amp;gt; abc&lt;/span&gt;
 
@@ -470,12 +474,12 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 
 &lt;p&gt;大寫表示逆向，例如: &lt;strong&gt;%A&lt;/strong&gt; 就是非字串的意思&lt;/p&gt;
 &lt;p&gt;特殊字元:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="o"&gt;^&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="o"&gt;^&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;ex:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.gsub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello, up-down!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;%A&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.gsub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello, up-down!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;%A&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="c1"&gt;-- hello..up.down. 4&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -486,12 +490,12 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;li&gt;&lt;a href="http://www.lua.org/pil/2.4.html"&gt;Programming in Lua : 2.4&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Array (Table)&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;table.concat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;myTable&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;, &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;table.concat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;myTable&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;, &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;用key來排序:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;pairsByKeys&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;pairsByKeys&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
   &lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
   &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;pairs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="nb"&gt;table.insert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;end&lt;/span&gt;
   &lt;span class="nb"&gt;table.sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -519,7 +523,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 
 &lt;p&gt;來源: &lt;a href="http://www.lua.org/pil/19.3.html"&gt;Programming in Lua : 19.3&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Function&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;g&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;g&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;arg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="k"&gt;end&lt;/span&gt;
 
@@ -531,7 +535,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 
 
 &lt;p&gt;變數已經包成table, 要恢復arguments, 就要用unpack&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;countargs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;countargs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="n"&gt;arg&lt;/span&gt;
 &lt;span class="k"&gt;end&lt;/span&gt;
 &lt;span class="n"&gt;countargs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -543,7 +547,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 
 &lt;h1&gt;Debug&lt;/h1&gt;
 &lt;p&gt;Lua的debug library有很多資訊可用:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;-- ## lua debug function&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;-- ## lua debug function&lt;/span&gt;
 &lt;span class="c1"&gt;-- # 1: simple print, 就跟print一樣&lt;/span&gt;
 &lt;span class="c1"&gt;-- # 2: verbose info, 印出呼叫的函式名稱跟函式所在的檔案行數&lt;/span&gt;
 
@@ -570,13 +574,13 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;/ul&gt;
 &lt;h1&gt;Ternary Operator&lt;/h1&gt;
 &lt;p&gt;Lua不支援，但是可以利用 &lt;strong&gt;and&lt;/strong&gt;, &lt;strong&gt;or&lt;/strong&gt; 運算子的特性來達成。如:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;x is &amp;#39;&lt;/span&gt; &lt;span class="o"&gt;..&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;negative&amp;#39;&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;non-negative&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;x is &amp;#39;&lt;/span&gt; &lt;span class="o"&gt;..&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;negative&amp;#39;&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;non-negative&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;x is &amp;#39;&lt;/span&gt; &lt;span class="o"&gt;..&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;negative&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;non-negative&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="c1"&gt;-- 這樣好懂一點&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;主要是利用 &lt;strong&gt;and&lt;/strong&gt; 和 &lt;strong&gt;or&lt;/strong&gt; 的優先循序規則看以下例子:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello&amp;quot;&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;there&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;hello&amp;quot;&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;there&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;-- hello   there&lt;/span&gt;
 &lt;span class="c1"&gt;-- a, b 都是 *true*, 回傳b (第二個)&lt;/span&gt;
 
@@ -590,7 +594,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://lua-users.org/wiki/TernaryOperator"&gt;lua-users wiki: Ternary Operator&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://lua-users.org/wiki/ExpressionsTutorial"&gt;lua-users wiki: Expressions Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>[snippet] Corona SDK 顯示各種資訊</title><link href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="alternate"></link><updated>2013-10-01T10:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/corona_sdk_info.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;info&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/ul&gt;</summary></entry><entry><title>[snippet] Corona SDK 顯示各種資訊</title><link href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="alternate"></link><updated>2013-10-01T10:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/corona_sdk_info.html</id><summary type="html">&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;info&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;========= display info =========&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;pixel: %dx%d, ratio: %.02f&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
                         &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pixelWidth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -2208,12 +2212,12 @@ d r ;然後按2到36選進位數
 &lt;p&gt;&lt;a href="https://help.github.com/articles/creating-project-pages-manually"&gt;Creating Project Pages manually · GitHub Help&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Quick-start&lt;/h1&gt;
 &lt;p&gt;安裝:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pelican
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pelican
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;開始:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir blog
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir blog
 &lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
 &lt;span class="nv"&gt;$ &lt;/span&gt;pelican-quickstart
 &lt;/pre&gt;&lt;/div&gt;
@@ -2221,12 +2225,12 @@ d r ;然後按2到36選進位數
 
 &lt;p&gt;快速產生相關的設定&lt;/p&gt;
 &lt;p&gt;寫第一篇文章:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vim content/first.rst
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vim content/first.rst
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;工具指令:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;make html &lt;span class="c"&gt;# 顧名思義&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;make html &lt;span class="c"&gt;# 顧名思義&lt;/span&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;make clean 
 &lt;span class="nv"&gt;$ &lt;/span&gt;make rsync_upload &lt;span class="c"&gt;# 用rsync上傳到你的ssh host&lt;/span&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;make serve &lt;span class="c"&gt;# 啟動python的SimpleHTTPServer&lt;/span&gt;
@@ -2237,7 +2241,7 @@ d r ;然後按2到36選進位數
 
 &lt;h1&gt;文章格式 (reST, markdown)&lt;/h1&gt;
 &lt;p&gt;屬性:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# rst
+&lt;div class="codehilite"&gt;&lt;pre&gt;# rst
 hello
 ############
 :date: 2013-04-14 (必填)
@@ -2258,7 +2262,7 @@ Tags: foo, bar
 
 
 &lt;p&gt;圖片:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# rst
+&lt;div class="codehilite"&gt;&lt;pre&gt;# rst
 .. image:: /path/to/filename.jpg
            :height: 450 px
            :width: 600 px
@@ -2270,7 +2274,7 @@ Tags: foo, bar
 
 
 &lt;p&gt;連結:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# rst
+&lt;div class="codehilite"&gt;&lt;pre&gt;# rst
 `title &amp;lt;http://foo.bar&amp;gt;`__ 跟reST一樣
 
 this is a foo_ .
@@ -2282,7 +2286,7 @@ _foo: http://foo.bar
 
 
 &lt;p&gt;內部連結:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# reST
+&lt;div class="codehilite"&gt;&lt;pre&gt;# reST
 `京都行 &amp;lt;|filename|/travel/2012_kyoto_marathon-1.rst&amp;gt;`_
 
 # markdown
@@ -2291,7 +2295,7 @@ _foo: http://foo.bar
 
 
 &lt;p&gt;區塊:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# rst
+&lt;div class="codehilite"&gt;&lt;pre&gt;# rst
 foo::
 
   spam spam spam spam
@@ -2303,7 +2307,7 @@ foo::
 
 
 &lt;p&gt;syntax highlight:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# rst
+&lt;div class="codehilite"&gt;&lt;pre&gt;# rst
 .. code-block:: python
 
 import os
@@ -2318,7 +2322,7 @@ import os
 &lt;h1&gt;git hub&lt;/h1&gt;
 &lt;h2&gt;環境設定&lt;/h2&gt;
 &lt;p&gt;python要用virtualenv才是王道:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkvirtualenv sillywalk.org
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkvirtualenv sillywalk.org
 &lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;sillkwalk.org
 &lt;span class="nv"&gt;$ &lt;/span&gt;setvirtualenvproject
 &lt;span class="nv"&gt;$ &lt;/span&gt;workon sillywalk.org
@@ -2330,7 +2334,7 @@ import os
 
 &lt;h2&gt;產生HTML，發佈&lt;/h2&gt;
 &lt;p&gt;產生HTML內容:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pelican -s pelican.conf.py .
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pelican -s pelican.conf.py .
 &lt;span class="nv"&gt;$ &lt;/span&gt;ghp-import output
 &lt;span class="nv"&gt;$ &lt;/span&gt;git push origin gh-pages
 
@@ -2346,7 +2350,7 @@ import os
 &lt;/ol&gt;
 &lt;p&gt;放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。&lt;/p&gt;
 &lt;p&gt;先產生content/extra/CNAME，然後在pelicanconf.py加入:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;FILES_TO_COPY = (
+&lt;div class="codehilite"&gt;&lt;pre&gt;FILES_TO_COPY = (
     (&amp;#39;extra/CNAME&amp;#39;, &amp;#39;CNAME&amp;#39;),
 )
 &lt;/pre&gt;&lt;/div&gt;
@@ -2364,7 +2368,7 @@ import os
 &lt;p&gt;markdown可以直接貼HTML也是超級方便的!&lt;/p&gt;
 &lt;h2&gt;補充&lt;/h2&gt;
 &lt;p&gt;bookmarklet:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// reST&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// reST&lt;/span&gt;
 &lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;`&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39; &amp;lt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;gt;`__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
 &lt;span class="c1"&gt;// markdown&lt;/span&gt;
 &lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;[&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;](&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
@@ -2896,6 +2900,12 @@ request.form.getlist('')&lt;/p&gt;
   ...
 {% endfor %}
 &lt;/pre&gt;
+&lt;p&gt;dictsort(value, case_sensitive=False, by='key'):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+{% for item in mydict|dictsort(false, 'value') %}
+    sort the dict by key, case insensitive, sorted
+    normally and ordered by value.
+&lt;/pre&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>blog</title><link href="http://blog.suhen.org/computer/blog.html" rel="alternate"></link><updated>2013-04-02T15:53:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-02:computer/blog.html</id><summary type="html">&lt;div class="section" id="http-status-code"&gt;
 &lt;h2&gt;HTTP status code&lt;/h2&gt;
@@ -3221,6 +3231,7 @@ extensions = ['sphinx.ext.graphviz']
 &lt;h3&gt;System&lt;/h3&gt;
 &lt;div class="section" id="mac-osx"&gt;
 &lt;h4&gt;Mac OSX&lt;/h4&gt;
+&lt;p&gt;(Mac的Option也是Alt鍵)&lt;/p&gt;
 &lt;p&gt;Finder:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Command Shift D: 移駕「桌面」&lt;/li&gt;
@@ -3236,7 +3247,7 @@ extensions = ['sphinx.ext.graphviz']
 &lt;/ul&gt;
 &lt;p&gt;清空垃圾桶: Command Shift Delete&lt;/p&gt;
 &lt;p&gt;zoom in/out: Command Opt =/-&lt;/p&gt;
-&lt;p&gt;強制結束: Command Opt Esc&lt;/p&gt;
+&lt;p&gt;強制結束: Command Opt Esc (force quit)&lt;/p&gt;
 &lt;p&gt;區域截圖: Command Shift 4&lt;/p&gt;
 &lt;p&gt;貼上無格式文字 (plain-text): ShiftOption Command-v&lt;/p&gt;
 &lt;p&gt;輸入特殊符號: Command option T&lt;/p&gt;
@@ -3593,6 +3604,8 @@ $ bzip2 -d foo.bz2 # 把 foo.bz2 變 foo
 &lt;div class="section" id="id5"&gt;
 &lt;h2&gt;網路&lt;/h2&gt;
 &lt;pre class="literal-block"&gt;
+$ lsof # list open files
+$ lsof -n # network files
 $ lsof -i # monitors network connections in real time
 $ iftop # shows bandwith usage per *connection*
 $ nethogs #shows the bandwith usage per *process*

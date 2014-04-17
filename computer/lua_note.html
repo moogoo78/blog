@@ -44,7 +44,7 @@
 
 </footer><!-- /.post-info -->      <h1>String</h1>
 <h2>Standard</h2>
-<div class="highlight"><pre><span class="nb">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="p">])</span>
+<div class="codehilite"><pre><span class="nb">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="p">])</span>
 <span class="nb">string.format</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="o">...</span><span class="p">)</span>
 <span class="nb">string.sub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">i</span> <span class="p">[,</span> <span class="n">j</span><span class="p">])</span> <span class="c1">-- string.sub(&quot;abcd&quot;, 1, 3) &gt;&gt; abc</span>
 
@@ -86,12 +86,12 @@
 
 <p>大寫表示逆向，例如: <strong>%A</strong> 就是非字串的意思</p>
 <p>特殊字元:</p>
-<div class="highlight"><pre><span class="p">(</span> <span class="p">)</span> <span class="p">.</span> <span class="o">%</span> <span class="o">+</span> <span class="o">-</span> <span class="o">*</span> <span class="o">?</span> <span class="p">[</span> <span class="o">^</span> <span class="err">$</span>
+<div class="codehilite"><pre><span class="p">(</span> <span class="p">)</span> <span class="p">.</span> <span class="o">%</span> <span class="o">+</span> <span class="o">-</span> <span class="o">*</span> <span class="o">?</span> <span class="p">[</span> <span class="o">^</span> <span class="err">$</span>
 </pre></div>
 
 
 <p>ex:</p>
-<div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="nb">string.gsub</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">hello, up-down!&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">%A&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">.&quot;</span><span class="p">))</span>
+<div class="codehilite"><pre><span class="nb">print</span><span class="p">(</span><span class="nb">string.gsub</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">hello, up-down!&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">%A&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">.&quot;</span><span class="p">))</span>
 <span class="c1">-- hello..up.down. 4</span>
 </pre></div>
 
@@ -102,12 +102,12 @@
 <li><a href="http://www.lua.org/pil/2.4.html">Programming in Lua : 2.4</a></li>
 </ul>
 <h1>Array (Table)</h1>
-<div class="highlight"><pre><span class="nb">table.concat</span><span class="p">(</span> <span class="n">myTable</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">, &quot;</span> <span class="p">)</span>
+<div class="codehilite"><pre><span class="nb">table.concat</span><span class="p">(</span> <span class="n">myTable</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">, &quot;</span> <span class="p">)</span>
 </pre></div>
 
 
 <p>用key來排序:</p>
-<div class="highlight"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">pairsByKeys</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+<div class="codehilite"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">pairsByKeys</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">a</span> <span class="o">=</span> <span class="p">{}</span>
   <span class="k">for</span> <span class="n">n</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">do</span> <span class="nb">table.insert</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="k">end</span>
   <span class="nb">table.sort</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
@@ -135,7 +135,7 @@
 
 <p>來源: <a href="http://www.lua.org/pil/19.3.html">Programming in Lua : 19.3</a></p>
 <h1>Function</h1>
-<div class="highlight"><pre><span class="k">function</span> <span class="nf">g</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="codehilite"><pre><span class="k">function</span> <span class="nf">g</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">arg</span><span class="p">)</span>
 <span class="k">end</span>
 
@@ -147,7 +147,7 @@
 
 
 <p>變數已經包成table, 要恢復arguments, 就要用unpack</p>
-<div class="highlight"><pre><span class="k">function</span> <span class="nf">countargs</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<div class="codehilite"><pre><span class="k">function</span> <span class="nf">countargs</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
     <span class="k">return</span> <span class="o">#</span><span class="n">arg</span>
 <span class="k">end</span>
 <span class="n">countargs</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
@@ -159,7 +159,7 @@
 
 <h1>Debug</h1>
 <p>Lua的debug library有很多資訊可用:</p>
-<div class="highlight"><pre><span class="c1">-- ## lua debug function</span>
+<div class="codehilite"><pre><span class="c1">-- ## lua debug function</span>
 <span class="c1">-- # 1: simple print, 就跟print一樣</span>
 <span class="c1">-- # 2: verbose info, 印出呼叫的函式名稱跟函式所在的檔案行數</span>
 
@@ -186,13 +186,13 @@
 </ul>
 <h1>Ternary Operator</h1>
 <p>Lua不支援，但是可以利用 <strong>and</strong>, <strong>or</strong> 運算子的特性來達成。如:</p>
-<div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">x is &#39;</span> <span class="o">..</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="s">negative&#39;</span> <span class="ow">or</span> <span class="s1">&#39;</span><span class="s">non-negative&#39;</span><span class="p">))</span>
+<div class="codehilite"><pre><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">x is &#39;</span> <span class="o">..</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="s">negative&#39;</span> <span class="ow">or</span> <span class="s1">&#39;</span><span class="s">non-negative&#39;</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">x is &#39;</span> <span class="o">..</span> <span class="p">((</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="s">negative&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="s1">&#39;</span><span class="s">non-negative&#39;</span><span class="p">))</span> <span class="c1">-- 這樣好懂一點</span>
 </pre></div>
 
 
 <p>主要是利用 <strong>and</strong> 和 <strong>or</strong> 的優先循序規則看以下例子:</p>
-<div class="highlight"><pre><span class="nb">print</span><span class="p">(</span> <span class="mi">1</span> <span class="ow">and</span> <span class="s2">&quot;</span><span class="s">hello&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">hello&quot;</span> <span class="ow">and</span> <span class="s2">&quot;</span><span class="s">there&quot;</span> <span class="p">)</span>
+<div class="codehilite"><pre><span class="nb">print</span><span class="p">(</span> <span class="mi">1</span> <span class="ow">and</span> <span class="s2">&quot;</span><span class="s">hello&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">hello&quot;</span> <span class="ow">and</span> <span class="s2">&quot;</span><span class="s">there&quot;</span> <span class="p">)</span>
 <span class="c1">-- hello   there</span>
 <span class="c1">-- a, b 都是 *true*, 回傳b (第二個)</span>
 

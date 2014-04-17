@@ -47,12 +47,12 @@
 <p><a href="https://help.github.com/articles/creating-project-pages-manually">Creating Project Pages manually · GitHub Help</a></p>
 <h1>Quick-start</h1>
 <p>安裝:</p>
-<div class="highlight"><pre><span class="nv">$ </span>pip install pelican
+<div class="codehilite"><pre><span class="nv">$ </span>pip install pelican
 </pre></div>
 
 
 <p>開始:</p>
-<div class="highlight"><pre><span class="nv">$ </span>mkdir blog
+<div class="codehilite"><pre><span class="nv">$ </span>mkdir blog
 <span class="nv">$ </span><span class="nb">cd </span>blog
 <span class="nv">$ </span>pelican-quickstart
 </pre></div>
@@ -60,12 +60,12 @@
 
 <p>快速產生相關的設定</p>
 <p>寫第一篇文章:</p>
-<div class="highlight"><pre><span class="nv">$ </span>vim content/first.rst
+<div class="codehilite"><pre><span class="nv">$ </span>vim content/first.rst
 </pre></div>
 
 
 <p>工具指令:</p>
-<div class="highlight"><pre><span class="nv">$ </span>make html <span class="c"># 顧名思義</span>
+<div class="codehilite"><pre><span class="nv">$ </span>make html <span class="c"># 顧名思義</span>
 <span class="nv">$ </span>make clean 
 <span class="nv">$ </span>make rsync_upload <span class="c"># 用rsync上傳到你的ssh host</span>
 <span class="nv">$ </span>make serve <span class="c"># 啟動python的SimpleHTTPServer</span>
@@ -76,7 +76,7 @@
 
 <h1>文章格式 (reST, markdown)</h1>
 <p>屬性:</p>
-<div class="highlight"><pre># rst
+<div class="codehilite"><pre># rst
 hello
 ############
 :date: 2013-04-14 (必填)
@@ -97,7 +97,7 @@ Tags: foo, bar
 
 
 <p>圖片:</p>
-<div class="highlight"><pre># rst
+<div class="codehilite"><pre># rst
 .. image:: /path/to/filename.jpg
            :height: 450 px
            :width: 600 px
@@ -109,7 +109,7 @@ Tags: foo, bar
 
 
 <p>連結:</p>
-<div class="highlight"><pre># rst
+<div class="codehilite"><pre># rst
 `title &lt;http://foo.bar&gt;`__ 跟reST一樣
 
 this is a foo_ .
@@ -121,7 +121,7 @@ _foo: http://foo.bar
 
 
 <p>內部連結:</p>
-<div class="highlight"><pre># reST
+<div class="codehilite"><pre># reST
 `京都行 &lt;|filename|/travel/2012_kyoto_marathon-1.rst&gt;`_
 
 # markdown
@@ -130,7 +130,7 @@ _foo: http://foo.bar
 
 
 <p>區塊:</p>
-<div class="highlight"><pre># rst
+<div class="codehilite"><pre># rst
 foo::
 
   spam spam spam spam
@@ -142,7 +142,7 @@ foo::
 
 
 <p>syntax highlight:</p>
-<div class="highlight"><pre># rst
+<div class="codehilite"><pre># rst
 .. code-block:: python
 
 import os
@@ -157,7 +157,7 @@ import os
 <h1>git hub</h1>
 <h2>環境設定</h2>
 <p>python要用virtualenv才是王道:</p>
-<div class="highlight"><pre><span class="nv">$ </span>mkvirtualenv sillywalk.org
+<div class="codehilite"><pre><span class="nv">$ </span>mkvirtualenv sillywalk.org
 <span class="nv">$ </span><span class="nb">cd </span>sillkwalk.org
 <span class="nv">$ </span>setvirtualenvproject
 <span class="nv">$ </span>workon sillywalk.org
@@ -169,7 +169,7 @@ import os
 
 <h2>產生HTML，發佈</h2>
 <p>產生HTML內容:</p>
-<div class="highlight"><pre><span class="nv">$ </span>pelican -s pelican.conf.py .
+<div class="codehilite"><pre><span class="nv">$ </span>pelican -s pelican.conf.py .
 <span class="nv">$ </span>ghp-import output
 <span class="nv">$ </span>git push origin gh-pages
 
@@ -185,7 +185,7 @@ import os
 </ol>
 <p>放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。</p>
 <p>先產生content/extra/CNAME，然後在pelicanconf.py加入:</p>
-<div class="highlight"><pre>FILES_TO_COPY = (
+<div class="codehilite"><pre>FILES_TO_COPY = (
     (&#39;extra/CNAME&#39;, &#39;CNAME&#39;),
 )
 </pre></div>
@@ -203,7 +203,7 @@ import os
 <p>markdown可以直接貼HTML也是超級方便的!</p>
 <h2>補充</h2>
 <p>bookmarklet:</p>
-<div class="highlight"><pre><span class="c1">// reST</span>
+<div class="codehilite"><pre><span class="c1">// reST</span>
 <span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;`&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; &lt;&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;&gt;`__&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&#39;</span><span class="p">);</span><span class="nx">win</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;form&gt;&lt;textarea name=&quot;a&quot; rows=&quot;5&quot; cols=&quot;50&quot; onClick=&quot;javascript:this.form.a.focus();this.form.a.select();&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">t</span><span class="o">+</span><span class="s1">&#39;&lt;/textarea&gt;&lt;/form&gt;&#39;</span><span class="p">);})()</span>
 <span class="c1">// markdown</span>
 <span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">t</span><span class="o">=</span><span class="s1">&#39;[&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;](&#39;</span><span class="o">+</span><span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;)&#39;</span><span class="p">;</span><span class="nx">win</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;_new&#39;</span><span class="p">,</span><span class="s1">&#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&#39;</span><span class="p">);</span><span class="nx">win</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;form&gt;&lt;textarea name=&quot;a&quot; rows=&quot;5&quot; cols=&quot;50&quot; onClick=&quot;javascript:this.form.a.focus();this.form.a.select();&quot;&gt;&#39;</span><span class="o">+</span><span class="nx">t</span><span class="o">+</span><span class="s1">&#39;&lt;/textarea&gt;&lt;/form&gt;&#39;</span><span class="p">);})()</span>
