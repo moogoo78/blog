@@ -41,7 +41,7 @@
 </footer><!-- /.post-info --><h1>Frontend</h1>
 <h2>CSS</h2>
 <h3>基本語法</h3>
-<div class="codehilite"><pre><span class="nt">border</span><span class="nd">:5px</span> <span class="nt">solid</span> <span class="nt">red</span><span class="o">;</span> <span class="c">/* 常用style: none, dotted, dashed, solid, double */</span>
+<div class="highlight"><pre><span class="nt">border</span><span class="nd">:5px</span> <span class="nt">solid</span> <span class="nt">red</span><span class="o">;</span> <span class="c">/* 常用style: none, dotted, dashed, solid, double */</span>
 <span class="nt">tr</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">odd</span><span class="o">)</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#99ff99</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 
@@ -52,7 +52,7 @@
 </ul>
 <h3>position, box</h3>
 <p>layout (float, clear):</p>
-<div class="codehilite"><pre><span class="o">|===========</span> <span class="n">header</span> <span class="o">==========|</span>
+<div class="highlight"><pre><span class="o">|===========</span> <span class="n">header</span> <span class="o">==========|</span>
 <span class="o">|</span>                             <span class="o">|</span>
 <span class="o">|==</span> <span class="n">section</span> <span class="o">==|</span> <span class="o">|==</span> <span class="n">section</span> <span class="o">==|</span>
 <span class="o">|</span> <span class="kt">float</span><span class="o">:</span> <span class="n">left</span><span class="p">;</span>   <span class="kt">float</span><span class="o">:</span> <span class="n">right</span><span class="p">;</span><span class="o">|</span>
@@ -63,7 +63,7 @@
 
 
 <p>style:</p>
-<div class="codehilite"><pre><span class="nt">section</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nt">section</span> <span class="p">{</span>
     <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
     <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
     <span class="k">width</span><span class="o">:</span> <span class="m">600px</span><span class="p">;</span>
@@ -80,7 +80,7 @@
 
 
 <p>css:</p>
-<div class="codehilite"><pre><span class="nc">.center</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nc">.center</span> <span class="p">{</span>
     <span class="k">width</span><span class="o">:</span><span class="n">xxxpx</span><span class="p">;</span><span class="k">margin-left</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span><span class="k">margin-right</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
@@ -89,6 +89,20 @@
 <h3>應用</h3>
 <p>圖片塞滿browser
 * <a href="http://paulmason.name/item/full-screen-background-image-pure-css-code">Full Screen Background Image - Pure CSS Code</a></p>
+<h2>JavaScript</h2>
+<h3>jQuery</h3>
+<p>(DOM) ready:</p>
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span> <span class="nb">document</span> <span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// Handler for .ready() called.</span>
+<span class="p">});</span>
+
+
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// Handler for .ready() called.</span>
+<span class="p">});</span>
+</pre></div>
+
+
 <h2>工具</h2>
 <h3>layout</h3>
 <ul>
@@ -111,7 +125,7 @@
 <h1>Backend</h1>
 <h2>service / daemon</h2>
 <h3>uwsgi</h3>
-<div class="codehilite"><pre><span class="cp"># kill existing uwsgi</span>
+<div class="highlight"><pre><span class="cp"># kill existing uwsgi</span>
 <span class="n">ps</span> <span class="n">aux</span><span class="o">|</span><span class="n">grep</span> <span class="n">uwsgi</span> <span class="o">|</span><span class="n">awk</span> <span class="err">&#39;</span><span class="p">{</span> <span class="n">print</span> <span class="err">$</span><span class="mi">2</span><span class="p">}</span><span class="err">&#39;</span> <span class="o">|</span> <span class="n">xargs</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">run</span><span class="o">-</span><span class="k">if</span><span class="o">-</span><span class="n">empty</span> <span class="n">sudo</span> <span class="n">kill</span> <span class="o">-</span><span class="mi">9</span>
 <span class="n">sleep</span> <span class="mi">1</span>
 <span class="cp"># start with virtualhost setting</span>
@@ -121,23 +135,23 @@
 
 <h3>PHP</h3>
 <p>PHP session:</p>
-<div class="codehilite"><pre><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">php</span><span class="o">/</span><span class="n">session</span>
+<div class="highlight"><pre><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">php</span><span class="o">/</span><span class="n">session</span>
 </pre></div>
 
 
 <p>php start:</p>
-<div class="codehilite"><pre><span class="n">sudo</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">init</span><span class="p">.</span><span class="n">d</span><span class="o">/</span><span class="n">php_cgi</span> <span class="n">start</span>
+<div class="highlight"><pre><span class="n">sudo</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">init</span><span class="p">.</span><span class="n">d</span><span class="o">/</span><span class="n">php_cgi</span> <span class="n">start</span>
 </pre></div>
 
 
 <h2>Performance</h2>
 <h3>ab</h3>
-<div class="codehilite"><pre><span class="n">ab</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">c</span> <span class="mi">1000</span> <span class="o">-</span><span class="n">n</span> <span class="mi">1000</span> <span class="n">http</span><span class="o">:</span><span class="c1">//testme.com</span>
+<div class="highlight"><pre><span class="n">ab</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">c</span> <span class="mi">1000</span> <span class="o">-</span><span class="n">n</span> <span class="mi">1000</span> <span class="n">http</span><span class="o">:</span><span class="c1">//testme.com</span>
 </pre></div>
 
 
 <p>參數:</p>
-<div class="codehilite"><pre>k: HTTP Keep Alive
+<div class="highlight"><pre>k: HTTP Keep Alive
 c: concurrency (同時連線)
 n: num of requests (測試的request總數, 用完就結束)
 t: timelimit

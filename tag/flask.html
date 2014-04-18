@@ -42,7 +42,7 @@
 <h2>1. 安裝eb commend tools</h2>
 <p>下載: <a href="http://aws.amazon.com/code/6752709412171743">AWS Elastic Beanstalk Command Line Tool : Sample Code &amp; Libraries : Amazon Web Services</a></p>
 <p>設定好路徑(以mac為例), 就可以開始了</p>
-<div class="codehilite"><pre>AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
+<div class="highlight"><pre>AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
 
 <span class="c"># 環境變數, 可以在shell下export或是寫在~/.elasticbeanstalk/aws_credential_file裡 (忘記是我自己加的還是eb工具自動加的)</span>
 <span class="nv">AWSAccessKeyId</span><span class="o">=</span>Write your AWS access ID
@@ -53,7 +53,7 @@
 <h2>2. 準備部署</h2>
 <h3>WSGI</h3>
 <p>預設是application.py:application, 自己要改application.py名字失敗..</p>
-<div class="codehilite"><pre>[aws:elasticbeanstalk:container:python]
+<div class="highlight"><pre>[aws:elasticbeanstalk:container:python]
 ...
 WSGIPath=my_fail_wsgi
 eb update?
@@ -68,7 +68,7 @@ eb update?
 <li>原本logger有自己存檔, 也要取消 (反正會出現在eb的log裡)</li>
 </ul>
 <h2>3. 跑起來</h2>
-<div class="codehilite"><pre><span class="c"># 在git目錄下操作, 如果沒有repo就會叫你git init</span>
+<div class="highlight"><pre><span class="c"># 在git目錄下操作, 如果沒有repo就會叫你git init</span>
 eb init
 <span class="c"># 會有選單, 開始勾選</span>
 <span class="c"># 平台選這個</span>
@@ -89,7 +89,7 @@ eb status --verbose
 <h2>其他設定</h2>
 <h3>環境設定</h3>
 <p>產生 <strong>.ebextensions</strong>目錄, 新增 python.config:</p>
-<div class="codehilite"><pre><span class="nl">option_settings:</span>
+<div class="highlight"><pre><span class="nl">option_settings:</span>
   <span class="s">&quot;aws:elasticbeanstalk:container:python:staticfiles&quot;</span><span class="o">:</span>
     <span class="s">&quot;/static/&quot;</span><span class="o">:</span> <span class="s">&quot;myapp/static/&quot;</span>
 </pre></div>
@@ -104,39 +104,39 @@ eb status --verbose
 <h4>1. startssl申請: 產生 ssl.crt, ssl.key (encrypted), 還有一組密碼</h4>
 <p><a href="http://blog.miniasp.com/post/2013/01/10/The-Complete-Guide-Free-StartSSL-personal-and-web-site-ssl-tls-certificates.aspx">The Will Will Web | 免費申請 StartSSL™ 個人數位簽章與網站 SSL 憑證完全攻略</a></p>
 <p>產生private key:</p>
-<div class="codehilite"><pre><span class="n">openssl</span> <span class="n">rsa</span> <span class="o">-</span><span class="n">in</span> <span class="n">ssl</span><span class="p">.</span><span class="n">key</span> <span class="o">-</span><span class="n">out</span> <span class="n">private</span><span class="p">.</span><span class="n">key</span> <span class="err">#</span> <span class="err">要求輸入那一組密碼</span>
+<div class="highlight"><pre><span class="n">openssl</span> <span class="n">rsa</span> <span class="o">-</span><span class="n">in</span> <span class="n">ssl</span><span class="p">.</span><span class="n">key</span> <span class="o">-</span><span class="n">out</span> <span class="n">private</span><span class="p">.</span><span class="n">key</span> <span class="err">#</span> <span class="err">要求輸入那一組密碼</span>
 </pre></div>
 
 
 <p><strong>無效(self signed cert.):</strong></p>
 <p>private key:</p>
-<div class="codehilite"><pre><span class="n">openssl</span> <span class="n">genrsa</span> <span class="mi">1024</span> <span class="o">&gt;</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span>
+<div class="highlight"><pre><span class="n">openssl</span> <span class="n">genrsa</span> <span class="mi">1024</span> <span class="o">&gt;</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span>
 </pre></div>
 
 
 <p>cert. pem:</p>
-<div class="codehilite"><pre><span class="n">openssl</span> <span class="n">req</span> <span class="o">-</span><span class="n">new</span> <span class="o">-</span><span class="n">key</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">out</span> <span class="n">csr</span><span class="p">.</span><span class="n">pem</span>
+<div class="highlight"><pre><span class="n">openssl</span> <span class="n">req</span> <span class="o">-</span><span class="n">new</span> <span class="o">-</span><span class="n">key</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">out</span> <span class="n">csr</span><span class="p">.</span><span class="n">pem</span>
 </pre></div>
 
 
 <p>server cert:</p>
-<div class="codehilite"><pre><span class="n">openssl</span> <span class="n">x509</span> <span class="o">-</span><span class="n">req</span> <span class="o">-</span><span class="n">days</span> <span class="mi">365</span> <span class="o">-</span><span class="n">in</span> <span class="n">csr</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">signkey</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">out</span> <span class="n">server</span><span class="p">.</span><span class="n">crt</span> <span class="err">#</span> <span class="err">會問一些問題</span>
+<div class="highlight"><pre><span class="n">openssl</span> <span class="n">x509</span> <span class="o">-</span><span class="n">req</span> <span class="o">-</span><span class="n">days</span> <span class="mi">365</span> <span class="o">-</span><span class="n">in</span> <span class="n">csr</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">signkey</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">out</span> <span class="n">server</span><span class="p">.</span><span class="n">crt</span> <span class="err">#</span> <span class="err">會問一些問題</span>
 </pre></div>
 
 
 <h4>2. 設定到AWS</h4>
 <p>下載 iam 命令列:</p>
-<div class="codehilite"><pre><span class="n">pip</span> <span class="n">install</span> <span class="n">awscli</span>
+<div class="highlight"><pre><span class="n">pip</span> <span class="n">install</span> <span class="n">awscli</span>
 </pre></div>
 
 
 <p>執行前要先:</p>
-<div class="codehilite"><pre><span class="n">aws</span> <span class="n">configure</span>
+<div class="highlight"><pre><span class="n">aws</span> <span class="n">configure</span>
 </pre></div>
 
 
 <p>輸入 id, sec key,</p>
-<div class="codehilite"><pre><span class="n">iam</span><span class="o">-</span><span class="n">servercertupload</span> <span class="o">-</span><span class="n">b</span> <span class="n">server</span><span class="p">.</span><span class="n">crt</span> <span class="o">-</span><span class="n">k</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">s</span> <span class="n">server</span> <span class="o">-</span><span class="n">v</span>
+<div class="highlight"><pre><span class="n">iam</span><span class="o">-</span><span class="n">servercertupload</span> <span class="o">-</span><span class="n">b</span> <span class="n">server</span><span class="p">.</span><span class="n">crt</span> <span class="o">-</span><span class="n">k</span> <span class="n">privatekey</span><span class="p">.</span><span class="n">pem</span> <span class="o">-</span><span class="n">s</span> <span class="n">server</span> <span class="o">-</span><span class="n">v</span>
 </pre></div>
 
 
