@@ -62,6 +62,22 @@ css:
 * [Full Screen Background Image - Pure CSS Code](http://paulmason.name/item/full-screen-background-image-pure-css-code)
 
 
+## JavaScript
+
+### jQuery
+
+(DOM) ready:
+
+    :::javascript
+    $( document ).ready(function() {
+    // Handler for .ready() called.
+    });
+
+
+    $(function() {
+    // Handler for .ready() called.
+    });
+
 ## 工具
 
 ### layout
