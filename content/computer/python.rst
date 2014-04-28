@@ -281,6 +281,12 @@ subprocess::
 coding
 ===============
 
+UnicodeEncodeError::
+
+  import sys
+  reload(sys)
+  sys.setdefaultencoding('utf-8')
+
 * `宅之力: 解決方法: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128) <http://blog.wahahajk.com/2009/08/unicodedecodeerror-ascii-codec-cant.html>`__
 
 
