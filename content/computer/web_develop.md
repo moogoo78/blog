@@ -4,6 +4,13 @@ Category: computer
 Tags: html, css
 Slug: web_develop
 
+
+
+# 名詞
+
+Webhooks: "user-defined HTTP callbacks"
+
+
 # Frontend
 
 ## CSS
