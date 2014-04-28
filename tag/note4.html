@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title> Suhen's blog - moogoo</title>
+        <title> Suhen's blog - note</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog Atom Feed" />
                 
@@ -26,60 +26,99 @@
                                 <li ><a href="http://blog.suhen.org/category/misc.html">其他</a></li>
                                                 </ul></nav>
         </header><!-- /#banner -->
-                
+                    
 
-<section id="content" class="body">
-<div style="margin:auto;width:800px">
-<a href="/category/computer.html"><img src="/theme/images/computer.jpg" width="200"></a>
-<a href="/category/music.html"><img src="/theme/images/music.jpg" width="200"></a>
-<a href="/category/run.html"><img src="/theme/images/running.jpg" width="200"></a>
-<a href="/category/mountain.html"><img src="/theme/images/mountain.jpg" width="200"></a>
-<a href="/category/nature.html"><img src="/theme/images/nature.jpg" width="200"></a>
-<a href="/category/travel.html"><img src="/theme/images/travel.jpg" width="200"></a>
-<a href="/category/book.html"><img src="/theme/images/book.jpg" width="200"></a>
-<a href="/category/language.html"><img src="/theme/images/language.jpg" width="200"></a>
-<a href="/category/misc.html"><img src="/theme/images/misc.jpg" width="200"></a>
-<a href="/archives.html"><img src="/theme/images/archives.jpg" width="200"></a>
-</div>
-<dl>
-            
-    <dt>2014-01-27 22:08</dt>
-    <dd><a href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-thursday_bee.html">台北荒野 - 週週見 -《蜂台灣》──鏡頭後的身影</a></dd>
-                        
-    <dt>2013-11-27 09:56</dt>
-    <dd><a href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-travel-1.html">[荒野台北24解] 第一次旅行 - 人與自然的學習</a></dd>
-                        
-    <dt>2014-02-18 02:45</dt>
-    <dd><a href="http://blog.suhen.org/misc/sow_taipei_interpreter_24_intern_group.html">[荒野台北24解] 團體實習</a></dd>
-                        
-    <dt>2014-03-22 05:55</dt>
-    <dd><a href="http://blog.suhen.org/misc/sow_tpe_interpreter24_usarmy.html">[荒野] 陽明山山仔后 - 美軍宿舍</a></dd>
-                        
-    <dt>2014-04-10 18:26</dt>
-    <dd><a href="http://blog.suhen.org/computer/ssl.html">[網路] SSL</a></dd>
-                        
-    <dt>2013-11-13 23:58</dt>
-    <dd><a href="http://blog.suhen.org/book/start_with_why_simon_sinek.html">Start With Why - Simon Sinek (2009)</a></dd>
-                        
-    <dt>2014-03-11 00:52</dt>
-    <dd><a href="http://blog.suhen.org/music/summertime_blues_kiyoshiro.html">如此這般的夏日藍調</a></dd>
-                        
-    <dt>2013-08-26 01:27</dt>
-    <dd><a href="http://blog.suhen.org/nature/tai-wan-suo-luo.html">臺灣桫羅</a></dd>
-                        
-    <dt>2013-12-14 17:55</dt>
-    <dd><a href="http://blog.suhen.org/nature/taiwan_dujuan.html">## 台灣野生杜鵑 ##</a></dd>
-                        
-    <dt>2014-04-29 03:26</dt>
-    <dd><a href="http://blog.suhen.org/misc/taiwan_japan_era.html">[筆記] 日本時代 簡表</a></dd>
+         
+                            <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/ganglia.html" rel="bookmark"
+                           title="Permalink to Ganglia">Ganglia</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-02T11:39:00">
+                2013-04-02 11:39
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
+<p>Ganglia有3個部分:</p>
+<ul class="simple">
+<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
+<li>gmetad - 詢問gmond儲存數質</li>
+<li>ganglia-web</li>
+</ul>
+<pre class="literal-block">
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+</pre>
+<p>start daemond:</p>
+<pre class="literal-block">
+service gmond start
+service gmetad start
+</pre>
+<div class="section" id="centos">
+<h2>CentOS</h2>
+<p>進入web介面時出現:</p>
+<pre class="literal-block">
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+</pre>
+<p>解決方法, 重新安裝 ...</p></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/ganglia.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="bookmark"
+                           title="Permalink to Dynamic DNS setting for Namecheap on Mac OSX">Dynamic DNS setting for Namecheap on Mac OSX</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-21T02:09:00">
+                2013-03-21 02:09
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>登入Namecheap啓用Dynamic <a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service">link1</a></p>
+<p>設定DNS record:</p>
+<pre class="literal-block">
+freedns1.registrar-servers.com
+freedns2.registrar-servers.com
+freedns3.registrar-servers.com
+freedns4.registrar-servers.com
+freedns5.registrar-servers.com
+</pre>
+<p><a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/532/51/how-does-free-dns-work">link2</a></p>
+<p>安裝Dynamic DNS clinet (以OS X的ddclient為例):</p>
+<pre class="literal-block">
+$ brew install ddclient
+</pre>
+<p>在/usr/local/etc/ddclient裡建立ddclient.conf (範例在/usr/local/share/doc/ddclient), 裡面有namecheap的預設選項:</p>
+<pre class="literal-block">
+protocol=namecheap
+server=dynamicdns.park-your-domain.com
+login=yourdomain.com ...</pre>
+                <a class="readmore" href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            </ol><!-- /#posts-list -->
                             <p class="paginator">
-                        <a href="http://blog.suhen.org/author/moogoo14.html">&laquo;</a>
-                Page 15 / 17
-            <a href="http://blog.suhen.org/author/moogoo16.html">&raquo;</a>
+                        <a href="http://blog.suhen.org/tag/note3.html">&laquo;</a>
+                Page 4 / 4
     </p>
-                </dl>
-</section>
-                        <section id="extras" class="body">
+                        </section><!-- /#content -->
+            
+        <section id="extras" class="body">
                         <div class="blogroll">
                         <h2>blogroll</h2>
                         <ul>
