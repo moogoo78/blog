@@ -279,6 +279,12 @@ os.rename(src, dst)
 </div>
 <div class="section" id="coding">
 <h2>coding</h2>
+<p>UnicodeEncodeError:</p>
+<pre class="literal-block">
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+</pre>
 <ul class="simple">
 <li><a class="reference external" href="http://blog.wahahajk.com/2009/08/unicodedecodeerror-ascii-codec-cant.html">宅之力: 解決方法: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128)</a></li>
 </ul>
@@ -913,7 +919,9 @@ $ make html
         <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
 </footer><!-- /.post-info -->                <div class="section" id="script">
-<h2>好用script</h2>
+<h2>script</h2>
+<div class="section" id="snippets">
+<h3>snippets</h3>
 <p>把&quot;/t&quot;分隔的檔案轉成sql語法, 用awk和sed</p>
 <div class="highlight"><pre>awk -F <span class="s1">&#39;\t&#39;</span> <span class="s1">&#39;{print &quot;INSERT INTO word (\&quot;s3id\&quot;,\&quot;content\&quot;,\&quot;freq\&quot;,\&quot;translate\&quot;,\&quot;ex1\&quot;,\&quot;ex1_translate\&quot;,\&quot;ex2\&quot;,\&quot;ex2_translate\&quot;) VALUES(\&quot;&quot;$1&quot;\&quot;,\&quot;&quot;$2&quot;\&quot;,\&quot;&quot;$3&quot;\&quot;,\&quot;&quot;$4&quot;\&quot;,\&quot;&quot;$5&quot;\&quot;,\&quot;&quot;$6&quot;\&quot;,\&quot;&quot;$7&quot;\&quot;,\&quot;&quot;$8&quot;\&quot;);&quot;}&#39;</span> data_all_u.txt | sed -e <span class="s1">&#39;s/^M//g&#39;</span> &gt; out.sql
 </pre></div>
@@ -921,12 +929,9 @@ $ make html
 <p class="first admonition-title">Note</p>
 <p class="last">先用awk轉好, 再用sed去除最後換行符號, &quot;^M&quot;在commend-line裡要Ctrl-V + Ctrl-M表示</p>
 </div>
-</div>
-<div class="section" id="id1">
-<h2>檔案</h2>
-<p>把檔案foo複製到以下全部目錄裡:</p>
-<pre class="literal-block">
-$ find . -type d |xargs ...</pre></div>
+<p>more</p>
+<ul class="simple">
+<li>[Robert Muth: Better Bash ...</li></ul></div></div>
                 <a class="readmore" href="http://blog.suhen.org/computer/unix_command.html">read more</a>
                 <p>There are <a href="http://blog.suhen.org/computer/unix_command.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>

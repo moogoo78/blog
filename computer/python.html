@@ -283,6 +283,12 @@ os.rename(src, dst)
 </div>
 <div class="section" id="coding">
 <h2>coding</h2>
+<p>UnicodeEncodeError:</p>
+<pre class="literal-block">
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+</pre>
 <ul class="simple">
 <li><a class="reference external" href="http://blog.wahahajk.com/2009/08/unicodedecodeerror-ascii-codec-cant.html">宅之力: 解決方法: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128)</a></li>
 </ul>
