@@ -6294,6 +6294,10 @@ mysqlreport  --user MY_USER --password MY_PASS
 &lt;/div&gt;
 &lt;div class="section" id="id7"&gt;
 &lt;h3&gt;常用處理&lt;/h3&gt;
+&lt;p&gt;第一次設定:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+/usr/bin/mysql_secure_installation
+&lt;/pre&gt;
 &lt;p&gt;改root密碼:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 mysqladmin -u root -p'oldpassword' password newpass
