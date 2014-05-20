@@ -150,6 +150,11 @@ Tools
 常用處理
 -----------------
 
+
+第一次設定::
+
+  /usr/bin/mysql_secure_installation
+
 改root密碼::
 
   mysqladmin -u root -p'oldpassword' password newpass
