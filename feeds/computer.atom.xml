@@ -73,9 +73,12 @@ CA: Certificate Authority&lt;/p&gt;
 &lt;p&gt;width = 320&lt;/p&gt;
 &lt;p&gt;height = 480&lt;/p&gt;
 &lt;p&gt;letterbox時, 到iPad上會左右多出20, display.screenOriginX = -20&lt;/p&gt;
-&lt;p&gt;座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。&lt;/p&gt;</summary></entry><entry><title>裝置</title><link href="http://blog.suhen.org/computer/mobile_develop.html" rel="alternate"></link><updated>2014-02-17T13:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-17:computer/mobile_develop.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.emirweb.com/ScreenDeviceStatistics.php"&gt;EmirWeb&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。&lt;/p&gt;</summary></entry><entry><title>裝置</title><link href="http://blog.suhen.org/computer/mobile_develop.html" rel="alternate"></link><updated>2014-02-17T13:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-17:computer/mobile_develop.html</id><summary type="html">&lt;h1&gt;iOS&lt;/h1&gt;
+&lt;p&gt;AppStore link 規範 &lt;a href="https://developer.apple.com/library/ios/qa/qa1633/_index.html"&gt;Technical Q&amp;amp;A QA1633: Creating easy-to-read short links to the App Store for your apps and company&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Android&lt;/h1&gt;
 &lt;p&gt;Android
-&lt;a href="http://developer.android.com/guide/practices/screens_support.html"&gt;Supporting Multiple Screens | Android Developers&lt;/a&gt;&lt;/p&gt;</summary><category term="mobile"></category></entry><entry><title></title><link href="http://blog.suhen.org/computer/web_develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web_develop.html</id><summary type="html">&lt;h1&gt;名詞&lt;/h1&gt;
+&lt;a href="http://developer.android.com/guide/practices/screens_support.html"&gt;Supporting Multiple Screens | Android Developers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.emirweb.com/ScreenDeviceStatistics.php"&gt;EmirWeb&lt;/a&gt;&lt;/p&gt;</summary><category term="mobile"></category></entry><entry><title></title><link href="http://blog.suhen.org/computer/web_develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web_develop.html</id><summary type="html">&lt;h1&gt;名詞&lt;/h1&gt;
 &lt;p&gt;Webhooks: "user-defined HTTP callbacks"&lt;/p&gt;
 &lt;h1&gt;Frontend&lt;/h1&gt;
 &lt;h2&gt;CSS&lt;/h2&gt;
