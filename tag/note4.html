@@ -33,6 +33,106 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_dired_rename.html" rel="bookmark"
+                           title="Permalink to [Computer] 用Emacs dired-mode批次改檔名">[Computer] 用Emacs dired-mode批次改檔名</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-17T14:55:00">
+                2013-06-17 14:55
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>看到 <a class="reference external" href="http://xahlee.org">XahLee</a> 的一篇文章: <a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html">Emacs: Rename Files Interactively by Pattern (regex; wdired)</a> ，用Emacs來處理批次改檔名實在太方便了。</p>
+<p>在Dired模式下，<strong>C-x C-q</strong> 進入修改模式，或是執行 <strong>wdired-change-to-wdired-mode</strong>, 這時改檔名就像改一般文字檔一樣，可以用 <em>query-replace</em>, <em>query-replace-regexp</em> 或 <em>cua-mode</em> , 改完後 <strong>C-c C-c</strong> 送出, 或是 <strong>C-c C-Esc</strong> 取消就可以了,  比寫script直覺多了。</p>
+
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_dired_rename.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_dired_rename.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/irc_screen_irssi.html" rel="bookmark"
+                           title="Permalink to 用screen+irssi上IRC聊天不斷線">用screen+irssi上IRC聊天不斷線</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-05-26T15:21:00">
+                2013-05-26 15:21
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).</p>
+<p>安裝screen和irssi:</p>
+<pre class="literal-block">
+aptitude install screen
+aptitude install irssi
+</pre>
+<p>開screen (detach/reattach參數):</p>
+<pre class="literal-block">
+screen -RD
+</pre>
+<p>進入irssi:</p>
+<pre class="literal-block">
+/connect irc.freenode.net # 連server
+/nick moogoolee           # 改匿名
+/j #python.tw             # 開channel
+/wc                       # 離開channal
+/disconnect               # server斷線
+/quit                     # 離開irssi
+</pre>
+<p>切換channel:</p>
+<pre class="literal-block">
+alt + 數字
+</pre>
+<p>但是Mac的Alt會變成輸入特殊字, 用iTerm的話, 可以如以下設定:</p>
+<p>Bookmarks ...</p>
+                <a class="readmore" href="http://blog.suhen.org/computer/irc_screen_irssi.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/irc_screen_irssi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_elscreen.html" rel="bookmark"
+                           title="Permalink to Elscreen - Emacs好用的tab mode">Elscreen - Emacs好用的tab mode</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-04-23T17:28:00">
+                2013-04-23 17:28
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>我以為在Emacs一直沒有好的tab顯示模式，以前用過 <a class="reference external" href="http://emacswiki.org/emacs/TabBarMode">tabbar mode</a> ，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。</p>
+<p>下載elscreen.el: <a class="reference external" href="ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/">ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/</a></p>
+<p>elscreen.el只有一個檔案，但是他要依附一套 <a class="reference external" href="https://github.com/jeffgran/APEL">APEL</a> 才可以運作。</p>
+<pre class="literal-block">
+;; elscreen
+(add-to-list 'load-path (concat my-path &quot;goodies/APEL&quot;))
+(load &quot;elscreen&quot; &quot;ElScreen&quot; )
+(setq elscreen-display-tab t)
+
+(global-set-key (kbd &quot;C-x t&quot;) 'elscreen-create)
+(global-set-key (kbd &quot;C-x w&quot;) 'elscreen-kill)
+(global-set-key (kbd &quot;M-t&quot;) 'elscreen-previous) ;;transpose-words ...</pre>
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_elscreen.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_elscreen.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/pelican.html" rel="bookmark"
                            title="Permalink to Pelican - 邁向靜態blog之路 (reST and markdown)">Pelican - 邁向靜態blog之路 (reST and markdown)</a></h1>
                 </header>

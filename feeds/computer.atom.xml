@@ -11,6 +11,10 @@ CA: Certificate Authority&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;h1&gt;display&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://coronalabs.com/blog/2013/10/15/tutorial-anchor-points-in-graphics-2-0/"&gt;Tutorial: Anchor Points in Graphics 2.0 | Corona Labs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1&gt;Event / Timer&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;AnimTimer&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;timer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;performWithDelay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PAnimate&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;timer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cancel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;AnimTimer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -62,7 +66,9 @@ CA: Certificate Authority&lt;/p&gt;
 
 &lt;p&gt;在iPad上測試: locale.* 不管語系怎麼設定, 都會是zh_TW (綁帳號?),&lt;/p&gt;
 &lt;h1&gt;Setting&lt;/h1&gt;
-&lt;p&gt;&lt;a href="http://docs.coronalabs.com/guide/basics/configSettings/"&gt;Corona Docs: guide &amp;gt; basics &amp;gt; configSettings&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://docs.coronalabs.com/guide/basics/configSettings/"&gt;Corona Docs: guide &amp;gt; basics &amp;gt; configSettings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;scale&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;letterbox: 等比例縮放, 把所有內容放入screen內, 所以會有"空白"跑出來, 可以用大一點的背景圖填滿&lt;/li&gt;
@@ -361,7 +367,20 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs"&gt;Celery with Amazon SQS - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/"&gt;Using Django and Celery with Amazon SQS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>Corona SDK串接Facebook</title><link href="http://blog.suhen.org/computer/corona_sdk_facebook.html" rel="alternate"></link><updated>2013-11-07T20:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-07:computer/corona_sdk_facebook.html</id><summary type="html">&lt;p&gt;Corona SDK提供了&lt;a href="http://docs.coronalabs.com/api/library/facebook/index.html"&gt;facebook API&lt;/a&gt;可以很方便的跟facebook串接。&lt;/p&gt;
+&lt;/ul&gt;
+&lt;h1&gt;問題 / Problems&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;requirements.txt 加了 bcrypt 會錯, 因為還要安裝 gcc 跟 libffi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;.ebextensions/python.config:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;packages:
+  yum:
+    libffi-devel: []
+    gcc: []
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="https://racingtadpole.com/blog/django-aws-eb-s3/"&gt;Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole&lt;/a&gt;&lt;/p&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>Corona SDK串接Facebook</title><link href="http://blog.suhen.org/computer/corona_sdk_facebook.html" rel="alternate"></link><updated>2013-11-07T20:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-07:computer/corona_sdk_facebook.html</id><summary type="html">&lt;p&gt;Corona SDK提供了&lt;a href="http://docs.coronalabs.com/api/library/facebook/index.html"&gt;facebook API&lt;/a&gt;可以很方便的跟facebook串接。&lt;/p&gt;
 &lt;h1&gt;1. facebook app id&lt;/h1&gt;
 &lt;p&gt;先到developers.facebook.com產生一個app，取得app id&lt;/p&gt;
 &lt;h1&gt;2. 設定&lt;/h1&gt;
@@ -2217,6 +2236,26 @@ d r ;然後按2到36選進位數
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class="section" id="shell"&gt;
+&lt;h2&gt;shell&lt;/h2&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="29%" /&gt;
+&lt;col width="71%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;M-x shell&lt;/td&gt;
+&lt;td&gt;開一個buffer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-! cmd&lt;/td&gt;
+&lt;td&gt;直接執行, 輸出另外開一個buffer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-u M-! cmd&lt;/td&gt;
+&lt;td&gt;直接執行, 輸出在目前游標位置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>Elscreen - Emacs好用的tab mode</title><link href="http://blog.suhen.org/computer/emacs_elscreen.html" rel="alternate"></link><updated>2013-04-23T17:28:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-23:computer/emacs_elscreen.html</id><summary type="html">&lt;p&gt;我以為在Emacs一直沒有好的tab顯示模式，以前用過 &lt;a class="reference external" href="http://emacswiki.org/emacs/TabBarMode"&gt;tabbar mode&lt;/a&gt; ，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。&lt;/p&gt;
 &lt;p&gt;下載elscreen.el: &lt;a class="reference external" href="ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/"&gt;ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;elscreen.el只有一個檔案，但是他要依附一套 &lt;a class="reference external" href="https://github.com/jeffgran/APEL"&gt;APEL&lt;/a&gt; 才可以運作。&lt;/p&gt;
@@ -2868,6 +2907,17 @@ p = Product.query.join('brand').\
 &lt;li&gt;&lt;a class="reference external" href="http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/"&gt;SQLAlchemy and You | Armin Ronacher's Thoughts and Writings&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;div class="section" id="flask"&gt;
+&lt;h2&gt;Flask&lt;/h2&gt;
+&lt;div class="section" id="pattern"&gt;
+&lt;h3&gt;pattern&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://charlesleifer.com/blog/structuring-flask-apps-a-how-to-for-those-coming-from-django/"&gt;charles leifer | Structuring flask apps, a how-to for those coming from Django&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/mitsuhiko/flask/tree/master/examples"&gt;lask/examples at master · mitsuhiko/flask&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/semirook/flask-kit"&gt;semirook/flask-kit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="section" id="django"&gt;
 &lt;h2&gt;Django&lt;/h2&gt;
 &lt;div class="section" id="quick-start"&gt;
@@ -2891,7 +2941,7 @@ print django.get_version()
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="section" id="flask"&gt;
+&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;Flask&lt;/h2&gt;
 &lt;p&gt;request:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -2899,7 +2949,7 @@ request.remote_addr # client id
 request.access_route # all ip addresses from client (access_route[0]) to the last proxy server,
 # 判斷環境變數 HTTP_X_FORWARDED_FOR
 &lt;/pre&gt;
-&lt;div class="section" id="id2"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h3&gt;Docs&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://flask.pocoo.org/docs/"&gt;Flask documentation&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/mitsuhiko/flask"&gt;github&lt;/a&gt;&lt;/li&gt;
@@ -3277,7 +3327,8 @@ extensions = ['sphinx.ext.graphviz']
 &lt;p&gt;清空垃圾桶: Command Shift Delete&lt;/p&gt;
 &lt;p&gt;zoom in/out: Command Opt =/-&lt;/p&gt;
 &lt;p&gt;強制結束: Command Opt Esc (force quit)&lt;/p&gt;
-&lt;p&gt;區域截圖: Command Shift 4&lt;/p&gt;
+&lt;p&gt;區域截圖 (存到桌面): Command Shift 4
+區域截圖 (存到剪貼簿): Command Shift Control 4&lt;/p&gt;
 &lt;p&gt;貼上無格式文字 (plain-text): ShiftOption Command-v&lt;/p&gt;
 &lt;p&gt;輸入特殊符號: Command option T&lt;/p&gt;
 &lt;p&gt;放大縮小: Command + / Command -&lt;/p&gt;
@@ -3400,11 +3451,11 @@ F7 鍵盤瀏覽
 C-b c&lt;/p&gt;
 &lt;p&gt;# 前/後一個視窗
 C-b n/p&lt;/p&gt;
-&lt;p&gt;# 分割上下視窗
+&lt;p&gt;# 分割上下pane
 C-b &amp;quot;&lt;/p&gt;
-&lt;p&gt;# 分割左右視窗
+&lt;p&gt;# 分割左右pane
 C-b %&lt;/p&gt;
-&lt;p&gt;# 重整視窗(幫你排)
+&lt;p&gt;# 重整pane(幫你排)
 C-b SPACE&lt;/p&gt;
 &lt;p&gt;# 調整視窗大小
 C-b 按著不放再按上下左右&lt;/p&gt;
@@ -3425,6 +3476,10 @@ C-b ?&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 Ctrl-b [ 上/下/左/右 , q 離開
 &lt;/pre&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://gist.github.com/MohamedAlaa/2961058"&gt;tmux shortcuts &amp;amp; cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://gist.github.com/andreyvit/2921703"&gt;tmux cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="tools"&gt;
