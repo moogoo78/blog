@@ -152,3 +152,18 @@ https://github.com/adamcrosby/elastic-flask-baseline
 
 * [Celery with Amazon SQS - Stack Overflow](http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs)
 * [Using Django and Celery with Amazon SQS](http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/)
+
+
+# 問題 / Problems
+
+* requirements.txt 加了 bcrypt 會錯, 因為還要安裝 gcc 跟 libffi
+
+.ebextensions/python.config:
+
+    :::text
+    packages:
+      yum:
+        libffi-devel: []
+        gcc: []
+
+[Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole](https://racingtadpole.com/blog/django-aws-eb-s3/)

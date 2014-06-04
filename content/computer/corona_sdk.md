@@ -12,6 +12,11 @@ Slug: corona_sdk
     collectgarbage()
 
 
+# display
+
+* [Tutorial: Anchor Points in Graphics 2.0 | Corona Labs](http://coronalabs.com/blog/2013/10/15/tutorial-anchor-points-in-graphics-2-0/)
+
+
 # Event / Timer
 
     :::lua
@@ -67,7 +72,8 @@ Slug: corona_sdk
 
 # Setting
 
-[Corona Docs: guide > basics > configSettings](http://docs.coronalabs.com/guide/basics/configSettings/)
+* [Corona Docs: guide > basics > configSettings](http://docs.coronalabs.com/guide/basics/configSettings/)
+
 
 ## scale
 
@@ -85,4 +91,3 @@ height = 480
 letterbox時, 到iPad上會左右多出20, display.screenOriginX = -20
 
 座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。
-

@@ -287,3 +287,13 @@ Font
 M-x describe-font 看現在用的字形
 
 * `my-dot-emacs-file - steveyegge2 <https://sites.google.com/site/steveyegge2/my-dot-emacs-file>`__
+
+shell
+=============
+
+============  ============================
+M-x shell     開一個buffer
+M-! cmd       直接執行, 輸出另外開一個buffer
+C-u M-! cmd   直接執行, 輸出在目前游標位置
+============  ============================
+

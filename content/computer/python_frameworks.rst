@@ -178,6 +178,17 @@ changelog (0.8): http://docs.sqlalchemy.org/en/latest/changelog/changelog_08.htm
 ========
 * `SQLAlchemy and You | Armin Ronacher's Thoughts and Writings <http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/>`__
 
+
+Flask
+===========
+
+pattern
+---------
+
+* `charles leifer | Structuring flask apps, a how-to for those coming from Django <http://charlesleifer.com/blog/structuring-flask-apps-a-how-to-for-those-coming-from-django/>`__
+* `lask/examples at master · mitsuhiko/flask <https://github.com/mitsuhiko/flask/tree/master/examples>`__
+* `semirook/flask-kit <https://github.com/semirook/flask-kit>`__
+
 Django
 ===========
 

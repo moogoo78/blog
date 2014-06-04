@@ -34,7 +34,8 @@ zoom in/out: Command Opt =/-
 
 強制結束: Command Opt Esc (force quit)
 
-區域截圖: Command Shift 4
+區域截圖 (存到桌面): Command Shift 4
+區域截圖 (存到剪貼簿): Command Shift Control 4
 
 貼上無格式文字 (plain-text): ShiftOption Command-v
 
@@ -166,13 +167,13 @@ C-b c
 # 前/後一個視窗
 C-b n/p 
 
-# 分割上下視窗
+# 分割上下pane
 C-b "
 
-# 分割左右視窗
+# 分割左右pane
 C-b %
 
-# 重整視窗(幫你排)
+# 重整pane(幫你排)
 C-b SPACE
 
 # 調整視窗大小
@@ -201,6 +202,10 @@ C-b ?
 scroll::
   
   Ctrl-b [ 上/下/左/右 , q 離開
+
+* `tmux shortcuts & cheatsheet <https://gist.github.com/MohamedAlaa/2961058>`__
+* `tmux cheatsheet <https://gist.github.com/andreyvit/2921703>`__
+
 
 
 Tools

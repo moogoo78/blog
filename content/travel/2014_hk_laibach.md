@@ -90,6 +90,7 @@ Laibach:
 * [Ticketflap](http://www.ticketflap.com/zh/events/177/)
 * [袁智聰唱片箱: Laibach：萊巴赫幽靈光環](http://yccmcb.blogspot.tw/2014/03/laibach.html)
 * [袁智聰唱片箱: Laibach：萊巴赫軍團佔領香港](http://yccmcb.blogspot.hk/2014/03/laibach_24.html)
+* [Laibach 軍事行樂](http://www.nmplus.hk/w3/news.php?action=detail&id=806)
 * [Laibach: 新文化大革命](http://www.douban.com/note/327157917/)
 * [inanna: 鋼鐵是這樣煉成的 ～ laibach《新文化大革命》音樂會](http://inanna2013.blogspot.tw/2014/03/laibach_23.html)
 
