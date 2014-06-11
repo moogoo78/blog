@@ -34,7 +34,10 @@ zoom in/out: Command Opt =/-
 
 強制結束: Command Opt Esc (force quit)
 
+全面截圖 (存到桌面): Command Shift 3
+
 區域截圖 (存到桌面): Command Shift 4
+
 區域截圖 (存到剪貼簿): Command Shift Control 4
 
 貼上無格式文字 (plain-text): ShiftOption Command-v
