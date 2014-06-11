@@ -33,6 +33,103 @@
                     <ol id="posts-list" class="hfeed" start="9">
                         <li><article class="hentry">    
                 <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_newline.html" rel="bookmark"
+                           title="Permalink to [computer] Emacs輸入newline符號">[computer] Emacs輸入newline符號</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-27T11:32:00">
+                2013-06-27 11:32
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>Emacs的換行:</p>
+<pre class="literal-block">
+C-q C-j
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last"><cite>C-q</cite>: quoted-insert, <cite>C-j</cite>: newline</p>
+</div>
+<p>但是我的 <cite>C-q</cite> 和 <cite>C-j</cite> 為了使用dvorak layout, 改成cut &amp; paste:</p>
+<pre class="literal-block">
+(global-set-key (kbd &quot;C-q&quot;) 'kill-region) ; cut
+(global-set-key (kbd &quot;C-j&quot;) 'kill-ring-save) ; paste
+</pre>
+<p>因此把沒用到的 <cite>C-`</cite> 跟 <cite>C-,</cite> 拿來做key-translate:</p>
+<pre class="literal-block">
+(define-key key-translation-map (kbd &quot;C-q&quot;) (kbd &quot;C-'&quot;))
+(define-key key-translation-map (kbd &quot;C-'&quot;) (kbd &quot;C-q&quot;))
+(define-key key-translation-map (kbd &quot;C-j&quot;) (kbd &quot;C-,&quot;))
+(define-key ...</pre>
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_newline.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_newline.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html" rel="bookmark"
+                           title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-06-25T10:07:00">
+                2013-06-25 10:07
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a><a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info -->                <p>指令:</p>
+<pre class="literal-block">
+M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
+</pre>
+<p>特殊字</p>
+<ul class="simple">
+<li><tt class="docutils literal">\&amp;’</tt> 完整的匹配字</li>
+<li><tt class="docutils literal">\d</tt> d是數字, 表示匹配在第幾個group (back reference)</li>
+<li><tt class="docutils literal">\#</tt> 累加, 發生第幾次,第一次從0開始</li>
+<li><tt class="docutils literal">\,</tt> Lisp expression</li>
+<li><tt class="docutils literal">\?</tt> 詢問</li>
+</ul>
+<div class="section" id="id1">
+<h2>範例</h2>
+<p>數字編號:</p>
+<pre class="literal-block">
+1987:Bogotá
+5243:Fabergé
+
+\(.+:\)
+\#.
+
+0.Bogotá
+1.Fabergé
+
+如果要從1開始:
+\,(1+ \#).
+</pre>
+<p>HTML H降級:</p>
+<pre class="literal-block">
+&lt;h1&gt;silly&lt;/h1&gt;
+&lt;h2&gt;walk&lt;/h2&gt;
+
+&lt;\(/?\)h\([0-9]\)&gt;
+&lt;\1h\,(1+ \#2)&gt;
+
+&lt;h2&gt;silly&lt;/h2&gt;
+&lt;h3 ...</pre></div>
+                <a class="readmore" href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            
+
+         
+                        <li><article class="hentry">    
+                <header>
                     <h1><a href="http://blog.suhen.org/computer/emacs_dired_rename.html" rel="bookmark"
                            title="Permalink to [Computer] 用Emacs dired-mode批次改檔名">[Computer] 用Emacs dired-mode批次改檔名</a></h1>
                 </header>

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-04-10T18:26:00+08:00</updated><entry><title>[網路] SSL</title><link href="http://blog.suhen.org/computer/ssl.html" rel="alternate"></link><updated>2014-04-10T18:26:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-04-10:computer/ssl.html</id><summary type="html">&lt;p&gt;CSR: Certificate Signing Request
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-06-11T12:43:00+08:00</updated><entry><title>電子書格式</title><link href="http://blog.suhen.org/computer/ebook.html" rel="alternate"></link><updated>2014-06-11T12:43:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-06-11:computer/ebook.html</id><summary type="html">&lt;h1&gt;格式 /format&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.cloud.org.tw/?q=node/6"&gt;電子書專區 | 雲端產業應用推動計畫&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Comparison_of_e-book_formats"&gt;Comparison of e-book formats - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;EPUB&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/EPUB"&gt;EPUB - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;source code&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Python EbookLib https://pypi.python.org/pypi/EbookLib/0.15&lt;/li&gt;
+&lt;li&gt;Sigil https://github.com/user-none/Sigil , http://www.openfoundry.org/en/foss-programs/8732-sigil-epub-editor&lt;/li&gt;
+&lt;li&gt;https://code.google.com/p/python-epub-builder/source/checkout&lt;/li&gt;
+&lt;li&gt;https://github.com/knpdarvish/pyepub&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>[網路] SSL</title><link href="http://blog.suhen.org/computer/ssl.html" rel="alternate"></link><updated>2014-04-10T18:26:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-04-10:computer/ssl.html</id><summary type="html">&lt;p&gt;CSR: Certificate Signing Request
 CA: Certificate Authority&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.sslshopper.com/ssl-checker.html"&gt;SSL Checker - SSL Certificate Verify&lt;/a&gt; 檢查SSL&lt;/li&gt;
@@ -3327,8 +3340,9 @@ extensions = ['sphinx.ext.graphviz']
 &lt;p&gt;清空垃圾桶: Command Shift Delete&lt;/p&gt;
 &lt;p&gt;zoom in/out: Command Opt =/-&lt;/p&gt;
 &lt;p&gt;強制結束: Command Opt Esc (force quit)&lt;/p&gt;
-&lt;p&gt;區域截圖 (存到桌面): Command Shift 4
-區域截圖 (存到剪貼簿): Command Shift Control 4&lt;/p&gt;
+&lt;p&gt;全面截圖 (存到桌面): Command Shift 3&lt;/p&gt;
+&lt;p&gt;區域截圖 (存到桌面): Command Shift 4&lt;/p&gt;
+&lt;p&gt;區域截圖 (存到剪貼簿): Command Shift Control 4&lt;/p&gt;
 &lt;p&gt;貼上無格式文字 (plain-text): ShiftOption Command-v&lt;/p&gt;
 &lt;p&gt;輸入特殊符號: Command option T&lt;/p&gt;
 &lt;p&gt;放大縮小: Command + / Command -&lt;/p&gt;
