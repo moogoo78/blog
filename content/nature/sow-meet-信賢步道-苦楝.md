@@ -1,0 +1,167 @@
+Title: 信賢步道賞螢 - 荒野苦楝帶路
+Date: 2014-06-15 11:14
+Category: nature
+Tags: note
+Slug: sow_xinxian_kulian
+
+日期: 2014-06-14
+
+青鳥特別商請苦楝帶團，邀請荒野台北24期解說畢業夥伴的小聚會。
+
+下午 15:00 在新店捷運站接夥伴，15:30 屈尺加油站集合，上廁所。
+
+# 白天炎熱潮濕的步道
+
+苦楝介紹雙花龍葵，跟我們常吃的番茄，辣椒，青椒同樣是茄科，果實可食，漿果甜，皮澀。
+
+![](/static/images/nature/140614/tn_IMG_0100.JPG)
+
+紅紋沫蟬
+
+![](/static/images/nature/140614/tn_IMG_0103.JPG)
+
+人面蜘蛛
+
+![](/static/images/nature/140614/tn_IMG_0105.JPG)
+
+
+苦練觀察好幾年的地衣，看他慢慢長大 (解說員要找到屬於自己的秘密花園，感觸會很深)
+
+![](/static/images/nature/140614/tn_IMG_0114.JPG)
+
+長在大肚瀑布岩石上的水鴨腳秋海棠
+
+![](/static/images/nature/140614/tn_IMG_0117.JPG)
+
+**泰雅話的瀑布叫 dagi (gi 是基的濁音，四聲)**
+
+水鴨腳秋海棠的花，雌雄同株，雄花四瓣，雌花五瓣，雄花長在前面(?)，雌花有子房。嫩莖吃起來酸酸的。
+
+![](/static/images/nature/140614/tn_IMG_0124.JPG)
+
+菱蝗，長菱形，眼睛紅通通。
+![](/static/images/nature/140614/tn_P6140255.JPG)
+
+具蕨類迷彩的幼蟲
+
+![](/static/images/nature/140614/tn_IMG_0121.JPG)
+
+
+菁芳草 (荷蓮豆草)，圓圓的單葉對生，長在陰溼地
+
+![](/static/images/nature/140614/tn_IMG_0126.JPG)
+
+野牡丹 (落雨松告知)
+
+![](/static/images/nature/140614/tn_IMG_0132.JPG)
+
+
+柚葉藤結果
+
+![](/static/images/nature/140614/tn_IMG_0140JPG)
+
+刺茄
+
+![](/static/images/nature/140614/tn_IMG_0141.JPG)
+
+![](/static/images/nature/140614/tn_IMG_014.JPG)
+
+![](/static/images/nature/140614/tn_P6140260.JPG)
+
+闊葉樓梯草 - 葉基會超過莖，長尾狀葉尖，鋸齒緣。
+
+![](/static/images/nature/140614/tn_IMG_0147.JPG)
+
+另外一種樓梯草，線索不夠。
+
+![](/static/images/nature/140614/tn_IMG_0150.JPG)
+
+冷菁草 (比樓梯草小)
+
+![](/static/images/nature/140614/tn_IMG_0152.JPG)
+
+
+參考: [台灣樓梯草 @ 一花一木一世界 :: 隨意窩 Xuite日誌](http://blog.xuite.net/smile27/flower/45685510-台灣樓梯草) (檢索表)
+
+假菝葜 (主葉脈離基三出)，基部托葉是葉柄的 1/3
+
+![](/static/images/nature/140614/tn_P6140263.JPG)
+
+菝基 (主葉脈基部三出或五出)，基部托葉是葉柄的 2/3
+
+![](/static/images/nature/140614/tn_P6140264.JPG)
+
+
+**聽到紫嘯鶇腳踏車剎車聲般叫聲**，翹屁股，在溪邊活動, 特有種。
+
+                                                      
+尖尖的是巫山，右邊是卡保山、逐鹿山 ?
+
+![](/static/images/nature/140614/tn_IMG_0174.JPG)
+
+
+# 晚上夜觀重頭戲
+
+黃胸黑背螢，尾部二排發光，水生。
+
+![](/static/images/nature/140614/tn_P6140265.JPG)
+
+鹿野氏黑脈螢幼蟲，半水生。
+
+![](/static/images/nature/140614/tn_P6140270.JPG)
+山窗螢幼蟲。
+
+![](/static/images/nature/140614/tn_P6140277.JPG)
+
+擬紋螢，黃綠光、會閃爍，前胸背板黑黑的。
+
+![](/static/images/nature/140614/tn_P6140287.JPG)
+
+
+樹林裡的螢光棒，是螢光菌類長在樹枝上，開燈後看起來只是普通的樹枝。
+
+![](/static/images/nature/140614/tn_P6140291.JPG)
+
+盤古蟾蜍
+
+![](/static/images/nature/140614/tn_P6140306.JPG)
+
+拉氏清溪蟹，環境指標，看名字就知道，
+
+![](/static/images/nature/140614/tn_P6140326.JPG)
+
+喇牙 (長腳蜘蛛)
+
+![](/static/images/nature/140614/tn_P6140329.JPG)
+
+斯文豪氏赤蛙，叫聲像鳥叫，綠色、褐色背紋都長的不一樣。
+
+![](/static/images/nature/140614/tn_P6140342.JPG)
+
+褐樹蛙，眼睛很大，嘴巴三角形。
+
+![](/static/images/nature/140614/tn_P6140363.JPG)
+
+小褐樹蛙在思考他的一生。
+
+![](/static/images/nature/140614/tn_P6140373.JPG)
+
+日本樹蛙 ?
+
+![](/static/images/nature/140614/tn_P6140376.JPG)
+
+大家拍蛙拍的很過癮
+
+![](/static/images/nature/140614/tn_P6140386.JPG)
+
+龜殼花在休息。
+
+![](/static/images/nature/140614/tn_P6140394.JPG)
+
+超肥的蟾蜍。
+
+![](/static/images/nature/140614/tn_P6140409.JPG)
+
+最後過吊橋時來一隻拉都希氏赤蛙，劃下完美句點。
+
+![](/static/images/nature/140614/tn_P6140422.JPG)
