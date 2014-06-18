@@ -1,4 +1,4 @@
-Title: 電子書格式
+Title: [draft] 電子書 / Ebook
 Date: 2014-06-11 12:43
 Category: computer
 Tags: note

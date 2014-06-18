@@ -85,8 +85,8 @@ replace ::
   string.replace('old', 'new')
 
 
-time
-------
+日期/時間 time
+--------------------
 
 **time format**
 
@@ -106,11 +106,22 @@ time
   
   datetime.strptime(dtime.strftime('%Y-%m-%d'), '%Y-%m-%d') # 取得年月日0分0時0秒
 
-  # 取得當周的第1天跟最後一天
+  # 常用
+  ## 取得當周的第1天跟最後一天
   d = datetime(2014, 1, 15)
   w = d.weekday()
   t1 = d + timedelta(days=-w)
   t2 = d + timedelta(days=+(7-w))
+
+
+  ## time
+  time.gmtime(n) # 輸入 unix epoch time 秒數, 回傳 time struct
+  time.time() # unix epoch time (unix-base 和 windows 系統一樣) in seconds
+  time.clock() # unix-base: returns the current processor time (current thread, in seconds). Windows: returns the wall-clock time expressed in seconds elapsed since the first call to this function, based on the Win32 function QueryPerformanceCounter
+
+  # timeit
+
+* `Measure Time in Python - time.time() vs time.clock() - Python Central <http://www.pythoncentral.io/measure-time-in-python-time-time-vs-time-clock/>`__
 
 
 file
