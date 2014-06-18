@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-06-11T12:43:00+08:00</updated><entry><title>電子書格式</title><link href="http://blog.suhen.org/computer/ebook.html" rel="alternate"></link><updated>2014-06-11T12:43:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-06-11:computer/ebook.html</id><summary type="html">&lt;h1&gt;格式 /format&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-06-11T12:43:00+08:00</updated><entry><title>[draft] 電子書 / Ebook</title><link href="http://blog.suhen.org/computer/ebook.html" rel="alternate"></link><updated>2014-06-11T12:43:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-06-11:computer/ebook.html</id><summary type="html">&lt;h1&gt;格式 /format&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.cloud.org.tw/?q=node/6"&gt;電子書專區 | 雲端產業應用推動計畫&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Comparison_of_e-book_formats"&gt;Comparison of e-book formats - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/li&gt;
@@ -92,7 +92,16 @@ CA: Certificate Authority&lt;/p&gt;
 &lt;p&gt;width = 320&lt;/p&gt;
 &lt;p&gt;height = 480&lt;/p&gt;
 &lt;p&gt;letterbox時, 到iPad上會左右多出20, display.screenOriginX = -20&lt;/p&gt;
-&lt;p&gt;座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。&lt;/p&gt;</summary></entry><entry><title>裝置</title><link href="http://blog.suhen.org/computer/mobile_develop.html" rel="alternate"></link><updated>2014-02-17T13:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-17:computer/mobile_develop.html</id><summary type="html">&lt;h1&gt;iOS&lt;/h1&gt;
+&lt;p&gt;座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。&lt;/p&gt;
+&lt;h1&gt;corona API&lt;/h1&gt;
+&lt;h2&gt;Composer / Storyboard&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://coronalabs.com/blog/2014/06/03/tutorial-understanding-the-composer-api/"&gt;Tutorial: Understanding the Composer API | Corona Labs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Libraries&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;存檔 https://github.com/SatheeshJM/Lua-Preference-Library&lt;/li&gt;
+&lt;/ul&gt;</summary></entry><entry><title>裝置</title><link href="http://blog.suhen.org/computer/mobile_develop.html" rel="alternate"></link><updated>2014-02-17T13:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-17:computer/mobile_develop.html</id><summary type="html">&lt;h1&gt;iOS&lt;/h1&gt;
 &lt;p&gt;AppStore link 規範 &lt;a href="https://developer.apple.com/library/ios/qa/qa1633/_index.html"&gt;Technical Q&amp;amp;A QA1633: Creating easy-to-read short links to the App Store for your apps and company&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Android&lt;/h1&gt;
 &lt;p&gt;Android
@@ -797,7 +806,7 @@ string.replace('old', 'new')
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="time"&gt;
-&lt;h3&gt;time&lt;/h3&gt;
+&lt;h3&gt;日期/時間 time&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;time format&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;
@@ -813,12 +822,24 @@ string.replace('old', 'new')
 
 &lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strptime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dtime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strftime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;%Y-%m-&lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;%Y-%m-&lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# 取得年月日0分0時0秒&lt;/span&gt;
 
-&lt;span class="c"&gt;# 取得當周的第1天跟最後一天&lt;/span&gt;
+&lt;span class="c"&gt;# 常用&lt;/span&gt;
+&lt;span class="c"&gt;## 取得當周的第1天跟最後一天&lt;/span&gt;
 &lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2014&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;w&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;weekday&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;t1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;timedelta&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;days&lt;/span&gt;&lt;span class="o"&gt;=-&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;t2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;timedelta&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;days&lt;/span&gt;&lt;span class="o"&gt;=+&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+
+&lt;span class="c"&gt;## time&lt;/span&gt;
+&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gmtime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# 輸入 unix epoch time 秒數, 回傳 time struct&lt;/span&gt;
+&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# unix epoch time (unix-base 和 windows 系統一樣) in seconds&lt;/span&gt;
+&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;clock&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# unix-base: returns the current processor time (current thread, in seconds). Windows: returns the wall-clock time expressed in seconds elapsed since the first call to this function, based on the Win32 function QueryPerformanceCounter&lt;/span&gt;
+
+&lt;span class="c"&gt;# timeit&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.pythoncentral.io/measure-time-in-python-time-time-vs-time-clock/"&gt;Measure Time in Python - time.time() vs time.clock() - Python Central&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="file"&gt;
 &lt;h3&gt;file&lt;/h3&gt;
