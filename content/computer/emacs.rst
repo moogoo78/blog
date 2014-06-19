@@ -215,6 +215,7 @@ M-x calc
 q, C-x * c       離開
 C-x * k          keypad (數字)   
 M-x quick-calc   在minibuffer直接做簡單計算
+M-x calc-reset   clear [ C-x * 0 ]
 ===============  ===========================
 
 Radix-Modes::
