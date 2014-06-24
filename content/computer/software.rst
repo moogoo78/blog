@@ -38,6 +38,8 @@ zoom in/out: Command Opt =/-
 
 區域截圖 (存到桌面): Command Shift 4
 
+視窗截圖 (存到桌面): Command Shift 4 Space [選視窗]
+
 區域截圖 (存到剪貼簿): Command Shift Control 4
 
 貼上無格式文字 (plain-text): ShiftOption Command-v
