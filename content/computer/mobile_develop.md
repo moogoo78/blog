@@ -17,6 +17,11 @@ Android
 
 [EmirWeb](http://www.emirweb.com/ScreenDeviceStatistics.php)
 
+# dev tools
+
+## CoronaSDK
+
+* [Avoiding App Rejection from Apple | Corona Labs](http://coronalabs.com/blog/2014/06/19/avoiding-app-rejection-from-apple/)
 
 
 
