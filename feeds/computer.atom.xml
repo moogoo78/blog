@@ -120,7 +120,12 @@ CA: Certificate Authority&lt;/p&gt;
 &lt;h1&gt;Android&lt;/h1&gt;
 &lt;p&gt;Android
 &lt;a href="http://developer.android.com/guide/practices/screens_support.html"&gt;Supporting Multiple Screens | Android Developers&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.emirweb.com/ScreenDeviceStatistics.php"&gt;EmirWeb&lt;/a&gt;&lt;/p&gt;</summary><category term="mobile"></category></entry><entry><title></title><link href="http://blog.suhen.org/computer/web_develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web_develop.html</id><summary type="html">&lt;h1&gt;名詞&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.emirweb.com/ScreenDeviceStatistics.php"&gt;EmirWeb&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;dev tools&lt;/h1&gt;
+&lt;h2&gt;CoronaSDK&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://coronalabs.com/blog/2014/06/19/avoiding-app-rejection-from-apple/"&gt;Avoiding App Rejection from Apple | Corona Labs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="mobile"></category></entry><entry><title></title><link href="http://blog.suhen.org/computer/web_develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web_develop.html</id><summary type="html">&lt;h1&gt;名詞&lt;/h1&gt;
 &lt;p&gt;Webhooks: "user-defined HTTP callbacks"&lt;/p&gt;
 &lt;h1&gt;Frontend&lt;/h1&gt;
 &lt;h2&gt;CSS&lt;/h2&gt;
