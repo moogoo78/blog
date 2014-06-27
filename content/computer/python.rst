@@ -300,6 +300,24 @@ UnicodeEncodeError::
 
 * `宅之力: 解決方法: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128) <http://blog.wahahajk.com/2009/08/unicodedecodeerror-ascii-codec-cant.html>`__
 
+shell
+=========
+
+多種方法:
+
+* os.system()
+* os.popen()
+* subprocess.Popen()
+* subprocess.call()
+
+參考:
+
+* `shell - Calling an external command in Python - Stack Overflow <http://stackoverflow.com/questions/89228/calling-an-external-command-in-python>`__
+
+subprocess::
+
+  subprocess.call('ls -al', shell=True)
+
 
 Tips
 =======
