@@ -301,6 +301,24 @@ sys.setdefaultencoding('utf-8')
 <li><a class="reference external" href="http://blog.wahahajk.com/2009/08/unicodedecodeerror-ascii-codec-cant.html">宅之力: 解決方法: UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128)</a></li>
 </ul>
 </div>
+<div class="section" id="shell">
+<h2>shell</h2>
+<p>多種方法:</p>
+<ul class="simple">
+<li>os.system()</li>
+<li>os.popen()</li>
+<li>subprocess.Popen()</li>
+<li>subprocess.call()</li>
+</ul>
+<p>參考:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://stackoverflow.com/questions/89228/calling-an-external-command-in-python">shell - Calling an external command in Python - Stack Overflow</a></li>
+</ul>
+<p>subprocess:</p>
+<pre class="literal-block">
+subprocess.call('ls -al', shell=True)
+</pre>
+</div>
 <div class="section" id="tips">
 <h2>Tips</h2>
 <div class="section" id="syntax">
