@@ -275,7 +275,12 @@ background-position:0-42px;
 -----------
 
 * `» 你從未瞭解過的 z-index | iCoding &lt;http://www.icoding.co/2013/06/knowledge-about-z-index-2&gt;`__
---&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>Deploying Flask (Python) to AWS Elastic Beanstalk</title><link href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html" rel="alternate"></link><updated>2013-11-12T17:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:computer/aws_elastic_beanstalk_flask.html</id><summary type="html">&lt;h1&gt;quickstart&lt;/h1&gt;
+--&gt;
+
+&lt;h1&gt;WebServer&lt;/h1&gt;
+&lt;p&gt;Mac apache folder:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;WebServer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Documents&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>Deploying Flask (Python) to AWS Elastic Beanstalk</title><link href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html" rel="alternate"></link><updated>2013-11-12T17:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:computer/aws_elastic_beanstalk_flask.html</id><summary type="html">&lt;h1&gt;quickstart&lt;/h1&gt;
 &lt;h2&gt;1. 安裝eb commend tools&lt;/h2&gt;
 &lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定好路徑(以mac為例), 就可以開始了&lt;/p&gt;
@@ -3378,7 +3383,19 @@ extensions = ['sphinx.ext.graphviz']
 &lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html"&gt;Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Software</title><link href="http://blog.suhen.org/computer/software.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/software.html</id><summary type="html">&lt;div class="section" id="desktop-tips"&gt;
+</summary><category term="docs"></category></entry><entry><title>Software</title><link href="http://blog.suhen.org/computer/software.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/software.html</id><summary type="html">&lt;div class="section" id="gmail"&gt;
+&lt;h2&gt;Gmail&lt;/h2&gt;
+&lt;p&gt;shortcut:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;j / k: 下/上&lt;/li&gt;
+&lt;li&gt;x: check&lt;/li&gt;
+&lt;li&gt;' / ~ : next tab /previous tab&lt;/li&gt;
+&lt;li&gt;m: mark&lt;/li&gt;
+&lt;li&gt;gi / ga: goto inbox/archive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://support.google.com/mail/answer/6594?hl=en"&gt;Keyboard shortcuts for Gmail - Gmail Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="desktop-tips"&gt;
 &lt;h2&gt;Desktop Tips&lt;/h2&gt;
 &lt;div class="section" id="system"&gt;
 &lt;h3&gt;System&lt;/h3&gt;
