@@ -4,6 +4,22 @@ Software
 :category: computer
 :tags: docs
 
+
+
+Gmail
+======================
+
+shortcut:
+
+* j / k: 下/上
+* x: check
+* ' / ~ : next tab /previous tab
+* m: mark
+* gi / ga: goto inbox/archive
+
+`Keyboard shortcuts for Gmail - Gmail Help <https://support.google.com/mail/answer/6594?hl=en>`__
+
+
 Desktop Tips
 ========================
 

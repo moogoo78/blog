@@ -180,3 +180,10 @@ background-position:0-42px;
 
 * `» 你從未瞭解過的 z-index | iCoding <http://www.icoding.co/2013/06/knowledge-about-z-index-2>`__
 -->
+
+# WebServer
+
+Mac apache folder:
+
+    /Library/WebServer/Documents
+    
