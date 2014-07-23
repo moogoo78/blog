@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/language.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-05-29T14:32:00+08:00</updated><entry><title>語言</title><link href="http://blog.suhen.org/language/language.html" rel="alternate"></link><updated>2014-05-29T14:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-05-29:language/language.html</id><summary type="html">&lt;ul&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/language.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-07-23T10:44:00+08:00</updated><entry><title>台灣.的.語言</title><link href="http://blog.suhen.org/language/language_taiwan.html" rel="alternate"></link><updated>2014-07-23T10:44:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-07-23:language/language_taiwan.html</id><summary type="html">&lt;h1&gt;台語&lt;/h1&gt;
+&lt;h2&gt;金門腔&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;一間zhi gain (該n) - 德鴻&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>語言</title><link href="http://blog.suhen.org/language/language.html" rel="alternate"></link><updated>2014-05-29T14:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-05-29:language/language.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://pbice.blogspot.tw/search/label/語言學"&gt;Pbice's Blog: 語言學&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</summary></entry><entry><title>廣東話筆記</title><link href="http://blog.suhen.org/language/language_hongkong.html" rel="alternate"></link><updated>2014-05-29T13:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-05-29:language/language_hongkong.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://zh-yue.wikipedia.org/wiki/廣東話粗口"&gt;廣東話粗口 - 維基百科，自由嘅百科全書&lt;/a&gt;&lt;/li&gt;

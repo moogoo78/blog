@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title> Suhen's blog</title>
+        <title> Suhen's blog - note</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
                 <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog Atom Feed" />
                 
@@ -26,60 +26,55 @@
                                 <li ><a href="http://blog.suhen.org/category/misc.html">其他</a></li>
                                                 </ul></nav>
         </header><!-- /#banner -->
-                
+                    
 
-<section id="content" class="body">
-<div style="margin:auto;width:800px">
-<a href="/category/computer.html"><img src="/theme/images/computer.jpg" width="200"></a>
-<a href="/category/music.html"><img src="/theme/images/music.jpg" width="200"></a>
-<a href="/category/run.html"><img src="/theme/images/running.jpg" width="200"></a>
-<a href="/category/mountain.html"><img src="/theme/images/mountain.jpg" width="200"></a>
-<a href="/category/nature.html"><img src="/theme/images/nature.jpg" width="200"></a>
-<a href="/category/travel.html"><img src="/theme/images/travel.jpg" width="200"></a>
-<a href="/category/book.html"><img src="/theme/images/book.jpg" width="200"></a>
-<a href="/category/language.html"><img src="/theme/images/language.jpg" width="200"></a>
-<a href="/category/misc.html"><img src="/theme/images/misc.jpg" width="200"></a>
-<a href="/archives.html"><img src="/theme/images/archives.jpg" width="200"></a>
-</div>
-<dl>
-            
-    <dt>2013-07-16 10:25</dt>
-    <dd><a href="http://blog.suhen.org/mountain/map_japan_tsurugidake.html">列印日本地形圖 - 以劍岳為例</a></dd>
-                        
-    <dt>2013-07-10 14:02</dt>
-    <dd><a href="http://blog.suhen.org/computer/python.html">&lt; Python &gt;</a></dd>
-                        
-    <dt>2013-07-09 16:41</dt>
-    <dd><a href="http://blog.suhen.org/language/deutsch_deklination.html">名詞變格 (Deklination)</a></dd>
-                        
-    <dt>2013-07-09 02:33</dt>
-    <dd><a href="http://blog.suhen.org/book/book-jiu-shu-zhong-du.html">[book] 舊書重讀</a></dd>
-                        
-    <dt>2013-07-04 14:45</dt>
-    <dd><a href="http://blog.suhen.org/music/i_faught_the_law.html">[Music] I Fought the Law</a></dd>
-                        
-    <dt>2013-06-29 13:14</dt>
-    <dd><a href="http://blog.suhen.org/mountain/hapen_camping.rst.html">[山] 哈盆露營</a></dd>
-                        
-    <dt>2013-06-29 13:03</dt>
-    <dd><a href="http://blog.suhen.org/language/language-su-ge-lan-ying-wen.html">[language] 蘇格蘭英文</a></dd>
-                        
-    <dt>2013-06-27 11:32</dt>
-    <dd><a href="http://blog.suhen.org/computer/emacs_newline.html">[computer] Emacs輸入newline符號</a></dd>
-                        
-    <dt>2013-06-26 22:22</dt>
-    <dd><a href="http://blog.suhen.org/travel/2012_kyoto_marathon.html">[travel] 京都馬拉松五天行</a></dd>
-                        
-    <dt>2013-06-25 10:07</dt>
-    <dd><a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html">[computer] 善用Emacs的replace-regexp</a></dd>
+         
+                            <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="bookmark"
+                           title="Permalink to Dynamic DNS setting for Namecheap on Mac OSX">Dynamic DNS setting for Namecheap on Mac OSX</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2013-03-21T02:09:00">
+                2013-03-21 02:09
+        </abbr>
+
+        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>登入Namecheap啓用Dynamic <a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service">link1</a></p>
+<p>設定DNS record:</p>
+<pre class="literal-block">
+freedns1.registrar-servers.com
+freedns2.registrar-servers.com
+freedns3.registrar-servers.com
+freedns4.registrar-servers.com
+freedns5.registrar-servers.com
+</pre>
+<p><a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/532/51/how-does-free-dns-work">link2</a></p>
+<p>安裝Dynamic DNS clinet (以OS X的ddclient為例):</p>
+<pre class="literal-block">
+$ brew install ddclient
+</pre>
+<p>在/usr/local/etc/ddclient裡建立ddclient.conf (範例在/usr/local/share/doc/ddclient), 裡面有namecheap的預設選項:</p>
+<pre class="literal-block">
+protocol=namecheap
+server=dynamicdns.park-your-domain.com
+login=yourdomain.com ...</pre>
+                <a class="readmore" href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html">read more</a>
+                <p>There are <a href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                            </ol><!-- /#posts-list -->
                             <p class="paginator">
-                        <a href="http://blog.suhen.org/index13.html">&laquo;</a>
-                Page 14 / 19
-            <a href="http://blog.suhen.org/index15.html">&raquo;</a>
+                        <a href="http://blog.suhen.org/tag/note4.html">&laquo;</a>
+                Page 5 / 5
     </p>
-                </dl>
-</section>
-                        <section id="extras" class="body">
+                        </section><!-- /#content -->
+            
+        <section id="extras" class="body">
                         <div class="blogroll">
                         <h2>blogroll</h2>
                         <ul>
