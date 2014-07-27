@@ -1,4 +1,4 @@
-Title: 棲地守護課程行前訓練 - 臺北中強公園
+Title: [自然生態公園棲地守護志工課程] 行前訓練 1 - 臺北中強公園
 Date: 2014-05-07 10:59
 Category: misc
 Tags: nature
