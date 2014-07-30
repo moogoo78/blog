@@ -142,6 +142,8 @@ Internet
 
 * bt - Deluge (Linux)
 * IRC Client (OS X)
+* `Charles Web Debugging Proxy • HTTP Monitor / HTTP Proxy / HTTPS & SSL Proxy / Reverse Proxy <http://www.charlesproxy.com/>`__
+
 
 ebook
 ------
