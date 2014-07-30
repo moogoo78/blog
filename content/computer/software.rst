@@ -144,6 +144,15 @@ Internet
 * IRC Client (OS X)
 * `Charles Web Debugging Proxy • HTTP Monitor / HTTP Proxy / HTTPS & SSL Proxy / Reverse Proxy <http://www.charlesproxy.com/>`__
 
+  1. Install Charles.app
+  2. iOS add SSL certificate (不管 https 可忽略)
+  3. 設定 proxy: iOS 的 Wi-Fi, HTTP PROXY 改 Manual
+
+    * Server: 裝 Charles.app 的電腦 IP (要在同一個網路下)
+    * Port: 8888
+
+  4. Charles.app 會收到 request, 按 accept 就可以了
+  5. 操作 iOS 的 APP, Charles.app 就有資料了
 
 ebook
 ------
