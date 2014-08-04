@@ -413,7 +413,8 @@ ref
    ** type
    - [[http://www.systn.com/data/articles/304_tw.html][mysql中char與varchar的區別]]
 
-不同處
+
+比較
 ===========
 
 :MySQL: RAND()
@@ -435,3 +436,9 @@ snippets
 .. code-block:: sql
 
   select count(*) as total, num as num_of_apps from (select count(*) as num, did from log_user_data group by (did) order by num desc) t where num > 1 group by num desc
+
+每個字母開頭的單字數量
+
+.. code-block:: sql
+
+  select count(*),lower(substr(english, 1, 1)) as c from words group by c
