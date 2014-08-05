@@ -108,6 +108,7 @@ C-RET
 </tbody>
 </table>
 <p>search: M-c 切換case-sensitivity</p>
+<p>M-x occur 找出某字串在此 buffer 那裡現出</p>
 </div>
 <div class="section" id="editing">
 <h3>編輯 Editing</h3>
@@ -173,7 +174,7 @@ C-RET
 <td>insert-register, insert register a</td>
 </tr>
 <tr><td>C-x r w a</td>
-<td>把window的狀態存起來, window-configuration-to-register, C-x r j叫出來</td>
+<td>把window的狀態存起來, window-configuration-to-register, C-x r j 叫出來</td>
 </tr>
 <tr><td>C-x r f a</td>
 <td>frame-configuration-to-register</td>
@@ -550,23 +551,27 @@ d r ;然後按2到36選進位數
 </div>
 <div class="section" id="shell">
 <h2>shell</h2>
-<table border="1" class="docutils">
-<colgroup>
-<col width="29%" />
-<col width="71%" />
-</colgroup>
-<tbody valign="top">
-<tr><td>M-x shell</td>
-<td>開一個buffer</td>
-</tr>
-<tr><td>M-! cmd</td>
-<td>直接執行, 輸出另外開一個buffer</td>
-</tr>
-<tr><td>C-u M-! cmd</td>
-<td>直接執行, 輸出在目前游標位置</td>
-</tr>
-</tbody>
-</table>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/Users/moogoo/gh/blog.suhen.org/content/computer/emacs.rst</tt>, line 297)</p>
+<p>Malformed table.
+Bottom/header table border does not match top border.</p>
+<pre class="literal-block">
+============  ============================================================================
+M-x shell     開一個buffer
+M-x term      Emacs Lisp 寫的 terminal emulator
+M-x eshell    Emacs Lisp 實作的 shell, 可以 redirect output 到 Emacs 的 buffer
+M-! cmd       直接執行, 輸出另外開一個buffer
+C-u M-! cmd   直接執行, 輸出在目前游標位置
+============  =============================================================================
+</pre>
+</div>
+<p><a class="reference external" href="http://unix.stackexchange.com/questions/104325/what-is-the-difference-between-shell-eshell-and-term-in-emacs">What is the difference between shell, eshell, and term in Emacs? - Unix &amp; Linux Stack Exchange</a></p>
+</div>
+<div class="section" id="ref">
+<h2>ref</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://tuhdo.github.io/emacs-tutor.html?utm_source=hackernewsletter&amp;utm_medium=email&amp;utm_term=books">Emacs Mini Manual (PART 1) - THE BASICS</a></li>
+</ul>
 </div>
 
     </div><!-- /.entry-content -->

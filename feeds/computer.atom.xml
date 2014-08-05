@@ -1878,6 +1878,7 @@ C-RET
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;search: M-c 切換case-sensitivity&lt;/p&gt;
+&lt;p&gt;M-x occur 找出某字串在此 buffer 那裡現出&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="editing"&gt;
 &lt;h3&gt;編輯 Editing&lt;/h3&gt;
@@ -1943,7 +1944,7 @@ C-RET
 &lt;td&gt;insert-register, insert register a&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;C-x r w a&lt;/td&gt;
-&lt;td&gt;把window的狀態存起來, window-configuration-to-register, C-x r j叫出來&lt;/td&gt;
+&lt;td&gt;把window的狀態存起來, window-configuration-to-register, C-x r j 叫出來&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;C-x r f a&lt;/td&gt;
 &lt;td&gt;frame-configuration-to-register&lt;/td&gt;
@@ -2320,23 +2321,27 @@ d r ;然後按2到36選進位數
 &lt;/div&gt;
 &lt;div class="section" id="shell"&gt;
 &lt;h2&gt;shell&lt;/h2&gt;
-&lt;table border="1" class="docutils"&gt;
-&lt;colgroup&gt;
-&lt;col width="29%" /&gt;
-&lt;col width="71%" /&gt;
-&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td&gt;M-x shell&lt;/td&gt;
-&lt;td&gt;開一個buffer&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;M-! cmd&lt;/td&gt;
-&lt;td&gt;直接執行, 輸出另外開一個buffer&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;C-u M-! cmd&lt;/td&gt;
-&lt;td&gt;直接執行, 輸出在目前游標位置&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/moogoo/gh/blog.suhen.org/content/computer/emacs.rst&lt;/tt&gt;, line 297)&lt;/p&gt;
+&lt;p&gt;Malformed table.
+Bottom/header table border does not match top border.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+============  ============================================================================
+M-x shell     開一個buffer
+M-x term      Emacs Lisp 寫的 terminal emulator
+M-x eshell    Emacs Lisp 實作的 shell, 可以 redirect output 到 Emacs 的 buffer
+M-! cmd       直接執行, 輸出另外開一個buffer
+C-u M-! cmd   直接執行, 輸出在目前游標位置
+============  =============================================================================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://unix.stackexchange.com/questions/104325/what-is-the-difference-between-shell-eshell-and-term-in-emacs"&gt;What is the difference between shell, eshell, and term in Emacs? - Unix &amp;amp; Linux Stack Exchange&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="ref"&gt;
+&lt;h2&gt;ref&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://tuhdo.github.io/emacs-tutor.html?utm_source=hackernewsletter&amp;amp;utm_medium=email&amp;amp;utm_term=books"&gt;Emacs Mini Manual (PART 1) - THE BASICS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>Elscreen - Emacs好用的tab mode</title><link href="http://blog.suhen.org/computer/emacs_elscreen.html" rel="alternate"></link><updated>2013-04-23T17:28:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-23:computer/emacs_elscreen.html</id><summary type="html">&lt;p&gt;我以為在Emacs一直沒有好的tab顯示模式，以前用過 &lt;a class="reference external" href="http://emacswiki.org/emacs/TabBarMode"&gt;tabbar mode&lt;/a&gt; ，也覺得不是很好用，原來只是我固陋寡聞沒見過ElScreen這個elist套件。&lt;/p&gt;
 &lt;p&gt;下載elscreen.el: &lt;a class="reference external" href="ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/"&gt;ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/&lt;/a&gt;&lt;/p&gt;
