@@ -2335,7 +2335,14 @@ C-u M-! cmd   直接執行, 輸出在目前游標位置
 ============  =============================================================================
 &lt;/pre&gt;
 &lt;/div&gt;
+&lt;div class="section" id="term"&gt;
+&lt;h3&gt;term&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;C-c C-k char mode, 每個字元都會被送到 subshell 處理&lt;/li&gt;
+&lt;li&gt;C-c C-j line mode&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://unix.stackexchange.com/questions/104325/what-is-the-difference-between-shell-eshell-and-term-in-emacs"&gt;What is the difference between shell, eshell, and term in Emacs? - Unix &amp;amp; Linux Stack Exchange&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="ref"&gt;
 &lt;h2&gt;ref&lt;/h2&gt;
