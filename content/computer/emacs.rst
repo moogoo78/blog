@@ -64,6 +64,8 @@ C-M-S-V        other window page up
 
 search: M-c 切換case-sensitivity
 
+M-x occur 找出某字串在此 buffer 那裡現出
+
 編輯 Editing
 ------------------
 
@@ -89,7 +91,7 @@ C-x r SPACE    設定register, 出現Point to register後輸入一字元
 C-x r j        移動到register, 出現Jump to register後輸入一字元
 C-x r s a      copy-to-register, 把region內的文字copy到register a
 C-x r i a      insert-register, insert register a
-C-x r w a      把window的狀態存起來, window-configuration-to-register, C-x r j叫出來
+C-x r w a      把window的狀態存起來, window-configuration-to-register, C-x r j 叫出來
 C-x r f a      frame-configuration-to-register
 C-x r m        設定bookmark, bookmark會永久存起來(~/.emacs.bmk), register不會
 C-x r b        goto bookmark
@@ -292,9 +294,18 @@ M-x describe-font 看現在用的字形
 shell
 =============
 
-============  ============================
-M-x shell     開一個buffer
+============  ============================================================================
+M-x shell     開一個buffer 
+M-x term      Emacs Lisp 寫的 terminal emulator
+M-x eshell    Emacs Lisp 實作的 shell, 可以 redirect output 到 Emacs 的 buffer
 M-! cmd       直接執行, 輸出另外開一個buffer
 C-u M-! cmd   直接執行, 輸出在目前游標位置
-============  ============================
+============  =============================================================================
 
+`What is the difference between shell, eshell, and term in Emacs? - Unix & Linux Stack Exchange <http://unix.stackexchange.com/questions/104325/what-is-the-difference-between-shell-eshell-and-term-in-emacs>`__
+
+
+ref
+=======
+
+* `Emacs Mini Manual (PART 1) - THE BASICS <http://tuhdo.github.io/emacs-tutor.html?utm_source=hackernewsletter&utm_medium=email&utm_term=books>`__
