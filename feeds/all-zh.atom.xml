@@ -7761,20 +7761,29 @@ d r ;然後按2到36選進位數
 &lt;/div&gt;
 &lt;div class="section" id="shell"&gt;
 &lt;h2&gt;shell&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/Users/moogoo/gh/blog.suhen.org/content/computer/emacs.rst&lt;/tt&gt;, line 297)&lt;/p&gt;
-&lt;p&gt;Malformed table.
-Bottom/header table border does not match top border.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-============  ============================================================================
-M-x shell     開一個buffer
-M-x term      Emacs Lisp 寫的 terminal emulator
-M-x eshell    Emacs Lisp 實作的 shell, 可以 redirect output 到 Emacs 的 buffer
-M-! cmd       直接執行, 輸出另外開一個buffer
-C-u M-! cmd   直接執行, 輸出在目前游標位置
-============  =============================================================================
-&lt;/pre&gt;
-&lt;/div&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="13%" /&gt;
+&lt;col width="87%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;M-x shell&lt;/td&gt;
+&lt;td&gt;開一個buffer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-x term&lt;/td&gt;
+&lt;td&gt;Emacs Lisp 寫的 terminal emulator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-x eshell&lt;/td&gt;
+&lt;td&gt;Emacs Lisp 實作的 shell, 可以 redirect output 到 Emacs 的 buffer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;M-! cmd&lt;/td&gt;
+&lt;td&gt;直接執行, 輸出另外開一個buffer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-u M-! cmd&lt;/td&gt;
+&lt;td&gt;直接執行, 輸出在目前游標位置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;div class="section" id="term"&gt;
 &lt;h3&gt;term&lt;/h3&gt;
 &lt;ul class="simple"&gt;
