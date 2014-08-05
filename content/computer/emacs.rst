@@ -302,6 +302,13 @@ M-! cmd       直接執行, 輸出另外開一個buffer
 C-u M-! cmd   直接執行, 輸出在目前游標位置
 ============  =============================================================================
 
+term
+----------
+
+* C-c C-k char mode, 每個字元都會被送到 subshell 處理
+* C-c C-j line mode
+
+
 `What is the difference between shell, eshell, and term in Emacs? - Unix & Linux Stack Exchange <http://unix.stackexchange.com/questions/104325/what-is-the-difference-between-shell-eshell-and-term-in-emacs>`__
 
 
