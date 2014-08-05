@@ -294,7 +294,7 @@ M-x describe-font 看現在用的字形
 shell
 =============
 
-============  ============================================================================
+============  =============================================================================
 M-x shell     開一個buffer 
 M-x term      Emacs Lisp 寫的 terminal emulator
 M-x eshell    Emacs Lisp 實作的 shell, 可以 redirect output 到 Emacs 的 buffer
