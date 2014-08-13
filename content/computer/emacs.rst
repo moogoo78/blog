@@ -142,25 +142,26 @@ Dired
 -----
 M-x dired
 
-===  ============================= 
-^    回上目錄
-j    jump 移動游標
-\*   標示
-u    取消標示
-f    (like C-x C-f 開檔)
-RET  同上  
-o    開檔, but開在另一window
-a    開檔, 但是不會新開一個buffer
-C    copy
-R    rename, 可以當"mv"用
-d    標示delete
-x    執行delete
-\+   create dir
-M    chmod
-O    chown
-G    chgrp
-g    refresh
-===  ============================= 
+======  ======================================= 
+^       回上目錄
+j       jump 移動游標
+\*      標示
+u       取消標示
+f       (like C-x C-f 開檔)
+RET     同上  
+o       開檔, 開在另一 window, 自動開一個分割視窗
+C-o     開檔, 開在另一 window
+a       開檔, 但是不會新開一個buffer
+C       copy
+R       rename, 可以當"mv"用
+d       標示delete
+x       執行delete
+\+      create dir
+M       chmod
+O       chown
+G       chgrp
+g       refresh
+======  =======================================
 
 批次改檔名
 ^^^^^^^^^^^^
@@ -302,6 +303,8 @@ M-! cmd       直接執行, 輸出另外開一個buffer
 C-u M-! cmd   直接執行, 輸出在目前游標位置
 ============  =============================================================================
 
+.. note:: 要再開另外一個 shell 就把原本 buffer 改名字就可以了
+
 term
 ----------
 
@@ -310,6 +313,12 @@ term
 
 
 `What is the difference between shell, eshell, and term in Emacs? - Unix & Linux Stack Exchange <http://unix.stackexchange.com/questions/104325/what-is-the-difference-between-shell-eshell-and-term-in-emacs>`__
+          ('Another social link', '#'),)
+          ('Another social link', '#'),)
+          ('Another social link', '#'),)
+          ('Another social link', '#'),)
+          ('Another social link', '#'),)
+          ('Another social link', '#'),)
 
 
 ref

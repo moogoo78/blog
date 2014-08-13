@@ -6,20 +6,6 @@ Software
 
 
 
-Gmail
-======================
-
-shortcut:
-
-* j / k: 下/上
-* x: check
-* ' / ~ : next tab /previous tab
-* m: mark
-* gi / ga: goto inbox/archive
-
-`Keyboard shortcuts for Gmail - Gmail Help <https://support.google.com/mail/answer/6594?hl=en>`__
-
-
 Desktop Tips
 ========================
 
@@ -64,12 +50,21 @@ zoom in/out: Command Opt =/-
 
 放大縮小: Command + / Command -
 
-無線網路密碼
 
-1. 到"鑰匙圈存取": Finder -> 工具程式 -> 鑰匙圈存取
-2. 找基地台名稱, 分類是"AirPort網路密碼", 顯示密碼
+無線網路密碼::
 
-[14 Mac Hacks That Will Change The Way You Use Your Computer](http://www.buzzfeed.com/peggy/14-mac-hacks-that-will-change-the-way-you-use-your-computer)
+  1. 到"鑰匙圈存取": Finder -> 工具程式 -> 鑰匙圈存取
+  2. 找基地台名稱, 分類是"AirPort網路密碼", 顯示密碼
+
+
+Mac 更新到iOX 10.9, pip安裝出現錯誤 (gcc編譯相關)::
+
+  1. 更新xcode
+  2. sudo xcodebuild -license
+  3. xcode-select --install 
+
+
+* [14 Mac Hacks That Will Change The Way You Use Your Computer](http://www.buzzfeed.com/peggy/14-mac-hacks-that-will-change-the-way-you-use-your-computer)
 
 
 
@@ -134,6 +129,23 @@ Browser plugin/extensions
   * `Find your extension, accelerator and addon for the browsers safari, internet explorer(ie), chrome and firefox <http://www.tcpiputils.com/browser-extensions-addons-accelerators>`__ (Chrome, Firefox, Opera, Safari)
 
 
+Web Service
+===============
+
+Gmail
+--------------------
+
+shortcut:
+
+* j / k: 下/上
+* x: check
+* ' / ~ : next tab /previous tab
+* m: mark
+* gi / ga: goto inbox/archive
+
+`Keyboard shortcuts for Gmail - Gmail Help <https://support.google.com/mail/answer/6594?hl=en>`__
+
+
 好用軟體
 ============
 
@@ -169,7 +181,7 @@ DevTools
 ----------------
 
 * `PixelWindow <http://www.pixelwindowapp.com/>`__ resolution ruler
-
+* `meld <http://meldmerge.org/>`__: $ homebrew install meld
 
 HTML5 Slides
 -----------------
@@ -308,16 +320,6 @@ via: `How to watermark a video using FFmpeg | iDude.net <http://www.idude.net/in
 examples::
 
   ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
-
-
-System
-===========
-
-* Mac 更新到iOX 10.9, pip安裝出現錯誤 (gcc編譯相關)
-
-  1. 更新xcode
-  2. sudo xcodebuild -license
-  3. xcode-select --install 
 
 
 
