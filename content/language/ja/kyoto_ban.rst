@@ -9,6 +9,7 @@
 京ことバ
 
 .. image:: /static/images/language/ja/kyo_kotoba.jpg
+           :alt: kyo_kotoba
 
 
 

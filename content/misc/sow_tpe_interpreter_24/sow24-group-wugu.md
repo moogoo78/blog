@@ -19,14 +19,14 @@ Slug: sow_taipei_interpreter_24-group-wugu-1
     * 綁豬肉
     * 莖三角形
 
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050058.JPG)
+    ![鹹草](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050058.JPG)
 
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050057.JPG)
+    ![鹹草](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050057.JPG)
 
 2. 羊蹄
     * 長的像羊的蹄 (小的葉子比較像)
    
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050063.JPG)
+    ![羊蹄](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050063.JPG)
 
 3. 大花咸豐草
     * 菊科鬼針草屬
@@ -35,9 +35,9 @@ Slug: sow_taipei_interpreter_24-group-wugu-1
     * 花瓣長度 > 0.5cm的，就是"大花"
     * 外來種，蜜源植物，原本是給養蜜蜂用，一年四季都可開花
    
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050066.JPG)
+    ![大花咸豐草](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050066.JPG)
    
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050065.JPG)
+    ![大花咸豐草](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050065.JPG)
 
 4. 雙花蟛蜞菊
     * 海濱植物，可以保護沙，海邊居民會種，不一定是開雙花，可能更多，只是學名是雙花
@@ -46,11 +46,11 @@ Slug: sow_taipei_interpreter_24-group-wugu-1
 5. 苦林盤
     * 以前五股組種的，但是後來被芒草根蘆葦佔據
 
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050078.JPG)
+    ![苦林盤](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050078.JPG)
 
 6. 長葉豇豆
 
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050069.JPG)
+    ![長葉豇豆](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050069.JPG)
 
 7. 象草
     * 原產非洲
@@ -58,25 +58,25 @@ Slug: sow_taipei_interpreter_24-group-wugu-1
 8. 葎草
     * 葉柄有倒鉤，可以當徽章
 
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050098.JPG)
+    ![葎草](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050098.JPG)
 
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050100.JPG)
+    ![葎草](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050100.JPG)
 
 9. 細葉馬鞭草 (柳葉馬鞭草?)
     * 四方莖
 
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050103.JPG)
+    ![細葉馬鞭草](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050103.JPG)
 
 10. 紫花藿香薊
 
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050115.JPG)
+    ![紫花藿香薊](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050115.JPG)
 
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050116.JPG)
+    ![紫花藿香薊](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050116.JPG)
 
 11. 紫背草
      * 一點紅
     
-    ![](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050118.JPG)
+    ![紫背草](/static/images/misc/sow24/2014-01-05_wugu/tn_P1050118.JPG)
     
 12. 田菁
      * 以前這裡種稻米 (現在可能是上游農田漂下來的)

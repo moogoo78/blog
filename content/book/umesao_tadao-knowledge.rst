@@ -6,6 +6,7 @@
 
 
 .. image:: /static/images/book/umesao_tadao-knowlegde.jpg
+           :alt: umesao_knowledge
 
 
 原書名：知性生產技術

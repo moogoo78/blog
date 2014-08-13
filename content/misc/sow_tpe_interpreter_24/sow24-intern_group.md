@@ -49,11 +49,11 @@ Slug: sow_taipei_interpreter_24_intern_group
 
 **棕櫚樹**
 
-![ ](/static/images/misc/sow24/2014-02-16_daan_intern/tn_IMG_0184.JPG)
+![棕櫚樹](/static/images/misc/sow24/2014-02-16_daan_intern/tn_IMG_0184.JPG)
 
 旅人蕉不是棕櫚科，畫錯了。
 
-![](/static/images/misc/sow24/2014-02-16_daan_intern/tn_IMG_0185.JPG)
+![旅人蕉](/static/images/misc/sow24/2014-02-16_daan_intern/tn_IMG_0185.JPG)
 
 
 ## 第三組 (水松、信天翁、常春藤、蘑菇、水獺)
@@ -64,7 +64,7 @@ Slug: sow_taipei_interpreter_24_intern_group
 
 如果生豆莢，也是空包彈。
 
-![](/static/images/misc/sow24/2014-02-16_daan_intern/tn_P2160074.JPG)
+![豔紫荊](/static/images/misc/sow24/2014-02-16_daan_intern/tn_P2160074.JPG)
 
 開花時間比較: 羊蹄甲 2～5月，洋紫荊 9~11月
 
@@ -83,19 +83,19 @@ Slug: sow_taipei_interpreter_24_intern_group
 # 準備資料
 
 
-![ ](/static/images/misc/sow24/2014-02-16_daan_intern/1932-臺北市區計劃街道並公園圖.png)
+![1932-臺北市區計劃街道並公園圖](/static/images/misc/sow24/2014-02-16_daan_intern/1932-臺北市區計劃街道並公園圖.png)
 
 1932 - 臺北市區計劃街道並公園圖
 
-![ ](/static/images/misc/sow24/2014-02-16_daan_intern/1944-美軍航照影像.png)
+![1944-美軍航照影像](/static/images/misc/sow24/2014-02-16_daan_intern/1944-美軍航照影像.png)
 
 1944 - 美軍航照影像
 
-![ ](/static/images/misc/sow24/2014-02-16_daan_intern/1957-臺北市街道圖.png)
+![1957-臺北市街道圖](/static/images/misc/sow24/2014-02-16_daan_intern/1957-臺北市街道圖.png)
 
 1957 - 臺北市街道圖
 
-![ ](/static/images/misc/sow24/2014-02-16_daan_intern/1974-臺北市舊航照圖.png)
+![1974-臺北市舊航照圖](/static/images/misc/sow24/2014-02-16_daan_intern/1974-臺北市舊航照圖.png)
 
 1974 - 臺北市舊航照圖
 
