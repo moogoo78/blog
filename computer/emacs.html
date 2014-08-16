@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>Emacs 小抄</title>
         <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
-                <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Suhen's blog Atom Feed" />
-                
+        <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen Atom Feed" />
+
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -13,34 +13,34 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://blog.suhen.org/"> Suhen's blog </a></h1>
+                <h1><a href="http://blog.suhen.org/">suhen suchen </a></h1>
                 <nav><ul>
-                                                                                <li class="active"><a href="http://blog.suhen.org/category/computer.html">電腦</a></li>
-                                <li ><a href="http://blog.suhen.org/category/music.html">音樂</a></li>
-                                <li ><a href="http://blog.suhen.org/category/run.html">跑步</a></li>
-                                <li ><a href="http://blog.suhen.org/category/mountain.html">爬山</a></li>
-                                <li ><a href="http://blog.suhen.org/category/nature.html">自然</a></li>
-                                <li ><a href="http://blog.suhen.org/category/travel.html">旅遊</a></li>
-                                <li ><a href="http://blog.suhen.org/category/book.html">書</a></li>
-                                <li ><a href="http://blog.suhen.org/category/language.html">語言</a></li>
-                                <li ><a href="http://blog.suhen.org/category/misc.html">其他</a></li>
-                                                </ul></nav>
+                <li class="active"><a href="http://blog.suhen.org/category/computer.html">電腦</a></li>
+                <li ><a href="http://blog.suhen.org/category/music.html">音樂</a></li>
+                <li ><a href="http://blog.suhen.org/category/run.html">跑步</a></li>
+                <li ><a href="http://blog.suhen.org/category/mountain.html">爬山</a></li>
+                <li ><a href="http://blog.suhen.org/category/nature.html">自然</a></li>
+                <li ><a href="http://blog.suhen.org/category/travel.html">旅遊</a></li>
+                <li ><a href="http://blog.suhen.org/category/book.html">書</a></li>
+                <li ><a href="http://blog.suhen.org/category/language.html">語言</a></li>
+                <li ><a href="http://blog.suhen.org/category/misc.html">其他</a></li>
+                </ul></nav>
         </header><!-- /#banner -->
-        <section id="content" class="body">
+<section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
         <a href="http://blog.suhen.org/computer/emacs.html" rel="bookmark"
            title="Permalink to Emacs 小抄">Emacs 小抄</a></h1>
-          </header>
+    </header>
 
     <div class="entry-content">
-      <footer class="post-info">
+<footer class="post-info">
         <abbr class="published" title="2013-04-26T18:37:00">
-                2013-04-26 18:37
+                五 26 4月 2013
         </abbr>
 
-        <p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
+<p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
 <p>tags: <a href="http://blog.suhen.org/tag/docs.html">docs</a></p>
 </footer><!-- /.post-info -->      <div class="section" id="tips">
 <h2>Tips</h2>
@@ -274,8 +274,8 @@ C-RET
 <p>M-x dired</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="9%" />
-<col width="91%" />
+<col width="13%" />
+<col width="87%" />
 </colgroup>
 <tbody valign="top">
 <tr><td>^</td>
@@ -297,7 +297,10 @@ C-RET
 <td>同上</td>
 </tr>
 <tr><td>o</td>
-<td>開檔, but開在另一window</td>
+<td>開檔, 開在另一 window, 自動開一個分割視窗</td>
+</tr>
+<tr><td>C-o</td>
+<td>開檔, 開在另一 window</td>
 </tr>
 <tr><td>a</td>
 <td>開檔, 但是不會新開一個buffer</td>
@@ -574,13 +577,25 @@ d r ;然後按2到36選進位數
 </tr>
 </tbody>
 </table>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">要再開另外一個 shell 就把原本 buffer 改名字就可以了</p>
+</div>
 <div class="section" id="term">
 <h3>term</h3>
 <ul class="simple">
 <li>C-c C-k char mode, 每個字元都會被送到 subshell 處理</li>
 <li>C-c C-j line mode</li>
 </ul>
-<p><a class="reference external" href="http://unix.stackexchange.com/questions/104325/what-is-the-difference-between-shell-eshell-and-term-in-emacs">What is the difference between shell, eshell, and term in Emacs? - Unix &amp; Linux Stack Exchange</a></p>
+<dl class="docutils">
+<dt><a class="reference external" href="http://unix.stackexchange.com/questions/104325/what-is-the-difference-between-shell-eshell-and-term-in-emacs">What is the difference between shell, eshell, and term in Emacs? - Unix &amp; Linux Stack Exchange</a></dt>
+<dd>('Another social link', '#'),)
+('Another social link', '#'),)
+('Another social link', '#'),)
+('Another social link', '#'),)
+('Another social link', '#'),)
+('Another social link', '#'),)</dd>
+</dl>
 </div>
 </div>
 <div class="section" id="ref">
@@ -591,7 +606,7 @@ d r ;然後按2到36選進位數
 </div>
 
     </div><!-- /.entry-content -->
-        <div class="comments">
+    <div class="comments">
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
@@ -604,29 +619,29 @@ d r ;然後按2到36選進位數
         })();
       </script>
     </div>
-    
+
   </article>
 </section>
         <section id="extras" class="body">
-                        <div class="blogroll">
+                <div class="blogroll">
                         <h2>blogroll</h2>
                         <ul>
-                                                    <li><a href="/pages/about.html">About</a></li>
-                                                    <li><a href="http://blog.roodo.com/moogoo">舊blog</a></li>
-                                                    <li><a href="http://moogoo78.blogspot.com">電腦程式blog</a></li>
-                                                </ul>
+                            <li><a href="http:\blog.suhen.org/pages/about.html">About</a></li>
+                            <li><a href="http://blog.roodo.com/moogoo">舊blog</a></li>
+                            <li><a href="http://moogoo78.blogspot.com">電腦程式blog</a></li>
+                        </ul>
                 </div><!-- /.blogroll -->
-                                <div class="social">
+                <div class="social">
                         <h2>social</h2>
                         <ul>
                             <li><a href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="http://www.facebook.com/moogee.lee">facebook</a></li>
-                                                    <li><a href="http://twitter.com/moogoo">twitter</a></li>
-                                                    <li><a href="http://github.com/moogoo78">github</a></li>
-                                                </ul>
+
+                            <li><a href="http://www.facebook.com/moogee.lee">facebook</a></li>
+                            <li><a href="http://twitter.com/moogoo">twitter</a></li>
+                            <li><a href="http://github.com/moogoo78">github</a></li>
+                        </ul>
                 </div><!-- /.social -->
-                </section><!-- /#extras -->
+        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">

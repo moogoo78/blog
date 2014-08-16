@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-06-11T12:43:00+08:00</updated><entry><title>[draft] 電子書 / Ebook</title><link href="http://blog.suhen.org/computer/ebook.html" rel="alternate"></link><updated>2014-06-11T12:43:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-06-11:computer/ebook.html</id><summary type="html">&lt;h1&gt;格式 /format&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/computer.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-06-11T12:43:00+08:00</updated><entry><title>[draft] 電子書 / Ebook</title><link href="http://blog.suhen.org/computer/ebook.html" rel="alternate"></link><updated>2014-06-11T12:43:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-06-11:computer/ebook.html</id><summary type="html">&lt;h1&gt;格式 /format&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.cloud.org.tw/?q=node/6"&gt;電子書專區 | 雲端產業應用推動計畫&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Comparison_of_e-book_formats"&gt;Comparison of e-book formats - Wikipedia, the free encyclopedia&lt;/a&gt;&lt;/li&gt;
@@ -1282,6 +1282,12 @@ pip install -i http://pypi.python.org/simple PACKAGE
 &lt;/pre&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://www.pypi-mirrors.org/"&gt;PyPI Mirror Status&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h3&gt;推薦&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://crsmithdev.com/arrow/"&gt;Arrow: better dates and times for Python — Arrow 0.4.4 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>[computer] Emacs輸入newline符號</title><link href="http://blog.suhen.org/computer/emacs_newline.html" rel="alternate"></link><updated>2013-06-27T11:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-06-27:computer/emacs_newline.html</id><summary type="html">&lt;p&gt;Emacs的換行:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -2044,8 +2050,8 @@ C-RET
 &lt;p&gt;M-x dired&lt;/p&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;
-&lt;col width="9%" /&gt;
-&lt;col width="91%" /&gt;
+&lt;col width="13%" /&gt;
+&lt;col width="87%" /&gt;
 &lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td&gt;^&lt;/td&gt;
@@ -2067,7 +2073,10 @@ C-RET
 &lt;td&gt;同上&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;o&lt;/td&gt;
-&lt;td&gt;開檔, but開在另一window&lt;/td&gt;
+&lt;td&gt;開檔, 開在另一 window, 自動開一個分割視窗&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-o&lt;/td&gt;
+&lt;td&gt;開檔, 開在另一 window&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;a&lt;/td&gt;
 &lt;td&gt;開檔, 但是不會新開一個buffer&lt;/td&gt;
@@ -2344,13 +2353,25 @@ d r ;然後按2到36選進位數
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;要再開另外一個 shell 就把原本 buffer 改名字就可以了&lt;/p&gt;
+&lt;/div&gt;
 &lt;div class="section" id="term"&gt;
 &lt;h3&gt;term&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;C-c C-k char mode, 每個字元都會被送到 subshell 處理&lt;/li&gt;
 &lt;li&gt;C-c C-j line mode&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://unix.stackexchange.com/questions/104325/what-is-the-difference-between-shell-eshell-and-term-in-emacs"&gt;What is the difference between shell, eshell, and term in Emacs? - Unix &amp;amp; Linux Stack Exchange&lt;/a&gt;&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;&lt;a class="reference external" href="http://unix.stackexchange.com/questions/104325/what-is-the-difference-between-shell-eshell-and-term-in-emacs"&gt;What is the difference between shell, eshell, and term in Emacs? - Unix &amp;amp; Linux Stack Exchange&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;('Another social link', '#'),)
+('Another social link', '#'),)
+('Another social link', '#'),)
+('Another social link', '#'),)
+('Another social link', '#'),)
+('Another social link', '#'),)&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="ref"&gt;
@@ -3407,19 +3428,7 @@ extensions = ['sphinx.ext.graphviz']
 &lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html"&gt;Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Software</title><link href="http://blog.suhen.org/computer/software.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/software.html</id><summary type="html">&lt;div class="section" id="gmail"&gt;
-&lt;h2&gt;Gmail&lt;/h2&gt;
-&lt;p&gt;shortcut:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;j / k: 下/上&lt;/li&gt;
-&lt;li&gt;x: check&lt;/li&gt;
-&lt;li&gt;' / ~ : next tab /previous tab&lt;/li&gt;
-&lt;li&gt;m: mark&lt;/li&gt;
-&lt;li&gt;gi / ga: goto inbox/archive&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://support.google.com/mail/answer/6594?hl=en"&gt;Keyboard shortcuts for Gmail - Gmail Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="desktop-tips"&gt;
+</summary><category term="docs"></category></entry><entry><title>Software</title><link href="http://blog.suhen.org/computer/software.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/software.html</id><summary type="html">&lt;div class="section" id="desktop-tips"&gt;
 &lt;h2&gt;Desktop Tips&lt;/h2&gt;
 &lt;div class="section" id="system"&gt;
 &lt;h3&gt;System&lt;/h3&gt;
@@ -3449,12 +3458,20 @@ extensions = ['sphinx.ext.graphviz']
 &lt;p&gt;貼上無格式文字 (plain-text): ShiftOption Command-v&lt;/p&gt;
 &lt;p&gt;輸入特殊符號: Command option T&lt;/p&gt;
 &lt;p&gt;放大縮小: Command + / Command -&lt;/p&gt;
-&lt;p&gt;無線網路密碼&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;到&amp;quot;鑰匙圈存取&amp;quot;: Finder -&amp;gt; 工具程式 -&amp;gt; 鑰匙圈存取&lt;/li&gt;
-&lt;li&gt;找基地台名稱, 分類是&amp;quot;AirPort網路密碼&amp;quot;, 顯示密碼&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;[14 Mac Hacks That Will Change The Way You Use Your Computer](&lt;a class="reference external" href="http://www.buzzfeed.com/peggy/14-mac-hacks-that-will-change-the-way-you-use-your-computer"&gt;http://www.buzzfeed.com/peggy/14-mac-hacks-that-will-change-the-way-you-use-your-computer&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;無線網路密碼:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+1. 到&amp;quot;鑰匙圈存取&amp;quot;: Finder -&amp;gt; 工具程式 -&amp;gt; 鑰匙圈存取
+2. 找基地台名稱, 分類是&amp;quot;AirPort網路密碼&amp;quot;, 顯示密碼
+&lt;/pre&gt;
+&lt;p&gt;Mac 更新到iOX 10.9, pip安裝出現錯誤 (gcc編譯相關):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+1. 更新xcode
+2. sudo xcodebuild -license
+3. xcode-select --install
+&lt;/pre&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;[14 Mac Hacks That Will Change The Way You Use Your Computer](&lt;a class="reference external" href="http://www.buzzfeed.com/peggy/14-mac-hacks-that-will-change-the-way-you-use-your-computer"&gt;http://www.buzzfeed.com/peggy/14-mac-hacks-that-will-change-the-way-you-use-your-computer&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;瘦身:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 ~/Library/Application\ Support/MobileSync # 檔案很大, iPhone, iPad, iPod...的備份
@@ -3519,6 +3536,21 @@ F7 鍵盤瀏覽
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class="section" id="web-service"&gt;
+&lt;h2&gt;Web Service&lt;/h2&gt;
+&lt;div class="section" id="gmail"&gt;
+&lt;h3&gt;Gmail&lt;/h3&gt;
+&lt;p&gt;shortcut:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;j / k: 下/上&lt;/li&gt;
+&lt;li&gt;x: check&lt;/li&gt;
+&lt;li&gt;' / ~ : next tab /previous tab&lt;/li&gt;
+&lt;li&gt;m: mark&lt;/li&gt;
+&lt;li&gt;gi / ga: goto inbox/archive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://support.google.com/mail/answer/6594?hl=en"&gt;Keyboard shortcuts for Gmail - Gmail Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;好用軟體&lt;/h2&gt;
 &lt;div class="section" id="internet"&gt;
@@ -3561,6 +3593,7 @@ F7 鍵盤瀏覽
 &lt;h3&gt;DevTools&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.pixelwindowapp.com/"&gt;PixelWindow&lt;/a&gt; resolution ruler&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://meldmerge.org/"&gt;meld&lt;/a&gt;: $ homebrew install meld&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="html5-slides"&gt;
@@ -3696,17 +3729,6 @@ ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id3"&gt;
-&lt;h2&gt;System&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Mac 更新到iOX 10.9, pip安裝出現錯誤 (gcc編譯相關)&lt;ol class="arabic"&gt;
-&lt;li&gt;更新xcode&lt;/li&gt;
-&lt;li&gt;sudo xcodebuild -license&lt;/li&gt;
-&lt;li&gt;xcode-select --install&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/div&gt;
 </summary><category term="docs"></category></entry><entry><title>UNIX Command 常用指令</title><link href="http://blog.suhen.org/computer/unix_command.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/unix_command.html</id><summary type="html">&lt;div class="section" id="script"&gt;
 &lt;h2&gt;script&lt;/h2&gt;

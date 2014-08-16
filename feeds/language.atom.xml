@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Suhen's blog</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/language.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-07-23T10:44:00+08:00</updated><entry><title>台灣.的.語言</title><link href="http://blog.suhen.org/language/language_taiwan.html" rel="alternate"></link><updated>2014-07-23T10:44:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-07-23:language/language_taiwan.html</id><summary type="html">&lt;h1&gt;台語&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/language.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-07-23T10:44:00+08:00</updated><entry><title>台灣.的.語言</title><link href="http://blog.suhen.org/language/language_taiwan.html" rel="alternate"></link><updated>2014-07-23T10:44:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-07-23:language/language_taiwan.html</id><summary type="html">&lt;h1&gt;台語&lt;/h1&gt;
 &lt;h2&gt;金門腔&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;一間zhi gain (該n) - 德鴻&lt;/li&gt;
@@ -1432,7 +1432,7 @@ Sie kommt nicht aus Deutschland.
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="deutsch"></category></entry><entry><title>Präpositionen</title><link href="http://blog.suhen.org/language/praepositionen.html" rel="alternate"></link><updated>2013-08-23T04:01:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-23:language/praepositionen.html</id><summary type="html">&lt;div class="section" id="mit-dem-dative"&gt;
+</summary><category term="deutsch"></category></entry><entry><title>Präpositionen</title><link href="http://blog.suhen.org/language/prapositionen.html" rel="alternate"></link><updated>2013-08-23T04:01:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-23:language/prapositionen.html</id><summary type="html">&lt;div class="section" id="mit-dem-dative"&gt;
 &lt;h2&gt;mit dem Dative&lt;/h2&gt;
 &lt;pre class="literal-block"&gt;
 []-&amp;gt;    aus
@@ -1445,9 +1445,9 @@ Sie kommt nicht aus Deutschland.
 &lt;h2&gt;Akku&lt;/h2&gt;
 &lt;/div&gt;
 </summary><category term="preposition"></category><category term="deutsch"></category></entry><entry><title>日語京都腔</title><link href="http://blog.suhen.org/language/kyoto_ban.html" rel="alternate"></link><updated>2013-07-30T10:52:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-07-30:language/kyoto_ban.html</id><summary type="html">&lt;p&gt;京ことバ&lt;/p&gt;
-&lt;img alt="/static/images/language/ja/kyo_kotoba.jpg" src="/static/images/language/ja/kyo_kotoba.jpg" /&gt;
+&lt;img alt="kyo_kotoba" src="/static/images/language/ja/kyo_kotoba.jpg" /&gt;
 </summary><category term="日本語"></category></entry><entry><title>台灣話惡口</title><link href="http://blog.suhen.org/language/dirty_tw_jp.html" rel="alternate"></link><updated>2013-07-30T10:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-07-30:language/dirty_tw_jp.html</id><summary type="html">&lt;p&gt;台灣話惡口 (日語片假名翻譯)&lt;/p&gt;
-&lt;img alt="/static/images/language/taiwan_dirty.jpg" src="/static/images/language/taiwan_dirty.jpg" /&gt;
+&lt;img alt="taiwan_dirty_word" src="/static/images/language/taiwan_dirty.jpg" /&gt;
 </summary><category term="language"></category><category term="台灣話"></category></entry><entry><title>名詞變格 (Deklination)</title><link href="http://blog.suhen.org/language/deutsch_deklination.html" rel="alternate"></link><updated>2013-07-09T16:41:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-07-09:language/deutsch_deklination.html</id><summary type="html">&lt;div class="section" id="deklination-des-substantivs"&gt;
 &lt;h2&gt;名詞變格 (Deklination des Substantivs)&lt;/h2&gt;
 &lt;div class="section" id="bestimmten-artikel"&gt;
