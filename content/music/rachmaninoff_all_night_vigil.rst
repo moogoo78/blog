@@ -38,7 +38,7 @@
 
 第六首: 歡欣吧，童真聖母
 
-.. youtube:: UPJ3wxBxjAo
+<iframe width="420" height="315" src="//www.youtube.com/embed/UPJ3wxBxjAo" frameborder="0" allowfullscreen></iframe>
 
 
 * `台北愛樂合唱團-演出及購票訊息 <http://www.tpf.org.tw/tpc/performances_data.php?id=191>`__ 
