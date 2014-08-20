@@ -30,4 +30,6 @@ FILES_TO_COPY = (
 
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
-#GITHUB_URL = 'http://github.com/moogoo78'
+GITHUB_URL = 'http://github.com/moogoo78'
+
+RELATIVE_URLS = True
