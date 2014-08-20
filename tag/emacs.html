@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8">
         <title>suhen suchen - emacs</title>
-        <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
+        <link rel="stylesheet" href="../theme/css/main.css">
         <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen Atom Feed" />
 
         <!--[if IE]>
@@ -12,32 +12,35 @@
 </head>
 
 <body id="index" class="home">
+<a href="http://github.com/moogoo78">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
         <header id="banner" class="body">
-                <h1><a href="http://blog.suhen.org/">suhen suchen </a></h1>
+                <h1><a href="../">suhen suchen </a></h1>
                 <nav><ul>
-                <li ><a href="http://blog.suhen.org/category/computer.html">電腦</a></li>
-                <li ><a href="http://blog.suhen.org/category/music.html">音樂</a></li>
-                <li ><a href="http://blog.suhen.org/category/run.html">跑步</a></li>
-                <li ><a href="http://blog.suhen.org/category/mountain.html">爬山</a></li>
-                <li ><a href="http://blog.suhen.org/category/nature.html">自然</a></li>
-                <li ><a href="http://blog.suhen.org/category/travel.html">旅遊</a></li>
-                <li ><a href="http://blog.suhen.org/category/book.html">書</a></li>
-                <li ><a href="http://blog.suhen.org/category/language.html">語言</a></li>
-                <li ><a href="http://blog.suhen.org/category/misc.html">其他</a></li>
+                <li ><a href="../category/computer.html">電腦</a></li>
+                <li ><a href="../category/music.html">音樂</a></li>
+                <li ><a href="../category/run.html">跑步</a></li>
+                <li ><a href="../category/mountain.html">爬山</a></li>
+                <li ><a href="../category/nature.html">自然</a></li>
+                <li ><a href="../category/travel.html">旅遊</a></li>
+                <li ><a href="../category/book.html">書</a></li>
+                <li ><a href="../category/language.html">語言</a></li>
+                <li ><a href="../category/misc.html">其他</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
         
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://blog.suhen.org/computer/emacs_macro.html">強大的Emacs Macro 巨集</a></h1> 
+                    <h1 class="entry-title"><a href="../computer/emacs_macro.html">強大的Emacs Macro 巨集</a></h1> 
 <footer class="post-info">
         <abbr class="published" title="2013-08-30T12:06:00">
                 五 30 8月 2013
         </abbr>
 
-<p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/emacs.html">emacs</a></p>
 </footer><!-- /.post-info --><div class="section" id="id1">
 <h2>基本操作</h2>
 <ol class="arabic simple">
@@ -54,7 +57,7 @@
 <li><tt class="docutils literal"><span class="pre">M-x</span> <span class="pre">insert-kbd-macro</span></tt> 把macro存到設定檔, 他會問你要存那個macro name</li>
 </ul>
 </div>
-<p>There are <a href="http://blog.suhen.org/computer/emacs_macro.html#disqus_thread">comments</a>.</p>                </article>
+<p>There are <a href="../computer/emacs_macro.html#disqus_thread">comments</a>.</p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -66,7 +69,7 @@
  
             <li><article class="hentry">    
                 <header>
-                    <h1><a href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="bookmark"
+                    <h1><a href="../computer/emacs_skeleton.html" rel="bookmark"
                            title="Permalink to 用Emacs的skeleton快速建立pelican的blog內文">用Emacs的skeleton快速建立pelican的blog內文</a></h1>
                 </header>
                 
@@ -76,9 +79,9 @@
                 二 27 8月 2013
         </abbr>
 
-<p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
-</footer><!-- /.post-info -->                <p>用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">Pelican</a> 寫blog時都要輸入一堆metadata很麻煩, 利用 <a class="reference external" href="http://blog.suhen.org/computer/emacs.html">Emacs</a> 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!</p>
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info -->                <p>用 <a class="reference external" href="../computer/pelican.html">Pelican</a> 寫blog時都要輸入一堆metadata很麻煩, 利用 <a class="reference external" href="../computer/emacs.html">Emacs</a> 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!</p>
 <div class="highlight"><pre><span class="p">(</span><span class="nv">define-skeleton</span> <span class="nv">insert-pelican-template</span>
   <span class="s">&quot;Insert templete for pelican static blog system&quot;</span>
   <span class="s">&quot;&quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;Title: &quot;</span><span class="p">)</span><span class="nv">?\n</span>
@@ -92,15 +95,15 @@
 <p>參考:
 <a class="reference external" href="http://www.emacswiki.org/emacs/SkeletonMode">EmacsWiki: Skeleton Mode</a></p>
 
-                <a class="readmore" href="http://blog.suhen.org/computer/emacs_skeleton.html">read more</a>
-<p>There are <a href="http://blog.suhen.org/computer/emacs_skeleton.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../computer/emacs_skeleton.html">read more</a>
+<p>There are <a href="../computer/emacs_skeleton.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
         
 
  
             <li><article class="hentry">    
                 <header>
-                    <h1><a href="http://blog.suhen.org/computer/emacs_newline.html" rel="bookmark"
+                    <h1><a href="../computer/emacs_newline.html" rel="bookmark"
                            title="Permalink to [computer] Emacs輸入newline符號">[computer] Emacs輸入newline符號</a></h1>
                 </header>
                 
@@ -110,8 +113,8 @@
                 四 27 6月 2013
         </abbr>
 
-<p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/emacs.html">emacs</a><a href="../tag/note.html">note</a></p>
 </footer><!-- /.post-info -->                <p>Emacs的換行:</p>
 <pre class="literal-block">
 C-q C-j
@@ -131,15 +134,15 @@ C-q C-j
 (define-key key-translation-map (kbd &quot;C-'&quot;) (kbd &quot;C-q&quot;))
 (define-key key-translation-map (kbd &quot;C-j&quot;) (kbd &quot;C-,&quot;))
 (define-key ...</pre>
-                <a class="readmore" href="http://blog.suhen.org/computer/emacs_newline.html">read more</a>
-<p>There are <a href="http://blog.suhen.org/computer/emacs_newline.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../computer/emacs_newline.html">read more</a>
+<p>There are <a href="../computer/emacs_newline.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
         
 
  
             <li><article class="hentry">    
                 <header>
-                    <h1><a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html" rel="bookmark"
+                    <h1><a href="../computer/emacs_replace-regexp.rst.html" rel="bookmark"
                            title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
                 </header>
                 
@@ -149,8 +152,8 @@ C-q C-j
                 二 25 6月 2013
         </abbr>
 
-<p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/note.html">note</a><a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/note.html">note</a><a href="../tag/emacs.html">emacs</a></p>
 </footer><!-- /.post-info -->                <p>指令:</p>
 <pre class="literal-block">
 M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
@@ -189,15 +192,15 @@ M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
 
 &lt;h2&gt;silly&lt;/h2&gt;
 &lt;h3 ...</pre></div>
-                <a class="readmore" href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html">read more</a>
-<p>There are <a href="http://blog.suhen.org/computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../computer/emacs_replace-regexp.rst.html">read more</a>
+<p>There are <a href="../computer/emacs_replace-regexp.rst.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
         
 
  
             <li><article class="hentry">    
                 <header>
-                    <h1><a href="http://blog.suhen.org/computer/emacs_dired_rename.html" rel="bookmark"
+                    <h1><a href="../computer/emacs_dired_rename.html" rel="bookmark"
                            title="Permalink to [Computer] 用Emacs dired-mode批次改檔名">[Computer] 用Emacs dired-mode批次改檔名</a></h1>
                 </header>
                 
@@ -207,13 +210,13 @@ M-x replace-regexp &lt;RET&gt; regexp &lt;RET&gt; newstring &lt;RET&gt;
                 一 17 6月 2013
         </abbr>
 
-<p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a><a href="http://blog.suhen.org/tag/note.html">note</a></p>
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/emacs.html">emacs</a><a href="../tag/note.html">note</a></p>
 </footer><!-- /.post-info -->                <p>看到 <a class="reference external" href="http://xahlee.org">XahLee</a> 的一篇文章: <a class="reference external" href="http://ergoemacs.org/emacs/rename_file_pattern.html">Emacs: Rename Files Interactively by Pattern (regex; wdired)</a> ，用Emacs來處理批次改檔名實在太方便了。</p>
 <p>在Dired模式下，<strong>C-x C-q</strong> 進入修改模式，或是執行 <strong>wdired-change-to-wdired-mode</strong>, 這時改檔名就像改一般文字檔一樣，可以用 <em>query-replace</em>, <em>query-replace-regexp</em> 或 <em>cua-mode</em> , 改完後 <strong>C-c C-c</strong> 送出, 或是 <strong>C-c C-Esc</strong> 取消就可以了,  比寫script直覺多了。</p>
 
-                <a class="readmore" href="http://blog.suhen.org/computer/emacs_dired_rename.html">read more</a>
-<p>There are <a href="http://blog.suhen.org/computer/emacs_dired_rename.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+                <a class="readmore" href="../computer/emacs_dired_rename.html">read more</a>
+<p>There are <a href="../computer/emacs_dired_rename.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">

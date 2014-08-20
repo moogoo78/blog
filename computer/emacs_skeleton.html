@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8">
         <title>用Emacs的skeleton快速建立pelican的blog內文</title>
-        <link rel="stylesheet" href="http://blog.suhen.org/theme/css/main.css">
+        <link rel="stylesheet" href="../theme/css/main.css">
         <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen Atom Feed" />
 
         <!--[if IE]>
@@ -12,25 +12,28 @@
 </head>
 
 <body id="index" class="home">
+<a href="http://github.com/moogoo78">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
         <header id="banner" class="body">
-                <h1><a href="http://blog.suhen.org/">suhen suchen </a></h1>
+                <h1><a href="../">suhen suchen </a></h1>
                 <nav><ul>
-                <li class="active"><a href="http://blog.suhen.org/category/computer.html">電腦</a></li>
-                <li ><a href="http://blog.suhen.org/category/music.html">音樂</a></li>
-                <li ><a href="http://blog.suhen.org/category/run.html">跑步</a></li>
-                <li ><a href="http://blog.suhen.org/category/mountain.html">爬山</a></li>
-                <li ><a href="http://blog.suhen.org/category/nature.html">自然</a></li>
-                <li ><a href="http://blog.suhen.org/category/travel.html">旅遊</a></li>
-                <li ><a href="http://blog.suhen.org/category/book.html">書</a></li>
-                <li ><a href="http://blog.suhen.org/category/language.html">語言</a></li>
-                <li ><a href="http://blog.suhen.org/category/misc.html">其他</a></li>
+                <li class="active"><a href="../category/computer.html">電腦</a></li>
+                <li ><a href="../category/music.html">音樂</a></li>
+                <li ><a href="../category/run.html">跑步</a></li>
+                <li ><a href="../category/mountain.html">爬山</a></li>
+                <li ><a href="../category/nature.html">自然</a></li>
+                <li ><a href="../category/travel.html">旅遊</a></li>
+                <li ><a href="../category/book.html">書</a></li>
+                <li ><a href="../category/language.html">語言</a></li>
+                <li ><a href="../category/misc.html">其他</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://blog.suhen.org/computer/emacs_skeleton.html" rel="bookmark"
+        <a href="../computer/emacs_skeleton.html" rel="bookmark"
            title="Permalink to 用Emacs的skeleton快速建立pelican的blog內文">用Emacs的skeleton快速建立pelican的blog內文</a></h1>
     </header>
 
@@ -40,9 +43,9 @@
                 二 27 8月 2013
         </abbr>
 
-<p>In <a href="http://blog.suhen.org/category/computer.html">computer</a>. </p>
-<p>tags: <a href="http://blog.suhen.org/tag/emacs.html">emacs</a></p>
-</footer><!-- /.post-info -->      <p>用 <a class="reference external" href="http://blog.suhen.org/computer/pelican.html">Pelican</a> 寫blog時都要輸入一堆metadata很麻煩, 利用 <a class="reference external" href="http://blog.suhen.org/computer/emacs.html">Emacs</a> 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!</p>
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/emacs.html">emacs</a></p>
+</footer><!-- /.post-info -->      <p>用 <a class="reference external" href="../computer/pelican.html">Pelican</a> 寫blog時都要輸入一堆metadata很麻煩, 利用 <a class="reference external" href="../computer/emacs.html">Emacs</a> 的skeleton-mode可以很快產生template, 接受mini-buffer輸入, insert lisp function...超方便!!</p>
 <div class="highlight"><pre><span class="p">(</span><span class="nv">define-skeleton</span> <span class="nv">insert-pelican-template</span>
   <span class="s">&quot;Insert templete for pelican static blog system&quot;</span>
   <span class="s">&quot;&quot;</span> <span class="p">(</span><span class="nv">skeleton-read</span> <span class="s">&quot;Title: &quot;</span><span class="p">)</span><span class="nv">?\n</span>
@@ -62,7 +65,7 @@
       <div id="disqus_thread"></div>
       <script type="text/javascript">
         var disqus_identifier = "computer/emacs_skeleton.html";
-        var disqus_url = "http://blog.suhen.org/computer/emacs_skeleton.html";
+        var disqus_url = "../computer/emacs_skeleton.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';
