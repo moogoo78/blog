@@ -38,6 +38,7 @@ SOCIAL = (('facebook', 'http://www.facebook.com/moogee.lee'),
 
 DEFAULT_PAGINATION = 10
 
-STATIC_PATHS = ["images", ]
+STATIC_PATHS = ["images", 'extra/CNAME']
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
