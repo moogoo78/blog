@@ -2583,7 +2583,19 @@ import os
 &lt;h2&gt;syntax&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://markdown.tw/"&gt;Markdown 語法說明&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>Scripting 比較</title><link href="http://blog.suhen.org/computer/scripting-bi-jiao.html" rel="alternate"></link><updated>2013-04-09T11:38:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/scripting-bi-jiao.html</id><summary type="html">&lt;p&gt;PHP, Python, Javascript, Lua&lt;/p&gt;
+&lt;/ul&gt;
+&lt;h1&gt;補充&lt;/h1&gt;
+&lt;h2&gt;更新 v 3.4&lt;/h2&gt;
+&lt;p&gt;pelican_youtube::&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;youtube&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;pelicanconf.py::&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="cp"&gt;[&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;pelican_youtube&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="cp"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="note"></category></entry><entry><title>Scripting 比較</title><link href="http://blog.suhen.org/computer/scripting-bi-jiao.html" rel="alternate"></link><updated>2013-04-09T11:38:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-09:computer/scripting-bi-jiao.html</id><summary type="html">&lt;p&gt;PHP, Python, Javascript, Lua&lt;/p&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;易搞混&lt;/h2&gt;
 &lt;div class="section" id="hash-dictionary-table"&gt;
