@@ -210,3 +210,18 @@ bookmarklet:
 ## syntax
 
 * [Markdown 語法說明](http://markdown.tw/)
+
+
+# 補充
+
+## 更新 v 3.4
+
+pelican_youtube::
+
+    pip install pelican-youtube
+
+pelicanconf.py::
+
+    PLUGINS = [
+        'pelican_youtube',
+    ]
