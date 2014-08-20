@@ -25,6 +25,7 @@ GOOGLE_ANALYTICS = "UA-38928548-1"
 
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
-GITHUB_URL = 'http://github.com/moogoo78'
-
 RELATIVE_URLS = True
+
+# for templates
+GITHUB_URL = 'http://github.com/moogoo78'
