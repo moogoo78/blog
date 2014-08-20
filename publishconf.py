@@ -24,9 +24,9 @@ DISQUS_SITENAME = "suhenorg"
 GOOGLE_ANALYTICS = "UA-38928548-1"
 
 # for github pages
-#FILES_TO_COPY = (
-#('extra/CNAME', 'CNAME'),
-#)
+FILES_TO_COPY = (
+('extra/CNAME', 'CNAME'),
+)
 
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
