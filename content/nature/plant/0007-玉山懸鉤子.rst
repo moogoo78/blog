@@ -6,13 +6,13 @@
 
 匍匐性亞灌木，叫懸鉤子，但卻不鉤人，果實香甜止渴。
 
-.. image:: /static/images/nature/plant/0007/2991568600_845b87f392_z.jpg
+.. image:: /images/nature/plant/0007/2991568600_845b87f392_z.jpg
 
-.. image:: /static/images/nature/plant/0007/3724384154_f23f536c02_z.jpg
+.. image:: /images/nature/plant/0007/3724384154_f23f536c02_z.jpg
 
-.. image:: /static/images/nature/plant/0007/3723575685_2e0f3bddc0_z.jpg
+.. image:: /images/nature/plant/0007/3723575685_2e0f3bddc0_z.jpg
 
-.. image:: /static/images/nature/plant/0007/3724385706_4df53c56a6_z.jpg
+.. image:: /images/nature/plant/0007/3724385706_4df53c56a6_z.jpg
 
 * [2009-07-05] 能高
 

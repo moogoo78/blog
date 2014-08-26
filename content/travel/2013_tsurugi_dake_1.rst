@@ -22,7 +22,7 @@
 
 我們的GPS航跡。
 
-.. image:: /static/images/travel/2013_tsurugidake/tsurugidake_google_earth.png
+.. image:: /images/travel/2013_tsurugidake/tsurugidake_google_earth.png
    :width: 760px
 
 

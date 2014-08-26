@@ -6,18 +6,18 @@
 
 和 `尼泊爾籟蕭 <|filename|0017-尼泊爾籟蕭.rst>`_ 葉子長的很像，玉山抱莖籟蕭葉子比較細，尼泊爾籟蕭葉子比較胖，植株較高，葉緣常反捲，葉基抱莖。玉山抱莖籟蕭的白色花瓣和花色花蕊的比例差不多，尼泊爾籟蕭好像的白色花瓣範圍較大 (自己亂猜)，花可以泡茶。
 
-.. image:: /static/images/nature/plant/0016/2993409007_85b97cf96e_z.jpeg
+.. image:: /images/nature/plant/0016/2993409007_85b97cf96e_z.jpeg
 
-.. image:: /static/images/nature/plant/0016/2994252364_0aa694189c_z.jpeg
+.. image:: /images/nature/plant/0016/2994252364_0aa694189c_z.jpeg
 
-.. image:: /static/images/nature/plant/0016/2993411481_051f55148d_z.jpeg
+.. image:: /images/nature/plant/0016/2993411481_051f55148d_z.jpeg
 
 
 * [2008-10-25] 桃山
 
 
-.. image:: /static/images/nature/plant/0016/tn_PB170560.JPG
+.. image:: /images/nature/plant/0016/tn_PB170560.JPG
 
-.. image:: /static/images/nature/plant/0016/tn_PB170580.JPG
+.. image:: /images/nature/plant/0016/tn_PB170580.JPG
 
 * [2013-11-26] 錐麓古道

@@ -89,11 +89,11 @@ Slug: sow_taipei_interpreter_24-travel-1
 ## 夜觀
 
 
-![盤古蟾蜍??](/static/images/misc/sow24/travel1/tn_PB230658.JPG)
+![盤古蟾蜍??](/images/misc/sow24/travel1/tn_PB230658.JPG)
 
 盤古蟾蜍??
 
-![拉都希氏赤蛙](/static/images/misc/sow24/travel1/tn_PB230666.JPG)
+![拉都希氏赤蛙](/images/misc/sow24/travel1/tn_PB230666.JPG)
 
 拉都希氏赤蛙
 
@@ -102,11 +102,11 @@ Slug: sow_taipei_interpreter_24-travel-1
 # 11/24 (日)
 
 
-![ ](/static/images/misc/sow24/travel1/tn_PB240678.JPG)
+![ ](/images/misc/sow24/travel1/tn_PB240678.JPG)
 
 早上天空超美
 
-![ ](/static/images/misc/sow24/travel1/tn_PB240692.JPG)
+![ ](/images/misc/sow24/travel1/tn_PB240692.JPG)
 
 月亮還在
 

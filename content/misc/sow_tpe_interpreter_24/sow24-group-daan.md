@@ -17,7 +17,7 @@ Slug: sow_taipei_interpreter_24-group-daan-1
 
 開場時間不要拖太長，影響主題
 
-![開場](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280003.JPG)
+![開場](/images/misc/sow24/2013-12-28_daan_tree/tn_PC280003.JPG)
 
 # 植物介紹
 
@@ -59,13 +59,13 @@ Slug: sow_taipei_interpreter_24-group-daan-1
 
 補充: Billie Holiday的頭飾
 
-![Billie Holiday](/static/images/misc/sow24/2013-12-28_daan_tree/billie_holiday.jpg)
+![Billie Holiday](/images/misc/sow24/2013-12-28_daan_tree/billie_holiday.jpg)
 
 ref: [floral inspired sculpture & jewelry – karenlandis.com » Billie Holiday’s Iconic Gardenias](http://karenlandis.com/billie-holidays-iconic-gardenias/)
 
 三角托葉
 
-![三角托葉](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280005.JPG)
+![三角托葉](/images/misc/sow24/2013-12-28_daan_tree/tn_PC280005.JPG)
 
 ## 茄冬
 
@@ -83,13 +83,13 @@ ref: [floral inspired sculpture & jewelry – karenlandis.com » Billie Holiday�
 * 枝條下垂，腋生花
 * 榆科葉有歪基，頁面完全凹下，頁背突起
 
-![榔榆](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280006.JPG)
+![榔榆](/images/misc/sow24/2013-12-28_daan_tree/tn_PC280006.JPG)
 
-![榔榆](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280007.JPG)
+![榔榆](/images/misc/sow24/2013-12-28_daan_tree/tn_PC280007.JPG)
 
-![榔榆](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280009.JPG)
+![榔榆](/images/misc/sow24/2013-12-28_daan_tree/tn_PC280009.JPG)
 
-![榔榆](/static/images/misc/sow24/2013-12-28_daan_tree/tn_PC280011.JPG)
+![榔榆](/images/misc/sow24/2013-12-28_daan_tree/tn_PC280011.JPG)
 
 ## 豔紫荊
 

@@ -16,7 +16,7 @@
 全部相片: `暖東山徑 - a set on Flickr <http://www.flickr.com/photos/moogoo/sets/72157634905710577/>`__
 
 
-.. image:: /static/images/2013-07-28_nuandong/nuandong_route.jpg
+.. image:: /images/2013-07-28_nuandong/nuandong_route.jpg
    :width: 500
 
 活動連結: `ezfun運動玩家-2013 暖東峽谷山徑越野跑 <http://ezfun.24tms.com.tw/sports/page2_1_4.asp?eventid=82>`__

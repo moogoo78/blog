@@ -8,7 +8,7 @@
 同事邀約，一起報名了 `渣打12.5k <http://www.dothan.com.tw/StandardCharteredTaipeiCityCharityRun/index.html>`__ ，自從開始跑全馬後就很少報短程的，最近開始想把速度跑出來，就當作練習跑跑看。
 以前金虎爺跑過這個路線，這次更遠，跑到新生高架下來劍潭才折返。早上5:30開跑，差不多6點開始折返的時後，太陽感覺很大開始熱了。原本預定希望1小時內跑完，最後2公里時，覺得因為下午還要爬山，昨天也只睡2個小時，就沒有衝刺，順順的跑完，多了2分鐘，總排名: 332 / 7556 ，分組: 87 / 2137 。 ( `成績單 <http://www.run2pix.com/report/viewscore.php?EventCode=20130602&bib=2704&Race=10>`__  )
 
-.. image:: /static/images/2013-06-02_run_chartered/936103_650537541626507_1019850711_n.jpg
+.. image:: /images/2013-06-02_run_chartered/936103_650537541626507_1019850711_n.jpg
    :width: 500 px
 
 附近電話訊號很爛，找人找了一陣子，大家合照聊天，就要趕場去爬山了~

@@ -9,13 +9,13 @@
 我買的書都沒介紹...
 
 
-.. image:: /static/images/nature/plant/0020/3038779764_f7f0742436_z.jpg
+.. image:: /images/nature/plant/0020/3038779764_f7f0742436_z.jpg
 
-.. image:: /static/images/nature/plant/0020/3038595344_3a390eafb6_z.jpg
+.. image:: /images/nature/plant/0020/3038595344_3a390eafb6_z.jpg
 
-.. image:: /static/images/nature/plant/0020/3038647464_86458030e9_z.jpg
+.. image:: /images/nature/plant/0020/3038647464_86458030e9_z.jpg
 
-.. image:: /static/images/nature/plant/0020/3037940743_0d0ff33a6d_z.jpg
+.. image:: /images/nature/plant/0020/3037940743_0d0ff33a6d_z.jpg
 
 * [2008-10-25] 桃山
 

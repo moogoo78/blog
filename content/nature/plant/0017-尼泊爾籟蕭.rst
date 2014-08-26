@@ -8,10 +8,10 @@
 
 日本時代時叫「兒玉菊」，被印在「台灣始政紀念」的明信片上(沒圖沒真相，有空再來找圖)，葉子有絨毛。
 
-.. image:: /static/images/nature/plant/0017/3035596564_a4c17845ef_z.jpeg
+.. image:: /images/nature/plant/0017/3035596564_a4c17845ef_z.jpeg
 
-.. image:: /static/images/nature/plant/0017/3035597730_6fa2fa3aa0_z.jpeg
+.. image:: /images/nature/plant/0017/3035597730_6fa2fa3aa0_z.jpeg
 
-.. image:: /static/images/nature/plant/0017/3034758947_54e19ec7b8_z.jpeg
+.. image:: /images/nature/plant/0017/3034758947_54e19ec7b8_z.jpeg
 
 * [2008-10-25] 桃山

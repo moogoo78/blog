@@ -8,8 +8,8 @@
 一年生草本植物，和高山毛蓮菜很像，花看起來一樣。玉山毛蓮菜葉子比較細，高山毛蓮菜比較胖(橢圓披針)，玉山毛蓮菜長比較高，高山毛蓮菜是台灣特有種。
 
 
-.. image:: /static/images/nature/plant/0015/2994254996_9469af39f7_z.jpeg
+.. image:: /images/nature/plant/0015/2994254996_9469af39f7_z.jpeg
 
-.. image:: /static/images/nature/plant/0015/2993413795_52ebfc8d3a_z.jpeg
+.. image:: /images/nature/plant/0015/2993413795_52ebfc8d3a_z.jpeg
 
 * [2008-10-25] 桃山

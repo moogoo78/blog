@@ -11,9 +11,9 @@
 
 --> 跟筆筒樹不一樣
 
-.. image:: /static/images/nature/plant/0003/R0025483.JPG
+.. image:: /images/nature/plant/0003/R0025483.JPG
 
-.. image:: /static/images/nature/plant/0003/R0025482.JPG
+.. image:: /images/nature/plant/0003/R0025482.JPG
 
 * [2013-08-18] 三貂嶺步道
 

@@ -9,9 +9,9 @@
 
 長的像地上的蜈蚣? 沒注意到，紫藍色的花很可愛，葉子長的像星際大戰的Star Destroyer。花期很長整年幾乎可見。
 
-.. image:: /static/images/nature/plant/0001/R0025521.JPG
+.. image:: /images/nature/plant/0001/R0025521.JPG
 
-.. image:: /static/images/nature/plant/0001/R0025523.JPG
+.. image:: /images/nature/plant/0001/R0025523.JPG
 
 * [2013-08-24] 陽明山-七星山主峰步道旁
 

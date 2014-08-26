@@ -15,16 +15,16 @@
 
 扮演次生植披，在矮灌叢空隙生長，杜鵑或圓柏侵入後就換地方生長
 
-.. image:: /static/images/nature/plant/0005/2990698709_dba2eb0d1c_z.jpg
+.. image:: /images/nature/plant/0005/2990698709_dba2eb0d1c_z.jpg
 
-.. image:: /static/images/nature/plant/0005/2990699177_31a918b8c4_z.jpg
+.. image:: /images/nature/plant/0005/2990699177_31a918b8c4_z.jpg
 
 
 * [2008-10-25] 桃山步道
 
-.. image:: /static/images/nature/plant/0005/tn_PC080187.JPG
+.. image:: /images/nature/plant/0005/tn_PC080187.JPG
 
-.. image:: /static/images/nature/plant/0005/tn_PC080188.JPG
+.. image:: /images/nature/plant/0005/tn_PC080188.JPG
 
 * [2013-12-08] 南湖山區 (審馬陣草原)
 
@@ -37,9 +37,9 @@
 
 葉片近革質，橢圓至長橢圓形。
 
-.. image:: /static/images/nature/plant/0024/tn_PC080121.JPG
+.. image:: /images/nature/plant/0024/tn_PC080121.JPG
 
-.. image:: /static/images/nature/plant/0024/tn_PC080120.JPG
+.. image:: /images/nature/plant/0024/tn_PC080120.JPG
 
 * [2013-12-08] 南湖山區 (雲稜山莊往審馬陣未上稜線)
 

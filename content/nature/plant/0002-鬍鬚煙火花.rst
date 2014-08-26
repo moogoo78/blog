@@ -6,10 +6,10 @@
 
 紫紅色花
 
-.. image:: /static/images/nature/plant/0002/DSC_0519.jpg
+.. image:: /images/nature/plant/0002/DSC_0519.jpg
 
-.. image:: /static/images/nature/plant/0002/DSC_0520.jpg
+.. image:: /images/nature/plant/0002/DSC_0520.jpg
 
-.. image:: /static/images/nature/plant/0002/DSC_0521.jpg
+.. image:: /images/nature/plant/0002/DSC_0521.jpg
 
 * [2013-08-25] 文化大學-曉園附近

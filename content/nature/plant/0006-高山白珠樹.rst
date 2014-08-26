@@ -6,10 +6,10 @@
 
 杜鵑花科小灌木，常趴在地上看起來像草本植物，果實可以吃，多汁微甜，可補充水份。
 
-.. image:: /static/images/nature/plant/0006/2991567072_2605608557_z.jpg
+.. image:: /images/nature/plant/0006/2991567072_2605608557_z.jpg
 
-.. image:: /static/images/nature/plant/0006/2990714473_25fa989a76_z.jpg
+.. image:: /images/nature/plant/0006/2990714473_25fa989a76_z.jpg
 
-.. image:: /static/images/nature/plant/0006/2990713923_ab17dbb399_z.jpg
+.. image:: /images/nature/plant/0006/2990713923_ab17dbb399_z.jpg
 
 * [2008-10-25] 桃山步道

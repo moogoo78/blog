@@ -6,13 +6,13 @@
 
 他就是一枝黃花。
 
-.. image:: /static/images/nature/plant/0008/4947236345_136dac099d_z.jpg
+.. image:: /images/nature/plant/0008/4947236345_136dac099d_z.jpg
 
 * [2010-08-27] 志佳陽大山
 
-.. image:: /static/images/nature/plant/0008/4947824232_2a5a6c92f1_z.jpg
+.. image:: /images/nature/plant/0008/4947824232_2a5a6c92f1_z.jpg
 
-.. image:: /static/images/nature/plant/0008/2994044400_85a3f0072c_z.jpg
+.. image:: /images/nature/plant/0008/2994044400_85a3f0072c_z.jpg
 
 
 
