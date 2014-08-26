@@ -67,17 +67,17 @@ http://kplant.biodiv.tw/%E9%AD%9A%E6%9C%A8/%E9%AD%9A%E6%9C%A8.htm
 
  
 
-![](/static/images/nature/plant/0029/tn_P4150040.JPG)
+![](/images/nature/plant/0029/tn_P4150040.JPG)
 
-![](/static/images/nature/plant/0029/tn_P4150041.JPG)
+![](/images/nature/plant/0029/tn_P4150041.JPG)
 
-![](/static/images/nature/plant/0029/tn_P4150042.JPG)
+![](/images/nature/plant/0029/tn_P4150042.JPG)
 
-![](/static/images/nature/plant/0029/tn_P4150044.JPG)
+![](/images/nature/plant/0029/tn_P4150044.JPG)
 
-![](/static/images/nature/plant/0029/tn_P4150047.JPG)
+![](/images/nature/plant/0029/tn_P4150047.JPG)
 
-![](/static/images/nature/plant/0029/tn_P4150052.JPG)
+![](/images/nature/plant/0029/tn_P4150052.JPG)
 
 (香萍: 今年樹幹上附生的毬蘭多被清除)
 
