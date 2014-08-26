@@ -5,7 +5,7 @@
 :slug: umesao_tadao_knowledge
 
 
-.. image:: /static/images/book/umesao_tadao-knowlegde.jpg
+.. image:: /images/book/umesao_tadao-knowlegde.jpg
            :alt: umesao_knowledge
 
 

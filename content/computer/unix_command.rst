@@ -78,6 +78,8 @@ via: `Linux 下找出體積最大的檔案/目錄 – 網絡技術日誌 <http:/
 
   $ grep -rl flaskext . |xargs sed -i -e 's/flaskext/flask.ext/'
 
+  $ ls *.md | xargs sed -i -e 's/static\///' ## 把 所有的.md (markdown) 檔裡的 "static/" 去掉
+
 via: `recursive search and replace old with new string, inside files | commandlinefu.com <http://www.commandlinefu.com/commands/view/4698/recursive-search-and-replace-old-with-new-string-inside-files>`__ 
 
 

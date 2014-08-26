@@ -14,15 +14,15 @@ Slug: 2014_hk_laibach
 
 沙田站一出來也是很多人，到處亂走，跟著人群亂走，看到很多人走到一個像社區的大樓，寫著一個牌子[瀝源邨](http://zh.wikipedia.org/wiki/瀝源邨)，原來就是香港有名的公共屋邨，我這個觀光客就好奇的到處亂逛。
 
-![](/static/images/travel/2014_hk_laibach/P3220001.JPG)
+![](/images/travel/2014_hk_laibach/P3220001.JPG)
 
 早上的時間很悠閒，大部份都是老人坐在椅子上曬太陽。
 
-![](/static/images/travel/2014_hk_laibach/P3220004.JPG)
+![](/images/travel/2014_hk_laibach/P3220004.JPG)
 
 地鐵的電視也會播著台灣的服貿事件。
 
-![](/static/images/travel/2014_hk_laibach/P3220005.JPG)
+![](/images/travel/2014_hk_laibach/P3220005.JPG)
 
 前幾天因為服貿事件，都沒睡好，其實很累。進去旅館(注1) 後就熟睡了3個小時，然後去找旺角的戶外用品店用: The Overlander、毅成 ，在人群中穿梭很累。
 
@@ -32,7 +32,7 @@ Slug: 2014_hk_laibach
 
 焗排骨飯
 
-![](/static/images/travel/2014_hk_laibach/IMG_0236.JPG)
+![](/images/travel/2014_hk_laibach/IMG_0236.JPG)
 
 然後就坐地鐵到灣仔，這次來香港的目的，Laibach！
 
@@ -59,11 +59,11 @@ Slug: 2014_hk_laibach
 
 好辣好好吃! (我只點小辣，如果沒有那杯鹹檸七我應該會受不了)
 
-![](/static/images/travel/2014_hk_laibach/IMG_0239.JPG)
+![](/images/travel/2014_hk_laibach/IMG_0239.JPG)
 
 回程也是悠閒的巴士，不趕時間就坐客運，慢慢欣賞風景嘍。
 
-![](/static/images/travel/2014_hk_laibach/IMG_0241.JPG)
+![](/images/travel/2014_hk_laibach/IMG_0241.JPG)
 
 註:
 
