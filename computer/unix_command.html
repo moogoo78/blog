@@ -114,6 +114,8 @@ $ du -a /home | sort -n -r | head -n 10
 <p>某目錄下的全部檔案的字串:</p>
 <pre class="literal-block">
 $ grep -rl flaskext . |xargs sed -i -e 's/flaskext/flask.ext/'
+
+$ ls *.md | xargs sed -i -e 's/static\///' ## 把 所有的.md (markdown) 檔裡的 &quot;static/&quot; 去掉
 </pre>
 <p>via: <a class="reference external" href="http://www.commandlinefu.com/commands/view/4698/recursive-search-and-replace-old-with-new-string-inside-files">recursive search and replace old with new string, inside files | commandlinefu.com</a></p>
 <p>列出各目錄大小(不顯示子目錄):</p>
