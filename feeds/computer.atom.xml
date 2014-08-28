@@ -678,6 +678,22 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://lua-users.org/wiki/TernaryOperator"&gt;lua-users wiki: Ternary Operator&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://lua-users.org/wiki/ExpressionsTutorial"&gt;lua-users wiki: Expressions Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Libraries&lt;/h1&gt;
+&lt;h2&gt;math&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;math.ceil&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;math.floor&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;math.abs&lt;/span&gt;
+&lt;span class="nb"&gt;math.min&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;math.max&lt;/span&gt;
+
+&lt;span class="c1"&gt;-- random&lt;/span&gt;
+&lt;span class="nb"&gt;math.randomseed&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="nb"&gt;os.time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;math.random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c1"&gt;-- 產生 0 到 1 小數的亂數&lt;/span&gt;
+&lt;span class="nb"&gt;math.random&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;-- 1 到 100 整數&lt;/span&gt;
+&lt;span class="nb"&gt;math.random&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;70&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;-- 70 到 80 整數&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://lua-users.org/wiki/MathLibraryTutorial"&gt;lua-users wiki: Math Library Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</summary></entry><entry><title>[snippet] Corona SDK 顯示各種資訊</title><link href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="alternate"></link><updated>2013-10-01T10:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/corona_sdk_info.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;info&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;========= display info =========&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;pixel: %dx%d, ratio: %.02f&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
