@@ -13,4 +13,9 @@ Slug: language_hongkong
 
 # 髒話
 
+* 好撚屌
+
+## ref
+
 * [廣東話粗口 - 維基百科，自由嘅百科全書](http://zh-yue.wikipedia.org/wiki/廣東話粗口)
+* [撚 - 維基百科，自由嘅百科全書](http://zh-yue.wikipedia.org/wiki/撚)

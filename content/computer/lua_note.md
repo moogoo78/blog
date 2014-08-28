@@ -176,3 +176,21 @@ Lua是很活的語言, 另外還可以用很多不同方式實現, 有興趣的�
 
 * [lua-users wiki: Ternary Operator](http://lua-users.org/wiki/TernaryOperator)
 * [lua-users wiki: Expressions Tutorial](http://lua-users.org/wiki/ExpressionsTutorial)
+
+
+# Libraries
+
+## math
+
+    :::lua
+    math.ceil, math.floor, math.abs
+    math.min, math.max
+
+    -- random
+    math.randomseed( os.time() )
+    math.random() -- 產生 0 到 1 小數的亂數
+    math.random(100) -- 1 到 100 整數
+    math.random(70, 80) -- 70 到 80 整數
+
+
+* [lua-users wiki: Math Library Tutorial](http://lua-users.org/wiki/MathLibraryTutorial)
