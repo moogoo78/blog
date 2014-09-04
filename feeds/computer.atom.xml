@@ -116,6 +116,7 @@ height = 480
 &lt;ul&gt;
 &lt;li&gt;存檔 https://github.com/SatheeshJM/Lua-Preference-Library&lt;/li&gt;
 &lt;li&gt;整理常用 https://github.com/moogoo78/qll-corona-toolkit&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://coronalabs.com/blog/2014/09/02/tutorial-printing-table-contents/"&gt;Tutorial: Printing Table Contents | Corona Labs&lt;/a&gt; print_r()&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Best Practice&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;native.newTextField&lt;/strong&gt; 字體大小在 Android 會變大, 所以遇到 Android 要縮小一點 (textfield 高度也提高)&lt;/p&gt;
