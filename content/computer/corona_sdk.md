@@ -99,7 +99,7 @@ scale:
 
 * 存檔 https://github.com/SatheeshJM/Lua-Preference-Library
 * 整理常用 https://github.com/moogoo78/qll-corona-toolkit
-
+* [Tutorial: Printing Table Contents | Corona Labs](http://coronalabs.com/blog/2014/09/02/tutorial-printing-table-contents/) print_r()
 # Best Practice
 
 **native.newTextField** 字體大小在 Android 會變大, 所以遇到 Android 要縮小一點 (textfield 高度也提高)
