@@ -45,24 +45,21 @@
 
 <p>In <a href="../category/computer.html">computer</a>. </p>
 
-</footer><!-- /.post-info -->      <h1>System</h1>
+</footer><!-- /.post-info -->      <h1>API</h1>
+<h2>System</h2>
 <div class="highlight"><pre><span class="n">system</span><span class="p">.</span><span class="n">setIdleTimer</span><span class="p">(</span> <span class="n">enabled</span> <span class="p">)</span>
 <span class="n">display</span><span class="p">.</span><span class="n">setStatusBar</span><span class="p">(</span> <span class="n">display</span><span class="p">.</span><span class="n">HiddenStatusBar</span> <span class="p">)</span>
 <span class="nb">collectgarbage</span><span class="p">()</span>
 </pre></div>
 
 
-<h1>display</h1>
-<ul>
-<li><a href="http://coronalabs.com/blog/2013/10/15/tutorial-anchor-points-in-graphics-2-0/">Tutorial: Anchor Points in Graphics 2.0 | Corona Labs</a></li>
-</ul>
-<h1>Event / Timer</h1>
+<h2>Event / Timer</h2>
 <div class="highlight"><pre><span class="n">AnimTimer</span>  <span class="o">=</span> <span class="n">timer</span><span class="p">.</span><span class="n">performWithDelay</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">V</span><span class="p">.</span><span class="n">PAnimate</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
 <span class="n">timer</span><span class="p">.</span><span class="n">cancel</span><span class="p">(</span><span class="n">AnimTimer</span><span class="p">)</span>
 </pre></div>
 
 
-<h1>Network</h1>
+<h2>Network</h2>
 <div class="highlight"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">networkListener</span><span class="p">(</span> <span class="n">event</span> <span class="p">)</span>
     <span class="k">if</span> <span class="p">(</span> <span class="n">event</span><span class="p">.</span><span class="n">isError</span> <span class="p">)</span> <span class="k">then</span>
             <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">Network error!&quot;</span><span class="p">)</span>
@@ -79,7 +76,7 @@
 </pre></div>
 
 
-<h1>locale</h1>
+<h2>locale</h2>
 <div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">ui.language&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">ui&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">language&quot;</span> <span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.country&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">country&quot;</span> <span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">locale.identifier&quot;</span><span class="p">,</span><span class="n">system</span><span class="p">.</span><span class="n">getPreference</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">locale&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">identifier&quot;</span> <span class="p">))</span>
@@ -106,30 +103,113 @@
 
 
 <p>在iPad上測試: locale.* 不管語系怎麼設定, 都會是zh_TW (綁帳號?),</p>
-<h1>Setting</h1>
+<h2>Setting</h2>
 <ul>
 <li><a href="http://docs.coronalabs.com/guide/basics/configSettings/">Corona Docs: guide &gt; basics &gt; configSettings</a></li>
 </ul>
-<h2>scale</h2>
+<p>scale:</p>
 <ul>
 <li>letterbox: 等比例縮放, 把所有內容放入screen內, 所以會有"空白"跑出來, 可以用大一點的背景圖填滿</li>
 <li>zoomEven: 等比例縮放, 內容可能會"凸"出去</li>
-<li>zoomStretch: 適應螢幕大小縮放, 比例會跑掉</li>
+<li>
+<p>zoomStretch: 適應螢幕大小縮放, 比例會跑掉</p>
+<p>:::lua
+display.screenOriginX
+width = 320
+height = 480
+-- letterbox時, 到iPad上會左右多出20, display.screenOriginX = -20
+-- 座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。</p>
+</li>
 </ul>
-<p>display.screenOriginX</p>
-<p>width = 320</p>
-<p>height = 480</p>
-<p>letterbox時, 到iPad上會左右多出20, display.screenOriginX = -20</p>
-<p>座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。</p>
-<h1>corona API</h1>
-<h2>Composer / Storyboard</h2>
+<h2>update API</h2>
 <ul>
 <li><a href="http://coronalabs.com/blog/2014/06/03/tutorial-understanding-the-composer-api/">Tutorial: Understanding the Composer API | Corona Labs</a></li>
+<li><a href="http://coronalabs.com/blog/2013/10/15/tutorial-anchor-points-in-graphics-2-0/">Tutorial: Anchor Points in Graphics 2.0 | Corona Labs</a></li>
 </ul>
-<h1>Libraries</h1>
+<h1>Snippets</h1>
 <ul>
 <li>存檔 https://github.com/SatheeshJM/Lua-Preference-Library</li>
+<li>整理常用 https://github.com/moogoo78/qll-corona-toolkit</li>
 </ul>
+<h1>Best Practice</h1>
+<p><strong>native.newTextField</strong> 字體大小在 Android 會變大, 所以遇到 Android 要縮小一點 (textfield 高度也提高)</p>
+<div class="highlight"><pre><span class="kd">local</span> <span class="n">isAndroid</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="s">Android&quot;</span> <span class="o">==</span> <span class="n">system</span><span class="p">.</span><span class="n">getInfo</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">platformName&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">inputFontSize</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">tHeight</span> <span class="o">=</span> <span class="mi">30</span>
+
+<span class="k">if</span> <span class="n">isAndroid</span> <span class="k">then</span>
+<span class="c1">-- Android text fields have more chrome. It&#39;s either make them bigger, or make the font smaller.</span>
+    <span class="n">inputFontSize</span> <span class="o">=</span> <span class="mi">14</span>
+    <span class="n">tHeight</span> <span class="o">=</span> <span class="mi">40</span>
+<span class="k">end</span>
+
+<span class="n">defaultField</span> <span class="o">=</span> <span class="n">native</span><span class="p">.</span><span class="n">newTextField</span><span class="p">(</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="n">tHeight</span> <span class="p">)</span>
+<span class="n">defaultField</span><span class="p">.</span><span class="n">font</span> <span class="o">=</span> <span class="n">native</span><span class="p">.</span><span class="n">newFont</span><span class="p">(</span> <span class="n">native</span><span class="p">.</span><span class="n">systemFontBold</span><span class="p">,</span> <span class="n">inputFontSize</span> <span class="p">)</span>
+</pre></div>
+
+
+<h1>串接facebook</h1>
+<ol>
+<li>facebook app id
+   先到developers.facebook.com產生一個app，取得app id</li>
+<li>
+<p>設定</p>
+<ul>
+<li>Android
+  keyhash - 如果是android的話，需要產生keyhash，回填到developers.facebook.com的app</li>
+</ul>
+</li>
+</ol>
+<p>可以用corona sdk提供的debug.keystore</p>
+<div class="highlight"><pre>/Applications/CoronaSDK/Resource Library/Android/debug.keystore
+</pre></div>
+
+
+<p>在mac上用JavaVM提供的keytool指令，產生android的keyhash</p>
+<div class="highlight"><pre>/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
+</pre></div>
+
+
+<p>如果keyhash有問題的話，可以在裝置上看debug log，會出現:</p>
+<div class="highlight"><pre>Key hash [這一串是keyhash] does not match any stored key hashes.
+</pre></div>
+
+
+<p>也可以拿來回填~</p>
+<p><strong>補充</strong>:</p>
+<div class="highlight"><pre># 列出alias
+keytool -list -keystore foo.keystore
+# 產生keystore
+keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999
+</pre></div>
+
+
+<h2>iOS</h2>
+<p>build.settings:</p>
+<div class="highlight"><pre><span class="n">settings</span> <span class="o">=</span>
+<span class="p">{</span>
+   <span class="n">iphone</span> <span class="o">=</span>
+   <span class="p">{</span>
+      <span class="n">plist</span> <span class="o">=</span>
+      <span class="p">{</span>
+         <span class="n">UIApplicationExitsOnSuspend</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+         <span class="n">FacebookAppID</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="s">934738748374738&quot;</span><span class="p">,</span>
+         <span class="n">CFBundleURLTypes</span> <span class="o">=</span>
+         <span class="p">{</span>
+            <span class="p">{</span>
+               <span class="n">CFBundleURLSchemes</span> <span class="o">=</span>
+               <span class="p">{</span>
+                  <span class="s2">&quot;</span><span class="s">fb934738748374738&quot;</span><span class="p">,</span>
+               <span class="p">}</span>
+            <span class="p">}</span>
+         <span class="p">}</span>
+      <span class="p">},</span>
+   <span class="p">},</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p><a href="http://coronalabs.com/blog/2013/07/30/understanding-facebook-authentication/">Understanding Facebook Authentication | Corona Labs</a></p>
     </div><!-- /.entry-content -->
     <div class="comments">
       <h2>Comments !</h2>

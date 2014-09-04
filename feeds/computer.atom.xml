@@ -31,24 +31,21 @@ CA: Certificate Authority&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.sslshopper.com/ssl-checker.html"&gt;SSL Checker - SSL Certificate Verify&lt;/a&gt; 檢查SSL&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.sslshopper.com/csr-decoder.html"&gt;CSR Decoder - Check CSR to verify its contents&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>Corona SDK 筆記</title><link href="http://blog.suhen.org/computer/corona_sdk.html" rel="alternate"></link><updated>2014-02-26T12:13:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-26:computer/corona_sdk.html</id><summary type="html">&lt;h1&gt;System&lt;/h1&gt;
+&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>Corona SDK 筆記</title><link href="http://blog.suhen.org/computer/corona_sdk.html" rel="alternate"></link><updated>2014-02-26T12:13:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-26:computer/corona_sdk.html</id><summary type="html">&lt;h1&gt;API&lt;/h1&gt;
+&lt;h2&gt;System&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setIdleTimer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;enabled&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setStatusBar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;HiddenStatusBar&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;collectgarbage&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;display&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://coronalabs.com/blog/2013/10/15/tutorial-anchor-points-in-graphics-2-0/"&gt;Tutorial: Anchor Points in Graphics 2.0 | Corona Labs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Event / Timer&lt;/h1&gt;
+&lt;h2&gt;Event / Timer&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;AnimTimer&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;timer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;performWithDelay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PAnimate&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;timer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cancel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;AnimTimer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;Network&lt;/h1&gt;
+&lt;h2&gt;Network&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;networkListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;event&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isError&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
             &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;Network error!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -65,7 +62,7 @@ CA: Certificate Authority&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;locale&lt;/h1&gt;
+&lt;h2&gt;locale&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;ui.language&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;ui&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;language&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale.country&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;country&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale.identifier&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;identifier&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;))&lt;/span&gt;
@@ -92,30 +89,113 @@ CA: Certificate Authority&lt;/p&gt;
 
 
 &lt;p&gt;在iPad上測試: locale.* 不管語系怎麼設定, 都會是zh_TW (綁帳號?),&lt;/p&gt;
-&lt;h1&gt;Setting&lt;/h1&gt;
+&lt;h2&gt;Setting&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://docs.coronalabs.com/guide/basics/configSettings/"&gt;Corona Docs: guide &amp;gt; basics &amp;gt; configSettings&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;scale&lt;/h2&gt;
+&lt;p&gt;scale:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;letterbox: 等比例縮放, 把所有內容放入screen內, 所以會有"空白"跑出來, 可以用大一點的背景圖填滿&lt;/li&gt;
 &lt;li&gt;zoomEven: 等比例縮放, 內容可能會"凸"出去&lt;/li&gt;
-&lt;li&gt;zoomStretch: 適應螢幕大小縮放, 比例會跑掉&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zoomStretch: 適應螢幕大小縮放, 比例會跑掉&lt;/p&gt;
+&lt;p&gt;:::lua
+display.screenOriginX
+width = 320
+height = 480
+-- letterbox時, 到iPad上會左右多出20, display.screenOriginX = -20
+-- 座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;display.screenOriginX&lt;/p&gt;
-&lt;p&gt;width = 320&lt;/p&gt;
-&lt;p&gt;height = 480&lt;/p&gt;
-&lt;p&gt;letterbox時, 到iPad上會左右多出20, display.screenOriginX = -20&lt;/p&gt;
-&lt;p&gt;座標x會以實際上20的地方當起始0。所以如果用預設中間對齊，就不用調整。&lt;/p&gt;
-&lt;h1&gt;corona API&lt;/h1&gt;
-&lt;h2&gt;Composer / Storyboard&lt;/h2&gt;
+&lt;h2&gt;update API&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://coronalabs.com/blog/2014/06/03/tutorial-understanding-the-composer-api/"&gt;Tutorial: Understanding the Composer API | Corona Labs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://coronalabs.com/blog/2013/10/15/tutorial-anchor-points-in-graphics-2-0/"&gt;Tutorial: Anchor Points in Graphics 2.0 | Corona Labs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Libraries&lt;/h1&gt;
+&lt;h1&gt;Snippets&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;存檔 https://github.com/SatheeshJM/Lua-Preference-Library&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>裝置</title><link href="http://blog.suhen.org/computer/mobile_develop.html" rel="alternate"></link><updated>2014-02-17T13:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-17:computer/mobile_develop.html</id><summary type="html">&lt;h1&gt;iOS&lt;/h1&gt;
+&lt;li&gt;整理常用 https://github.com/moogoo78/qll-corona-toolkit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Best Practice&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;native.newTextField&lt;/strong&gt; 字體大小在 Android 會變大, 所以遇到 Android 要縮小一點 (textfield 高度也提高)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="n"&gt;isAndroid&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;Android&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getInfo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;platformName&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="n"&gt;inputFontSize&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;18&lt;/span&gt;
+&lt;span class="n"&gt;tHeight&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;30&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;isAndroid&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+&lt;span class="c1"&gt;-- Android text fields have more chrome. It&amp;#39;s either make them bigger, or make the font smaller.&lt;/span&gt;
+    &lt;span class="n"&gt;inputFontSize&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;
+    &lt;span class="n"&gt;tHeight&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;40&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;defaultField&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;native&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;newTextField&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;30&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;180&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;tHeight&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;defaultField&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;font&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;native&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;newFont&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;native&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;systemFontBold&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;inputFontSize&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;串接facebook&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;facebook app id
+   先到developers.facebook.com產生一個app，取得app id&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;設定&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Android
+  keyhash - 如果是android的話，需要產生keyhash，回填到developers.facebook.com的app&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;可以用corona sdk提供的debug.keystore&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;/Applications/CoronaSDK/Resource Library/Android/debug.keystore
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在mac上用JavaVM提供的keytool指令，產生android的keyhash&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;如果keyhash有問題的話，可以在裝置上看debug log，會出現:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Key hash [這一串是keyhash] does not match any stored key hashes.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;也可以拿來回填~&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;補充&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# 列出alias
+keytool -list -keystore foo.keystore
+# 產生keystore
+keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;iOS&lt;/h2&gt;
+&lt;p&gt;build.settings:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;settings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+   &lt;span class="n"&gt;iphone&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+   &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="n"&gt;plist&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+      &lt;span class="p"&gt;{&lt;/span&gt;
+         &lt;span class="n"&gt;UIApplicationExitsOnSuspend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+         &lt;span class="n"&gt;FacebookAppID&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;934738748374738&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+         &lt;span class="n"&gt;CFBundleURLTypes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+         &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="p"&gt;{&lt;/span&gt;
+               &lt;span class="n"&gt;CFBundleURLSchemes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+               &lt;span class="p"&gt;{&lt;/span&gt;
+                  &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;fb934738748374738&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+               &lt;span class="p"&gt;}&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+         &lt;span class="p"&gt;}&lt;/span&gt;
+      &lt;span class="p"&gt;},&lt;/span&gt;
+   &lt;span class="p"&gt;},&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://coronalabs.com/blog/2013/07/30/understanding-facebook-authentication/"&gt;Understanding Facebook Authentication | Corona Labs&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>裝置</title><link href="http://blog.suhen.org/computer/mobile_develop.html" rel="alternate"></link><updated>2014-02-17T13:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-17:computer/mobile_develop.html</id><summary type="html">&lt;h1&gt;iOS&lt;/h1&gt;
 &lt;p&gt;AppStore link 規範 &lt;a href="https://developer.apple.com/library/ios/qa/qa1633/_index.html"&gt;Technical Q&amp;amp;A QA1633: Creating easy-to-read short links to the App Store for your apps and company&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Android&lt;/h1&gt;
 &lt;p&gt;Android
@@ -426,68 +506,7 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;a href="https://racingtadpole.com/blog/django-aws-eb-s3/"&gt;Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole&lt;/a&gt;&lt;/p&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>Corona SDK串接Facebook</title><link href="http://blog.suhen.org/computer/corona_sdk_facebook.html" rel="alternate"></link><updated>2013-11-07T20:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-07:computer/corona_sdk_facebook.html</id><summary type="html">&lt;p&gt;Corona SDK提供了&lt;a href="http://docs.coronalabs.com/api/library/facebook/index.html"&gt;facebook API&lt;/a&gt;可以很方便的跟facebook串接。&lt;/p&gt;
-&lt;h1&gt;1. facebook app id&lt;/h1&gt;
-&lt;p&gt;先到developers.facebook.com產生一個app，取得app id&lt;/p&gt;
-&lt;h1&gt;2. 設定&lt;/h1&gt;
-&lt;h2&gt;Android&lt;/h2&gt;
-&lt;h3&gt;keyhash&lt;/h3&gt;
-&lt;p&gt;如果是android的話，需要產生keyhash，回填到developers.facebook.com的app&lt;/p&gt;
-&lt;p&gt;可以用corona sdk提供的debug.keystore&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/Applications/CoronaSDK/Resource Library/Android/debug.keystore
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;在mac上用JavaVM提供的keytool指令，產生android的keyhash&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/keytool -exportcert -alias androiddebugkey -keystore /path/to/debug.keystore | openssl sha1 -binary | openssl base64
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;如果keyhash有問題的話，可以在裝置上看debug log，會出現:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;Key hash [這一串是keyhash] does not match any stored key hashes.
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;也可以拿來回填~&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;補充&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# 列出alias
-keytool -list -keystore foo.keystore
-# 產生keystore
-keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -validity 999999
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h3&gt;class name&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;com.ansca.corona.CoronaActivity
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h2&gt;iOS&lt;/h2&gt;
-&lt;p&gt;build.settings:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;settings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-   &lt;span class="n"&gt;iphone&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
-   &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="n"&gt;plist&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
-      &lt;span class="p"&gt;{&lt;/span&gt;
-         &lt;span class="n"&gt;UIApplicationExitsOnSuspend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-         &lt;span class="n"&gt;FacebookAppID&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;934738748374738&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-         &lt;span class="n"&gt;CFBundleURLTypes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
-         &lt;span class="p"&gt;{&lt;/span&gt;
-            &lt;span class="p"&gt;{&lt;/span&gt;
-               &lt;span class="n"&gt;CFBundleURLSchemes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
-               &lt;span class="p"&gt;{&lt;/span&gt;
-                  &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;fb934738748374738&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-               &lt;span class="p"&gt;}&lt;/span&gt;
-            &lt;span class="p"&gt;}&lt;/span&gt;
-         &lt;span class="p"&gt;}&lt;/span&gt;
-      &lt;span class="p"&gt;},&lt;/span&gt;
-   &lt;span class="p"&gt;},&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;&lt;a href="http://coronalabs.com/blog/2013/07/30/understanding-facebook-authentication/"&gt;Understanding Facebook Authentication | Corona Labs&lt;/a&gt;&lt;/p&gt;</summary><category term="corona_sdk"></category><category term="facebook"></category></entry><entry><title>[Mac] 從Leopard升級到Mavericks</title><link href="http://blog.suhen.org/computer/mac_leopard_mavericks.html" rel="alternate"></link><updated>2013-11-02T00:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-02:computer/mac_leopard_mavericks.html</id><summary type="html">&lt;p&gt;家裡一台很舊的iMac，作業系統跑Leopard (OS X 10.5.8)，很多軟體都不支援如 LINE桌面版... ，或是連Chrome都不更新了，倒是Firefox還很照顧這些老電腦...&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://racingtadpole.com/blog/django-aws-eb-s3/"&gt;Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole&lt;/a&gt;&lt;/p&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>[Mac] 從Leopard升級到Mavericks</title><link href="http://blog.suhen.org/computer/mac_leopard_mavericks.html" rel="alternate"></link><updated>2013-11-02T00:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-02:computer/mac_leopard_mavericks.html</id><summary type="html">&lt;p&gt;家裡一台很舊的iMac，作業系統跑Leopard (OS X 10.5.8)，很多軟體都不支援如 LINE桌面版... ，或是連Chrome都不更新了，倒是Firefox還很照顧這些老電腦...&lt;/p&gt;
 &lt;p&gt;最近Mavericks開放免費更新，我的MacBook Air (Lion) 免費升級新的Mavericks後，覺得很好用，實在也很想更新這台iMac，Leopard一般是無法直接升級到Mavericks的，除非花一點錢，先升級成Snow Leopard (OS X 10.6)，才可以免費升級到Mavericks。但是網路上果然有解決方法！！&lt;/p&gt;
 &lt;p&gt;參考這篇: &lt;a href="http://www.macworld.com/article/2056564/how-to-install-mavericks-over-leopard.html"&gt;How to install Mavericks over Leopard | Macworld&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;1. 下載Mavericks&lt;/h1&gt;
@@ -694,67 +713,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://lua-users.org/wiki/MathLibraryTutorial"&gt;lua-users wiki: Math Library Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>[snippet] Corona SDK 顯示各種資訊</title><link href="http://blog.suhen.org/computer/corona_sdk_info.html" rel="alternate"></link><updated>2013-10-01T10:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-01:computer/corona_sdk_info.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;info&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;========= display info =========&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;pixel: %dx%d, ratio: %.02f&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                        &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pixelWidth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                        &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pixelHeight&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                        &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pixelHeight&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pixelWidth&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;content: %dx%d, ratio: %.02f&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                        &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contentWidth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                        &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contentHeight&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                        &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contentHeight&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contentWidth&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;actual: %dx%d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                        &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;actualContentWidth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                        &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;actualContentHeight&lt;/span&gt;
-                        &lt;span class="p"&gt;))&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;scale: (%.02f, %.02f)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                         &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contentScaleX&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                         &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contentScaleY&lt;/span&gt;
-                        &lt;span class="p"&gt;))&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;origin: (%d, %d)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                         &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;screenOriginX&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                         &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;screenOriginY&lt;/span&gt;
-                        &lt;span class="p"&gt;))&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;-------- system.getInfo --------&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="n"&gt;prop&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;model&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;platformName&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;platformVersion&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;environment&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;architectureInfo&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;build&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;appname&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;appVersionString&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;deviceID&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;maxTexturueSize&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;maxTextureUnits&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;textureMemoryUsed&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;targetAppStore&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;iosAdvertisingIdentifier&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;iosAdvertisingTrackingEnabled&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;iosIdentifierForVendor&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;androidDisplayApproximateDpi&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;androidDisplayDensityName&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;androidDisplayXDpi&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;androidDisplayYDpi&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;pairs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;prop&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
-        &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;%s: %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getInfo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;nil&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-    &lt;span class="k"&gt;end&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;--------- language ----------&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale.country: %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                        &lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;country&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;)))&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale.idettifier: %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                        &lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;identifier&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;)))&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale.language: %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                        &lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;locale&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;language&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;)))&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;string.format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;ui.language: %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                        &lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getPreference&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;ui&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;language&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;)))&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;===============================&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="snippet"></category><category term="corona_sdk"></category></entry><entry><title>強大的Emacs Macro 巨集</title><link href="http://blog.suhen.org/computer/emacs_macro.html" rel="alternate"></link><updated>2013-08-30T12:06:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-30:computer/emacs_macro.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;/ul&gt;</summary></entry><entry><title>強大的Emacs Macro 巨集</title><link href="http://blog.suhen.org/computer/emacs_macro.html" rel="alternate"></link><updated>2013-08-30T12:06:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-30:computer/emacs_macro.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;基本操作&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C-x&lt;/span&gt; (&lt;/tt&gt; 開始錄製&lt;/li&gt;
