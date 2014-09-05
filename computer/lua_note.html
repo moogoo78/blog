@@ -226,6 +226,13 @@
 <ul>
 <li><a href="http://lua-users.org/wiki/MathLibraryTutorial">lua-users wiki: Math Library Tutorial</a></li>
 </ul>
+<h2>socket</h2>
+<div class="highlight"><pre><span class="c1">-- load url module</span>
+<span class="n">url</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">socket.url&quot;</span><span class="p">)</span>
+
+<span class="n">code</span> <span class="o">=</span> <span class="n">url</span><span class="p">.</span><span class="n">escape</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">/#?;&quot;</span><span class="p">)</span>
+<span class="c1">-- code = &quot;%2f%23%3f%3b&quot;</span>
+</pre></div>
     </div><!-- /.entry-content -->
     <div class="comments">
       <h2>Comments !</h2>

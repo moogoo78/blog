@@ -714,7 +714,14 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://lua-users.org/wiki/MathLibraryTutorial"&gt;lua-users wiki: Math Library Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>強大的Emacs Macro 巨集</title><link href="http://blog.suhen.org/computer/emacs_macro.html" rel="alternate"></link><updated>2013-08-30T12:06:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-30:computer/emacs_macro.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;/ul&gt;
+&lt;h2&gt;socket&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;-- load url module&lt;/span&gt;
+&lt;span class="n"&gt;url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;socket.url&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;code&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;escape&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;/#?;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;-- code = &amp;quot;%2f%23%3f%3b&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>強大的Emacs Macro 巨集</title><link href="http://blog.suhen.org/computer/emacs_macro.html" rel="alternate"></link><updated>2013-08-30T12:06:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-08-30:computer/emacs_macro.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;基本操作&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;C-x&lt;/span&gt; (&lt;/tt&gt; 開始錄製&lt;/li&gt;
