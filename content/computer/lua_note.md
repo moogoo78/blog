@@ -194,3 +194,13 @@ Lua是很活的語言, 另外還可以用很多不同方式實現, 有興趣的�
 
 
 * [lua-users wiki: Math Library Tutorial](http://lua-users.org/wiki/MathLibraryTutorial)
+
+
+## socket
+
+    :::lua
+    -- load url module
+    url = require("socket.url")
+
+    code = url.escape("/#?;")
+    -- code = "%2f%23%3f%3b"
