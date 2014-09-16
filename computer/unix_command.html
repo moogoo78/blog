@@ -140,7 +140,35 @@ $ cat test.txt | iconv -f utf-8 -t big5
 </div>
 <div class="section" id="utils">
 <h2>工具 utils</h2>
-<p>壓縮/解壓縮 compress/depress:</p>
+<div class="section" id="grep">
+<h3>grep</h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">-i:</th><td class="field-body">忽略大小寫</td>
+</tr>
+<tr class="field"><th class="field-name">-n:</th><td class="field-body">輸出行號</td>
+</tr>
+<tr class="field"><th class="field-name">-c:</th><td class="field-body">計算次數</td>
+</tr>
+<tr class="field"><th class="field-name">-a:</th><td class="field-body">binary 檔用 text 檔案</td>
+</tr>
+<tr class="field"><th class="field-name">-A:</th><td class="field-body">顯示後幾行 (after)</td>
+</tr>
+<tr class="field"><th class="field-name">-B:</th><td class="field-body">顯示前幾行 (before)</td>
+</tr>
+<tr class="field"><th class="field-name">-C:</th><td class="field-body">顯示前後幾行</td>
+</tr>
+<tr class="field"><th class="field-name">-v:</th><td class="field-body">--invert-match</td>
+</tr>
+<tr class="field"><th class="field-name">-V:</th><td class="field-body">version</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="compress-depress">
+<h3>壓縮/解壓縮 compress/depress</h3>
 <pre class="literal-block">
 ## tar
 # compress (tar 打包, zip壓縮)
@@ -156,6 +184,7 @@ $ bzip2 foo # 會把 foo 變成 foo.bz2
 $ bzip2 -d foo.bz2 # 把 foo.bz2 變 foo
 </pre>
 <p>bzip2 的壓縮率比較大, 運算時間長</p>
+</div>
 <div class="section" id="id4">
 <h3>編輯</h3>
 <ul class="simple">
