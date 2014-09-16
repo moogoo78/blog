@@ -1,8 +1,16 @@
-Title: [Mac] 從Leopard升級到Mavericks
+Title: Mac 系統問題
 Date: 2013-11-02 00:46
 Category: computer
 Tags: note
 Slug: mac_leopard_mavericks
+
+# 無法格式化 500 GB 或更大的磁碟
+
+無法寫入設備上最後的區塊
+
+[磁碟工具程式：無法格式化 500 GB 或更大的磁碟](http://support.apple.com/kb/TS2644?viewlocale=zh_TW&locale=zh_TW)
+
+# 從Leopard升級到Mavericks
 
 家裡一台很舊的iMac，作業系統跑Leopard (OS X 10.5.8)，很多軟體都不支援如 LINE桌面版... ，或是連Chrome都不更新了，倒是Firefox還很照顧這些老電腦...
 
@@ -12,7 +20,7 @@ Slug: mac_leopard_mavericks
 
 
 
-# 1. 下載Mavericks
+## 1. 下載Mavericks
 
 我的MacBook Air已經更新10.9了，但還是可以再下載。
 
@@ -24,7 +32,7 @@ Slug: mac_leopard_mavericks
 
 然後到iTunes Mavericks官方頁面[Mavericks](https://itunes.apple.com/tw/app/id675248567?mt=12)就可以"重新"下載了。下載完的檔案會放在 */Applications/Install\ OS\ X\ Mavericks.app*，大概有5G多，iTunes載完會自動跳出安裝視窗，但是先不理他，可以把這個目錄copy到其他地方，不然系統以為安裝完後就會自動殺掉。
 
-# 2. 製作開機磁碟
+## 2. 製作開機磁碟
 
 用Terminal打入以下:
 
@@ -36,7 +44,7 @@ Slug: mac_leopard_mavericks
 ref: [How to make a bootable Mavericks install drive | Macworld](http://www.macworld.com/article/2056561/how-to-make-a-bootable-mavericks-install-drive.html)
 
 
-# 3. 安裝
+## 3. 安裝
 
 改系統檔(不確定這是不是一定要):
 

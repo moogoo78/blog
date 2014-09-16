@@ -107,7 +107,25 @@ coding convert::
 工具 utils
 ================
 
-壓縮/解壓縮 compress/depress::
+grep
+-------
+
+:-i: 忽略大小寫
+:-n: 輸出行號
+:-c: 計算次數
+:-a: binary 檔用 text 檔案
+:-A: 顯示後幾行 (after)
+:-B: 顯示前幾行 (before)
+:-C: 顯示前後幾行
+:-v: --invert-match
+:-V: version
+
+
+壓縮/解壓縮 compress/depress
+------------------------------
+
+
+::
 
   ## tar
   # compress (tar 打包, zip壓縮)
