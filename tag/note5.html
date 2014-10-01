@@ -36,6 +36,45 @@
                     <ol id="posts-list" class="hfeed" start="9">
             <li><article class="hentry">    
                 <header>
+                    <h1><a href="../computer/emacs_newline.html" rel="bookmark"
+                           title="Permalink to [computer] Emacs輸入newline符號">[computer] Emacs輸入newline符號</a></h1>
+                </header>
+                
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-06-27T11:32:00">
+                四 27 6月 2013
+        </abbr>
+
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/emacs.html">emacs</a><a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>Emacs的換行:</p>
+<pre class="literal-block">
+C-q C-j
+</pre>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last"><cite>C-q</cite>: quoted-insert, <cite>C-j</cite>: newline</p>
+</div>
+<p>但是我的 <cite>C-q</cite> 和 <cite>C-j</cite> 為了使用dvorak layout, 改成cut &amp; paste:</p>
+<pre class="literal-block">
+(global-set-key (kbd &quot;C-q&quot;) 'kill-region) ; cut
+(global-set-key (kbd &quot;C-j&quot;) 'kill-ring-save) ; paste
+</pre>
+<p>因此把沒用到的 <cite>C-`</cite> 跟 <cite>C-,</cite> 拿來做key-translate:</p>
+<pre class="literal-block">
+(define-key key-translation-map (kbd &quot;C-q&quot;) (kbd &quot;C-'&quot;))
+(define-key key-translation-map (kbd &quot;C-'&quot;) (kbd &quot;C-q&quot;))
+(define-key key-translation-map (kbd &quot;C-j&quot;) (kbd &quot;C-,&quot;))
+(define-key ...</pre>
+                <a class="readmore" href="../computer/emacs_newline.html">read more</a>
+<p>There are <a href="../computer/emacs_newline.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+ 
+            <li><article class="hentry">    
+                <header>
                     <h1><a href="../computer/emacs_replace-regexp.rst.html" rel="bookmark"
                            title="Permalink to [computer] 善用Emacs的replace-regexp">[computer] 善用Emacs的replace-regexp</a></h1>
                 </header>
