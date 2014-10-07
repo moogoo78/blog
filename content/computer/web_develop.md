@@ -95,7 +95,7 @@ css:
 ### color
 
 * [NIPPON COLORS - 日本の伝統色](http://nipponcolors.com/) (Firefox有問題)
-
+* [Spectral](http://jxnblk.github.io/Spectral/) 找色/配色工具 (快速簡潔)
 ### Font
 
 * [WhatFont Tool - The easiest way to inspect fonts in webpages « Chengyin Liu](http://chengyinliu.com/whatfont.html) 方便看網頁字體的bookmarklet

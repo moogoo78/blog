@@ -139,6 +139,16 @@ http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cron
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
 https://github.com/adamcrosby/elastic-flask-baseline
 
+# commend
+
+    :::bash
+    $ eb --version
+    $ eb --help
+    $ eb status --verbose
+    $ eb logs
+
+* [Deploying a Git Branch to a Specific Environment - AWS Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-reference-branch-environment.html)
+
 # note
 
 * http session -> 用stateless (access token)
