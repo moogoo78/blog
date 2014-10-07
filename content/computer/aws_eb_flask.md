@@ -9,7 +9,7 @@ Slug: aws_elastic_beanstalk_flask
 
 下載: [AWS Elastic Beanstalk Command Line Tool : Sample Code & Libraries : Amazon Web Services](http://aws.amazon.com/code/6752709412171743)
     
-   設定好路徑(以mac為例), 就可以開始了
+設定好路徑(以mac為例), 就可以開始了
 
     :::bash
     AWS-ElasticBeanstalk-CLI-2.5.1/eb/macosx/python2.7/eb
@@ -18,6 +18,10 @@ Slug: aws_elastic_beanstalk_flask
     AWSAccessKeyId=Write your AWS access ID
     AWSSecretKey=Write your AWS secret key
 
+或是
+    :::bash
+    brew install aws-elasticbeanstalk
+    
 ## 2. 準備部署
 
 ### WSGI
@@ -163,6 +167,18 @@ https://github.com/adamcrosby/elastic-flask-baseline
 * [Celery with Amazon SQS - Stack Overflow](http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs)
 * [Using Django and Celery with Amazon SQS](http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/)
 
+
+# EC2 環境
+    
+    :::text
+    # app 路徑
+    /opt/python/current/app
+    # stdout
+    /opt/python/log/httpd.out
+    # access_log
+    /var/log/httpd/access_log
+
+* [First impressions with Flask and Elastic Beanstalk - tushman.io](http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/)
 
 # 問題 / Problems
 
