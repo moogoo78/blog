@@ -2079,6 +2079,7 @@ What is it that stands higher than action?  Silence.
 &lt;h3&gt;color&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://nipponcolors.com/"&gt;NIPPON COLORS - 日本の伝統色&lt;/a&gt; (Firefox有問題)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jxnblk.github.io/Spectral/"&gt;Spectral&lt;/a&gt; 找色/配色工具 (快速簡潔)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Font&lt;/h3&gt;
 &lt;ul&gt;
@@ -2959,6 +2960,17 @@ eb status --verbose
 http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
 https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;
+&lt;h1&gt;commend&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;eb --version
+&lt;span class="nv"&gt;$ &lt;/span&gt;eb --help
+&lt;span class="nv"&gt;$ &lt;/span&gt;eb status --verbose
+&lt;span class="nv"&gt;$ &lt;/span&gt;eb logs
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-reference-branch-environment.html"&gt;Deploying a Git Branch to a Specific Environment - AWS Elastic Beanstalk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1&gt;note&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;http session -&amp;gt; 用stateless (access token)&lt;/li&gt;
