@@ -382,6 +382,9 @@ background-position:0-42px;
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;p&gt;或是
+    :::bash
+    brew install aws-elasticbeanstalk&lt;/p&gt;
 &lt;h2&gt;2. 準備部署&lt;/h2&gt;
 &lt;h3&gt;WSGI&lt;/h3&gt;
 &lt;p&gt;預設是application.py:application, 自己要改application.py名字失敗..&lt;/p&gt;
@@ -514,6 +517,19 @@ https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs"&gt;Celery with Amazon SQS - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/"&gt;Using Django and Celery with Amazon SQS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;EC2 環境&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# app 路徑
+/opt/python/current/app
+# stdout
+/opt/python/log/httpd.out
+# access_log
+/var/log/httpd/access_log
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/"&gt;First impressions with Flask and Elastic Beanstalk - tushman.io&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;問題 / Problems&lt;/h1&gt;
 &lt;ul&gt;

@@ -57,6 +57,9 @@
 </pre></div>
 
 
+<p>或是
+    :::bash
+    brew install aws-elasticbeanstalk</p>
 <h2>2. 準備部署</h2>
 <h3>WSGI</h3>
 <p>預設是application.py:application, 自己要改application.py名字失敗..</p>
@@ -189,6 +192,19 @@ https://github.com/adamcrosby/elastic-flask-baseline</p>
 <ul>
 <li><a href="http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs">Celery with Amazon SQS - Stack Overflow</a></li>
 <li><a href="http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/">Using Django and Celery with Amazon SQS</a></li>
+</ul>
+<h1>EC2 環境</h1>
+<div class="highlight"><pre># app 路徑
+/opt/python/current/app
+# stdout
+/opt/python/log/httpd.out
+# access_log
+/var/log/httpd/access_log
+</pre></div>
+
+
+<ul>
+<li><a href="http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/">First impressions with Flask and Elastic Beanstalk - tushman.io</a></li>
 </ul>
 <h1>問題 / Problems</h1>
 <ul>
