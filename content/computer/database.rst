@@ -2,8 +2,8 @@ Database筆記 (MySQL, SQLite)
 #####################################
 :date: 2013-05-09 18:23
 :category: computer
-:tags: docs, mysql, sqlite
-:slug: database_docs
+:tags: manual
+:slug: database_manual
 
 
 
@@ -399,6 +399,7 @@ Sqlite
   .tables  # MySQL的show tables
   .schema TABLENAME
   .help
+  .quit
 
 
 ref
