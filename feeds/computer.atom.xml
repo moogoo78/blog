@@ -1424,7 +1424,7 @@ alt + 數字
 &lt;p&gt;但是Mac的Alt會變成輸入特殊字, 用iTerm的話, 可以如以下設定:&lt;/p&gt;
 &lt;p&gt;Bookmarks -&amp;gt; Manage Profiles -&amp;gt; Keyboard Profiles -&amp;gt; Global, 點選&amp;quot;Option Key as +Esc&amp;quot;&lt;/p&gt;
 &lt;p&gt;參考連結: &lt;a class="reference external" href="http://lzy-blah.blogspot.tw/2007/08/screen-irssi-irc-q.html"&gt;lzy's 543: 用 screen + irssi 上 irc 之鄉民版教學 (含Q&amp;amp;A)&lt;/a&gt;&lt;/p&gt;
-</summary><category term="note"></category></entry><entry><title>Database筆記 (MySQL, SQLite)</title><link href="http://blog.suhen.org/computer/database_docs.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-05-09:computer/database_docs.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
+</summary><category term="note"></category></entry><entry><title>Database筆記 (MySQL, SQLite)</title><link href="http://blog.suhen.org/computer/database_manual.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-05-09:computer/database_manual.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
 &lt;h2&gt;MySql&lt;/h2&gt;
 &lt;p&gt;Syntax&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;ALL&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;DISTINCT&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;DISTINCTROW&lt;/span&gt; &lt;span class="p"&gt;]&lt;/span&gt;
@@ -1802,6 +1802,7 @@ $ cat dumpfile.sql | sqlite3 new.db
 .tables  # MySQL的show tables
 .schema TABLENAME
 .help
+.quit
 &lt;/pre&gt;
 &lt;p&gt;ref&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -1841,7 +1842,7 @@ Engine
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;select&lt;/span&gt; &lt;span class="k"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="k"&gt;lower&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;substr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;english&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="k"&gt;c&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="n"&gt;words&lt;/span&gt; &lt;span class="k"&gt;group&lt;/span&gt; &lt;span class="k"&gt;by&lt;/span&gt; &lt;span class="k"&gt;c&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category><category term="mysql"></category><category term="sqlite"></category></entry><entry><title>Emacs 小抄</title><link href="http://blog.suhen.org/computer/emacs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-26:computer/emacs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
+</summary><category term="manual"></category></entry><entry><title>Emacs 小抄</title><link href="http://blog.suhen.org/computer/emacs.html" rel="alternate"></link><updated>2013-04-26T18:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-26:computer/emacs.html</id><summary type="html">&lt;div class="section" id="tips"&gt;
 &lt;h2&gt;Tips&lt;/h2&gt;
 &lt;p&gt;自動補齊:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;

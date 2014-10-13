@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>suhen suchen - mysql</title>
+        <title>suhen suchen - manual</title>
         <link rel="stylesheet" href="../theme/css/main.css">
         <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen Atom Feed" />
 
@@ -33,14 +33,14 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../computer/database_docs.html">Database筆記 (MySQL, SQLite)</a></h1> 
+                    <h1 class="entry-title"><a href="../computer/database_manual.html">Database筆記 (MySQL, SQLite)</a></h1> 
 <footer class="post-info">
         <abbr class="published" title="2013-05-09T18:23:00">
                 四 09 5月 2013
         </abbr>
 
 <p>In <a href="../category/computer.html">computer</a>. </p>
-<p>tags: <a href="../tag/docs.html">docs</a><a href="../tag/mysql.html">mysql</a><a href="../tag/sqlite.html">sqlite</a></p>
+<p>tags: <a href="../tag/manual.html">manual</a></p>
 </footer><!-- /.post-info --><div class="section" id="mysql">
 <h2>MySql</h2>
 <p>Syntax</p>
@@ -419,6 +419,7 @@ $ cat dumpfile.sql | sqlite3 new.db
 .tables  # MySQL的show tables
 .schema TABLENAME
 .help
+.quit
 </pre>
 <p>ref</p>
 <ul class="simple">
@@ -458,7 +459,7 @@ Engine
 <div class="highlight"><pre><span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="k">lower</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="n">english</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="k">as</span> <span class="k">c</span> <span class="k">from</span> <span class="n">words</span> <span class="k">group</span> <span class="k">by</span> <span class="k">c</span>
 </pre></div>
 </div>
-<p>There are <a href="../computer/database_docs.html#disqus_thread">comments</a>.</p>                </article>
+<p>There are <a href="../computer/database_manual.html#disqus_thread">comments</a>.</p>                </article>
 <p class="paginator">
     Page 1 / 1
 </p>

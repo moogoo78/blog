@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>suhen suchen - sqlite</title>
+        <title>Database筆記 (MySQL, SQLite)</title>
         <link rel="stylesheet" href="../theme/css/main.css">
         <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen Atom Feed" />
 
@@ -18,7 +18,7 @@
         <header id="banner" class="body">
                 <h1><a href="../">suhen suchen </a></h1>
                 <nav><ul>
-                <li ><a href="../category/computer.html">電腦</a></li>
+                <li class="active"><a href="../category/computer.html">電腦</a></li>
                 <li ><a href="../category/music.html">音樂</a></li>
                 <li ><a href="../category/run.html">跑步</a></li>
                 <li ><a href="../category/mountain.html">爬山</a></li>
@@ -29,19 +29,23 @@
                 <li ><a href="../category/misc.html">其他</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
-        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="../computer/database_manual.html" rel="bookmark"
+           title="Permalink to Database筆記 (MySQL, SQLite)">Database筆記 (MySQL, SQLite)</a></h1>
+    </header>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../computer/database_docs.html">Database筆記 (MySQL, SQLite)</a></h1> 
+    <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2013-05-09T18:23:00">
                 四 09 5月 2013
         </abbr>
 
 <p>In <a href="../category/computer.html">computer</a>. </p>
-<p>tags: <a href="../tag/docs.html">docs</a><a href="../tag/mysql.html">mysql</a><a href="../tag/sqlite.html">sqlite</a></p>
-</footer><!-- /.post-info --><div class="section" id="mysql">
+<p>tags: <a href="../tag/manual.html">manual</a></p>
+</footer><!-- /.post-info -->      <div class="section" id="mysql">
 <h2>MySql</h2>
 <p>Syntax</p>
 <div class="highlight"><pre><span class="p">[</span><span class="k">ALL</span> <span class="o">|</span> <span class="k">DISTINCT</span> <span class="o">|</span> <span class="n">DISTINCTROW</span> <span class="p">]</span>
@@ -419,6 +423,7 @@ $ cat dumpfile.sql | sqlite3 new.db
 .tables  # MySQL的show tables
 .schema TABLENAME
 .help
+.quit
 </pre>
 <p>ref</p>
 <ul class="simple">
@@ -458,15 +463,24 @@ Engine
 <div class="highlight"><pre><span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="k">lower</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="n">english</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="k">as</span> <span class="k">c</span> <span class="k">from</span> <span class="n">words</span> <span class="k">group</span> <span class="k">by</span> <span class="k">c</span>
 </pre></div>
 </div>
-<p>There are <a href="../computer/database_docs.html#disqus_thread">comments</a>.</p>                </article>
-<p class="paginator">
-    Page 1 / 1
-</p>
-            </aside><!-- /#featured -->
 
-            </ol><!-- /#posts-list -->
-            </section><!-- /#content -->
+    </div><!-- /.entry-content -->
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "computer/database_manual.html";
+        var disqus_url = "../computer/database_manual.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://suhenorg.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
 
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>

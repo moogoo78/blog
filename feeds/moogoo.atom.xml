@@ -6975,7 +6975,7 @@ alt + 數字
 &lt;li&gt;&lt;a class="reference external" href="http://ja.wikipedia.org/wiki/%E5%B1%B1%E5%86%85%E7%9B%9B%E5%BD%AC"&gt;山内盛彬 - Wikipedia&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://rekioakiaki.cocolog-nifty.com/blog/2012/09/post-9a16.html"&gt;歌碑のある風景、県民を鼓舞した「ヒヤミカチ節」: レキオ・島唄アッチャー&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</summary><category term="經典翻唱"></category></entry><entry><title>Database筆記 (MySQL, SQLite)</title><link href="http://blog.suhen.org/computer/database_docs.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-05-09:computer/database_docs.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
+</summary><category term="經典翻唱"></category></entry><entry><title>Database筆記 (MySQL, SQLite)</title><link href="http://blog.suhen.org/computer/database_manual.html" rel="alternate"></link><updated>2013-05-09T18:23:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-05-09:computer/database_manual.html</id><summary type="html">&lt;div class="section" id="mysql"&gt;
 &lt;h2&gt;MySql&lt;/h2&gt;
 &lt;p&gt;Syntax&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="k"&gt;ALL&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;DISTINCT&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;DISTINCTROW&lt;/span&gt; &lt;span class="p"&gt;]&lt;/span&gt;
@@ -7353,6 +7353,7 @@ $ cat dumpfile.sql | sqlite3 new.db
 .tables  # MySQL的show tables
 .schema TABLENAME
 .help
+.quit
 &lt;/pre&gt;
 &lt;p&gt;ref&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -7392,7 +7393,7 @@ Engine
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;select&lt;/span&gt; &lt;span class="k"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="k"&gt;lower&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;substr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;english&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="k"&gt;c&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="n"&gt;words&lt;/span&gt; &lt;span class="k"&gt;group&lt;/span&gt; &lt;span class="k"&gt;by&lt;/span&gt; &lt;span class="k"&gt;c&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="docs"></category><category term="mysql"></category><category term="sqlite"></category></entry><entry><title>各地區德語不同處</title><link href="http://blog.suhen.org/language/woerter_unterschiedlich.html" rel="alternate"></link><updated>2013-05-04T02:44:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-05-04:language/woerter_unterschiedlich.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+</summary><category term="manual"></category></entry><entry><title>各地區德語不同處</title><link href="http://blog.suhen.org/language/woerter_unterschiedlich.html" rel="alternate"></link><updated>2013-05-04T02:44:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-05-04:language/woerter_unterschiedlich.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;南北不同&lt;/h2&gt;
 &lt;p&gt;通常分成北德/Norddeutschland, 和拜仁/Bayern, 奧地利/Österreichers和瑞士人Schweizers (Schwyzerdütsch)&lt;/p&gt;
 &lt;table border="1" class="docutils"&gt;
