@@ -17,6 +17,12 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.adventuresofanentrepreneur.net/creating-a-mobile-appsgames-company/setting-up-aws-sns-to-send-push-notifications-to-ios-devices"&gt;Setting up AWS SNS to send Push notifications to iOS devices - Adventures of an Entrepreneur&lt;/a&gt; - AWS, SNS 的設定步驟&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;用 AWS SNS 發送到 GCM 的步驟:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Google API 管理界面 (https://console.developers.google.com) 產生一個 project, 從 project create 一個 API KEY (for server)&lt;/li&gt;
+&lt;li&gt;用這個 key 到 SNS 界面產生一個 Apps&lt;/li&gt;
+&lt;li&gt;google project id, 填到 config.lua (CoronaSDK)&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;測試:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;GCM 的 token 亂給也可以加到 SNS 的 endpoint, 如果 APNS 的話 token 亂給 boto 會收到 400 的錯誤&lt;/li&gt;
