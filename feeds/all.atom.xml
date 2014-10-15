@@ -1,5 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-10-08T02:55:00+08:00</updated><entry><title>[Deutsch] 必備單字</title><link href="http://blog.suhen.org/language/deutsch_wort.html" rel="alternate"></link><updated>2014-10-08T02:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-10-08:language/deutsch_wort.html</id><summary type="html">&lt;ul&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-10-15T12:45:00+08:00</updated><entry><title>[電腦] 初學 Vagrant</title><link href="http://blog.suhen.org/computer/vagrant.html" rel="alternate"></link><updated>2014-10-15T12:45:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-10-15:computer/vagrant.html</id><summary type="html">&lt;h1&gt;QuickStart&lt;/h1&gt;
+&lt;p&gt;設定檔 Vagrantfile (init 後產生, Ruby synctax)&lt;/p&gt;
+&lt;p&gt;快速:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant init chef/centos-6.5
+&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant up
+&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant ssh
+
+&lt;span class="c"&gt;# box 另外裝 centos&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant box add chef/centos-6.5
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;要改 Vagrantfile:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Vagrant.configure(&amp;quot;2&amp;quot;) do |config|
+    config.vm.box = &amp;quot;chef/centos-6.5&amp;quot;
+    config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 5000, host: 8080 # host 的 127.0.0.1:8080 會連到 guest 的 port 5000
+end
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;其他commend:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="n"&gt;vagrant&lt;/span&gt; &lt;span class="n"&gt;reload&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;vagrant&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;ssh 進入, 開始弄環境&lt;/h1&gt;
+&lt;p&gt;python version:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Python 2.6.6 (r266:84292, Nov 22 2013, 12:16:22) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-4)] on linux2
+
+:::bash
+# 系統
+$ yum update
+$ sudo yum install git vim # tools
+$ sudo yum install gcc mysql-python mysql-devel python-devel # for mysql-python
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;python 開發::&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//bootstrap.pypa.io/get-pip.py&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pip&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;virtualenv&lt;/span&gt; &lt;span class="n"&gt;virtualenvwrapper&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;加到 .bashrc&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/bin/virtualenvwrapper.sh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;記得加完後, sourec .bashrc&lt;/p&gt;
+&lt;h1&gt;flask&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;設定成&lt;/span&gt; &lt;span class="n"&gt;external&lt;/span&gt; &lt;span class="err"&gt;可連&lt;/span&gt;
+&lt;span class="o"&gt;:::&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;host&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="mf"&gt;0.0.0.0&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="note"></category></entry><entry><title>[Deutsch] 必備單字</title><link href="http://blog.suhen.org/language/deutsch_wort.html" rel="alternate"></link><updated>2014-10-08T02:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-10-08:language/deutsch_wort.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Ein Tag: Der Morgen, Der Vormittag, der Mittag, der Nachmittag, der Abend, die Nacht&lt;/li&gt;
 &lt;li&gt;eine Woche: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Sonnabend (Samstag: West- und Süddeutschland), Sonntag.&lt;/li&gt;
 &lt;li&gt;ein Jahr: Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember&lt;/li&gt;

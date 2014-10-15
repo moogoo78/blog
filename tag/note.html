@@ -33,7 +33,89 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../language/deutsch_wort.html">[Deutsch] 必備單字</a></h1> 
+                    <h1 class="entry-title"><a href="../computer/vagrant.html">[電腦] 初學 Vagrant</a></h1> 
+<footer class="post-info">
+        <abbr class="published" title="2014-10-15T12:45:00">
+                三 15 10月 2014
+        </abbr>
+
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info --><h1>QuickStart</h1>
+<p>設定檔 Vagrantfile (init 後產生, Ruby synctax)</p>
+<p>快速:</p>
+<div class="highlight"><pre><span class="nv">$ </span>vagrant init chef/centos-6.5
+<span class="nv">$ </span>vagrant up
+<span class="nv">$ </span>vagrant ssh
+
+<span class="c"># box 另外裝 centos</span>
+<span class="nv">$ </span>vagrant box add chef/centos-6.5
+</pre></div>
+
+
+<p>要改 Vagrantfile:</p>
+<div class="highlight"><pre>Vagrant.configure(&quot;2&quot;) do |config|
+    config.vm.box = &quot;chef/centos-6.5&quot;
+    config.vm.network &quot;forwarded_port&quot;, guest: 5000, host: 8080 # host 的 127.0.0.1:8080 會連到 guest 的 port 5000
+end
+</pre></div>
+
+
+<p>其他commend:</p>
+<div class="highlight"><pre><span class="mi">4</span> <span class="n">vagrant</span> <span class="n">reload</span>
+<span class="err">$</span> <span class="n">vagrant</span> <span class="n">list</span>
+</pre></div>
+
+
+<h1>ssh 進入, 開始弄環境</h1>
+<p>python version:</p>
+<div class="highlight"><pre>Python 2.6.6 (r266:84292, Nov 22 2013, 12:16:22) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-4)] on linux2
+
+:::bash
+# 系統
+$ yum update
+$ sudo yum install git vim # tools
+$ sudo yum install gcc mysql-python mysql-devel python-devel # for mysql-python
+</pre></div>
+
+
+<p>python 開發::</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">wget</span> <span class="n">https</span><span class="o">:</span><span class="c1">//bootstrap.pypa.io/get-pip.py</span>
+<span class="err">$</span> <span class="n">sudo</span> <span class="n">python</span> <span class="n">get</span><span class="o">-</span><span class="n">pip</span><span class="p">.</span><span class="n">py</span>
+<span class="err">$</span> <span class="n">sudo</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">virtualenv</span> <span class="n">virtualenvwrapper</span>
+</pre></div>
+
+
+<p>加到 .bashrc</p>
+<div class="highlight"><pre>export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/bin/virtualenvwrapper.sh
+</pre></div>
+
+
+<p>記得加完後, sourec .bashrc</p>
+<h1>flask</h1>
+<div class="highlight"><pre><span class="err">設定成</span> <span class="n">external</span> <span class="err">可連</span>
+<span class="o">:::</span> <span class="n">python</span>
+<span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="err">&#39;</span><span class="mf">0.0.0.0</span><span class="err">&#39;</span><span class="p">)</span>
+</pre></div><p>There are <a href="../computer/vagrant.html#disqus_thread">comments</a>.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+        
+
+ 
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="../language/deutsch_wort.html" rel="bookmark"
+                           title="Permalink to [Deutsch] 必備單字">[Deutsch] 必備單字</a></h1>
+                </header>
+                
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2014-10-08T02:55:00">
                 三 08 10月 2014
@@ -41,18 +123,15 @@
 
 <p>In <a href="../category/language.html">language</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info --><ul>
+</footer><!-- /.post-info -->                <ul>
 <li>Ein Tag: Der Morgen, Der Vormittag, der Mittag, der Nachmittag, der Abend, die Nacht</li>
 <li>eine Woche: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Sonnabend (Samstag: West- und Süddeutschland), Sonntag.</li>
 <li>ein Jahr: Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember</li>
 <li>Jahreszeiten: Frühling, der Sommer, der Herbst, der Winter</li>
-</ul><p>There are <a href="../language/deutsch_wort.html#disqus_thread">comments</a>.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
+</ul>
+                <a class="readmore" href="../language/deutsch_wort.html">read more</a>
+<p>There are <a href="../language/deutsch_wort.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
         
 
  
@@ -338,60 +417,6 @@
 </ul>
                 <a class="readmore" href="../language/language_taiwan.html">read more</a>
 <p>There are <a href="../language/language_taiwan.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-        
-
- 
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href="../nature/plant_hehuan.html" rel="bookmark"
-                           title="Permalink to [自然觀察] 合歡北山、合歡主峰、南投三育書院">[自然觀察] 合歡北山、合歡主峰、南投三育書院</a></h1>
-                </header>
-                
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-06-19T02:08:00">
-                四 19 6月 2014
-        </abbr>
-
-<p>In <a href="../category/nature.html">nature</a>. </p>
-<p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <p>日期: 2014-06-07 ~ 2014-06-08</p>
-<h1>合歡北山 (2014-06-07)</h1>
-<p>合歡北杜鵑
-<img alt="合歡北杜鵑" src="/images/nature/140607/tn_P6070216.JPG" /></p>
-<h2>1. ?</h2>
-<h2>2. 巒大當藥 [龍膽科] or 台灣藜蘆 ?</h2>
-<p>葉對生</p>
-<p>莖方形</p>
-<p><img alt="巒大當藥" src="/images/nature/140607/tn_P6070008.JPG" /></p>
-<p><img alt="巒大當藥" src="/images/nature/140607/tn_P6070005.JPG" /></p>
-<ul>
-<li>《台灣原生觀賞植物 - 高海拔》p.102</li>
-<li>《野花圖鑒 2》, p.119</li>
-</ul>
-<h2>3. 艾草 ?</h2>
-<p><img alt="艾草" src="/images/nature/140607/tn_P6070018.JPG" /></p>
-<h2>4. 高山懸鉤子 [薔薇科]</h2>
-<p>幼莖被細毛，</p>
-<p>單葉互生，圓形淺裂，葉背褐色絨毛</p>
-<p>白花不全展開</p>
-<p><img alt="高山懸鉤子" src="/images/nature/140607/tn_P6070021.JPG" /></p>
-<p><img alt="高山懸鉤子" src="/images/nature/140607/tn_P6070025.JPG" /></p>
-<ul>
-<li>《野花圖鑒 2》p. 128</li>
-<li>《台灣原生觀賞植物 - 高海拔》p.180</li>
-</ul>
-<h2>5. 台灣冷杉 [松科]</h2>
-<p>生長在 3000 公尺以上</p>
-<p>枝條在主幹上輪生</p>
-<p><img alt="冷杉" src="/images/nature/140607/tn_P6070144.JPG" /></p>
-<p><img alt="冷杉" src="/images/nature/140607/tn_P6070143.JPG" /></p>
-<p><img alt="冷杉" src="/images/nature/140607/tn_P6070148.JPG" /></p>
-<p><img alt="冷杉" src="/images/nature/140607/tn_P6070147.JPG" /></p>
-<h2>6. 台灣鐵杉 [松科 ...</h2>
-                <a class="readmore" href="../nature/plant_hehuan.html">read more</a>
-<p>There are <a href="../nature/plant_hehuan.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
