@@ -28,8 +28,10 @@ Slug: vagrant
 
 其他commend:
 
-    4 vagrant reload
+    $ vagrant reload
     $ vagrant list
+    $ vagrant status
+    $ vagrant halt
 
 
 # ssh 進入, 開始弄環境
