@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>[電腦] 初學 Vagrant</title>
+        <title>[電腦] 初學 Vagrant & Docker</title>
         <link rel="stylesheet" href="../theme/css/main.css">
         <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen Atom Feed" />
 
@@ -33,8 +33,8 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="../computer/vagrant.html" rel="bookmark"
-           title="Permalink to [電腦] 初學 Vagrant">[電腦] 初學 Vagrant</a></h1>
+        <a href="../computer/vagrant_and_docker.html" rel="bookmark"
+           title="Permalink to [電腦] 初學 Vagrant & Docker">[電腦] 初學 Vagrant & Docker</a></h1>
     </header>
 
     <div class="entry-content">
@@ -45,7 +45,8 @@
 
 <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info -->      <h1>QuickStart</h1>
+</footer><!-- /.post-info -->      <h1>Vagrant</h1>
+<h2>QuickStart</h2>
 <p>設定檔 Vagrantfile (init 後產生, Ruby synctax)</p>
 <p>快速:</p>
 <div class="highlight"><pre><span class="nv">$ </span>vagrant init chef/centos-6.5
@@ -73,7 +74,7 @@ end
 </pre></div>
 
 
-<h1>ssh 進入, 開始弄環境</h1>
+<h2>ssh 進入, 開始弄環境</h2>
 <p>python version:</p>
 <div class="highlight"><pre>Python 2.6.6 (r266:84292, Nov 22 2013, 12:16:22) 
 [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)] on linux2
@@ -101,18 +102,43 @@ source /usr/bin/virtualenvwrapper.sh
 
 
 <p>記得加完後, sourec .bashrc</p>
-<h1>flask</h1>
+<h2>flask</h2>
 <div class="highlight"><pre><span class="err">設定成</span> <span class="n">external</span> <span class="err">可連</span>
 <span class="o">:::</span> <span class="n">python</span>
 <span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="err">&#39;</span><span class="mf">0.0.0.0</span><span class="err">&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<h2>Docker</h2>
+<h3>Mac OS X</h3>
+<ol>
+<li>download Boot2Docker-x.x.x.pkg and install</li>
+<li>
+<p>init docker</p>
+<p>:::bash
+$ boot2docker init
+$ boot2docker start</p>
+</li>
+</ol>
+<p>看到以下訊息, 要設定幾個環境變數:</p>
+<blockquote>
+<p>To connect the Docker client to the Docker daemon, please set: export DOCKER_HOST=tcp://192.168.59.103:2375</p>
+</blockquote>
+<p>測試:</p>
+<div class="highlight"><pre><span class="nv">$ </span>docker run hello-world
+</pre></div>
+
+
+<p>安裝最新 centos:</p>
+<div class="highlight"><pre><span class="nv">$ </span>docker run centos:centos6 /bin/bash
 </pre></div>
     </div><!-- /.entry-content -->
     <div class="comments">
       <h2>Comments !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "computer/vagrant.html";
-        var disqus_url = "../computer/vagrant.html";
+        var disqus_identifier = "computer/vagrant_and_docker.html";
+        var disqus_url = "../computer/vagrant_and_docker.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://suhenorg.disqus.com/embed.js';

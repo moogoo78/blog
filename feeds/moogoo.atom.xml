@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/moogoo.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-10-15T12:45:00+08:00</updated><entry><title>[電腦] 初學 Vagrant</title><link href="http://blog.suhen.org/computer/vagrant.html" rel="alternate"></link><updated>2014-10-15T12:45:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-10-15:computer/vagrant.html</id><summary type="html">&lt;h1&gt;QuickStart&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/moogoo.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-10-15T12:45:00+08:00</updated><entry><title>[電腦] 初學 Vagrant &amp; Docker</title><link href="http://blog.suhen.org/computer/vagrant_and_docker.html" rel="alternate"></link><updated>2014-10-15T12:45:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-10-15:computer/vagrant_and_docker.html</id><summary type="html">&lt;h1&gt;Vagrant&lt;/h1&gt;
+&lt;h2&gt;QuickStart&lt;/h2&gt;
 &lt;p&gt;設定檔 Vagrantfile (init 後產生, Ruby synctax)&lt;/p&gt;
 &lt;p&gt;快速:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant init chef/centos-6.5
@@ -27,7 +28,7 @@ end
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;ssh 進入, 開始弄環境&lt;/h1&gt;
+&lt;h2&gt;ssh 進入, 開始弄環境&lt;/h2&gt;
 &lt;p&gt;python version:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;Python 2.6.6 (r266:84292, Nov 22 2013, 12:16:22) 
 [GCC 4.4.7 20120313 (Red Hat 4.4.7-4)] on linux2
@@ -55,10 +56,35 @@ source /usr/bin/virtualenvwrapper.sh
 
 
 &lt;p&gt;記得加完後, sourec .bashrc&lt;/p&gt;
-&lt;h1&gt;flask&lt;/h1&gt;
+&lt;h2&gt;flask&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;設定成&lt;/span&gt; &lt;span class="n"&gt;external&lt;/span&gt; &lt;span class="err"&gt;可連&lt;/span&gt;
 &lt;span class="o"&gt;:::&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
 &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;host&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="mf"&gt;0.0.0.0&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;h3&gt;Mac OS X&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;download Boot2Docker-x.x.x.pkg and install&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;init docker&lt;/p&gt;
+&lt;p&gt;:::bash
+$ boot2docker init
+$ boot2docker start&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;看到以下訊息, 要設定幾個環境變數:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To connect the Docker client to the Docker daemon, please set: export DOCKER_HOST=tcp://192.168.59.103:2375&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;測試:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;docker run hello-world
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;安裝最新 centos:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;docker run centos:centos6 /bin/bash
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="note"></category></entry><entry><title>[Deutsch] 必備單字</title><link href="http://blog.suhen.org/language/deutsch_wort.html" rel="alternate"></link><updated>2014-10-08T02:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-10-08:language/deutsch_wort.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Ein Tag: Der Morgen, Der Vormittag, der Mittag, der Nachmittag, der Abend, die Nacht&lt;/li&gt;
 &lt;li&gt;eine Woche: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Sonnabend (Samstag: West- und Süddeutschland), Sonntag.&lt;/li&gt;
