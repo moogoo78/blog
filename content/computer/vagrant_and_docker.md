@@ -1,10 +1,12 @@
-Title: [電腦] 初學 Vagrant 
+Title: [電腦] 初學 Vagrant & Docker
 Date: 2014-10-15 12:45
 Category: computer
 Tags: note
-Slug: vagrant
+Slug: vagrant_and_docker
 
-# QuickStart
+# Vagrant
+
+## QuickStart
 
 設定檔 Vagrantfile (init 後產生, Ruby synctax)
 
@@ -34,7 +36,7 @@ Slug: vagrant
     $ vagrant halt
 
 
-# ssh 進入, 開始弄環境
+## ssh 進入, 開始弄環境
 
 python version:
 
@@ -63,8 +65,34 @@ python 開發::
 
 記得加完後, sourec .bashrc
 
-# flask
+## flask
 
     設定成 external 可連
     ::: python
     app.run(host='0.0.0.0')
+
+
+## Docker
+
+### Mac OS X
+
+1. download Boot2Docker-x.x.x.pkg and install
+2. init docker
+
+    :::bash
+    $ boot2docker init
+    $ boot2docker start
+
+看到以下訊息, 要設定幾個環境變數:
+
+> To connect the Docker client to the Docker daemon, please set: export DOCKER_HOST=tcp://192.168.59.103:2375
+
+測試:
+
+    :::bash
+    $ docker run hello-world
+
+安裝最新 centos:
+
+    :::bash
+    $ docker run centos:centos6 /bin/bash
