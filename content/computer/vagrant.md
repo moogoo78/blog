@@ -28,6 +28,7 @@ Slug: vagrant
 
 其他commend:
 
+    :::bash
     $ vagrant reload
     $ vagrant list
     $ vagrant status
@@ -44,9 +45,9 @@ python version:
 
     :::bash
     # 系統
-    $ yum update
-    $ sudo yum install git vim # tools
-    $ sudo yum install gcc mysql-python mysql-devel python-devel # for mysql-python
+    $ yum update -y
+    $ sudo yum install -y git vim # tools
+    $ sudo yum install -y gcc mysql-python mysql-devel python-devel # for mysql-python
     
 python 開發::
 
@@ -65,6 +66,7 @@ python 開發::
 
 # flask
 
-    設定成 external 可連
+設定成 external 外面才可以連進來
+
     ::: python
     app.run(host='0.0.0.0')
