@@ -67,10 +67,10 @@ end
 
 
 <p>其他commend:</p>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">vagrant</span> <span class="n">reload</span>
-<span class="err">$</span> <span class="n">vagrant</span> <span class="n">list</span>
-<span class="err">$</span> <span class="n">vagrant</span> <span class="n">status</span>
-<span class="err">$</span> <span class="n">vagrant</span> <span class="n">halt</span>
+<div class="highlight"><pre><span class="nv">$ </span>vagrant reload
+<span class="nv">$ </span>vagrant list
+<span class="nv">$ </span>vagrant status
+<span class="nv">$ </span>vagrant halt
 </pre></div>
 
 
@@ -81,9 +81,9 @@ end
 
 :::bash
 # 系統
-$ yum update
-$ sudo yum install git vim # tools
-$ sudo yum install gcc mysql-python mysql-devel python-devel # for mysql-python
+$ yum update -y
+$ sudo yum install -y git vim # tools
+$ sudo yum install -y gcc mysql-python mysql-devel python-devel # for mysql-python
 </pre></div>
 
 
@@ -103,9 +103,9 @@ source /usr/bin/virtualenvwrapper.sh
 
 <p>記得加完後, sourec .bashrc</p>
 <h2>flask</h2>
-<div class="highlight"><pre><span class="err">設定成</span> <span class="n">external</span> <span class="err">可連</span>
-<span class="o">:::</span> <span class="n">python</span>
-<span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="err">&#39;</span><span class="mf">0.0.0.0</span><span class="err">&#39;</span><span class="p">)</span>
+<p>設定成 external 外面才可以連進來</p>
+<div class="highlight"><pre><span class="p">:::</span> <span class="n">python</span>
+<span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s">&#39;0.0.0.0&#39;</span><span class="p">)</span>
 </pre></div>
 
 

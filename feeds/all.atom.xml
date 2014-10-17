@@ -21,10 +21,10 @@ end
 
 
 &lt;p&gt;其他commend:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;vagrant&lt;/span&gt; &lt;span class="n"&gt;reload&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;vagrant&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;vagrant&lt;/span&gt; &lt;span class="n"&gt;status&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;vagrant&lt;/span&gt; &lt;span class="n"&gt;halt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant reload
+&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant list
+&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant status
+&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant halt
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -35,9 +35,9 @@ end
 
 :::bash
 # 系統
-$ yum update
-$ sudo yum install git vim # tools
-$ sudo yum install gcc mysql-python mysql-devel python-devel # for mysql-python
+$ yum update -y
+$ sudo yum install -y git vim # tools
+$ sudo yum install -y gcc mysql-python mysql-devel python-devel # for mysql-python
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -57,9 +57,9 @@ source /usr/bin/virtualenvwrapper.sh
 
 &lt;p&gt;記得加完後, sourec .bashrc&lt;/p&gt;
 &lt;h2&gt;flask&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;設定成&lt;/span&gt; &lt;span class="n"&gt;external&lt;/span&gt; &lt;span class="err"&gt;可連&lt;/span&gt;
-&lt;span class="o"&gt;:::&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
-&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;host&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="mf"&gt;0.0.0.0&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;p&gt;設定成 external 外面才可以連進來&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;:::&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;host&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;0.0.0.0&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
