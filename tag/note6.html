@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
         <meta charset="utf-8">
-        <title>suhen suchen - moogoo</title>
+        <title>suhen suchen - note</title>
         <link rel="stylesheet" href="../theme/css/main.css">
         <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen Atom Feed" />
 
@@ -31,57 +31,96 @@
         </header><!-- /#banner -->
         
 
-<section id="content" class="body">
-<div style="margin:auto;width:800px">
-<a href="/category/computer.html"><img src="/theme/images/computer.jpg" width="200"></a>
-<a href="/category/music.html"><img src="/theme/images/music.jpg" width="200"></a>
-<a href="/category/run.html"><img src="/theme/images/running.jpg" width="200"></a>
-<a href="/category/mountain.html"><img src="/theme/images/mountain.jpg" width="200"></a>
-<a href="/category/nature.html"><img src="/theme/images/nature.jpg" width="200"></a>
-<a href="/category/travel.html"><img src="/theme/images/travel.jpg" width="200"></a>
-<a href="/category/book.html"><img src="/theme/images/book.jpg" width="200"></a>
-<a href="/category/language.html"><img src="/theme/images/language.jpg" width="200"></a>
-<a href="/category/misc.html"><img src="/theme/images/misc.jpg" width="200"></a>
-<a href="/archives.html"><img src="/theme/images/archives.jpg" width="200"></a>
-</div>
-<dl>
+ 
+                <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="../computer/ganglia.html" rel="bookmark"
+                           title="Permalink to Ganglia">Ganglia</a></h1>
+                </header>
+                
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-04-02T11:39:00">
+                二 02 4月 2013
+        </abbr>
+
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
+<p>Ganglia有3個部分:</p>
+<ul class="simple">
+<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
+<li>gmetad - 詢問gmond儲存數質</li>
+<li>ganglia-web</li>
+</ul>
+<pre class="literal-block">
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+</pre>
+<p>start daemond:</p>
+<pre class="literal-block">
+service gmond start
+service gmetad start
+</pre>
+<div class="section" id="centos">
+<h2>CentOS</h2>
+<p>進入web介面時出現:</p>
+<pre class="literal-block">
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+</pre>
+<p>解決方法, 重新安裝 ...</p></div>
+                <a class="readmore" href="../computer/ganglia.html">read more</a>
+<p>There are <a href="../computer/ganglia.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
         
-    <dt>四 05 6月 2014</dt>
-    <dd><a href="../nature/sow_73_zhishanyan_plant.html">[荒野][溪山] 芝山岩植物</a></dd>
-        
-    <dt>三 04 6月 2014</dt>
-    <dd><a href="../misc/taiwan_good_food.html">[記錄] 臺灣好吃</a></dd>
-        
-    <dt>四 29 5月 2014</dt>
-    <dd><a href="../language/language.html">語言</a></dd>
-        
-    <dt>四 29 5月 2014</dt>
-    <dd><a href="../language/language_hongkong.html">廣東話筆記</a></dd>
-        
-    <dt>四 29 5月 2014</dt>
-    <dd><a href="../misc/hk_mountain_lishan.html">[演講] 香港的大山大海 - 劉克襄</a></dd>
-        
-    <dt>四 22 5月 2014</dt>
-    <dd><a href="../misc/sow-part-02.html">[自然生態公園棲地守護志工課程] 行前訓練 2 - 香香哥的自然生態公園補習</a></dd>
-        
-    <dt>二 20 5月 2014</dt>
-    <dd><a href="../language/polyglot.html">Polyglot 說多國語言</a></dd>
-        
-    <dt>二 20 5月 2014</dt>
-    <dd><a href="../nature/family_tiannanxing.html">[植物] 天南星科</a></dd>
-        
-    <dt>三 07 5月 2014</dt>
-    <dd><a href="../misc/sow-park-01.html">[自然生態公園棲地守護志工課程] 行前訓練 1 - 臺北中強公園</a></dd>
-        
-    <dt>三 07 5月 2014</dt>
-    <dd><a href="../nature/frog.html">[生態] 蛙類觀察筆記</a></dd>
+
+ 
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="../computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="bookmark"
+                           title="Permalink to Dynamic DNS setting for Namecheap on Mac OSX">Dynamic DNS setting for Namecheap on Mac OSX</a></h1>
+                </header>
+                
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-03-21T02:09:00">
+                四 21 3月 2013
+        </abbr>
+
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info -->                <p>登入Namecheap啓用Dynamic <a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service">link1</a></p>
+<p>設定DNS record:</p>
+<pre class="literal-block">
+freedns1.registrar-servers.com
+freedns2.registrar-servers.com
+freedns3.registrar-servers.com
+freedns4.registrar-servers.com
+freedns5.registrar-servers.com
+</pre>
+<p><a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/532/51/how-does-free-dns-work">link2</a></p>
+<p>安裝Dynamic DNS clinet (以OS X的ddclient為例):</p>
+<pre class="literal-block">
+$ brew install ddclient
+</pre>
+<p>在/usr/local/etc/ddclient裡建立ddclient.conf (範例在/usr/local/share/doc/ddclient), 裡面有namecheap的預設選項:</p>
+<pre class="literal-block">
+protocol=namecheap
+server=dynamicdns.park-your-domain.com
+login=yourdomain.com ...</pre>
+                <a class="readmore" href="../computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html">read more</a>
+<p>There are <a href="../computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+            </ol><!-- /#posts-list -->
 <p class="paginator">
-        <a href="../author/moogoo2.html">&laquo;</a>
-    Page 3 / 20
-        <a href="../author/moogoo4.html">&raquo;</a>
+        <a href="../tag/note5.html">&laquo;</a>
+    Page 6 / 6
 </p>
-</dl>
-</section>
+            </section><!-- /#content -->
+
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>

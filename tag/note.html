@@ -33,7 +33,138 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../computer/vagrant_and_docker.html">[電腦] 初學 Vagrant & Docker</a></h1> 
+                    <h1 class="entry-title"><a href="../computer/python_web_develop.html">[Web] Python 開發環境 (nginx +  gunicorn + supervisord + Flask)</a></h1> 
+<footer class="post-info">
+        <abbr class="published" title="2014-10-20T10:38:00">
+                一 20 10月 2014
+        </abbr>
+
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info --><h1>Web Servers</h1>
+<p>https://www.digitalocean.com/community/tutorials/a-comparison-of-web-servers-for-python-based-web-applications</p>
+<h2>Flask</h2>
+<p>hello world:</p>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s">&quot;Hello world!&quot;</span>
+
+ <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+     <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+
+
+<h2>gunicorn</h2>
+<p>gunicorn 要裝在 virtualenv 環境裡</p>
+<div class="highlight"><pre><span class="nv">$ </span>gunicorn -b 0.0.0.0:5000 hello:app
+<span class="nv">$ </span>gunicorn --check-config <span class="c"># 如果有錯誤用這個檢查</span>
+</pre></div>
+
+
+<h2>supervisor</h2>
+<div class="highlight"><pre><span class="nv">$ </span>pip install supervisor
+<span class="nv">$ </span>supervisord -c <span class="o">[</span>xxx.conf<span class="o">]</span> <span class="c"># default: /etc/supervisord.conf</span>
+<span class="nv">$ </span>supervisord -n ; run in foreground
+
+<span class="nv">$ </span>supervisorctl ; 進入 console
+&gt; <span class="nb">help</span>
+
+<span class="nv">$ </span>supervisorctl restart myapp
+</pre></div>
+
+
+<p>config file:</p>
+<div class="highlight"><pre><span class="c1">;;/etc/supervisord.conf:</span>
+<span class="k">[program:myapp]</span>
+<span class="na">command</span><span class="o">=</span><span class="s">gunicorn main:app -b 0.0.0.0:5050</span>
+<span class="na">directory</span><span class="o">=</span><span class="s">/home/ec2-user/myapp/app</span>
+<span class="na">autostart</span><span class="o">=</span><span class="s">true</span>
+<span class="na">autorestart</span><span class="o">=</span><span class="s">true</span>
+<span class="na">redirect_stderr</span><span class="o">=</span><span class="s">True</span>
+
+<span class="k">[unix_http_server]</span>
+<span class="na">file</span><span class="o">=</span><span class="s">/tmp/supervisor.sock   ; (the path to the socket file)</span>
+<span class="c1">;chmod=0700                 ; socket file mode (default 0700)</span>
+<span class="c1">;chown=nobody:nogroup       ; socket file uid:gid owner</span>
+<span class="c1">;username=user              ; (default is no username (open server))</span>
+<span class="c1">;password=123               ; (default is no password (open server))</span>
+
+<span class="k">[supervisord]</span>
+<span class="na">logfile</span> <span class="o">=</span> <span class="s">/tmp/supervisord.log</span>
+<span class="na">logfile_maxbytes</span> <span class="o">=</span> <span class="s">50MB</span>
+<span class="na">logfile_backups</span><span class="o">=</span><span class="s">10</span>
+<span class="na">loglevel</span> <span class="o">=</span> <span class="s">info</span>
+<span class="na">pidfile</span> <span class="o">=</span> <span class="s">/tmp/supervisord.pid</span>
+<span class="na">nodaemon</span> <span class="o">=</span> <span class="s">false</span>
+<span class="na">minfds</span> <span class="o">=</span> <span class="s">1024</span>
+<span class="na">minprocs</span> <span class="o">=</span> <span class="s">200</span>
+<span class="c1">;umask = 022</span>
+<span class="c1">;user = chrism</span>
+<span class="na">identifier</span> <span class="o">=</span> <span class="s">supervisor</span>
+<span class="na">directory</span> <span class="o">=</span> <span class="s">/tmp</span>
+<span class="na">nocleanup</span> <span class="o">=</span> <span class="s">true</span>
+<span class="na">childlogdir</span> <span class="o">=</span> <span class="s">/tmp</span>
+<span class="na">strip_ansi</span> <span class="o">=</span> <span class="s">false</span>
+<span class="na">environment</span> <span class="o">=</span> <span class="s">KEY1=&quot;value1&quot;,KEY2=&quot;value2&quot;</span>
+
+<span class="k">[supervisorctl]</span>
+<span class="na">serverurl</span> <span class="o">=</span> <span class="s">unix:///tmp/supervisor.sock</span>
+
+<span class="k">[rpcinterface:supervisor]</span>
+<span class="na">supervisor.rpcinterface_factory</span> <span class="o">=</span> <span class="s">supervisor.rpcinterface:make_main_rpcinterface</span>
+</pre></div><p>There are <a href="../computer/python_web_develop.html#disqus_thread">comments</a>.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+        
+
+ 
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="../nature/sow_19_anny.html" rel="bookmark"
+                           title="Permalink to [荒野] 解說員進修 + 第 19 屆年會">[荒野] 解說員進修 + 第 19 屆年會</a></h1>
+                </header>
+                
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-10-20T10:28:00">
+                一 20 10月 2014
+        </abbr>
+
+<p>In <a href="../category/nature.html">nature</a>. </p>
+<p>tags: <a href="../tag/note.html">note</a><a href="../tag/diary.html">diary</a></p>
+</footer><!-- /.post-info -->                <p>家旺</p>
+<p>法法布爾社, 昆蟲會考, 
+昆蟲, FB 社團</p>
+<p>大頭茶</p>
+<p>溪山植調 -
+分析數據</p>
+<p>大楊油庫 夜觀</p>
+<p>茶斑蛇 ( Y 字型頭 )</p>
+<p>石垣櫛蛛</p>
+<p>螳螂</p>
+<p>騷斯</p>
+<p>東亞家蝠</p>
+<p>巨業 168</p>
+                <a class="readmore" href="../nature/sow_19_anny.html">read more</a>
+<p>There are <a href="../nature/sow_19_anny.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+ 
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="../computer/vagrant_and_docker.html" rel="bookmark"
+                           title="Permalink to [電腦] 初學 Vagrant & Docker">[電腦] 初學 Vagrant & Docker</a></h1>
+                </header>
+                
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2014-10-15T12:45:00">
                 三 15 10月 2014
@@ -41,7 +172,7 @@
 
 <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info --><h1>Vagrant</h1>
+</footer><!-- /.post-info -->                <h1>Vagrant</h1>
 <h2>QuickStart</h2>
 <p>設定檔 Vagrantfile (init 後產生, Ruby synctax)</p>
 <p>快速:</p>
@@ -57,83 +188,10 @@
 <p>要改 Vagrantfile:</p>
 <div class="highlight"><pre>Vagrant.configure(&quot;2&quot;) do |config|
     config.vm.box = &quot;chef/centos-6.5&quot;
-    config.vm.network &quot;forwarded_port&quot;, guest: 5000, host: 8080 # host 的 127.0.0.1:8080 會連到 guest 的 port 5000
-end
-</pre></div>
-
-
-<p>其他commend:</p>
-<div class="highlight"><pre><span class="nv">$ </span>vagrant reload
-<span class="nv">$ </span>vagrant list
-<span class="nv">$ </span>vagrant status
-<span class="nv">$ </span>vagrant halt
-</pre></div>
-
-
-<h2>ssh 進入, 開始弄環境</h2>
-<p>python version:</p>
-<div class="highlight"><pre>Python 2.6.6 (r266:84292, Nov 22 2013, 12:16:22) 
-[GCC 4.4.7 20120313 (Red Hat 4.4.7-4)] on linux2
-
-:::bash
-# 系統
-$ yum update -y
-$ sudo yum install -y git vim # tools
-$ sudo yum install -y gcc mysql-python mysql-devel python-devel # for mysql-python
-</pre></div>
-
-
-<p>python 開發::</p>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">wget</span> <span class="n">https</span><span class="o">:</span><span class="c1">//bootstrap.pypa.io/get-pip.py</span>
-<span class="err">$</span> <span class="n">sudo</span> <span class="n">python</span> <span class="n">get</span><span class="o">-</span><span class="n">pip</span><span class="p">.</span><span class="n">py</span>
-<span class="err">$</span> <span class="n">sudo</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">virtualenv</span> <span class="n">virtualenvwrapper</span>
-</pre></div>
-
-
-<p>加到 .bashrc</p>
-<div class="highlight"><pre>export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/bin/virtualenvwrapper.sh
-</pre></div>
-
-
-<p>記得加完後, sourec .bashrc</p>
-<h2>flask</h2>
-<p>設定成 external 外面才可以連進來</p>
-<div class="highlight"><pre><span class="p">:::</span> <span class="n">python</span>
-<span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s">&#39;0.0.0.0&#39;</span><span class="p">)</span>
-</pre></div>
-
-
-<h2>Docker</h2>
-<h3>Mac OS X</h3>
-<ol>
-<li>download Boot2Docker-x.x.x.pkg and install</li>
-<li>
-<p>init docker</p>
-<p>:::bash
-$ boot2docker init
-$ boot2docker start</p>
-</li>
-</ol>
-<p>看到以下訊息, 要設定幾個環境變數:</p>
-<blockquote>
-<p>To connect the Docker client to the Docker daemon, please set: export DOCKER_HOST=tcp://192.168.59.103:2375</p>
-</blockquote>
-<p>測試:</p>
-<div class="highlight"><pre><span class="nv">$ </span>docker run hello-world
-</pre></div>
-
-
-<p>安裝最新 centos:</p>
-<div class="highlight"><pre><span class="nv">$ </span>docker run centos:centos6 /bin/bash
-</pre></div><p>There are <a href="../computer/vagrant_and_docker.html#disqus_thread">comments</a>.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
+    config.vm.network &quot;forwarded_port&quot;, guest: 5000, host: 8080 # host 的 ...</pre></div>
+                <a class="readmore" href="../computer/vagrant_and_docker.html">read more</a>
+<p>There are <a href="../computer/vagrant_and_docker.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
         
 
  
@@ -385,70 +443,9 @@ $ boot2docker start</p>
                 <a class="readmore" href="../nature/sow_park_shuanglianpi.html">read more</a>
 <p>There are <a href="../nature/sow_park_shuanglianpi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
-        
-
- 
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href="../nature/sow-park-qingnian.html" rel="bookmark"
-                           title="Permalink to [自然生態公園棲地守護志工課程] 荒野綠皮書">[自然生態公園棲地守護志工課程] 荒野綠皮書</a></h1>
-                </header>
-                
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-07-26T23:09:00">
-                六 26 7月 2014
-        </abbr>
-
-<p>In <a href="../category/nature.html">nature</a>. </p>
-<p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <p>日期: 2014-07-26</p>
-<p>講師: 到手香</p>
-<h1>室內課</h1>
-<h2>日本人的規劃</h2>
-<ul>
-<li>台南中山路 (今) 與大正通 (昔) 的照片比較，鳳凰木林立。</li>
-<li>台灣第一個公園: <a href="http://zh.wikipedia.org/wiki/圓山公園_(台北市)">圓山公園 (台北市) - 维基百科，自由的百科全书</a> (中山1號公園)。第一個國家公園: 大屯公園</li>
-<li>日本時代的台北市公園就有設計綠色廊道。</li>
-</ul>
-<h2>棲地環境</h2>
-<ul>
-<li>蝴蝶幼生期跟成熟期的生活環境不同，如果有蝴蝶的話，表示生態環境不錯。</li>
-<li>保護物種不是只有為了那個物種，更可以保護那個物種賴以為生的棲息地，例如: 貓熊。也要夠可愛。(黑鮪魚不夠可愛，會讓人想到吃而已...)</li>
-<li>熱帶雨林土地很薄，破壞後生態就回不來了。微生物很多，很快就分解了，腐植質不厚 (熱帶雨林的種子都落到地上時就開始馬上發芽，不然就會被微生物分解)。台灣的就很厚，所以種原豐富。</li>
-<li>老樹就像諾亞方舟一樣，很多動植物，土，水... 都在上面。</li>
-<li>褐根病是最近樹木的黑死病，原本是在山上加速分解倒木的菌。處理一顆褐根病的樹要花 2 ...</li></ul>
-                <a class="readmore" href="../nature/sow-park-qingnian.html">read more</a>
-<p>There are <a href="../nature/sow-park-qingnian.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-        
-
- 
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href="../language/language_taiwan.html" rel="bookmark"
-                           title="Permalink to 台灣.的.語言">台灣.的.語言</a></h1>
-                </header>
-                
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-07-23T10:44:00">
-                三 23 7月 2014
-        </abbr>
-
-<p>In <a href="../category/language.html">language</a>. </p>
-<p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <h1>台語</h1>
-<h2>金門腔</h2>
-<ul>
-<li>一間zhi gain (該n) - 德鴻</li>
-</ul>
-                <a class="readmore" href="../language/language_taiwan.html">read more</a>
-<p>There are <a href="../language/language_taiwan.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
-    Page 1 / 5
+    Page 1 / 6
         <a href="../tag/note2.html">&raquo;</a>
 </p>
             </section><!-- /#content -->
