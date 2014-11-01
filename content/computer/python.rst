@@ -352,6 +352,17 @@ array排序
   # [{'title': 'def', 'date': 2}, {'title': 'abc', 'date': 1}, {'title': 'ghi', 'date': 0}]
 
 
+
+list 找出最常出現
+--------------------
+
+利用 build-in function 的 max, set, count (另外 collections 也有 most_commons 的函式可用)::
+
+.. code-block:: python
+  
+    max(set(cards), key=cards.count)
+
+
 simple http server
 ---------------------
 在當下目錄::
