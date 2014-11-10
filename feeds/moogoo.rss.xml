@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>suhen suchen</title><link>http://blog.suhen.org/</link><description></description><atom:link href="http://blog.suhen.org/feeds/moogoo.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 01 Nov 2014 21:24:00 +0800</lastBuildDate><item><title>[sow] 臺北宜蘭解說員聯誼 - 山毛櫸步道, 翠峰湖</title><link>http://blog.suhen.org/nature/2014_sow_taiwan_beech.html</link><description>&lt;p&gt;日期: 2014-11-01 (六)&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>suhen suchen</title><link>http://blog.suhen.org/</link><description></description><atom:link href="http://blog.suhen.org/feeds/moogoo.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 10 Nov 2014 16:15:00 +0800</lastBuildDate><item><title>[computer] 在 bitbucket, git 多個帳號設定 ssh keys (免打密碼)</title><link>http://blog.suhen.org/computer/comp_multi-ssh-keys.html</link><description>&lt;p&gt;產生除了預設之外的 ssh key pairs::&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ssh-keygen -t rsa -C &lt;span class="s2"&gt;&amp;quot;your_email@youremail.com&amp;quot;&lt;/span&gt; -f ~/.ssh/other_key
+
+&lt;span class="c"&gt;# 複製到剪貼簿 (mac)&lt;/span&gt;
+pbcoby &amp;lt; ~/.ssh/other_key.pub
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;設定 .ssh/config::&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Host bitbucket-other
+    User git
+    Hostname bitbucket.org
+    PreferredAuthentications publickey
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/other_key
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;這樣用 git 就不用打密碼了&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">moogoo</dc:creator><pubDate>Mon, 10 Nov 2014 16:15:00 +0800</pubDate><guid>tag:blog.suhen.org,2014-11-10:computer/comp_multi-ssh-keys.html</guid><category>note</category></item><item><title>[sow] 臺北宜蘭解說員聯誼 - 山毛櫸步道, 翠峰湖</title><link>http://blog.suhen.org/nature/2014_sow_taiwan_beech.html</link><description>&lt;p&gt;日期: 2014-11-01 (六)&lt;/p&gt;
 &lt;h1&gt;行程&lt;/h1&gt;
 &lt;p&gt;星期五晚上 20:00 耕莘文教中心出發，到宜蘭一路順暢，21:00 就到宜蘭救國團了。週六 0610 宜蘭救國團出發，0850 到崔峰湖，11:30 到最後的觀景台。大家都是來看山毛櫸變葉的季節，人山人海。總步道長度: 3.85 km，天氣晴朗。稜線往下看是是南澳南溪。&lt;/p&gt;
 &lt;h1&gt;植物&lt;/h1&gt;

@@ -33,7 +33,49 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../computer/python_web_develop.html">[Web] Python 開發環境 (nginx +  gunicorn + supervisord + Flask)</a></h1> 
+                    <h1 class="entry-title"><a href="../computer/comp_multi-ssh-keys.html">[computer] 在 bitbucket, git 多個帳號設定 ssh keys (免打密碼)</a></h1> 
+<footer class="post-info">
+        <abbr class="published" title="2014-11-10T16:15:00">
+                一 10 11月 2014
+        </abbr>
+
+<p>In <a href="../category/computer.html">computer</a>. </p>
+<p>tags: <a href="../tag/note.html">note</a></p>
+</footer><!-- /.post-info --><p>產生除了預設之外的 ssh key pairs::</p>
+<div class="highlight"><pre>ssh-keygen -t rsa -C <span class="s2">&quot;your_email@youremail.com&quot;</span> -f ~/.ssh/other_key
+
+<span class="c"># 複製到剪貼簿 (mac)</span>
+pbcoby &lt; ~/.ssh/other_key.pub
+</pre></div>
+
+
+<p>設定 .ssh/config::</p>
+<div class="highlight"><pre>Host bitbucket-other
+    User git
+    Hostname bitbucket.org
+    PreferredAuthentications publickey
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/other_key
+</pre></div>
+
+
+<p>這樣用 git 就不用打密碼了</p><p>There are <a href="../computer/comp_multi-ssh-keys.html#disqus_thread">comments</a>.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+        
+
+ 
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="../computer/python_web_develop.html" rel="bookmark"
+                           title="Permalink to [Web] Python 開發環境 (nginx + gunicorn + supervisord + Flask)">[Web] Python 開發環境 (nginx +  gunicorn + supervisord + Flask)</a></h1>
+                </header>
+                
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2014-10-20T10:38:00">
                 一 20 10月 2014
@@ -41,7 +83,7 @@
 
 <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info --><h1>Web Servers</h1>
+</footer><!-- /.post-info -->                <h1>Web Servers</h1>
 <p>https://www.digitalocean.com/community/tutorials/a-comparison-of-web-servers-for-python-based-web-applications</p>
 <h2>Flask</h2>
 <p>hello world:</p>
@@ -65,63 +107,10 @@
 
 
 <h2>supervisor</h2>
-<div class="highlight"><pre><span class="nv">$ </span>pip install supervisor
-<span class="nv">$ </span>supervisord -c <span class="o">[</span>xxx.conf<span class="o">]</span> <span class="c"># default: /etc/supervisord.conf</span>
-<span class="nv">$ </span>supervisord -n ; run in foreground
-
-<span class="nv">$ </span>supervisorctl ; 進入 console
-&gt; <span class="nb">help</span>
-
-<span class="nv">$ </span>supervisorctl restart myapp
-</pre></div>
-
-
-<p>config file:</p>
-<div class="highlight"><pre><span class="c1">;;/etc/supervisord.conf:</span>
-<span class="k">[program:myapp]</span>
-<span class="na">command</span><span class="o">=</span><span class="s">gunicorn main:app -b 0.0.0.0:5050</span>
-<span class="na">directory</span><span class="o">=</span><span class="s">/home/ec2-user/myapp/app</span>
-<span class="na">autostart</span><span class="o">=</span><span class="s">true</span>
-<span class="na">autorestart</span><span class="o">=</span><span class="s">true</span>
-<span class="na">redirect_stderr</span><span class="o">=</span><span class="s">True</span>
-
-<span class="k">[unix_http_server]</span>
-<span class="na">file</span><span class="o">=</span><span class="s">/tmp/supervisor.sock   ; (the path to the socket file)</span>
-<span class="c1">;chmod=0700                 ; socket file mode (default 0700)</span>
-<span class="c1">;chown=nobody:nogroup       ; socket file uid:gid owner</span>
-<span class="c1">;username=user              ; (default is no username (open server))</span>
-<span class="c1">;password=123               ; (default is no password (open server))</span>
-
-<span class="k">[supervisord]</span>
-<span class="na">logfile</span> <span class="o">=</span> <span class="s">/tmp/supervisord.log</span>
-<span class="na">logfile_maxbytes</span> <span class="o">=</span> <span class="s">50MB</span>
-<span class="na">logfile_backups</span><span class="o">=</span><span class="s">10</span>
-<span class="na">loglevel</span> <span class="o">=</span> <span class="s">info</span>
-<span class="na">pidfile</span> <span class="o">=</span> <span class="s">/tmp/supervisord.pid</span>
-<span class="na">nodaemon</span> <span class="o">=</span> <span class="s">false</span>
-<span class="na">minfds</span> <span class="o">=</span> <span class="s">1024</span>
-<span class="na">minprocs</span> <span class="o">=</span> <span class="s">200</span>
-<span class="c1">;umask = 022</span>
-<span class="c1">;user = chrism</span>
-<span class="na">identifier</span> <span class="o">=</span> <span class="s">supervisor</span>
-<span class="na">directory</span> <span class="o">=</span> <span class="s">/tmp</span>
-<span class="na">nocleanup</span> <span class="o">=</span> <span class="s">true</span>
-<span class="na">childlogdir</span> <span class="o">=</span> <span class="s">/tmp</span>
-<span class="na">strip_ansi</span> <span class="o">=</span> <span class="s">false</span>
-<span class="na">environment</span> <span class="o">=</span> <span class="s">KEY1=&quot;value1&quot;,KEY2=&quot;value2&quot;</span>
-
-<span class="k">[supervisorctl]</span>
-<span class="na">serverurl</span> <span class="o">=</span> <span class="s">unix:///tmp/supervisor.sock</span>
-
-<span class="k">[rpcinterface:supervisor]</span>
-<span class="na">supervisor.rpcinterface_factory</span> <span class="o">=</span> <span class="s">supervisor.rpcinterface:make_main_rpcinterface</span>
-</pre></div><p>There are <a href="../computer/python_web_develop.html#disqus_thread">comments</a>.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
+<div class="highlight"><pre><span class="nv">$ </span>pip ...</pre></div>
+                <a class="readmore" href="../computer/python_web_develop.html">read more</a>
+<p>There are <a href="../computer/python_web_develop.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
         
 
  
@@ -401,47 +390,6 @@
 <p>黃花鼠尾草</p>
                 <a class="readmore" href="../nature/miantian.html">read more</a>
 <p>There are <a href="../nature/miantian.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-        
-
- 
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href="../nature/sow_park_shuanglianpi.html" rel="bookmark"
-                           title="Permalink to [棲地] 雙連埤">[棲地] 雙連埤</a></h1>
-                </header>
-                
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-08-06T01:01:00">
-                三 06 8月 2014
-        </abbr>
-
-<p>In <a href="../category/nature.html">nature</a>. </p>
-<p>tags: <a href="../tag/note.html">note</a></p>
-</footer><!-- /.post-info -->                <h1>雙連埤的故事 - 德鴻</h1>
-<ul>
-<li>浮島，(水面下) 物種生長重新分配。上面長大頭茶。</li>
-<li>浮島有一米厚。</li>
-<li>王吉盛地主</li>
-<li>台灣水生植物大約 400 種，雙臉皮有 100 種</li>
-</ul>
-<h2>水生植物</h2>
-<ul>
-<li>蓴菜，水凍 (dang)，中國、日本用來做料理。深厚腐植土才有，岸邊沒有。</li>
-<li>馬來赤子x，在浮島上面</li>
-<li>寬柱莎草，在浮島上面，別的溼地少見。</li>
-<li>華克拉莎草，很刺。全世界最高德莎草 (科) 。</li>
-<li>日月潭蘭</li>
-<li>石龍尾，目前快消失。(別的地方沒看到)</li>
-<li>水虎尾，目前也消失。</li>
-<li>水社柳，倒下又長起來，盤根錯節，往上長呼吸根。雄: 金黃 (日本人稱金柳)。</li>
-<li>黃花狸藻，捕蟲，吃浮游生物，一個囊只用一次。</li>
-<li>分株假紫萁</li>
-</ul>
-<h1>溼地 ...</h1>
-                <a class="readmore" href="../nature/sow_park_shuanglianpi.html">read more</a>
-<p>There are <a href="../nature/sow_park_shuanglianpi.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
