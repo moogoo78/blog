@@ -2078,6 +2078,27 @@ C-RET
 &lt;/div&gt;
 &lt;div class="section" id="basic"&gt;
 &lt;h2&gt;Basic&lt;/h2&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;檔案&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Visiting.html"&gt;https://www.gnu.org/software/emacs/manual/html_node/emacs/Visiting.html&lt;/a&gt;&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="18%" /&gt;
+&lt;col width="82%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;C-x C-f&lt;/td&gt;
+&lt;td&gt;find-file 開檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x C-r&lt;/td&gt;
+&lt;td&gt;find-file-read-only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x C-v&lt;/td&gt;
+&lt;td&gt;find-alternate-file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
 &lt;div class="section" id="movement"&gt;
 &lt;h3&gt;移動 Movement&lt;/h3&gt;
 &lt;table border="1" class="docutils"&gt;
@@ -2221,7 +2242,7 @@ C-RET
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id1"&gt;
+&lt;div class="section" id="id2"&gt;
 &lt;h3&gt;特殊符號&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;C-q C-j 換行符號, Windows編輯器的^M: M-x replace-string [ENTER] C-q C-m [ENTER] n [ENTER]&lt;/li&gt;
@@ -2327,7 +2348,7 @@ C-RET
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;div class="section" id="id2"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h4&gt;批次改檔名&lt;/h4&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;
@@ -2365,7 +2386,7 @@ C-RET
 #+STARTUP: hideblocks
 #+STARTUP: nohideblock
 &lt;/pre&gt;
-&lt;div class="section" id="id3"&gt;
+&lt;div class="section" id="id4"&gt;
 &lt;h4&gt;移動&lt;/h4&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;

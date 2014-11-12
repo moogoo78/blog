@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/moogoo.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-11-10T16:15:00+08:00</updated><entry><title>[computer] 在 bitbucket, git 多個帳號設定 ssh keys (免打密碼)</title><link href="http://blog.suhen.org/computer/comp_multi-ssh-keys.html" rel="alternate"></link><updated>2014-11-10T16:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-11-10:computer/comp_multi-ssh-keys.html</id><summary type="html">&lt;p&gt;產生除了預設之外的 ssh key pairs::&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/moogoo.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2014-11-12T15:58:00+08:00</updated><entry><title>WFMU songs</title><link href="http://blog.suhen.org/music/wfmu-songs.html" rel="alternate"></link><updated>2014-11-12T15:58:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-11-12:music/wfmu-songs.html</id><summary type="html">&lt;p&gt;Todd Clark Group - Oceans Of She&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/7lCXlSWJbNo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Bügsküll&lt;/p&gt;
+&lt;p&gt;http://wfmu.org/playlists/shows/57832&lt;/p&gt;</summary></entry><entry><title>[computer] 在 bitbucket, git 多個帳號設定 ssh keys (免打密碼)</title><link href="http://blog.suhen.org/computer/comp_multi-ssh-keys.html" rel="alternate"></link><updated>2014-11-10T16:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-11-10:computer/comp_multi-ssh-keys.html</id><summary type="html">&lt;p&gt;產生除了預設之外的 ssh key pairs::&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;ssh-keygen -t rsa -C &lt;span class="s2"&gt;&amp;quot;your_email@youremail.com&amp;quot;&lt;/span&gt; -f ~/.ssh/other_key
 
 &lt;span class="c"&gt;# 複製到剪貼簿 (mac)&lt;/span&gt;
@@ -7732,6 +7736,27 @@ C-RET
 &lt;/div&gt;
 &lt;div class="section" id="basic"&gt;
 &lt;h2&gt;Basic&lt;/h2&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;檔案&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Visiting.html"&gt;https://www.gnu.org/software/emacs/manual/html_node/emacs/Visiting.html&lt;/a&gt;&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="18%" /&gt;
+&lt;col width="82%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;C-x C-f&lt;/td&gt;
+&lt;td&gt;find-file 開檔案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x C-r&lt;/td&gt;
+&lt;td&gt;find-file-read-only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;C-x C-v&lt;/td&gt;
+&lt;td&gt;find-alternate-file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
 &lt;div class="section" id="movement"&gt;
 &lt;h3&gt;移動 Movement&lt;/h3&gt;
 &lt;table border="1" class="docutils"&gt;
@@ -7875,7 +7900,7 @@ C-RET
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-&lt;div class="section" id="id1"&gt;
+&lt;div class="section" id="id2"&gt;
 &lt;h3&gt;特殊符號&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;C-q C-j 換行符號, Windows編輯器的^M: M-x replace-string [ENTER] C-q C-m [ENTER] n [ENTER]&lt;/li&gt;
@@ -7981,7 +8006,7 @@ C-RET
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;div class="section" id="id2"&gt;
+&lt;div class="section" id="id3"&gt;
 &lt;h4&gt;批次改檔名&lt;/h4&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;
@@ -8019,7 +8044,7 @@ C-RET
 #+STARTUP: hideblocks
 #+STARTUP: nohideblock
 &lt;/pre&gt;
-&lt;div class="section" id="id3"&gt;
+&lt;div class="section" id="id4"&gt;
 &lt;h4&gt;移動&lt;/h4&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;
