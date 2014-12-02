@@ -90,12 +90,9 @@ CONVERT( 欄位名稱 using big5) 。
 <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">table_schema</span> <span class="p">;</span>
 </pre></div>
 <p>增加欄位 add column:</p>
-<pre class="literal-block">
-.. code-block:: sql
-</pre>
-<blockquote>
-ALTER TABLE contacts ADD email VARCHAR(60);
-ALTER TABLE contacts ADD email VARCHAR(60) AFTER name;</blockquote>
+<div class="highlight"><pre><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">contacts</span> <span class="k">ADD</span> <span class="n">email</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">60</span><span class="p">);</span>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">contacts</span> <span class="k">ADD</span> <span class="n">email</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span> <span class="k">AFTER</span> <span class="n">name</span><span class="p">;</span>
+</pre></div>
 <p>status:</p>
 <div class="highlight"><pre><span class="k">SHOW</span> <span class="k">TABLE</span> <span class="n">STATUS</span><span class="p">;</span>
 </pre></div>
