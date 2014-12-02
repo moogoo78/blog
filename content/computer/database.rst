@@ -64,12 +64,13 @@ LIMIT
     FROM information_schema.TABLES 
     GROUP BY table_schema ;
 
-增加欄位 add column::
+增加欄位 add column:
 
 .. code-block:: sql
-                
+
     ALTER TABLE contacts ADD email VARCHAR(60);
     ALTER TABLE contacts ADD email VARCHAR(60) AFTER name;    
+
 
     
 status:
