@@ -152,6 +152,9 @@ git branch::
     git branch abcd # 開新branch, 但不移駕
     git co -b abcd 開新branch, 而且移駕到新開的branch
     git branch -m old new # rename branch
+    git branch -a # --all, list both remote-tracking branches and local branches
+    git brnach -r # list or delete (-d) the remote-tracking branches
+
 
 git merge::
 
@@ -219,6 +222,7 @@ git clone某一個branch
 
   git checkout remotes/origin/experimental
 
+  
 other
 ======
 * `寫給大家的 Git 教學 <http://www.slideshare.net/littlebtc/git-5528339>`__

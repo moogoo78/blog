@@ -62,7 +62,26 @@ LIMIT
     1024 "Data Base Size in MB", 
     sum( data_free )/ 1024 / 1024 "Free Space in MB" 
     FROM information_schema.TABLES 
-    GROUP BY table_schema ;  
+    GROUP BY table_schema ;
+
+增加欄位 add column::
+
+.. code-block:: sql
+                
+    ALTER TABLE contacts ADD email VARCHAR(60);
+    ALTER TABLE contacts ADD email VARCHAR(60) AFTER name;    
+
+    
+status:
+
+.. code-block:: sql
+
+    SHOW TABLE STATUS;
+
+.. code-block:: bash
+                
+    $ mysqlshow -uroot -p123456 --status db_name
+
 
 function
 -----------
@@ -117,10 +136,18 @@ VARCHAR和CHAR
 
 最佳化
 ------------------
-所有資料表最佳化::
+所有資料表最佳化
 
-  mysqlcheck -a -c -o -r --all-databases -uroot -p
+.. code-block:: sql
 
+  $ mysqlcheck -a -c -o -r --all-databases -uroot -p
+
+  $ mysqlcheck --all-databases
+  $ mysqlcheck --all-databases -o
+  $ mysqlcheck --all-databases --auto-repair
+  $ mysqlcheck --all-databases --analyze
+
+  
 a: analyze, c: check, o: optimize, r: repair
 
 重建索引::
@@ -284,7 +311,7 @@ Server Management
 
 Mac OS X
 ^^^^^^^^^^
-從MySql(http://dev.mysql.com/downloads/mysql/) 找適何的package，裝完後:
+從 MySql (http://dev.mysql.com/downloads/mysql/) 找適何的package，裝完後:
 
 binary:: 
 

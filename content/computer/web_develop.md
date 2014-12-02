@@ -12,6 +12,9 @@ Webhooks: "user-defined HTTP callbacks"
 
 
 # Frontend
+## HTML
+
+* [Tips for authoring fast-loading HTML pages - Web developer guide | MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Tips_for_authoring_fast-loading_HTML_pages) - 效能要讀
 
 ## CSS
 

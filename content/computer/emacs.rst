@@ -52,6 +52,18 @@ Tips
 Basic
 ============
 
+檔案
+--------------
+
+https://www.gnu.org/software/emacs/manual/html_node/emacs/Visiting.html
+
+============   ========================================================
+C-x C-f        find-file 開檔案
+C-x C-r        find-file-read-only
+C-x C-v        find-alternate-file
+============   ========================================================
+
+
 移動 Movement
 --------------
 
