@@ -401,6 +401,10 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;/ul&gt;</summary><category term="mobile"></category></entry><entry><title></title><link href="http://blog.suhen.org/computer/web_develop.html" rel="alternate"></link><updated>2013-12-18T18:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-18:computer/web_develop.html</id><summary type="html">&lt;h1&gt;名詞&lt;/h1&gt;
 &lt;p&gt;Webhooks: "user-defined HTTP callbacks"&lt;/p&gt;
 &lt;h1&gt;Frontend&lt;/h1&gt;
+&lt;h2&gt;HTML&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Tips_for_authoring_fast-loading_HTML_pages"&gt;Tips for authoring fast-loading HTML pages - Web developer guide | MDN&lt;/a&gt; - 效能要讀&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;CSS&lt;/h2&gt;
 &lt;h3&gt;基本語法&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="nd"&gt;:5px&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nt"&gt;red&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* 常用style: none, dotted, dashed, solid, double */&lt;/span&gt;
@@ -1665,6 +1669,18 @@ CONVERT( 欄位名稱 using big5) 。
 &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;information_schema&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;TABLES&lt;/span&gt;
 &lt;span class="k"&gt;GROUP&lt;/span&gt; &lt;span class="k"&gt;BY&lt;/span&gt; &lt;span class="n"&gt;table_schema&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;增加欄位 add column:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. code-block:: sql
+&lt;/pre&gt;
+&lt;blockquote&gt;
+ALTER TABLE contacts ADD email VARCHAR(60);
+ALTER TABLE contacts ADD email VARCHAR(60) AFTER name;&lt;/blockquote&gt;
+&lt;p&gt;status:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;SHOW&lt;/span&gt; &lt;span class="k"&gt;TABLE&lt;/span&gt; &lt;span class="n"&gt;STATUS&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mysqlshow -uroot -p123456 --status db_name
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="function"&gt;
 &lt;h3&gt;function&lt;/h3&gt;
@@ -1711,10 +1727,14 @@ CONVERT( 欄位名稱 using big5) 。
 &lt;/div&gt;
 &lt;div class="section" id="id6"&gt;
 &lt;h3&gt;最佳化&lt;/h3&gt;
-&lt;p&gt;所有資料表最佳化:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-mysqlcheck -a -c -o -r --all-databases -uroot -p
-&lt;/pre&gt;
+&lt;p&gt;所有資料表最佳化&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;mysqlcheck&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;c&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="c1"&gt;--all-databases -uroot -p&lt;/span&gt;
+
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;mysqlcheck&lt;/span&gt; &lt;span class="c1"&gt;--all-databases&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;mysqlcheck&lt;/span&gt; &lt;span class="c1"&gt;--all-databases -o&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;mysqlcheck&lt;/span&gt; &lt;span class="c1"&gt;--all-databases --auto-repair&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;mysqlcheck&lt;/span&gt; &lt;span class="c1"&gt;--all-databases --analyze&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;a: analyze, c: check, o: optimize, r: repair&lt;/p&gt;
 &lt;p&gt;重建索引:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -1881,7 +1901,7 @@ sudo /etc/init.d/mysql restart
 &lt;/pre&gt;
 &lt;div class="section" id="mac-os-x"&gt;
 &lt;h4&gt;Mac OS X&lt;/h4&gt;
-&lt;p&gt;從MySql(&lt;a class="reference external" href="http://dev.mysql.com/downloads/mysql/"&gt;http://dev.mysql.com/downloads/mysql/&lt;/a&gt;) 找適何的package，裝完後:&lt;/p&gt;
+&lt;p&gt;從 MySql (&lt;a class="reference external" href="http://dev.mysql.com/downloads/mysql/"&gt;http://dev.mysql.com/downloads/mysql/&lt;/a&gt;) 找適何的package，裝完後:&lt;/p&gt;
 &lt;p&gt;binary:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 /usr/local/mysql/bin/mysql
@@ -4371,6 +4391,8 @@ git checkout abcd, 移到abcd
 git branch abcd # 開新branch, 但不移駕
 git co -b abcd 開新branch, 而且移駕到新開的branch
 git branch -m old new # rename branch
+git branch -a # --all, list both remote-tracking branches and local branches
+git brnach -r # list or delete (-d) the remote-tracking branches
 &lt;/pre&gt;
 &lt;p&gt;git merge:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;

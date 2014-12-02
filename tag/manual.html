@@ -89,6 +89,18 @@ CONVERT( 欄位名稱 using big5) 。
 <span class="k">FROM</span> <span class="n">information_schema</span><span class="p">.</span><span class="n">TABLES</span>
 <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">table_schema</span> <span class="p">;</span>
 </pre></div>
+<p>增加欄位 add column:</p>
+<pre class="literal-block">
+.. code-block:: sql
+</pre>
+<blockquote>
+ALTER TABLE contacts ADD email VARCHAR(60);
+ALTER TABLE contacts ADD email VARCHAR(60) AFTER name;</blockquote>
+<p>status:</p>
+<div class="highlight"><pre><span class="k">SHOW</span> <span class="k">TABLE</span> <span class="n">STATUS</span><span class="p">;</span>
+</pre></div>
+<div class="highlight"><pre><span class="nv">$ </span>mysqlshow -uroot -p123456 --status db_name
+</pre></div>
 </div>
 <div class="section" id="function">
 <h3>function</h3>
@@ -135,10 +147,14 @@ CONVERT( 欄位名稱 using big5) 。
 </div>
 <div class="section" id="id6">
 <h3>最佳化</h3>
-<p>所有資料表最佳化:</p>
-<pre class="literal-block">
-mysqlcheck -a -c -o -r --all-databases -uroot -p
-</pre>
+<p>所有資料表最佳化</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">mysqlcheck</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="k">c</span> <span class="o">-</span><span class="n">o</span> <span class="o">-</span><span class="n">r</span> <span class="c1">--all-databases -uroot -p</span>
+
+<span class="err">$</span> <span class="n">mysqlcheck</span> <span class="c1">--all-databases</span>
+<span class="err">$</span> <span class="n">mysqlcheck</span> <span class="c1">--all-databases -o</span>
+<span class="err">$</span> <span class="n">mysqlcheck</span> <span class="c1">--all-databases --auto-repair</span>
+<span class="err">$</span> <span class="n">mysqlcheck</span> <span class="c1">--all-databases --analyze</span>
+</pre></div>
 <p>a: analyze, c: check, o: optimize, r: repair</p>
 <p>重建索引:</p>
 <pre class="literal-block">
@@ -305,7 +321,7 @@ sudo /etc/init.d/mysql restart
 </pre>
 <div class="section" id="mac-os-x">
 <h4>Mac OS X</h4>
-<p>從MySql(<a class="reference external" href="http://dev.mysql.com/downloads/mysql/">http://dev.mysql.com/downloads/mysql/</a>) 找適何的package，裝完後:</p>
+<p>從 MySql (<a class="reference external" href="http://dev.mysql.com/downloads/mysql/">http://dev.mysql.com/downloads/mysql/</a>) 找適何的package，裝完後:</p>
 <p>binary:</p>
 <pre class="literal-block">
 /usr/local/mysql/bin/mysql
