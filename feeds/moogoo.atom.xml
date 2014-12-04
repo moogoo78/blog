@@ -2315,6 +2315,10 @@ What is it that stands higher than action?  Silence.
 &lt;h3&gt;應用&lt;/h3&gt;
 &lt;p&gt;圖片塞滿browser
 * &lt;a href="http://paulmason.name/item/full-screen-background-image-pure-css-code"&gt;Full Screen Background Image - Pure CSS Code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;表格列加刪除線&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://codepen.io/nericksx/pen/CKjbe"&gt;Table Row Strikethrough&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;JavaScript&lt;/h2&gt;
 &lt;h3&gt;jQuery&lt;/h3&gt;
 &lt;p&gt;(DOM) ready:&lt;/p&gt;
