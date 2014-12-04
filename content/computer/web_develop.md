@@ -71,6 +71,9 @@ css:
 圖片塞滿browser
 * [Full Screen Background Image - Pure CSS Code](http://paulmason.name/item/full-screen-background-image-pure-css-code)
 
+表格列加刪除線
+
+* [Table Row Strikethrough](http://codepen.io/nericksx/pen/CKjbe)
 
 ## JavaScript
 
