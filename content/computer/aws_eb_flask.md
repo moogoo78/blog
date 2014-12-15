@@ -21,6 +21,9 @@ Slug: aws_elastic_beanstalk_flask
     $ eb deploy
 
 
+command line 跟 v2 不一樣, 沒有 start, stop, aws.push 改用 create, terminate, deploy
+
+
 # note
 
 * http session -> 用stateless (access token)
