@@ -577,6 +577,7 @@ background-position:0-42px;
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;p&gt;command line 跟 v2 不一樣, 沒有 start, stop, aws.push 改用 create, terminate, deploy&lt;/p&gt;
 &lt;h1&gt;note&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;http session -&amp;gt; 用stateless (access token)&lt;/li&gt;
