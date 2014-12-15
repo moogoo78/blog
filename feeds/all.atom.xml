@@ -3104,6 +3104,61 @@ PM 17:30 ~ 21:00
 &lt;ul&gt;
 &lt;li&gt;一開始用別人的照片，體驗是別人的，下次自己觀察拍照，講自己的自然體驗比較精彩&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>Deploying Flask (Python) to AWS Elastic Beanstalk</title><link href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html" rel="alternate"></link><updated>2013-11-12T17:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:computer/aws_elastic_beanstalk_flask.html</id><summary type="html">&lt;h1&gt;quickstart&lt;/h1&gt;
+&lt;h2&gt;EB CLI (v3)&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install awsebcli
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;create app&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;eb init
+&lt;span class="nv"&gt;$ &lt;/span&gt;eb create my-silly-env
+&lt;span class="nv"&gt;$ &lt;/span&gt;eb open
+&lt;span class="nv"&gt;$ &lt;/span&gt;改改改
+&lt;span class="nv"&gt;$ &lt;/span&gt;eb deploy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;note&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;http session -&amp;gt; 用stateless (access token)&lt;/li&gt;
+&lt;li&gt;自己存session&lt;/li&gt;
+&lt;li&gt;load balance上啓動stick session  (load balance產生一個table),&lt;/li&gt;
+&lt;li&gt;memcached session manager&lt;/li&gt;
+&lt;li&gt;redis session manager&lt;/li&gt;
+&lt;li&gt;amazon DynamoDB session manager&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;message, celery&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs"&gt;Celery with Amazon SQS - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/"&gt;Using Django and Celery with Amazon SQS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;EC2 環境&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# app 路徑
+/opt/python/current/app
+# stdout
+/opt/python/log/httpd.out
+# access_log
+/var/log/httpd/access_log
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/"&gt;First impressions with Flask and Elastic Beanstalk - tushman.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;問題 / Problems&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;requirements.txt 加了 bcrypt 會錯, 因為還要安裝 gcc 跟 libffi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;.ebextensions/python.config:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;packages:
+  yum:
+    libffi-devel: []
+    gcc: []
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="https://racingtadpole.com/blog/django-aws-eb-s3/"&gt;Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;quickstart (old)&lt;/h1&gt;
 &lt;h2&gt;1. 安裝eb commend tools&lt;/h2&gt;
 &lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定好路徑(以mac為例), 就可以開始了&lt;/p&gt;
@@ -3225,58 +3280,7 @@ eb status --verbose
 &lt;p&gt;http://blog.uptill3.com/2012/08/25/python-on-elastic-beanstalk.html
 http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
-https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;
-&lt;h1&gt;commend&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;eb --version
-&lt;span class="nv"&gt;$ &lt;/span&gt;eb --help
-&lt;span class="nv"&gt;$ &lt;/span&gt;eb status --verbose
-&lt;span class="nv"&gt;$ &lt;/span&gt;eb logs
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-reference-branch-environment.html"&gt;Deploying a Git Branch to a Specific Environment - AWS Elastic Beanstalk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;note&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;http session -&amp;gt; 用stateless (access token)&lt;/li&gt;
-&lt;li&gt;自己存session&lt;/li&gt;
-&lt;li&gt;load balance上啓動stick session  (load balance產生一個table),&lt;/li&gt;
-&lt;li&gt;memcached session manager&lt;/li&gt;
-&lt;li&gt;redis session manager&lt;/li&gt;
-&lt;li&gt;amazon DynamoDB session manager&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;message, celery&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs"&gt;Celery with Amazon SQS - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/"&gt;Using Django and Celery with Amazon SQS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;EC2 環境&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# app 路徑
-/opt/python/current/app
-# stdout
-/opt/python/log/httpd.out
-# access_log
-/var/log/httpd/access_log
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/"&gt;First impressions with Flask and Elastic Beanstalk - tushman.io&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;問題 / Problems&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;requirements.txt 加了 bcrypt 會錯, 因為還要安裝 gcc 跟 libffi&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;.ebextensions/python.config:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;packages:
-  yum:
-    libffi-devel: []
-    gcc: []
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;&lt;a href="https://racingtadpole.com/blog/django-aws-eb-s3/"&gt;Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole&lt;/a&gt;&lt;/p&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>2013 吃不停的田中馬拉松</title><link href="http://blog.suhen.org/run/2013_tianzhong_marathon.html" rel="alternate"></link><updated>2013-11-11T20:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-11:run/2013_tianzhong_marathon.html</id><summary type="html">&lt;h1&gt;2013-11-09 第一天 - 移動，吃喝&lt;/h1&gt;
+https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>2013 吃不停的田中馬拉松</title><link href="http://blog.suhen.org/run/2013_tianzhong_marathon.html" rel="alternate"></link><updated>2013-11-11T20:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-11:run/2013_tianzhong_marathon.html</id><summary type="html">&lt;h1&gt;2013-11-09 第一天 - 移動，吃喝&lt;/h1&gt;
 &lt;p&gt;之前聽說是口碑很好的馬拉松賽事，這次浩浩蕩蕩一群朋友一起參加了，順便去很少去的彰化員林附近玩玩。因為是歡樂的馬拉松決定要好好的來變裝，星期五下班到台北車站後站的太原路那裡找靈感，看來看去有只有可愛風的道具比較適合，買了各種動物頭套。&lt;/p&gt;
 &lt;p&gt;早上從台北出發，想去新竹風城攀岩場看看，結果剛好那天是青少年的比賽，只好看個熱鬧就離去，不過也遇到朋友，聊聊天也滿不錯的。之後開車到彰化已經中午了。下交流道經過北斗，看到路邊市場的肉圓，就停下來吃，本來不是特別喜歡中部炸的肉圓，但這裡的還滿好吃的，又便宜。之後先到田尾找我們的民宿，因為馬拉松早就訂滿了，我們就睡民宿主人阿成哥浪漫田邊的的空地，弄好帳篷，轉往員林去吃吃喝喝。&lt;/p&gt;
 &lt;p&gt;一行人因為在台北找不出時間看&lt;a href="http://www.atmovies.com.tw/movie/fbtw46649993/"&gt;看見台灣&lt;/a&gt;，到員林這裡來看剛好，我們就先買了電影票。然後走到附近的牛肉火鍋 (感謝在地的Amy推薦)，真的非常好吃，牛肉很鮮美，都不太需要用醬料，配上肉燥飯，就在喝咖啡單品般純粹的享受啊。&lt;/p&gt;

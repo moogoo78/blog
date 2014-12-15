@@ -46,6 +46,61 @@
 <p>In <a href="../category/computer.html">computer</a>. </p>
 <p>tags: <a href="../tag/flask.html">flask</a><a href="../tag/aws.html">aws</a></p>
 </footer><!-- /.post-info -->      <h1>quickstart</h1>
+<h2>EB CLI (v3)</h2>
+<div class="highlight"><pre><span class="nv">$ </span>pip install awsebcli
+</pre></div>
+
+
+<h2>create app</h2>
+<div class="highlight"><pre><span class="nv">$ </span>eb init
+<span class="nv">$ </span>eb create my-silly-env
+<span class="nv">$ </span>eb open
+<span class="nv">$ </span>改改改
+<span class="nv">$ </span>eb deploy
+</pre></div>
+
+
+<h1>note</h1>
+<ul>
+<li>http session -&gt; 用stateless (access token)</li>
+<li>自己存session</li>
+<li>load balance上啓動stick session  (load balance產生一個table),</li>
+<li>memcached session manager</li>
+<li>redis session manager</li>
+<li>amazon DynamoDB session manager</li>
+</ul>
+<h1>message, celery</h1>
+<ul>
+<li><a href="http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs">Celery with Amazon SQS - Stack Overflow</a></li>
+<li><a href="http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/">Using Django and Celery with Amazon SQS</a></li>
+</ul>
+<h1>EC2 環境</h1>
+<div class="highlight"><pre># app 路徑
+/opt/python/current/app
+# stdout
+/opt/python/log/httpd.out
+# access_log
+/var/log/httpd/access_log
+</pre></div>
+
+
+<ul>
+<li><a href="http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/">First impressions with Flask and Elastic Beanstalk - tushman.io</a></li>
+</ul>
+<h1>問題 / Problems</h1>
+<ul>
+<li>requirements.txt 加了 bcrypt 會錯, 因為還要安裝 gcc 跟 libffi</li>
+</ul>
+<p>.ebextensions/python.config:</p>
+<div class="highlight"><pre>packages:
+  yum:
+    libffi-devel: []
+    gcc: []
+</pre></div>
+
+
+<p><a href="https://racingtadpole.com/blog/django-aws-eb-s3/">Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole</a></p>
+<h1>quickstart (old)</h1>
 <h2>1. 安裝eb commend tools</h2>
 <p>下載: <a href="http://aws.amazon.com/code/6752709412171743">AWS Elastic Beanstalk Command Line Tool : Sample Code &amp; Libraries : Amazon Web Services</a></p>
 <p>設定好路徑(以mac為例), 就可以開始了</p>
@@ -168,57 +223,6 @@ eb status --verbose
 http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
 https://github.com/adamcrosby/elastic-flask-baseline</p>
-<h1>commend</h1>
-<div class="highlight"><pre><span class="nv">$ </span>eb --version
-<span class="nv">$ </span>eb --help
-<span class="nv">$ </span>eb status --verbose
-<span class="nv">$ </span>eb logs
-</pre></div>
-
-
-<ul>
-<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-reference-branch-environment.html">Deploying a Git Branch to a Specific Environment - AWS Elastic Beanstalk</a></li>
-</ul>
-<h1>note</h1>
-<ul>
-<li>http session -&gt; 用stateless (access token)</li>
-<li>自己存session</li>
-<li>load balance上啓動stick session  (load balance產生一個table),</li>
-<li>memcached session manager</li>
-<li>redis session manager</li>
-<li>amazon DynamoDB session manager</li>
-</ul>
-<h1>message, celery</h1>
-<ul>
-<li><a href="http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs">Celery with Amazon SQS - Stack Overflow</a></li>
-<li><a href="http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/">Using Django and Celery with Amazon SQS</a></li>
-</ul>
-<h1>EC2 環境</h1>
-<div class="highlight"><pre># app 路徑
-/opt/python/current/app
-# stdout
-/opt/python/log/httpd.out
-# access_log
-/var/log/httpd/access_log
-</pre></div>
-
-
-<ul>
-<li><a href="http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/">First impressions with Flask and Elastic Beanstalk - tushman.io</a></li>
-</ul>
-<h1>問題 / Problems</h1>
-<ul>
-<li>requirements.txt 加了 bcrypt 會錯, 因為還要安裝 gcc 跟 libffi</li>
-</ul>
-<p>.ebextensions/python.config:</p>
-<div class="highlight"><pre>packages:
-  yum:
-    libffi-devel: []
-    gcc: []
-</pre></div>
-
-
-<p><a href="https://racingtadpole.com/blog/django-aws-eb-s3/">Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole</a></p>
     </div><!-- /.entry-content -->
     <div class="comments">
       <h2>Comments !</h2>

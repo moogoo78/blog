@@ -563,6 +563,61 @@ background-position:0-42px;
 &lt;p&gt;Mac apache folder:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;WebServer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Documents&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>Deploying Flask (Python) to AWS Elastic Beanstalk</title><link href="http://blog.suhen.org/computer/aws_elastic_beanstalk_flask.html" rel="alternate"></link><updated>2013-11-12T17:31:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-12:computer/aws_elastic_beanstalk_flask.html</id><summary type="html">&lt;h1&gt;quickstart&lt;/h1&gt;
+&lt;h2&gt;EB CLI (v3)&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install awsebcli
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;create app&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;eb init
+&lt;span class="nv"&gt;$ &lt;/span&gt;eb create my-silly-env
+&lt;span class="nv"&gt;$ &lt;/span&gt;eb open
+&lt;span class="nv"&gt;$ &lt;/span&gt;改改改
+&lt;span class="nv"&gt;$ &lt;/span&gt;eb deploy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;note&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;http session -&amp;gt; 用stateless (access token)&lt;/li&gt;
+&lt;li&gt;自己存session&lt;/li&gt;
+&lt;li&gt;load balance上啓動stick session  (load balance產生一個table),&lt;/li&gt;
+&lt;li&gt;memcached session manager&lt;/li&gt;
+&lt;li&gt;redis session manager&lt;/li&gt;
+&lt;li&gt;amazon DynamoDB session manager&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;message, celery&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs"&gt;Celery with Amazon SQS - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/"&gt;Using Django and Celery with Amazon SQS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;EC2 環境&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# app 路徑
+/opt/python/current/app
+# stdout
+/opt/python/log/httpd.out
+# access_log
+/var/log/httpd/access_log
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/"&gt;First impressions with Flask and Elastic Beanstalk - tushman.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;問題 / Problems&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;requirements.txt 加了 bcrypt 會錯, 因為還要安裝 gcc 跟 libffi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;.ebextensions/python.config:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;packages:
+  yum:
+    libffi-devel: []
+    gcc: []
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="https://racingtadpole.com/blog/django-aws-eb-s3/"&gt;Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;quickstart (old)&lt;/h1&gt;
 &lt;h2&gt;1. 安裝eb commend tools&lt;/h2&gt;
 &lt;p&gt;下載: &lt;a href="http://aws.amazon.com/code/6752709412171743"&gt;AWS Elastic Beanstalk Command Line Tool : Sample Code &amp;amp; Libraries : Amazon Web Services&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定好路徑(以mac為例), 就可以開始了&lt;/p&gt;
@@ -684,58 +739,7 @@ eb status --verbose
 &lt;p&gt;http://blog.uptill3.com/2012/08/25/python-on-elastic-beanstalk.html
 http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
-https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;
-&lt;h1&gt;commend&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;eb --version
-&lt;span class="nv"&gt;$ &lt;/span&gt;eb --help
-&lt;span class="nv"&gt;$ &lt;/span&gt;eb status --verbose
-&lt;span class="nv"&gt;$ &lt;/span&gt;eb logs
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-reference-branch-environment.html"&gt;Deploying a Git Branch to a Specific Environment - AWS Elastic Beanstalk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;note&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;http session -&amp;gt; 用stateless (access token)&lt;/li&gt;
-&lt;li&gt;自己存session&lt;/li&gt;
-&lt;li&gt;load balance上啓動stick session  (load balance產生一個table),&lt;/li&gt;
-&lt;li&gt;memcached session manager&lt;/li&gt;
-&lt;li&gt;redis session manager&lt;/li&gt;
-&lt;li&gt;amazon DynamoDB session manager&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;message, celery&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs"&gt;Celery with Amazon SQS - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/"&gt;Using Django and Celery with Amazon SQS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;EC2 環境&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# app 路徑
-/opt/python/current/app
-# stdout
-/opt/python/log/httpd.out
-# access_log
-/var/log/httpd/access_log
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/"&gt;First impressions with Flask and Elastic Beanstalk - tushman.io&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;問題 / Problems&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;requirements.txt 加了 bcrypt 會錯, 因為還要安裝 gcc 跟 libffi&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;.ebextensions/python.config:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;packages:
-  yum:
-    libffi-devel: []
-    gcc: []
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;&lt;a href="https://racingtadpole.com/blog/django-aws-eb-s3/"&gt;Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole&lt;/a&gt;&lt;/p&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>Mac 系統問題</title><link href="http://blog.suhen.org/computer/mac_leopard_mavericks.html" rel="alternate"></link><updated>2013-11-02T00:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-02:computer/mac_leopard_mavericks.html</id><summary type="html">&lt;h1&gt;無法格式化 500 GB 或更大的磁碟&lt;/h1&gt;
+https://github.com/adamcrosby/elastic-flask-baseline&lt;/p&gt;</summary><category term="flask"></category><category term="aws"></category></entry><entry><title>Mac 系統問題</title><link href="http://blog.suhen.org/computer/mac_leopard_mavericks.html" rel="alternate"></link><updated>2013-11-02T00:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-02:computer/mac_leopard_mavericks.html</id><summary type="html">&lt;h1&gt;無法格式化 500 GB 或更大的磁碟&lt;/h1&gt;
 &lt;p&gt;無法寫入設備上最後的區塊&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://support.apple.com/kb/TS2644?viewlocale=zh_TW&amp;amp;locale=zh_TW"&gt;磁碟工具程式：無法格式化 500 GB 或更大的磁碟&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;從Leopard升級到Mavericks&lt;/h1&gt;
