@@ -3119,6 +3119,7 @@ PM 17:30 ~ 21:00
 
 
 &lt;p&gt;command line 跟 v2 不一樣, 沒有 start, stop, aws.push 改用 create, terminate, deploy&lt;/p&gt;
+&lt;p&gt;details: &lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-reference-eb.html"&gt;EB Command Line Interface - AWS Elastic Beanstalk&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;note&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;http session -&amp;gt; 用stateless (access token)&lt;/li&gt;
