@@ -5,6 +5,64 @@ Tags: flask, aws
 Slug: aws_elastic_beanstalk_flask
 
 # quickstart
+
+## EB CLI (v3)
+
+    :::bash
+    $ pip install awsebcli
+
+## create app
+    
+    :::bash
+    $ eb init
+    $ eb create my-silly-env
+    $ eb open
+    $ 改改改
+    $ eb deploy
+
+
+# note
+
+* http session -> 用stateless (access token)
+* 自己存session
+  * load balance上啓動stick session  (load balance產生一個table),
+  * memcached session manager
+  * redis session manager
+  * amazon DynamoDB session manager
+
+# message, celery
+
+* [Celery with Amazon SQS - Stack Overflow](http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs)
+* [Using Django and Celery with Amazon SQS](http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/)
+
+
+# EC2 環境
+    
+    :::text
+    # app 路徑
+    /opt/python/current/app
+    # stdout
+    /opt/python/log/httpd.out
+    # access_log
+    /var/log/httpd/access_log
+
+* [First impressions with Flask and Elastic Beanstalk - tushman.io](http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/)
+
+# 問題 / Problems
+
+* requirements.txt 加了 bcrypt 會錯, 因為還要安裝 gcc 跟 libffi
+
+.ebextensions/python.config:
+
+    :::text
+    packages:
+      yum:
+        libffi-devel: []
+        gcc: []
+
+[Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole](https://racingtadpole.com/blog/django-aws-eb-s3/)
+# quickstart (old)
+
 ## 1. 安裝eb commend tools
 
 下載: [AWS Elastic Beanstalk Command Line Tool : Sample Code & Libraries : Amazon Web Services](http://aws.amazon.com/code/6752709412171743)
@@ -143,53 +201,3 @@ http://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cron
 https://github.com/keithters/elasticbeanstalk-mysql-rds-flask
 https://github.com/adamcrosby/elastic-flask-baseline
 
-# commend
-
-    :::bash
-    $ eb --version
-    $ eb --help
-    $ eb status --verbose
-    $ eb logs
-
-* [Deploying a Git Branch to a Specific Environment - AWS Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-reference-branch-environment.html)
-
-# note
-
-* http session -> 用stateless (access token)
-* 自己存session
-  * load balance上啓動stick session  (load balance產生一個table),
-  * memcached session manager
-  * redis session manager
-  * amazon DynamoDB session manager
-
-# message, celery
-
-* [Celery with Amazon SQS - Stack Overflow](http://stackoverflow.com/questions/8048556/celery-with-amazon-sqs)
-* [Using Django and Celery with Amazon SQS](http://www.caktusgroup.com/blog/2011/12/19/using-django-and-celery-amazon-sqs/)
-
-
-# EC2 環境
-    
-    :::text
-    # app 路徑
-    /opt/python/current/app
-    # stdout
-    /opt/python/log/httpd.out
-    # access_log
-    /var/log/httpd/access_log
-
-* [First impressions with Flask and Elastic Beanstalk - tushman.io](http://jtushman.github.io/blog/2013/06/12/first-impressions-with-flask-and-elastic-beanstalk/)
-
-# 問題 / Problems
-
-* requirements.txt 加了 bcrypt 會錯, 因為還要安裝 gcc 跟 libffi
-
-.ebextensions/python.config:
-
-    :::text
-    packages:
-      yum:
-        libffi-devel: []
-        gcc: []
-
-[Django and Amazon AWS Elastic Beanstalk with S3 | Racing Tadpole](https://racingtadpole.com/blog/django-aws-eb-s3/)
