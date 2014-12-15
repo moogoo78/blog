@@ -23,6 +23,7 @@ Slug: aws_elastic_beanstalk_flask
 
 command line 跟 v2 不一樣, 沒有 start, stop, aws.push 改用 create, terminate, deploy
 
+details: [EB Command Line Interface - AWS Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-reference-eb.html)
 
 # note
 
