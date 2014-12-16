@@ -200,6 +200,7 @@ background-position:0-42px;
 ## nginx
 
 redirect test.com to www.test.com
+
     :::text
     server {
         server_name test.com;
