@@ -2428,12 +2428,14 @@ background-position:0-42px;
 
 &lt;h1&gt;WebServer&lt;/h1&gt;
 &lt;h2&gt;nginx&lt;/h2&gt;
-&lt;p&gt;redirect test.com to www.test.com
-    :::text
-    server {
-        server_name test.com;
-        return 301 $scheme://www.test.com$request_uri;
-    }&lt;/p&gt;
+&lt;p&gt;redirect test.com to www.test.com&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;server {
+    server_name test.com;
+    return 301 $scheme://www.test.com$request_uri;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Mac apache folder:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;WebServer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Documents&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="html"></category><category term="css"></category></entry><entry><title>[荒野台北24解] 第六堂室內課 專業課程: 植物 - 行道樹的故事</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-6.html" rel="alternate"></link><updated>2013-12-17T19:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-17:misc/sow_taipei_interpreter_24-6.html</id><summary type="html">&lt;p&gt;講師: 玉山圓柏 (吳惠敏)&lt;/p&gt;

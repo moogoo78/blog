@@ -215,12 +215,14 @@ background-position:0-42px;
 
 <h1>WebServer</h1>
 <h2>nginx</h2>
-<p>redirect test.com to www.test.com
-    :::text
-    server {
-        server_name test.com;
-        return 301 $scheme://www.test.com$request_uri;
-    }</p>
+<p>redirect test.com to www.test.com</p>
+<div class="highlight"><pre>server {
+    server_name test.com;
+    return 301 $scheme://www.test.com$request_uri;
+}
+</pre></div>
+
+
 <p>Mac apache folder:</p>
 <div class="highlight"><pre><span class="o">/</span><span class="n">Library</span><span class="o">/</span><span class="n">WebServer</span><span class="o">/</span><span class="n">Documents</span>
 </pre></div>
