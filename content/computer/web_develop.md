@@ -115,6 +115,14 @@ css:
 
 ## service / daemon
 
+### gunicorn
+
+
+    :::bash
+    $ gunicorn main:app -b 0.0.0.0
+
+    # port 80 好像不行
+
 ### uwsgi
 
     # kill existing uwsgi
@@ -188,6 +196,17 @@ background-position:0-42px;
 -->
 
 # WebServer
+
+## nginx
+
+redirect test.com to www.test.com
+    :::text
+    server {
+        server_name test.com;
+        return 301 $scheme://www.test.com$request_uri;
+    }
+
+
 
 Mac apache folder:
 
