@@ -142,6 +142,13 @@
 </ul>
 <h1>Backend</h1>
 <h2>service / daemon</h2>
+<h3>gunicorn</h3>
+<div class="highlight"><pre><span class="nv">$ </span>gunicorn main:app -b 0.0.0.0
+
+<span class="c"># port 80 好像不行</span>
+</pre></div>
+
+
 <h3>uwsgi</h3>
 <div class="highlight"><pre><span class="cp"># kill existing uwsgi</span>
 <span class="n">ps</span> <span class="n">aux</span><span class="o">|</span><span class="n">grep</span> <span class="n">uwsgi</span> <span class="o">|</span><span class="n">awk</span> <span class="err">&#39;</span><span class="p">{</span> <span class="n">print</span> <span class="err">$</span><span class="mi">2</span><span class="p">}</span><span class="err">&#39;</span> <span class="o">|</span> <span class="n">xargs</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">run</span><span class="o">-</span><span class="k">if</span><span class="o">-</span><span class="n">empty</span> <span class="n">sudo</span> <span class="n">kill</span> <span class="o">-</span><span class="mi">9</span>
@@ -207,6 +214,13 @@ background-position:0-42px;
 -->
 
 <h1>WebServer</h1>
+<h2>nginx</h2>
+<p>redirect test.com to www.test.com
+    :::text
+    server {
+        server_name test.com;
+        return 301 $scheme://www.test.com$request_uri;
+    }</p>
 <p>Mac apache folder:</p>
 <div class="highlight"><pre><span class="o">/</span><span class="n">Library</span><span class="o">/</span><span class="n">WebServer</span><span class="o">/</span><span class="n">Documents</span>
 </pre></div>

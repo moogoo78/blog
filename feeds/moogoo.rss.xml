@@ -2355,6 +2355,13 @@ What is it that stands higher than action?  Silence.
 &lt;/ul&gt;
 &lt;h1&gt;Backend&lt;/h1&gt;
 &lt;h2&gt;service / daemon&lt;/h2&gt;
+&lt;h3&gt;gunicorn&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;gunicorn main:app -b 0.0.0.0
+
+&lt;span class="c"&gt;# port 80 好像不行&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h3&gt;uwsgi&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# kill existing uwsgi&lt;/span&gt;
 &lt;span class="n"&gt;ps&lt;/span&gt; &lt;span class="n"&gt;aux&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;uwsgi&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;awk&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;print&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;xargs&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;no&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;empty&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;kill&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;
@@ -2420,6 +2427,13 @@ background-position:0-42px;
 --&gt;
 
 &lt;h1&gt;WebServer&lt;/h1&gt;
+&lt;h2&gt;nginx&lt;/h2&gt;
+&lt;p&gt;redirect test.com to www.test.com
+    :::text
+    server {
+        server_name test.com;
+        return 301 $scheme://www.test.com$request_uri;
+    }&lt;/p&gt;
 &lt;p&gt;Mac apache folder:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;WebServer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Documents&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">moogoo</dc:creator><pubDate>Wed, 18 Dec 2013 18:08:00 +0800</pubDate><guid>tag:blog.suhen.org,2013-12-18:computer/web_develop.html</guid><category>html</category><category>css</category></item><item><title>[荒野台北24解] 第六堂室內課 專業課程: 植物 - 行道樹的故事</title><link>http://blog.suhen.org/misc/sow_taipei_interpreter_24-6.html</link><description>&lt;p&gt;講師: 玉山圓柏 (吳惠敏)&lt;/p&gt;
