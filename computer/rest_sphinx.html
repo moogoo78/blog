@@ -261,6 +261,19 @@ extensions = ['sphinx.ext.graphviz']
 </pre>
 </div>
 </div>
+<div class="section" id="autodoc-automodule">
+<h2>autodoc/automodule</h2>
+<p>project 目錄下有 docs, mymod</p>
+<p>自動產生 rst:</p>
+<pre class="literal-block">
+$ sphinx-apidoc -F -o docs mymod
+</pre>
+<p>修改 conf.py(project/docs/source):</p>
+<pre class="literal-block">
+sys.path.insert(0, os.path.abspath('../../mymod'))
+</pre>
+<p>然後在 docs 下 make html 就好了</p>
+</div>
 <div class="section" id="id9">
 <h2>參考資料</h2>
 <ul class="simple">

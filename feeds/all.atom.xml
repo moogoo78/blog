@@ -7585,6 +7585,10 @@ $ use myuser_db; #select db
 $ \. myuser_db_sometable.sql
 $ \q
 &lt;/pre&gt;
+&lt;p&gt;資料庫轉移, 從 localhost 到另一台DB (直接倒, 不用存 IO):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ mysqldump -u db_user -p db_passwd db_name | mysql -u db2_user -p db2_passwd -h db2_host db2_name;
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="configuration"&gt;
@@ -9457,6 +9461,19 @@ extensions = ['sphinx.ext.graphviz']
    Still in the comment.
 &lt;/pre&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="autodoc-automodule"&gt;
+&lt;h2&gt;autodoc/automodule&lt;/h2&gt;
+&lt;p&gt;project 目錄下有 docs, mymod&lt;/p&gt;
+&lt;p&gt;自動產生 rst:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ sphinx-apidoc -F -o docs mymod
+&lt;/pre&gt;
+&lt;p&gt;修改 conf.py(project/docs/source):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+sys.path.insert(0, os.path.abspath('../../mymod'))
+&lt;/pre&gt;
+&lt;p&gt;然後在 docs 下 make html 就好了&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id9"&gt;
 &lt;h2&gt;參考資料&lt;/h2&gt;
