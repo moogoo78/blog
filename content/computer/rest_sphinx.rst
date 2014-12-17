@@ -225,6 +225,23 @@ Comments 註解
      Still in the comment.
 
 
+autodoc/automodule
+========================
+
+project 目錄下有 docs, mymod
+
+自動產生 rst::
+  
+  $ sphinx-apidoc -F -o docs mymod
+
+  
+修改 conf.py(project/docs/source)::
+
+  sys.path.insert(0, os.path.abspath('../../mymod'))
+
+然後在 docs 下 make html 就好了
+
+
 參考資料
 ===========
 * `reST – reStructuredText — Bits and Pieces <http://people.ee.ethz.ch/~creller/web/tricks/reST.html>`__ - 簡潔扼要, 還有附Emacs的ReST mode

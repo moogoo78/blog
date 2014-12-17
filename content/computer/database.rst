@@ -358,6 +358,11 @@ Import / Export
    $ \q
 
 
+資料庫轉移, 從 localhost 到另一台DB (直接倒, 不用存 IO)::
+
+   $ mysqldump -u db_user -p db_passwd db_name | mysql -u db2_user -p db2_passwd -h db2_host db2_name;
+
+   
 Configuration
 ----------------------
 
