@@ -242,6 +242,11 @@ project 目錄下有 docs, mymod
 然後在 docs 下 make html 就好了
 
 
+.. note:: -o: output files directory -F: using sphinx-quickstart  create full project (conf.py Makefile...)
+          
+* [sphinx-apidoc manual page — Sphinx 1.2.3 documentation](http://sphinx-doc.org/man/sphinx-apidoc.html)
+
+
 參考資料
 ===========
 * `reST – reStructuredText — Bits and Pieces <http://people.ee.ethz.ch/~creller/web/tricks/reST.html>`__ - 簡潔扼要, 還有附Emacs的ReST mode

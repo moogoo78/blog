@@ -589,3 +589,15 @@ pip::
 -------
 
 * `Arrow: better dates and times for Python — Arrow 0.4.4 documentation <http://crsmithdev.com/arrow/>`__
+
+
+
+Image, PIL, Pillow
+========================
+
+在 Mac (OSX 10.9) 上用 pip (python 2.7) 裝 Pillow / PIL 失敗::
+
+  # 用 homebrew 安裝
+  $ brew install Homebrew/python/pillow
+  # error: 顯示要link jpeg
+  $ brew link jpeg --overwrite jpeg # 可能之前有舊的東西

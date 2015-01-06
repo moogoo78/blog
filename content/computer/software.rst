@@ -319,7 +319,10 @@ via: `How to watermark a video using FFmpeg | iDude.net <http://www.idude.net/in
 
 examples::
 
-  ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
-
+  $ ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
+  # convert MTS to mp4
+  $ ffmpeg -i 00026.MTS -vcodec mpeg4 -b:v 10M -acodec libfaac -b:a 192k out.mp4
+  # movie range, from 00:45:00 to 00:48:00 (經過 3 分鐘)
+  $ ffmpeg -i 00026.MTS -vcodec mpeg4 -b:v 10M -acodec libfaac -b:a 192k -ss 00:45:00.0 -t 00:03:00.0 out.mp4
 
 
