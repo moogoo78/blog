@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>suhen suchen</title><link>http://blog.suhen.org/</link><description></description><atom:link href="http://blog.suhen.org/feeds/moogoo.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 12 Nov 2014 15:58:00 +0800</lastBuildDate><item><title>WFMU songs</title><link>http://blog.suhen.org/music/wfmu-songs.html</link><description>&lt;p&gt;Todd Clark Group - Oceans Of She&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>suhen suchen</title><link>http://blog.suhen.org/</link><description></description><atom:link href="http://blog.suhen.org/feeds/moogoo.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 23 Dec 2014 16:21:00 +0800</lastBuildDate><item><title>[佛經] 法華經</title><link>http://blog.suhen.org/book/fahuajing.html</link><description>&lt;h1&gt;重點&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;6 種翻譯本&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">moogoo</dc:creator><pubDate>Tue, 23 Dec 2014 16:21:00 +0800</pubDate><guid>tag:blog.suhen.org,2014-12-23:book/fahuajing.html</guid></item><item><title>WFMU songs</title><link>http://blog.suhen.org/music/wfmu-songs.html</link><description>&lt;p&gt;Todd Clark Group - Oceans Of She&lt;/p&gt;
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/7lCXlSWJbNo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Bügsküll&lt;/p&gt;
@@ -6805,6 +6808,16 @@ pip install -i http://pypi.python.org/simple PACKAGE
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class="section" id="image-pil-pillow"&gt;
+&lt;h2&gt;Image, PIL, Pillow&lt;/h2&gt;
+&lt;p&gt;在 Mac (OSX 10.9) 上用 pip (python 2.7) 裝 Pillow / PIL 失敗:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+# 用 homebrew 安裝
+$ brew install Homebrew/python/pillow
+# error: 顯示要link jpeg
+$ brew link jpeg --overwrite jpeg # 可能之前有舊的東西
+&lt;/pre&gt;
+&lt;/div&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">moogoo</dc:creator><pubDate>Wed, 10 Jul 2013 14:02:00 +0800</pubDate><guid>tag:blog.suhen.org,2013-07-10:computer/python.html</guid><category>docs</category></item><item><title>名詞變格 (Deklination)</title><link>http://blog.suhen.org/language/deutsch_deklination.html</link><description>&lt;div class="section" id="deklination-des-substantivs"&gt;
 &lt;h2&gt;名詞變格 (Deklination des Substantivs)&lt;/h2&gt;
 &lt;div class="section" id="bestimmten-artikel"&gt;
@@ -9474,6 +9487,13 @@ $ sphinx-apidoc -F -o docs mymod
 sys.path.insert(0, os.path.abspath('../../mymod'))
 &lt;/pre&gt;
 &lt;p&gt;然後在 docs 下 make html 就好了&lt;/p&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;-o: output files directory -F: using sphinx-quickstart  create full project (conf.py Makefile...)&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;[sphinx-apidoc manual page — Sphinx 1.2.3 documentation](&lt;a class="reference external" href="http://sphinx-doc.org/man/sphinx-apidoc.html"&gt;http://sphinx-doc.org/man/sphinx-apidoc.html&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id9"&gt;
 &lt;h2&gt;參考資料&lt;/h2&gt;
@@ -9781,7 +9801,11 @@ $ ffmpeg –i inputvideo.avi -vf &amp;quot;movie=watermarklogo.png [watermark]; 
 &lt;p&gt;via: &lt;a class="reference external" href="http://www.idude.net/index.php/how-to-watermark-a-video-using-ffmpeg/"&gt;How to watermark a video using FFmpeg | iDude.net&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;examples:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
+$ ffmpeg -i filename.webm -acodec libmp3lame -aq 4 filename.mp3
+# convert MTS to mp4
+$ ffmpeg -i 00026.MTS -vcodec mpeg4 -b:v 10M -acodec libfaac -b:a 192k out.mp4
+# movie range, from 00:45:00 to 00:48:00 (經過 3 分鐘)
+$ ffmpeg -i 00026.MTS -vcodec mpeg4 -b:v 10M -acodec libfaac -b:a 192k -ss 00:45:00.0 -t 00:03:00.0 out.mp4
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
