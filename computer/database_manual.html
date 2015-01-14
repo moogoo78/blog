@@ -102,6 +102,14 @@ CONVERT( 欄位名稱 using big5) 。
 </pre></div>
 <div class="highlight"><pre><span class="nv">$ </span>mysqlshow -uroot -p123456 --status db_name
 </pre></div>
+<p>統計相關:</p>
+<div class="highlight"><pre><span class="c1">---- 欄位 col1 出現超過 5 次:</span>
+<span class="c1">-- WHERE (放在 group 前面) 在這裏不能用, 要改用 having</span>
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">cnt</span> <span class="k">from</span> <span class="o">&lt;</span><span class="k">table</span><span class="o">&gt;</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="o">&lt;</span><span class="n">col1</span><span class="o">&gt;</span> <span class="k">HAVING</span> <span class="n">cnt</span> <span class="o">&gt;</span> <span class="mi">5</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">cnt</span> <span class="k">DESC</span><span class="p">;</span>
+
+<span class="c1">-- 欄位 col1 不重複, 符合條件, 總共筆數</span>
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span> <span class="o">&lt;</span><span class="n">col1</span><span class="o">&gt;</span><span class="p">)</span> <span class="k">FROM</span> <span class="o">&lt;</span><span class="k">table</span><span class="o">&gt;</span> <span class="k">WHERE</span> <span class="o">&lt;</span><span class="n">col2</span><span class="o">&gt;</span> <span class="p">...</span>
+</pre></div>
 </div>
 <div class="section" id="function">
 <h3>function</h3>
