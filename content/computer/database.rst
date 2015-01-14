@@ -84,6 +84,18 @@ status:
     $ mysqlshow -uroot -p123456 --status db_name
 
 
+
+統計相關:
+
+.. code-block:: sql
+                
+   ---- 欄位 col1 出現超過 5 次:
+   -- WHERE (放在 group 前面) 在這裏不能用, 要改用 having
+   SELECT COUNT(*) AS cnt from <table> GROUP BY <col1> HAVING cnt > 5 ORDER BY cnt DESC;
+   
+   -- 欄位 col1 不重複, 符合條件, 總共筆數
+   SELECT COUNT(DISTINCT <col1>) FROM <table> WHERE <col2> ...
+    
 function
 -----------
 
