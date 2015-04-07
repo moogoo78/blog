@@ -52,7 +52,7 @@
 &lt;img alt="水金京" src="/images/nature/150314/tn_P3141155.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;17.中華裡白 這個時候都會探出頭來。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="中華裡白" src="/images/nature/150314/tn_P3141158.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;18.虎皮楠有幾個&lt;/p&gt;
+&lt;p&gt;18.虎皮楠有幾個葉子前端成三角戟狀&lt;/p&gt;
 &lt;p&gt;&lt;img alt="虎皮楠" src="/images/nature/150314/tn_P3141162.JPG" /&gt;
 &lt;img alt="虎皮楠" src="/images/nature/150314/tn_P3141163.JPG" /&gt;
 &lt;img alt="虎皮楠" src="/images/nature/150314/tn_P3141164.JPG" /&gt;&lt;/p&gt;
@@ -64,17 +64,17 @@
 &lt;p&gt;21.水冬瓜&lt;/p&gt;
 &lt;p&gt;&lt;img alt="水冬瓜" src="/images/nature/150314/tn_P3141175.JPG" /&gt;
 &lt;img alt="水冬瓜" src="/images/nature/150314/tn_P3141176.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;22.捲葉橡皮蟲?&lt;/p&gt;
+&lt;p&gt;22.捲葉象鼻蟲的傑作&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/nature/150314/tn_P3141178.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;23.裡白葉薯榔, 果實像賓士標誌的三角&lt;/p&gt;
+&lt;p&gt;23.頷垂豆花苞與二回羽狀複葉&lt;/p&gt;
 &lt;p&gt;&lt;img alt="裡白葉薯榔" src="/images/nature/150314/tn_P3141183.JPG" /&gt;
 &lt;img alt="裡白葉薯榔" src="/images/nature/150314/tn_P3141189.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;24.頜垂豆&lt;/p&gt;
+&lt;p&gt;24.裡白葉薯榔, 果實像賓士標誌的三角&lt;/p&gt;
 &lt;p&gt;&lt;img alt="頜垂豆" src="/images/nature/150314/tn_P3141185.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;25.山芙蓉&lt;/p&gt;
 &lt;p&gt;&lt;img alt="山芙蓉" src="/images/nature/150314/tn_P3141192.JPG" /&gt;
 &lt;img alt="山芙蓉" src="/images/nature/150314/tn_P3141193.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;26.X菊 ?&lt;/p&gt;
+&lt;p&gt;26.茯苓菜&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/nature/150314/tn_P3141195.JPG" /&gt;
 &lt;img alt="" src="/images/nature/150314/tn_P3141197.JPG" /&gt;&lt;/p&gt;
 &lt;h2&gt;補充&lt;/h2&gt;
@@ -274,93 +274,7 @@ pbcoby &amp;lt; ~/.ssh/other_key.pub
 &lt;p&gt;螳螂&lt;/p&gt;
 &lt;p&gt;騷斯&lt;/p&gt;
 &lt;p&gt;東亞家蝠&lt;/p&gt;
-&lt;p&gt;巨業 168&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">moogoo</dc:creator><pubDate>Mon, 20 Oct 2014 10:28:00 +0800</pubDate><guid>tag:blog.suhen.org,2014-10-20:nature/sow_19_anny.html</guid><category>note</category><category>diary</category></item><item><title>[電腦] 初學 Vagrant &amp; Docker</title><link>http://blog.suhen.org/computer/vagrant_and_docker.html</link><description>&lt;h1&gt;Vagrant&lt;/h1&gt;
-&lt;h2&gt;QuickStart&lt;/h2&gt;
-&lt;p&gt;設定檔 Vagrantfile (init 後產生, Ruby synctax)&lt;/p&gt;
-&lt;p&gt;快速:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant init chef/centos-6.5
-&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant up
-&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant ssh
-
-&lt;span class="c"&gt;# box 另外裝 centos&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant box add chef/centos-6.5
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;要改 Vagrantfile:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;Vagrant.configure(&amp;quot;2&amp;quot;) do |config|
-    config.vm.box = &amp;quot;chef/centos-6.5&amp;quot;
-    config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 5000, host: 8080 # host 的 127.0.0.1:8080 會連到 guest 的 port 5000
-end
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;其他commend:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant reload
-&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant list
-&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant status
-&lt;span class="nv"&gt;$ &lt;/span&gt;vagrant halt
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h2&gt;ssh 進入, 開始弄環境&lt;/h2&gt;
-&lt;p&gt;python version:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;Python 2.6.6 (r266:84292, Nov 22 2013, 12:16:22) 
-[GCC 4.4.7 20120313 (Red Hat 4.4.7-4)] on linux2
-
-:::bash
-# 系統
-$ yum update -y
-$ sudo yum install -y git vim # tools
-$ sudo yum install -y gcc mysql-python mysql-devel python-devel # for mysql-python
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;python 開發::&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget https://bootstrap.pypa.io/get-pip.py
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo python get-pip.py
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install virtualenv virtualenvwrapper
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;加到 .bashrc&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/bin/virtualenvwrapper.sh
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;記得加完後, sourec .bashrc&lt;/p&gt;
-&lt;h2&gt;flask&lt;/h2&gt;
-&lt;p&gt;設定成 external 外面才可以連進來&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;:::&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
-&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;host&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;0.0.0.0&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;h3&gt;Mac OS X&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;download Boot2Docker-x.x.x.pkg and install&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;init docker&lt;/p&gt;
-&lt;p&gt;:::bash
-$ boot2docker init
-$ boot2docker start&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;看到以下訊息, 要設定幾個環境變數:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To connect the Docker client to the Docker daemon, please set: export DOCKER_HOST=tcp://192.168.59.103:2375&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;測試:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;docker run hello-world
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;安裝最新 centos:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;docker run centos:centos6 /bin/bash
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">moogoo</dc:creator><pubDate>Wed, 15 Oct 2014 12:45:00 +0800</pubDate><guid>tag:blog.suhen.org,2014-10-15:computer/vagrant_and_docker.html</guid><category>note</category></item><item><title>[Deutsch] 必備單字</title><link>http://blog.suhen.org/language/deutsch_wort.html</link><description>&lt;ul&gt;
+&lt;p&gt;巨業 168&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">moogoo</dc:creator><pubDate>Mon, 20 Oct 2014 10:28:00 +0800</pubDate><guid>tag:blog.suhen.org,2014-10-20:nature/sow_19_anny.html</guid><category>note</category><category>diary</category></item><item><title>[Deutsch] 必備單字</title><link>http://blog.suhen.org/language/deutsch_wort.html</link><description>&lt;ul&gt;
 &lt;li&gt;Ein Tag: Der Morgen, Der Vormittag, der Mittag, der Nachmittag, der Abend, die Nacht&lt;/li&gt;
 &lt;li&gt;eine Woche: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Sonnabend (Samstag: West- und Süddeutschland), Sonntag.&lt;/li&gt;
 &lt;li&gt;ein Jahr: Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember&lt;/li&gt;
