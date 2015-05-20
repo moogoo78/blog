@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'moogoo'
-SITENAME = u'suhen suchen'
+SITENAME = u'suhen suchen | 酥賢尋找'
 SITEURL = 'http:\\blog.suhen.org'
 
 PATH = 'content'
@@ -22,7 +22,8 @@ ARTICLE_URL = '{category}/{slug}.html'
 #ARTICLE_URL = '{date:%Y-%m-%d}_{slug}.html'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
 #ARTICLE_SAVE_AS = '{date:%Y-%m-%d}_{slug}.html'
-THEME = 'themes/reallynotmyidea'
+#THEME = 'themes/reallynotmyidea'
+THEME = 'themes/space2001'
 
 # Blogroll
 LINKS = (
@@ -47,3 +48,9 @@ PLUGINS = [
     'pelican_youtube',
 ]
 
+
+DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
+DEFAULT_DATE_FORMATS = '%Y.%M.%d'
+
+# ref: http://docs.getpelican.com/en/latest/settings.html#basic-settings

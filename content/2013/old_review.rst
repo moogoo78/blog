@@ -1,7 +1,7 @@
 [book] 舊書重讀
 ##############################################################
 :date: 2013-07-09 02:33
-:category: book
+:category: read
 
 
 六個人的小世界 (Six Degrees, The Science of a Connected Age), Duncan J.Watts

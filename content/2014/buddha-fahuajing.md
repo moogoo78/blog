@@ -1,6 +1,6 @@
 Title: [佛經] 法華經
 Date: 2014-12-23 16:21
-Category: book
+Category: read
 Slug: fahuajing
 
 

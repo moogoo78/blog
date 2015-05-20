@@ -1,7 +1,7 @@
 書摘
 #############
 :date: 2013-08-22 00:54
-:category: book
+:category: read
 :quote: quote
 :slug: book_quote
 
