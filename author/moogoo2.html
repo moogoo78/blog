@@ -55,6 +55,59 @@
 
 <ol id="post-list">
         <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/comp_multi-ssh-keys.html" rel="bookmark" title="Permalink to [computer] 在 bitbucket, git 多個帳號設定 ssh keys (免打密碼)">[computer] 在 bitbucket, git 多個帳號設定 ssh keys (免打密碼)</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2014-11-10T16:15:00+08:00"> 一 10 11月 2014 </abbr>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>產生除了預設之外的 ssh key pairs::</p>
+<div class="highlight"><pre>ssh-keygen -t rsa -C <span class="s2">&quot;your_email@youremail.com&quot;</span> -f ~/.ssh/other_key
+
+<span class="c"># 複製到剪貼簿 (mac)</span>
+pbcoby &lt; ~/.ssh/other_key.pub
+</pre></div>
+
+
+<p>設定 .ssh/config::</p>
+<div class="highlight"><pre>Host bitbucket-other
+    User git
+    Hostname bitbucket.org
+    PreferredAuthentications publickey
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/other_key
+</pre></div>
+
+
+<p>這樣用 git 就不用打密碼了</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/nature/2014_sow_taiwan_beech.html" rel="bookmark" title="Permalink to [sow] 臺北宜蘭解說員聯誼 - 山毛櫸步道, 翠峰湖">[sow] 臺北宜蘭解說員聯誼 - 山毛櫸步道, 翠峰湖</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2014-11-01T21:24:00+08:00"> 六 01 11月 2014 </abbr>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>日期: 2014-11-01 (六)</p>
+<h1>行程</h1>
+<p>星期五晚上 20:00 耕莘文教中心出發，到宜蘭一路順暢，21:00 就到宜蘭救國團了。週六 0610 宜蘭救國團出發，0850 到崔峰湖，11:30 到最後的觀景台。大家都是來看山毛櫸變葉的季節，人山人海。總步道長度: 3.85 km，天氣晴朗。稜線往下看是是南澳南溪。</p>
+<h1>植物</h1>
+<h2>山毛櫸 / 台灣水青岡</h2>
+<ul>
+<li>長在棱線、迎風面</li>
+<li>殼斗科: 怕積水、葇荑花絮。材質硬、但容易裂。通常拿來做鐵道枕木。</li>
+<li>果實很小，不容易看到</li>
+</ul>
+<h2>太平山櫻花</h2>
+<ul>
+<li>皮孔疏，花白色 (阿里山櫻花的花也是白色)</li>
+<li><strong>note:</strong> 皮孔也是芽點 (植物都是這樣)</li>
+</ul>
+<h1>扁柏 &amp; 紅檜 ...</h1> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
                 <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/python_web_develop.html" rel="bookmark" title="Permalink to [Web] Python 開發環境 (nginx + gunicorn + supervisord + Flask)">[Web] Python 開發環境 (nginx +  gunicorn + supervisord + Flask)</a></h2> </header>
                 <footer class="post-info">
                     <abbr class="published" title="2014-10-20T10:38:00+08:00"> 一 20 10月 2014 </abbr>
@@ -228,66 +281,10 @@
 <li>母龜交配的時候很容易死，因為同時好幾隻公龜會一起壓上來，如果沒辦法浮上來呼吸，救會溺死，如果順利吸到氣就可以趕快上岸產卵。</li>
 </ul> </div><!-- /.entry-content -->
         </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/nature/miantian.html" rel="bookmark" title="Permalink to 保齡球社團爬面天山">保齡球社團爬面天山</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-09-03T02:17:00+08:00"> 三 03 9月 2014 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h1>天母古道</h1>
-<div class="highlight"><pre>家裡 -古道樓梯結束: 40min
-古道平路段: 20 min (部分小跑)
-古道出口-前山公園: 20 min (部分小跑)
-</pre></div>
-
-
-<p><img alt="構樹" src="/images/nature/140830-1/tn_IMG_0001.JPG" /></p>
-<p>構樹 [桑科]</p>
-<p><img alt="烏桕" src="/images/nature/140830-1/tn_IMG_0007.JPG" /></p>
-<p>烏桕 [大戟科]</p>
-<p><img alt="不知名黃果" src="/images/nature/140830-1/tn_IMG_0008.JPG" /></p>
-<p>不知名黃果</p>
-<p><img alt="金露花" src="/images/nature/140830-1/tn_IMG_0013.JPG" /></p>
-<p>金露花 [馬鞭草科]</p>
-<p><img alt="榕樹pi" src="/images/nature/140830-1/tn_IMG_0028.JPG" /></p>
-<p>pi</p>
-<h1>面天山</h1>
-<p><img alt="台灣百合&amp;台灣澤蘭" src="/images/nature/140830-1/tn_IMG_0033.JPG" /></p>
-<p>台灣百合 &amp; 台灣澤蘭</p>
-<p><img alt="扛板歸" src="/images/nature/140830-1/tn_IMG_0058.JPG" /></p>
-<p><img alt="扛板歸" src="/images/nature/140830-1/tn_IMG_0059.JPG" /></p>
-<p>扛板歸 (向天池)</p>
-<p><img alt="申跋" src="/images/nature/140830-1/tn_IMG_0064.JPG" /></p>
-<p>申跋</p>
-<p><img alt="白鶴蘭" src="/images/nature/140830-1/tn_IMG_0069.JPG" /></p>
-<p>白鶴蘭</p>
-<p><img alt="通泉草" src="/images/nature/140830-1/tn_IMG_0082.JPG" /></p>
-<p>通泉草</p>
-<p><img alt="九頭獅子草" src="/images/nature/140830-1/tn_IMG_0091.JPG" /></p>
-<p>九頭獅子草</p>
-<p><img alt="黃花鼠尾草" src="/images/nature/140830-1/tn_IMG_0100.JPG" /></p>
-<p>黃花鼠尾草</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/music/internet_radio.html" rel="bookmark" title="Permalink to 網路電台 Internet Radio">網路電台 Internet Radio</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-08-14T00:11:00+08:00"> 四 14 8月 2014 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <ul>
-<li><a href="http://wfmu.org/">WFMU-FM 91.1/Jersey City, NJ; 90.1/Hudson Valley, NY</a></li>
-<li><a href="http://www.radioeins.de/">radioeins</a></li>
-<li><a href="http://www.1.fm/station/baroque">OTTOS BAROQUE MUSIC RADIO STATION ON 1.FM</a></li>
-</ul> </div><!-- /.entry-content -->
-        </article></li>
 </ol><!-- /#posts-list -->
 <p class="paginator">
         <a href="http://blog.suhen.org/author/moogoo.html">&laquo;</a>
-    Page 2 / 19
+    Page 2 / 20
         <a href="http://blog.suhen.org/author/moogoo3.html">&raquo;</a>
 </p>
 </section><!-- /#content -->

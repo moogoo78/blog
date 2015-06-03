@@ -55,6 +55,76 @@
 
 <ol id="post-list">
         <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/blog.html" rel="bookmark" title="Permalink to blog">blog</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2013-04-02T15:53:00+08:00"> 二 02 4月 2013 </abbr>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <div class="section" id="http-status-code">
+<h2>HTTP status code</h2>
+<p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
+<div class="section" id="informational-1xx">
+<h3>Informational 1xx</h3>
+<p>HTTP/1.0沒有定義</p>
+<ul class="simple">
+<li>100 Continue, proxy</li>
+<li>101 Switching Protocols, HTTP版本轉換</li>
+</ul>
+</div>
+<div class="section" id="successful-2xx">
+<h3>Successful 2xx</h3>
+<ul class="simple">
+<li>200 OK</li>
+<li>201 Created</li>
+<li>202 Accepted</li>
+<li>203 Non-Authoritative Information</li>
+<li>204 No Content</li>
+<li>205 Reset Content</li>
+<li>206 Partial Content</li>
+</ul>
+</div>
+<div class="section" id="redirection-3xx">
+<h3>Redirection 3xx</h3>
+<ul class="simple">
+<li>300 Multiple Choices</li>
+<li>301 Moved ...</li></ul></div></div> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/ganglia.html" rel="bookmark" title="Permalink to Ganglia">Ganglia</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2013-04-02T11:39:00+08:00"> 二 02 4月 2013 </abbr>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
+<p>Ganglia有3個部分:</p>
+<ul class="simple">
+<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
+<li>gmetad - 詢問gmond儲存數質</li>
+<li>ganglia-web</li>
+</ul>
+<pre class="literal-block">
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+</pre>
+<p>start daemond:</p>
+<pre class="literal-block">
+service gmond start
+service gmetad start
+</pre>
+<div class="section" id="centos">
+<h2>CentOS</h2>
+<p>進入web介面時出現:</p>
+<pre class="literal-block">
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+</pre>
+<p>解決方法, 重新安裝 ...</p></div> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
                 <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/rest_sphinx.html" rel="bookmark" title="Permalink to reST – reStructuredText與Sphinx">reST – reStructuredText與Sphinx</a></h2> </header>
                 <footer class="post-info">
                     <abbr class="published" title="2013-03-28T00:00:00+08:00"> 四 28 3月 2013 </abbr>
@@ -298,50 +368,10 @@ login=yourdomain.com ...</pre> </div><!-- /.entry-content -->
 分組: 54/133
 天氣 ...</pre></div> </div><!-- /.entry-content -->
         </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/run/2011-12-18_taipei_marathon.html" rel="bookmark" title="Permalink to 2011 富邦馬拉松心得">2011 富邦馬拉松心得</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2011-12-18T15:31:00+08:00"> 日 18 12月 2011 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <div class="highlight"><pre>1. 可能是個人最佳成積, 但是晶片出包, 起跑時間被偷了十幾分鐘
-2. 半馬和全馬寄物處要繞好遠, 我雖然6點就到了, 還是搞到要很趕的擠到起跑點, 也沒熱身
-3. 今年不用跑高架橋, 但是2/3都在河濱公園跑, 沒有城市馬拉松的特色
-4. 補給真的太普通了, 除了最後松山那一攤有水果最感心之外, 其他的真的乏善可陳, 連鹽都沒有, 還好我都自己帶...
-5. 有提供更衣室, 不過我沒用到, 因為跑完就去誠品書店的洗手間更爽
-6. 啦啦隊不少, 大部分好像都是富邦動員的
-7. 視障跑者很多, 看了很感動
-8. 比賽後段有機會一直超車, 但在其他比賽通常我都是被巴假的
-9. 因為沒什麼特色所以主辦單位也只能一直強調人最多, 跑最大
-10. 這次沒帶相機了
-11. 這場速度調的很穩, 從頭到尾每1k都是6分多一點, 可能是全平路而且路線很熟
-12. 明明知道有很多朋友要跑, 但一個都沒遇到
-</pre></div> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/run/2011-01-23_tainan_marathon.html" rel="bookmark" title="Permalink to 2011 台南古都馬拉松，第二馬">2011 台南古都馬拉松，第二馬</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2011-01-23T00:00:00+08:00"> 日 23 1月 2011 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>11月中就開始維持每星期跑2~3次10k，練了幾次間歇，原本是要好好準備2011高雄馬拉松，想要拿台南馬拉松來當練習，原本考慮跑半馬就好了，但是在填報名表時還是受不了誘惑勾了全馬。
-但是就在比賽前二星期因為感冒、天氣不好(藉口)，沒有練到LSD，這場馬拉松也是抱著一種不要被車子載回來就好的心情下去##的。
-最近晚睡的結果，也是一直到了快三點才睡，五點就要起來了...
-早上在市府廣場集合，人也很多，天氣很冷，6點起跑，天都還沒亮。以最慢的速度開始跑，希望不要到20k就掛掉。沒想到雖然跑前沒練到LSD，前面20k跑起來還不算累，甚至比起二年前來跑半馬時輕鬆許多，花了大概2小時。</p>
-<p>過了安南區國姓大橋後的景色就是魚溫和荒地，一直到七股去，這一段好感覺好長，終於看到折返點，到25k時，開始覺得不舒##了，開始放慢一點速度，國姓大橋之後開始走走跑跑，也是擔心受傷，影嚮下個月的高雄馬，所以覺得腳酸就停下來快走。</p>
-<blockquote>
-<p>902  李思賢 男30-39歲 04:50:01    1218    239</p>
-</blockquote>
-<p>算是有跑進五小時，破個人爛PB。不過因為沒有太拚 ...</p> </div><!-- /.entry-content -->
-        </article></li>
 </ol><!-- /#posts-list -->
 <p class="paginator">
         <a href="http://blog.suhen.org/author/moogoo17.html">&laquo;</a>
-    Page 18 / 19
+    Page 18 / 20
         <a href="http://blog.suhen.org/author/moogoo19.html">&raquo;</a>
 </p>
 </section><!-- /#content -->
