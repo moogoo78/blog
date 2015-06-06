@@ -40,6 +40,7 @@
                 <h1><a href="http://blog.suhen.org/">suhen suchen | 酥賢尋找 <strong></strong></a></h1>
         </header><!-- /#banner -->
         <nav id="menu"><ul>
+              <li><a href="http://blog.suhen.org/category/2015.html">2015</a></li>
               <li><a href="http://blog.suhen.org/category/computer.html">computer</a></li>
               <li><a href="http://blog.suhen.org/category/language.html">language</a></li>
               <li><a href="http://blog.suhen.org/category/misc.html">misc</a></li>
@@ -54,6 +55,103 @@
 <h2>All articles</h2>
 
 <ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/mountain/neiliaogudao.html" rel="bookmark" title="Permalink to [陽明山] 內寮古道 (2013-09-29)">[陽明山] 內寮古道 (2013-09-29)</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2013-10-03T10:48:00+08:00"> 四 03 10月 2013 </abbr>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><img alt="手繪地圖" src="/images/2013-09-29_neiliaogudao/draw_map.jpg" /></p>
+<p>一直想把平等里上擎天崗的一些古道古圳都走過摸透: 竹篙山古道、內寮古道、瑪礁古道、荷蘭古道、坪頂古圳...</p>
+<p>2013一月來走過，但是後段不小心上切到瑪礁山跟竹篙山南峰，直接從竹篙山，上擎天崗，那天天氣不好，不好找路，只好原路來回。</p>
+<p>這次車也是停在內寮站牌附近，然後從100號旁走上去，先不過溪，走1k後跟上次一樣左上瑪礁山，竹篙山南峰 開始有防迷地線，地面泥擰，牛大便多，展望不錯。</p>
+<p><img alt="展望" src="/images/2013-09-29_neiliaogudao/tn_DSC_0559.jpg" /></p>
+<p>竹篙山碉堡往遊客多的環形步道走，中間還會經過另一個碉堡，有小路往比較偏離主要步道的碉堡，那裡就是往下街瑪礁古道跟坪頂古圳的路。</p>
+<p>今天天氣不錯，擎天崗人很多人，到遊客中心上廁所、排隊買冰棒。然後準備離開人群，走進幽靜的森林。</p>
+<p>先往那個"比較偏遠的碉堡"走去，還沒到碉堡前有一條左邊往坪頂古圳的叉路，取右。然後有右邊一個下切點，左邊是稜線，不過看起來應該會殊途同歸，下切往溪谷走，果然就是走在GPS內寮古道的路徑上。這裡比上來泥擰很多，天氣好還可以走，如果下雨就會一路滑下去了。看到很多古石厝遺跡，還有著名的番婆厝，土地公。</p>
+<p><img alt="番婆厝" src="/images/2013-09-29_neiliaogudao/th_DSC_0568.jpg" /></p>
+<p>過3次溪，回到原本上來的步道 ...</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/lua_note.html" rel="bookmark" title="Permalink to Lua 筆記">Lua 筆記</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2013-10-01T12:36:00+08:00"> 二 01 10月 2013 </abbr>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <h1>String</h1>
+<h2>Standard</h2>
+<div class="highlight"><pre><span class="nb">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="p">])</span>
+<span class="nb">string.format</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="o">...</span><span class="p">)</span>
+<span class="nb">string.sub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">i</span> <span class="p">[,</span> <span class="n">j</span><span class="p">])</span> <span class="c1">-- string.sub(&quot;abcd&quot;, 1, 3) &gt;&gt; abc</span>
+
+<span class="nb">string.len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">s</span><span class="p">:</span><span class="n">len</span><span class="p">()</span>
+
+<span class="nb">string.gmatch</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">)</span>
+<span class="nb">string.gsub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="n">replace</span> <span class="p">[,</span> <span class="n">n</span><span class="p">])</span>
+
+<span class="nb">string.lower</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">string.upper</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+
+<span class="nb">string.byte</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">A&quot;</span><span class="p">)</span> <span class="c1">-- 65</span>
+<span class="nb">string.char ...</span></pre></div> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/language/hakka_dirty.html" rel="bookmark" title="Permalink to [轉載] 客家髒話">[轉載] 客家髒話</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2013-09-24T14:29:00+08:00"> 二 24 9月 2013 </abbr>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <table border="1" cellpadding="0">
+<tbody>
+<tr>
+<td>北 京 話</td>
+<td>客話</td>
+<td>海陸腔</td>
+<td>四縣腔</td>
+</tr>
+<tr>
+<td>1幹你</td>
+<td>屌你的</td>
+<td>diau3 ngia4</td>
+<td>daiu4 ngia2</td>
+</tr>
+<tr>
+<td>2幹你祖母</td>
+<td>屌你婆</td>
+<td>diau3 ngia1 po1</td>
+<td>diau4 ngia2 po3</td>
+</tr>
+<tr>
+<td>3幹你媽</td>
+<td>屌你媽</td>
+<td>diau3 ngia1 me4</td>
+<td>diau4 ngia3 me2</td>
+</tr>
+<tr>
+<td>4幹你姐</td>
+<td>屌你姐</td>
+<td>diau3 ngia1 tze1</td>
+<td>diau4 ngia2 tzi4?</td>
+</tr>
+<tr>
+<td>5幹你祖宗</td>
+<td>屌你祖公</td>
+<td>diau3 ngia1 tz3 gung4</td>
+<td>diau4 ngia2 tz4 gung2</td>
+</tr>
+<tr>
+<td>6幹你媽臭屄</td>
+<td>屌你媽臭<br>
+膣白</td>
+<td>diau3 ...</td></tr></tbody></table> </div><!-- /.entry-content -->
+        </article></li>
         <li><article class="hentry">
                 <header> <h2 class="entry-title"><a href="http://blog.suhen.org/music/blackbird.html" rel="bookmark" title="Permalink to Blackbird是烏鶇，跟烏鴉不一樣">Blackbird是烏鶇，跟烏鴉不一樣</a></h2> </header>
                 <footer class="post-info">
@@ -183,64 +281,6 @@ D3 C2 → 加羅北池 → 加羅山 → 加羅湖會師 → 四季 ...</pre> </
 <img alt="" src="/images/nature/plant/0012/tn_PC080197.JPG" />
 <ul class="simple">
 <li>[2013-12-08] 南湖山區 - 審馬陣草原</li>
-</ul>
- </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/nature/gao-shan-zhi-wu-tai-wan-leng-shan.html" rel="bookmark" title="Permalink to [高山植物] 台灣冷杉">[高山植物] 台灣冷杉</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2013-09-01T06:36:00+08:00"> 日 01 9月 2013 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>樹皮灰色，呈鱗片狀剝落，枝條輪生。葉子尖長頭圓，頂端凹入，有二條白色氣孔帶，中肋上面凹入下面凸出。單性花，雌雄同株。毬果直立，成熟時呈紫黑色，會分泌出雪白色樹脂。</p>
-<img alt="" src="/images/nature/plant/0018/3031393992_f98e61a9b0_z.jpeg" />
-<img alt="" src="/images/nature/plant/0018/3030554037_790c8555a5_z.jpeg" />
-<img alt="" src="/images/nature/plant/0018/3030554775_b7df91b9c9_z.jpeg" />
-<img alt="" src="/images/nature/plant/0018/3030553343_745e5242e0_z.jpeg" />
-<ul class="simple">
-<li>[2008-10-25] 桃山</li>
-</ul>
- </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/nature/gao-shan-zhi-wu-ni-bo-er-lai-xiao.html" rel="bookmark" title="Permalink to [高山植物] 尼泊爾籟蕭">[高山植物] 尼泊爾籟蕭</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2013-09-01T06:29:00+08:00"> 日 01 9月 2013 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>冬枯多年生草本植物，最早是叫玉山籟蕭，和 <a class="reference external" href="http://blog.suhen.org/nature/gao-shan-zhi-wu-yu-shan-bao-jing-lai-xiao.html">玉山抱莖籟蕭</a> 容易搞混（應紹舜先生的臺灣的高山植物也是寫玉山籟蕭）。</p>
-<p>日本時代時叫「兒玉菊」，被印在「台灣始政紀念」的明信片上(沒圖沒真相，有空再來找圖)，葉子有絨毛。</p>
-<img alt="" src="/images/nature/plant/0017/3035596564_a4c17845ef_z.jpeg" />
-<img alt="" src="/images/nature/plant/0017/3035597730_6fa2fa3aa0_z.jpeg" />
-<img alt="" src="/images/nature/plant/0017/3034758947_54e19ec7b8_z.jpeg" />
-<ul class="simple">
-<li>[2008-10-25] 桃山</li>
-</ul>
- </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/nature/gao-shan-zhi-wu-yu-shan-bao-jing-lai-xiao.html" rel="bookmark" title="Permalink to [高山植物] 玉山抱莖籟蕭">[高山植物] 玉山抱莖籟蕭</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2013-09-01T06:23:00+08:00"> 日 01 9月 2013 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>和 <a class="reference external" href="http://blog.suhen.org/nature/gao-shan-zhi-wu-ni-bo-er-lai-xiao.html">尼泊爾籟蕭</a> 葉子長的很像，玉山抱莖籟蕭葉子比較細，尼泊爾籟蕭葉子比較胖，植株較高，葉緣常反捲，葉基抱莖。玉山抱莖籟蕭的白色花瓣和花色花蕊的比例差不多，尼泊爾籟蕭好像的白色花瓣範圍較大 (自己亂猜)，花可以泡茶。</p>
-<img alt="" src="/images/nature/plant/0016/2993409007_85b97cf96e_z.jpeg" />
-<img alt="" src="/images/nature/plant/0016/2994252364_0aa694189c_z.jpeg" />
-<img alt="" src="/images/nature/plant/0016/2993411481_051f55148d_z.jpeg" />
-<ul class="simple">
-<li>[2008-10-25] 桃山</li>
-</ul>
-<img alt="" src="/images/nature/plant/0016/tn_PB170560.JPG" />
-<img alt="" src="/images/nature/plant/0016/tn_PB170580.JPG" />
-<ul class="simple">
-<li>[2013-11-26] 錐麓古道</li>
 </ul>
  </div><!-- /.entry-content -->
         </article></li>
