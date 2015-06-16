@@ -57,34 +57,6 @@
 
 <ol id="post-list">
         <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/comp_multi-ssh-keys.html" rel="bookmark" title="Permalink to [computer] 在 bitbucket, git 多個帳號設定 ssh keys (免打密碼)">[computer] 在 bitbucket, git 多個帳號設定 ssh keys (免打密碼)</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-11-10T16:15:00+08:00"> 一 10 11月 2014 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>產生除了預設之外的 ssh key pairs::</p>
-<div class="highlight"><pre>ssh-keygen -t rsa -C <span class="s2">&quot;your_email@youremail.com&quot;</span> -f ~/.ssh/other_key
-
-<span class="c"># 複製到剪貼簿 (mac)</span>
-pbcoby &lt; ~/.ssh/other_key.pub
-</pre></div>
-
-
-<p>設定 .ssh/config::</p>
-<div class="highlight"><pre>Host bitbucket-other
-    User git
-    Hostname bitbucket.org
-    PreferredAuthentications publickey
-    IdentitiesOnly yes
-    IdentityFile ~/.ssh/other_key
-</pre></div>
-
-
-<p>這樣用 git 就不用打密碼了</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
                 <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/python_web_develop.html" rel="bookmark" title="Permalink to [Web] Python 開發環境 (nginx + gunicorn + supervisord + Flask)">[Web] Python 開發環境 (nginx +  gunicorn + supervisord + Flask)</a></h2> </header>
                 <footer class="post-info">
                     <abbr class="published" title="2014-10-20T10:38:00+08:00"> 一 20 10月 2014 </abbr>
@@ -213,44 +185,6 @@ CA: Certificate Authority</p>
 <span class="n">network</span><span class="p">.</span><span class="n">request</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">https://encrypted.google ...</span></pre></div> </div><!-- /.entry-content -->
         </article></li>
         <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/mobile_develop.html" rel="bookmark" title="Permalink to 裝置">裝置</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-02-17T13:15:00+08:00"> 一 17 2月 2014 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h1>iOS</h1>
-<p>AppStore link 規範 <a href="https://developer.apple.com/library/ios/qa/qa1633/_index.html">Technical Q&amp;A QA1633: Creating easy-to-read short links to the App Store for your apps and company</a></p>
-<h1>Android</h1>
-<p>Android
-<a href="http://developer.android.com/guide/practices/screens_support.html">Supporting Multiple Screens | Android Developers</a></p>
-<p><a href="http://www.emirweb.com/ScreenDeviceStatistics.php">EmirWeb</a></p>
-<h1>dev tools</h1>
-<h2>CoronaSDK</h2>
-<ul>
-<li><a href="http://coronalabs.com/blog/2014/06/19/avoiding-app-rejection-from-apple/">Avoiding App Rejection from Apple | Corona Labs</a></li>
-</ul> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/mac_leopard_mavericks.html" rel="bookmark" title="Permalink to Mac 系統問題">Mac 系統問題</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2013-11-02T00:46:00+08:00"> 六 02 11月 2013 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h1>無法格式化 500 GB 或更大的磁碟</h1>
-<p>無法寫入設備上最後的區塊</p>
-<p><a href="http://support.apple.com/kb/TS2644?viewlocale=zh_TW&amp;locale=zh_TW">磁碟工具程式：無法格式化 500 GB 或更大的磁碟</a></p>
-<h1>從Leopard升級到Mavericks</h1>
-<p>家裡一台很舊的iMac，作業系統跑Leopard (OS X 10.5.8)，很多軟體都不支援如 LINE桌面版... ，或是連Chrome都不更新了，倒是Firefox還很照顧這些老電腦...</p>
-<p>最近Mavericks開放免費更新，我的MacBook Air (Lion) 免費升級新的Mavericks後，覺得很好用，實在也很想更新這台iMac，Leopard一般是無法直接升級到Mavericks的，除非花一點錢，先升級成Snow Leopard (OS X 10.6)，才可以免費升級到Mavericks。但是網路上果然有解決方法！！</p>
-<p>參考這篇: <a href="http://www.macworld.com/article/2056564/how-to-install-mavericks-over-leopard.html">How to install Mavericks over Leopard | Macworld</a></p>
-<h2>1. 下載Mavericks</h2>
-<p>我的MacBook ...</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
                 <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/lua_note.html" rel="bookmark" title="Permalink to Lua 筆記">Lua 筆記</a></h2> </header>
                 <footer class="post-info">
                     <abbr class="published" title="2013-10-01T12:36:00+08:00"> 二 01 10月 2013 </abbr>
@@ -309,6 +243,118 @@ alt + 數字
 </pre>
 <p>但是Mac的Alt會變成輸入特殊字, 用iTerm的話, 可以如以下設定:</p>
 <p>Bookmarks ...</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/scripting-bi-jiao.html" rel="bookmark" title="Permalink to Scripting 比較">Scripting 比較</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2013-04-09T11:38:00+08:00"> 二 09 4月 2013 </abbr>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>PHP, Python, Javascript, Lua</p>
+<div class="section" id="id1">
+<h2>易搞混</h2>
+<div class="section" id="hash-dictionary-table">
+<h3>hash/dictionary/table</h3>
+<p>json:</p>
+<div class="highlight"><pre><span class="p">{</span>
+     <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Smith&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;male&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+     <span class="nt">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+     <span class="nt">&quot;address&quot;</span><span class="p">:</span>
+     <span class="p">{</span>
+         <span class="nt">&quot;streetAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;21 2nd Street&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;New York&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;NY&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;postalCode&quot;</span><span class="p">:</span> <span class="s2">&quot;10021&quot;</span>
+     <span class="p">},</span>
+     <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span>
+     <span class="p">[</span>
+         <span class="p">{</span>
+           <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;home&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;212 555-1234&quot;</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+           <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;fax&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;646 555-4567&quot;</span>
+         <span class="p">}</span>
+     <span class="p">]</span>
+ <span class="p">}</span>
+</pre></div>
+<p>python dictionary:</p>
+<div class="highlight"><pre><span class="n">dishes</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;eggs&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;sausage&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;bacon&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;spam ...</span></pre></div></div></div> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/blog.html" rel="bookmark" title="Permalink to blog">blog</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2013-04-02T15:53:00+08:00"> 二 02 4月 2013 </abbr>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <div class="section" id="http-status-code">
+<h2>HTTP status code</h2>
+<p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
+<div class="section" id="informational-1xx">
+<h3>Informational 1xx</h3>
+<p>HTTP/1.0沒有定義</p>
+<ul class="simple">
+<li>100 Continue, proxy</li>
+<li>101 Switching Protocols, HTTP版本轉換</li>
+</ul>
+</div>
+<div class="section" id="successful-2xx">
+<h3>Successful 2xx</h3>
+<ul class="simple">
+<li>200 OK</li>
+<li>201 Created</li>
+<li>202 Accepted</li>
+<li>203 Non-Authoritative Information</li>
+<li>204 No Content</li>
+<li>205 Reset Content</li>
+<li>206 Partial Content</li>
+</ul>
+</div>
+<div class="section" id="redirection-3xx">
+<h3>Redirection 3xx</h3>
+<ul class="simple">
+<li>300 Multiple Choices</li>
+<li>301 Moved ...</li></ul></div></div> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/ganglia.html" rel="bookmark" title="Permalink to Ganglia">Ganglia</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="2013-04-02T11:39:00+08:00"> 二 02 4月 2013 </abbr>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
+<p>Ganglia有3個部分:</p>
+<ul class="simple">
+<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
+<li>gmetad - 詢問gmond儲存數質</li>
+<li>ganglia-web</li>
+</ul>
+<pre class="literal-block">
+# config
+/etc/ganglia/gmetad.conf # CentOS
+/usr/share/ganglia/ # php files
+</pre>
+<p>start daemond:</p>
+<pre class="literal-block">
+service gmond start
+service gmetad start
+</pre>
+<div class="section" id="centos">
+<h2>CentOS</h2>
+<p>進入web介面時出現:</p>
+<pre class="literal-block">
+There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
+</pre>
+<p>解決方法, 重新安裝 ...</p></div> </div><!-- /.entry-content -->
         </article></li>
 </ol><!-- /#posts-list -->
 <p class="paginator">

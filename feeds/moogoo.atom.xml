@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen | 酥賢尋找</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/moogoo.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2015-06-06T07:39:00+08:00</updated><entry><title>2015兩棲志工-進階班</title><link href="http://blog.suhen.org/nature/elearning_amphibian.html" rel="alternate"></link><updated>2015-06-06T07:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-06-06:nature/elearning_amphibian.html</id><summary type="html">&lt;h1&gt;分類及演化&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen | 酥賢尋找</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/moogoo.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2015-06-16T08:12:00+08:00</updated><entry><title>[閱讀] Kanban and Scrum</title><link href="http://blog.suhen.org/read/kanban_and_scrum.html" rel="alternate"></link><updated>2015-06-16T08:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-06-16:read/kanban_and_scrum.html</id><summary type="html">&lt;p&gt;::&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;書名: Kanban and Scrum - making the most of both
+作者: Henrik Kniberg &amp;amp; Mattias Skarin
+出版: InfoQ
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;比較&lt;/h1&gt;
+&lt;p&gt;Scrum:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;split your organization&lt;/li&gt;
+&lt;li&gt;split your work&lt;/li&gt;
+&lt;li&gt;split time&lt;/li&gt;
+&lt;li&gt;optimize the release plan&lt;/li&gt;
+&lt;li&gt;optimize the process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kanban:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;visualize the workflow&lt;/li&gt;
+&lt;li&gt;measure the lead time (cycle time: average time to complete one item)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;宮本武藏雙刀流&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scrum prescripes roles (Product Owner, Team, Scrum Master)&lt;/li&gt;
+&lt;li&gt;Scrum prescribes timeboxed iteration&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kanban 沒限制&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kanban limits WIP &lt;strong&gt;per workflow state&lt;/strong&gt; (ex: Work state "Doing" 不能超過 2 個)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Scrum limits WIP &lt;strong&gt;per iteration&lt;/strong&gt; (limited per unit of time)&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="development"></category></entry><entry><title>2015兩棲志工-進階班</title><link href="http://blog.suhen.org/nature/elearning_amphibian.html" rel="alternate"></link><updated>2015-06-06T07:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-06-06:nature/elearning_amphibian.html</id><summary type="html">&lt;h1&gt;分類及演化&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;兩棲類(amphibian) 總數:7389 種 (March 2, 2015)&lt;/li&gt;
 &lt;li&gt;低緯度 (接近赤道) 種類比較多 (巴西種類最多, 哥倫比亞, 厄瓜多爾, 祕魯)&lt;/li&gt;
@@ -223,7 +255,15 @@
 
 &lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&amp;version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));&lt;/script&gt;
 
-&lt;div class="fb-post" data-href="https://www.facebook.com/czolth.chen/posts/871664556231950" data-width="500"&gt;&lt;div class="fb-xfbml-parse-ignore"&gt;&lt;blockquote cite="https://www.facebook.com/czolth.chen/posts/871664556231950"&gt;&lt;p&gt;&amp;#x3010;&amp;#x69ae;&amp;#x661f;&amp;#x80e1;&amp;#x4e82;&amp;#x60f3; XII&amp;#x3011;&amp;#x61c9;&amp;#x8a72;&amp;#x4e0d;&amp;#x5c11;&amp;#x4eba;&amp;#x77e5;&amp;#x9053;&amp;#x56e0;&amp;#x6642;&amp;#x8b8a;&amp;#x901a;&amp;#x3001;&amp;#x56e0;&amp;#x5730;&amp;#x5236;&amp;#x5b9c;&amp;#x7684;&amp;#x9053;&amp;#x7406;&amp;#xff0c;&amp;#x7279;&amp;#x5225;&amp;#x662f;&amp;#x4e00;&amp;#x8d77;&amp;#x8ddf;&amp;#x904e;&amp;#x8001;&amp;#x5927;&amp;#x5728;&amp;#x6ce5;&amp;#x7058;&amp;#x6ebc;&amp;#x5730;&amp;#x88e1;&amp;#x6253;&amp;#x6efe;&amp;#x904e;&amp;#x5e7e;&amp;#x6b21;&amp;#x3001;&amp;#x505a;&amp;#x904e;&amp;#x5e7e;&amp;#x6b21;&amp;#x68f2;&amp;#x5730;&amp;#x7dad;&amp;#x8b77;&amp;#x7ba1;&amp;#x7406;&amp;#x7684;&amp;#x5925;&amp;#x4f34;&amp;#x5011;&amp;#x3002;&amp;#x5de5;&amp;#x4f5c;&amp;#x5047;&amp;#x671f;&amp;#x5c3e;&amp;#x8072;&amp;#xff0c;&amp;#x69ae;&amp;#x661f;&amp;#x751f;&amp;#x614b;&amp;#x6c60;&amp;#x88e1;&amp;#x9664;&amp;#x4e86;&amp;#x7a2e;&amp;#x9032;&amp;#x4e86;&amp;#x8010;&amp;#x751f;&amp;#x53c8;&amp;#x8010;&amp;#x770b;&amp;#x7684;&amp;#x5713;&amp;#x8449;&amp;#x7bc0;&amp;#x7bc0;&amp;#x83dc;&amp;#x5916;&amp;#xff0c;&amp;#x540c;&amp;#x6a23;&amp;#x5177;&amp;#x6709;&amp;#x65fa;&amp;#x76db;&amp;#x751f;&amp;#x547d;&amp;#x529b;&amp;#x7684;&amp;#x91dd;&amp;#x85fa;&amp;#x3001;&amp;#x6c34;&amp;#x6bdb;&amp;#x82b1;&amp;#x7576;&amp;#x7136;...&lt;/p&gt;Posted by &lt;a href="https://www.facebook.com/czolth.chen"&gt;Donald Chen&lt;/a&gt; on &lt;a href="https://www.facebook.com/czolth.chen/posts/871664556231950"&gt;Sonntag, 31. Mai 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;</summary><category term="生態"></category><category term="公園"></category><category term="轉載"></category></entry><entry><title>[SOW] 溪山汐湖聯合訓練 - 2 室外課 | 新山夢湖</title><link href="http://blog.suhen.org/nature/sow_xixi_2.html" rel="alternate"></link><updated>2015-06-02T10:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-06-02:nature/sow_xixi_2.html</id><summary type="html">&lt;p&gt;日期: 2015-05-30&lt;/p&gt;</summary><category term="sow"></category></entry><entry><title>[轉載] 「台北其實很生態」系列 - 郭城孟臉書</title><link href="http://blog.suhen.org/misc/taipei_really_eco.html" rel="alternate"></link><updated>2015-06-01T14:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-06-01:misc/taipei_really_eco.html</id><summary type="html">&lt;h2&gt;文章&lt;/h2&gt;
+&lt;div class="fb-post" data-href="https://www.facebook.com/czolth.chen/posts/871664556231950" data-width="500"&gt;&lt;div class="fb-xfbml-parse-ignore"&gt;&lt;blockquote cite="https://www.facebook.com/czolth.chen/posts/871664556231950"&gt;&lt;p&gt;&amp;#x3010;&amp;#x69ae;&amp;#x661f;&amp;#x80e1;&amp;#x4e82;&amp;#x60f3; XII&amp;#x3011;&amp;#x61c9;&amp;#x8a72;&amp;#x4e0d;&amp;#x5c11;&amp;#x4eba;&amp;#x77e5;&amp;#x9053;&amp;#x56e0;&amp;#x6642;&amp;#x8b8a;&amp;#x901a;&amp;#x3001;&amp;#x56e0;&amp;#x5730;&amp;#x5236;&amp;#x5b9c;&amp;#x7684;&amp;#x9053;&amp;#x7406;&amp;#xff0c;&amp;#x7279;&amp;#x5225;&amp;#x662f;&amp;#x4e00;&amp;#x8d77;&amp;#x8ddf;&amp;#x904e;&amp;#x8001;&amp;#x5927;&amp;#x5728;&amp;#x6ce5;&amp;#x7058;&amp;#x6ebc;&amp;#x5730;&amp;#x88e1;&amp;#x6253;&amp;#x6efe;&amp;#x904e;&amp;#x5e7e;&amp;#x6b21;&amp;#x3001;&amp;#x505a;&amp;#x904e;&amp;#x5e7e;&amp;#x6b21;&amp;#x68f2;&amp;#x5730;&amp;#x7dad;&amp;#x8b77;&amp;#x7ba1;&amp;#x7406;&amp;#x7684;&amp;#x5925;&amp;#x4f34;&amp;#x5011;&amp;#x3002;&amp;#x5de5;&amp;#x4f5c;&amp;#x5047;&amp;#x671f;&amp;#x5c3e;&amp;#x8072;&amp;#xff0c;&amp;#x69ae;&amp;#x661f;&amp;#x751f;&amp;#x614b;&amp;#x6c60;&amp;#x88e1;&amp;#x9664;&amp;#x4e86;&amp;#x7a2e;&amp;#x9032;&amp;#x4e86;&amp;#x8010;&amp;#x751f;&amp;#x53c8;&amp;#x8010;&amp;#x770b;&amp;#x7684;&amp;#x5713;&amp;#x8449;&amp;#x7bc0;&amp;#x7bc0;&amp;#x83dc;&amp;#x5916;&amp;#xff0c;&amp;#x540c;&amp;#x6a23;&amp;#x5177;&amp;#x6709;&amp;#x65fa;&amp;#x76db;&amp;#x751f;&amp;#x547d;&amp;#x529b;&amp;#x7684;&amp;#x91dd;&amp;#x85fa;&amp;#x3001;&amp;#x6c34;&amp;#x6bdb;&amp;#x82b1;&amp;#x7576;&amp;#x7136;...&lt;/p&gt;Posted by &lt;a href="https://www.facebook.com/czolth.chen"&gt;Donald Chen&lt;/a&gt; on &lt;a href="https://www.facebook.com/czolth.chen/posts/871664556231950"&gt;Sonntag, 31. Mai 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;</summary><category term="生態"></category><category term="公園"></category><category term="轉載"></category></entry><entry><title>[SOW] 溪山汐湖聯合訓練 - 2 室外課 | 新山夢湖</title><link href="http://blog.suhen.org/nature/sow_xixi_2.html" rel="alternate"></link><updated>2015-06-02T10:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-06-02:nature/sow_xixi_2.html</id><summary type="html">&lt;p&gt;日期: 2015-05-30&lt;/p&gt;
+&lt;h2&gt;1.白桕&lt;/h2&gt;
+&lt;p&gt;P5301817.JPG
+P5301820.JPG&lt;/p&gt;
+&lt;h2&gt;圓葉雞屎樹&lt;/h2&gt;
+&lt;p&gt;有毛&lt;/p&gt;
+&lt;p&gt;某種蛾 大便包在自己身上&lt;/p&gt;
+&lt;h2&gt;觀音坐蓮&lt;/h2&gt;
+&lt;p&gt;梗有 2 排溝紋&lt;/p&gt;</summary><category term="sow"></category></entry><entry><title>[轉載] 「台北其實很生態」系列 - 郭城孟臉書</title><link href="http://blog.suhen.org/misc/taipei_really_eco.html" rel="alternate"></link><updated>2015-06-01T14:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-06-01:misc/taipei_really_eco.html</id><summary type="html">&lt;h2&gt;文章&lt;/h2&gt;
 &lt;h3&gt;台北其實很生態（1）&lt;/h3&gt;
 &lt;p&gt;從淡水河口只能看到一種紅樹林植物，水筆仔，背後顯示，熱帶生態環境由赤道隨著黑潮進入台灣之後，熱帶訊息由南往北也逐漸降低，高雄有6種紅樹林植物的記錄，台南4種，新竹2種，至台北只剩1種，因為台北冬天深受東北季風影響氣溫較低之故。
 這應該可以解釋為何有些熱帶植物在台北無法存活，有些可以活，但不會開花也不會結果，有些會開花但不會結果，等等屬於熱帶邊緣奇奇怪怪的現象在台北時有所聞。
@@ -496,25 +536,7 @@
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/7lCXlSWJbNo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Bügsküll&lt;/p&gt;
-&lt;p&gt;http://wfmu.org/playlists/shows/57832&lt;/p&gt;</summary></entry><entry><title>[computer] 在 bitbucket, git 多個帳號設定 ssh keys (免打密碼)</title><link href="http://blog.suhen.org/computer/comp_multi-ssh-keys.html" rel="alternate"></link><updated>2014-11-10T16:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-11-10:computer/comp_multi-ssh-keys.html</id><summary type="html">&lt;p&gt;產生除了預設之外的 ssh key pairs::&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;ssh-keygen -t rsa -C &lt;span class="s2"&gt;&amp;quot;your_email@youremail.com&amp;quot;&lt;/span&gt; -f ~/.ssh/other_key
-
-&lt;span class="c"&gt;# 複製到剪貼簿 (mac)&lt;/span&gt;
-pbcoby &amp;lt; ~/.ssh/other_key.pub
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;設定 .ssh/config::&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;Host bitbucket-other
-    User git
-    Hostname bitbucket.org
-    PreferredAuthentications publickey
-    IdentitiesOnly yes
-    IdentityFile ~/.ssh/other_key
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;這樣用 git 就不用打密碼了&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>[sow] 臺北宜蘭解說員聯誼 - 山毛櫸步道, 翠峰湖</title><link href="http://blog.suhen.org/nature/2014_sow_taiwan_beech.html" rel="alternate"></link><updated>2014-11-01T21:24:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-11-01:nature/2014_sow_taiwan_beech.html</id><summary type="html">&lt;p&gt;日期: 2014-11-01 (六)&lt;/p&gt;
+&lt;p&gt;http://wfmu.org/playlists/shows/57832&lt;/p&gt;</summary></entry><entry><title>[sow] 臺北宜蘭解說員聯誼 - 山毛櫸步道, 翠峰湖</title><link href="http://blog.suhen.org/nature/2014_sow_taiwan_beech.html" rel="alternate"></link><updated>2014-11-01T21:24:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-11-01:nature/2014_sow_taiwan_beech.html</id><summary type="html">&lt;p&gt;日期: 2014-11-01 (六)&lt;/p&gt;
 &lt;h1&gt;行程&lt;/h1&gt;
 &lt;p&gt;星期五晚上 20:00 耕莘文教中心出發，到宜蘭一路順暢，21:00 就到宜蘭救國團了。週六 0610 宜蘭救國團出發，0850 到崔峰湖，11:30 到最後的觀景台。大家都是來看山毛櫸變葉的季節，人山人海。總步道長度: 3.85 km，天氣晴朗。稜線往下看是是南澳南溪。&lt;/p&gt;
 &lt;h1&gt;植物&lt;/h1&gt;
@@ -2098,17 +2120,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 &lt;p&gt;1957 - 臺北市街道圖&lt;/p&gt;
 &lt;p&gt;&lt;img alt="1974-臺北市舊航照圖" src="/images/misc/sow24/2014-02-16_daan_intern/1974-臺北市舊航照圖.png" /&gt;&lt;/p&gt;
 &lt;p&gt;1974 - 臺北市舊航照圖&lt;/p&gt;
-&lt;p&gt;來源: &lt;a href="http://gissrv4.sinica.edu.tw/gis/twhgis.aspx"&gt;中央研究院人文社會科學研究中心地理資訊科學研究專題中心 台灣百年歷史地圖&lt;/a&gt;&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>裝置</title><link href="http://blog.suhen.org/computer/mobile_develop.html" rel="alternate"></link><updated>2014-02-17T13:15:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-02-17:computer/mobile_develop.html</id><summary type="html">&lt;h1&gt;iOS&lt;/h1&gt;
-&lt;p&gt;AppStore link 規範 &lt;a href="https://developer.apple.com/library/ios/qa/qa1633/_index.html"&gt;Technical Q&amp;amp;A QA1633: Creating easy-to-read short links to the App Store for your apps and company&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Android&lt;/h1&gt;
-&lt;p&gt;Android
-&lt;a href="http://developer.android.com/guide/practices/screens_support.html"&gt;Supporting Multiple Screens | Android Developers&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.emirweb.com/ScreenDeviceStatistics.php"&gt;EmirWeb&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;dev tools&lt;/h1&gt;
-&lt;h2&gt;CoronaSDK&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://coronalabs.com/blog/2014/06/19/avoiding-app-rejection-from-apple/"&gt;Avoiding App Rejection from Apple | Corona Labs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="mobile"></category></entry><entry><title>台北荒野 - 週週見 -《蜂台灣》──鏡頭後的身影</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-thursday_bee.html" rel="alternate"></link><updated>2014-01-27T22:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-01-27:misc/sow_taipei_interpreter_24-thursday_bee.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.sow.org.tw/civicrm/event/info?id=3695&amp;amp;reset=1"&gt;【荒野週週見】《蜂台灣》──鏡頭後的身影 | 荒野保護協會&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;來源: &lt;a href="http://gissrv4.sinica.edu.tw/gis/twhgis.aspx"&gt;中央研究院人文社會科學研究中心地理資訊科學研究專題中心 台灣百年歷史地圖&lt;/a&gt;&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>台北荒野 - 週週見 -《蜂台灣》──鏡頭後的身影</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-thursday_bee.html" rel="alternate"></link><updated>2014-01-27T22:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2014-01-27:misc/sow_taipei_interpreter_24-thursday_bee.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.sow.org.tw/civicrm/event/info?id=3695&amp;amp;reset=1"&gt;【荒野週週見】《蜂台灣》──鏡頭後的身影 | 荒野保護協會&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;導演: 李偉傑&lt;/p&gt;
 &lt;p&gt;時間: 2014-01−23&lt;/p&gt;
 &lt;h1&gt;關於蜂&lt;/h1&gt;
@@ -3433,38 +3445,7 @@ PM 17:30 ~ 21:00
 &lt;p&gt;比賽路線特色跟補給都算普通，所以這種就悶著頭一直跑就好了。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="路線圖" src="/images/run/2013_bali_marathon.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;主辦單位的比賽路線還是用紙上掃描的不是電子地圖，還滿少見的。&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.ibodygo.com/web/online_reg/detail.asp?n=25"&gt;iBodyGo就是愛動-馬拉松 自行車 報名系統 路跑賽事訊息&lt;/a&gt;&lt;/p&gt;</summary><category term="diary"></category></entry><entry><title>Mac 系統問題</title><link href="http://blog.suhen.org/computer/mac_leopard_mavericks.html" rel="alternate"></link><updated>2013-11-02T00:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-11-02:computer/mac_leopard_mavericks.html</id><summary type="html">&lt;h1&gt;無法格式化 500 GB 或更大的磁碟&lt;/h1&gt;
-&lt;p&gt;無法寫入設備上最後的區塊&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://support.apple.com/kb/TS2644?viewlocale=zh_TW&amp;amp;locale=zh_TW"&gt;磁碟工具程式：無法格式化 500 GB 或更大的磁碟&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;從Leopard升級到Mavericks&lt;/h1&gt;
-&lt;p&gt;家裡一台很舊的iMac，作業系統跑Leopard (OS X 10.5.8)，很多軟體都不支援如 LINE桌面版... ，或是連Chrome都不更新了，倒是Firefox還很照顧這些老電腦...&lt;/p&gt;
-&lt;p&gt;最近Mavericks開放免費更新，我的MacBook Air (Lion) 免費升級新的Mavericks後，覺得很好用，實在也很想更新這台iMac，Leopard一般是無法直接升級到Mavericks的，除非花一點錢，先升級成Snow Leopard (OS X 10.6)，才可以免費升級到Mavericks。但是網路上果然有解決方法！！&lt;/p&gt;
-&lt;p&gt;參考這篇: &lt;a href="http://www.macworld.com/article/2056564/how-to-install-mavericks-over-leopard.html"&gt;How to install Mavericks over Leopard | Macworld&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;1. 下載Mavericks&lt;/h2&gt;
-&lt;p&gt;我的MacBook Air已經更新10.9了，但還是可以再下載。&lt;/p&gt;
-&lt;p&gt;改一個系統檔:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
-# 把10.9的地方改稱10.8
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;然後到iTunes Mavericks官方頁面&lt;a href="https://itunes.apple.com/tw/app/id675248567?mt=12"&gt;Mavericks&lt;/a&gt;就可以"重新"下載了。下載完的檔案會放在 &lt;em&gt;/Applications/Install\ OS\ X\ Mavericks.app&lt;/em&gt;，大概有5G多，iTunes載完會自動跳出安裝視窗，但是先不理他，可以把這個目錄copy到其他地方，不然系統以為安裝完後就會自動殺掉。&lt;/p&gt;
-&lt;h2&gt;2. 製作開機磁碟&lt;/h2&gt;
-&lt;p&gt;用Terminal打入以下:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/MY_EXTURNAL_HD --applicationpath /Applications/Install&lt;span class="se"&gt;\ &lt;/span&gt;OS&lt;span class="se"&gt;\ &lt;/span&gt;X&lt;span class="se"&gt;\ &lt;/span&gt;Mavericks.app --nointeraction
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;訊息跑完後就好了。(原本磁碟內容會消除)&lt;/p&gt;
-&lt;p&gt;ref: &lt;a href="http://www.macworld.com/article/2056561/how-to-make-a-bootable-mavericks-install-drive.html"&gt;How to make a bootable Mavericks install drive | Macworld&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;3. 安裝&lt;/h2&gt;
-&lt;p&gt;改系統檔(不確定這是不是一定要):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/System/Library/CoreServices/SystemVersion.plist
-# 把10.5.8改成10.68
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;外接硬碟接上iMac，重新開機。開機時按住&lt;em&gt;Option&lt;/em&gt;會跳出選擇開機磁碟，就選剛才製作好的開機碟。就會開始自動安裝了。 爽快。&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>歷年跑馬成績</title><link href="http://blog.suhen.org/run/run_records.html" rel="alternate"></link><updated>2013-10-31T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-31:run/run_records.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
+&lt;p&gt;&lt;a href="http://www.ibodygo.com/web/online_reg/detail.asp?n=25"&gt;iBodyGo就是愛動-馬拉松 自行車 報名系統 路跑賽事訊息&lt;/a&gt;&lt;/p&gt;</summary><category term="diary"></category></entry><entry><title>歷年跑馬成績</title><link href="http://blog.suhen.org/run/run_records.html" rel="alternate"></link><updated>2013-10-31T15:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-10-31:run/run_records.html</id><summary type="html">&lt;div class="section" id="id2"&gt;
 &lt;h2&gt;2014&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;2014-03-14 &lt;a class="reference external" href="http://blog.suhen.org/run/2014_taipei_expressway_marathon.html"&gt;台北國道馬拉松&lt;/a&gt;, 21k, 01:59:36, 960/3683, 400/142&lt;/li&gt;
@@ -6721,203 +6702,7 @@ alt + 數字
 &lt;li&gt;&lt;a class="reference external" href="http://www.frim.gov.my/?page_id=9414"&gt;Shorea resinosa : Another jigsaw puzzle in the sky&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;圖片來源: &lt;a class="reference external" href="http://whereisfei.blogspot.tw/2012/05/inspiring-beauty-of-kapur-tree.html"&gt;Where Is Fei: Inspiring: The Beauty of Kapur Tree&lt;/a&gt;&lt;/p&gt;
-</summary><category term="natural"></category></entry><entry><title>Pelican - 邁向靜態blog之路 (reST and markdown)</title><link href="http://blog.suhen.org/computer/pelican.html" rel="alternate"></link><updated>2013-04-11T12:57:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-11:computer/pelican.html</id><summary type="html">&lt;p&gt;一直想用純HTML來寫blog，做筆記，最早用PHP的&lt;a href="https://www.dokuwiki.org"&gt;Dokuwiki&lt;/a&gt; ，不想被PHP server綁住，改用Emacs的&lt;a href="http://orgmode.org"&gt;Org-mode&lt;/a&gt;, org的編輯功能超強大，也可以輸出HTML，但要擴展或改template就不是很方便了。之後又接觸了&lt;a href="http://blog.suhen.org/computer/rest_sphinx.html"&gt;ReStructuredText&lt;/a&gt;, 因為看到大部分Python的文件都用Sphinx產生。但是他又不是blog（長的不像）。Ruby有Octopress，無意間看到Python也有Pelican，安裝方便，預設板型漂亮，容易整合目前當紅的網路服務，reST格式我可以很容易把之前的筆記轉過來，還是覺得純文字檔才是王道阿。&lt;/p&gt;
-&lt;p&gt;用了github控管我的內容，順便也使用github pages，放置我的靜態網頁，只要開一個repository，把要發佈的內容放到gh-pages的orphan branch就可以了。&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://help.github.com/articles/creating-project-pages-manually"&gt;Creating Project Pages manually · GitHub Help&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Quick-start&lt;/h1&gt;
-&lt;p&gt;安裝:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pelican
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;開始:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir blog
-&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
-&lt;span class="nv"&gt;$ &lt;/span&gt;pelican-quickstart
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;快速產生相關的設定&lt;/p&gt;
-&lt;p&gt;寫第一篇文章:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vim content/first.rst
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;工具指令:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;make html &lt;span class="c"&gt;# 顧名思義&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;make clean 
-&lt;span class="nv"&gt;$ &lt;/span&gt;make rsync_upload &lt;span class="c"&gt;# 用rsync上傳到你的ssh host&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;make serve &lt;span class="c"&gt;# 啟動python的SimpleHTTPServer&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;make devserver &lt;span class="c"&gt;# 修改rst會自動reload, 重啓server&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;make github &lt;span class="c"&gt;#自動執行ghp-import到github pages&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;文章格式 (reST, markdown)&lt;/h1&gt;
-&lt;p&gt;屬性:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# rst
-hello
-############
-:date: 2013-04-14 (必填)
-:category: music
-:tags: foo, bar
-:slug:
-:lang:
-:author:
-:status: draft (不會處理)
-
-#md
-Title: hello
-Date: 2013-04-14 (必填)
-Category: music
-Tags: foo, bar
-...
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;圖片:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# rst
-.. image:: /path/to/filename.jpg
-           :height: 450 px
-           :width: 600 px
-           :alt: alternate text
-
-# md
-![title](/path/to/filename.jpg)
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;連結:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# rst
-`title &amp;lt;http://foo.bar&amp;gt;`__ 跟reST一樣
-
-this is a foo_ .
-_foo: http://foo.bar
-
-# md
-[title](http://foo.bar)
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;內部連結:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# reST
-`京都行 &amp;lt;|filename|/travel/2012_kyoto_marathon-1.rst&amp;gt;`_
-
-# markdown
-[玉山小檗](|filename|/nature/plant/0005-玉山小檗.rst)
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;區塊:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# rst
-foo::
-
-  spam spam spam spam
-
-# md
-
-    spam spam spam spam
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;syntax highlight:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;# rst
-.. code-block:: python
-
-import os
-
-# md
-    :::c++
-    :::python
-    :::text
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;git hub&lt;/h1&gt;
-&lt;h2&gt;環境設定&lt;/h2&gt;
-&lt;p&gt;python要用virtualenv才是王道:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkvirtualenv sillywalk.org
-&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;sillkwalk.org
-&lt;span class="nv"&gt;$ &lt;/span&gt;setvirtualenvproject
-&lt;span class="nv"&gt;$ &lt;/span&gt;workon sillywalk.org
-
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pelican
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install ghp-import &lt;span class="c"&gt;# 方便發佈到github pages的工具&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h2&gt;產生HTML，發佈&lt;/h2&gt;
-&lt;p&gt;產生HTML內容:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pelican -s pelican.conf.py .
-&lt;span class="nv"&gt;$ &lt;/span&gt;ghp-import output
-&lt;span class="nv"&gt;$ &lt;/span&gt;git push origin gh-pages
-
-&lt;span class="c"&gt;# 其實pelican的make就可以了&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;make github
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h2&gt;自訂domain&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;在你的domain設定指向github的IP&lt;/li&gt;
-&lt;li&gt;在發佈的gh-pages branch下放一個CNAME檔案，裡面寫你的domain&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;放在output目錄的CNAME在每次build時都會被洗掉，所以要每次自動copy。&lt;/p&gt;
-&lt;p&gt;先產生content/extra/CNAME，然後在pelicanconf.py加入:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;FILES_TO_COPY = (
-    (&amp;#39;extra/CNAME&amp;#39;, &amp;#39;CNAME&amp;#39;),
-)
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;用reST (reStructuredText) 還是markdown好?&lt;/h1&gt;
-&lt;p&gt;活在Python世界，很多文件是reST編寫的，當初在選用Pelican當blog時也是用預設的reST格式。&lt;/p&gt;
-&lt;p&gt;但是reST還是有一些很討厭的地方，像:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;連結的語法我永遠很難記得，都是用自己寫的javascript bookmarklet解決&lt;/li&gt;
-&lt;li&gt;連結跟內容文字之間要有空白，不然會錯，除非加上跳脫字元 &lt;strong&gt;/&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;標題用 ######...，長度要跟標題文字一樣長，雖然編輯器都有快速鍵可以補齊，但是還是會在修改標題後，常常忘了補滿而出現錯誤&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;簡潔的markdown實在比reST好用很多，不過，預設沒有表格 (table)的語法。所以，如果用到表格，或是覺得以後要用Sphinx產生文件，減少轉換問題，就用reST，其他一般用markdown。&lt;/p&gt;
-&lt;p&gt;markdown可以直接貼HTML也是超級方便的!&lt;/p&gt;
-&lt;h2&gt;補充&lt;/h2&gt;
-&lt;p&gt;bookmarklet:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// reST&lt;/span&gt;
-&lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;`&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39; &amp;lt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;gt;`__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
-&lt;span class="c1"&gt;// markdown&lt;/span&gt;
-&lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;[&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;](&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;decodeURIComponent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;_new&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location=no,links=no,scrollbars=no,toolbar=no,width=550,height=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nx"&gt;win&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;form&amp;gt;&amp;lt;textarea name=&amp;quot;a&amp;quot; rows=&amp;quot;5&amp;quot; cols=&amp;quot;50&amp;quot; onClick=&amp;quot;javascript:this.form.a.focus();this.form.a.select();&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/textarea&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);})()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;參考&lt;/h1&gt;
-&lt;h2&gt;靜態blog generator&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Hyde (看起來很複雜，沒仔細看) - http://ringce.com/hyde&lt;/li&gt;
-&lt;li&gt;Nikola 有image gallery (把圖片丟到某個目錄下就好了) - http://nikola.ralsina.com.ar/&lt;/li&gt;
-&lt;li&gt;mynt - http://mynt.mirroredwhite.com/&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;deploy to github&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew"&gt;Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew - OpenFoundry&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://docs.getpelican.com/en/3.0/tips.html"&gt;Tips — Pelican 3 documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages"&gt;Setting up a custom domain with Pages · GitHub Help&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;syntax&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://markdown.tw/"&gt;Markdown 語法說明&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;補充&lt;/h1&gt;
-&lt;h2&gt;更新 v 3.4&lt;/h2&gt;
-&lt;p&gt;pelican_youtube::&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;pip install pelican-youtube
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;pelicanconf.py::&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;PLUGINS = [
-    &amp;#39;pelican_youtube&amp;#39;,
-]
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="note"></category></entry><entry><title>Sand</title><link href="http://blog.suhen.org/music/lee_hazlewood_sand.html" rel="alternate"></link><updated>2013-04-10T17:14:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-10:music/lee_hazlewood_sand.html</id><summary type="html">&lt;p&gt;1966年Lee Hazlewood寫的歌，出現在Nancy Sinatra的專輯&amp;quot;How Does That Grab You?&amp;quot;&lt;/p&gt;
+</summary><category term="natural"></category></entry><entry><title>Sand</title><link href="http://blog.suhen.org/music/lee_hazlewood_sand.html" rel="alternate"></link><updated>2013-04-10T17:14:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-04-10:music/lee_hazlewood_sand.html</id><summary type="html">&lt;p&gt;1966年Lee Hazlewood寫的歌，出現在Nancy Sinatra的專輯&amp;quot;How Does That Grab You?&amp;quot;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Sand_%28Lee_Hazlewood_song%29"&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
 &lt;div class="section" id="nancy-sinatra-lee-hazlewood-how-does-that-grab-you-1966"&gt;
 &lt;h2&gt;Nancy Sinatra &amp;amp; Lee Hazlewood (&lt;em&gt;How Does That Grab You?&lt;/em&gt;, 1966)&lt;/h2&gt;
@@ -7381,252 +7166,7 @@ $ service gmetad start
 &lt;/pre&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://sourceforge.net/apps/trac/ganglia/wiki/ganglia_quick_start"&gt;http://sourceforge.net/apps/trac/ganglia/wiki/ganglia_quick_start&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="note"></category></entry><entry><title>reST – reStructuredText與Sphinx</title><link href="http://blog.suhen.org/computer/rest_sphinx.html" rel="alternate"></link><updated>2013-03-28T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-28:computer/rest_sphinx.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; 是Python &lt;a class="reference external" href="http://docutils.sourceforge.net/index.html"&gt;Docutils: Documentation Utilities&lt;/a&gt; 的一部分, 而 &lt;a class="reference external" href="http://sphinx.pocoo.org/"&gt;Sphinx&lt;/a&gt; 可以更方便產生，管理文件的工具&lt;/p&gt;
-&lt;p&gt;縮排用二個或三個空白都可以，Emacs的ReST預設用三個&lt;/p&gt;
-&lt;div class="section" id="id1"&gt;
-&lt;h2&gt;使用&lt;/h2&gt;
-&lt;p&gt;安裝:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ pip install Sphinx
-&lt;/pre&gt;
-&lt;p&gt;某目錄下:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ sphinx-quickstart
-&lt;/pre&gt;
-&lt;p&gt;會自動設定好conf.py, 和相關檔案&lt;/p&gt;
-&lt;p&gt;產生網頁檔:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ make html
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id2"&gt;
-&lt;h2&gt;文件結構&lt;/h2&gt;
-&lt;div class="section" id="id3"&gt;
-&lt;h3&gt;分段&lt;/h3&gt;
-&lt;p&gt;用一串連續的=*-^&amp;quot;~等字符來標示，通常用:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==========
-全文標題
-==========
-
-大標題
-========
-
-小標題
----------
-
-段落
-^^^^^^
-&lt;/pre&gt;
-&lt;div class="note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;中文字用的分段標示要長一點點&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id4"&gt;
-&lt;h3&gt;分隔&lt;/h3&gt;
-&lt;p&gt;像HTML裡的 &lt;tt class="docutils literal"&gt;&amp;lt;hr&amp;gt;&lt;/tt&gt;:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-----
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="inline-markup"&gt;
-&lt;h2&gt;修飾字 Inline markup&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;斜體&lt;/em&gt;:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-*italic*
-&lt;/pre&gt;
-&lt;div class="note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;中文不能斜&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;粗體&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-**bold**
-&lt;/pre&gt;
-&lt;p&gt;&lt;tt class="docutils literal"&gt;有底色&lt;/tt&gt;:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-``有底色``
-&lt;/pre&gt;
-&lt;p&gt;&amp;quot;修飾字&amp;quot;的前後都要空格，如要跟後面的字相連可以用 &lt;tt class="docutils literal"&gt;\&lt;/tt&gt;跳脫，如: &lt;strong&gt;test&lt;/strong&gt;123:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-**test**\123
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id5"&gt;
-&lt;h2&gt;定義&lt;/h2&gt;
-&lt;p&gt;定義:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-what
-  Definition of “what”. We add a few words to show the line wrapping.
-how
-  Definition of “how”.
-&lt;/pre&gt;
-&lt;dl class="docutils"&gt;
-&lt;dt&gt;what&lt;/dt&gt;
-&lt;dd&gt;Definition of “what”. We add a few words to show the line wrapping.&lt;/dd&gt;
-&lt;dt&gt;how&lt;/dt&gt;
-&lt;dd&gt;Definition of “how”.&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/div&gt;
-&lt;div class="section" id="lists"&gt;
-&lt;h2&gt;條列 Lists&lt;/h2&gt;
-&lt;p&gt;標示字符用*, +, -,等都可以:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-* 第一項
-
-  * 子項目不是只有縮排, 上面要空一行才可以
-
-* 第二項
-
-1. uno
-2. dos
-
-a) eins
-b) zwai
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="blocks"&gt;
-&lt;h2&gt;文字區塊 Blocks&lt;/h2&gt;
-&lt;p&gt;以下是區塊, 要空一行和縮排:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-跟你說::
-
-  嘻嘻
-&lt;/pre&gt;
-&lt;p&gt;註解/警告:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. note:: this is a note.
-.. warning:: this is a warning.
-&lt;/pre&gt;
-&lt;div class="note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;this is a note.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="warning"&gt;
-&lt;p class="first admonition-title"&gt;Warning&lt;/p&gt;
-&lt;p class="last"&gt;this is a warning.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="syntax-highlighting"&gt;
-&lt;h3&gt;Syntax Highlighting&lt;/h3&gt;
-&lt;div class="section" id="include-source"&gt;
-&lt;h4&gt;Include Source&lt;/h4&gt;
-&lt;p&gt;會把原始碼印出來。&lt;/p&gt;
-&lt;p&gt;Python:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. iteralinclude:: example.py
-  :linenos:
-&lt;/pre&gt;
-&lt;p&gt;PHP:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. literalinclude:: example.php
-  :language: php
-  :prepend: &amp;lt;?php
-  :append: ?&amp;gt;
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id6"&gt;
-&lt;h2&gt;連結&lt;/h2&gt;
-&lt;div class="section" id="id7"&gt;
-&lt;h3&gt;外部連結&lt;/h3&gt;
-&lt;p&gt;例子:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-`連結的標題 &amp;lt;http://example.com&amp;gt;`__
-`&amp;lt;http://example.com&amp;gt;`
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id8"&gt;
-&lt;h3&gt;內部連結&lt;/h3&gt;
-&lt;p&gt;在某個rst文件裡的任何一個地方定義:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. _test_label:
-&lt;/pre&gt;
-&lt;p&gt;連結:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-:ref:`標題文字&amp;lt;test_label&amp;gt;`
-&lt;/pre&gt;
-&lt;p&gt;或是用:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-:doc:`reST`
-&lt;/pre&gt;
-&lt;p&gt;會自動把文件標題抓出來:&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="tables"&gt;
-&lt;h2&gt;表格 (Tables)&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div class="section" id="field-list"&gt;
-&lt;h2&gt;(Field list)&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div class="section" id="explicit-markup"&gt;
-&lt;h2&gt;Explicit Markup&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div class="section" id="extensions"&gt;
-&lt;h2&gt;extensions&lt;/h2&gt;
-&lt;div class="section" id="graphviz"&gt;
-&lt;h3&gt;graphviz&lt;/h3&gt;
-&lt;p&gt;conf.py的extension加入:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-extensions = ['sphinx.ext.graphviz']
-&lt;/pre&gt;
-&lt;p&gt;語法:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. graphviz::
-
-   digraph foo {
-      &amp;quot;bar&amp;quot; -&amp;gt; &amp;quot;baz&amp;quot;;
-   }
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="comments"&gt;
-&lt;h3&gt;Comments 註解&lt;/h3&gt;
-&lt;p&gt;單行:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. This is a comment.
-&lt;/pre&gt;
-&lt;p&gt;區塊:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-..
-   This whole indented block
-   is a comment.
-
-   Still in the comment.
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="autodoc-automodule"&gt;
-&lt;h2&gt;autodoc/automodule&lt;/h2&gt;
-&lt;p&gt;project 目錄下有 docs, mymod&lt;/p&gt;
-&lt;p&gt;自動產生 rst:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ sphinx-apidoc -F -o docs mymod
-&lt;/pre&gt;
-&lt;p&gt;修改 conf.py(project/docs/source):&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-sys.path.insert(0, os.path.abspath('../../mymod'))
-&lt;/pre&gt;
-&lt;p&gt;然後在 docs 下 make html 就好了&lt;/p&gt;
-&lt;div class="note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;-o: output files directory -F: using sphinx-quickstart  create full project (conf.py Makefile...)&lt;/p&gt;
-&lt;/div&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;[sphinx-apidoc manual page — Sphinx 1.2.3 documentation](&lt;a class="reference external" href="http://sphinx-doc.org/man/sphinx-apidoc.html"&gt;http://sphinx-doc.org/man/sphinx-apidoc.html&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id9"&gt;
-&lt;h2&gt;參考資料&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://people.ee.ethz.ch/~creller/web/tricks/reST.html"&gt;reST – reStructuredText — Bits and Pieces&lt;/a&gt; - 簡潔扼要, 還有附Emacs的ReST mode&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html#restructured-text-rest-resources"&gt;Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation&lt;/a&gt; -&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html"&gt;3.6.1. Restructured Text (reST) and Sphinx CheatSheet — openalea.doc v0.8.0 documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html"&gt;Documenting Your Project Using Sphinx — an_example_pypi_project v0.0.5 documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-</summary><category term="docs"></category></entry><entry><title>Dynamic DNS setting for Namecheap on Mac OSX</title><link href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="alternate"></link><updated>2013-03-21T02:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-21:computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html</id><summary type="html">&lt;p&gt;登入Namecheap啓用Dynamic &lt;a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service"&gt;link1&lt;/a&gt;&lt;/p&gt;
+</summary><category term="note"></category></entry><entry><title>Dynamic DNS setting for Namecheap on Mac OSX</title><link href="http://blog.suhen.org/computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html" rel="alternate"></link><updated>2013-03-21T02:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-03-21:computer/dynamic-dns-setting-for-namecheap-on-mac-osx.html</id><summary type="html">&lt;p&gt;登入Namecheap啓用Dynamic &lt;a class="reference external" href="https://www.namecheap.com/support/knowledgebase/article.aspx/551/51/how-to-setup-dynamic-dns-when-i-use-free-dns-service"&gt;link1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;設定DNS record:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 freedns1.registrar-servers.com

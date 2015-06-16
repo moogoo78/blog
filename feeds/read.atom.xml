@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen | 酥賢尋找</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/read.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2015-05-25T08:16:00+08:00</updated><entry><title>[佛] 《妙法蓮華經》(法華經)</title><link href="http://blog.suhen.org/read/fahuajing.html" rel="alternate"></link><updated>2015-05-25T08:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-05-25:read/fahuajing.html</id><summary type="html">&lt;h1&gt;研究&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen | 酥賢尋找</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/read.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2015-06-16T08:12:00+08:00</updated><entry><title>[閱讀] Kanban and Scrum</title><link href="http://blog.suhen.org/read/kanban_and_scrum.html" rel="alternate"></link><updated>2015-06-16T08:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-06-16:read/kanban_and_scrum.html</id><summary type="html">&lt;p&gt;::&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;書名: Kanban and Scrum - making the most of both
+作者: Henrik Kniberg &amp;amp; Mattias Skarin
+出版: InfoQ
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;比較&lt;/h1&gt;
+&lt;p&gt;Scrum:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;split your organization&lt;/li&gt;
+&lt;li&gt;split your work&lt;/li&gt;
+&lt;li&gt;split time&lt;/li&gt;
+&lt;li&gt;optimize the release plan&lt;/li&gt;
+&lt;li&gt;optimize the process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kanban:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;visualize the workflow&lt;/li&gt;
+&lt;li&gt;measure the lead time (cycle time: average time to complete one item)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;宮本武藏雙刀流&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scrum prescripes roles (Product Owner, Team, Scrum Master)&lt;/li&gt;
+&lt;li&gt;Scrum prescribes timeboxed iteration&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kanban 沒限制&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kanban limits WIP &lt;strong&gt;per workflow state&lt;/strong&gt; (ex: Work state "Doing" 不能超過 2 個)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Scrum limits WIP &lt;strong&gt;per iteration&lt;/strong&gt; (limited per unit of time)&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="development"></category></entry><entry><title>[佛] 《妙法蓮華經》(法華經)</title><link href="http://blog.suhen.org/read/fahuajing.html" rel="alternate"></link><updated>2015-05-25T08:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-05-25:read/fahuajing.html</id><summary type="html">&lt;h1&gt;研究&lt;/h1&gt;
 &lt;h2&gt;版本&lt;/h2&gt;
 &lt;p&gt;6 種譯本&lt;/p&gt;
 &lt;h3&gt;現存三種&lt;/h3&gt;
