@@ -71,3 +71,8 @@ def publish():
         delete=True,
         extra_opts='-c',
     )
+
+def deploy():
+    local('pelican -s publishconf.py')
+    local('make github')
+    local('git add content; git commit -am "auto"; git push')
