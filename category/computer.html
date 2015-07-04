@@ -1,373 +1,275 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
-        <title>suhen suchen | 酥賢尋找</title>
-        <meta charset="utf-8" />
-        <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen | 酥賢尋找 Full Atom Feed" />
-        <link href="http://blog.suhen.org/feeds/computer.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen | 酥賢尋找 Categories Atom Feed" />
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="http://blog.suhen.org/category/computer.html" />
 
-        <link rel="stylesheet" href="http://blog.suhen.org/theme/css/rdark.css" />
-	<link rel="stylesheet" type="text/css" href="http://blog.suhen.org/theme/css/main.css" />
-        <link href="http://blog.suhen.org/" type="application/atom+xml" rel="alternate" title="suhen suchen | 酥賢尋找 ATOM Feed" /><!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-        <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-        try {
-          var pageTracker = _gat._getTracker("UA-38928548-1");
-          pageTracker._trackPageview();
-        } catch(err) {}
-        </script>
-	
-<!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-  "HTML-CSS": {
-  styles: {
-  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-  },
-  tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-  });
-</script>
+    <title>  suhen suchen &mdash; Articles in the computer category
+</title>
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-</head>
+
+
+
+    <link rel="stylesheet" href="http://blog.suhen.org/theme/css/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  <meta name="author" content="moogoo">
+  <meta name="description" content="">
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://blog.suhen.org/">suhen suchen | 酥賢尋找 <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-              <li><a href="http://blog.suhen.org/category/2015.html">2015</a></li>
-              <li class="active"><a href="http://blog.suhen.org/category/computer.html">computer</a></li>
-              <li><a href="http://blog.suhen.org/category/language.html">language</a></li>
-              <li><a href="http://blog.suhen.org/category/misc.html">misc</a></li>
-              <li><a href="http://blog.suhen.org/category/mountain.html">mountain</a></li>
-              <li><a href="http://blog.suhen.org/category/music.html">music</a></li>
-              <li><a href="http://blog.suhen.org/category/nature.html">nature</a></li>
-              <li><a href="http://blog.suhen.org/category/read.html">read</a></li>
-              <li><a href="http://blog.suhen.org/category/run.html">run</a></li>
-              <li><a href="http://blog.suhen.org/category/travel.html">travel</a></li>
-        </ul></nav><!-- /#menu -->
-<section id="content">
-<h2>Articles in the computer category</h2>
-
-<ol id="post-list">
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/python_web_develop.html" rel="bookmark" title="Permalink to [Web] Python 開發環境 (nginx + gunicorn + supervisord + Flask)">[Web] Python 開發環境 (nginx +  gunicorn + supervisord + Flask)</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-10-20T10:38:00+08:00"> 一 20 10月 2014 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h1>Web Servers</h1>
-<p>https://www.digitalocean.com/community/tutorials/a-comparison-of-web-servers-for-python-based-web-applications</p>
-<h2>Flask</h2>
-<p>hello world:</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
-<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
-
-<span class="nd">@app.route</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
-    <span class="k">return</span> <span class="s">&quot;Hello world!&quot;</span>
-
- <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
-     <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
-</pre></div>
-
-
-<h2>gunicorn</h2>
-<p>gunicorn 要裝在 virtualenv 環境裡</p>
-<div class="highlight"><pre><span class="nv">$ </span>gunicorn -b 0.0.0.0:5000 hello:app
-<span class="nv">$ </span>gunicorn --check-config <span class="c"># 如果有錯誤用這個檢查</span>
-</pre></div>
-
-
-<h2>supervisor</h2>
-<div class="highlight"><pre><span class="nv">$ </span>pip ...</pre></div> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/push_notification.html" rel="bookmark" title="Permalink to [Mobile] Push Notification / 推播 筆記">[Mobile] Push Notification / 推播 筆記</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-09-11T18:54:00+08:00"> 四 11 9月 2014 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>利用 Corona, AWS/SNS 做推播 (push notification)</p>
-<p><img alt="push_notification" src="/images/computer/push_notification.JPG" /></p>
-<ul>
-<li><a href="http://www.adventuresofanentrepreneur.net/creating-a-mobile-appsgames-company/setting-up-aws-sns-to-send-push-notifications-to-ios-devices">Setting up AWS SNS to send Push notifications to iOS devices - Adventures of an Entrepreneur</a> - AWS, SNS 的設定步驟</li>
-</ul>
-<p>用 AWS SNS 發送到 GCM 的步驟:</p>
-<ol>
-<li>Google API 管理界面 (https://console.developers.google.com) 產生一個 project, 從 project create 一個 API KEY (for server)</li>
-<li>用這個 ...</li></ol> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/ebook.html" rel="bookmark" title="Permalink to [draft] 電子書 / Ebook">[draft] 電子書 / Ebook</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-06-11T12:43:00+08:00"> 三 11 6月 2014 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h1>格式 /format</h1>
-<ul>
-<li><a href="http://www.cloud.org.tw/?q=node/6">電子書專區 | 雲端產業應用推動計畫</a></li>
-<li><a href="http://en.wikipedia.org/wiki/Comparison_of_e-book_formats">Comparison of e-book formats - Wikipedia, the free encyclopedia</a></li>
-</ul>
-<h2>EPUB</h2>
-<p><a href="http://en.wikipedia.org/wiki/EPUB">EPUB - Wikipedia, the free encyclopedia</a></p>
-<p>epub 其實就是一個 zip 的打包檔:</p>
-<ul>
-<li>mimetype</li>
-<li>META-INF</li>
-<li>OEBPS</li>
-</ul>
-<p>mimetype zip 檔要放在最前面</p>
-<h3>utils</h3>
-<ul>
-<li>Python EbookLib https://pypi.python.org/pypi/EbookLib/0.15</li>
-<li>Sigil https://github.com/user-none/Sigil , http://www.openfoundry.org/en ...</li></ul> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/ssl.html" rel="bookmark" title="Permalink to [網路] SSL">[網路] SSL</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-04-10T18:26:00+08:00"> 四 10 4月 2014 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>CSR: Certificate Signing Request
-CA: Certificate Authority</p>
-<ul>
-<li><a href="http://www.sslshopper.com/ssl-checker.html">SSL Checker - SSL Certificate Verify</a> 檢查SSL</li>
-<li><a href="https://www.sslshopper.com/csr-decoder.html">CSR Decoder - Check CSR to verify its contents</a></li>
-</ul> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/corona_sdk.html" rel="bookmark" title="Permalink to Corona SDK 筆記">Corona SDK 筆記</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2014-02-26T12:13:00+08:00"> 三 26 2月 2014 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h1>API</h1>
-<h2>System</h2>
-<div class="highlight"><pre><span class="n">system</span><span class="p">.</span><span class="n">setIdleTimer</span><span class="p">(</span> <span class="n">enabled</span> <span class="p">)</span>
-<span class="n">display</span><span class="p">.</span><span class="n">setStatusBar</span><span class="p">(</span> <span class="n">display</span><span class="p">.</span><span class="n">HiddenStatusBar</span> <span class="p">)</span>
-<span class="nb">collectgarbage</span><span class="p">()</span>
-</pre></div>
-
-
-<h2>Event / Timer</h2>
-<div class="highlight"><pre><span class="n">AnimTimer</span>  <span class="o">=</span> <span class="n">timer</span><span class="p">.</span><span class="n">performWithDelay</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">V</span><span class="p">.</span><span class="n">PAnimate</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
-<span class="n">timer</span><span class="p">.</span><span class="n">cancel</span><span class="p">(</span><span class="n">AnimTimer</span><span class="p">)</span>
-</pre></div>
-
-
-<h2>Network</h2>
-<div class="highlight"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">networkListener</span><span class="p">(</span> <span class="n">event</span> <span class="p">)</span>
-    <span class="k">if</span> <span class="p">(</span> <span class="n">event</span><span class="p">.</span><span class="n">isError</span> <span class="p">)</span> <span class="k">then</span>
-            <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">Network error!&quot;</span><span class="p">)</span>
-    <span class="k">else</span>
-            <span class="nb">print</span> <span class="p">(</span> <span class="s2">&quot;</span><span class="s">RESPONSE: &quot;</span> <span class="o">..</span> <span class="n">event</span><span class="p">.</span><span class="n">response</span> <span class="p">)</span>
-    <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="c1">-- Access Google over SSL:</span>
-<span class="n">network</span><span class="p">.</span><span class="n">request</span><span class="p">(</span> <span class="s2">&quot;</span><span class="s">https://encrypted.google ...</span></pre></div> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/lua_note.html" rel="bookmark" title="Permalink to Lua 筆記">Lua 筆記</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2013-10-01T12:36:00+08:00"> 二 01 10月 2013 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h1>String</h1>
-<h2>Standard</h2>
-<div class="highlight"><pre><span class="nb">string.find</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="p">])</span>
-<span class="nb">string.format</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="o">...</span><span class="p">)</span>
-<span class="nb">string.sub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">i</span> <span class="p">[,</span> <span class="n">j</span><span class="p">])</span> <span class="c1">-- string.sub(&quot;abcd&quot;, 1, 3) &gt;&gt; abc</span>
-
-<span class="nb">string.len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="n">s</span><span class="p">:</span><span class="n">len</span><span class="p">()</span>
-
-<span class="nb">string.gmatch</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">)</span>
-<span class="nb">string.gsub</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">pattern</span><span class="p">,</span> <span class="n">replace</span> <span class="p">[,</span> <span class="n">n</span><span class="p">])</span>
-
-<span class="nb">string.lower</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="nb">string.upper</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-
-<span class="nb">string.byte</span><span class="p">(</span><span class="s2">&quot;</span><span class="s">A&quot;</span><span class="p">)</span> <span class="c1">-- 65</span>
-<span class="nb">string.char ...</span></pre></div> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/irc_screen_irssi.html" rel="bookmark" title="Permalink to 用screen+irssi上IRC聊天不斷線">用screen+irssi上IRC聊天不斷線</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2013-05-26T15:21:00+08:00"> 日 26 5月 2013 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開).</p>
-<p>安裝screen和irssi:</p>
-<pre class="literal-block">
-aptitude install screen
-aptitude install irssi
-</pre>
-<p>開screen (detach/reattach參數):</p>
-<pre class="literal-block">
-screen -RD
-</pre>
-<p>進入irssi:</p>
-<pre class="literal-block">
-/connect irc.freenode.net # 連server
-/nick moogoolee           # 改匿名
-/j #python.tw             # 開channel
-/wc                       # 離開channal
-/disconnect               # server斷線
-/quit                     # 離開irssi
-</pre>
-<p>切換channel:</p>
-<pre class="literal-block">
-alt + 數字
-</pre>
-<p>但是Mac的Alt會變成輸入特殊字, 用iTerm的話, 可以如以下設定:</p>
-<p>Bookmarks ...</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/scripting-bi-jiao.html" rel="bookmark" title="Permalink to Scripting 比較">Scripting 比較</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2013-04-09T11:38:00+08:00"> 二 09 4月 2013 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>PHP, Python, Javascript, Lua</p>
-<div class="section" id="id1">
-<h2>易搞混</h2>
-<div class="section" id="hash-dictionary-table">
-<h3>hash/dictionary/table</h3>
-<p>json:</p>
-<div class="highlight"><pre><span class="p">{</span>
-     <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span>
-     <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Smith&quot;</span><span class="p">,</span>
-     <span class="nt">&quot;male&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-     <span class="nt">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
-     <span class="nt">&quot;address&quot;</span><span class="p">:</span>
-     <span class="p">{</span>
-         <span class="nt">&quot;streetAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;21 2nd Street&quot;</span><span class="p">,</span>
-         <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;New York&quot;</span><span class="p">,</span>
-         <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;NY&quot;</span><span class="p">,</span>
-         <span class="nt">&quot;postalCode&quot;</span><span class="p">:</span> <span class="s2">&quot;10021&quot;</span>
-     <span class="p">},</span>
-     <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span>
-     <span class="p">[</span>
-         <span class="p">{</span>
-           <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;home&quot;</span><span class="p">,</span>
-           <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;212 555-1234&quot;</span>
-         <span class="p">},</span>
-         <span class="p">{</span>
-           <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;fax&quot;</span><span class="p">,</span>
-           <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;646 555-4567&quot;</span>
-         <span class="p">}</span>
-     <span class="p">]</span>
- <span class="p">}</span>
-</pre></div>
-<p>python dictionary:</p>
-<div class="highlight"><pre><span class="n">dishes</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;eggs&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;sausage&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;bacon&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;spam ...</span></pre></div></div></div> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/blog.html" rel="bookmark" title="Permalink to blog">blog</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2013-04-02T15:53:00+08:00"> 二 02 4月 2013 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <div class="section" id="http-status-code">
-<h2>HTTP status code</h2>
-<p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
-<div class="section" id="informational-1xx">
-<h3>Informational 1xx</h3>
-<p>HTTP/1.0沒有定義</p>
-<ul class="simple">
-<li>100 Continue, proxy</li>
-<li>101 Switching Protocols, HTTP版本轉換</li>
-</ul>
+<body>
+<header class="header">
+  <div class="container">
+      <div class="header-image pull-left">
+        <a class="nodec" href="http://blog.suhen.org"><img src=https://lh3.googleusercontent.com/-9wxO5a0JILg/AAAAAAAAAAI/AAAAAAAABmU/BRrqv19ka5I/s120-c/photo.jpg></a>
+      </div>
+    <div class="header-inner">
+      <h1 class="header-name">
+        <a class="nodec" href="http://blog.suhen.org">suhen suchen</a>
+      </h1>
+      <h3 class="header-text">酥賢尋找</h3>
+      <ul class="header-menu list-inline">
+          <li><a class="nodec" href="http://blog.suhen.org/categories.html">Categories</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec" href="http://blog.suhen.org/tags.html">Tags</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec" href="http://blog.suhen.org/archives.html">Archives</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec icon-mail-alt" href="mailto:moogoo78@gmail.com"></a></li>
+          <li><a class="nodec icon-facebook" href="https://www.facebook.com/moogoo.lee"></a></li>
+      </ul>
+    </div>
+  </div>
+</header> <!-- /.header -->  <div class="container">
+  <h1>Articles in the computer category</h1>
+  <div>
+      <div class="post mini-post">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="post-date">
+              <a class="text-muted" href="/computer/python_web_develop.html" title="2014-10-20T10:38:00+08:00">2014-10-20 10:38</a>
+            </p>
+            <p class="post-category">
+              <a href="http://blog.suhen.org/category/computer.html">computer</a>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <h2 class="post-title">
+              <a href="/computer/python_web_develop.html" title="Permalink to [Web] Python 開發環境 (nginx + gunicorn + supervisord + Flask)">[Web] Python 開發環境 (nginx +  gunicorn + supervisord + Flask)</a>
+            </h2>
+            <div class="post-content">
+              Web Servers https://www.digitalocean.com/community/tutorials/a-comparison-of-web-servers-for-python-based-web-applications Flask hello world: from flask import Flask app = Flask(__name__) @app.route('/') def hello(): return "Hello world!" if __name__ == ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post mini-post">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="post-date">
+              <a class="text-muted" href="/computer/push_notification.html" title="2014-09-11T18:54:00+08:00">2014-09-11 18:54</a>
+            </p>
+            <p class="post-category">
+              <a href="http://blog.suhen.org/category/computer.html">computer</a>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <h2 class="post-title">
+              <a href="/computer/push_notification.html" title="Permalink to [Mobile] Push Notification / 推播 筆記">[Mobile] Push Notification / 推播 筆記</a>
+            </h2>
+            <div class="post-content">
+              利用 Corona, AWS/SNS 做推播 (push notification) Setting up AWS SNS to send Push notifications to iOS devices - Adventures of an Entrepreneur - AWS, SNS 的設定步驟 用 AWS SNS 發送到 GCM 的步驟: Google API 管理界面 (https://console.developers.google.com) 產生一個 project, 從 project ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post mini-post">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="post-date">
+              <a class="text-muted" href="/computer/ebook.html" title="2014-06-11T12:43:00+08:00">2014-06-11 12:43</a>
+            </p>
+            <p class="post-category">
+              <a href="http://blog.suhen.org/category/computer.html">computer</a>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <h2 class="post-title">
+              <a href="/computer/ebook.html" title="Permalink to [draft] 電子書 / Ebook">[draft] 電子書 / Ebook</a>
+            </h2>
+            <div class="post-content">
+              格式 /format 電子書專區 | 雲端產業應用推動計畫 Comparison of e-book formats - Wikipedia, the free encyclopedia EPUB EPUB - Wikipedia, the free encyclopedia epub 其實就是一個 zip 的打包檔: mimetype META-INF OEBPS mimetype zip 檔要放在最前面 utils Python EbookLib ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post mini-post">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="post-date">
+              <a class="text-muted" href="/computer/ssl.html" title="2014-04-10T18:26:00+08:00">2014-04-10 18:26</a>
+            </p>
+            <p class="post-category">
+              <a href="http://blog.suhen.org/category/computer.html">computer</a>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <h2 class="post-title">
+              <a href="/computer/ssl.html" title="Permalink to [網路] SSL">[網路] SSL</a>
+            </h2>
+            <div class="post-content">
+              CSR: Certificate Signing Request CA: Certificate Authority SSL Checker - SSL Certificate Verify 檢查SSL CSR Decoder - Check CSR to verify its contents
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post mini-post">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="post-date">
+              <a class="text-muted" href="/computer/corona_sdk.html" title="2014-02-26T12:13:00+08:00">2014-02-26 12:13</a>
+            </p>
+            <p class="post-category">
+              <a href="http://blog.suhen.org/category/computer.html">computer</a>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <h2 class="post-title">
+              <a href="/computer/corona_sdk.html" title="Permalink to Corona SDK 筆記">Corona SDK 筆記</a>
+            </h2>
+            <div class="post-content">
+              API System system.setIdleTimer( enabled ) display.setStatusBar( display.HiddenStatusBar ) collectgarbage() Event / Timer AnimTimer = timer.performWithDelay(1, V.PAnimate, 0 ) timer.cancel(AnimTimer) Network local function networkListener( event ) if ( ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post mini-post">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="post-date">
+              <a class="text-muted" href="/computer/lua_note.html" title="2013-10-01T12:36:00+08:00">2013-10-01 12:36</a>
+            </p>
+            <p class="post-category">
+              <a href="http://blog.suhen.org/category/computer.html">computer</a>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <h2 class="post-title">
+              <a href="/computer/lua_note.html" title="Permalink to Lua 筆記">Lua 筆記</a>
+            </h2>
+            <div class="post-content">
+              String Standard string.find(s, pattern, [index]) string.format(s, e1, e2...) string.sub(s, i [, j]) -- string.sub("abcd", 1, 3) >> abc string.len(s) s:len() string.gmatch(s, pattern) string.gsub(s, pattern, replace [, n]) string.lower(s) string.upper(s) ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post mini-post">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="post-date">
+              <a class="text-muted" href="/computer/irc_screen_irssi.html" title="2013-05-26T15:21:00+08:00">2013-05-26 15:21</a>
+            </p>
+            <p class="post-category">
+              <a href="http://blog.suhen.org/category/computer.html">computer</a>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <h2 class="post-title">
+              <a href="/computer/irc_screen_irssi.html" title="Permalink to 用screen+irssi上IRC聊天不斷線">用screen+irssi上IRC聊天不斷線</a>
+            </h2>
+            <div class="post-content">
+              一直沒有很常使用IRC, 發現可以用screen detach/reattach的功能, 遠端機器開Irssi這個console介面的IRC client, 掛在IRC上, 就算本機突然沒網路, 回來重新連上screen, 還是可以接上回討論. 就像從沒離開過 (遠端真的從來沒有離開). 安裝screen和irssi: aptitude install screen aptitude install irssi 開screen (detach/reattach參數): screen -RD ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post mini-post">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="post-date">
+              <a class="text-muted" href="/computer/scripting-bi-jiao.html" title="2013-04-09T11:38:00+08:00">2013-04-09 11:38</a>
+            </p>
+            <p class="post-category">
+              <a href="http://blog.suhen.org/category/computer.html">computer</a>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <h2 class="post-title">
+              <a href="/computer/scripting-bi-jiao.html" title="Permalink to Scripting 比較">Scripting 比較</a>
+            </h2>
+            <div class="post-content">
+              PHP, Python, Javascript, Lua 易搞混 hash/dictionary/table json: { "firstName": "John", "lastName": "Smith", "male": true, "age": 25, "address": { "streetAddress": "21 2nd Street", "city": "New York", "state": "NY", "postalCode": "10021" }, "phoneNumber": [ { ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post mini-post">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="post-date">
+              <a class="text-muted" href="/computer/blog.html" title="2013-04-02T15:53:00+08:00">2013-04-02 15:53</a>
+            </p>
+            <p class="post-category">
+              <a href="http://blog.suhen.org/category/computer.html">computer</a>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <h2 class="post-title">
+              <a href="/computer/blog.html" title="Permalink to blog">blog</a>
+            </h2>
+            <div class="post-content">
+              HTTP status code http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html Informational 1xx HTTP/1.0沒有定義 100 Continue, proxy 101 Switching Protocols, HTTP版本轉換 Successful 2xx 200 OK 201 Created 202 Accepted 203 Non-Authoritative Information 204 No Content ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post mini-post">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="post-date">
+              <a class="text-muted" href="/computer/ganglia.html" title="2013-04-02T11:39:00+08:00">2013-04-02 11:39</a>
+            </p>
+            <p class="post-category">
+              <a href="http://blog.suhen.org/category/computer.html">computer</a>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <h2 class="post-title">
+              <a href="/computer/ganglia.html" title="Permalink to Ganglia">Ganglia</a>
+            </h2>
+            <div class="post-content">
+              之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia Ganglia有3個部分: gmond - 每一個node都要分別開啟的daemon, 分成sender跟receiver gmetad - 詢問gmond儲存數質 ganglia-web # config /etc/ganglia/gmetad.conf # CentOS /usr/share/ganglia/ # php files start daemond: service gmond start service ...
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <ul class="pagination">
+    <li class="disabled"><a href="#">Page 1 / 2</a></li>
+      <li><a href="http://blog.suhen.org/category/computer2.html">&raquo;</a></li>
+  </ul>
 </div>
-<div class="section" id="successful-2xx">
-<h3>Successful 2xx</h3>
-<ul class="simple">
-<li>200 OK</li>
-<li>201 Created</li>
-<li>202 Accepted</li>
-<li>203 Non-Authoritative Information</li>
-<li>204 No Content</li>
-<li>205 Reset Content</li>
-<li>206 Partial Content</li>
-</ul>
-</div>
-<div class="section" id="redirection-3xx">
-<h3>Redirection 3xx</h3>
-<ul class="simple">
-<li>300 Multiple Choices</li>
-<li>301 Moved ...</li></ul></div></div> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="http://blog.suhen.org/computer/ganglia.html" rel="bookmark" title="Permalink to Ganglia">Ganglia</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="2013-04-02T11:39:00+08:00"> 二 02 4月 2013 </abbr>
-                    <address class="vcard author">By
-                        <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>之前用過mumin, 感覺有點吃資源, 設定也麻煩, 試試ganglia</p>
-<p>Ganglia有3個部分:</p>
-<ul class="simple">
-<li>gmond -  每一個node都要分別開啟的daemon, 分成sender跟receiver</li>
-<li>gmetad - 詢問gmond儲存數質</li>
-<li>ganglia-web</li>
-</ul>
-<pre class="literal-block">
-# config
-/etc/ganglia/gmetad.conf # CentOS
-/usr/share/ganglia/ # php files
-</pre>
-<p>start daemond:</p>
-<pre class="literal-block">
-service gmond start
-service gmetad start
-</pre>
-<div class="section" id="centos">
-<h2>CentOS</h2>
-<p>進入web介面時出現:</p>
-<pre class="literal-block">
-There was an error collecting ganglia data (127.0.0.1:8652): fsockopen error: Connection refused
-</pre>
-<p>解決方法, 重新安裝 ...</p></div> </div><!-- /.entry-content -->
-        </article></li>
-</ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 2
-        <a href="http://blog.suhen.org/category/computer2.html">&raquo;</a>
-</p>
-</section><!-- /#content -->
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                Modified by suhen.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
-</body>
+  </div>
+<footer class="footer">
+  <div class="container">
+    <p class="text-center">
+      moogoo, <a href="" target="_blank"></a> unless otherwise noted.
+    </p>
+    <div class="text-center">
+      Generated by <a href="http://getpelican.com" target="_blank">Pelican</a> with the <a href="http://github.com/nairobilug/pelican-alchemy">alchemy</a> theme.
+    </div>
+  </div>
+</footer> <!-- /.footer -->
+  <script src="http://blog.suhen.org/theme/js/jquery.min.js"></script>
+  <script src="http://blog.suhen.org/theme/js/bootstrap.min.js"></script>
+</body> <!-- 42 -->
+
 </html>

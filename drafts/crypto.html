@@ -1,93 +1,119 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
-          <title>suhen suchen | 酥賢尋找</title>
-        <meta charset="utf-8" />
-        <link href="http://blog.suhen.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen | 酥賢尋找 Full Atom Feed" />
-        <link href="http://blog.suhen.org/feeds/.atom.xml" type="application/atom+xml" rel="alternate" title="suhen suchen | 酥賢尋找 Categories Atom Feed" />
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="http://blog.suhen.org/drafts/crypto.html" />
 
-        <link rel="stylesheet" href="http://blog.suhen.org/theme/css/rdark.css" />
-	<link rel="stylesheet" type="text/css" href="http://blog.suhen.org/theme/css/main.css" />
-        <link href="http://blog.suhen.org/" type="application/atom+xml" rel="alternate" title="suhen suchen | 酥賢尋找 ATOM Feed" /><!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-        <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-        try {
-          var pageTracker = _gat._getTracker("UA-38928548-1");
-          pageTracker._trackPageview();
-        } catch(err) {}
-        </script>
-	
-<!-- Using MathJax, with the delimiters $ -->
-<!-- Conflict with pygments for the .mo and .mi -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-  "HTML-CSS": {
-  styles: {
-  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
-  },
-  tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
-  });
-</script>
+    <title>  suhen suchen &mdash; 密碼
+</title>
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+
+
+    <link rel="stylesheet" href="http://blog.suhen.org/theme/css/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <meta name="author" content="moogoo">
+    <meta name="description" content="RSA: 三人名字 隨意選擇兩個大的質數p和q，p不等於q，計算N=pq。 假設偷聽者乙獲得了甲的公鑰N和e以及丙的加密消息c，但她無法直接獲得甲的密鑰d。要獲得d，最簡單的方法是將N分解為p和q，這樣她可以得到同餘方程d× e ≡ 1 (mod (p-1)(q-1))並解出d，然後代入解密公式 假如N的長度小於或等於256位，那麼用一台個人電腦在幾個小時內就可以分解它的因子了。1999年，數百台電腦合作分解了一個512位長的N。今天對N的要求是它至少要1024位長。 針對RSA最流行的攻擊一般是基於大數因數分解。1999年，RSA-155（512 bits）被成功分解，花了五個月時間（約8000 MIPS 年）和224 CPU hours 在一台有3.2G中央內存的Cray C916計算機上完成 。 2002年，RSA-158也被成功因數分解。 2009年12月12日，編號為 RSA-768 （768 bits, 232 digits）數也被成功分解[1 ...">
+  <meta name="tags" contents=", ">
 </head>
 
-
-
-    <meta name="tags" contents="" />
-
-</head>
-
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://blog.suhen.org/">suhen suchen | 酥賢尋找 <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-              <li><a href="http://blog.suhen.org/category/2015.html">2015</a></li>
-              <li><a href="http://blog.suhen.org/category/computer.html">computer</a></li>
-              <li><a href="http://blog.suhen.org/category/language.html">language</a></li>
-              <li><a href="http://blog.suhen.org/category/misc.html">misc</a></li>
-              <li><a href="http://blog.suhen.org/category/mountain.html">mountain</a></li>
-              <li><a href="http://blog.suhen.org/category/music.html">music</a></li>
-              <li><a href="http://blog.suhen.org/category/nature.html">nature</a></li>
-              <li><a href="http://blog.suhen.org/category/read.html">read</a></li>
-              <li><a href="http://blog.suhen.org/category/run.html">run</a></li>
-              <li><a href="http://blog.suhen.org/category/travel.html">travel</a></li>
-        </ul></nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      <a href="http://blog.suhen.org/drafts/crypto.html" rel="bookmark"
-         title="Permalink to 密碼">密碼</a></h2>
- 
-  </header>
-  <footer class="post-info">
-    <abbr class="published" title="2014-02-06T16:34:00+08:00">
-      四 06 2月 2014
-    </abbr>
-    <address class="vcard author">
-      By           <a class="url fn" href="http://blog.suhen.org/author/moogoo.html">moogoo</a>
-    </address>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
-    <p>RSA: 三人名字</p>
+<body>
+<header class="header">
+  <div class="container">
+      <div class="header-image pull-left">
+        <a class="nodec" href="http://blog.suhen.org"><img src=https://lh3.googleusercontent.com/-9wxO5a0JILg/AAAAAAAAAAI/AAAAAAAABmU/BRrqv19ka5I/s120-c/photo.jpg></a>
+      </div>
+    <div class="header-inner">
+      <h1 class="header-name">
+        <a class="nodec" href="http://blog.suhen.org">suhen suchen</a>
+      </h1>
+      <h3 class="header-text">酥賢尋找</h3>
+      <ul class="header-menu list-inline">
+          <li><a class="nodec" href="http://blog.suhen.org/categories.html">Categories</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec" href="http://blog.suhen.org/tags.html">Tags</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec" href="http://blog.suhen.org/archives.html">Archives</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec icon-mail-alt" href="mailto:moogoo78@gmail.com"></a></li>
+          <li><a class="nodec icon-facebook" href="https://www.facebook.com/moogoo.lee"></a></li>
+      </ul>
+    </div>
+  </div>
+</header> <!-- /.header -->  <div class="container">
+  <div class="post full-post">
+    <h1 class="post-title">
+      <a href="/drafts/crypto.html" title="Permalink to 密碼">密碼</a>
+    </h1>
+    <ul class="list-inline">
+      <li class="post-date">
+        <a class="text-muted" href="/drafts/crypto.html" title="2014-02-06T16:34:00+08:00">2014-02-06 16:34</a>
+      </li>
+      <li class="muted">&middot;</li>
+      <li class="post-category">
+        <a href="http://blog.suhen.org/category/.html"></a>
+      </li>
+        <li class="muted">&middot;</li>
+        <li>
+            <a href="/tag/.html"></a>        </li>
+    </ul>
+    <div class="post-content">
+      <p>RSA: 三人名字</p>
 <p>隨意選擇兩個大的質數p和q，p不等於q，計算N=pq。</p>
 <p>假設偷聽者乙獲得了甲的公鑰N和e以及丙的加密消息c，但她無法直接獲得甲的密鑰d。要獲得d，最簡單的方法是將N分解為p和q，這樣她可以得到同餘方程d× e ≡ 1 (mod (p-1)(q-1))並解出d，然後代入解密公式</p>
 <p>假如N的長度小於或等於256位，那麼用一台個人電腦在幾個小時內就可以分解它的因子了。1999年，數百台電腦合作分解了一個512位長的N。今天對N的要求是它至少要1024位長。</p>
 <p>針對RSA最流行的攻擊一般是基於大數因數分解。1999年，RSA-155（512 bits）被成功分解，花了五個月時間（約8000 MIPS 年）和224 CPU hours 在一台有3.2G中央內存的Cray C916計算機上完成 。</p>
 <p>2002年，RSA-158也被成功因數分解。</p>
 <p>2009年12月12日，編號為 RSA-768 （768 bits, 232 digits）數也被成功分解[1]。這一事件威脅了現通行的1024-bit密鑰的安全性，普遍認為用戶應儘快升級到2048-bit或以上。</p>
-  </div><!-- /.entry-content -->
-</section>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                Modified by suhen.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
-</body>
+    </div>
+  </div>
+  <hr class="separator">
+  <div class="col-md-8 col-md-offset-2">
+  <div id="disqus_thread">
+    <script>
+      var disqus_shortname = 'suhenorg';
+      (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] ||
+         document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript=suhenorg">
+        comments powered by Disqus.
+      </a>
+    </noscript>
+    <a href="https://disqus.com" class="dsq-brlink">
+      blog comments powered by <span class="logo-disqus">Disqus</span>
+    </a>
+  </div>
+  </div>
+  </div>
+<footer class="footer">
+  <div class="container">
+    <p class="text-center">
+      moogoo, <a href="" target="_blank"></a> unless otherwise noted.
+    </p>
+    <div class="text-center">
+      Generated by <a href="http://getpelican.com" target="_blank">Pelican</a> with the <a href="http://github.com/nairobilug/pelican-alchemy">alchemy</a> theme.
+    </div>
+  </div>
+</footer> <!-- /.footer -->
+  <script src="http://blog.suhen.org/theme/js/jquery.min.js"></script>
+  <script src="http://blog.suhen.org/theme/js/bootstrap.min.js"></script>
+</body> <!-- 42 -->
+
 </html>
