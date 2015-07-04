@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'moogoo'
-SITENAME = u'suhen suchen | 酥賢尋找'
+SITENAME = u'suhen suchen'
 SITEURL = 'http:\\blog.suhen.org'
 
 PATH = 'content'
@@ -23,7 +23,23 @@ ARTICLE_URL = '{category}/{slug}.html'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
 #ARTICLE_SAVE_AS = '{date:%Y-%m-%d}_{slug}.html'
 #THEME = 'themes/reallynotmyidea'
-THEME = 'themes/space2001'
+THEME = 'themes/alchemy'
+
+
+
+TAGS_ON_MENU = True
+CATEGORIES_ON_MENU = True
+ARCHIVES_ON_MENU = True
+SITE_SUBTEXT = '酥賢尋找'
+FB_ADDRESS = 'https://www.facebook.com/moogoo.lee'
+EMAIL_ADDRESS = 'moogoo78@gmail.com'
+PROFILE_IMAGE = 'https://lh3.googleusercontent.com/-9wxO5a0JILg/AAAAAAAAAAI/AAAAAAAABmU/BRrqv19ka5I/s120-c/photo.jpg'
+## setting
+DATE_FORMATS = {
+    'zh': ('zh_TW.UTF-8','%Y-%m-%d %H:%M'),
+}
+LOCALE = ('zh_TW.UTF-8')
+
 
 # Blogroll
 LINKS = (
@@ -48,9 +64,5 @@ PLUGINS = [
     'pelican_youtube',
 ]
 
-
-DISPLAY_CATEGORIES_ON_MENU = True
-DISPLAY_PAGES_ON_MENU = False
-DEFAULT_DATE_FORMATS = '%Y.%M.%d'
 
 # ref: http://docs.getpelican.com/en/latest/settings.html#basic-settings
