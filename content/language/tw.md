@@ -1,4 +1,4 @@
-Title: 台灣.的.語言
+Title: 台灣的語言
 Date: 2014-07-23 10:44
 Category: language
 Tags: note

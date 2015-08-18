@@ -3,7 +3,7 @@ Date: 2014-01-02 11:30
 Category: misc
 Tags: quote
 Slug: quotes
-
+ 
 # 成功人生
 * perfect is the enemy of good
 * An idea that is not dangerous is unworthy of being called an idea at all. - Oscar Wilde
@@ -40,3 +40,7 @@ Slug: quotes
 > What is it that stands higher than words?  Action.
 > What is it that stands higher than action?  Silence.
 > - Francis of Assisi 
+
+# 現象
+
+《百年孤寂》「世界太新，很多事物還沒有名字，必須用手指頭伸手去指。」
