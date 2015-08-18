@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/misc.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2015-06-03T10:46:00+08:00</updated><entry><title>[轉載] 榮新胡亂想系列 - czolth.chen 臉書</title><link href="http://blog.suhen.org/misc/rong_xin_park_think.html" rel="alternate"></link><updated>2015-06-03T10:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-06-03:misc/rong_xin_park_think.html</id><summary type="html">&lt;p&gt;(不明) 2015.01.25&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>suhen suchen</title><link href="http://blog.suhen.org/" rel="alternate"></link><link href="http://blog.suhen.org/feeds/misc.atom.xml" rel="self"></link><id>http://blog.suhen.org/</id><updated>2015-08-19T07:36:00+08:00</updated><entry><title>[連結] 氣象</title><link href="http://blog.suhen.org/misc/tenki.html" rel="alternate"></link><updated>2015-08-19T07:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-08-19:misc/tenki.html</id><summary type="html">&lt;h2&gt;一般天氣&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.cwb.gov.tw/V7/forecast/town368/"&gt;鄉鎮預報&lt;/a&gt; (中央氣象局)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tenki.tw/forecast/index.php"&gt;iTenki 給你好天氣-台灣天氣&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tenki.jp/guide/chart/"&gt;天気図 - 日本気象協会 tenki.jp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;颱風&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.jma.go.jp/jp/typh/"&gt;気象庁 | 台風情報&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://typhoon.yahoo.co.jp/weather/jp/typhoon/"&gt;台風情報 - 日本広域 - Yahoo!天気・災害&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;cool&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://earth.nullschool.net/#current/wind/surface/level/orthographic=-231.75,23.38,1024"&gt;earth :: a global map of wind, weather, and ocean conditions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="links"></category></entry><entry><title>[轉載] 榮新胡亂想系列 - czolth.chen 臉書</title><link href="http://blog.suhen.org/misc/rong_xin_park_think.html" rel="alternate"></link><updated>2015-06-03T10:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2015-06-03:misc/rong_xin_park_think.html</id><summary type="html">&lt;p&gt;(不明) 2015.01.25&lt;/p&gt;
 &lt;div id="fb-root"&gt;&lt;/div&gt;
 
 &lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&amp;version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));&lt;/script&gt;
@@ -610,7 +624,9 @@
 &lt;p&gt;What is it that stands higher than words?  Action.
 What is it that stands higher than action?  Silence.
 - Francis of Assisi &lt;/p&gt;
-&lt;/blockquote&gt;</summary><category term="quote"></category></entry><entry><title>[荒野台北24解] 第七堂室內課 荒野武林大會 - 定點介紹</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-7.html" rel="alternate"></link><updated>2013-12-31T18:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-31:misc/sow_taipei_interpreter_24-7.html</id><summary type="html">&lt;h1&gt;汐湖組&lt;/h1&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;現象&lt;/h1&gt;
+&lt;p&gt;《百年孤寂》「世界太新，很多事物還沒有名字，必須用手指頭伸手去指。」&lt;/p&gt;</summary><category term="quote"></category></entry><entry><title>[荒野台北24解] 第七堂室內課 荒野武林大會 - 定點介紹</title><link href="http://blog.suhen.org/misc/sow_taipei_interpreter_24-7.html" rel="alternate"></link><updated>2013-12-31T18:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:blog.suhen.org,2013-12-31:misc/sow_taipei_interpreter_24-7.html</id><summary type="html">&lt;h1&gt;汐湖組&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;筆筒樹&lt;/strong&gt; (於小澐)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;與人連結的解說法:
