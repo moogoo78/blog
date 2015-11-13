@@ -25,9 +25,9 @@
 &lt;h2&gt;supervisor&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install supervisor
 &lt;span class="nv"&gt;$ &lt;/span&gt;supervisord -c &lt;span class="o"&gt;[&lt;/span&gt;xxx.conf&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="c"&gt;# default: /etc/supervisord.conf&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;supervisord -n &lt;span class="p"&gt;;&lt;/span&gt; run in foreground
+&lt;span class="nv"&gt;$ &lt;/span&gt;supervisord -n ; run in foreground
 
-&lt;span class="nv"&gt;$ &lt;/span&gt;supervisorctl &lt;span class="p"&gt;;&lt;/span&gt; 進入 console
+&lt;span class="nv"&gt;$ &lt;/span&gt;supervisorctl ; 進入 console
 &amp;gt; &lt;span class="nb"&gt;help&lt;/span&gt;
 
 &lt;span class="nv"&gt;$ &lt;/span&gt;supervisorctl restart myapp
@@ -328,7 +328,7 @@ keytool -genkey -v -keystore mykeystore.keystore -alias aliasname -keyalg RSA -v
 
 &lt;p&gt;大寫表示逆向，例如: &lt;strong&gt;%A&lt;/strong&gt; 就是非字串的意思&lt;/p&gt;
 &lt;p&gt;特殊字元:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;( ) . % + - * ? [ ^ $
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="o"&gt;^&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
