@@ -48,11 +48,6 @@ Cillian Murphy (*Breakfast on Pluto O.S.T.*, 2005)
 電影: 冥王星早餐，Cillian Murphy和Gavin Friday對唱
 
 
-每一個版本都唱的很低沈、性感、磁性。
-
-
-
-
 Movie Star Junkies
 =======================
 
@@ -69,6 +64,19 @@ Atomic Suplex
 英倫龐克的鐵漢柔情
 
 
+Holly Golightly
+===================
+
+.. youtube:: wCM_Qlz_olA
+
+老哥
+             
+B.Cotton (電影Barbarella, 1968)
+===================================
+
+.. youtube:: b-VuQdXllxI
+
+1968年珍芳達主演 B片配樂
 
    
 歌詞::
