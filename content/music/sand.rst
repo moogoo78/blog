@@ -68,7 +68,8 @@ Atomic Suplex
 
 英倫龐克的鐵漢柔情
 
-             
+
+
    
 歌詞::
 
@@ -105,3 +106,5 @@ Atomic Suplex
   He was a stranger in my land
   A wandering man, i called him sand
 
+
+- 2016-01-29 更新 
