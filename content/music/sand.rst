@@ -30,7 +30,7 @@ OP8 feat. Lisa Germano (*Slush*, 1997)
 
 .. youtube:: lNIcvmDjx0k
 
-個性女伶Lisa Germano來伴唱
+OP8 邀請個性女伶Lisa Germano來伴唱
 
 
 Hugo Race and the True Spirit (*53rd State*, 2008)
@@ -50,6 +50,26 @@ Cillian Murphy (*Breakfast on Pluto O.S.T.*, 2005)
 
 每一個版本都唱的很低沈、性感、磁性。
 
+
+
+
+Movie Star Junkies
+=======================
+
+.. youtube:: iWBdHweKug0
+
+義大利車庫龐克 Lofi
+
+
+Atomic Suplex
+===============             
+
+.. youtube:: _gputwI8iR0
+
+英倫龐克的鐵漢柔情
+
+             
+   
 歌詞::
 
   Young woman share your fire with me

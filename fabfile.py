@@ -73,6 +73,6 @@ def publish():
     )
 
 def deploy():
-    local('pelican -s publishconf.py')
+    local('pelican -s publishconf.py --ignore-cache') # ignore-cache prevent ascii err?
     local('make github')
     local('git add content; git commit -am "auto"; git push')
