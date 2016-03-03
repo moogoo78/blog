@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'moogoo'
-SITENAME = u'suhen suchen'
+SITENAME = "Lí Su-hiân ê blog"
 SITEURL = 'http:\\blog.suhen.org'
 
 PATH = 'content'
@@ -30,7 +30,7 @@ THEME = 'themes/alchemy'
 TAGS_ON_MENU = True
 CATEGORIES_ON_MENU = True
 ARCHIVES_ON_MENU = True
-SITE_SUBTEXT = '酥賢尋找'
+SITE_SUBTEXT = "時時勤拂拭，勿使惹塵埃"
 FB_ADDRESS = 'https://www.facebook.com/moogoo.lee'
 EMAIL_ADDRESS = 'moogoo78@gmail.com'
 PROFILE_IMAGE = 'https://lh3.googleusercontent.com/-9wxO5a0JILg/AAAAAAAAAAI/AAAAAAAABmU/BRrqv19ka5I/s120-c/photo.jpg'
