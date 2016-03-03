@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Lí Su-hiân ê blog</title><link href="http://suhien.li/" rel="alternate"></link><link href="http://suhien.li/feeds/misc.atom.xml" rel="self"></link><id>http://suhien.li/</id><updated>2015-08-19T07:36:00+08:00</updated><entry><title>[連結] 氣象</title><link href="http://suhien.li/misc/tenki.html" rel="alternate"></link><updated>2015-08-19T07:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2015-08-19:misc/tenki.html</id><summary type="html">&lt;h2&gt;一般天氣&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Lí Su-hiân ê blog</title><link href="http://suhian.li/" rel="alternate"></link><link href="http://suhian.li/feeds/misc.atom.xml" rel="self"></link><id>http://suhian.li/</id><updated>2015-08-19T07:36:00+08:00</updated><entry><title>[連結] 氣象</title><link href="http://suhian.li/misc/tenki.html" rel="alternate"></link><updated>2015-08-19T07:36:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2015-08-19:misc/tenki.html</id><summary type="html">&lt;h2&gt;一般天氣&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.cwb.gov.tw/V7/forecast/town368/"&gt;鄉鎮預報&lt;/a&gt; (中央氣象局)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.tenki.tw/forecast/index.php"&gt;iTenki 給你好天氣-台灣天氣&lt;/a&gt;&lt;/li&gt;
@@ -13,7 +13,7 @@
 &lt;h2&gt;cool&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://earth.nullschool.net/#current/wind/surface/level/orthographic=-231.75,23.38,1024"&gt;earth :: a global map of wind, weather, and ocean conditions&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="links"></category></entry><entry><title>[轉載] 榮新胡亂想系列 - czolth.chen 臉書</title><link href="http://suhien.li/misc/rong_xin_park_think.html" rel="alternate"></link><updated>2015-06-03T10:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2015-06-03:misc/rong_xin_park_think.html</id><summary type="html">&lt;p&gt;(不明) 2015.01.25&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="links"></category></entry><entry><title>[轉載] 榮新胡亂想系列 - czolth.chen 臉書</title><link href="http://suhian.li/misc/rong_xin_park_think.html" rel="alternate"></link><updated>2015-06-03T10:46:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2015-06-03:misc/rong_xin_park_think.html</id><summary type="html">&lt;p&gt;(不明) 2015.01.25&lt;/p&gt;
 &lt;div id="fb-root"&gt;&lt;/div&gt;
 
 &lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&amp;version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));&lt;/script&gt;
@@ -76,7 +76,7 @@
 
 &lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&amp;version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));&lt;/script&gt;
 
-&lt;div class="fb-post" data-href="https://www.facebook.com/czolth.chen/posts/871664556231950" data-width="500"&gt;&lt;div class="fb-xfbml-parse-ignore"&gt;&lt;blockquote cite="https://www.facebook.com/czolth.chen/posts/871664556231950"&gt;&lt;p&gt;&amp;#x3010;&amp;#x69ae;&amp;#x661f;&amp;#x80e1;&amp;#x4e82;&amp;#x60f3; XII&amp;#x3011;&amp;#x61c9;&amp;#x8a72;&amp;#x4e0d;&amp;#x5c11;&amp;#x4eba;&amp;#x77e5;&amp;#x9053;&amp;#x56e0;&amp;#x6642;&amp;#x8b8a;&amp;#x901a;&amp;#x3001;&amp;#x56e0;&amp;#x5730;&amp;#x5236;&amp;#x5b9c;&amp;#x7684;&amp;#x9053;&amp;#x7406;&amp;#xff0c;&amp;#x7279;&amp;#x5225;&amp;#x662f;&amp;#x4e00;&amp;#x8d77;&amp;#x8ddf;&amp;#x904e;&amp;#x8001;&amp;#x5927;&amp;#x5728;&amp;#x6ce5;&amp;#x7058;&amp;#x6ebc;&amp;#x5730;&amp;#x88e1;&amp;#x6253;&amp;#x6efe;&amp;#x904e;&amp;#x5e7e;&amp;#x6b21;&amp;#x3001;&amp;#x505a;&amp;#x904e;&amp;#x5e7e;&amp;#x6b21;&amp;#x68f2;&amp;#x5730;&amp;#x7dad;&amp;#x8b77;&amp;#x7ba1;&amp;#x7406;&amp;#x7684;&amp;#x5925;&amp;#x4f34;&amp;#x5011;&amp;#x3002;&amp;#x5de5;&amp;#x4f5c;&amp;#x5047;&amp;#x671f;&amp;#x5c3e;&amp;#x8072;&amp;#xff0c;&amp;#x69ae;&amp;#x661f;&amp;#x751f;&amp;#x614b;&amp;#x6c60;&amp;#x88e1;&amp;#x9664;&amp;#x4e86;&amp;#x7a2e;&amp;#x9032;&amp;#x4e86;&amp;#x8010;&amp;#x751f;&amp;#x53c8;&amp;#x8010;&amp;#x770b;&amp;#x7684;&amp;#x5713;&amp;#x8449;&amp;#x7bc0;&amp;#x7bc0;&amp;#x83dc;&amp;#x5916;&amp;#xff0c;&amp;#x540c;&amp;#x6a23;&amp;#x5177;&amp;#x6709;&amp;#x65fa;&amp;#x76db;&amp;#x751f;&amp;#x547d;&amp;#x529b;&amp;#x7684;&amp;#x91dd;&amp;#x85fa;&amp;#x3001;&amp;#x6c34;&amp;#x6bdb;&amp;#x82b1;&amp;#x7576;&amp;#x7136;...&lt;/p&gt;Posted by &lt;a href="https://www.facebook.com/czolth.chen"&gt;Donald Chen&lt;/a&gt; on &lt;a href="https://www.facebook.com/czolth.chen/posts/871664556231950"&gt;Sonntag, 31. Mai 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;</summary><category term="生態"></category><category term="公園"></category><category term="轉載"></category></entry><entry><title>[轉載] 「台北其實很生態」系列 - 郭城孟臉書</title><link href="http://suhien.li/misc/taipei_really_eco.html" rel="alternate"></link><updated>2015-06-01T14:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2015-06-01:misc/taipei_really_eco.html</id><summary type="html">&lt;h2&gt;文章&lt;/h2&gt;
+&lt;div class="fb-post" data-href="https://www.facebook.com/czolth.chen/posts/871664556231950" data-width="500"&gt;&lt;div class="fb-xfbml-parse-ignore"&gt;&lt;blockquote cite="https://www.facebook.com/czolth.chen/posts/871664556231950"&gt;&lt;p&gt;&amp;#x3010;&amp;#x69ae;&amp;#x661f;&amp;#x80e1;&amp;#x4e82;&amp;#x60f3; XII&amp;#x3011;&amp;#x61c9;&amp;#x8a72;&amp;#x4e0d;&amp;#x5c11;&amp;#x4eba;&amp;#x77e5;&amp;#x9053;&amp;#x56e0;&amp;#x6642;&amp;#x8b8a;&amp;#x901a;&amp;#x3001;&amp;#x56e0;&amp;#x5730;&amp;#x5236;&amp;#x5b9c;&amp;#x7684;&amp;#x9053;&amp;#x7406;&amp;#xff0c;&amp;#x7279;&amp;#x5225;&amp;#x662f;&amp;#x4e00;&amp;#x8d77;&amp;#x8ddf;&amp;#x904e;&amp;#x8001;&amp;#x5927;&amp;#x5728;&amp;#x6ce5;&amp;#x7058;&amp;#x6ebc;&amp;#x5730;&amp;#x88e1;&amp;#x6253;&amp;#x6efe;&amp;#x904e;&amp;#x5e7e;&amp;#x6b21;&amp;#x3001;&amp;#x505a;&amp;#x904e;&amp;#x5e7e;&amp;#x6b21;&amp;#x68f2;&amp;#x5730;&amp;#x7dad;&amp;#x8b77;&amp;#x7ba1;&amp;#x7406;&amp;#x7684;&amp;#x5925;&amp;#x4f34;&amp;#x5011;&amp;#x3002;&amp;#x5de5;&amp;#x4f5c;&amp;#x5047;&amp;#x671f;&amp;#x5c3e;&amp;#x8072;&amp;#xff0c;&amp;#x69ae;&amp;#x661f;&amp;#x751f;&amp;#x614b;&amp;#x6c60;&amp;#x88e1;&amp;#x9664;&amp;#x4e86;&amp;#x7a2e;&amp;#x9032;&amp;#x4e86;&amp;#x8010;&amp;#x751f;&amp;#x53c8;&amp;#x8010;&amp;#x770b;&amp;#x7684;&amp;#x5713;&amp;#x8449;&amp;#x7bc0;&amp;#x7bc0;&amp;#x83dc;&amp;#x5916;&amp;#xff0c;&amp;#x540c;&amp;#x6a23;&amp;#x5177;&amp;#x6709;&amp;#x65fa;&amp;#x76db;&amp;#x751f;&amp;#x547d;&amp;#x529b;&amp;#x7684;&amp;#x91dd;&amp;#x85fa;&amp;#x3001;&amp;#x6c34;&amp;#x6bdb;&amp;#x82b1;&amp;#x7576;&amp;#x7136;...&lt;/p&gt;Posted by &lt;a href="https://www.facebook.com/czolth.chen"&gt;Donald Chen&lt;/a&gt; on &lt;a href="https://www.facebook.com/czolth.chen/posts/871664556231950"&gt;Sonntag, 31. Mai 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;</summary><category term="生態"></category><category term="公園"></category><category term="轉載"></category></entry><entry><title>[轉載] 「台北其實很生態」系列 - 郭城孟臉書</title><link href="http://suhian.li/misc/taipei_really_eco.html" rel="alternate"></link><updated>2015-06-01T14:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2015-06-01:misc/taipei_really_eco.html</id><summary type="html">&lt;h2&gt;文章&lt;/h2&gt;
 &lt;h3&gt;台北其實很生態（1）&lt;/h3&gt;
 &lt;p&gt;從淡水河口只能看到一種紅樹林植物，水筆仔，背後顯示，熱帶生態環境由赤道隨著黑潮進入台灣之後，熱帶訊息由南往北也逐漸降低，高雄有6種紅樹林植物的記錄，台南4種，新竹2種，至台北只剩1種，因為台北冬天深受東北季風影響氣溫較低之故。
 這應該可以解釋為何有些熱帶植物在台北無法存活，有些可以活，但不會開花也不會結果，有些會開花但不會結果，等等屬於熱帶邊緣奇奇怪怪的現象在台北時有所聞。
@@ -166,7 +166,7 @@
 
 &lt;div class="fb-post" data-href="https://www.facebook.com/kuocmntu/posts/1605483283041603:0" data-width="500"&gt;&lt;div class="fb-xfbml-parse-ignore"&gt;&lt;blockquote cite="https://www.facebook.com/kuocmntu/posts/1605483283041603:0"&gt;&lt;p&gt;&amp;#x53f0;&amp;#x5317;&amp;#x5176;&amp;#x5be6;&amp;#x5f88;&amp;#x751f;&amp;#x614b;&amp;#xff08;8&amp;#xff09;&amp;#x5728;&amp;#x53f0;&amp;#x5317;&amp;#x5e02;&amp;#x5340;&amp;#x6216;&amp;#x8fd1;&amp;#x90ca;&amp;#x9084;&amp;#x883b;&amp;#x5e38;&amp;#x898b;&amp;#x571f;&amp;#x5730;&amp;#x81ea;&amp;#x884c;&amp;#x9577;&amp;#x6a39;&amp;#xff0c;&amp;#x4e0d;&amp;#x7528;&amp;#x7279;&amp;#x5225;&amp;#x7167;&amp;#x9867;&amp;#x5c31;&amp;#x6703;&amp;#x81ea;&amp;#x5df1;&amp;#x9577;&amp;#x5927;&amp;#x3002;&amp;#x71b1;&amp;#x5e36;&amp;#x96e8;&amp;#x6797;&amp;#x5730;&amp;#x5340;&amp;#x5927;&amp;#x9762;&amp;#x7a4d;&amp;#x711a;&amp;#x58be;&amp;#x4e4b;&amp;#x5f8c;&amp;#xff0c;&amp;#x571f;&amp;#x5730;&amp;#x4e0d;&amp;#x6703;&amp;#x81ea;&amp;#x5df1;&amp;#x9577;&amp;#x6a39;&amp;#xff0c;&amp;#x56e0;&amp;#x70ba;&amp;#x71b1;&amp;#x5e36;&amp;#x96e8;&amp;#x6797;&amp;#x7684;&amp;#x990a;&amp;#x5206;&amp;#x4e0d;&amp;#x8caf;&amp;#x5b58;&amp;#x5728;&amp;#x571f;&amp;#x58e4;&amp;#x4e2d;&amp;#xff0c;&amp;#x800c;&amp;#x662f;&amp;#x8caf;&amp;#x5b58;&amp;#x5728;&amp;#x751f;&amp;#x7269;&amp;#x7684;&amp;#x8eab;&amp;#x9ad4;&amp;#x88cf;&amp;#x9762;&amp;#xff0c;&amp;#x751f;&amp;#x7269;&amp;#x6b7b;&amp;#x4ea1;&amp;#x5f8c;&amp;#x5728;&amp;#x9ad8;&amp;#x6eab;&amp;#x591a;&amp;#x6fd5;&amp;#x7684;&amp;#x74b0;&amp;#x5883;&amp;#x4e0b;&amp;#x5feb;&amp;#x901f;&amp;#x5206;&amp;#x89e3;&amp;#xff0c;&amp;#x990a;&amp;#x5206;...&lt;/p&gt;Posted by &lt;a href="https://www.facebook.com/kuocmntu"&gt;郭城孟&lt;/a&gt; on &lt;a href="https://www.facebook.com/kuocmntu/posts/1605483283041603:0"&gt;Samstag, 16. Mai 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;持續追蹤...&lt;/p&gt;</summary></entry><entry><title>狗知識</title><link href="http://suhien.li/misc/dog.html" rel="alternate"></link><updated>2015-05-21T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2015-05-21:misc/dog.html</id><summary type="html">&lt;p&gt;這2年來，一直喜歡查詢身邊的物種，植物、哺乳、昆蟲、兩棲、鳥... 卻沒注意「狗」。&lt;/p&gt;
+&lt;p&gt;持續追蹤...&lt;/p&gt;</summary></entry><entry><title>狗知識</title><link href="http://suhian.li/misc/dog.html" rel="alternate"></link><updated>2015-05-21T00:00:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2015-05-21:misc/dog.html</id><summary type="html">&lt;p&gt;這2年來，一直喜歡查詢身邊的物種，植物、哺乳、昆蟲、兩棲、鳥... 卻沒注意「狗」。&lt;/p&gt;
 &lt;p&gt;看了 &lt;a href="http://zh.wikipedia.org/wiki/犬"&gt;Wikipedia&lt;/a&gt; 資料很多。&lt;/p&gt;
 &lt;h2&gt;分類&lt;/h2&gt;
 &lt;p&gt;學名: &lt;strong&gt;Canis lupus familiaris&lt;/strong&gt;&lt;/p&gt;
@@ -185,7 +185,7 @@
 &lt;li&gt;食肉目 (Carnivora)，腸道短，消化快，胃酸是人的 2 倍，可以消化腐肉。&lt;/li&gt;
 &lt;li&gt;不適合吃植物、穀物，生肉跟骨頭最好。&lt;/li&gt;
 &lt;li&gt;聽覺: 67Hz至45,000Hz (人是20-20k)，但是耳朵可以動、辨別方位能力強&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>[天母綠玉] 羅友倫將軍故居導覽</title><link href="http://suhien.li/misc/tianmu_greenstone_01.html" rel="alternate"></link><updated>2014-09-05T19:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-09-05:misc/tianmu_greenstone_01.html</id><summary type="html">&lt;p&gt;8月29日，聽了天母綠玉的演講後，表示也願意幫忙，畢竟關注了一陣子，家還住附近。&lt;/p&gt;
+&lt;/ul&gt;</summary></entry><entry><title>[天母綠玉] 羅友倫將軍故居導覽</title><link href="http://suhian.li/misc/tianmu_greenstone_01.html" rel="alternate"></link><updated>2014-09-05T19:12:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-09-05:misc/tianmu_greenstone_01.html</id><summary type="html">&lt;p&gt;8月29日，聽了天母綠玉的演講後，表示也願意幫忙，畢竟關注了一陣子，家還住附近。&lt;/p&gt;
 &lt;p&gt;很快的 9月3日，開始了認識這個地方的第一課，先從老樹、植物開始。&lt;/p&gt;
 &lt;p&gt;附近幾顆木麻黃，聽說軍營喜歡種這個。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="黃金葛" src="/images/misc/greenstone/140903/tn_P9030275.JPG" /&gt;&lt;/p&gt;
@@ -207,7 +207,7 @@
 &lt;p&gt;&lt;img alt="羅友倫故居" src="/images/misc/greenstone/140903/tn_P9030293.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;美麗的小森林&lt;/p&gt;
 &lt;p&gt;&lt;img alt="杜英" src="/images/misc/greenstone/140903/tn_P9030294.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;杜英&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>2014 荒野淨灘志工培訓</title><link href="http://suhien.li/misc/2014_sow_ocean_event_icc.html" rel="alternate"></link><updated>2014-09-03T17:19:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-09-03:misc/2014_sow_ocean_event_icc.html</id><summary type="html">&lt;p&gt;&lt;a href="http://oceanevent.sow.org.tw/"&gt;2014荒野保護協會「愛海無ㄐㄩˋ」國際淨灘行動&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;杜英&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>2014 荒野淨灘志工培訓</title><link href="http://suhian.li/misc/2014_sow_ocean_event_icc.html" rel="alternate"></link><updated>2014-09-03T17:19:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-09-03:misc/2014_sow_ocean_event_icc.html</id><summary type="html">&lt;p&gt;&lt;a href="http://oceanevent.sow.org.tw/"&gt;2014荒野保護協會「愛海無ㄐㄩˋ」國際淨灘行動&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;室內課&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;ICC, International Costal Cleanup 國際淨灘協會&lt;/li&gt;
@@ -222,12 +222,12 @@
 &lt;li&gt;赤蠵龜 大頭龜 (dua tao gu)&lt;/li&gt;
 &lt;li&gt;海龜會吃塑膠袋，以為是水母&lt;/li&gt;
 &lt;li&gt;母龜交配的時候很容易死，因為同時好幾隻公龜會一起壓上來，如果沒辦法浮上來呼吸，救會溺死，如果順利吸到氣就可以趕快上岸產卵。&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>[記錄] 臺灣好吃</title><link href="http://suhien.li/misc/taiwan_good_food.html" rel="alternate"></link><updated>2014-06-04T12:06:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-06-04:misc/taiwan_good_food.html</id><summary type="html">&lt;h1&gt;台南&lt;/h1&gt;
+&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>[記錄] 臺灣好吃</title><link href="http://suhian.li/misc/taiwan_good_food.html" rel="alternate"></link><updated>2014-06-04T12:06:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-06-04:misc/taiwan_good_food.html</id><summary type="html">&lt;h1&gt;台南&lt;/h1&gt;
 &lt;p&gt;沙淘宮菜粽 (西門路二段116巷) - &lt;a href="http://www.paine0602.com/blog/post/26708458-[台南]沙淘宮菜粽"&gt;[台南]沙淘宮菜粽 @ 小不點看世界★Paine’s Blog&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://literaryouth.pixnet.net/blog/post/365975504"&gt;台南-霜淇淋大車拼地圖。熱浪來襲．消暑散策：府城限定發售 @ 『WenYi 青年』碎。碎。念 :: 痞客邦 PIXNET ::&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.beefsouptn.com/2012/07/blog-post_24.html?m=1"&gt;我要征服臺南牛肉湯!!!: 臺南牛肉湯比較表格 (持續整理中)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>[演講] 香港的大山大海 - 劉克襄</title><link href="http://suhien.li/misc/hk_mountain_lishan.html" rel="alternate"></link><updated>2014-05-29T12:48:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-05-29:misc/hk_mountain_lishan.html</id><summary type="html">&lt;p&gt;時間: 2014-05-29&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>[演講] 香港的大山大海 - 劉克襄</title><link href="http://suhian.li/misc/hk_mountain_lishan.html" rel="alternate"></link><updated>2014-05-29T12:48:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-05-29:misc/hk_mountain_lishan.html</id><summary type="html">&lt;p&gt;時間: 2014-05-29&lt;/p&gt;
 &lt;p&gt;地點: 台大&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;花蓮港口部落: 最小水梯田&lt;/li&gt;
@@ -250,12 +250,12 @@
 &lt;li&gt;
 &lt;p&gt;香港的 2 種水果必吃: 黃皮 (像龍眼)、大蕉。其他大多是進口的。&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>[自然生態公園棲地守護志工課程] 行前訓練 2 - 香香哥的自然生態公園補習</title><link href="http://suhien.li/misc/sow-part-02.html" rel="alternate"></link><updated>2014-05-22T03:25:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-05-22:misc/sow-part-02.html</id><summary type="html">&lt;p&gt;一個生態公園可分出 1. 核心區 2. 緩衝區 3. 遊憩區&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="note"></category></entry><entry><title>[自然生態公園棲地守護志工課程] 行前訓練 2 - 香香哥的自然生態公園補習</title><link href="http://suhian.li/misc/sow-part-02.html" rel="alternate"></link><updated>2014-05-22T03:25:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-05-22:misc/sow-part-02.html</id><summary type="html">&lt;p&gt;一個生態公園可分出 1. 核心區 2. 緩衝區 3. 遊憩區&lt;/p&gt;
 &lt;p&gt;處理一棵褐根病 20 萬，殺你 1000，自損 800，跟治療人癌症化療一樣&lt;/p&gt;
 &lt;p&gt;昆蟲驅光性，1. 配合天體運行作息 2. 可能敵人都躲在暗處&lt;/p&gt;
 &lt;p&gt;光葉水菊： 蝴蝶的迷幻藥，蝴蝶超愛，但是他們只喜歡在那裡，作息都亂了&lt;/p&gt;
 &lt;p&gt;螢火蟲：入夜後 2 個小時發光，雌的會看半小時，觀察有無棟桃。幼生需要水，吃螺貝類。&lt;/p&gt;
-&lt;p&gt;貢德氏赤蛙，狗蛙，叫很大聲&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>[自然生態公園棲地守護志工課程] 行前訓練 1 - 臺北中強公園</title><link href="http://suhien.li/misc/sow-park-01.html" rel="alternate"></link><updated>2014-05-07T10:59:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-05-07:misc/sow-park-01.html</id><summary type="html">&lt;p&gt;在一個坐捷運就可以到的地方，附近的豪宅大概一坪200萬。一個晚上短短2個小時可以看到7種青蛙和意外的大赤鼯鼠，這比在荒郊野外看到更令人興奮。&lt;/p&gt;
+&lt;p&gt;貢德氏赤蛙，狗蛙，叫很大聲&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>[自然生態公園棲地守護志工課程] 行前訓練 1 - 臺北中強公園</title><link href="http://suhian.li/misc/sow-park-01.html" rel="alternate"></link><updated>2014-05-07T10:59:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-05-07:misc/sow-park-01.html</id><summary type="html">&lt;p&gt;在一個坐捷運就可以到的地方，附近的豪宅大概一坪200萬。一個晚上短短2個小時可以看到7種青蛙和意外的大赤鼯鼠，這比在荒郊野外看到更令人興奮。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;蛙類: 腹斑蛙、拉都希氏赤蛙、小雨蛙、澤蛙、面天樹蛙、福建大頭蛙、台北樹蛙&lt;/li&gt;
 &lt;li&gt;植物: 野薑花、烏來月桃&lt;/li&gt;
@@ -268,7 +268,7 @@
 
 
 &lt;p&gt;感謝德鴻、江何、昕岑、海娜娜&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sow.org.tw/civicrm/event/info?reset=1&amp;amp;id=3988"&gt;【棲地守護課程】 7月8日-9月14日 | 荒野保護協會&lt;/a&gt;&lt;/p&gt;</summary><category term="nature"></category></entry><entry><title>[筆記] 日本時代 簡表</title><link href="http://suhien.li/misc/taiwan_japan_era.html" rel="alternate"></link><updated>2014-04-29T03:26:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-04-29:misc/taiwan_japan_era.html</id><summary type="html">&lt;p&gt;年曆:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sow.org.tw/civicrm/event/info?reset=1&amp;amp;id=3988"&gt;【棲地守護課程】 7月8日-9月14日 | 荒野保護協會&lt;/a&gt;&lt;/p&gt;</summary><category term="nature"></category></entry><entry><title>[筆記] 日本時代 簡表</title><link href="http://suhian.li/misc/taiwan_japan_era.html" rel="alternate"></link><updated>2014-04-29T03:26:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-04-29:misc/taiwan_japan_era.html</id><summary type="html">&lt;p&gt;年曆:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;1868 - 1912 明治
 1912 - 1926 大正
 1926 - 1989 昭和
@@ -289,7 +289,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://zh.wikipedia.org/wiki/臺灣總督"&gt;臺灣總督 - 維基百科，自由的百科全書&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category><category term="history"></category></entry><entry><title>[筆記] 台灣博物館導覽</title><link href="http://suhien.li/misc/ntm_guide.html" rel="alternate"></link><updated>2014-04-29T03:22:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-04-29:misc/ntm_guide.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</summary><category term="note"></category><category term="history"></category></entry><entry><title>[筆記] 台灣博物館導覽</title><link href="http://suhian.li/misc/ntm_guide.html" rel="alternate"></link><updated>2014-04-29T03:22:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-04-29:misc/ntm_guide.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;1908 改成博物館，原址臺北大天后宮 (現228公園的水池)。&lt;/li&gt;
 &lt;li&gt;建築師: 野村一郎 (也是臺灣總督官邸，現台北賓館設計者之一)&lt;/li&gt;
 &lt;li&gt;第一任館長: 川上瀧彌，太過勞累，上任第二天就過世&lt;/li&gt;
@@ -304,14 +304,14 @@
 &lt;li&gt;科林斯式: 毛茛葉&lt;/li&gt;
 &lt;li&gt;複合式 (內部)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;台灣有的會加上水果裝飾&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>連結，同理心</title><link href="http://suhien.li/misc/connection_empathy.html" rel="alternate"></link><updated>2014-04-17T01:21:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-04-17:misc/connection_empathy.html</id><summary type="html">&lt;p&gt;如何安慰別人?&lt;/p&gt;
+&lt;p&gt;台灣有的會加上水果裝飾&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>連結，同理心</title><link href="http://suhian.li/misc/connection_empathy.html" rel="alternate"></link><updated>2014-04-17T01:21:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-04-17:misc/connection_empathy.html</id><summary type="html">&lt;p&gt;如何安慰別人?&lt;/p&gt;
 &lt;p&gt;這個3分鐘可愛的動畫，解釋了同理心可以產生人與人之間的連結，而不是在一旁看戲失去連接的同情心。&lt;/p&gt;
 &lt;p&gt;同理心的力量
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/E-AfeaRD_IA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;同場加映 Brené Brown 在TED的演講: The power of vulnerability (脆弱的力量)&lt;/p&gt;
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/zpG6JhOHMmc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;我們要有面對自己脆弱的勇氣。&lt;/p&gt;</summary><category term="note"></category><category term="psycho"></category></entry><entry><title>[荒野保護協會] 星巴克 4/12 社區關懷活動</title><link href="http://suhien.li/misc/sow_starbucks.html" rel="alternate"></link><updated>2014-04-15T12:51:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-04-15:misc/sow_starbucks.html</id><summary type="html">&lt;p&gt;日期: 2014-04-12
+&lt;p&gt;我們要有面對自己脆弱的勇氣。&lt;/p&gt;</summary><category term="note"></category><category term="psycho"></category></entry><entry><title>[荒野保護協會] 星巴克 4/12 社區關懷活動</title><link href="http://suhian.li/misc/sow_starbucks.html" rel="alternate"></link><updated>2014-04-15T12:51:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-04-15:misc/sow_starbucks.html</id><summary type="html">&lt;p&gt;日期: 2014-04-12
 地點: 土城中正國中&lt;/p&gt;
 &lt;p&gt;這是參加荒野台北24期解說員訓練結業後的第一次對外解說，時間有點趕，也沒有參加場堪。&lt;/p&gt;
 &lt;p&gt;我當天又遲到，到現場有點迷迷糊糊的，前面看完2次同伴精彩的解說，就依樣畫葫蘆，拿起麥克風照著講了一遍，半個小時很快就過去了。&lt;/p&gt;
@@ -326,7 +326,7 @@
 &lt;li&gt;&lt;a href="https://plus.google.com/photos/103609546664792132111/albums/6001561812316307393"&gt;412星巴克活動&lt;/a&gt; (水獺)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.facebook.com/media/set/?set=oa.300066866825352&amp;amp;type=1"&gt;412星巴克社區關懷活動花絮&lt;/a&gt; (常春藤)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.facebook.com/media/set/?set=oa.300491680116204&amp;amp;type=1"&gt;2014年4月13日 星巴客社區關懷活動&lt;/a&gt; (酸蘋果)&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category><category term="sow"></category></entry><entry><title>[荒野] 陽明山山仔后 - 美軍宿舍</title><link href="http://suhien.li/misc/sow_tpe_interpreter24_usarmy.html" rel="alternate"></link><updated>2014-03-22T05:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-03-22:misc/sow_tpe_interpreter24_usarmy.html</id><summary type="html">&lt;h1&gt;美軍宿舍群特色&lt;/h1&gt;
+&lt;/ul&gt;</summary><category term="note"></category><category term="sow"></category></entry><entry><title>[荒野] 陽明山山仔后 - 美軍宿舍</title><link href="http://suhian.li/misc/sow_tpe_interpreter24_usarmy.html" rel="alternate"></link><updated>2014-03-22T05:55:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-03-22:misc/sow_tpe_interpreter24_usarmy.html</id><summary type="html">&lt;h1&gt;美軍宿舍群特色&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;煙囪&lt;/li&gt;
 &lt;li&gt;石瓦: 青苔 -&amp;gt; 濕的話為綠色，夏天太陽大，變褐色&lt;/li&gt;
@@ -334,7 +334,7 @@
 &lt;li&gt;圍牆是後來台灣人蓋的 (沒安全感)&lt;/li&gt;
 &lt;li&gt;大門口 (仰德大道入口)，取材為當地安山岩&lt;/li&gt;
 &lt;li&gt;全台美軍最多時有 20萬人 (1970)&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 團體實習</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24_intern_group.html" rel="alternate"></link><updated>2014-02-18T02:45:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-02-18:misc/sow_taipei_interpreter_24_intern_group.html</id><summary type="html">&lt;p&gt;日期: 2014-02-16&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 團體實習</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24_intern_group.html" rel="alternate"></link><updated>2014-02-18T02:45:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-02-18:misc/sow_taipei_interpreter_24_intern_group.html</id><summary type="html">&lt;p&gt;日期: 2014-02-16&lt;/p&gt;
 &lt;h1&gt;解說內容&lt;/h1&gt;
 &lt;h2&gt;第二組 (落羽松、駱駝、青鳥)&lt;/h2&gt;
 &lt;p&gt;大安森林公園歷史:&lt;/p&gt;
@@ -391,7 +391,7 @@
 &lt;p&gt;1957 - 臺北市街道圖&lt;/p&gt;
 &lt;p&gt;&lt;img alt="1974-臺北市舊航照圖" src="/images/misc/sow24/2014-02-16_daan_intern/1974-臺北市舊航照圖.png" /&gt;&lt;/p&gt;
 &lt;p&gt;1974 - 臺北市舊航照圖&lt;/p&gt;
-&lt;p&gt;來源: &lt;a href="http://gissrv4.sinica.edu.tw/gis/twhgis.aspx"&gt;中央研究院人文社會科學研究中心地理資訊科學研究專題中心 台灣百年歷史地圖&lt;/a&gt;&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>台北荒野 - 週週見 -《蜂台灣》──鏡頭後的身影</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-thursday_bee.html" rel="alternate"></link><updated>2014-01-27T22:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-01-27:misc/sow_taipei_interpreter_24-thursday_bee.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.sow.org.tw/civicrm/event/info?id=3695&amp;amp;reset=1"&gt;【荒野週週見】《蜂台灣》──鏡頭後的身影 | 荒野保護協會&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;來源: &lt;a href="http://gissrv4.sinica.edu.tw/gis/twhgis.aspx"&gt;中央研究院人文社會科學研究中心地理資訊科學研究專題中心 台灣百年歷史地圖&lt;/a&gt;&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>台北荒野 - 週週見 -《蜂台灣》──鏡頭後的身影</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-thursday_bee.html" rel="alternate"></link><updated>2014-01-27T22:08:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-01-27:misc/sow_taipei_interpreter_24-thursday_bee.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.sow.org.tw/civicrm/event/info?id=3695&amp;amp;reset=1"&gt;【荒野週週見】《蜂台灣》──鏡頭後的身影 | 荒野保護協會&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;導演: 李偉傑&lt;/p&gt;
 &lt;p&gt;時間: 2014-01−23&lt;/p&gt;
 &lt;h1&gt;關於蜂&lt;/h1&gt;
@@ -412,7 +412,7 @@
 &lt;h1&gt;其他&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;人禾基金會: 導覽很棒，貢寮的水梯田&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="sow_tpe_interpreter24"></category><category term="note"></category></entry><entry><title>[荒野台北24解] 定點參訪: 溪山組室內聚</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-group-xishan.html" rel="alternate"></link><updated>2014-01-23T03:17:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-01-23:misc/sow_taipei_interpreter_24-group-xishan.html</id><summary type="html">&lt;p&gt;主題: 食用油&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="sow_tpe_interpreter24"></category><category term="note"></category></entry><entry><title>[荒野台北24解] 定點參訪: 溪山組室內聚</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-group-xishan.html" rel="alternate"></link><updated>2014-01-23T03:17:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-01-23:misc/sow_taipei_interpreter_24-group-xishan.html</id><summary type="html">&lt;p&gt;主題: 食用油&lt;/p&gt;
 &lt;p&gt;時間: 2013-11-22&lt;/p&gt;
 &lt;p&gt;地點: 美惠姐家&lt;/p&gt;
 &lt;p&gt;講師: 子晏&lt;/p&gt;
@@ -449,7 +449,7 @@
 &lt;/ul&gt;
 &lt;h1&gt;心得&lt;/h1&gt;
 &lt;p&gt;第一次參加溪山組的聚會，每個人都好有趣，而且懂的很多。&lt;/p&gt;
-&lt;p&gt;之前剛好新聞一直在報導食用油的問題，大家都很有興趣，不過今天的主題實在有點硬，我想國中化學都要重新回去重讀了。什麼鍵，化學元素，其實我都有聽沒有懂。不過至少知道一些基本知識，還是收獲良多。最主要還是認識很多溪山組的前輩、大老，感覺都是一輩子可以學習的對象。可惜隔天有第一次旅行，還要會去準備東西，就先行離開了，最後還拿了一包薑黃，下次很想再參加!!&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 第八堂室內課 生命的故事</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-8.html" rel="alternate"></link><updated>2014-01-08T03:56:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-01-08:misc/sow_taipei_interpreter_24-8.html</id><summary type="html">&lt;p&gt;講師: 水樹&lt;/p&gt;
+&lt;p&gt;之前剛好新聞一直在報導食用油的問題，大家都很有興趣，不過今天的主題實在有點硬，我想國中化學都要重新回去重讀了。什麼鍵，化學元素，其實我都有聽沒有懂。不過至少知道一些基本知識，還是收獲良多。最主要還是認識很多溪山組的前輩、大老，感覺都是一輩子可以學習的對象。可惜隔天有第一次旅行，還要會去準備東西，就先行離開了，最後還拿了一包薑黃，下次很想再參加!!&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 第八堂室內課 生命的故事</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-8.html" rel="alternate"></link><updated>2014-01-08T03:56:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-01-08:misc/sow_taipei_interpreter_24-8.html</id><summary type="html">&lt;p&gt;講師: 水樹&lt;/p&gt;
 &lt;h1&gt;蜘蛛的故事&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;蜘蛛如果跟人一樣大，可以飛到8000英尺高的地方:爬到樹上吐絲，利用風力帶走。&lt;/li&gt;
@@ -471,7 +471,7 @@
 &lt;ul&gt;
 &lt;li&gt;長在水泥中的雀榕，小小的2片葉子，長了6年，等待莖長到地面，或是牆壁倒塌&lt;/li&gt;
 &lt;li&gt;窗台上乾枯的蕨類，長了10年，讓自己乾枯，等待下次雨水&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>五股定點觀察</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-group-wugu-1.html" rel="alternate"></link><updated>2014-01-06T01:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-01-06:misc/sow_taipei_interpreter_24-group-wugu-1.html</id><summary type="html">&lt;p&gt;日期: 2014-01-05&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>五股定點觀察</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-group-wugu-1.html" rel="alternate"></link><updated>2014-01-06T01:16:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-01-06:misc/sow_taipei_interpreter_24-group-wugu-1.html</id><summary type="html">&lt;p&gt;日期: 2014-01-05&lt;/p&gt;
 &lt;p&gt;今天是星星小隊在五股的第一次活動，活動結束後，剛好是五股組的周周定點解說，就順便參加了。解說員是稻穗，旁邊還有球長 (地球) 跟小雪跟著補充。&lt;/p&gt;
 &lt;h1&gt;五股溼地短片&lt;/h1&gt;
 &lt;ul&gt;
@@ -565,7 +565,7 @@
 &lt;li&gt;以前這裡種稻米 (現在可能是上游農田漂下來的)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</summary><category term="sow_tpe_interpreter24"></category><category term="note"></category></entry><entry><title>台灣國家公園 (draft)</title><link href="http://suhien.li/misc/taiwan_national_park.html" rel="alternate"></link><updated>2014-01-03T11:54:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-01-03:misc/taiwan_national_park.html</id><summary type="html">&lt;p&gt;1872美國設立世界上第一座國家公園—黃石國家公園(Yellowstone National Park)&lt;/p&gt;
+&lt;/ol&gt;</summary><category term="sow_tpe_interpreter24"></category><category term="note"></category></entry><entry><title>台灣國家公園 (draft)</title><link href="http://suhian.li/misc/taiwan_national_park.html" rel="alternate"></link><updated>2014-01-03T11:54:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-01-03:misc/taiwan_national_park.html</id><summary type="html">&lt;p&gt;1872美國設立世界上第一座國家公園—黃石國家公園(Yellowstone National Park)&lt;/p&gt;
 &lt;h1&gt;日本時代&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;1935 設立三個&lt;strong&gt;國力公園&lt;/strong&gt;候補地，分別是大屯、次高タロコ、新高阿里山，1937 年正式成立。&lt;/li&gt;
@@ -591,7 +591,7 @@
 &lt;li&gt;台江國家公園 2009-10-15&lt;/li&gt;
 &lt;li&gt;壽山國家自然公園&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;資料來源: &lt;a href="http://np.cpami.gov.tw/chinese/index.php?option=com_content&amp;amp;view=article&amp;amp;id=1&amp;amp;Itemid=128&amp;amp;gp=1"&gt;臺灣國家公園 | 臺灣國家公園&lt;/a&gt;&lt;/p&gt;</summary><category term="history"></category><category term="taiwan"></category></entry><entry><title>Quotes</title><link href="http://suhien.li/misc/quotes.html" rel="alternate"></link><updated>2014-01-02T11:30:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2014-01-02:misc/quotes.html</id><summary type="html">&lt;h1&gt;成功人生&lt;/h1&gt;
+&lt;p&gt;資料來源: &lt;a href="http://np.cpami.gov.tw/chinese/index.php?option=com_content&amp;amp;view=article&amp;amp;id=1&amp;amp;Itemid=128&amp;amp;gp=1"&gt;臺灣國家公園 | 臺灣國家公園&lt;/a&gt;&lt;/p&gt;</summary><category term="history"></category><category term="taiwan"></category></entry><entry><title>Quotes</title><link href="http://suhian.li/misc/quotes.html" rel="alternate"></link><updated>2014-01-02T11:30:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2014-01-02:misc/quotes.html</id><summary type="html">&lt;h1&gt;成功人生&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;perfect is the enemy of good&lt;/li&gt;
 &lt;li&gt;An idea that is not dangerous is unworthy of being called an idea at all. - Oscar Wilde&lt;/li&gt;
@@ -626,7 +626,7 @@ What is it that stands higher than action?  Silence.
 - Francis of Assisi &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1&gt;現象&lt;/h1&gt;
-&lt;p&gt;《百年孤寂》「世界太新，很多事物還沒有名字，必須用手指頭伸手去指。」&lt;/p&gt;</summary><category term="quote"></category></entry><entry><title>[荒野台北24解] 第七堂室內課 荒野武林大會 - 定點介紹</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-7.html" rel="alternate"></link><updated>2013-12-31T18:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-12-31:misc/sow_taipei_interpreter_24-7.html</id><summary type="html">&lt;h1&gt;汐湖組&lt;/h1&gt;
+&lt;p&gt;《百年孤寂》「世界太新，很多事物還沒有名字，必須用手指頭伸手去指。」&lt;/p&gt;</summary><category term="quote"></category></entry><entry><title>[荒野台北24解] 第七堂室內課 荒野武林大會 - 定點介紹</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-7.html" rel="alternate"></link><updated>2013-12-31T18:32:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-12-31:misc/sow_taipei_interpreter_24-7.html</id><summary type="html">&lt;h1&gt;汐湖組&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;筆筒樹&lt;/strong&gt; (於小澐)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;與人連結的解說法:
@@ -737,7 +737,7 @@ What is it that stands higher than action?  Silence.
 &lt;li&gt;溼地上游&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;水樹(代)&lt;/strong&gt;&lt;/p&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 大安森林公園導覽1 - 主題: 樹幹</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-group-daan-1.html" rel="alternate"></link><updated>2013-12-28T19:13:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-12-28:misc/sow_taipei_interpreter_24-group-daan-1.html</id><summary type="html">&lt;p&gt;講師: 玉山圓柏&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;水樹(代)&lt;/strong&gt;&lt;/p&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 大安森林公園導覽1 - 主題: 樹幹</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-group-daan-1.html" rel="alternate"></link><updated>2013-12-28T19:13:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-12-28:misc/sow_taipei_interpreter_24-group-daan-1.html</id><summary type="html">&lt;p&gt;講師: 玉山圓柏&lt;/p&gt;
 &lt;p&gt;日期: 2013-12-28 (六)&lt;/p&gt;
 &lt;h1&gt;開場&lt;/h1&gt;
 &lt;ul&gt;
@@ -856,7 +856,7 @@ What is it that stands higher than action?  Silence.
 &lt;li&gt;楓香&lt;/li&gt;
 &lt;li&gt;羊蹄甲在南部葉子會掉光才開花 (在櫻花開完後)&lt;/li&gt;
 &lt;li&gt;端午節習俗: 菖蒲 (劍)，艾草(令旗)，榕樹 (黃巢之亂故事，門口掛枝條)&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>二旅</title><link href="http://suhien.li/misc/sow.html" rel="alternate"></link><updated>2013-12-24T02:20:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-12-24:misc/sow.html</id><summary type="html">&lt;h1&gt;翠山步道&lt;/h1&gt;
+&lt;/ul&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>二旅</title><link href="http://suhian.li/misc/sow.html" rel="alternate"></link><updated>2013-12-24T02:20:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-12-24:misc/sow.html</id><summary type="html">&lt;h1&gt;翠山步道&lt;/h1&gt;
 &lt;h2&gt;芒草&lt;/h2&gt;
 &lt;p&gt;以這裡的芒花季爲主題，主要介紹芒花&lt;/p&gt;
 &lt;ul&gt;
@@ -938,7 +938,7 @@ What is it that stands higher than action?  Silence.
 &lt;p&gt;翡翠樹蛙: 過眼金線&lt;/p&gt;
 &lt;p&gt;照片用光陰魔術手修&lt;/p&gt;
 &lt;p&gt;酸藤 春天火紅, 在樹上&lt;/p&gt;
-&lt;p&gt;新店烏來很多&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>[荒野台北24解] 第六堂室內課 專業課程: 植物 - 行道樹的故事</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-6.html" rel="alternate"></link><updated>2013-12-17T19:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-12-17:misc/sow_taipei_interpreter_24-6.html</id><summary type="html">&lt;p&gt;講師: 玉山圓柏 (吳惠敏)&lt;/p&gt;
+&lt;p&gt;新店烏來很多&lt;/p&gt;</summary><category term="note"></category></entry><entry><title>[荒野台北24解] 第六堂室內課 專業課程: 植物 - 行道樹的故事</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-6.html" rel="alternate"></link><updated>2013-12-17T19:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-12-17:misc/sow_taipei_interpreter_24-6.html</id><summary type="html">&lt;p&gt;講師: 玉山圓柏 (吳惠敏)&lt;/p&gt;
 &lt;p&gt;yushanyuanbo@gmail.com??&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;2.&lt;/li&gt;
@@ -1043,7 +1043,7 @@ What is it that stands higher than action?  Silence.
 &lt;li&gt;山櫻花 一朵一朵謝，不像日本的是花瓣謝&lt;/li&gt;
 &lt;li&gt;本草綱目有很多解說題材&lt;/li&gt;
 &lt;li&gt;解說最重要的是植物背後要傳遞的訊息&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 第五堂室內課 解說員的使命</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-5.html" rel="alternate"></link><updated>2013-12-17T18:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-12-17:misc/sow_taipei_interpreter_24-5.html</id><summary type="html">&lt;p&gt;徐仁修&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 第五堂室內課 解說員的使命</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-5.html" rel="alternate"></link><updated>2013-12-17T18:39:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-12-17:misc/sow_taipei_interpreter_24-5.html</id><summary type="html">&lt;p&gt;徐仁修&lt;/p&gt;
 &lt;p&gt;大學時期買了「森林狂想曲」，接觸徐老師的大自然錄音，開始認識這個傳奇，今天終於目睹真面目。我剛從南湖大山下來，停好車，在徐老師感性的演講裡讓意識漂流，我記錄的不多，寫出我最感動的片刻。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;我是深沈的人道主義，透過關愛大自然來做到。&lt;/li&gt;
@@ -1054,7 +1054,7 @@ What is it that stands higher than action?  Silence.
 &lt;li&gt;不懂名字的自己取名。&lt;/li&gt;
 &lt;li&gt;我們很少活在當下，都在想前面、想後面，自然觀察就是活在當下，比打坐還有用。&lt;/li&gt;
 &lt;li&gt;要浪漫，才有熱情，有熱情才有行動。永遠要行動。Action!&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 第四堂室內課 - 專業課程: 鳥類 (一)</title><link href="http://suhien.li/misc/sow_taipei_interperer_24-4.html" rel="alternate"></link><updated>2013-12-03T19:35:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-12-03:misc/sow_taipei_interperer_24-4.html</id><summary type="html">&lt;p&gt;講者: 副秘書長李建安 (小彎嘴)&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 第四堂室內課 - 專業課程: 鳥類 (一)</title><link href="http://suhian.li/misc/sow_taipei_interperer_24-4.html" rel="alternate"></link><updated>2013-12-03T19:35:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-12-03:misc/sow_taipei_interperer_24-4.html</id><summary type="html">&lt;p&gt;講者: 副秘書長李建安 (小彎嘴)&lt;/p&gt;
 &lt;h1&gt;鳥類的來源&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;?&lt;/li&gt;
@@ -1141,7 +1141,7 @@ What is it that stands higher than action?  Silence.
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
-&lt;p&gt;感謝「角鴞」筆記補充&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category><category term="note"></category></entry><entry><title>[荒野台北24解] 第一次旅行 - 人與自然的學習</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-travel-1.html" rel="alternate"></link><updated>2013-11-27T09:56:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-11-27:misc/sow_taipei_interpreter_24-travel-1.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;活動主題: 人與自然的學習
+&lt;p&gt;感謝「角鴞」筆記補充&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category><category term="note"></category></entry><entry><title>[荒野台北24解] 第一次旅行 - 人與自然的學習</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-travel-1.html" rel="alternate"></link><updated>2013-11-27T09:56:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-11-27:misc/sow_taipei_interpreter_24-travel-1.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;活動主題: 人與自然的學習
 活動內容: 愛在荒野流動 ~ 探索體然教育
 活動地點: 福山國小
 &lt;/pre&gt;&lt;/div&gt;
@@ -1325,11 +1325,11 @@ What is it that stands higher than action?  Silence.
 &lt;p&gt;穗狀花序&lt;/p&gt;
 &lt;p&gt;水麻 台灣特有種
 背是白色的，細蝶幼蟲在上面容易被吃&lt;/p&gt;
-&lt;p&gt;長鬃山羊跟山羌愛吃&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>我的自然名: 蘑菇</title><link href="http://suhien.li/misc/nature_name.html" rel="alternate"></link><updated>2013-11-25T17:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-11-25:misc/nature_name.html</id><summary type="html">&lt;p&gt;其實這個綽號是大學時候開始的，原本只是為了在網路bbs申請一個「沒有人用過」的帳號。就亂掰了一個狀聲字: moogoo。然後中文念起來像蘑菇，自己也滿喜歡的「吃」蘑菇，蘑菇在我的印象中，也直接聯想到小時候很喜歡的卡通藍色小精靈的蘑菇屋，因此就一直沿用這個外號了。&lt;/p&gt;
+&lt;p&gt;長鬃山羊跟山羌愛吃&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>我的自然名: 蘑菇</title><link href="http://suhian.li/misc/nature_name.html" rel="alternate"></link><updated>2013-11-25T17:29:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-11-25:misc/nature_name.html</id><summary type="html">&lt;p&gt;其實這個綽號是大學時候開始的，原本只是為了在網路bbs申請一個「沒有人用過」的帳號。就亂掰了一個狀聲字: moogoo。然後中文念起來像蘑菇，自己也滿喜歡的「吃」蘑菇，蘑菇在我的印象中，也直接聯想到小時候很喜歡的卡通藍色小精靈的蘑菇屋，因此就一直沿用這個外號了。&lt;/p&gt;
 &lt;p&gt;加入荒野時有想過這個自然名跟我的生命故事之間的連接，其實十分枯燥，就是一個無聊宅男無意義的聯想。只好查了一下蘑菇的資料，原來是「蘑菇科傘菌屬」的部分食用菌的總稱，專業一點的話就是「真菌有性生殖階段的真菌子實體」- 很好，這種含糊不明的俗稱，就符合了本人不學無術跟不知上進的人格特徵。&lt;/p&gt;
 &lt;p&gt;為了要完成自然名的學分作業，只好再找一些資料來自圓其說。維基百科有寫: 真菌 (菇類)，自成一界，分類上從植物界分出來，所以不算動物、植物或細菌，感覺性格相當孤僻。但是他們通常很小，生活在土壤、腐質上，跟植物、動物或其他真菌共生，就是一個可以跟大家一起生活又若即若離的怪咖。又，真菌不能自行製造養分。無法獨立於自然界生存，必須與別種生物借由寄生、腐生或共生方式來吸取生活需要的營養，簡直就是一個生活在大地之母下的媽寶。&lt;/p&gt;
 &lt;p&gt;實在跟我太貼切了，因此現在很得意的沿用這個自然名，繼續苟活於自然中。&lt;/p&gt;
-&lt;p&gt;有空在跟大家多分享蘑菇(真菌)的故事，但是要先等我吸收多一點資料，現在我只能算是一個孢子而已。&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 第三堂室內課 專業課程: 昆蟲 (一)</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-3.html" rel="alternate"></link><updated>2013-11-19T03:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-11-19:misc/sow_taipei_interpreter_24-3.html</id><summary type="html">&lt;p&gt;講者: 謝水樹 (天狼星)&lt;/p&gt;
+&lt;p&gt;有空在跟大家多分享蘑菇(真菌)的故事，但是要先等我吸收多一點資料，現在我只能算是一個孢子而已。&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 第三堂室內課 專業課程: 昆蟲 (一)</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-3.html" rel="alternate"></link><updated>2013-11-19T03:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-11-19:misc/sow_taipei_interpreter_24-3.html</id><summary type="html">&lt;p&gt;講者: 謝水樹 (天狼星)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;所有昆蟲類，甲蟲佔40%最多 -&amp;gt; 大家都喜歡強壯一點的&lt;/li&gt;
 &lt;li&gt;長喙天蛾，翅膀動很快，飛很快，長的像蝦子、蜂鳥&lt;/li&gt;
@@ -1360,7 +1360,7 @@ What is it that stands higher than action?  Silence.
 &lt;h1&gt;補充&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="http://app.atmovies.com.tw/movie/movie.cfm?action=filmdata&amp;amp;film_id=fmen30117040"&gt;小宇宙 Microcosmos -- @movies【開眼電影】 @movies http://www.atmovies.com.tw&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 第二堂室內課 荒野的腳步 - 認識荒野</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-2.html" rel="alternate"></link><updated>2013-11-12T19:48:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-11-12:misc/sow_taipei_interpreter_24-2.html</id><summary type="html">&lt;h3&gt;第二堂室內課 荒野的腳步 - 認識荒野&lt;/h3&gt;
+&lt;/ol&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>[荒野台北24解] 第二堂室內課 荒野的腳步 - 認識荒野</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-2.html" rel="alternate"></link><updated>2013-11-12T19:48:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-11-12:misc/sow_taipei_interpreter_24-2.html</id><summary type="html">&lt;h3&gt;第二堂室內課 荒野的腳步 - 認識荒野&lt;/h3&gt;
 &lt;p&gt;講者: 副秘書長李建安 (小彎嘴)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;荒野成立:1995年6月25&lt;/li&gt;
@@ -1373,13 +1373,13 @@ What is it that stands higher than action?  Silence.
 &lt;h2&gt;補充&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;一開始用別人的照片，體驗是別人的，下次自己觀察拍照，講自己的自然體驗比較精彩&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>鋼筆初體驗</title><link href="http://suhien.li/misc/lamy_safary.html" rel="alternate"></link><updated>2013-11-08T12:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-11-08:misc/lamy_safary.html</id><summary type="html">&lt;p&gt;最近常常在手寫筆記，連明年的年度手札都不想用買的，決定用20孔A5活頁紙自己做。然後又覺得用爛爛的原子筆寫起來很沒質感，想找一隻好筆。&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="note"></category><category term="sow_tpe_interpreter24"></category></entry><entry><title>鋼筆初體驗</title><link href="http://suhian.li/misc/lamy_safary.html" rel="alternate"></link><updated>2013-11-08T12:09:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-11-08:misc/lamy_safary.html</id><summary type="html">&lt;p&gt;最近常常在手寫筆記，連明年的年度手札都不想用買的，決定用20孔A5活頁紙自己做。然後又覺得用爛爛的原子筆寫起來很沒質感，想找一隻好筆。&lt;/p&gt;
 &lt;p&gt;那不如... 就來用鋼筆吧，網路搜尋鋼筆，果然出現專賣店: &lt;a href="http://tylee.tw/"&gt;小品雅集&lt;/a&gt; 。抽空走到大安高工後面的小巷子裡，店裡很多人在把玩各種筆，整個很有"品味"的感覺，於是我很沒有品味的問店員：「我想買鋼筆，要怎麼開始」。店員：「就從這裡開始」。&lt;/p&gt;
 &lt;p&gt;櫃檯擺了一盤試用的德國Lamy牌，最入門的叫Safari，我一眼就看中消光黑的那隻，不會太秋! 這隻鋼筆有附吸水器，可以選墨水，本來覺得藍色像原子筆，想選黑色，但發現剛才試寫時有一種很深的藍色，更特別，他叫藍黑色，就是他了。選筆尖，我寫的字算小，就用最&lt;del&gt;賤&lt;/del&gt;尖的&lt;em&gt;EF&lt;/em&gt;。&lt;/p&gt;
 &lt;p&gt;總共花不到一千元，就完成了鋼筆初體驗，專業的店員節省了我很多上網查資料的時間。&lt;/p&gt;
 &lt;p&gt;現在好喜歡手寫字啊！！&lt;/p&gt;
 &lt;p&gt;&lt;img alt=" " src="/images/misc/tn_DSC_0614.jpg" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.lamy.com/ger/b2c/safari/017"&gt;Lamy - LAMY safari umbra&lt;/a&gt;&lt;/p&gt;</summary><category term="diary"></category><category term="shopping"></category></entry><entry><title>[荒野台北24解] 第一堂室內課 我們的土地 - 認識台灣</title><link href="http://suhien.li/misc/sow_taipei_interpreter_24-1.html" rel="alternate"></link><updated>2013-11-05T11:27:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-11-05:misc/sow_taipei_interpreter_24-1.html</id><summary type="html">&lt;p&gt;自己喜歡觀察大自然，但是都很不專業，很高興參加「荒野保護協會」的第二十四屆解說員訓練，希望多學習認識自然，可以介紹給別人，也同時學習人與人之間的相處。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.lamy.com/ger/b2c/safari/017"&gt;Lamy - LAMY safari umbra&lt;/a&gt;&lt;/p&gt;</summary><category term="diary"></category><category term="shopping"></category></entry><entry><title>[荒野台北24解] 第一堂室內課 我們的土地 - 認識台灣</title><link href="http://suhian.li/misc/sow_taipei_interpreter_24-1.html" rel="alternate"></link><updated>2013-11-05T11:27:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-11-05:misc/sow_taipei_interpreter_24-1.html</id><summary type="html">&lt;p&gt;自己喜歡觀察大自然，但是都很不專業，很高興參加「荒野保護協會」的第二十四屆解說員訓練，希望多學習認識自然，可以介紹給別人，也同時學習人與人之間的相處。&lt;/p&gt;
 &lt;h3&gt;第一堂室內課 我們的土地 - 認識台灣&lt;/h3&gt;
 &lt;p&gt;講者: 小馬 (豆丁海馬)&lt;/p&gt;
 &lt;ul&gt;
@@ -1418,7 +1418,7 @@ What is it that stands higher than action?  Silence.
 &lt;p&gt;從此，布農族人把蟾蜍跟紅嘴黑鵯當作神聖的動物，並教小孩不可傷害牠們。否則傷害蟾蜍會引起大雨；傷害紅嘴黑鵯，牠會咬火種燒你的頭髮。&lt;/p&gt;
 &lt;p&gt;想不到看起來這麼不顯眼的鳥兒後面有這麼英勇的故事吧！之後的電子報，我們將為您介紹會在植物園中現身的布農族洪水神話這個「火種遠征隊」出現過的其他動物。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;from: &lt;a href="http://web2.nmns.edu.tw/PubLib/epaper/2008/375-index.htm"&gt;科博電子報&lt;/a&gt;&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>適合工作的無線網路咖啡地圖</title><link href="http://suhien.li/misc/cafe_working.html" rel="alternate"></link><updated>2013-10-26T13:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-10-26:misc/cafe_working.html</id><summary type="html">&lt;p&gt;收集各地不錯的
+&lt;p&gt;from: &lt;a href="http://web2.nmns.edu.tw/PubLib/epaper/2008/375-index.htm"&gt;科博電子報&lt;/a&gt;&lt;/p&gt;</summary><category term="sow_tpe_interpreter24"></category></entry><entry><title>適合工作的無線網路咖啡地圖</title><link href="http://suhian.li/misc/cafe_working.html" rel="alternate"></link><updated>2013-10-26T13:37:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-10-26:misc/cafe_working.html</id><summary type="html">&lt;p&gt;收集各地不錯的
 無線網路
 插頭&lt;/p&gt;
 &lt;h1&gt;台北&lt;/h1&gt;
@@ -1452,7 +1452,7 @@ What is it that stands higher than action?  Silence.
 &lt;h1&gt;高雄&lt;/h1&gt;
 &lt;p&gt;gavagai&lt;/p&gt;
 &lt;h1&gt;台南&lt;/h1&gt;
-&lt;p&gt;a room&lt;/p&gt;</summary><category term="cafe"></category></entry><entry><title>[希望山林] 三貂嶺場堪心得</title><link href="http://suhien.li/misc/sandiaoling.html" rel="alternate"></link><updated>2013-08-18T18:38:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhien.li,2013-08-18:misc/sandiaoling.html</id><summary type="html">&lt;p&gt;老鷹帶領的希望山林三貂嶺場堪。&lt;/p&gt;
+&lt;p&gt;a room&lt;/p&gt;</summary><category term="cafe"></category></entry><entry><title>[希望山林] 三貂嶺場堪心得</title><link href="http://suhian.li/misc/sandiaoling.html" rel="alternate"></link><updated>2013-08-18T18:38:00+08:00</updated><author><name>moogoo</name></author><id>tag:suhian.li,2013-08-18:misc/sandiaoling.html</id><summary type="html">&lt;p&gt;老鷹帶領的希望山林三貂嶺場堪。&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://www.facebook.com/HopeForestTaiwan"&gt;https://www.facebook.com/HopeForestTaiwan&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;心得:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
